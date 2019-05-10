@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome
+
+The OneConsultation Technical Documentation site provides access to all of the platform documentation you will need to successfully setup and configure OneConsultation.
 
 You can use the [editor on GitHub](https://github.com/modalitysystems/teamworksanalytics-docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
