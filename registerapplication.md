@@ -6,7 +6,7 @@
 1. Enter the follow application registration details
    * **Name** - A meaningfull user-facing name for the application such as **Modality Teamwork Analytics**
    * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only**
-   * **Redirect URI** - Recommend setting this to **https://login.live.com/oauth20_desktop.srf** (todo default for desktops)
+   * **Redirect URI** - The authorization endpoint used by Teamwork Analytics - Recommend setting this to **https://login.live.com/oauth20_desktop.srf** 
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 ![application registration](images/applicationRegistration.png)
 1. Take note of the **ApplicationID** as this will be required futher in the deployment process
@@ -32,5 +32,5 @@
    * User.Read.All
 1.  Click **Add permissions** to be returned to the "API permissions" blade
 ![permissions summary](images/permissions.png)
-(todo how to get tenant id)
+1.
 
