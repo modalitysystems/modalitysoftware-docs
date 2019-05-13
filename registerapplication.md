@@ -17,5 +17,5 @@
   * **Expiry** - Recommend setting this to **tbc**
 1. Click **Add**
 1. Immediately take note of the secret as this can not be retrieved later and will be required futher in the deployment process
-![copy secret](images/teamworSecrets.png)
+![team work secret](images/teamworkSecrets.png)
 
