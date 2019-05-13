@@ -31,3 +31,4 @@
    * Sites.Read.All
    * User.Read.All
 1.  Click **Add permissions** to be returned to the "API permissions" pane
+![permissions summary](images/permissions.png)
