@@ -12,7 +12,7 @@
 1. Take note of the **ApplicationID** as this will be required futher in the deployment process
 ![overview of application](images/applicationOverview.png)
 1. Select **Certificates & secrets** from the Manage menu
-1. Select **New client secret** and enter an appropriate description and expiry period.
+1. Select **New client secret** and enter an appropriate description and expiry period
   * **Description** - Recommend setting this to **Primary**
   * **Expiry** - Recommend setting this to **Never**
 1. Click **Add**
@@ -23,6 +23,11 @@
 ![add permissions](images/reuqestGraphPermissions.png)
 1. Ensure that the permission type is set to "Application permissions" and not "Delegated permissions"
 ![set permission type](images/permissionTypes.png)
-1. Select the follow permissions 
-  * 
-1.  Click **Add permissions**
+1. Select the follow 6 permissions from Microsoft.Graph
+  * Directory.Read.All
+  * Files.Read.All
+  * Group.Read.All
+  * Reports.Read.All
+  * Sites.Read.All
+  * User.Read.All
+1.  Click **Add permissions** to be returned to the "API permissions" pane
