@@ -30,7 +30,8 @@
    * Reports.Read.All
    * Sites.Read.All
    * User.Read.All
-1.  Click **Add permissions** to be returned to the "API permissions" blade
+1. Click **Add permissions** to be returned to the "API permissions" blade
 ![permissions summary](images/permissions.png)
-1.
+1. Your **Tenant ID** will be required further in later in the deployment, get this my navigating to the **Azure Active Directory** blade and selecting **Properties** and copying **Directory ID**
+![tenant id](images/getTennantId.png)
 
