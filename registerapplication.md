@@ -19,7 +19,7 @@
 1. Immediately take note of the secret as this can not be retrieved later and will be required further in the deployment process
 ![team work secret](images/teamworkSecrets.png)
 1. Select **Api permissions** from the Manage menu
-1. Find and select **Microsoft Graph** from the **Request API permissions** pane
+1. Find and select **Microsoft Graph** from the **Request API permissions** blade
 ![add permissions](images/reuqestGraphPermissions.png)
 1. Ensure that the permission type is set to "Application permissions" and not "Delegated permissions"
 ![set permission type](images/permissionTypes.png)
@@ -30,7 +30,7 @@
    * Reports.Read.All
    * Sites.Read.All
    * User.Read.All
-1.  Click **Add permissions** to be returned to the "API permissions" pane
+1.  Click **Add permissions** to be returned to the "API permissions" blade
 ![permissions summary](images/permissions.png)
 (todo how to get tenant id)
 
