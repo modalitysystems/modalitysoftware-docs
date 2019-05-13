@@ -14,7 +14,7 @@
 1. Select **Certificates & secrets** from the menu
 1. Select **New client secret** and enter an appropriate description and expiry period.
   * **Description** - Recommend setting this to **Primary**
-  * **Expiry** - Recommend setting this to **tbc**
+  * **Expiry** - Recommend setting this to **Never**
 1. Click **Add**
 1. Immediately take note of the secret as this can not be retrieved later and will be required futher in the deployment process
 ![team work secret](images/teamworkSecrets.png)
