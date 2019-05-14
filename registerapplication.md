@@ -28,7 +28,7 @@ This document describes the process of registering Teamwork Analytics Client as 
 1. Immediately take note of the **Secret** as this can not be retrieved later and will be required further in the deployment process
 ![team work secret](images/teamworkSecrets.png)
 
-### Declare API Permission for Teamwork Analytics
+### Declare API Permissions for Teamwork Analytics
 1. Navigate to the **Azure Active Directory** from the navigation pane on the left
 1. Select **App Registrations** and select the **Modality Teamwork Analytics** app 
 1. Select **Api permissions** from the Manage menu
