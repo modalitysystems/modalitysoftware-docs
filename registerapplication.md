@@ -1,5 +1,10 @@
-## Register Azure Application
-
+## Registering Teamwork Analytics as an Azure Application
+This document describes the process of registering Teamwork Analytics as an Azure Application as the first step to deployment.  As part of the registration you will gather the following information for use further along the deployment process.
+   * Application ID
+   * Application Secret
+   * Tenant ID   
+   
+### Register Teamwork Analytics with Azure Active Directory
 1. Sign in to the [Azure Portal](https://azure.portal.com)
 1. Select the **Azure Active Directory** service from the navigation pane on the left 
 1. Select **App Registrations** and click **New Registration** (Take care not to select **New Registration (Legacy)** as these instructions do not apply to them
@@ -11,13 +16,17 @@
 ![application registration](images/applicationRegistration.png)
 1. Take note of the **ApplicationID** as this will be required futher in the deployment process
 ![overview of application](images/applicationOverview.png)
+
+### Add a Client Secret
 1. Select **Certificates & secrets** from the Manage menu
 1. Select **New client secret** and enter an appropriate description and expiry period
    * **Description** - Recommend setting this to **TWA-Secret**
    * **Expiry** - Recommend setting this to **Never**
 1. Click **Add**
-1. Immediately take note of the secret as this can not be retrieved later and will be required further in the deployment process
+1. Immediately take note of the **Secret** as this can not be retrieved later and will be required further in the deployment process
 ![team work secret](images/teamworkSecrets.png)
+
+### Declare API Permission for Teamwork Analytics
 1. Select **Api permissions** from the Manage menu
 1. Find and select **Microsoft Graph** from the **Request API permissions** blade
 ![add permissions](images/reuqestGraphPermissions.png)
@@ -32,6 +41,8 @@
    * User.Read.All
 1. Click **Add permissions** to be returned to the "API permissions" blade
 ![permissions summary](images/permissions.png)
+
+### Retrieve your Tenant ID
 1. Your **Tenant ID** will be required further in later in the deployment, get this my navigating to the **Azure Active Directory** blade and selecting **Properties** and copying **Directory ID**
 ![tenant id](images/getTennantId.png)
 
