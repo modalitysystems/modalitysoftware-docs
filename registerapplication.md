@@ -44,7 +44,7 @@ This document describes the process of registering Teamwork Analytics Client as 
    * Sites.Read.All
    * User.Read.All
 1. Click **Add permissions** to be returned to the "API permissions" blade
-1. Click the **Grant Admin Consent for ![your name]** button
+1. Click the **Grant Admin Consent for Your Name** button
 ![permissions summary](images/apiPermissions.png)
 
 ### Retrieve your Tenant ID
