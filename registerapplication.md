@@ -1,5 +1,5 @@
 ## Registering Teamwork Analytics as an Azure Application
-This document describes the process of registering Teamwork Analytics as an Azure Application as the first step to deployment.  As part of the registration you will gather the following information for use further along the deployment process.
+This document describes the process of registering Teamwork Analytics Client as an Azure Application as the first step to deployment.  As part of the registration you will gather the following information for use further along the deployment process.
    * Application ID
    * Application Secret
    * Tenant ID   
@@ -18,6 +18,8 @@ This document describes the process of registering Teamwork Analytics as an Azur
 ![overview of application](images/applicationOverview.png)
 
 ### Add a Client Secret
+1. Navigate to the **Azure Active Directory** from the navigation pane on the left
+1. Select **App Registrations** and select the **Modality Teamwork Analytics** app 
 1. Select **Certificates & secrets** from the Manage menu
 1. Select **New client secret** and enter an appropriate description and expiry period
    * **Description** - Recommend setting this to **TWA-Secret**
@@ -27,6 +29,8 @@ This document describes the process of registering Teamwork Analytics as an Azur
 ![team work secret](images/teamworkSecrets.png)
 
 ### Declare API Permission for Teamwork Analytics
+1. Navigate to the **Azure Active Directory** from the navigation pane on the left
+1. Select **App Registrations** and select the **Modality Teamwork Analytics** app 
 1. Select **Api permissions** from the Manage menu
 1. Find and select **Microsoft Graph** from the **Request API permissions** blade
 ![add permissions](images/reuqestGraphPermissions.png)
@@ -43,6 +47,8 @@ This document describes the process of registering Teamwork Analytics as an Azur
 ![permissions summary](images/permissions.png)
 
 ### Retrieve your Tenant ID
-1. Your **Tenant ID** will be required further in later in the deployment, get this my navigating to the **Azure Active Directory** blade and selecting **Properties** and copying **Directory ID**
+1. Navigate to the **Azure Active Directory** from the navigation pane on the left
+1. Select **Properties** 
+1. Your Tenant ID is listed as **Directory ID**, copy this for later use
 ![tenant id](images/getTennantId.png)
 
