@@ -16,7 +16,7 @@ Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that 
      - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. *When applying an upgrade choose the Resource Group that already contains Teamwork Analytics.*
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see *Location* below).
    - Settings
-     - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM running Teamwork Analytics (Note: RDP is disabled by default for enhanced security).
+     - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM running Teamwork Analytics.
        > Note: RDP is disabled by default for enhanced security.
      - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
      - **Azure Application details** - Use the details you generated when [registering an application](registerapplication.md).
