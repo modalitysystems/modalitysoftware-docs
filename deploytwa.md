@@ -38,5 +38,5 @@ Azure Resource Manager analyses the difference from past deployments, and only c
 Teamwork Analytics can be managed via its Resource Group in [Azure Portal](https://portal.azure.com/).
 
 * To pause the data gathering process, use Azure Portal to navigate to the virtual machine (usually named *twa-vm*) inside the Resource Group, and click "Stop". To resume the process, click "Start". Teamwork Analytics runs as a Windows service that starts automatically with the Virtual Machine.
-* To uninstall Teamwork Analytics completely, **including deleting Teams usage data**, delete the Resource Group. You will be prompted to type in the name of the Resource Group for confirmation.
+* To uninstall Teamwork Analytics completely, **including deleting Teams usage data**, simply delete the Resource Group. This will delete all the resources therein. You will be prompted to type in the name of the Resource Group for confirmation.
   > **Note: This will delete all the Teams usage data gathered by Teamwork Analytics!**
