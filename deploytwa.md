@@ -8,17 +8,17 @@ Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that 
 
 ## Installation
 
-1. Click on the link provided to you by post-sales (it may be a button that says "Deploy to Azure"). You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
+1. Click on the ARM template link provided to you by post-sales (it may be a button that says "Deploy to Azure"). You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
    ![Custom deployment form](images/deployForm.png)
-2. Carefully fill in each field, referring to the tooltips for extra guidance. 
+2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
-     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. When applying an upgrade, choose the Resource Group that already contains Teamwork Analytics.
+     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. *When applying an upgrade: choose the Resource Group that already contains Teamwork Analytics.*
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see *Location* below).
    - Settings
-     - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM (Note: RDP is disabled by default for enhanced security).
-     - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the VM 
+     - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM running Teamwork Analytics (Note: RDP is disabled by default for enhanced security).
        > Note: RDP is disabled by default for enhanced security.
+     - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
      - **Azure Application details** - Use the details you generated when [registering an application](registerapplication.md).
      - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. By default this field uses a code, `[subscription().tenantId]`, that will be automatically replaced with Tenant ID of the chosen subscription.
        > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you **must** delete the contents of this field and enter the correct Tenant ID.
