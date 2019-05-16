@@ -20,9 +20,9 @@ Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that 
        > Note: RDP is disabled by default for enhanced security.
      - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
      - **Azure Application details** - Use the details you generated when [registering an application](registerapplication.md).
-     - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. By default this field uses a code, `[subscription().tenantId]`, that will be automatically replaced with Tenant ID of the chosen subscription.
+     - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. By default this field uses `[subscription().tenantId]`, which gets automatically replaced with Tenant ID of the chosen subscription.
        > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you **must** delete the contents of this field and enter the correct Tenant ID.
-     - **Location** - The geographical location of the Azure resources that will host Teamwork Analytics. By default this field uses a code, `[resourceGroup().location]`, that will be automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
+     - **Location** - The geographical location of the Azure resources that will host Teamwork Analytics. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
        > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
    
 3. Read the Terms and Conditions and click 'Purchase' (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
