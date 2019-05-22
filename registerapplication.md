@@ -9,7 +9,7 @@ This document describes the process of registering Teamwork Analytics Client as 
 ### Register Teamwork Analytics with Azure Active Directory
 1. Sign in to the [Azure Portal](https://azure.portal.com)
 1. Select the **Azure Active Directory** service from the navigation pane on the left 
-1. Select **App Registrations** and click **New Registration** (Take care not to select **New Registration (Legacy)**) as these instructions do not apply to them
+1. Select **App Registrations** and click **New Registration** (Take care not to select **App Registrations (Legacy)** as these instructions do not apply to them)
 1. Enter the following application registration details
    * **Name** - A meaningfull user-facing name for the application such as **Modality Teamwork Analytics**
    * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only**
