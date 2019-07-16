@@ -4,7 +4,7 @@ The Teamwork Analytics Technical Documentation site provides access to all of th
 
 ## [Registering Teamwork Analytics as an Azure Application](registerapplication.md)
 
-This guide shows you how to register an application using the Azure Portal as a first step for the deployment of Teamwork Analytics.
+This guide shows you how to register an application using the Azure Portal as a first step for the deployment of Teamwork Analytics...
 
 ## [Deploy Teamwork Analytics](deploytwa.md)
 
