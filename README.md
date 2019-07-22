@@ -9,3 +9,7 @@ This guide shows you how to register an application using the Azure Portal as a 
 ## [Deploy Teamwork Analytics](deploytwa.md)
 
 Teamwork Analytics is easy to deploy and makes use of Azure Resource Management templates. Click on the link above to find out more. Note: You must register an Azure Application first.
+
+## [Deploy TWA Bot](twabot.md)
+
+Requirements and instructions for optionally deploying TWA Bot.
