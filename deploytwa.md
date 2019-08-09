@@ -6,6 +6,16 @@ Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that 
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
+This ARM Template will install resources in your Azure tenant. The template will deploy the following resources:
+
+| Service Type  | Description   |
+| ------------- | ------------- |
+| Virtual Machines  | 1 B2MS (2 vCPU(s), 8 GB RAM) x 730 Hours; Windows – (OS only); Pay as you go; 1 managed OS disks – P10 |
+| Azure SQL Database  | Single Database, DTU purchase model, Standard tier, S2: 50 DTUs, 250 GB included storage per DB, 1 Database(s) x 730 Hours, 5 GB retention  |
+| Virtual Network  | 100 GB data transfer from region to region  |
+| IP Addresses  | 1 Dynamic IP Addresses, 0 Static IP Addresses  |
+| Storage Accounts  | Block Blob Storage, General Purpose V1, LRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+
 ## Installation
 
 1. Click on the ARM template link provided to you by post-sales (it may be a button that says "Deploy to Azure"). You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
