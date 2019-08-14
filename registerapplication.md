@@ -39,6 +39,7 @@ This document describes the process of registering Teamwork Analytics Client as 
 1. Ensure that the permission type is set to "Application permissions" and not "Delegated permissions"
 ![set permission type](images/permissionTypes.png)
 1. Select the follow 6 permissions from Microsoft.Graph
+   * ChannelMessages.Read.All
    * Directory.Read.All
    * Files.Read.All
    * Group.Read.All
