@@ -2,7 +2,7 @@
 
 Thank you for installing the Modality Teams Governance and Security Power BI app. 
 
-> Today, the app only shows demo data to enable you to navigate the app and explore how the app visualises Microsoft Teams information to drive better governance and security practices. If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details.
+> Today, the app only shows demo data to enable you to navigate the app and explore how the app visualises Microsoft Teams information to drive better governance and security practices. If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
 
 ## How to use the app
 
@@ -26,7 +26,7 @@ You can filter information using the top bar. For instance, on the *Housekeeping
 
 ### Visual Filtering
 
-You can also click on visuals to set filters. Try click the *Teams and Owners* ring to only show *Teams with One Owner*. The list of Teams will now only show those Teams which need remediation (based on best practice to have more than 1 Team owner).
+You can also click on visuals to set filters. Try clicking the *Teams and Owners* ring to only show *Teams with One Owner*. The list of Teams will now only show those Teams which need remediation (based on best practice to have more than 1 Team owner).
 
 ### Drillthrough
 Some pages support Drillthrough, enabling you to move between different reports to gain more detail. Start with the *Interactions* page. Choose a country from the top-left visual, for instance *Australia*. Let's say you are interesed in knowing more about the message usage for Australia. Right-click on the *Australia* slice and choose *Drillthrough > Month on Month Graph*. This shows more detail about usage in Australia. 
