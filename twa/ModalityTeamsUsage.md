@@ -12,7 +12,7 @@ Once installed, the app will show in your [Power BI Apps](https://app.powerbi.co
 
 Clicking it will open the Getting Started dialog. Choose the **Explore app** button on the left hand side. We have pre-populated the app with sample data to enable you to explore the app.
 
-![alt text](images/usage/getstarted.png "Get Started Dialog")
+![alt text](images/usage/connectordemo.png "Get Started Dialog")
 
 You can explore the app using the navigation on the left hand side:
 
