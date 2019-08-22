@@ -35,3 +35,15 @@ Some pages support Drillthrough, enabling you to move between different reports 
 When looking at graphs, you can also use insights to attempt to explain changes. Right-click on a point in a graph, choose *Analyze > Explain*:
 
 ![alt text](images/usage/explain.png "Analysis")
+
+## How to connect the app to your data
+
+Once you have configured your Teamwork Analytics data collection engine you can connect the PowerBi app to your live data.  To do this go click the app again in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list.  When the prompt appears, this time click **Connect your data** button.
+
+You will then be prompted to enter the connection details for your server and database.
+
+![alt text](images/usage/connecttodata.png "Analysis")
+
+When prompted enter enter your database connection credentials.
+
+![alt text](images/usage/credentials.png "Analysis")
