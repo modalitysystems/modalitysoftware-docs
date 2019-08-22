@@ -8,7 +8,7 @@ To find out more about Modality Software, visit [https://www.modalitysoftware.co
 # Docs Directory
 ---
 
->[Teamwork Analytics](twa/readme.md)
+>[Teamwork Analytics](twa/README.md)
 
->[CreateTeam](createTeam/readme.md)
+>[CreateTeam](createTeam/README.md)
 
