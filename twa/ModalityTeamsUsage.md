@@ -2,7 +2,7 @@
 
 Thank you for installing the Modality Teams Usage Power BI app. 
 
-> Today, the app only shows demo data to enable you to navigate the app and explore how the app visualises Microsoft Teams information to monitor and improve user adoption of Microsoft Teams. If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
+> This application reports on information from the Modality Teamwork Analytics data engine.  Initially it will report on demo data, allowing you to navigate the app and explore how the app visualises Microsoft Teams information to monitor and improve user adoption of Microsoft Teams.  If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
 
 ## How to use the app
 
@@ -10,7 +10,7 @@ Once installed, the app will show in your [Power BI Apps](https://app.powerbi.co
 
 ![alt text](images/usage/icon.png "Modality Teams Usage Icon")
 
-Clicking it will open the Getting Started dialog. Choose the **Explore app** button on the left hand side. We have pre-populated the app with sample data to enable you to explore the app.
+Clicking on the app will take you to the **Getting Started** dialog. Choose the **Explore app** button in the middle. We have pre-populated the app with sample data to enable you to explore the app.
 
 ![alt text](images/usage/connectordemo.png "Get Started Dialog")
 
@@ -38,12 +38,16 @@ When looking at graphs, you can also use insights to attempt to explain changes.
 
 ## How to connect the app to your data
 
-Once you have configured your Teamwork Analytics data collection engine you can connect the PowerBi app to your live data.  To do this go click the app again in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list.  When the prompt appears, this time click **Connect your data** button.
+> This step requires you to have the Modality Teamwork Analytics data engine.  For more information please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
+
+Once you have configured the Teamwork Analytics data collection engine for your environment you can connect the PowerBi app to your live data.  To do this go click the app again in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list.  When the prompt appears, this time click **Connect your data** button.
 
 You will then be prompted to enter the connection details for your server and database.
-
+  
 ![alt text](images/usage/connecttodata.png "Analysis")
 
-When prompted enter enter your database connection credentials.
+When prompted enter enter your database connection credentials.  Set the **Privacy level setting for this data source** according to your requirements for sharing data in your organization, or if not sure set to 'None'
 
 ![alt text](images/usage/credentials.png "Analysis")
+
+Once connected you can proceed to the reports as before, but now the data will be showing information from your environment.
