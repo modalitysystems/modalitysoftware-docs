@@ -46,7 +46,7 @@ You will then be prompted to enter the connection details for your server and da
   
 ![alt text](images/usage/connecttodata.png "Analysis")
 
-When prompted enter enter your database connection credentials.  Set the **Privacy level setting for this data source** according to your requirements for sharing data in your organization, or if not sure set to 'None'
+When prompted enter your database connection credentials.  Set the **Privacy level setting for this data source** according to your requirements for sharing data in your organization, or if not sure set to 'None'
 
 ![alt text](images/usage/credentials.png "Analysis")
 
