@@ -50,4 +50,4 @@ When prompted enter enter your database connection credentials.  Set the **Priva
 
 ![alt text](images/usage/credentials.png "Analysis")
 
-Once connected you can proceed to the reports as before, but now the data will be showing information from your environment.
+Once connected you can proceed to the reports as before, but now you should be seeing information from your environment.
