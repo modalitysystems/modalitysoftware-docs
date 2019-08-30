@@ -24,7 +24,7 @@ Once the application has been registered, submit the Application ID of your newl
 
 Teamwork Analytics uses an Azure Resource Management (ARM) template to ease deployment. The ARM template ensures that all data is held on your Azure tenant, and is a simple way to deploy and secure several resources on your Azure tenant. Using the information provided to you from the previous step, follow the [deployment steps here](deploytwa.md).
 
-One the deployment has completed, review the resources which have been created within the resource group. One of the resources is a SQL Server with a name similar to *twa-aaa1bb2c3dd4e*. Make a note of this name.
+When the deployment has completed, review the resources which have been created within the resource group. One of the resources is a SQL Server with a name similar to *twa-aaa1bb2c3dd4e*. Make a note of this name.
 
 Once you have completed this step you should provide Modality System with the following information:
 
