@@ -19,22 +19,19 @@ Clicking it will open the Getting Started dialog. Choose the **Explore app** but
 
 You can explore the app using the navigation on the left hand side:
 
-![alt text](images/yammer/Summary.png "Housekeeping")
+![Summary](images/yammer/summary.png "Summary")
 
 ## Things to try
 
 ### Filtering
 
-You can filter information using the top bar. For instance, on the *Housekeeping* page, try changing the *Country* dropdown to *Australia*. All other visuals on the page will change to now only show information about Teams related to users with their country set to Australis.
+You can filter information using the top bar. For instance, on the *Summary* page, try changing the *Country* dropdown to *Australia*. All other visuals on the page will change to now only show information about Yammer related to users with their country set to Australia.
 
 ### Visual Filtering
 
-You can also click on visuals to set filters. Try clicking the *Teams and Owners* ring to only show *Teams with One Owner*. The list of Teams will now only show those Teams which need remediation (based on best practice to have more than 1 Team owner).
-
-### Drillthrough
-Some pages support Drillthrough, enabling you to move between different reports to gain more detail. Start with the *Interactions* page. Choose a country from the top-left visual, for instance *Australia*. Let's say you are interesed in knowing more about the message usage for Australia. Right-click on the *Australia* slice and choose *Drillthrough > Month on Month Graph*. This shows more detail about usage in Australia. 
+You can also click on visuals to set filters. Try clicking the *Top Departments by Posted Messages in the last 30 days* ring to only show *Consulting(UK)*. The list of users and locations will now only show Yammer usage for that specific department.
 
 ### Insights
 When looking at graphs, you can also use insights to attempt to explain changes. Right-click on a point in a graph, choose *Analyze > Explain*:
 
-![alt text](images/governance/explain.png "Analysis")
+![alt text](images/yammer/explain.png "Analysis")
