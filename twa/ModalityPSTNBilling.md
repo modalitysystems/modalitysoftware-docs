@@ -1,6 +1,6 @@
 # Modality PSTN Billing Usage
 
-Thank you for installing the Modality Online Meeting Usage Power BI app. 
+Thank you for installing the Modality PSTN Billing Usage Power BI app. 
 
 > This application reports on information from the Modality Teamwork Analytics data engine. 
 It comes pre-installed with demo data, allowing you to navigate the app and explore how the 
