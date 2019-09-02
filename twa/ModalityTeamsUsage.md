@@ -10,7 +10,7 @@ Once installed, the app will show in your [Power BI Apps](https://app.powerbi.co
 
 ![alt text](images/usage/icon.png "Modality Teams Usage Icon")
 
-Clicking on the app will take you to the **Getting Started** dialog. Choose the **Explore app** button in the middle. We have pre-populated the app with sample data to enable you to explore the app.
+Clicking on the app will take you to the **Getting Started** dialog. Choose the **Explore with sample data** button. We have pre-populated the app with sample data to enable you to explore the app.
 
 ![alt text](images/usage/connectordemo.png "Get Started Dialog")
 
