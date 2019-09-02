@@ -1,4 +1,4 @@
-# Modality Modality Online Meeting Usage
+# Modality Online Meeting Usage
 
 Thank you for installing the Modality Online Meeting Usage Power BI app. 
 
