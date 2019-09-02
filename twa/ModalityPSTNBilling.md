@@ -11,7 +11,7 @@ If you have already have Teamwork Analytics deployed, follow the deployment inst
 
 Once installed, the app will show in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list:
 
-![alt text](images/pstnbilling/icon.png "Modality Online Meeting Usage Icon")
+![Modality Online Meeting Usage Icon](images/pstnbilling/icon.png "Modality Online Meeting Usage Icon")
 
 Clicking it will open the Getting Started dialog. Choose the **Explore app** button on the left hand side. We have pre-populated the app with sample data to enable you to explore the app.
 
