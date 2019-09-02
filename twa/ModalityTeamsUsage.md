@@ -2,7 +2,7 @@
 
 Thank you for installing the Modality Teams Usage Power BI app. 
 
-> This application reports on information from the Modality Teamwork Analytics data engine.  Initially it will report on demo data, allowing you to navigate the app and explore how the app visualises Microsoft Teams information to monitor and improve user adoption of Microsoft Teams.  If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
+> This application reports on information from the Modality Teamwork Analytics data engine.  It comes pre-installed with demo data, allowing you to navigate the app and explore how the app visualises Microsoft Teams information to monitor and improve user adoption of Microsoft Teams.  If you have already have Teamwork Analytics deployed, follow the deployment instructions to connect these reports to your data. If, after reviewing the demo, you wish to proceed to purchase Teamwork Analytics for use with your own data, or deploy a trial in your tenant please [contact us](https://modalitysoftware.com/contact) for further details. [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
 
 ## How to use the app
 
