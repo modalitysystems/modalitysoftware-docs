@@ -3,7 +3,7 @@
 
 docs.modalitysoftware.com is the home for Modality Software documentation aimed at IT professionals.
 
-To find out more about Modality Software, visit [https://www.modalitysoftware.com](modalitysoftware.com).
+To find out more about Modality Software, visit [modalitysoftware.com](https://www.modalitysoftware.com).
 
 # Docs Directory
 ---
