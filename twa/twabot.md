@@ -4,7 +4,7 @@
 
 Teamwork Analytics Automation Engine is a hosted service provided by Modality Systems.
 
-The bot is accessed via Microsoft Teams and must be installed in your tenant before it can be used. You should have the setting "Allow external apps in Microsoft Teams" enabled to allow this to happen.
+The service is accessed via Microsoft Teams as a bot and must be installed in your tenant before it can be used. You should have the setting "Allow external apps in Microsoft Teams" enabled to allow this to happen.
 
 Modality Systems will provide you with the application manifest file for you to install.
 
