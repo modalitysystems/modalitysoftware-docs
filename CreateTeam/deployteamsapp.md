@@ -34,9 +34,13 @@ For the App to be able to create teams in the target Teams Tenant, it is a requi
    
    ![Screenshot](images/upload-open.png)
 
-4. The App should then appear within your company Apps section
+4. The App should then appear within your companies Apps section
    
    ![Screenshot](images/app-deployed.png)
+   
+> NOTE: To update an App that has already been installed, navigate to the App within your companies Apps section then hover your mouse pointer over the app, click on the ... in the top right corner and click Update
+
+   ![Screenshot](images/app-update.png)
 
 ## Allow App to be installed within Microsoft Teams
 
