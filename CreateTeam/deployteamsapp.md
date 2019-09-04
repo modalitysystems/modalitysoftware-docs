@@ -2,7 +2,7 @@
 
 Create Team is provided as an Microsoft Teams App that needs to be uploaded to your organisation's Apps section within Microsoft Teams.
 
-** NOTE Some of the steps below require making changes to your Microsoft Online Tennant which can sometimes take a few hours to take effect. ***
+> NOTE: Some of the steps below require making changes to your Microsoft Online Tennant which can sometimes take a few hours to take effect
 
 ## Admin Consent for CreateTeam App API
 
