@@ -1,12 +1,16 @@
-# TWA Bot
+# Teamwork Analytics Automation Engine
 
 ## Requirements
 
-There are no additional hardware requirements to use the TWA Bot; it is a hosted service provided by Modality Systems.
+Teamwork Analytics Automation Engine is a hosted service provided by Modality Systems.
 
 The bot is accessed via Microsoft Teams and must be installed in your tenant before it can be used. You should have the setting "Allow external apps in Microsoft Teams" enabled to allow this to happen.
 
 Modality Systems will provide you with the application manifest file for you to install.
+
+Teamwork Analytics Automation Engine is an additional module which is not installed by default. For customers who wish to use Teamwork Analytics Automation Engine, Modality Systems will work with you to install a number of Azure Functions to your Azure tenant. 
+
+Azure Functions are event-driven serverless compute functions which execute on your tenant, read the TWA database to identify who to notify, and then instruct the Modality-hosted service to send messages to your users. They typically add little or no overal cost to a Azure deployment. [Read more about pricing for Azure Functions](https://azure.microsoft.com/en-gb/pricing/details/functions/).
 
 ## Installing TWA Bot
 
