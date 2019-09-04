@@ -4,7 +4,7 @@ Create Team is provided as an Microsoft Teams App that needs to be uploaded to y
 
 ** NOTE Some of the steps below require making changes to your Microsoft Online Tennant which can sometimes take a few hours to take effect. ***
 
-## Admin Consent for Team Governance App API
+## Admin Consent for Create Team App API
 
 For the App to be able to create teams in the target Teams Tenant, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
 
