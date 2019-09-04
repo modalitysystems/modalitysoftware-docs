@@ -22,5 +22,5 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 ##### [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
 
->[CreateTeam](createTeam/README.md)
+>[CreateTeam](CreateTeam/README.md)
 
