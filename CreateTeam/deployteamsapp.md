@@ -1,10 +1,10 @@
-# How to deploy Create Team App into Teams
+# How to deploy CreateTeam App into Teams
 
 Create Team is provided as an Microsoft Teams App that needs to be uploaded to your organisation's Apps section within Microsoft Teams.
 
 ** NOTE Some of the steps below require making changes to your Microsoft Online Tennant which can sometimes take a few hours to take effect. ***
 
-## Admin Consent for Create Team App API
+## Admin Consent for CreateTeam App API
 
 For the App to be able to create teams in the target Teams Tenant, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
 
@@ -92,7 +92,7 @@ Further information about managing app setup policies in Microsoft Teams is avai
 
 > NOTE A user can only be assigned to 1 app settings policy so this will remove them from the policy that they are currenlty assigned too
 
-## User Consent for Create Team App Client
+## User Consent for CreateTeam App Client
 
 When a user first launches the App from within Microsoft Team, they are required to provide consent for their details to be accessed by the App
 
