@@ -14,6 +14,7 @@ This document describes the process of registering Teamwork Analytics Client as 
    * **Name** - must be **Modality Teamwork Analytics** (this name is important for the application to work correctly)
    * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only**
    * **Redirect URI** - The authorization endpoint used by Teamwork Analytics - Recommend setting this to **https://login.live.com/oauth20_desktop.srf** 
+   * (The **Redirect URI Type** dropdown can be left as the default value of **Web**)
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 ![application registration](images/applicationRegistration.png)
 1. Take note of the **ApplicationID** as this will be required futher in the deployment process
