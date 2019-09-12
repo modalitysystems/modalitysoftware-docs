@@ -116,3 +116,11 @@ If this feature is enabled for your tenant you can enable users in the following
 8. Select the Guest Admin role 
 9. Assign.
 
+## Changing default settings
+
+This application looks at your default tenant settings to determine the default value of certain fields.
+To change your default tenant settings read the following guide.
+https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-rest-1.0
+
+The following fields look at tenant default values
+1. External Checkbox looks at AllowToAddGuests value
