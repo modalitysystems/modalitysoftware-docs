@@ -10,7 +10,7 @@ For the App to be able to create teams in the target Teams Tenant, it is a requi
 
 1. This is achieved by clicking on the following link and logging in with a Global Administrator account
 
-   [Provide Admin Consent](https://login.microsoftonline.com/common/adminconsent?client_id=d992e819-1a67-4840-89d3-1cee8cd4e735)
+   [Provide Admin Consent](https://login.microsoftonline.com/common/adminconsent?client_id=d992e819-1a67-4840-89d3-1cee8cd4e735&redirect_uri=https://tgmodprod.azureedge.net/AdminConsent)
 
 2. From here a summary screen showing what is required will be displayed
 
