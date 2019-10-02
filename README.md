@@ -1,12 +1,11 @@
-# Welcome
----
 
-docs.modalitysoftware.com is the home for Modality Software documentation
+docs.modalitysoftware.com is the home for Modality Software documentation.
 
 To find out more about Modality Software, visit [modalitysoftware.com](https://www.modalitysoftware.com).
 
-## CreateTeam
 ---
+
+## CreateTeam
 
 >[CreateTeam Deployment](CreateTeam)
 
