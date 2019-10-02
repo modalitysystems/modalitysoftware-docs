@@ -5,24 +5,30 @@ docs.modalitysoftware.com is the home for Modality Software documentation
 
 To find out more about Modality Software, visit [modalitysoftware.com](https://www.modalitysoftware.com).
 
-# Docs Directory
+## CreateTeam
 ---
 
->[Teamwork Analytics Engine](twa/README.md)
+>[CreateTeam Deployment](CreateTeam)
 
->[Teamwork Analytics Automation Engine](twa/twabot)
+## Teamwork Analytics Backend
 
-#### Teamwork Analytics Reporting Modules
+>[Teamwork Analytics Data Engine Deployment](twa/README.md)
 
-##### [Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
+>[Teamwork Analytics Automation Engine Deployment](twa/twabot)
 
-##### [Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
+## Teamwork Analytics PowerBI Apps
 
-##### [Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
+These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-##### [Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+#####   [Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
 
-##### [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+#####   [Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
 
->[CreateTeam](CreateTeam)
+#####   [Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
+
+#####   [Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+
+#####   [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+
+
 
