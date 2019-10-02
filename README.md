@@ -21,15 +21,15 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-#####   [Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
+##   [Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
 
-#####   [Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
+##   [Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
 
-#####   [Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
+##   [Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
 
-#####   [Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+##   [Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
 
-#####   [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+##   [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
 
 
 
