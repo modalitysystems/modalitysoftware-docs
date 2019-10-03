@@ -10,6 +10,12 @@ This section explains some of the different API's we use and data we collect, an
 
 In all cases, we collect metadata of activity (time of posting, channel, team poster, number of posts/reactions) not the actual content of messages.
 
+### Collecting Microsoft Teams Detailed Activity Metadata for Teams and Channels (List channel messages)
+
+For Teams/Channels and SharePoint/File Activity, the API's allow us to poll for the actual messages posted in every single channel since each Team and channels creation (provided the data has not been deleted by a retention policy). For this reason, we can report on Team/Channel activity right from when the first team was created in your organisation, straight after install. This data does not need to "build up" like Private Chat, Calls and Meetings data.
+
+It is this detailed activity metadata that lets us report in granular detail on team activity by active directory group. So reports on Team activity will have more detail, more filters and will have history to the extent to which the customer wants to store it.
+
 ### Collecting Microsoft Teams Summary Activity Reports - Private Chat, Calls and Meetings (getTeamsUserActivityCounts)
 
 Our Microsoft Teams reporting uses Microsoft Teams and SharePoint Graph API's to get detailed reports of Microsoft Teams Activity.
@@ -26,12 +32,6 @@ Therefore, for these metrics, we will build more data to report on from when Tea
 - Calls
 - Meetings
 
-So any report page that reports on these will build data over time from when Teamwork Analytics is installed.
-
-### Collecting Microsoft Teams Detailed Activity Metadata for Teams and Channels (List channel messages)
-
-For Teams/Channels and SharePoint/File Activity, the API's allow us to poll for the actual messages posted in every single channel since each Team and channels creation (provided the data has not been deleted by a retention policy). For this reason, we can report on Team/Channel activity right from when the first team was created in your organisation, straight after install. This data does not need to "build up" like Private Chat, Calls and Meetings data.
-
-It is this detailed activity metadata that lets us report in granular detail on team activity by active directory group.
+So any report page that reports on Private Chat, Calls or Meetings will build data over time from when Teamwork Analytics is installed.
 
 We hope/envisage that as the API's offer more access we will be able to report in even more detail in the future.
