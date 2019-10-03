@@ -7,9 +7,17 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 ---
 
-## CreateTeam
+# CreateTeam
 
 >[CreateTeam Deployment](CreateTeam)
+
+--
+
+# Teamwork Analytics
+
+>[Teamwork Analytics Architecture](twa/README.md)
+
+>[Teamwork Analytics Data Collection](twa/README.md)
 
 ## Teamwork Analytics Backend
 
