@@ -16,22 +16,22 @@ For Teams/Channels and SharePoint/File Activity, the API's allow us to poll for 
 
 It is this detailed activity metadata that lets us report in granular detail on team activity by active directory group. So reports on Team activity will have more detail, more filters and will have history to the extent to which the customer wants to store it.
 
-### Collecting Microsoft Teams Summary Activity Reports - Private Chat, Calls and Meetings (getTeamsUserActivityCounts)
+### Collecting Microsoft Teams Summary Activity Reports - Private Chat, Calls and Meetings (getTeamsUserActivityUserDetail)
 
 Our Microsoft Teams reporting uses Microsoft Teams and SharePoint Graph API's to get detailed reports of Microsoft Teams Activity.
 
-Microsoft surface some detail in **summary reports** which are correct at time of pulling from the API. These are what you typically see in out of the box Office 365 reporting. The supported values for collecting a summary period are last 7 days, 30 days, 90 days, and 180 days, relative to the time you pull from the API.
+Microsoft provide some usage detail in **summary reports** which are correct at time of pulling from the API. These are what you typically see in out of the box Office 365 reporting. The supported values for collecting a summary period are last 7 days, 30 days, 90 days, and 180 days, relative to the time you pull from the API. These to not breakdown the usage by user.
 
-For this data, we cannot query for a particular period in the past, only the last 7, 30, 90 or 180 days at the time of API query. So when Teamwork Analytics is deployed, we daily pull these metrics and over time can build a calculation of the difference. 
+You can also get specify a date range on this API for which you would like to view the users who performed any activity. This report is only available for the past 30 days. We use this data source as it gives us the user detail which allows us to report in more detail.
 
-For example, if we pull the 7 day period every day, we can get a daily change on the metric to report on. These summaries are not filtered by AD group but are tenant wide.
+The data returned gives us daily user usage information for the 30 day historical period. Meaning at point of install we can report on the previous 30 days. From install forward, we pull this summary daily to get daily change in the database, which then allows us to report weekly and monthly usage/change.
 
-Therefore, for these metrics, we will build more data to report on from when Teamwork Analytics is installed. Most notably this is how we get usage information on
+Most notably this is how we get usage information on
 
 - Private Chat Messages
 - Calls
 - Meetings
 
-So any report page that reports on Private Chat, Calls or Meetings will build data over time from when Teamwork Analytics is installed.
+So any report page that reports on Private Chat, Calls or Meetings will initially report on the previous 30 days, then build data over time from when Teamwork Analytics is installed.
 
 We hope/envisage that as the API's offer more access we will be able to report in even more detail in the future.
