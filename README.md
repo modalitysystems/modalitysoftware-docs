@@ -17,7 +17,7 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 >[Teamwork Analytics Architecture](twa/README.md)
 
->[Teamwork Analytics Data Collection](twa/README.md)
+>[Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
 
 ## Teamwork Analytics Backend
 
