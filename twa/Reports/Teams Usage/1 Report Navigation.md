@@ -27,7 +27,7 @@ Contains advanced reporting including time intelligence based trend comparisons
 
 
 [[INSERT IMAGE]]
-Figure 1, Report Navigation Elements
+*Figure 1, Report Navigation Elements*
 
 
 1.	Power BI Logo and App Name
@@ -43,7 +43,7 @@ All Teamwork Analytics Report pages are laid out in a uniform manner with only a
 
 
 [[INSERT IMAGE]]
-Figure 2, Report Page Elements
+*Figure 2, Report Page Elements*
 
 
 ### 1.	Report Page Title
