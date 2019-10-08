@@ -39,7 +39,7 @@ Figure 1, Report Navigation Elements
 
 All Teamwork Analytics Report pages are laid out in a uniform manner with only a few exceptions to aid in ease of use and promote familiarity
 
-1.5  Page Elements
+## 1.5  Page Elements
 
 
 [[INSERT IMAGE]]
