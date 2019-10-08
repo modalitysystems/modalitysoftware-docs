@@ -160,6 +160,43 @@ Office Interaction - See Drill Throughs section
 Top Teams Usage by Office
 
 
+# 3.5 Department Activity
+Department Activity focusses on Users Team Activity by the Department they are in
+Includes drill throughs
+
+## 3.5.1 Page Visuals
+
+### 1.	Top Departments by Teams
+Number of Teams per AD Department based on Message Activity 
+
+### 2.	Top Departments by Channels
+Number of Channels per Department based on Message Activity
+
+### 3.	Top Departments by Mentions Received
+Number of Mentions Received per Department
+
+### 4.	Top Departments by Likes Received
+Number of Likes Received per Department
+
+### 5.	Top Departments by Channel Messages
+Number of Channel Messages per Department
+
+### 6.	Departments Creating Messages in Last 30 Days
+Number of Department Users are in that have created Channel Messages in the last 30 days
+
+### 7.	Departments in Public and Private Teams
+Number of Departments Users are in that have Message Activity in Public and Private Teams
+
+### 8.	Department Activity
+Number of Teams, Channels, Channel Messages etc per Department Users are in
+
+### 9.	Department Activity: Drill-throughs
+Month on Month Graph – see Drill Throughs section
+Month on Month Trend – see Drill Throughs section
+Department Interaction – see Drill Throughs section
+Top Teams Usage by Office
+
+
 
 # 3.6 Domain Activity
 Internal Domain activity focusses on internal Users Team activity by the Domain they are in
@@ -251,6 +288,7 @@ Includes drill through
 
 
 [[INSERT IMAGE]] *Figure 14: Guest Domain Activity*
+
 
 ### 1.	Top Guest Domains by Teams
 Number of Teams per Guest Domain based on Message Activity 
