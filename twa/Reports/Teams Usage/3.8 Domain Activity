@@ -1,0 +1,40 @@
+# 3.8 Guest Domain Activity
+Guest Domain activity focusses on Guest Users Team activity by the Guest Domain they are in
+Includes drill through
+
+## 3.8.1 Page Visuals
+
+
+[[INSERT IMAGE]] *Figure 14: Guest Domain Activity*
+
+
+### 1.	Top Guest Domains by Teams
+Number of Teams per Guest Domain based on Message Activity 
+
+### 2.	Top Guest Domains by Channels
+Number of Channels per Guest Domain based on Message Activity
+
+### 3.	Top Guest Domains by Mentions Received
+Number of Mentions Received per Guest Domain
+
+### 4.	Top Guest Domains by Likes Received
+Number of Likes Received per Guest Domain
+
+### 5.	Top Guest Domains by Channel Messages
+Number of Channel Messages per Guest Domain
+
+### 6.	Guest Domains Creating Messages in Last 30 Days
+Number of Guest Domains Users are in that have created Channel Messages in the last 30 days
+
+### 7.	Guest Domains in Public and Private Teams
+Number of Guest Domains Users are in that have Message Activity in Public and Private Teams
+
+### 8.	Guest Domain Activity
+Number of Teams, Channels, Channel Messages etc per Guest Domain Users are in
+
+### 9.	Adoption Group Activity: Drill-throughs
+Guest Domain Interaction
+
+### 10.	Teams
+All Teams Users with a Guest Domain are active in
+
