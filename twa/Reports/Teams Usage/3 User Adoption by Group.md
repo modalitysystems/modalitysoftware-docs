@@ -161,5 +161,44 @@ Top Teams Usage by Office
 
 
 
+# 3.6 Domain Activity
+Internal Domain activity focusses on internal Users Team activity by the Domain they are in
+Includes drill throughs
+
+## 3.6.1 Page Visuals
+
+### 1.	Top Domains by Teams
+Number of Teams per Domain based on Message Activity 
+
+### 2.	Top Domains by Channels
+Number of Channels per Domain based on Message Activity
+
+### 3.	Top Domains by Mentions Received
+Number of Mentions Received per Domain
+
+### 4.	Top Domains by Likes Received
+Number of Likes Received per Domain
+
+### 5.	Top Domains by Channel Messages
+Number of Channel Messages per Domain
+
+### 6.	Domains Creating Messages in Last 30 Days
+Number of Domains Users are in that have created Channel Messages in the last 30 days
+
+### 7.	Domains in Public and Private Teams
+Number of Domains Users are in that have Message Activity in Public and Private Teams
+
+### 8.	Domain Activity
+Number of Teams, Channels, Channel Messages etc per Domain Users are in
+
+### 9.	Domain Activity: Drill-throughs
+Month on Month Graph – see Drill Throughs section
+Month on Month Trend – see Drill Throughs section
+Domain Interaction – see Drill Throughs section
+Top Teams Usage by Office
+
+
+
+
  
 
