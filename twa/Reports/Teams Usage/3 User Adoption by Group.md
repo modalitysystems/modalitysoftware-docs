@@ -125,7 +125,7 @@ Includes drill throughs
 
 
 [[INSERT IMAGE]]
-•Figure 10: Office Activity•
+*Figure 10: Office Activity*
 
 
 ### 1.	Top Offices by Teams
@@ -192,13 +192,205 @@ Number of Domains Users are in that have Message Activity in Public and Private 
 Number of Teams, Channels, Channel Messages etc per Domain Users are in
 
 ### 9.	Domain Activity: Drill-throughs
-Month on Month Graph – see Drill Throughs section
-Month on Month Trend – see Drill Throughs section
-Domain Interaction – see Drill Throughs section
+Month on Month Graph - see Drill Throughs section
+Month on Month Trend - see Drill Throughs section
+Domain Interaction - see Drill Throughs section
 Top Teams Usage by Office
 
 
+# 3.7 Adoption Group Activity
+Custom User Adoption Group (UA Group) activity focusses on UA Group Users Team activity by the UA Group they are in
+Includes drill throughs
+
+## 3.7.1 Page Visuals
+
+
+[[INSERT IMAGE]] *Figure 13: Adoption Group Activity*
+
+
+### 1.	Top UA Groups by Teams
+Number of Teams per UA Group based on Message Activity 
+
+### 2.	Top UA Groups by Channels
+Number of Channels per UA Group based on Message Activity
+
+### 3.	Top UA Groups by Mentions Received
+Number of Mentions Received per UA Group
+
+### 4.	Top UA Groups by Likes Received
+Number of Likes Received per UA Group
+
+### 5.	Top UA Groups by Channel Messages
+Number of Channel Messages per UA Group
+
+### 6.	UA Groups Creating Messages in Last 30 Days
+Number of UA Group Users are in that have created Channel Messages in the last 30 days
+
+### 7.	UA Groups in Public and Private Teams
+Number of UA Group Users are in that have Message Activity in Public and Private Teams
+
+### 8.	Adoption Group Activity
+Number of Teams, Channels, Channel Messages etc per UA Group Users are in
+
+### 9.	Adoption Group Activity: Drill-throughs
+Month on Month Graph – see Drill Throughs section
+Month on Month Trend – see Drill Throughs section
+Top Teams Usage by Office
+
+### 10.	Adoption Group Users
+All Users in all UA Groups
+
+ 
+
+
+# 3.8 Guest Domain Activity
+Guest Domain activity focusses on Guest Users Team activity by the Guest Domain they are in
+Includes drill through
+
+## 3.8.1 Page Visuals
+
+
+[[INSERT IMAGE]] *Figure 14: Guest Domain Activity*
+
+### 1.	Top Guest Domains by Teams
+Number of Teams per Guest Domain based on Message Activity 
+
+### 2.	Top Guest Domains by Channels
+Number of Channels per Guest Domain based on Message Activity
+
+### 3.	Top Guest Domains by Mentions Received
+Number of Mentions Received per Guest Domain
+
+### 4.	Top Guest Domains by Likes Received
+Number of Likes Received per Guest Domain
+
+### 5.	Top Guest Domains by Channel Messages
+Number of Channel Messages per Guest Domain
+
+### 6.	Guest Domains Creating Messages in Last 30 Days
+Number of Guest Domains Users are in that have created Channel Messages in the last 30 days
+
+### 7.	Guest Domains in Public and Private Teams
+Number of Guest Domains Users are in that have Message Activity in Public and Private Teams
+
+### 8.	Guest Domain Activity
+Number of Teams, Channels, Channel Messages etc per Guest Domain Users are in
+
+### 9.	Adoption Group Activity: Drill-throughs
+Guest Domain Interaction
+
+### 10.	Teams
+All Teams Users with a Guest Domain are active in
+
+ 
+
+# 3.9 Team Champions
+Team Champions focuses on Users ranked by an Activity score. By default, the Top Champion per Department is listed but it’s possible to see the Top 1, 2, 3, etc Team Champions per Department by using the Top X Champions drop down.
+
+## 3.9.1 Page Visuals
+
+
+[[INSERT IMAGE]] *Figure 15: Team Champions*
+
+
+### 1.	Team Champions
+Team Champion details including Department, Country, Location and Team activity contributing to their score
+
+### 2.	Top X Champions
+Dropdown list for selecting which Team Champion level to display 
+ 
+
+
+# 3.10 Weekly Activity Global
+Aggregated Weekly Teams activity including number of Teams, Channels, Users, Channel Messages, Chat Messages, etc 
+
+## 3.10.1  Page Visuals
+
+### 1.	Channel Messages by Week
+Number of Channel messages by week commencing date
+
+### 2.	Chat Messages by Week
+Number of private Chat messages by week commencing date
+
+### 3.	Calls by Week
+Number of Calls made using Teams by week commencing date
+
+### 4.	Meetings by Week
+Number of Meetings using Teams by week commencing date
+
+### 5.	Mentions Received by Week
+Number of Mentions received by week commencing date
+
+### 6.	Likes Received by Week
+Number of Likes Received by week commencing date
+
+### 7.	Weekly Activity
+All weekly Teams activity counts by week commencing date
+
+
+# 3.11 Inactive Users
+Reporting focussing on Users who have no User Activity Score 
+
+## 3.11.1  Page Visuals
+
+### 1.	Inactive Users
+Table of inactive Teams Users who don’t have a User Activity Score (see 3.11.2 User Activity Score Calculation)
+
+### 3.11.2 User Activity Score Calculation
+ 
+
+[[INSERT IMAGE]] *Calculation 3: User Activity Score*
 
 
  
+ 
+# 3.12 Response Rates
+Reporting focussing on Response Rates by Department, Country and User. Response Rates are the number of User reactions or replies to Channel messages they have been mentioned in  
+
+## 3.12.1  Page Visuals
+
+### 1.	Avg Response Rate by Department
+Visual showing average Response Rate for all Users in each Department
+
+### 2.	Avg Response Rate by Country
+Average Response Rate for all Users in each Country location
+
+### 3.	Response Rates
+Average Response Rate per User (see 3.12.2 Response Rate Calculation)
+
+## 3.12.2 Response Rate Calculation
+ 
+
+[[INSERT IMAGE]] *Calculation 4: Repsonse Rate*
+
+
+# 3.13 Multiple Group Team Activity
+Reporting on number of Channel messages by Country and Department and number of Countries and Departments in each Team
+
+## 3.13.1  Page Visuals
+
+
+[[INSERT IMAGE]] *Figure 19: Multiple Group Team Activity*
+
+
+### 1.	Team Messages by Country
+Number of Channel messages per Country
+
+### 2.	Team Messages by Department
+Number of Channel messages per Department
+
+### 3.	Teams by Number of Countries
+Number of Countries all time vs number of Countries in last 30 days per Team Users are in that have created Channel messages
+
+### 4.	Drill-throughs
+Drill-through from any table visual as Team, Country and Departments are used in the data
+
+### 5.	Countries
+Lists the Countries that make up the Countries All Time count in 4.
+
+### 6.	Teams by Number of Departments
+Number of Departments all time vs number of Departments in last 30 days per Team Users are in that have created Channel messages
+
+### 7.	Departments
+Lists the Departments that make up the Departments All Time count in 6
 
