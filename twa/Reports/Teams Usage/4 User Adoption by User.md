@@ -6,6 +6,10 @@ Reporting on User Activity Scores per User, highlighting various activity includ
 
 ## 4.1.1 Page Visuals
 
+
+[[Insert Image]] *Figure 21: Team Usage by User*
+
+
 ### 1.	Top Users by Messages in Last 30 Days
 Top Users creating Channel messages in last 30 days
 
