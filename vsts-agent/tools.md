@@ -2,6 +2,8 @@
 
 DotNET3.5
 
+DotNET4.7
+
 AWSPowerShell
 
 AzPowerShell
