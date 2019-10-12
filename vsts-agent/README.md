@@ -18,4 +18,4 @@ To update the service run the following command:
 
 docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-3.6
 
->[Click here for notes on how to customise the image](vsts-agent/customise.md)
+>[Click here for notes on how to customise the image](customise.md)
