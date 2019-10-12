@@ -9,3 +9,11 @@ Create a Docker [Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/crea
 From an administrative powershell run the following command:
 
 docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2016-3.5
+
+To scale the service run the following command:
+
+docker service scale ?=16
+
+To update the service run the following command:
+
+docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-3.6
