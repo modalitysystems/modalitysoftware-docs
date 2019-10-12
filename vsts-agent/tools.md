@@ -1,6 +1,6 @@
 #Installed Tools
 
-.NET3.5
+DotNET3.5
 AWSPowerShell
 AzPowerShell
 Chocolatey
