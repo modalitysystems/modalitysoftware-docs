@@ -12,4 +12,7 @@ To create a container from this image and access a powershell prompt run the fol
 
 To create an Azure DevOps Agent from this image run the following command:
 
-  docker run -e AZP_URL=https://dev.azure.com/{companyname} -e AZP_TOKEN={AzureToken} -e AZP_POOL={AgentPool} -d vsts-agent:ltsc2016-1.0
+  docker run -e AZP_URL=https://dev.azure.com/{companyname} 
+             -e AZP_TOKEN={AzureToken} 
+             -e AZP_POOL={AgentPool} 
+             -d vsts-agent:ltsc2016-1.0
