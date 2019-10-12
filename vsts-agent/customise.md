@@ -2,6 +2,14 @@ To customise this image first [download](https://github.com/modalitysystems/moda
 
 Make appropriate adjustments but leave start.ps1 script unchanged
 
-Open PowerShell from the extraction location and run the following command:-
+Open PowerShell from the extraction location and run the following command:
 
-docker build -t vsts-agent:ltsc2016-1.0 -m 2GB .
+  docker build -t vsts-agent:ltsc2016-1.0 -m 2GB .
+
+To create a container from this image and access a powershell prompt run the following command:
+
+  docker run --rm -it vsts-agent:ltsc2016-1.0 powershell.exe
+
+To create an Azure DevOps Agent from this image run the following command:
+
+  docker run -e AZP_URL=https://dev.azure.com/{companyname} -e AZP_TOKEN={AzureToken} -e AZP_POOL={AgentPool} -d vsts-agent:ltsc2016-1.0
