@@ -4,4 +4,8 @@ vsts-agent is a Docker image that includes many build tools for use with Azure D
 
 To get started [install](https://docs.docker.com/install/windows/docker-ee/) Docker on Windows Server
 
-Create a Docker [Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/)
+Create a Docker [Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/) on 1, 3 or 5 Windows Servers
+
+From an administrative powershell run the following command:
+
+docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2016-3.5
