@@ -36,7 +36,7 @@ This document describes the process of registering Teamwork Analytics Client as 
 1. Select **App Registrations** and select the **Modality Teamwork Analytics** app 
 1. Select **Api permissions** from the Manage menu
 1. Find and select **Microsoft Graph** from the **Request API permissions** blade
-![add permissions](images/reuqestGraphPermissions.png)
+![add permissions](images/requestGraphPermissions.png)
 1. Ensure that the permission type is set to "Application permissions" and not "Delegated permissions"
 ![set permission type](images/permissionTypes.png)
 1. Select the follow 6 permissions from Microsoft.Graph
