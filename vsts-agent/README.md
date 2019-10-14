@@ -18,7 +18,7 @@ docker service scale ?=16
 
 docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-3.6
 
->[Click here view image of Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
+>[Click here view image on Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
 
 >[Click here for list of installed tools](tools.md)
 
