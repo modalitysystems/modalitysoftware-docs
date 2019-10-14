@@ -3,3 +3,5 @@
 Both the Docker host and the Docker containers require access to the internet for this to work. To check this run:
 
 docker run --rm -it hello-world ping 8.8.8.8
+
+![hello-world](hello-world.png)
