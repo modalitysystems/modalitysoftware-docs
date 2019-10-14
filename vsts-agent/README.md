@@ -18,6 +18,8 @@ docker service scale ?=16
 
 docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-3.6
 
+Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8
+
 >[Click here view image on Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
 
 >[Click here for list of installed tools](tools.md)
