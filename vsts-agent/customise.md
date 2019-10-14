@@ -2,6 +2,8 @@
 
 To customise this image first [download](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2016/vsts-agent-ltsc2016.zip) the docker file package and extract
 
+![Code Side by Side](sidebyside.png)
+
 Make appropriate adjustments but leave start.ps1 script unchanged
 
 Open PowerShell from the extraction location and run the following command:
