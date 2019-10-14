@@ -25,3 +25,5 @@ Update Parallelism allows you to define controlled batches to update so --replic
 >[Click here for list of installed tools](tools.md)
 
 >[Click here for notes on how to customise the image](customise.md)
+
+>[Click here for notes on basic troubleshooting tips](troubleshoot.md)
