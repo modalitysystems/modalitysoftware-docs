@@ -20,6 +20,10 @@ docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? 
 
 Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8
 
+# CleanUp Offline Agents
+
+When the Docker service starts a new container based agent, it will get the name of it's virtual MAC address which will come from the Hyper-V MAC pool. When the container is stopped, the old agent will remain in Azure DevOps in an Offline state. This ![Rest API Script](scripts/CleanUpAgents.ps1) can be used to delete any Offline Agents.
+
 >[Click here view image on Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
 
 >[Click here for list of installed tools](tools.md)
