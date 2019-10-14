@@ -2,7 +2,7 @@
 
 To customise this image first [download](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2016/vsts-agent-ltsc2016.zip) the docker file package and extract
 
-![Code Side by Side](sidebyside.png)
+![Code Side by Side](images/sidebyside.png)
 
 The tools installation has been taken out of the Dockerfile and put into a single install.ps1 file, this is to reduce the number of layers that Docker produces which greatly reduces of overall image size
 
