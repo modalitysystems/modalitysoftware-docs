@@ -4,6 +4,8 @@ To customise this image first [download](https://github.com/modalitysystems/moda
 
 ![Code Side by Side](sidebyside.png)
 
+The tools installation has been taken out of the Docker file and put into a single install.ps1 file, this is to reduce the number of layers that Docker produces which greatly reduces of overall image size.
+
 Make appropriate adjustments but leave start.ps1 script unchanged
 
 Open PowerShell from the extraction location and run the following command:
