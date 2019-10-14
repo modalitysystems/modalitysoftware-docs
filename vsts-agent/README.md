@@ -24,6 +24,10 @@ Update Parallelism allows you to define controlled batches to update so --replic
 
 When the Docker service starts a new container based agent, it will get the name of it's virtual MAC address which will come from the Hyper-V MAC pool. When the container is stopped, the old agent will remain in Azure DevOps in an Offline state. This [Rest API Script](scripts/ClearUpAgents.ps1) can be used to delete any Offline Agents.
 
+To get the Pool ID, navigate to the required Agent Pool in Azure DevOps and look in the browser address bar
+
+![pool-id](images/pool-id.png)
+
 >[Click here view image on Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
 
 >[Click here for list of installed tools](tools.md)
