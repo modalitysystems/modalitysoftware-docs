@@ -41,6 +41,8 @@ These PowerBI apps are available from [Microsoft AppSource](https://modalitysoft
 
 >[Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
 
-## VSTS-Agents
+## VSTS-Agent
 
->[vsts-agents](vsts-agent/README.md)
+A Docker image that includes many build tools for use with Azure DevOps pipelines
+
+>[vsts-agent](vsts-agent/README.md)
