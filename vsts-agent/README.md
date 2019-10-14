@@ -1,4 +1,4 @@
-# Welcome
+# VSTS-Agent
 
 vsts-agent is a Docker image that includes many build tools for use with Azure DevOps pipelines. When a container is started it will download and register as an Azure agent based on given parameters. This is highly scalable and repeatable.
 
@@ -27,6 +27,8 @@ When the Docker service starts a new container based agent, it will get the name
 To get the Pool ID, navigate to the required Agent Pool in Azure DevOps and look in the browser address bar
 
 ![pool-id](images/pool-id.png)
+
+# Notes
 
 >[Click here view image on Docker Hub](https://hub.docker.com/r/modalitysystems/vsts-agent)
 
