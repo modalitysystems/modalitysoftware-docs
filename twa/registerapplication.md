@@ -4,7 +4,7 @@ This document describes the process of registering Teamwork Analytics Client as 
    * Application Secret
    * Tenant ID
    
-> Note: Instead of registering the application via the azure portal, you can execute the [application creation powershell](https://github.com/modalitysystems/modalitysoftware-docs/releases/tag/GraphETL) script instead.   
+> Note: Instead of registering the application via the azure portal, you can execute the [application creation powershell](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/GraphETL/AzureAppRegistrationCreate.ps1) script instead.   
 
 ### Register Teamwork Analytics with Azure Active Directory
 1. Sign in to the [Azure Portal](https://azure.portal.com)
