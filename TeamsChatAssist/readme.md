@@ -60,6 +60,8 @@ Search for these users, **Add** each of them, and click **Apply**. Now these use
 
 To make the app available to users in the tenant app store, you’ll need to upload the app. You can do this using the Teams desktop client. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog](https://docs.microsoft.com/en-us/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog).
 
+When prompted, the Teams Chat Assist manifest file can be downloaded from: [docs.modalitysoftware.com/TeamsChatAssist/TeamsChatAssist.zip](http://docs.modalitysoftware.com/TeamsChatAssist/TeamsChatAssist.zip)
+
 ![Upload to the Tenant App Catalog](3.png "Upload to the Tenant App Catalog")
 
 ## Configure and Assign Permissions
@@ -72,6 +74,6 @@ By default, all users will have access to this app in the Store. To restrict and
 
 ### Pin the app for end users to discover
 
-By default, for users to find this app they would need to navigate to the Store and browse or search for it. To increase discovery, you can instead pre-pin the app for users in their app bar. Create a new app setup policy to accomplish that. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policyhttps://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy).
+By default, for users to find this app they would need to navigate to the Store and browse or search for it. To increase discovery, you can instead pre-pin the app for users in their app bar. Create a new app setup policy to accomplish that. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy).
 
 ![Pin the app for end users to discover](5.png "Pin the app for end users to discover")
