@@ -44,10 +44,15 @@ To validate that the app is functioning correctly in your production tenant befo
 
 > Note: If you’re uncomfortable with using sideloading for production validation, even for yourself or trusted users, you can skip this step and follow steps 3 and 4 to upload the unvalidated app to your tenant app store, then restrict access to that app to only yourself and users you trust. These users can then get the app from the tenant app store to perform validation. After the app is validated, use the same permissions policies to open access and roll the app out for production use.
 
-> Note: Use the [Teams admin portal](https://admin.teams.microsoft.com/) to double check that you’ve enabled the organization for custom apps. Go to **Teams apps** > **Permission policies**. Click **Org-wide app settings**. Under **Custom apps**, make sure **Allow interaction with custom apps** is turned on.
+Use the [Teams admin portal](https://admin.teams.microsoft.com/) to double check that you’ve enabled the organization for custom apps. Go to **Teams apps** > **Permission policies**. Click **Org-wide app settings**. Under **Custom apps**, make sure **Allow interaction with custom apps** is turned on.
+
+![Custom Apps Enabled](1.png "Custom Apps Enabled")
 
 Start by navigating to **Teams apps -> Setup policies** and clicking the **Global (Org-wide default)** policy. Toggle off **Allow uploading custom apps** and click **Save**.
+
 Now, to re-enabling sideloading for trusted users, navigate to **Teams apps -> Setup policies** and click **Add**. Give this new policy a name and description, then turn on the toggle to **Allow uploading custom apps** and click **Save**. This creates a new policy assigned to no one. To assign it to your set of trusted users, select it and click **Manage users**.
+
+![App setup policies](2.png "App setup policies")
  
 Search for these users, **Add** each of them, and click **Apply**. Now these users can upload the app manifest to validate that the app is properly functioning in production. 
 
@@ -55,12 +60,18 @@ Search for these users, **Add** each of them, and click **Apply**. Now these use
 
 To make the app available to users in the tenant app store, you’ll need to upload the app. You can do this using the Teams desktop client. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog](https://docs.microsoft.com/en-us/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog).
 
+![Upload to the Tenant App Catalog](3.png "Upload to the Tenant App Catalog")
+
 ## Configure and Assign Permissions
 
 ### Control access to Teams Chat Assist
 
 By default, all users will have access to this app in the Store. To restrict and control who has permission to use the app, you can create a new app permission policy. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies#create-a-custom-app-permission-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies#create-a-custom-app-permission-policy).
 
+![Configure and Assign Permissions](4.png "Configure and Assign Permissions")
+
 ### Pin the app for end users to discover
 
 By default, for users to find this app they would need to navigate to the Store and browse or search for it. To increase discovery, you can instead pre-pin the app for users in their app bar. Create a new app setup policy to accomplish that. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policyhttps://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy).
+
+![Pin the app for end users to discover](5.png "Pin the app for end users to discover")
