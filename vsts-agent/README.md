@@ -8,7 +8,7 @@ Create a Docker [Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/crea
 
 >From an administrative powershell run the following command:
 
-docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2016-3.5
+docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2016-5.2
 
 >To scale the service run the following command:
 
@@ -16,7 +16,7 @@ docker service scale ?=16
 
 >To update the service run the following command:
 
-docker service update ? --replicas ? --update-delay ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-3.6
+docker service update ? --replicas ? --update-delay ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-5.2
 
 Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8. Update Delay allows you define a wait period between Parallesium batches, Docker will see the container as being up before Azure sees the agent as being Online.
 
