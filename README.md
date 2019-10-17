@@ -12,6 +12,13 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 >[CreateTeam Deployment](CreateTeam)
 
 ---
+# Teams Chat Assist
+
+>[Teams Chat Assist Deployment](TeamsChatAssist)
+
+>[Teams Chat Assist User Guide](TeamsChatAssist/userguide.md)
+
+---
 
 # Teamwork Analytics
 
