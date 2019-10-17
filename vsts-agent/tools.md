@@ -28,8 +28,6 @@ visualstudio2017testagent
 
 visualstudio2019testagent
 
-selenium-all-drivers
-
 sql-server-express
 
 sqllocaldb
