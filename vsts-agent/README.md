@@ -20,6 +20,10 @@ docker service update ? --replicas ? --update-delay ? --update-parallelism ? --e
 
 Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8. Update Delay allows you define a wait period between Parallesium batches, Docker will see the container as being up before Azure sees the agent as being Online.
 
+You should they get a pool of agents like this:
+
+![Agentpool](images/agentpool.png)
+
 # CleanUp Offline Agents
 
 When the Docker service starts a new container based agent, it will get the name of it's virtual MAC address which will come from the Hyper-V MAC pool. When the container is stopped, the old agent will remain in Azure DevOps in an Offline state. This [Rest API Script](scripts/ClearUpAgents.ps1) can be used to delete any Offline Agents.
