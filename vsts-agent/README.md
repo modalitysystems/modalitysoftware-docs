@@ -20,7 +20,7 @@ docker service update ? --replicas ? --update-delay ? --update-parallelism ? --e
 
 Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8. Update Delay allows you define a wait period between Parallesium batches, Docker will see the container as being up before Azure sees the agent as being Online.
 
-You should they get a pool of agents like this:
+You should then get a pool of agents in Azure like this:
 
 ![Agentpool](images/agentpool.png)
 
