@@ -26,6 +26,6 @@ To avoid having to build an image on every Docker Host, the image should be push
 
 # Automate process with a Pipeline
 
-Once you have your customised docker files put them into source control and link them to a pipeline such as this:
+Once you have your customised docker files, put them into source control and link them to a pipeline such as this:
 
 ![Pipeline](images/pipeline.png)
