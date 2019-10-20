@@ -29,6 +29,7 @@ You should then get a pool of agents in Azure like this:
 It is important to match the host operating system to the base Docker Image so we have created two as follows:
 
 modalitysystems/vsts-agent:ltsc2016-6.4
+
 modalitysystems/vsts-agent:ltsc2019-6.4
 
 # CleanUp Offline Agents
