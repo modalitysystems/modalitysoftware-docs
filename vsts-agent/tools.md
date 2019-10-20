@@ -20,14 +20,6 @@ visualstudio2017enterprise
 
 visualstudio2019enterprise
 
-visualstudio2017testcontroller
-
-visualstudio2019testcontroller
-
-visualstudio2017testagent
-
-visualstudio2019testagent
-
 sql-server-express
 
 sqllocaldb
