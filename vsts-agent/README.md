@@ -24,6 +24,13 @@ You should then get a pool of agents in Azure like this:
 
 ![Agentpool](images/agentpool.png)
 
+# Host version
+
+It is important to match the host operating system to the base Docker Image so we have created two as follows:
+
+modalitysystems/vsts-agent:ltsc2016-6.4
+modalitysystems/vsts-agent:ltsc2019-6.4
+
 # CleanUp Offline Agents
 
 When the Docker service starts a new container based agent, it will get the name of it's virtual MAC address which will come from the Hyper-V MAC pool. When the container is stopped, the old agent will remain in Azure DevOps in an Offline state. This [Rest API Script](scripts/ClearUpAgents.ps1) can be used to delete any Offline Agents.
