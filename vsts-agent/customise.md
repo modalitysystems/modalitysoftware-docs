@@ -23,3 +23,9 @@ docker run -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d vsts-agent:ltsc2016-1.0
 # Push to Docker Hub
 
 To avoid having to build an image on every Docker Host, the image should be pushed to [Docker Hub](https://docs.docker.com/docker-hub/repos/#pushing-a-docker-container-image-to-docker-hub)
+
+# Automate process with a Pipeline
+
+Once you have your customised docker files put them into source control and link them to a pipeline such as this:
+
+![Pipeline](images/pipeline.png)
