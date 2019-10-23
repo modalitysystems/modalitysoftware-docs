@@ -20,12 +20,12 @@ This PoC uses Selenium to automate a specified browser, in this case Google Chro
 
 All actions are logged to file and can be located at C:\TEMP. If a failure occurs, it is logged and the automated process restarts. The application can run as a service without a user being signed into the machine.
 
-#Known Issues
+# Known Issues
 - When "DemoMode" is set to true the call success is lower than when set to false.
--- When false, deep links are used to schedule - which is still in preview so unexpected behaviour may occur overtime.
+ - When false, deep links are used to schedule - which is still in preview so unexpected behaviour may occur overtime.
 - The "CallLength" cannot be less than 7, otherwise the calls fail.
 
-#Future Scope
+# Future Scope
 - Default Browser Detection:
--- Microsoft Edge (Tested with and works)
--- Microsoft Chromium Edge (Tested with and works)
+ - Microsoft Edge (Tested with and works)
+ - Microsoft Chromium Edge (Tested with and works)
