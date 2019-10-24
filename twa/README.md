@@ -29,4 +29,17 @@ When the deployment has completed, review the resources which have been created 
 
 ### Step 3: Get PowerBI Apps from the App Store and Connect to your SQL Database
 
-For more details see the Apps and details here
+You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa) 
+
+>[PowerBi Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
+
+### Individual Modules
+>[Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+
+>[Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
+
+>[Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
+
+>[Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
+
+>[Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
