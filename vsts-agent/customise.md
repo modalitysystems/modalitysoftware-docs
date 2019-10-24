@@ -14,7 +14,7 @@ docker build -t vsts-agent:1.0 .
 
 To create a container from this image and access a powershell prompt run the following command:
 
-docker run --rm -it vsts-agent:ltsc2016-1.0 powershell.exe
+docker run --rm -it vsts-agent:1.0 powershell.exe
 
 To create an Azure DevOps Agent from this image run the following command:
 
