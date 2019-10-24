@@ -1,6 +1,6 @@
 # Customise
 
-To customise this image first download the [2016](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2016/vsts-agent-ltsc2016.zip) or [2019](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2019/vsts-agent-ltsc2019.zip) version of the docker file package, depending on your host os, and extract
+To customise this image first download the [2016](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2016/vsts-agent-ltsc2016.zip) or [2019](https://github.com/modalitysystems/modalitysoftware-docs/releases/download/ltsc2019/vsts-agent-ltsc2019.zip) version of the docker file package, depending on your host os, and extract the downloaded zip file
 
 ![Dockerfile](images/dockerfile-install.png)
 
