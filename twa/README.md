@@ -31,15 +31,15 @@ When the deployment has completed, review the resources which have been created 
 
 You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa) 
 
->[PowerBi Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
+>[PowerBi Apps installation guide](PowerBIAppsAdminInstallGuide.md)
 
 ### Individual Modules
->[Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+>[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
 
->[Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
+>[Teamwork Analytics: Teams Governance & Security](ModalityTeamsGovernanceAndSecurity.md)
 
->[Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
+>[Teamwork Analytics: Teams PSTN Billing](ModalityPSTNBilling.md)
 
->[Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
+>[Teamwork Analytics: Online Meeting Usage](ModalityOnlineMeetingUsage.md)
 
->[Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+>[Teamwork Analytics: Yammer Usage](ModalityYammerUsage.md)
