@@ -42,7 +42,7 @@ When looking at graphs, you can also use insights to attempt to explain changes.
 
 Once you have configured the Teamwork Analytics data collection engine for your environment you can connect the PowerBi app to your live data.  To do this go click the app again in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list.  When the prompt appears, this time click **Connect your data** button.
 
-You will then be prompted to enter the connection details for your server and database. Not use Basic Authentication Method, no other method is currently supported.
+You will then be prompted to enter the connection details for your server and database. Note, set Authentication Method to Basic, no other authentication method is currently supported.
   
 ![alt text](images/usage/connecttodata.png "Connect to Data")
 
