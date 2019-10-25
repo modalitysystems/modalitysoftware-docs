@@ -8,4 +8,8 @@ Microsoft do not publish what their limits are for Graph for Microsoft Teams. He
 
 Customers cannot control this behaviour, it is automatically handled in the Teamwork Analytics application.
 
+## What is an Active user?
 
+Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel in the **last 30 days**.
+
+The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
