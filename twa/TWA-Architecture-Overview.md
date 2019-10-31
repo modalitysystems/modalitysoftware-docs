@@ -8,6 +8,9 @@ It is a relatively simple architecture comprising of:
 - Azure Windows virtual machine and Azure SQL on customer tenant
 - Azure Bot Service
 
+
+![alt text](images/twa-architecture.png "Modality Teamwork Analytics Architecture")
+
 ### PowerBI.com Apps
 
 Starting from customer end user looking at reporting. Reporting is broken down into a number of distinct PowerBI.com apps. These are downloaded by the customer from Microsoft Appsource into the customers PowerBI.com tenant. It is recommended a single administrator downloads the PowerBI.com Apps, configures them to connect to SQL (see below) and then distributes them to other users.
