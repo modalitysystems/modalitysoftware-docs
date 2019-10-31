@@ -10,11 +10,11 @@ It is a relatively simple architecture comprising of:
 
 ### PowerBI.com Apps
 
-Starting from customer end user looking at reporting. Reporting is broken down into a number of destinct PowerBI.com apps. These are downloaded by the customer from Microsoft Appsource into the customers PowerBI.com tenant. It is recommended a single administrator downloads the PowerBI.com Apps, configurues them to connect to SQL (see below) and then distributes them to other users.
+Starting from customer end user looking at reporting. Reporting is broken down into a number of distinct PowerBI.com apps. These are downloaded by the customer from Microsoft Appsource into the customers PowerBI.com tenant. It is recommended a single administrator downloads the PowerBI.com Apps, configures them to connect to SQL (see below) and then distributes them to other users.
 
 These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-PowerBI Apps Installation and Uograde guide: [Teamwork Analytics Power BI Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
+PowerBI Apps Installation and Upgrade guide: [Teamwork Analytics Power BI Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
 
 
 #### Azure SQL
@@ -25,15 +25,15 @@ The ARM template deploys this Azure SQL for the customer
 
 #### Azure windows Virtual Machine
 
-The ARM template deployed an Azure Windows Virtual Machine in the customers tenant. It installs either just Teamwork Analytic Graph Data Collector or Teamwork Analytic Graph Data Collector and Bot Notificaiton Service
+The ARM template deployed an Azure Windows Virtual Machine in the customers tenant. It installs either just Teamwork Analytic Graph Data Collector or Teamwork Analytic Graph Data Collector and Bot Notification Service
 
 #### Teamwork Analytic Graph Data Collector Windows Service
 
 This windows service uses read only permissions granted by an [Azure AppID](/twa/registerapplication.md) creatred by the customers Office 365 administrator. It reads relevant data from graph, collects metadata and writes it to the customers Azure SQL
 
-#### Bot Notificaiton Service Service
+#### Bot Notificaiton Service
 
-If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assit in configuring this for customers.
+If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assist in configuring this for customers.
 
 The Notificaiton Service notifies the Azure Bot Framework via the Modality Systems Azure Bot Service.
 
