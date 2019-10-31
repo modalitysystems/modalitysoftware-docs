@@ -34,14 +34,36 @@ This ARM Template will install resources in your Azure tenant. The template will
        > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you must delete the contents of this field and enter the correct Tenant ID.
      - **Location** - The geographical location of the Azure resources that will host Teamwork Analytics. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
        > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
-   
+     - **Include Notification Service** - Yes / No field. The Notification Service is an additional feature required to send pro-active messages to users via Bot/Email to improve adoption. Set to Yes if you plan to use the Teamwork Analytics bot. 
+        > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
+      - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
+        > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
+
+        > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
+
 3. Read the Terms and Conditions and click 'Purchase' (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
+
+4. Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. If you left the default of `[newGuid()]`, you need to retrieve the value from Deployment history;
+  
+      a. In the Resource Group which you chose to deploy to, click Deployments on the left hand menu under settings, and then click the latest deployment (at the top) as below
+      ![Deployment History](images/deployments-list.png)
+
+      b. Once open, click inputs and retrieve the value for xx and pass it on to the Modality team as shown below.
+      ![Bot Key in Inputs](images/bot-pre-shared-key.png)
 
 ## Upgrading
 
 When an upgrade is available, you will be sent a link to an ARM template. The process for upgrading is identical to installation (see above), except that you will choose an existing Resource Group, rather than creating a new one.
 
 Azure Resource Manager analyses the difference from past deployments, and only changes what it needs to.
+
+If you need to recover the settings from a previous deploy, you can do this via the Resource Group deployment history; 
+
+1. In the Resource Group which you chose to deploy to, click Deployments on the left hand menu under settings, and then click the latest deployment (at the top) as below
+![Deployment History](images/deployments-list.png)
+
+2. Once open, click inputs to see the value from the previous deploy.
+![Inputs](images/deployment-inputs.png)
 
 ## Pausing or uninstalling
 
