@@ -14,7 +14,7 @@ Starting from customer end user looking at reporting. Reporting is broken down i
 
 These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
->[Teamwork Analytics Power BI Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
+PowerBI Apps Installation and Uograde guide: [Teamwork Analytics Power BI Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
 
 
 #### Azure SQL
@@ -24,3 +24,18 @@ Customer data is stored in SQL Azure in the customers tenant. PowerBI.com Apps c
 The ARM template deploys this Azure SQL for the customer
 
 #### Azure windows Virtual Machine
+
+The ARM template deployed an Azure Windows Virtual Machine in the customers tenant. It installs either just Teamwork Analytic Graph Data Collector or Teamwork Analytic Graph Data Collector and Bot Notificaiton Service
+
+#### Teamwork Analytic Graph Data Collector Windows Service
+
+This windows service uses read only permissions granted by an [Azure AppID](/twa/registerapplication.md) creatred by the customers Office 365 administrator. It reads relevant data from graph, collects metadata and writes it to the customers Azure SQL
+
+#### Bot Notificaiton Service Service
+
+If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assit in configuring this for customers
+
+The Notificaiton Service notifies the Azure Bot Framework
+
+#### Azure Bot Framework
+
