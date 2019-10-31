@@ -4,9 +4,9 @@ This page gives an overview of the complete Teamwork Analytics Architecture.
 
 It is a relatively simple architecture comprising of:
 
-- PowerBI.com Apps
-- Azure Windows virtual machine and Azure SQL
-- Bot Framework
+- PowerBI.com Apps on customer tenant
+- Azure Windows virtual machine and Azure SQL on customer tenant
+- Azure Bot Service
 
 ### PowerBI.com Apps
 
