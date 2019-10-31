@@ -33,9 +33,10 @@ This windows service uses read only permissions granted by an [Azure AppID](/twa
 
 #### Bot Notificaiton Service Service
 
-If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assit in configuring this for customers
+If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assit in configuring this for customers.
 
-The Notificaiton Service notifies the Azure Bot Framework
+The Notificaiton Service notifies the Azure Bot Framework via the Modality Systems Azure Bot Service.
 
-#### Azure Bot Framework
+#### Azure Bot Service
 
+Azure Bot Service is a shared Azure Service that securely allows the sending of emails and Bot messages direct to Microsoft Teams end users. Te Bot Notification Windows Service send a trigger message on 443/TLS to the Modality Systems Azure Bot Service Broker which leverages the Azure Bot Service.
