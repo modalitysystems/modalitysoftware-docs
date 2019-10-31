@@ -22,7 +22,7 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 # Teamwork Analytics
 
->[Teamwork Analytics Architecture](twa/README.md)
+>[Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
 
 >[Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
 
