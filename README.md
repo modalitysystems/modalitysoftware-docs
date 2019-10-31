@@ -32,7 +32,7 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 >[Teamwork Analytics Data Collector Deployment](twa/README.md)
 
->[Teamwork Analytics Automation Deployment](twa/twabot)
+>[Teamwork Analytics Automation Deployment](twa/deployteamsapp.md)
 
 ## Teamwork Analytics PowerBI Apps
 
