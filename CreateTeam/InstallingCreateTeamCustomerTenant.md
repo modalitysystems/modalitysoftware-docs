@@ -16,12 +16,12 @@ Modality System will provide an **ARM template** to install everything needed fo
 
 You will need to follow our documentation to create two new Azure AD Applications for CreateTeam to use. In order for CreateTeam to work, the following apps and permissions are required:
 
-## AAD App 1 (for the API) : Application Permisions
+### AAD App 1 (for the API) : Application Permisions
 
 **Directory.ReadWrite.All** Read and write directory data - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
 
 **Groups.ReadWrite.All** Read and write all groups - Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write group calendar and conversations. All of these operations can be performed by the app without a signed-in user.
 
-## AAD App 2 (for the client) : Delegated Permisions
+### AAD App 2 (for the client) : Delegated Permisions
 
 **openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
