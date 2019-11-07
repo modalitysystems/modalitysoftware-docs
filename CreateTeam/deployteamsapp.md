@@ -8,13 +8,21 @@ Create Team is provided as an Microsoft Teams App which needs to be uploaded to 
 
 For the App to be able to create teams in the target Teams Tenant, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
 
-1. This is achieved by clicking on the following link and logging in with a Global Administrator account
+1. This is achieved by clicking on the following link and logging in with a Global Administrator account, this will consent to the AAD APP 1 permisions below (for the API). Note AAD App 2 below (for the client) does not require admin consent.
 
    [Provide Admin Consent](https://login.microsoftonline.com/common/adminconsent?client_id=d992e819-1a67-4840-89d3-1cee8cd4e735&redirect_uri=https://tgmodprod.azureedge.net/AdminConsent)
 
-2. From here a summary screen showing what is required will be displayed
+2. These are the permissions that will be required
 
-   ![Screenshot](images/admin-consent.png)
+## AAD App 1 (for the API) : Application Permisions
+**Directory.ReadWrite.All** Read and write directory data - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
+
+**Groups.ReadWrite.All** Read and write all groups - Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write group calendar and conversations. All of these operations can be performed by the app without a signed-in user.
+
+## AAD App 2 (for the client) : Delegated Permisions (no consent required)
+**openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
+
+  
 
 3. The Admin Consent will be visible within the Enterprise Applications section of Azure AD
 
