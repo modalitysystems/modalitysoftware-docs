@@ -24,7 +24,7 @@ For the App to be able to create teams in the target Teams Tenant, it is a requi
 
   
 
-3. The Admin Consent will be visible within the Enterprise Applications section of Azure AD
+3. The Admin Consent for AAD App 1 (for the API) that you just consented to, will be visible within the Enterprise Applications section of Azure AD
 
    ![Screenshot](images/enterprise-applications.png)
 
