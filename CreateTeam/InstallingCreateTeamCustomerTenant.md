@@ -14,10 +14,14 @@ Modality System will provide an **ARM template** to install everything needed fo
  
 ## Creating and Configuring an Azure AD application
 
-You will need to follow our documentation to create a new Azure AD Application for CreateTeam to use. In order for CreateTeam to work, the following permissions are required:
+You will need to follow our documentation to create two new Azure AD Applications for CreateTeam to use. In order for CreateTeam to work, the following apps and permissions are required:
 
-**Read and write directory data** - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
+## AAD App 1 (for the API) : Application Permisions
 
-**Read and write all groups** - Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write group calendar and conversations. All of these operations can be performed by the app without a signed-in user.
+**Directory.ReadWrite.All** Read and write directory data - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
 
-**Sign in and read user profile** - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
+**Groups.ReadWrite.All** Read and write all groups - Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write group calendar and conversations. All of these operations can be performed by the app without a signed-in user.
+
+## AAD App 2 (for the client) : Delegated Permisions
+
+**openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
