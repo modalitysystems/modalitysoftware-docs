@@ -27,6 +27,10 @@ Teamwork Analytics uses an Azure Resource Management (ARM) template to ease depl
 
 When the deployment has completed, review the resources which have been created within the resource group. One of the resources is a SQL Server with a name similar to *twa-aaa1bb2c3dd4e*. Make a note of this name.
 
+### Step 2 (optional): Deploy Teamwork Analytics Custom Deployment
+
+Teamwork Analytics can also be deployed and configured to use an existing environment. By using your own SQL Server and provided information, you can request our PowerShell Script that will download and install the deployment on your existing machine. Once you have access to our PowerShell Script you can follow [these deployment steps](customDeploytwa).
+
 ### Step 3: Get PowerBI Apps from the App Store and Connect to your SQL Database
 
 You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa) 
