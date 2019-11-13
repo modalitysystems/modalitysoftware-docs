@@ -4,6 +4,8 @@
 
 Teams Chat Assist is a fully hosted Software-as-a-Service (SaaS) offering. This means that there are no servers to setup, and nothing to install. Simply add our Microsoft Teams app to your company store (instructions below) to enable your users to use Teams Chat Assist.
 
+![Architecture Diagram](TeamsChatAssist.svg "Architecture Diagram")
+
 ## Prerequisites
 
 Before getting started with Teams Chat Assist, find and provide your Office 365 Tenant ID. Your Office 365 tenant ID is a globally unique identifier (GUID) that is different than your tenant name or domain. It's allocated to you by Microsoft and never changes.
