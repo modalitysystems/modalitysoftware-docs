@@ -126,7 +126,7 @@ If this feature is enabled for your tenant you can enable users in the following
 
 ## Enabling users to access admin area and reporting
 
-If this feature is enabled for your tenant you can enable users in the following steps.
+You can enable users in the following steps.
 
 1. Login to Azure Portal
 2. Click Azure Active Directory
