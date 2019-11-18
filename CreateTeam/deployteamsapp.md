@@ -109,34 +109,7 @@ Further information about managing app setup policies in Microsoft Teams is avai
 When a user first launches the App from within Microsoft Team, they are required to provide consent for their details to be accessed by the App
 
    ![Screenshot](images/teams-consent.png)
-   
-## Enabling users to create teams with Guest Access
-
-If this feature is enabled for your tenant you can enable users in the following steps.
-
-1. Login to Azure Portal
-2. Click Azure Active Directory
-3. Click Enterprise Applications
-4. Search for Modality TG API
-5. Click Users and Groups
-6. Click Add user
-7. Find your users
-8. Select the Guest Admin role 
-9. Assign.
-
-## Enabling users to access admin area and reporting
-
-You can enable users in the following steps.
-
-1. Login to Azure Portal
-2. Click Azure Active Directory
-3. Click Enterprise Applications
-4. Search for Modality TG API
-5. Click Users and Groups
-6. Click Add user
-7. Find your users
-8. Select the Admin role 
-9. Assign.
+  
 
 ## Changing default settings
 
