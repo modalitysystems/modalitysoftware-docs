@@ -1,10 +1,10 @@
-# 5.5 Unowned Teams
+# Unowned Teams
 Reporting on unowned Teams
 
-## 5.5.1 Page Visuals
+## Page Visuals
 
 
-[[INSERT IMAGE]]
+![Unowned](images/Unowned.png)
 
 
 ### 1.	Unowned Teams

@@ -1,10 +1,10 @@
-# 5.3 Team Owners
+# Team Owners
 Reporting on Teams and Owners 
 
-## 5.3.1 Page Visuals
+## Page Visuals
 
 
-[[INSERT IMAGE]] *Figure 28: Team Owners*
+![TeamOwners](images/TeamOwners.png)
 
 
 ### 1.	Number of Teams per Owner

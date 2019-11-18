@@ -1,9 +1,9 @@
-# 5.10 App Usage
+# App Usage
 Reporting focussed on App Usage across Teams
 
-## 5.10.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 34: App Usage*
+![AppUsage](images/AppUsage.png)
 
 ### 1.	Apps Available in 90% of More of All Teams
 App by percentage of Teams it’s available in. Useful to identify which apps are available by default when creating new or updating existing Teams

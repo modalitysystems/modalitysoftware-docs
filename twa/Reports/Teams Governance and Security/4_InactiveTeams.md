@@ -1,9 +1,9 @@
-# 5.4 Inactive Teams
+# Inactive Teams
 Reporting on inactive Teams
 
-## 5.4.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 29: Inactive Teams*
+![Inactive](images/Inactive.png)
 
 ### 1.	Inactive Teams (No Messages in Last 30 Days)
 Details of Teams that have not had any Channel messages created in them in last 30 days

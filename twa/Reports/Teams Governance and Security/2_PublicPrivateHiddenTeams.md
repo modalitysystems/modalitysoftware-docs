@@ -1,9 +1,9 @@
-# 5.2 Public/Private/Hidden Teams
+# Public/Private/Hidden Teams
 Reporting on Public and Private Teams and the number of Channels, Owners and Members and messages in each. 
 
-## 5.2.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 27: Public Private Hidden Teams*
+![PublicPrivateHidden](images/PublicPrivateHidden.png)
 
 ### 1.	Public Teams Message Count
 Total number of Public Teams and Channel messages and number of Channel messages per Public Team

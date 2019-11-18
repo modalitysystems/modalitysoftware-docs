@@ -1,11 +1,10 @@
-# 5.6 Guest Access
+# Guest Access
 Reporting on Teams that have Guest Members
 
-## 5.6.1 Page Visuals
+## Page Visuals
 
 
-[[INSERT IMAGE]] *Figure 30: Guest Access*
-
+![GuestAccess](images/GuestAccess.png)
 
 ### 1.	Teams with Guest Users
 Details of Teams that have Guest Members
