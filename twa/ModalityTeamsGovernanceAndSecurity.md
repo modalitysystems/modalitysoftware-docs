@@ -55,8 +55,8 @@ Once connected you can proceed to the reports as before, but now you should be s
 
 ## Questions about the report content?
 
-You've now deployed the reports, but have questions about the content. Follow the link below to deatils about the deployed reports.
+You've now deployed the reports, but have questions about the content. Follow the link below to details about the deployed reports.
 
-[Governance and Security Report Guidance](Reports/TeamsGovernanceandsecurity/OperationsGovernanceandCompliance.md)
+[Governance and Security Report Guidance](Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 
