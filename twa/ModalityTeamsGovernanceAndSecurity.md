@@ -51,3 +51,12 @@ When prompted enter your database connection credentials.  Set the **Privacy lev
 ![alt text](images/usage/credentials.png "Credentials")
 
 Once connected you can proceed to the reports as before, but now you should be seeing information from your environment.
+
+
+## Questions about the report content?
+
+You've now deployed the reports, but have questions about the content. Follow the link below to deatils about the deployed reports.
+
+[Governance and Security Report Guidance](Reports/TeamsGovernanceandsecurity/OperationsGovernanceandCompliance.md)
+
+
