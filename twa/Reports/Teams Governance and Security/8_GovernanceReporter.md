@@ -1,9 +1,9 @@
-# 5.8 Governance Reporter
+# Governance Reporter
 Reporting to help identify possible governance and Company compliance issues such as duplicated Team names, public Teams with Guests, etc. using a set of binary filters 
 
-## 5.8.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 32: Governance Reporter*
+![GovernanceReporter](images/GovernanceReporter.png)
 
 ### 1.	Owners
 Team Owners

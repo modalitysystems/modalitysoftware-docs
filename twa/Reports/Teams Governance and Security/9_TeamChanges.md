@@ -1,9 +1,9 @@
-# 5.9 Team Changes
+# Team Changes
 Reporting on Users leaving or removed from Teams and Teams and Channels that have been deleted
 
-## 5.9.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 33: Team Changes*
+![TeamChanges](images/TeamChanges.png)
 
 ### 1.	Users Leaving or Removed from Teams
 Details of Users who have left or been removed from Teams

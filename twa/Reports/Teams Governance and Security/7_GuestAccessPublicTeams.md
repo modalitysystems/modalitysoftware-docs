@@ -1,9 +1,9 @@
-# 5.7 Guest Access in Public Teams
+# Guest Access in Public Teams
 Reporting on Public Teams that have Guest Members
 
-## 5.7.1 Page Visuals
+## Page Visuals
 
-[[INSERT IMAGE]] *Figure 31: Guest Access in Public Teams*
+![GuestPublicTeams](images/GuestAccessPublic.png)
 
 ### 1.	Public Teams with Guest Users
 Details of public Teams that have Guest Members
