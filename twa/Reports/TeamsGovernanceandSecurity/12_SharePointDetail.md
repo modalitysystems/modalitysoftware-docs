@@ -3,7 +3,7 @@ Reporting focused on SharePoint Files across Teams and share types
 
 ## Page Visuals
 
-*** Image to be added ***
+![SharePointDetail](images/SharePointDetail.png)
 
 ### 1.	Team File Shares
 File Share count, per Team

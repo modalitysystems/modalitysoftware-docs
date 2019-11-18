@@ -3,7 +3,7 @@ Reporting focused on SharePoint Files across Teams
 
 ## Page Visuals
 
-*** Image to be added ***
+![SharePointFiles](images/SharePointFiles.png)
 
 ### 1.	Number of files by Type (Top 10)
 Top 10 files types used by Teams wihtin SharePoint
