@@ -7,3 +7,5 @@ The Teams Governance Technical Documentation site provides access to all of the 
 >[Removing/disabiling the native Microsoft Teams Create a Team Button](RemovingDefaultTeamsCreateButton.md)
 
 >[Managing User Roles](ManagingUserRoles.md)
+
+>[Reporting](Reporting.md)
