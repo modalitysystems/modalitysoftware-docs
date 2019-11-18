@@ -6,7 +6,7 @@ Focussing on Operational and Governance aspects of Microsoft Teams Usage and Com
 Select the appropriate link to find more details about each report
 
 
-[1. Housekeeping](1_Housekeeping.md)
+[1. Housekeeping](1_HouseKeeping.md)
 
 [2. Public/Private/Hidden Teams](2_PublicPrivateHiddenTeams.md)
 
