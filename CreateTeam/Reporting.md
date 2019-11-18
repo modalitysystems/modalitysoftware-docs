@@ -17,6 +17,8 @@ The report will contain 4 columns
 
 >The report will only contain teams created in the last 90 days
 
->The report will show teams created by CreateTeam and natively (excluding the CreatedBy UPN mentioned above)
+>The report will contain teams created by CreateTeam and natively (excluding the CreatedBy UPN mentioned above)
 
->The report will only show you the teams in the tenant you are currently signed into
+>The report will only contain teams in the tenant you are currently signed into
+
+>The report will order the teams by date created from newest to oldest (max 90 days)
