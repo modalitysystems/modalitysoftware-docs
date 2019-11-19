@@ -16,6 +16,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 | IP Addresses  | 1 Dynamic IP Addresses, 0 Static IP Addresses  |
 | Storage Accounts  | Block Blob Storage, General Purpose V1, LRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
 
+> Note: Windows updates, by default, are automatically managed by Azure, see [here](https://docs.microsoft.com/en-us/azure/automation/automation-update-management#windows) for details. We do not change any Windows Update settings, so if you require something different you will need to configure this manually post deployment.
+
 ## Installation
 
 1. Click on the ARM template link provided to you by post-sales (it may be a button that says "Deploy to Azure"). You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
