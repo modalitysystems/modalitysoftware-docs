@@ -4,7 +4,7 @@ Reporting on User Activity Scores per User, highlighting various activity includ
 ## Page Visuals
 
 
-![UserScores](images/UserScores.png)
+![UserScores](images/userscores.png)
 
 
 ### 1.	Top Users by Messages in Last 30 Days
