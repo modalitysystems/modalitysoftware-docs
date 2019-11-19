@@ -4,8 +4,6 @@ Teamwork Analytics can be installed to an existing environment using our PowerSh
 
 > Note: You must have [registered an application](registerapplication.md) beforehand.
 
-> Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
-
 ## Installation
 
 1. Run the provided powershell.
