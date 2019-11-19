@@ -9,6 +9,7 @@ These can be configured by the Windows Task Scheduler which you can achieve by f
 This process requires access to the virtual machine that you have [deployed Teamwork Analytics](README.md) onto.
 
 1. Open Windows Task Scheduler and select **Task Scheduler Library** on the left panel. You should see a list of Reminder Schedules set to run on their respective dates.
+
   >Task Scheduler can be found in the start menu in the *Windows Administrative Tools* folder.
 
   >Alternatively you can run `"taskschd.msc"`.
@@ -24,6 +25,7 @@ This process requires access to the virtual machine that you have [deployed Team
 ![Opening Schedule Triggers](images/scheduler-trigger.png)
 
 4. Here you can change the values under the **Settings** section. 
+
   > **Daily:** Select how many days to wait before the trigger recurs again for the selected schedule.
 
   > **Weekly:** Select how many weeks to wait before the trigger recurs again for the selected schedule and on which day of the week to trigger on.
