@@ -16,7 +16,7 @@ Select the appropriate link to find more details about each report
 ### User Adoption by User
 
 [User Scores](5_UserScores.md)  
-[Teams Usage by User](6_TeamsUsagebyUser.md)  
+[Teams Usage by User](6_TeamUsagebyUser.md)  
 [Users Mentions and Likes](7_UserMentionsandLikes.md)  
 [User Response Rates](8_UserResponseRates.md)  
 [Device Usage](9_DeviceUsage.md)  
@@ -34,7 +34,7 @@ Select the appropriate link to find more details about each report
 [Weekly Activity Global](18_WeeklyActivityGlobal.md)  
 [Inactive Users](19_InactiveUsers.md)  
 [Response Rates](20_ResponseRates.md)  
-[Mulitple Group Team Activity](21_MulitpleGroupTeamActivity.md)  
+[Mulitple Group Team Activity](21_MultipleGroupTeamActivity.md)  
 
 ### Advanced
 

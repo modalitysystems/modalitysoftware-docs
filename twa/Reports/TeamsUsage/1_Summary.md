@@ -3,7 +3,7 @@ High Level Summary Stats on Teams Usage
 
 ## Page Visuals
 
-![UsageSummary](images/summary.png)
+![UsageSummary](images/Summary.png)
 
 ### 1.	Summary Teams and AD Attribute Counts
 Counts on Active vs Total Teams, Channels, Users and Guests and overall counts on Channel Messages, Reactions, Likes and AD Locations and Departments
