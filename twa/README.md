@@ -37,6 +37,10 @@ You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa)
 
 >[PowerBi Apps installation guide](PowerBIAppsAdminInstallGuide.md)
 
+### Step 4(optional): Setting custom triggers for the Notification Service
+
+If you have opted to include the Notification Service in your deployment then you can change the default Reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
+
 ### Individual Modules
 >[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
 
