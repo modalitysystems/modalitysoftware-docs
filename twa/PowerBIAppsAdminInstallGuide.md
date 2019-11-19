@@ -43,3 +43,17 @@ For more information see the _[Publish apps from workspace](https://docs.microso
 ![Updating a PowerBI app](images/powerbi/updateapp.png)
 
 ![Enabling automatic installation for end users](images/powerbi/adminportal.png)
+
+## Configure scheduled refresh for the dataset
+
+Navigate to the Power BI App Workspace, and click on the menu for the dataset. Select "Schedule refresh".
+
+![Schedule refresh](images/powerbi/powerbi-scheduled-refresh1.png)
+
+Under the "Schedule refresh" section, set the slider to On, and add at least one time. Click Apply to save changes.
+
+![Schedule refresh options](images/powerbi/powerbi-scheduled-refresh2.png)
+
+Repeat for each app installed.
+
+For more information see the _[Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh)_ article on docs.microsoft.com. 
