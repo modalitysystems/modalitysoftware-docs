@@ -5,6 +5,7 @@ Focussing on Operational and Governance aspects of Microsoft Teams Usage and Com
 
 Select the appropriate link to find more details about each report
 
+### Governance
 
 [1. Housekeeping](1_HouseKeeping.md)  
 Reporting on Team details and highlighting areas that may require attention by IT admins to ensure Teams Usage adheres to Company Policies
@@ -41,3 +42,13 @@ Reporting focused on SharePoint Files across Teams
 
 [12. SharePoint File Detail](12_SharePointDetail.md)  
 Reporting focused on SharePoint Files across Teams and share types
+
+
+
+### Advanced
+
+
+For more information about the additonal Advanced reports see 
+[here.](../Advanced/AllAdvanced.md)
+
+
