@@ -12,7 +12,7 @@ Teamwork Analytics can be installed to an existing environment using our PowerSh
     - **Sql Server Credentials** - your username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
     - **Sql Server Details** - your server name and database name that the Teamwork Analytics service will use to store data. 
     - **Azure Application details** - Use the Id, secret and redirect URI you generated when [registering an application](registerapplication.md).
-    - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data.
+    - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. See [how to find your Azure Tenant ID](https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id)
     - **Include Notification Service** - Yes / No field. The Notification Service is an additional feature required to send pro-active messages to users via Bot/Email to improve adoption. Set to Yes if you plan to use the Teamwork Analytics bot. 
       > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
     - **Licence Key** - Your Teamwork Analytics License Key provided by post sales.
