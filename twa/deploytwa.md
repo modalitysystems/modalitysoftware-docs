@@ -50,7 +50,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
         > Note: To create a Yammer Application Bearer Token, see [here](yammerAPIToken.md) for more information.
 
-3. Read the Terms and Conditions and click 'Purchase' (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
+3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click 'Purchase' (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
 4. Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. If you left the default of `[newGuid()]`, you need to retrieve the value from Deployment history;
   
