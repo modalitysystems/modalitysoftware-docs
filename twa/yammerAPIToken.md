@@ -1,3 +1,3 @@
 - register an app here: https://developer.yammer.com/docs/app-registration
 - Get a Client ID and Secret. Set a redirect to something like your company homepage
-- Go to https://www.yammer.com/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri=https://modalitysoftware.com  (or whatever your redirect id is) see this, and click Allow
+- Go to https://www.yammer.com/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri=https://modalitysoftware.com  (or whatever your redirect id is) see this, and click Allow ![yammerAPIToken](images/yammerAPIToken.png)
