@@ -42,7 +42,7 @@ This ARM Template will install resources in your Azure tenant. The template will
         > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
 
         > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
-      - **Include Yammer Data** - Yes / No field. Yammer Data Collection is an additional feature that can be enabled. Set to Yes if you plan to include Yammer Data in your reports. This feature also requires a Yammer API Token to have been configured in advance and a valid TWA Licence Key. 
+      - **Include Yammer Data** - Yes / No field. Yammer Data Collection is an additional feature that can be enabled. Set to Yes if you plan to include Yammer Data in your reports. This feature also requires a Yammer API Token to have been configured in advance and also a valid TWA Licence Key. 
       - **Yammer Data Token** - A Yammer Applicication Bearer Token is required for the Teamwork Analytics Service to gather Yammer Data.
         > Note: This is a mandatory field, if you don't want to include the Yammer Data, leave the default and it will have no effect.
 
