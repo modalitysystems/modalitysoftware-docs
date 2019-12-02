@@ -1,5 +1,5 @@
 ## Registering an Application for Yammer Data collection
-This document describes the process of registering an application in Yammer to obtain an API Bearer Token that is required to for the Teamwork Analytics Client to collect Yammer Data. 
+This document describes the process of registering an application in Yammer to obtain an API Bearer Token that is required to for the Teamwork Analytics Client to collect Yammer Data.
 
 - register an app here: https://developer.yammer.com/docs/app-registration
 - Get a Client ID and Secret. Set a redirect to something like your company homepage
