@@ -16,6 +16,6 @@ Teamwork Analytics can be installed to an existing environment using our PowerSh
     - **Include Notification Service** - Yes / No field. The Notification Service is an additional feature required to send pro-active messages to users via Bot/Email to improve adoption. Set to Yes if you plan to use the Teamwork Analytics bot. 
       > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
      - **Include YammerData** - Yes / No field. Yammer Data Collection is an additional feature that can be enabled. Set to Yes if you plan to include Yammer Data in your reports. This feature also requires a Yammer API Token to have been configured in advance, see [How to create Yammer API Token](yammerAPIToken.md).
-    - **Licence Key** - Your Teamwork Analytics License Key provided by post sales.
+    - **License Key** - Your Teamwork Analytics License Key provided by post sales.
 3. Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. The powershell will output the generated Guid once complete, otherwise you can find it in the appsettings.json file located in the install directory.
     >`C:\Program Files\Modality\NotificationService\TeamworkAnalytics.NotificationService.ConsoleApp`
