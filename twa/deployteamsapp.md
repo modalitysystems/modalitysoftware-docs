@@ -2,6 +2,10 @@
 
 The Teamwork Analytics Bot is provided as an Microsoft Teams App which needs to be uploaded to your organisation's Apps section within Microsoft Teams.
 
+### Before you start
+
+[Download the latest Teamswork Analytics Bot manifest file](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest).
+
 > NOTE: Some of the steps below require making changes to your Microsoft Online Tenant which can sometimes take a few hours to take effect
 
 ## Installation
@@ -14,7 +18,7 @@ The Teamwork Analytics Bot is provided as an Microsoft Teams App which needs to 
    
    ![Screenshot](images/bots/apps-upload.png)
    
-3. Then select the App package provided by Modality Systems as a zip file
+3. Then select the downloaded App manifest file zip file
    
    ![Screenshot](images/bots/upload-open.png)
 
