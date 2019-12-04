@@ -49,6 +49,8 @@ This ARM Template will install resources in your Azure tenant. The template will
         > Note: This is a mandatory field, if you don't want to include the Yammer Data, leave the default and it will have no effect.
 
         > Note: To create a Yammer Application Bearer Token, see [here](yammerAPIToken.md) for more information.
+        
+      - **License Key** - Your Teamwork Analytics License Key provided by post sales.
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
