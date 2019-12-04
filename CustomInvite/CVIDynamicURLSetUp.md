@@ -1,20 +1,15 @@
 # CVI Dynamic URL set up
 
-<!-- Foobar is a Python library for dealing with word pluralization. -->
-
 ## Pre-requisites
 
-CustomInvite has been installed and a policy has been set up.
-<!-- 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-``` -->
+* CustomInvite version >= 3.6
+* CustomInvite is installed
+* Working License Key
+* CVI Policies set up against clients/users
 
 ## CVI Dynamic URL
 
-As part of the onboarding process you need to inform CustomInvite of the format of your CVI url. This is done by adding a CviUrlFormat to your CustomInvite policy registry with the name CviUrlFormat.
+In order for CustomInvite to work with the CVI (set-up within the tenant and assigned to clients/users policies) a CVI URl format is required in the registry. If CVI is set-up for your client, in order for it to be enabled and work in CustomInvite the URL format will need to be assigned to the "CviUrlFormat" value within the registry.
 
 CviUrlFormat should be the identical to your CVI url, but with the ConferenceId value replaced with the placeholder *"{ConfId}"*. This is the same as the url used to build CVI policies via PowerShell.
 
@@ -27,4 +22,4 @@ CVI URL | CviUrlFormat value
 
 CustomInvite searches for links in the meeting body that match the CviUrlFormat. Links that match the CviUrlFormat must have the same host and path, and the ConferenceId must be in the position defined by the *{ConfId}* placeholder. The query string can differ as long as the ConferenceId query string key matches, if it exists.
 
-On install CviUrlFormat will be added to the registry with a blank default value. If the value is left blank, no CVI links will be found and therefore CVI link will be rendered.
+On install CviUrlFormat will be added to the registry with a blank default value. If the value is left blank, any CVI links that are generated natively will not match with a blank value and therefore any CVI information in the template will not be rendered.
