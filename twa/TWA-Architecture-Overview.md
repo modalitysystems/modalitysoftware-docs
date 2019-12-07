@@ -17,7 +17,7 @@ Starting from customer end user looking at reporting. Reporting is broken down i
 
 These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-PowerBI Apps Installation and Upgrade guide: [Teamwork Analytics Power BI Apps installation guide](/twa/PowerBIAppsAdminInstallGuide.md)
+PowerBI Apps Installation and Upgrade guide: [Teamwork Analytics Power BI Apps installation guide](/PowerBIAppsAdminInstallGuide.md)
 
 
 #### Azure SQL
