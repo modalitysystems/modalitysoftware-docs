@@ -24,6 +24,8 @@ To follow these steps, you must have the Teamwork Analytics database credentials
 
 The process for updating an app is exactly the same as the initial installation process documented above. When installing the latest version from AppSource select "Install to a new workspace" and click _Install_.
 
+When the new version is installed, the old version can be unpublished by deleting its workspace.
+
 > The "Overwrite an existing version (Preview)" option is not recommended until it becomes fully supported. 
 
 ![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
