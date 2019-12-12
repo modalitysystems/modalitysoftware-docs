@@ -11,6 +11,8 @@ Select the appropriate link to find more details about each report
 [Summary](1_Summary.md)  
 [Team Activity Summary](2_TeamActivitySummary.md)   
 [Team Score](3_TeamScore.md)  
+[Team Statistics](23_TeamStatistics.md)  
+[User Statistics](22_UserStatistics.md)  
 [Guest Activity Summary](4_GuestActivitySummary.md)  
 
 ### User Adoption by User

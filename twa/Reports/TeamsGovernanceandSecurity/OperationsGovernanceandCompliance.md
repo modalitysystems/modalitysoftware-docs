@@ -37,11 +37,11 @@ Reporting on Users leaving or removed from Teams and Teams and Channels that hav
 [10. App Usage](10_AppUsage.md)  
 Reporting focussed on App Usage across Teams
 
-[11. SharePoint Files](11_SharePointFiles.md)  
-Reporting focused on SharePoint Files across Teams
+[11. Teams Files](11_SharePointFiles.md)  
+Reporting focused on Files used within Teams
 
-[12. SharePoint File Detail](12_SharePointDetail.md)  
-Reporting focused on SharePoint Files across Teams and share types
+[12. Files Shared Outside Team](12_SharePointDetail.md)  
+Reporting focused on Files shared outside of Teams
 
 
 
