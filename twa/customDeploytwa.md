@@ -6,7 +6,7 @@ Teamwork Analytics can be installed to an existing environment using our PowerSh
 
 ## Installation
 
-1. Run the provided powershell.
+1. [Download](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest) and run the latest InstallTWA powershell script.
 
 2. Carefully fill in the fields. The powershell should provide descriptions for each field it requests.
     - **Sql Server Credentials** - your username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
