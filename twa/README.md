@@ -41,6 +41,10 @@ You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa)
 
 If you have opted to include the Notification Service in your deployment then you can change the default Reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
+### Step 5 (optional): Configuring User Adoption Groups
+
+Teamwork Analytics allows you to create custom groups of users for reporting, for more information on these groups see [here](UserAdoptionGroups.md).
+
 ### Individual Modules
 >[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
 
