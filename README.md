@@ -28,11 +28,9 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 >[Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
 
-## Teamwork Analytics Backend
+## Teamwork Analytics Data Collector
 
 >[Teamwork Analytics Data Collector Deployment](twa/README.md)
-
->[Teamwork Analytics Automation Deployment](twa/deployteamsapp.md)
 
 ## Teamwork Analytics PowerBI Apps
 

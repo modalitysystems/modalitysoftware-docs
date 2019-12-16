@@ -4,9 +4,11 @@ The Teamwork Analytics Bot is provided as an Microsoft Teams App which needs to 
 
 ### Before you start
 
-[Download the latest Teamswork Analytics Bot manifest file](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest).
+[Download the latest Teamwork Analytics Bot manifest file](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest).
 
-> NOTE: Some of the steps below require making changes to your Microsoft Online Tenant which can sometimes take a few hours to take effect
+> NOTE: Some of the steps below require making changes to your Microsoft Online Tenant which can sometimes take a few hours to take effect.
+
+> NOTE: In order for bots to work, an optional component of the Data Collector Backend, named the Notification Service, must be enabled and a unique key must be shared with Modality. This may require the Data Collector Backend to be redeployed. See *[Teamwork Analytics Data Collector Deployment](deploytwa.md)* for instructions.
 
 ## Installation
 
