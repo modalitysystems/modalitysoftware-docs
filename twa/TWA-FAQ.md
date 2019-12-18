@@ -15,3 +15,17 @@ Both Microsoft and Modality Systems use the term 'Active Users' in reporting. Th
 In a future update TWA will also consider private chat, meeting and calling usage to flag a user as active. This is commited on the roadmap for 2020 Q1. It will offer Monthly Active Usage and Weekly Active Usage reports of each Modality/functionality.
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
+
+## How does Modality Systems Teamwork Analytics Licence Keys work?
+
+For Teamwork Analytics backend to run you will need an active and current licence key from Modality Systems. To get a key please contact 
+
+The key is unquie to each customer and defines which Teamwork Analytics modules are enabled.
+
+They key is input at time of deploying the ARM Template or the manual Powershell install.
+
+If you need to update or input a new key, you can re run the ARM Template or PowerShell installer, or edit the field manualy in the configuration file: C:\Program Files\Modality\GraphETL\Modality.Graph.Etl.SingleTenant.Service.exe.config
+
+[here](images/TWAKey.png)
+
+
