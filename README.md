@@ -20,23 +20,15 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 ---
 
-# Teamwork Analytics
+## Teamwork Analytics - Deployment
 
->[Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
+>[Teamwork Analytics Data Backend Deployment](twa/README.md)
 
->[Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
-
->[Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
-
-## Teamwork Analytics Data Collector
-
->[Teamwork Analytics Data Collector Deployment](twa/README.md)
+>[Teamwork Analytics Power BI Apps Deployment](twa/PowerBIAppsAdminInstallGuide.md)
 
 ## Teamwork Analytics PowerBI Apps
 
 These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
-
->[Teamwork Analytics Power BI Apps installation guide](twa/PowerBIAppsAdminInstallGuide.md)
 
 >[Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
 
@@ -47,3 +39,11 @@ These PowerBI apps are available from [Microsoft AppSource](https://modalitysoft
 >[Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
 
 >[Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+
+# Teamwork Analytics - About
+
+>[Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
+
+>[Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
+
+>[Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
