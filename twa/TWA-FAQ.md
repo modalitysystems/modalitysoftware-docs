@@ -16,13 +16,11 @@ In a future update TWA will also consider private chat, meeting and calling usag
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
-## How does Modality Systems Teamwork Analytics Licence Keys work?
+## How do Modality Systems Teamwork Analytics Licence Keys work?
 
-For Teamwork Analytics backend to run you will need an active and current licence key from Modality Systems. To get a key for a trial please contact trial.Support@modalitysystems.com
+For Teamwork Analytics backend to run you will need an active and current licence key from Modality Systems. To get a key for a trial please contact trial.support@modalitysystems.com. Paid customers will get their key issued at time of purchase.
 
-There is no licence key on the PowerBI Apps.
-
-The key is unquie to each customer and defines which Teamwork Analytics modules are enabled. It is time bound to the agreed licence term.
+The key is unquie to each customer and defines which Teamwork Analytics modules are enabled. It is time bound to the agreed licence term. There is no licence key on the PowerBI Apps.
 
 They key is input at time of deploying the ARM Template or the manual Powershell install.
 
