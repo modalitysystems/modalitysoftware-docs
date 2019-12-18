@@ -22,7 +22,9 @@ If you need to recover the settings from a previous deploy, you can do this via 
 
 ## Backend Upgrade - Manual PowerShell Install
 
+The process for upgrading is identical to installation, run the PowerShell script from the virtual machine.
 
+Details steps here: [Deploying Teamwork Analytics with PowerShell](/twa/customDeploytwa.md)
 
 ## Updating Power BI apps
 
