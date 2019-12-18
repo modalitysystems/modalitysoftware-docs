@@ -20,7 +20,7 @@ The Microsoft definition of Active User changes depending on the report being vi
 
 For Teamwork Analytics backend to run you will need an active and current licence key from Modality Systems. To get a key for a trial please contact trial.support@modalitysystems.com. Paid customers will get their key issued at time of purchase.
 
-The key is unique to each customer and defines which Teamwork Analytics modules are enabled. It is time-bound to the agreed licence term. There is no licence key on the PowerBI Apps. If a key expires, data will stop being collected, but existing data will not be deleted. PowerBI Apps will continue to work on the existing data. If a valid licence is added, the data missed during the period of no licence will be collected and added as part of the collection process.
+The key is unique to each customer and defines which Teamwork Analytics modules are enabled. It is time-bound to the agreed licence term. There is no licence key on the PowerBI Apps. If a key expires, data will stop being collected, but existing data will not be deleted. PowerBI Apps will continue to work on the existing data. For up to 28 days, If a valid licence is added, the data missed during the period of no licence will be collected and added as part of the collection process. 28 days is the limit Microsoft give for pulling some of the daily statistics we use, after 28 days we will still collect most data, but some statistics on usage may have gaps.
 
 The key is input at the time of deploying the ARM Template or the manual Powershell install.
 
