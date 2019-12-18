@@ -6,6 +6,8 @@ Teamwork Analyitcs is comprised of a backend (SQL Database, Windows Server and W
 
 Your current versions are listed in the PowerBI apps under Advanced / About
 
+![Deployment History](images/TWAVersionNumbers.png)
+
 ## Backend Upgrade - ARM Template
 
 The process for upgrading is identical to installation, except that you will choose an existing Resource Group, rather than creating a new one.
