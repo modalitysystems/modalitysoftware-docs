@@ -20,13 +20,13 @@ If you need to recover the settings from a previous deploy, you can do this via 
 2. Once open, click inputs to see the value from the previous deploy.
 ![Inputs](images/deployment-inputs.png)
 
-Detailed steps here: [ARM Template Install](/twa/deploytwa.md)
+Detailed steps here: [ARM Template Install](/twa/deploytwa.html)
 
 ## Backend Upgrade - Manual PowerShell Install
 
 The process for upgrading is identical to installation, run the PowerShell script from the virtual machine.
 
-Details steps here: [Deploying Teamwork Analytics with PowerShell](/twa/customDeploytwa.md)
+Details steps here: [Deploying Teamwork Analytics with PowerShell](/twa/customDeploytwa.html)
 
 ## Updating Power BI apps
 
@@ -41,4 +41,4 @@ When the new version is installed, the old version can be unpublished by deletin
 ![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
 
 
-Detailed steps here: [PowerBI Instal Guide](/twa/PowerBIAppsAdminInstallGuide.md)
+Detailed steps here: [PowerBI Instal Guide](/twa/PowerBIAppsAdminInstallGuide.html)
