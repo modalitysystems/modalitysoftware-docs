@@ -10,6 +10,8 @@ Your current versions are listed in the PowerBI apps under Advanced / About
 
 ## Backend Upgrade
 
+Follow the same ARM Template deployment or PowerShell deployment steps. You will need all your origional configuration details. The install will overwrite the exsiting code but not lose any existing data.
+
 ## Updating Power BI apps
 
 The process for updating an app is exactly the same as the initial installation. You install the latest version side by side and configure it then delete the existing version.
