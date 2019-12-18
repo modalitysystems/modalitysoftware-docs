@@ -18,13 +18,17 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 >[Teams Chat Assist User Guide](TeamsChatAssist/userguide.md)
 
+
+
 ---
 
-## Teamwork Analytics - Deployment
+## Teamwork Analytics - Deployment and Upgrade
 
 >[Teamwork Analytics Data Backend Deployment](twa/README.md)
 
 >[Teamwork Analytics Power BI Apps Deployment](twa/PowerBIAppsAdminInstallGuide.md)
+
+>[Teamwork Analytics Upgrade](twa/UpgradingTeamworkAnalytics.md)
 
 ## Teamwork Analytics PowerBI Apps
 
