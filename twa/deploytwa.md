@@ -62,20 +62,6 @@ This ARM Template will install resources in your Azure tenant. The template will
       b. Once open, click inputs and retrieve the value for xx and pass it on to the Modality team as shown below.
       ![Bot Key in Inputs](images/bot-pre-shared-key.png)
 
-## Upgrading
-
-When an upgrade is available, you will be sent a link to an ARM template. The process for upgrading is identical to installation (see above), except that you will choose an existing Resource Group, rather than creating a new one.
-
-Azure Resource Manager analyses the difference from past deployments, and only changes what it needs to.
-
-If you need to recover the settings from a previous deploy, you can do this via the Resource Group deployment history; 
-
-1. In the Resource Group which you chose to deploy to, click Deployments on the left hand menu under settings, and then click the latest deployment (at the top) as below
-![Deployment History](images/deployments-list.png)
-
-2. Once open, click inputs to see the value from the previous deploy.
-![Inputs](images/deployment-inputs.png)
-
 ## Pausing or uninstalling
 
 Teamwork Analytics can be managed via its Resource Group in [Azure Portal](https://portal.azure.com/).
