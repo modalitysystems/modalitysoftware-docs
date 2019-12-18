@@ -1,4 +1,4 @@
-# How to Install Teamwork Analytics Reports in your Organization
+# How to Install Teamwork Analytics PowerBI Apps in your Organization
 
 The Teamwork Analytics Power BI apps are pre-made packs of reports, graphs and charts, designed to be populated with data from the Teamwork Analytics backend service. The reports are available for free from Microsoft [AppSource](https://appsource.microsoft.com/en-gb/marketplace/apps?search=Modality%20Systems%20Teamwork%20Analytics&page=1&product=power-bi). Users in your organization are required to have a [Power BI Pro license](https://docs.microsoft.com/en-us/power-bi/service-features-license-type) to view the reports.
 
@@ -18,17 +18,6 @@ To follow these steps, you must have the Teamwork Analytics database credentials
   *	At the “Connect your data” stage, enter the Teamwork Analytics database credentials.
   * If you wish for end users to receive the app automatically, see the _[Enabling automatic installation for end users](#Enabling-automatic-installation-for-end-users)_ section below. Otherwise, to distribute the app, copy the installation link after submitting the Update App form, and distribute it to the desired users.
   * We recommend you add more than one administrator to the access list on the template workspace, so that the app can be updated or unpublished in the future.
-
-
-## Updating Power BI apps
-
-The process for updating an app is exactly the same as the initial installation process documented above. When installing the latest version from AppSource select "Install to a new workspace" and click _Install_.
-
-When the new version is installed, the old version can be unpublished by deleting its workspace.
-
-> The "Overwrite an existing version (Preview)" option is not recommended until it becomes fully supported. 
-
-![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
 
 ## Enabling automatic installation for end users
 
