@@ -6,11 +6,23 @@ Teamwork Analyitcs is comprised of a backend (SQL Database, Windows Server and W
 
 Your current versions are listed in the PowerBI apps under Advanced / About
 
+## Backend Upgrade - ARM Template
+
+The process for upgrading is identical to installation, except that you will choose an existing Resource Group, rather than creating a new one.
+
+Azure Resource Manager analyses the difference from past deployments, and only changes what it needs to.
+
+If you need to recover the settings from a previous deploy, you can do this via the Resource Group deployment history; 
+
+1. In the Resource Group which you chose to deploy to, click Deployments on the left hand menu under settings, and then click the latest deployment (at the top) as below
+![Deployment History](images/deployments-list.png)
+
+2. Once open, click inputs to see the value from the previous deploy.
+![Inputs](images/deployment-inputs.png)
+
+## Backend Upgrade - Manual PowerShell Install
 
 
-## Backend Upgrade
-
-Follow the same ARM Template deployment or PowerShell deployment steps. You will need all your origional configuration details. The install will overwrite the exsiting code but not lose any existing data.
 
 ## Updating Power BI apps
 
