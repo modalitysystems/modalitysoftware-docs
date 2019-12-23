@@ -28,4 +28,8 @@ If you need to update or input a new key, you can re-run the ARM Template or Pow
 
 ![TWA Licence Key](images/TWAKey.png)
 
+## Can you report on usage of apps pinned in Teams, like OneNote or Planner?
 
+Teamwork Analytics can report on which apps have been added as a tab in teams/channels, but not their actual amount of usage, either usage from with teams (e.g. how often a tab is used) or usage of the app regardless of use being inside or outside of Teams, .e.g. how often a OneNote is used.
+
+If customers have the requirement, we can investigate what usage reporting Office 365 or third party apps have available via API and if we could make PowerBI usage reports for them. Please contact us to discuss this requirement.
