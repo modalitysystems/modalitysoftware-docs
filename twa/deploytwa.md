@@ -2,6 +2,8 @@
 
 Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that automatically provisions and starts the required resources in your Azure subscription.
 
+- ARM Template here:https://mod.qa/TWAGovSecUseARM - You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
+
 > Note: You must have [registered an application](registerapplication.md) beforehand.
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
@@ -50,7 +52,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
         > Note: To create a Yammer Application Bearer Token, see [here](yammerAPIToken.md) for more information.
         
-      - **License Key** - Your Teamwork Analytics License Key provided by post sales.
+      - **License Key** -  You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
