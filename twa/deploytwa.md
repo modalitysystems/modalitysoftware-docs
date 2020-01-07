@@ -22,7 +22,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 ## Installation
 
-1. Click on the ARM template link provided to you by post-sales (it may be a button that says "Deploy to Azure"). You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
+1. Click on the ARM template link:https://mod.qa/TWAGovSecUseARM. You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
 
    ![Custom deployment form](images/deployForm.png)
 
