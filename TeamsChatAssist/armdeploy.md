@@ -48,7 +48,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 7. Create a table called InstanceConfigurations
 
-   ![Create Table](images/createTable.png)
+   ![New Table](images/newTable.png)
 
 7. Edit the InstanceConfigurations table as follows
 
