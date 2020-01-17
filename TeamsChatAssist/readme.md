@@ -4,7 +4,7 @@
 
 Teams Chat Assist is a fully hosted Software-as-a-Service (SaaS) offering. This means that there are no servers to setup, and nothing to install. Simply add our Microsoft Teams app to your company store (instructions below) to enable your users to use Teams Chat Assist.
 
-However it is also possible to install this solution within you own Microsoft Azure subscription using our ARM deployment. Please see *[Deploy Teams Chat Assist ARM Template](deploytca.md)* for instructions. 
+However it is also possible to install this solution within you own Microsoft Azure subscription using our ARM deployment. Please see *[Deploy Teams Chat Assist ARM Template](armdeploy.md)* for instructions. 
 
 ![Architecture Diagram](images/TeamsChatAssist.svg "Architecture Diagram")
 
