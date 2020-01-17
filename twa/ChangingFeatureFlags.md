@@ -8,4 +8,4 @@ Teamwork Analytics allows you to change feature flags that decide what data is c
 - **IncludeFiles** - collection of SharePoint file data from Microsoft Teams.
 - **IncludeFilePermissions** - if IncludeFiles is set to true then you can also set whether their permissions data per file is also collected. 
 
-![configFeatureFlags](images/ConfigFeatureFlags.png)
+![Screenshot](images/ConfigFeatureFlags.png)
