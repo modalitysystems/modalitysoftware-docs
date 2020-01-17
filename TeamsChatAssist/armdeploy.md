@@ -37,3 +37,7 @@ This ARM Template will install resources in your Azure tenant. The template will
        > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
+
+4. After a period of deployment should get a Resource group in your tennant with the following componants
+
+   ![Resource Group](images/resourceGroup.png)
