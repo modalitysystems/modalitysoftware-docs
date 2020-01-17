@@ -1,0 +1,1 @@
+# Teams Chat Assist Manifest for ARM Deployment

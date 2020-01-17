@@ -64,3 +64,5 @@ This ARM Template will install resources in your Azure tenant. The template will
    ![Web App Bot](images/webAppBot.png)
 
    ![Web App Bot Test](images/webAppBotTest.png)
+
+10. The deployment is now complete but for people to interact with the Bot you will need to create a manifest file and install into Teams. Please see [Teams Chat Assist Manifest for ARM Deployment](armmanifest.md) for details.
