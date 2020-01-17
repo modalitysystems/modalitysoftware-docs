@@ -27,4 +27,4 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 ![team work secret](images/tcabotSecrets.png)
 
 ### Continue to ARM Deployment
-1. Take your note of the **Application (client) ID** and **Client secrets** to the ARM Deployment phase
+1. Take your note of the **Application (client) ID** and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
