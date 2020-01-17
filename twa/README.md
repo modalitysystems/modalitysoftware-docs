@@ -49,9 +49,17 @@ To deploy the teamwork analytics Teams Bot, you need to install the Bot App into
 
 If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
-### Step 5 (optional): Configuring User Adoption Groups
+### Step 5 (optional): Configuring 
+
+Now that everything is installed, you can configure settings previously set or for additional features.
+
+#### User Adoption Groups
 
 Teamwork Analytics allows you to create custom groups of users for reporting, for more information on these groups see [here](UserAdoptionGroups.md).
+
+#### Toggling Feature Flags
+
+You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md)
 
 ### Individual Modules
 >[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
