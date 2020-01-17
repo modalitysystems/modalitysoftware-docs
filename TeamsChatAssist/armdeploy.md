@@ -41,3 +41,15 @@ This ARM Template will install resources in your Azure tenant. The template will
 4. After a period of deployment should get a Resource group in your tennant with the following componants
 
    ![Resource Group](images/resourceGroup.png)
+
+5. The next step is to provision settings for your tennant in the storage account. The easiest way to do this is using the [Azure Storage Exlorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+
+6. Useing Azure Storage Explorer that you have just install, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
+
+7. Create a table called InstanceConfigurations
+
+   ![Create Table](images/createTable.png)
+
+7. Edit the InstanceConfigurations table as follows
+
+   ![Edit Table](images/editTable.png)
