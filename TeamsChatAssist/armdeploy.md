@@ -17,3 +17,23 @@ This ARM Template will install resources in your Azure tenant. The template will
 | SignalR Service  | 100 GB data transfer from region to region  |
 | Application Insights  | Logs for Web App Bot and Web App Service |
 | Storage Accounts  | Block Blob Storage, General Purpose V2, RA-GRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+
+## Installation
+
+1. Click on the ARM template link that was provided by us. You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
+
+   ![Custom deployment form](images/armDeployForm.png)
+
+2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
+   - Basics
+     - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
+     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. *When applying an upgrade choose the Resource Group that already contains Teamwork Analytics.*
+     - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see *Location* below).
+   - Settings
+     - **Azure Application details** - Use the details you generated when [registering an application](applicationRegistration.md).
+     - **Name** - This is the name used for all components that get deployed and must be globally unique. **The name of your company would be a good choice** and will be apended with 'tcabot-'
+     - **Display Name** - This is the name of the Bot that your users will see
+     - **Location** - The geographical location of the Azure resources that will host Teamwork Analytics. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
+       > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
+
+3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
