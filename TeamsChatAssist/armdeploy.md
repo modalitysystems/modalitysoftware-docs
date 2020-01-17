@@ -53,3 +53,14 @@ This ARM Template will install resources in your Azure tenant. The template will
 7. Edit the InstanceConfigurations table as follows
 
    ![Edit Table](images/editTable.png)
+
+   - **PartitionKey and RowKey** - Both of these should be set to the Tenant ID of your Company. See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this.
+   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created if you the [Teams Web App](https://teams.microsoft.com/) and navigate o the newly created team, the CannelConversationId will be shown in the address bar.
+   - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
+   - **TenantName** - Name of your Azure Tenant.
+
+8. Test the deployment by going to the Web App Bot that is in the deployed Rocource Group and navigate to Test in Web Chat
+
+   ![Web App Bot](images/webAppBot.png)
+
+   ![Web App Bot Test](images/webAppBotTest.png)
