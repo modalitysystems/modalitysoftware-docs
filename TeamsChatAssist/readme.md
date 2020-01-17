@@ -6,7 +6,7 @@ Teams Chat Assist is a fully hosted Software-as-a-Service (SaaS) offering. This 
 
 However it is also possible to install this solution within you own Microsoft Azure subscription using our ARM deployment. Please see *[Deploy Teams Chat Assist ARM Template](deploytca.md)* for instructions. 
 
-![Architecture Diagram](images\TeamsChatAssist.svg "Architecture Diagram")
+![Architecture Diagram](images/TeamsChatAssist.svg "Architecture Diagram")
 
 ## Prerequisites
 
@@ -50,13 +50,13 @@ To validate that the app is functioning correctly in your production tenant befo
 
 Use the [Teams admin portal](https://admin.teams.microsoft.com/) to double check that you’ve enabled the organization for custom apps. Go to **Teams apps** > **Permission policies**. Click **Org-wide app settings**. Under **Custom apps**, make sure **Allow interaction with custom apps** is turned on.
 
-![Custom Apps Enabled](images\1.png "Custom Apps Enabled")
+![Custom Apps Enabled](images/1.png "Custom Apps Enabled")
 
 Start by navigating to **Teams apps -> Setup policies** and clicking the **Global (Org-wide default)** policy. Toggle off **Allow uploading custom apps** and click **Save**.
 
 Now, to re-enabling sideloading for trusted users, navigate to **Teams apps -> Setup policies** and click **Add**. Give this new policy a name and description, then turn on the toggle to **Allow uploading custom apps** and click **Save**. This creates a new policy assigned to no one. To assign it to your set of trusted users, select it and click **Manage users**.
 
-![App setup policies](images\2.png "App setup policies")
+![App setup policies](images/2.png "App setup policies")
  
 Search for these users, **Add** each of them, and click **Apply**. Now these users can upload the app manifest to validate that the app is properly functioning in production. 
 
@@ -66,7 +66,7 @@ To make the app available to users in the tenant app store, you’ll need to upl
 
 When prompted, [Download the Teams Chat Assist manifest file](https://github.com/modalitysystems/TeamsChatAssistGABuilds/releases/latest)
 
-![Upload to the Tenant App Catalog](images\3.png "Upload to the Tenant App Catalog")
+![Upload to the Tenant App Catalog](images/3.png "Upload to the Tenant App Catalog")
 
 ## Configure and Assign Permissions
 
@@ -74,10 +74,10 @@ When prompted, [Download the Teams Chat Assist manifest file](https://github.com
 
 By default, all users will have access to this app in the Store. To restrict and control who has permission to use the app, you can create a new app permission policy. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies#create-a-custom-app-permission-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies#create-a-custom-app-permission-policy).
 
-![Configure and Assign Permissions](images\4.png "Configure and Assign Permissions")
+![Configure and Assign Permissions](images/4.png "Configure and Assign Permissions")
 
 ### Pin the app for end users to discover
 
 By default, for users to find this app they would need to navigate to the Store and browse or search for it. To increase discovery, you can instead pre-pin the app for users in their app bar. Create a new app setup policy to accomplish that. Follow the steps here: [docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies#create-a-custom-app-setup-policy).
 
-![Pin the app for end users to discover](images\5.png "Pin the app for end users to discover")
+![Pin the app for end users to discover](images/5.png "Pin the app for end users to discover")
