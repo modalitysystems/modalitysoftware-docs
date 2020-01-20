@@ -22,8 +22,30 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
    ![App Studio Bots](images/appStudioBots.png)
 
-6. Select Existing bot, connect to different bot id and enter the same App ID that you created for the ARM Deployment.
+6. Select Existing bot, connect to different bot id and enter the same App ID that you created for the ARM Deployment and give it a name. Under Scope, Tick Personal and Team, then click Save.
 
    ![App Studio BotSetup](images/appStudioBotSetup.png)
 
-   > NOTE: Under Scope, Tick Personal and Team.
+7. You should then see the following and then the manifest can be downloaded by clicking 'Test and distribute'.
+
+   ![App Studio BotResults](images/appStudioBotResults.png)
+
+8. Click 'Download' to download the manifest zip file to your downloads folder. The validation is intended for when the Manifest is going to be added to the Microsoft Store so is not always relevant here.
+
+   ![App Studio Distribute](images/appStudioDistribute.png)
+
+9. To install the manifest into Microsoft Teams click the 3 dots and then More apps.
+
+   ![Teams More Apps](images/teamsMoreApps.png)
+         
+10. Click Upload for (complany name) and select the manifest zip file that you downloaded
+
+   ![Teams Upload](images/teamsUpload.png)
+
+   > Note: This step will require the Teams Admin Role
+
+11. Click the down arrow next to add and select 'Add to a team'. Select a Team within you organization for the bot to post agent messages.
+
+   ![Teams Add](images/teamsAdd.png)
+
+   > Note: It is recommended for this Team to be purpose made for the bot to talk too
