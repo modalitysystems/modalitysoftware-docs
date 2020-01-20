@@ -14,6 +14,16 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
    ![App Studio Edit](images/appStudioEdit.png)
 
-4. The App ID needs to be unique for each manifest that is created so to ensure this click the 'Generate' button to create a new randomly generated GUID.
+4. The App ID needs to be unique for each manifest that is created so to ensure this click the 'Generate' button to create a new randomly generated GUID. All other values on this page to need changing.
 
    ![App Studio Detail](images/appStudioDetail.png)
+
+5. Under Capabilites click the Bots tab and then click the 'Set up' button.
+
+   ![App Studio Bots](images/appStudioBots.png)
+
+6. Select Existing bot, connect to different bot id and enter the same App ID that you created for the ARM Deployment.
+
+   ![App Studio BotSetup](images/appStudioBotSetup.png)
+
+   > NOTE: Under Scope, Tick Personal and Team.
