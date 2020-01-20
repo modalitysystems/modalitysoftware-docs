@@ -4,7 +4,7 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
 ## Create Manifest
 
-1. Start by [downloading](images/TeamsChatAssistBot.zip) the base manifest file with common values defined.
+1. Start by [downloading](https://github.com/modalitysystems/modalitysoftware-docs/raw/master/TeamsChatAssist/images/TeamsChatAssistBot.zip) the base manifest file with common values defined.
 
 2. Load App Studio from Micrsoft Teams, goto 'Manifest editor' and 'Import and existing app'.
 
