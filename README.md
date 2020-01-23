@@ -56,6 +56,6 @@ These PowerBI apps are available from [Microsoft AppSource](https://modalitysoft
 
 # Network Readiness Assessment for Microsoft Teams
 
-> [Network Readiness Assessment for Microsoft Teams](/TeamsNetworkReadiness/Network%20Readiness%20Assessment%20for%20Microsoft%20Teams.md)
+> [Network Readiness Assessment for Microsoft Teams](/TeamsNetworkReadiness/Network%20Readiness%20Assessment%20for%20Microsoft%20Teams.html)
 
 
