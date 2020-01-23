@@ -43,7 +43,7 @@ This document describes the process of registering Teamwork Analytics Client as 
    * Files.Read.All
    * Group.Read.All
    * Reports.Read.All
-   * Sites.Read.All
+   * Sites.FullControl.All (Instead you can choose Sites.Read.All but file permission data will not be accurate in reporting)
    * User.Read.All
 1. Click **Add permissions** to be returned to the "API permissions" blade
 1. Click the **Grant Admin Consent for Your Name** button
