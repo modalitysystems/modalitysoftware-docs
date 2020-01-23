@@ -9,11 +9,11 @@ Modality Systems Network Readiness Assessment for Microsoft Teams is a combinati
 Optimal and consistent Microsoft Teams audio, video and sharing performance depends on the network. Microsoft Teams is a cloud service with specific network requirements.
 
 Common issues include:
-•	Firewall and proxies blocking traffic or adding a performance overhead
-•	Insufficient bandwidth 
-•	Network impairments such as jitter and packet loss
-•	VPN usage and performance
-•	Wi-Fi performance
+- Firewall and proxies blocking traffic or adding a performance overhead
+- Insufficient bandwidth 
+- Network impairments such as jitter and packet loss
+- VPN usage and performance
+- Wi-Fi performance
 
 Failing to assess and prepare your network will likely lead to performance issues and impacted user experience. By preparing your network for Microsoft Teams, you can dramatically increase your chance of success.
 
