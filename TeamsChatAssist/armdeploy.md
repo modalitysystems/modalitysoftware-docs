@@ -59,7 +59,7 @@ This ARM Template will install resources in your Azure tenant. The template will
    - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
    - **TenantName** - Name of your Azure Tenant.
 
-1. Create two more tables called: 
+1. Create two more tables called
 
    * MessageConfigurations
    * QuickReplyButtons
@@ -71,7 +71,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Open both files and change all PartionKey values to your Azure TenantID
 
-1. Import both files into their respectoive tables that you created in the previous step
+1. Import both files into their respective tables that you created in the previous step
 
    ![Table Import](images/TableImport.png)
 
