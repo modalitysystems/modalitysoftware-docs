@@ -61,7 +61,7 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 
 1. When someone with the Global Admin role clicks on the Admin consent URL, they should see the following
 
-   ![AdminConsent2](images/AdminConsent2.png)
+   ![AdminConsentAccept](images/AdminConsentAccept.png)
 
 1. After they click Accept they will see a blank screen and the Application Registration should now be visable from the Enterprise Applications section of Azure Active Directory
 
