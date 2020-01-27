@@ -13,7 +13,17 @@ This document describes the process of registering Teams Chat Assist Bot as an A
    * **Redirect URI** - The authorization endpoint used by Teamwork Analytics - Recommend setting this to **https://login.live.com/oauth20_desktop.srf**
    * (The **Redirect URI Type** dropdown can be left as the default value of **Web**)
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
-![application registration](images/applicationRegistration.png)
+
+   ![application registration](images/applicationRegistration.png)
+
+### Branding
+1. Set the Publisher Domain to a valid Domain Name such as your company domain
+
+   ![Branding1](images/Branding1.png)
+
+   ![Branding2](images/Branding2.png)
+
+   ![Branding3](images/Branding3.png)
 
 ### Add a Client Secret
 1. Navigate to the **Azure Active Directory** from the navigation pane on the left
@@ -25,6 +35,8 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 1. Click **Add**
 1. Immediately take note of the **Secret** as this can not be retrieved later and will be required further in the deployment process
 ![team work secret](images/tcabotSecrets.png)
+
+### API permissions
 
 ### Continue to ARM Deployment
 1. Take your note of the **Application (client) ID** and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
