@@ -37,6 +37,33 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 ![team work secret](images/tcabotSecrets.png)
 
 ### API permissions
+1. Remove the Delegated User Read Graph permission by clicking the 3 dots next to Microsoft Graph
+
+   ![APIPermissions1](images/APIPermissions1.png)
+
+1. Add the Application User Read Graph permission by clicking Add a permission and then click Microsoft Graph
+
+   ![APIPermissions2](images/APIPermissions2.png)
+
+1. Select Application permissions, search for user.read.all, tick it and click Add permissions
+
+   ![APIPermissions3](images/APIPermissions3.png)
+
+1. Admin consent will need to be granted by someone with the Global Admin role within your organisation
+
+1. Create an Admin consent URL to forward to a Global Admin consisting of the following 3 components:-
+
+   https://login.microsoftonline.com/common/adminconsent?client_id=
+   Application ID
+   &redirect_uri=https://login.live.com/oauth20_desktop.srf
+
+   ![AdminConsent1](images/AdminConsent1.png)
+
+1. When someone with the Global Admin role clicks on the Admin consent URL, they should see the following
+
+   ![AdminConsent2](images/AdminConsent2.png)
+
+1. After they click Accept they will see a blank screen and the Application Registration should now be visable from the Enterprise Applications section of Azure Active Directory
 
 ### Continue to ARM Deployment
 1. Take your note of the **Application (client) ID** and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
