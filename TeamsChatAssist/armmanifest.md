@@ -14,7 +14,7 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
    ![App Studio Edit](images/appStudioEdit.png)
 
-4. The App ID needs to be unique for each manifest that is created so to ensure this click the 'Generate' button to create a new randomly generated GUID. All other values on this page to need changing.
+4. The App ID needs to be unique for each manifest that is created so to ensure this click the 'Generate' button to create a new randomly generated GUID. All other values on this page don't need changing.
 
    ![App Studio Detail](images/appStudioDetail.png)
 
