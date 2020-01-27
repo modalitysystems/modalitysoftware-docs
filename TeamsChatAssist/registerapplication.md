@@ -53,9 +53,9 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 
 1. Create an Admin consent URL to forward to a Global Admin consisting of the following 3 components:-
 
-   https://login.microsoftonline.com/common/adminconsent?client_id=
-   Application ID
-   &redirect_uri=https://login.live.com/oauth20_desktop.srf
+   * https://login.microsoftonline.com/common/adminconsent?client_id=
+   * Application ID
+   * &redirect_uri=https://login.live.com/oauth20_desktop.srf
 
    ![AdminConsent1](images/AdminConsent1.png)
 
