@@ -58,7 +58,10 @@ This ARM Template will install resources in your Azure tenant. The template will
    - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created, if you got the [Teams Web App](https://teams.microsoft.com/) and navigate to the newly created team, the CannelConversationId will be shown in the address bar.
    ![ConversationID](images/ConversationID.png)
    - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
+   - **IncludeInformationFromGraph** - If set to true then extra information will be pulled about users for reporting. For this to work Admin Consent must have been granted by a Global Admin.
    - **TenantName** - Name of your Azure Tenant.
+
+   - **WorkingHoursConfig** - If you want to configure agent working hours, click Add Property, call it WorkingHoursConfig, type String and [value](workinghours.md)
 
 1. Create two more tables called
 
