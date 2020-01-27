@@ -24,7 +24,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Custom deployment form](images/armDeployForm.png)
 
-2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
+1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
      - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teams Chat Assist. *When applying an upgrade choose the Resource Group that already contains Teams Chat Assist.*
@@ -36,21 +36,21 @@ This ARM Template will install resources in your Azure tenant. The template will
      - **Location** - The geographical location of the Azure resources that will host Teams Chat Assist. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
        > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
 
-3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teams Chat Assist.)
+1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teams Chat Assist.)
 
-4. After a period of deployment should get a Resource group in your tenant with the following componants
+1. After a period of deployment should get a Resource group in your tenant with the following componants
 
    ![Resource Group](images/resourceGroup.png)
 
-5. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
-6. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
+1. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
 
-7. Create a table called InstanceConfigurations
+1. Create a table called InstanceConfigurations
 
    ![New Table](images/newTable.png)
 
-7. Edit the InstanceConfigurations table as follows
+1. Edit the InstanceConfigurations table as follows
 
    ![Edit Table](images/editTable.png)
 
@@ -59,10 +59,26 @@ This ARM Template will install resources in your Azure tenant. The template will
    - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
    - **TenantName** - Name of your Azure Tenant.
 
-8. Test the deployment by going to the Web App Bot that is in the deployed Rocource Group and navigate to Test in Web Chat
+1. Create two more tables called: 
+
+   * MessageConfigurations
+   * QuickReplyButtons
+
+1. Download the following two csv files
+
+   * [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
+   * [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
+
+1. Open both files and change all PartionKey values to your Azure TenantID
+
+1. Import both files into their respectoive tables that you created in the previous step
+
+   ![Table Import](images/TableImport.png)
+
+1. Test the deployment by going to the Web App Bot that is in the deployed Rocource Group and navigate to Test in Web Chat
 
    ![Web App Bot](images/webAppBot.png)
 
    ![Web App Bot Test](images/webAppBotTest.png)
 
-10. The backend deployment is now complete but for people to interact with the Bot you will need to create a manifest file and install into Teams. Please see [Teams Chat Assist Manifest for ARM Deployment](armmanifest.md) for details.
+1. The backend deployment is now complete but for people to interact with the Bot you will need to create a manifest file and install into Teams. Please see [Teams Chat Assist Manifest for ARM Deployment](armmanifest.md) for details.
