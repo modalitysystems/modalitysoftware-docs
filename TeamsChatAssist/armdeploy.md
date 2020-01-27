@@ -56,6 +56,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    - **PartitionKey and RowKey** - Both of these should be set to the Tenant ID of your Company. See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this.
    - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created, if you got the [Teams Web App](https://teams.microsoft.com/) and navigate to the newly created team, the CannelConversationId will be shown in the address bar.
+   ![ConversationID](images/ConversationID.png)
    - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
    - **TenantName** - Name of your Azure Tenant.
 
