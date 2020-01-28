@@ -22,7 +22,7 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 
 > [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
-> ]Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
+> [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 # Teamwork Analytics - About
 
