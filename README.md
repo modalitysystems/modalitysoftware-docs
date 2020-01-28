@@ -16,19 +16,13 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 > [Teamwork Analytics Upgrade](twa/UpgradingTeamworkAnalytics.md)
 
-## Teamwork Analytics PowerBI Apps
+PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-These PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
+## Teamwork Analytics PowerBI Report Guides
 
-> [Teamwork Analytics: Teams Usage](twa/ModalityTeamsUsage.md)
+> [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
-> [Teamwork Analytics: Teams Governance & Security](twa/ModalityTeamsGovernanceAndSecurity.md)
-
-> [Teamwork Analytics: Teams PSTN Billing](twa/ModalityPSTNBilling.md)
-
-> [Teamwork Analytics: Online Meeting Usage](twa/ModalityOnlineMeetingUsage.md)
-
-> [Teamwork Analytics: Yammer Usage](twa/ModalityYammerUsage.md)
+> ]Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 # Teamwork Analytics - About
 
