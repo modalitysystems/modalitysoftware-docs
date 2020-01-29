@@ -6,7 +6,7 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 ---
 
-## Create Team  - Deployment and Upgrade
+## Create Team  - Deployment
 
 > [CreateTeam Deployment](CreateTeam/README.md)
 
