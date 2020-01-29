@@ -66,6 +66,7 @@ This ARM Template will install resources in your Azure tenant. The template will
      * Type = String
      * Value = [workinghours](workinghours.md)
 
+
 1. Create two more tables called
 
    * MessageConfigurations
