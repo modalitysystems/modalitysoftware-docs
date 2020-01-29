@@ -6,9 +6,11 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 ---
 
-## Teamwork Analytics  - Deployment and Upgrade
+## Create Team  - Deployment and Upgrade
 
-> [CreateTeam Deployment](CreateTeam)
+> [CreateTeam Deployment](CreateTeam/README.md)
+
+## Teamwork Analytics  - Deployment and Upgrade
 
 > [Teamwork Analytics Data Backend Deployment](twa/README.md)
 
