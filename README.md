@@ -10,6 +10,8 @@ To find out more about Modality Software, visit [modalitysoftware.com](https://w
 
 > [CreateTeam Deployment](CreateTeam/README.md)
 
+---
+
 ## Teamwork Analytics  - Deployment and Upgrade
 
 > [Teamwork Analytics Data Backend Deployment](twa/README.md)
@@ -26,7 +28,7 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 
 > [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
-# Teamwork Analytics - About
+## Teamwork Analytics - Architecture and FAQ
 
 > [Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
 
@@ -34,13 +36,15 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 
 > [Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
 
-# OneMeeting
+---
+
+## OneMeeting
 
 > [OneMeeting Deployment](CreateTeam)
 
 ---
 
-# Teams Chat Assist
+## Teams Chat Assist
 
 > [Teams Chat Assist Deployment](TeamsChatAssist)
 
@@ -50,7 +54,7 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 
 ---
 
-# Network Readiness Assessment for Microsoft Teams
+## Network Readiness Assessment for Microsoft Teams
 
 > [Network Readiness Assessment for Microsoft Teams](/TeamsNetworkReadiness/Network%20Readiness%20Assessment%20for%20Microsoft%20Teams.html)
 
