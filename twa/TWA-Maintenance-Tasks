@@ -5,7 +5,6 @@
 - Network and/or Security Group changes - If any changes are made, please review PowerBI Apps/Reports to ensure data is still process as expected.
 - VM Backup - Backup is not essential as the service can be quickly redeployed and data re-pulled from your tenant. However, if you feel the data has significant value and re-deployment would be detrimental to your project, please back the VM and Database.
 	
-
 # Windows OS
 
 - Modality Service - This service should always be running. If not running attempt Restart. If unable to start, please raise with Modality. Please provide local logs (Location - C:\Program Files\Modality\Graph.ETL\Logs)
