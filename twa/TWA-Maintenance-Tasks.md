@@ -1,9 +1,13 @@
-# Azure VM/Database
+# Azure Windows Virtual Machine
 
 - Ensure VM is running 24x7
 - VM Resources - We recommend no resource reduction to be made on VM from initial deployment. If reduction is made, please review PowerBI Apps/Reports to ensure data is still process as expected.
 - Network and/or Security Group changes - If any changes are made, please review PowerBI Apps/Reports to ensure data is still process as expected.
-- VM Backup - Backup is not essential as the service can be quickly redeployed and data re-pulled from your tenant. However, if you feel the data has significant value and re-deployment would be detrimental to your project, please back the VM and Database.
+- VM Backup - There is no need to backup this machine
+
+# Azure SQL
+
+- Backup the database to your usual schedule. At least weekly is recommended.
 	
 # Windows OS
 
