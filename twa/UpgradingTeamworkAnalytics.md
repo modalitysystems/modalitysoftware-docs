@@ -14,7 +14,7 @@ For PowerBI apps, our version number appears in the description of the app in th
 
 When upgrading either the PowerBI or the backend, please make sure you are on the latest of both. You can upgrade the app or the backend in any order, but it is only tested and supported to work on the current version of both.
 
-
+![Deployment History](images/TWA%20PowerBI%20Version.png)
 
 ## Backend Upgrade - ARM Template
 
