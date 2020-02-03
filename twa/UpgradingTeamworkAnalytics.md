@@ -8,6 +8,8 @@ Your current versions are listed in the PowerBI apps under Advanced / About
 
 ![Deployment History](images/TWAVersionNumbers.png)
 
+You can check the latest versions of the backend released here: [Github Releases List](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases)
+
 ## Backend Upgrade - ARM Template
 
 The process for upgrading is identical to installation, except that you will choose an existing Resource Group, rather than creating a new one.
