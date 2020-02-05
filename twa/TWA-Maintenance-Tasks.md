@@ -23,5 +23,5 @@
 	
 # PowerBI App Update
 
-- Follow guidance located here (link to docs site)
-- Note: SQL Database Username/Password will be required during updated.
+- Follow guidance located here
+- Note: Configuration information will be needed during upgrade process
