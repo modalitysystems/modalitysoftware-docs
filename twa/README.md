@@ -57,6 +57,10 @@ Now that everything is installed, you can configure settings previously set or f
 
 Teamwork Analytics allows you to create custom groups of users for reporting, for more information on these groups see [here](UserAdoptionGroups.md).
 
+#### Custom User Attributes
+
+Teamwork Analytics allows you to report on custom user attributes from your active directory. For information on how to configure this feature, see [here](CustomUserAttributes.md).
+
 #### Toggling Feature Flags
 
 You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md)
