@@ -1,46 +1,47 @@
-MessageText,MessageText@type,PartitionKey,RowKey,Timestamp
-End Conversation,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentFound_Button_End,2020-01-24T14:36:03.190Z
-Agent found--! You have been connected to %%agentName%%.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentFound_Message_Connected,2020-01-24T11:12:56.401Z
-"The conversation will start in a moment. When you have finished, click End Conversation.",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentFound_Message_Start,2020-01-24T14:36:08.869Z
-Asked by:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentSearchCancelled_Fact_AskedBy,2020-01-24T14:36:16.684Z
-Question:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentSearchCancelled_Fact_Question,2020-01-24T14:36:22.695Z
-This question has been cancelled or expired.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_AgentSearchCancelled_Message_Cancelled,2020-01-24T14:45:01.386Z
-Asked by:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Fact_AskedBy,2020-01-24T14:45:07.819Z
-Conversation Log-Conversation Log:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Fact_ConversationLog,2020-01-24T14:34:19.350Z
-Organisation:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Fact_Organisation,2020-01-24T15:05:00.464Z
-Question:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Fact_Question,2020-01-24T15:05:06.350Z
-Status:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Fact_Status,2020-01-24T15:05:12.822Z
-Conversation Finished: answered by %%agentName%%.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_ConversationFinished_Message_Finished,2020-01-24T15:05:19.061Z
-Answer Question,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Action_Answer,2020-01-24T15:05:24.721Z
-Asked by:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Fact_AskedBy,2020-01-24T15:05:31.309Z
-Organisation:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Fact_Organisation,2020-01-24T15:05:36.959Z
-Question:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Fact_Question,2020-01-24T15:05:43.313Z
-Status:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Fact_Status,2020-01-24T15:05:49.262Z
-"New Question: ""%%question%%""",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_NewQuestion_Message_Question,2020-01-24T14:55:06.721Z
-End Conversation,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_PromptConversationEnd_Button_End,2020-01-24T14:55:12.488Z
-"The agent has signified that this conversation has finished. If you are happy, please end the conversation by clicking the button below. Otherwise, continue to speak to the agent.",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_PromptConversationEnd_Message_Content,2020-01-24T14:55:19.064Z
-End Conversation?You can end now but start again later if you wish.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_PromptConversationEnd_Message_Title,2020-01-24T14:59:16.433Z
-Go to Question,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Action_Button,2020-01-24T15:03:42.225Z
-Asked by:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Fact_AskedBy,2020-01-24T14:35:57.048Z
-Conversation Log:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Fact_ConversationLog,2020-01-24T15:03:48.372Z
-Organisation:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Fact_Organisation,2020-01-24T15:04:12.490Z
-Question:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Fact_Question,2020-01-24T15:04:06.497Z
-Status:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Fact_Status,2020-01-24T15:04:00.118Z
-This question is being answered by %%agentName%%.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnsweredWithTeamInfo_Message,2020-01-24T15:03:54.233Z
-Asked by:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnswered_Fact_AskedBy,2020-01-24T15:04:20.574Z
-Organisation:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnswered_Fact_Organisation,2020-01-24T15:04:29.685Z
-Question:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnswered_Fact_Question,2020-01-24T15:04:35.522Z
-Status:,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnswered_Fact_Status,2020-01-24T15:04:42.679Z
-This question has been accepted by %%agentName%%.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_QuestionAnswered_Message,2020-01-24T14:49:59.135Z
-"Your organisation is signed up for Teams Help. This means that if you have any questions about using Microsoft Teams you can ask us anytime and get connected to a dedicated trained Teams Support Expert who can help you out.\n\nTo get started, simply ask your question here and you'll be connected to an available Expert in a short time.",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_WelcomeMessage_Message_Body,2020-01-24T14:49:36.250Z
-Teams Help from Modality Systems,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Card_WelcomeMessage_Message_Title,2020-01-24T14:49:28.712Z
-"OK, will keep looking",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_Cancellation_Message_KeepLooking,2020-01-24T14:49:21.814Z
-Agent search has already timed out.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_Cancellation_Message_TimeOut,2020-01-24T14:45:32.912Z
-Are you sure you want to cancel searching for an someone to answer your question?,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_Cancellation_Prompt,2020-01-24T14:49:14.208Z
-I'm still looking. Type cancel to stop looking,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_LiveConversation_Message_Cancel,2020-01-24T14:49:03.611Z
-"I'm looking for someone who can answer your question. To cancel this search, just type 'cancel'.",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_NewConversation_Message_Cancel,2020-01-24T14:55:52.813Z
-The service is closed. Please try again later.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,Dialog_OutOfHours_Message,2020-01-24T14:36:54.628Z
-You have already ended the conversation,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,System_Message_AlreadyEnd,2020-01-24T14:36:47.930Z
-You have ended the conversation,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,System_Message_End,2020-01-24T14:36:41.743Z
-"Sorry, I couldn't find anyone to answer your question. Please try again later.",Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,System_Message_NoAvailability,2020-01-24T14:36:35.491Z
-OK. I've stopped looking.,Edm.String,f7af6be0-1017-4a4e-8e81-5325b780ef98,System_Message_Stop,2020-01-24T14:36:29.553Z
+PartitionKey,RowKey,MessageText,MessageText@type
+f7af6be0-1017-4a4e-8e81-5325b780ef98,AgentNameMasked,Agent,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef99,Card_AgentFound_Button_End,End Conversation,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef100,Card_AgentFound_Message_Connected,Agent found--! You have been connected to %%agentName%%.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef101,Card_AgentFound_Message_Start,"The conversation will start in a moment. When you have finished, click End Conversation.",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef102,Card_AgentSearchCancelled_Fact_AskedBy,Asked by:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef103,Card_AgentSearchCancelled_Fact_Question,Question:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef104,Card_AgentSearchCancelled_Message_Cancelled,This question has been cancelled or expired.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef105,Card_ConversationFinished_Fact_AskedBy,Asked by:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef106,Card_ConversationFinished_Fact_ConversationLog,Conversation Log:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef107,Card_ConversationFinished_Fact_Organisation,Organisation:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef108,Card_ConversationFinished_Fact_Question,Question:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef109,Card_ConversationFinished_Fact_Status,Status:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef110,Card_ConversationFinished_Message_Finished,Conversation Finished: answered by %%agentName%%.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef111,Card_NewQuestion_Action_Answer,Answer Question,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef112,Card_NewQuestion_Fact_AskedBy,Asked by:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef113,Card_NewQuestion_Fact_Organisation,Organisation:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef114,Card_NewQuestion_Fact_Question,Question:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef115,Card_NewQuestion_Fact_Status,Status:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef116,Card_NewQuestion_Message_Question,"New Question: ""%%question%%""",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef117,Card_PromptConversationEnd_Button_End,End Conversation,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef118,Card_PromptConversationEnd_Message_Content,"The agent has signified that this conversation has finished. If you are happy, please end the conversation by clicking the button below. Otherwise, continue to speak to the agent.",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef119,Card_PromptConversationEnd_Message_Title,End Conversation?You can end now but start again later if you wish.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef120,Card_QuestionAnsweredWithTeamInfo_Action_Button,Go to Question,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef121,Card_QuestionAnsweredWithTeamInfo_Fact_AskedBy,Asked by:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef122,Card_QuestionAnsweredWithTeamInfo_Fact_ConversationLog,Conversation Log:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef123,Card_QuestionAnsweredWithTeamInfo_Fact_Organisation,Organisation:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef124,Card_QuestionAnsweredWithTeamInfo_Fact_Question,Question:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef125,Card_QuestionAnsweredWithTeamInfo_Fact_Status,Status:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef126,Card_QuestionAnsweredWithTeamInfo_Message,This question is being answered by %%agentName%%.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef127,Card_QuestionAnswered_Fact_AskedBy,Asked by:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef128,Card_QuestionAnswered_Fact_Organisation,Organisation:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef129,Card_QuestionAnswered_Fact_Question,Question:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef130,Card_QuestionAnswered_Fact_Status,Status:,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef131,Card_QuestionAnswered_Message,This question has been accepted by %%agentName%%.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef132,Card_WelcomeMessage_Message_Body,"Your organisation is signed up for Teams Help. This means that if you have any questions about using Microsoft Teams you can ask us anytime and get connected to a dedicated trained Teams Support Expert who can help you out.\n\nTo get started, simply ask your question here and you'll be connected to an available Expert in a short time.",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef133,Card_WelcomeMessage_Message_Title,Teams Help from Modality Systems,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef134,Dialog_Cancellation_Message_KeepLooking,"OK, will keep looking",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef135,Dialog_Cancellation_Message_TimeOut,Agent search has already timed out.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef136,Dialog_Cancellation_Prompt,Are you sure you want to cancel searching for someone to answer your question?,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef137,Dialog_LiveConversation_Message_Cancel,I'm still looking. Type cancel to stop looking,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef138,Dialog_NewConversation_Message_Cancel,"I'm looking for someone who can answer your question. To cancel this search, just type 'cancel'.",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef139,Dialog_OutOfHours_Message,The service is closed. Please try again later.,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef140,System_Message_AlreadyEnd,You have already ended the conversation,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef141,System_Message_End,You have ended the conversation,Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef142,System_Message_NoAvailability,"Sorry, I couldn't find anyone to answer your question. Please try again later.",Edm.String
+f7af6be0-1017-4a4e-8e81-5325b780ef143,System_Message_Stop,OK. I've stopped looking.,Edm.String
