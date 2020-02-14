@@ -46,40 +46,35 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
 
-1. Create a table called InstanceConfigurations
+1. Create 3 tables called InstanceConfigurations, MessageConfigurations and QuickReplyButtons
 
    ![New Table](images/newTable.png)
 
-1. Edit the InstanceConfigurations table as follows
+1. Download the following 3 csv files
 
-   ![Edit Table](images/editTable.png)
-
-   - **PartitionKey and RowKey** - Both of these should be set to the Tenant ID of your Company. See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this.
-   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created, if you goto the [Teams Web App](https://teams.microsoft.com/) and navigate to the newly created team, the CannelConversationId will be shown in the address bar.
-   - **AgentSearchTimeoutInSeconds** - The length of time in seconds that the system will allow between the initial question being asked and the agent responding.
-   ![ConversationID](images/ConversationID.png)
-   - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
-   - **IncludeInformationFromGraph** - If set to true then extra information will be pulled about users for reporting. For this to work Admin Consent must have been granted by a Global Admin.
-   - **TenantName** - Name of your Azure Tenant.
-   - **WorkingHoursConfig** - If you want to configure agent working hours click Add Property, then: 
-     * Property Name = WorkingHoursConfig
-     * Type = String
-     * Value = [workinghours](workinghours.md)
-
-1. Create two more tables called
-
-   * MessageConfigurations
-   * QuickReplyButtons
-
-1. Download the following two csv files
-
+   * [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
    * [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
    * [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
 
-1. Open both files and change all PartionKey values to your Azure TenantID
+1. Open all files and change all PartionKey values to your Azure TenantID, and also the RowKey value for the InstanceConfigurations.typed.csv file.
 
-1. Import both files into their respective tables that you created in the previous step
+   > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this.
 
-   ![Table Import](images/TableImport.png)
+1. Import all files into their respective tables that you created in the previous step
+
+   ![Table Import](images/TableImport2.png)
+
+1. Edit the InstanceConfigurations table as follows
+
+   ![Edit Table](images/editTable2.png)
+
+   - **AgentSearchTimeoutInSeconds** - The length of time in seconds that the system will allow between the initial question being asked and the agent responding.
+   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created, if you goto the [Teams Web App](https://teams.microsoft.com/) and navigate to the newly created team, the CannelConversationId will be shown in the address bar.
+   ![ConversationID](images/ConversationID.png)
+   - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in.
+   - **IncludeInformationFromGraph** - If set to true then extra information will be pulled about users for reporting. For this to work Admin Consent must have been granted by a Global Admin.
+   - **MaskAgentName** - If set to TRUE the Agants name will be set to the value that is defined in the MassageConfigurations table
+   - **TenantName** - Name of your Azure Tenant.
+   - **WorkingHoursConfig** - Define working hours here or blank out value for 24/7 working pattern, 
 
 1. The backend deployment is now complete but for people to interact with the Bot you will need to create a manifest file and install into Teams. Please see [Teams Chat Assist Manifest for ARM Deployment](armmanifest.md) for details.
