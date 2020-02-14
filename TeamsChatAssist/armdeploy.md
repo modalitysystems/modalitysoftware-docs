@@ -44,6 +44,13 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
+   > If your company uses AD FS then you might have trouble signing into Azure Storage Explorer so try the following:
+      - On the left vertical tool bar, open Settings. In the Settings Panel, go to Application > Sign in. Enable Use device code flow sign-in.
+      - Open the Connect dialog box (either through the plug icon on the left-side vertical bar or by selecting Add Account on the account panel).
+      - Choose the environment you want to sign in to.
+      - Select Sign In.
+      - Follow the instructions on the next panel.
+
 1. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
 
 1. Create 3 tables called InstanceConfigurations, MessageConfigurations and QuickReplyButtons
@@ -73,7 +80,7 @@ This ARM Template will install resources in your Azure tenant. The template will
       - Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
       - On the Get Windows App screen click **Use web app instead**
       ![TeamsWebAppInstead](images/teamsWebApp.png)
-      - Create a new Team and call it something like Teams Chat Assis Agents
+      - Create a new Team and call it something like Teams Chat Assist Agents
       - Make it Private, skip adding members for now but revisit this when the deployment has finished and add your Agents as members
       - Create a Channel for the Bot to post agent messages too. Call it something appropriate to the bot such as company name or workload description
       ![ConversationID](images/ConversationID2.png)
