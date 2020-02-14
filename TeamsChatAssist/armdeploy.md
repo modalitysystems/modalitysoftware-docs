@@ -58,7 +58,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Open all files and change all PartionKey values to your Azure TenantID, and also the RowKey value for the InstanceConfigurations.typed.csv file.
 
-   > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this.
+   > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
 
 1. Import all files into their respective tables that you created in the previous step
 
@@ -68,17 +68,24 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Edit Table](images/editTable2.png)
 
-   - **AgentSearchTimeoutInSeconds** - The length of time in seconds that the system will allow between the initial question being asked and the agent responding.
-   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents. Once this is created, if you goto the [Teams Web App](https://teams.microsoft.com/) and navigate to the newly created team, the CannelConversationId will be shown in the address bar.
-   ![ConversationID](images/ConversationID.png)
+   - **AgentSearchTimeoutInSeconds** - The length of time in seconds that the system will allow between the initial question being asked and the agent responding
+   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents
+      - Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
+      - On the Get Windows App screen click **Use web app instead**
+      ![TeamsWebAppInstead](images/teamsWebApp.png)
+      - Create a new Team and call it something like Teams Chat Assis Agents
+      - Make it Private, skip adding members for now but revisit this when the deployment has finished and add your Agents as members
+      - Create a Channel for the Bot to post agent messages too. Call it something appropriate to the bot such as company name or workload description
+      ![ConversationID](images/ConversationID2.png)
+      - Copy Thread ID from address bar as indicated above and paste into the ConversationID property in table storage
    - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in. To identify what region your Teams instance is in, goto [Location of Data](https://docs.microsoft.com/en-us/microsoftteams/location-of-data-in-teams), then set value to either:
       - UK (United Kingdom)
       - AMER (North, Central and South America)
       - APAC (Asia Pacific)
       - EMEA (Europe, Middle-East and Africa)
    - **IncludeInformationFromGraph** - If set to true then extra information will be pulled about users for reporting. For this to work Admin Consent must have been granted by a Global Admin.
-   - **MaskAgentName** - If set to TRUE the Agants name will be set to the value that is defined in the MassageConfigurations table
+   - **MaskAgentName** - If set to TRUE the Agants name will be set to the value that is defined in the MassageConfigurations table.
    - **TenantName** - Name of your Azure Tenant.
-   - **WorkingHoursConfig** - Define working hours here or blank out value for 24/7 working pattern, 
+   - **WorkingHoursConfig** - Define working hours here or blank out value for 24/7 working pattern.
 
 1. The backend deployment is now complete but for people to interact with the Bot you will need to create a manifest file and install into Teams. Please see [Teams Chat Assist Manifest for ARM Deployment](armmanifest.md) for details.
