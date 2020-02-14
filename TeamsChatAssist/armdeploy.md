@@ -44,7 +44,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
-   > If your company uses AD FS then you might have trouble signing into Azure Storage Explorer so try the following:
+   > If your company uses AD FS then you might have trouble signing into Azure Storage Explorer so try:
       - On the left vertical tool bar, open Settings. In the Settings Panel, go to Application > Sign in. Enable Use device code flow sign-in.
       - Open the Connect dialog box (either through the plug icon on the left-side vertical bar or by selecting Add Account on the account panel).
       - Choose the environment you want to sign in to.
