@@ -10,11 +10,9 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 1. Enter the following application registration details
    * **Name** - Recommend setting this to **Teams Chat Assist Bot**
    * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only**
-   * **Redirect URI** - The authorization endpoint used by Teamwork Analytics - Recommend setting this to **https://login.live.com/oauth20_desktop.srf**
-   * (The **Redirect URI Type** dropdown can be left as the default value of **Web**)
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 
-   ![application registration](images/applicationRegistration.png)
+   ![application registration](images/applicationRegistration2.png)
 
 ### Branding
 1. Set the Publisher Domain to a valid Domain Name such as your company domain
@@ -51,21 +49,13 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 
 1. Admin consent will need to be granted by someone with the Global Admin role within your organisation
 
-1. Create an Admin consent URL to forward to a Global Admin consisting of the following 3 components:-
+1. Click the **Grant admin consent** button as a Global Admin. If the button is not available you might need to click Refresh
 
-   * https://login.microsoftonline.com/common/adminconsent?client_id=
-   * Application ID
-   * &redirect_uri=https://login.live.com/oauth20_desktop.srf
+   ![AdminConsent](images/AdminConsent.png)
 
-   e.g.
+1. Once Admin Consent has succesfully been granted, the permission will turn grean
 
-   ![AdminConsent1](images/AdminConsent1.png)
-
-1. When someone with the Global Admin role clicks on the Admin consent URL, they should see the following
-
-   ![AdminConsentAccept](images/AdminConsentAccept.png)
-
-1. After they click Accept they will see a blank screen and the Application Registration should now be visable from the Enterprise Applications section of Azure Active Directory
+   ![AdminConsent](images/AdminConsent2.png)
 
 ### Continue to ARM Deployment
 1. Take your note of the **Application (client) ID** and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
