@@ -44,8 +44,8 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
    > Note: This step will require the Teams Admin Role
 
-1. Click the down arrow next to add and select 'Add to a team'. Select a Team within you organization for the bot to post agent messages.
+1. Click the down arrow next to add and select 'Add to a team'. Select the channel within the team that you created when deploying the bot.
 
    ![Teams Add](images/teamsAdd.png)
 
-   > Note: It is recommended for this Team to be purpose made for the bot to talk too
+   ![Teams Add2](images/teamsAdd2.png)
