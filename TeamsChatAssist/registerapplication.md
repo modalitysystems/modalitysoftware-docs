@@ -9,10 +9,10 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 1. Select **App Registrations** and click **New Registration** (Take care not to select **App Registrations (Legacy)** as these instructions do not apply to them)
 1. Enter the following application registration details
    * **Name** - Recommend setting this to **Teams Chat Assist Bot**
-   * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only**
+   * **Supported Account Types** - This needs to be set to **Accounts in any Organizational Directory (Any Azure AD directory - Multitenant**
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 
-   ![application registration](images/applicationRegistration2.png)
+   ![application registration](images/AppRegistration.png)
 
 ### Branding
 1. Set the Publisher Domain to a valid Domain Name such as your company domain
