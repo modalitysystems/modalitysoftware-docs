@@ -57,3 +57,4 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
    ![Team Permissions General](images/TeamPermissionsChannel.png)
    - Add members
    ![Team Permissions General](images/TeamPermissionsAdd.png)
+   
