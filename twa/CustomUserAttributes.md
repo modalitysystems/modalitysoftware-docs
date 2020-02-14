@@ -13,9 +13,9 @@ The table has one column called `Name` which supports alphanumeric characters an
 | companyName |
 | faxNumber |
 | mailNickname |
-| extension_b3438d3417634595a687eadbf73b5d45_MyAttribute1 |
-| extension_b3438d3417634595a687eadbf73b5d45_MyAttribute2 |
-| extension_b3438d3417634595a687eadbf73b5d45_MyAttribute3 |
+| preferredColour |
+| shoeSize |
+| favouriteSuperhero |
 
 
 The next time TWA queries user data it will search for these attributes and save any values it finds to the SQL database within the `dbo.UserProperties` table.
@@ -28,7 +28,7 @@ The table has numbered CustomAttribute columns for their corresponding filter in
 
 | CustomAttribute1 | CustomAttribute2 | CustomAttribute3 | etc.. |
 | --- | --- | --- | --- |
-| companyName | extension_b3438d3417634595a687eadbf73b5d45_MyAttribute2 | faxNumber
+| companyName | favouriteSuperhero | faxNumber
 
 There can only be one row in this table and we currently only support up to 10 custom attributes to show in Power BI at a time.
 
