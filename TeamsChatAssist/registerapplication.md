@@ -47,9 +47,9 @@ This document describes the process of registering Teams Chat Assist Bot as an A
 
    ![APIPermissions3](images/APIPermissions3.png)
 
-   > Note: Admin consent will need to be granted by someone with the **Global Admin** role within your organisation
-
 1. Click the **Grant admin consent** button as a Global Admin. If the button is not available you might need to click Refresh
+
+   > Note: Admin consent will need to be granted by someone with the **Global Admin** role within your organisation
 
    ![AdminConsent](images/AdminConsent.png)
 
