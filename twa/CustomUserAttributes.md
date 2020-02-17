@@ -1,6 +1,6 @@
 # Custom User Attributes
 
-In addition to basic user attributes like `id`, `country` and `department`, Teamwork Analytics allows you to report on _custom user attributes_ from your active directory.
+In addition to basic user attributes like `id`, `country` and `department`, Teamwork Analytics allows you to report on _custom user attributes_ from your active directory (we currently support [Directory Extensions](https://docs.microsoft.com/en-gb/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions)).
 
 ## Gathering the attributes
 
