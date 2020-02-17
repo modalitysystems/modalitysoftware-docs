@@ -24,7 +24,7 @@ The next time TWA queries user data it will search for these attributes and save
 
 To configure custom attributes to show up in your Power BI reports, you must add their names to the `configuration.CustomUserPropertiesForReports` table in the TWA SQL database.
 
-The table has numbered CustomAttribute columns for their corresponding filter in Power Bi. The values must match whichever custom attributes names you have previously configured to use. They can be in whatever order you wish for them to show up in, such as in the following example. 
+The table has numbered CustomAttribute columns for their corresponding filter in Power Bi. The values must match whichever custom attributes names you have previously configured in the `configuration.CustomUserProperties` table to use. They can be in whatever order you wish for them to show up in, such as in the following example. 
 
 | CustomAttribute1 | CustomAttribute2 | CustomAttribute3 | etc.. |
 | --- | --- | --- | --- |
