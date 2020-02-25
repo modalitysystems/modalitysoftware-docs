@@ -8,7 +8,7 @@
    * [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
    * [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
 
-1. Open all files and change all PartionKey values to your Azure TenantID, and also the RowKey value for the InstanceConfigurations.typed.csv file.
+1. Open all files and change all PartionKey values to the user's Azure TenantID, and also the RowKey value for the InstanceConfigurations.typed.csv file.
 
    > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
 
