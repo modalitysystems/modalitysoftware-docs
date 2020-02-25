@@ -4,7 +4,7 @@
 
 2. Open the storage account associated with TCA
 
-3. Add/Edit rows individualy, or download and import the default values for each table
+3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 ## InstanceConfigurations Table  
 
