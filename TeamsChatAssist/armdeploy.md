@@ -53,23 +53,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
 
-1. Create 3 tables called InstanceConfigurations, MessageConfigurations and QuickReplyButtons
-
-   ![New Table](images/newTable.png)
-
-1. Download the following 3 csv files
-
-   * [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
-   * [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
-   * [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
-
-1. Open all files and change all PartionKey values to your Azure TenantID, and also the RowKey value for the InstanceConfigurations.typed.csv file.
-
-   > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
-
-1. Import all files into their respective tables that you created in the previous step
-
-   ![Table Import](images/TableImport2.png)
+1. [Import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 1. Edit the InstanceConfigurations table as follows
 
