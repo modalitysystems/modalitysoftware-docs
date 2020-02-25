@@ -4,6 +4,8 @@
 
 2. Open the storage account associated with TCA
 
+3. Add/Edit rows individualy, or download and import the default values for each table
+
 ## InstanceConfigurations Table  
 
 > Default Values can be downloaded from here: [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
