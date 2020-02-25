@@ -6,7 +6,7 @@
 
 3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
-## InstanceConfigurations Table  
+## InstanceConfiguration Table  
 
 > Default Values can be downloaded from here: [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
 
@@ -18,11 +18,11 @@
 
 - Timestamp = autopopulated (not visible when creating first entity) 
 
-- AgentSearchTimeoutInSeconds (Int32) a number up to 2,147,483 seconds   
+- AgentSearchTimeoutInSeconds (Int32) a number up to 2,147,483 seconds, The length of time in seconds that the system will allow between the initial question being asked and the agent responding   
 
 - ChannelConversationId = [Id of agent channel] this is where the questions will appear. (as mentioned above)  
 
-- ChannelServiceUrl = https://smba.trafficmanager.net/ + [region of tenant, eg uk, amer, emea] 
+- ChannelServiceUrl = https://smba.trafficmanager.net/ + [region of tenant, eg uk, amer, emea], you can use [Location of Data](https://docs.microsoft.com/en-us/microsoftteams/location-of-data-in-teams) to determine this.
 
 - IncludeInformationFromGraph (boolean) = Enable to report on users’ manager’s name and email address 
 
