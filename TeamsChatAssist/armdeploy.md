@@ -55,29 +55,17 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. [Import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
-1. Edit the InstanceConfigurations table as follows
+1. Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
+   - On the Get Windows App screen click **Use web app instead**
+   ![TeamsWebAppInstead](images/teamsWebApp.png)
+   - Create a new Team and call it something like Teams Chat Assist Agents
+   - Make it Private, skip adding members for now but revisit this when the deployment has finished and add your Agents as members
+   - Create a Channel for the Bot to post agent messages too. Call it something appropriate to the bot such as company name or workload description
+   ![ConversationID](images/ConversationID2.png)
+   - Copy Thread ID from address bar as indicated above and paste into the ChannelConversationId property in the instance configuration table
 
-   ![Edit Table](images/editTable2.png)
-
-   - **AgentSearchTimeoutInSeconds** - The length of time in seconds that the system will allow between the initial question being asked and the agent responding
-   - **ChannelConversationId** - Teams Chat Assist Bot requires a Team to post messages to the agents
-      - Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
-      - On the Get Windows App screen click **Use web app instead**
-      ![TeamsWebAppInstead](images/teamsWebApp.png)
-      - Create a new Team and call it something like Teams Chat Assist Agents
-      - Make it Private, skip adding members for now but revisit this when the deployment has finished and add your Agents as members
-      - Create a Channel for the Bot to post agent messages too. Call it something appropriate to the bot such as company name or workload description
-      ![ConversationID](images/ConversationID2.png)
-      - Copy Thread ID from address bar as indicated above and paste into the ConversationID property in table storage
-   - **ChannelServiceUrl** - Change depanding on what region your Azure Tenant was registered in. To identify what region your Teams instance is in, goto [Location of Data](https://docs.microsoft.com/en-us/microsoftteams/location-of-data-in-teams), then set value to either:
-      - UK (United Kingdom)
-      - AMER (North, Central and South America)
-      - APAC (Asia Pacific)
-      - EMEA (Europe, Middle-East and Africa)
-   - **IncludeInformationFromGraph** - If set to true then extra information will be pulled about users for reporting. For this to work Admin Consent must have been granted by a Global Admin.
-   - **MaskAgentName** - If set to TRUE the Agants name will be set to the value that is defined in the MassageConfigurations table.
-   - **TenantName** - Name of your Azure Tenant.
-   - **WorkingHoursConfig** - Define working hours here or blank out value for 24/7 working pattern.
+1. [Edit the InstanceConfigurations table as desired](TableStorageConfiguration.md)
+  
 
 ## Bot Manifest
 
