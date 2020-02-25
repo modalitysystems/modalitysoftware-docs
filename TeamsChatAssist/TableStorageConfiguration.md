@@ -6,6 +6,8 @@
 
 ## InstanceConfigurations Table  
 
+![Instance Configuration Table](images/InstanceConfigurationTable.png "Instance Configuration Table")
+
 - PartitionKey = [TenantId] 
 
 - RowKey = [TenantId] 
@@ -212,6 +214,8 @@ Below are the validations rules that the service abides by for working hours –
 
 ## QuickReplyButtons Table
 
+![Quick Reply Buttons Table](images/QuickReplyButtonsTable.png "Quick Reply Buttons Table")
+
 Add Entity for each predefined reply button to be displayed in the Agent View. The predefined reply buttons are highlighted in the screenshot below. 
 
 - PartitionKey = [TenantId] 
@@ -224,7 +228,11 @@ Add Entity for each predefined reply button to be displayed in the Agent View. T
 
 - ReplyText (String) = The text that is sent to the user when the button is pressed (the text can also be viewed by hovering over the button in the agent view) 
 
+![Quick Reply Buttons UI](images/QuickReplyButtonsUI.png "Quick Reply Buttons UI")
+
 ## MessageConfigurations Table
+
+![Message Configuration Table](images/MessageConfigurationTable.png "Message Configuration Table")
 
 - PartitionKey = [TenantId]
 
@@ -256,4 +264,4 @@ Any Message ID starting with:
 
 > Note: If the value fails to load for whatever reason, TCA would output an error message in the format of “ERR_MessageId”. For example if the value for “Card_AgentFound_Message_Start” failed to read/write, this would display in the respective area: 
 
- 
+ ![Message Configuration Error](images/MessageConfigurationError.png "Message Configuration Error")
