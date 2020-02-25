@@ -20,7 +20,7 @@
 
 - AgentSearchTimeoutInSeconds (Int32) a number up to 2,147,483 seconds, The length of time in seconds that the system will allow between the initial question being asked and the agent responding   
 
-- ChannelConversationId = [Id of agent channel] this is where the questions will appear. (as mentioned above)  
+- ChannelConversationId = [Id of agent channel] this is the channel the agent questions will appear.
 
 - ChannelServiceUrl = https://smba.trafficmanager.net/ + [region of tenant, eg uk, amer, emea], you can use [Location of Data](https://docs.microsoft.com/en-us/microsoftteams/location-of-data-in-teams) to determine this.
 
