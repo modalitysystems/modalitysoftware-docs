@@ -15,3 +15,5 @@
 1. Import all files into their respective tables that you created in the previous step
 
    ![Table Import](images/TableImport2.png)
+   
+1. Adjust values using [Table Storage Configuration](TableStorageConfiguration.md) for guidance
