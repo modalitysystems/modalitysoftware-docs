@@ -6,6 +6,8 @@
 
 ## InstanceConfigurations Table  
 
+> Default Values can be downloaded from here: [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
+
 ![Instance Configuration Table](images/InstanceConfigurationTable.png "Instance Configuration Table")
 
 - PartitionKey = [TenantId] 
@@ -214,6 +216,9 @@ Below are the validations rules that the service abides by for working hours –
 
 ## QuickReplyButtons Table
 
+> Default Values can be downloaded from here:  [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
+
+
 ![Quick Reply Buttons Table](images/QuickReplyButtonsTable.png "Quick Reply Buttons Table")
 
 Add Entity for each predefined reply button to be displayed in the Agent View. The predefined reply buttons are highlighted in the screenshot below. 
@@ -231,6 +236,8 @@ Add Entity for each predefined reply button to be displayed in the Agent View. T
 ![Quick Reply Buttons UI](images/QuickReplyButtonsUI.png "Quick Reply Buttons UI")
 
 ## MessageConfigurations Table
+
+> Default Values can be downloaded from here: [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
 
 ![Message Configuration Table](images/MessageConfigurationTable.png "Message Configuration Table")
 
