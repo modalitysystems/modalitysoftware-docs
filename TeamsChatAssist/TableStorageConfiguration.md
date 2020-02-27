@@ -10,7 +10,7 @@
 
 > Default Values can be downloaded from here: [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
 
-![Instance Configuration Table](images/InstanceConfigurationTable.png "Instance Configuration Table")
+![Instance Configuration Table](images/instance-configuration-table.jpg "Instance Configuration Table")
 
 - PartitionKey = [TenantId] 
 
