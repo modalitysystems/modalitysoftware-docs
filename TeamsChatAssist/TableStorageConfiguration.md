@@ -52,25 +52,15 @@
 
 ```html
 <!DOCTYPE html> 
-
 <html lang="en"> 
-
 <head> 
-
-<style>              
-
+<style>  
 </style> 
-
 </head> 
-
 <body> 
-
 <p>A new Teams Chat Assist message has been posted.</p> 
-
 <p>Question: @Model.InitialQuestion</p> 
-
 </body> 
-
 </html> 
 ```
 
