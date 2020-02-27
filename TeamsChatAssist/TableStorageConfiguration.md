@@ -83,95 +83,53 @@ Due to limitations of the email client, when ‘SendEmailOnNewQuestion’ is tru
 **WorkingHoursConfig sample:**
 
 ```javascript
-{ 
+{
+   "Configuration":[
+      {
+         "Default":true,
+         "Name":"Service Desk",
+         "WorkingDays":[
+            {
+               "Day":"Monday",
+               "StartHours":"09:00",
+               "EndHours":"17:00"
+            },
+            {
+               "Day":"Tuesday",
+               "StartHours":"09:00",
+               "EndHours":"17:00"
+            },
+            {
+               "Day":"Wednesday",
+               "StartHours":"09:00",
+               "EndHours":"17:00"
+            },
+            {
+               "Day":"Thursday",
+               "StartHours":"09:00",
+               "EndHours":"17:35"
+            },
+            {
+               "Day":"Friday",
+               "StartHours":"09:00",
+               "EndHours":"17:00"
+            }
+         ],
+         "Holiday":[
+            {
+               "Name":"Christmas Day",
+               "Date":"2020-12-25"
+            },
+            {
+               "Name":"New Year's Day",
+               "Date":"2020-01-01"
+            }
+         ]
+      }
+   ]
+}
 
-   "Configuration":[ 
 
-      { 
-
-         "Default":true, 
-
-         "Name":"Service Desk", 
-
-         "WorkingDays":[ 
-
-            { 
-
-               "Day":"Monday", 
-
-               "StartHours":"09:00", 
-
-               "EndHours":"17:00" 
-
-            }, 
-
-            { 
-
-               "Day":"Tuesday", 
-
-               "StartHours":"09:00", 
-
-               "EndHours":"17:00" 
-
-            }, 
-
-            { 
-
-               "Day":"Wednesday", 
-
-               "StartHours":"09:00", 
-
-               "EndHours":"17:00" 
-
-            }, 
-
-            { 
-
-               "Day":"Thursday", 
-
-               "StartHours":"09:00", 
-
-               "EndHours":"17:00" 
-
-            }, 
-
-            { 
-
-               "Day":"Friday", 
-
-               "StartHours":"09:00", 
-
-               "EndHours":"17:00" 
-
-            } 
-
-         ], 
-
-         "Holiday":[ 
-
-            { 
-
-               "Name":"Christmas Day", 
-
-               "Date":"2020-12-25" 
-
-            }, 
-
-            { 
-
-               "Name":"New Year's Day", 
-
-               "Date":"2020-01-01" 
-
-            } 
-
-         ] 
-
-      } 
-
-   ] 
-
-} 
 ```
 
 **WorkingHoursConfig validation/rules:**
