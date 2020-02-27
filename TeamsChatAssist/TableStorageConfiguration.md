@@ -166,8 +166,7 @@ Below are the validations rules that the service abides by for working hours –
 
 ## QuickReplyButtons Table
 
-> Default Values can be downloaded from here:  [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
-
+> Default Values can be downloaded from here: [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
 
 ![Quick Reply Buttons Table](images/QuickReplyButtonsTable.png "Quick Reply Buttons Table")
 
@@ -187,7 +186,7 @@ Add Entity for each predefined reply button to be displayed in the Agent View. T
 
 ## MessageConfigurations Table
 
-> Default Values can be downloaded from here: [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
+> Default Values can be downloaded from here:  [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
 
 ![Message Configuration Table](images/MessageConfigurationTable.png "Message Configuration Table")
 
