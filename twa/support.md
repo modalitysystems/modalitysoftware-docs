@@ -1,4 +1,6 @@
 
+## How to raise a support ticket
+
 Should you want support on any element of Teamwork Analytics, please email software.support@modalitysystems.com
 
 If you believe you have an issue with the product, it may help us to have the follow
