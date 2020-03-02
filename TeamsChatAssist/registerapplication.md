@@ -24,7 +24,7 @@ This document describes the process of registering Teams Chat Assist Bot as an A
    ![Branding3](images/Branding3.png)
 
 ### Add a Client Secret
-1. Navigate to the **Azure Active Directory** from the navigation pane on the left
+1. Navigate to the **Home** and then press **Azure Active Directory** from the navigation menu on top
 1. Select **App Registrations** and select the **Teams Chat Assist Bot** app 
 1. Select **Certificates & secrets** from the Manage menu
 1. Select **New client secret** and enter an appropriate description and expiry period
@@ -58,4 +58,4 @@ This document describes the process of registering Teams Chat Assist Bot as an A
    ![AdminConsent](images/AdminConsent2.png)
 
 ### Continue to ARM Deployment
-1. Take your note of the **Application (client) ID** and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
+1. Take your note of the **Application (client) ID** from Overview page and **Client secrets** to the [ARM Deployment phase](armdeploy.md)
