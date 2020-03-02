@@ -50,10 +50,10 @@ Teams Chat Assist Bot requires a manifest file that defines all components of th
 
    ![Teams Add2](images/teamsAdd2.png)
 
-1. Set permissions on the **Teams Chat Assist Agents** team. Go to General Channel of the team, click 3 dots opposite to General, then select Manage Channel
-   - General
+1. Set permissions on the **Teams Chat Assist Agents** team as follows:
+   - General: Go to General Channel of the team, click 3 dots opposite to General, then select Manage Channel
    ![Team Permissions General](images/TeamPermissionsGeneral.png)
-   - Channel
+   - Channel: Go to Agents Channel, click 3 dots opposite to Channel Name, then select Manage Channel
    ![Team Permissions General](images/TeamPermissionsChannel.png)
    - Add members
    ![Team Permissions General](images/TeamPermissionsAdd.png)
