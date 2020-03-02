@@ -15,7 +15,7 @@ This document describes the process of registering Teams Chat Assist Bot as an A
    ![App registration](images/AppRegistration.png)
 
 ### Branding
-1. Set the Publisher Domain to a valid Domain Name such as your company domain
+1. Select Branding from left navigation pane. Set the Publisher Domain by pressing Update Domain. Select a valid Domain Name such as your company domain from window opened on right.
 
    ![Branding1](images/Branding1.png)
 
