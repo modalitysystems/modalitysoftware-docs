@@ -7,6 +7,9 @@
 3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 ## Feature Table
+
+> Default Values can be downloaded from here: [Feature.typed.csv](images/Feature.typed.csv)
+
 ![Feature Table](images/FeatureTableConfiguration.png "Feature Table")
 
 Add a Feature for each of the following RowKeys:
@@ -19,6 +22,8 @@ Add a Feature for each of the following RowKeys:
 - Enabled (boolean) = wether to enable the feature or not
 
 ## PeoplePicker Table
+
+> Default Values can be downloaded from here: [PeoplePicker.typed.csv](images/PeoplePicker.typed.csv)
 
 ![PeoplePicker Table](images/PeoplePickerTableConfiguration.png "PeoplePicker Table")
 
@@ -41,6 +46,8 @@ Add a PeoplePicker for each of the following RowKeys:
 
 ## TextField Table
 
+> Default Values can be downloaded from here: [TextField.typed.csv](images/TextField.typed.csv)
+
 ![TextField Table](images/TextFieldTableConfiguration.png "TextField Table")
 
 Add a TextField for each of the following RowKeys:
@@ -61,6 +68,8 @@ Add a TextField for each of the following RowKeys:
 
 ## Approvers Table
 
+> Default Values can be downloaded from here: [Approvers.typed.csv](images/Approvers.typed.csv)
+
 ![Approvers Table](images/ApproversTableConfiguration.png "Approvers Table")
 
 If the multi-step-approval feature is enabled, the email address within this table for the tenant will be sent an email when approval is required. (This is when a user creates a team that does not meet recommended validation as per the TextField and PeoplePicker tables)
@@ -74,6 +83,8 @@ If the multi-step-approval feature is enabled, the email address within this tab
 Ignore, this is a reserved system table and not for configuration
 
 ## Template Table
+
+> Default Values can be downloaded from here: [Template.typed.csv](images/Template.typed.csv)
 
 ![Template Table](images/TemplateTableConfiguration.png "Template Table")
 
