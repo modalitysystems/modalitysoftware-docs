@@ -1,4 +1,4 @@
-1. Create 3 tables called Approvers, Feature and PeoplePicker, Template, TextField
+1. Create 5 tables called Approvers, Feature and PeoplePicker, Template, TextField
 
    ![New Table](images/newTable.png)
 
