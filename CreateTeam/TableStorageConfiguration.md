@@ -106,4 +106,3 @@ The templates defined in this table will appear as templates in the main menu fo
    ]
 }
 ```
-- 
