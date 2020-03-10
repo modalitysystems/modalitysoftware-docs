@@ -2,7 +2,7 @@
 
 1. Open Azure Storage explorer on your PC (Download from https://azure.microsoft.com/en-us/features/storage-explorer/) add your PROD account and subscription if required  
 
-2. Open the storage account associated with TCA
+2. Open the storage account associated with Create Team
 
 3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
