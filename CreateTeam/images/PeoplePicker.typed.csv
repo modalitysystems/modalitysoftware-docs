@@ -1,0 +1,4 @@
+NativeMaxCount,NativeMaxCount@type,NativeMinCount,NativeMinCount@type,PartitionKey,RecommendedMaxCount,RecommendedMaxCount@type,RecommendedMinCount,RecommendedMinCount@type,RowKey,Timestamp,Validate,Validate@type
+4,Edm.Int32,1,Edm.Int32,xxx-your-tenant-id-xxx,3,Edm.Int32,2,Edm.Int32,guests,2020-03-10T16:13:52.817Z,false,Edm.Boolean
+4,Edm.Int32,1,Edm.Int32,xxx-your-tenant-id-xxx,3,Edm.Int32,2,Edm.Int32,members,2020-03-10T16:14:01.110Z,false,Edm.Boolean
+4,Edm.Int32,1,Edm.Int32,xxx-your-tenant-id-xxx,3,Edm.Int32,2,Edm.Int32,owners,2020-03-10T16:14:06.375Z,true,Edm.Boolean

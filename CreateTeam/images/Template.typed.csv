@@ -1,0 +1,20 @@
+Description,Description@type,Name,Name@type,PartitionKey,RowKey,TemplateJson,TemplateJson@type,Timestamp
+First Description,Edm.String,First Template,Edm.String,xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,"{
+""suffix"": ""UK sales"",
+   ""IsExternal"":true,
+   ""Visibility"":1,
+   ""Channels"":[
+      {
+         ""Description"":""Description51edacfe-536e-45df-ab37-cbadcfb7636e"",
+         ""DisplayName"":""DisplayName059ad58a-c3d7-4658-93a7-4373e3fa1e68""
+      },
+      {
+         ""Description"":""Descriptionc89a8bc8-c52d-4de7-86c5-28f74783a7fd"",
+         ""DisplayName"":""DisplayNameda9e015d-2500-4353-948d-f772660fc866""
+      },
+      {
+         ""Description"":""Description1eef67b4-5299-492d-a548-0e791ebc577a"",
+         ""DisplayName"":""DisplayName92532b74-b248-4f00-853c-c914f4137931""
+      }
+   ]
+}",Edm.String,2020-03-10T14:23:27.195Z
