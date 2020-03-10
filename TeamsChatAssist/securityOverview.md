@@ -8,6 +8,8 @@ Deployment is achieved using an Azure Resource Manager (ARM) template which will
 
 The assets created by the ARM template do not have the ability to create more assets and have no inherant permissions to perform actions in Azure.
 
+Once deployed into Azure, no specific Azure permissions are needed by users of the solution.
+
 ## Application Permission
 As part of the solution deployment process, a tenant admin must approve the permissions grant of the application. This step enables administrators to review the actions which the application is asking for and ensure that they are sensible and in line with the actions that the application is performing.
 
