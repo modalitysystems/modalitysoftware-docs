@@ -21,7 +21,7 @@ The resources deployed by the ARM template are configured to work together to de
 
 An overview of the architecture is shown below, showing the resources deployed by the ARM template to an Azure Resource Group, and the interactions between other parts of the solution, such Microsoft Teams and PowerBI.
 
-![TCA Architecture-Single](/images/TCA Architecture-Single.png)
+![TCA Architecture-Single](images/TCAArchitecture-Single.png)
 
 
 
