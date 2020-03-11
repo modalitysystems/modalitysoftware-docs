@@ -56,8 +56,18 @@ Add a TextField for each of the following RowKeys:
 - RowKey = This is a unique string to identifiy the Text Field.
   - description
   - name
-- NativeMaxLength (Int32) = The maximum length of input. If this number is exceeded, the field will invalidate the form and advise of the maximum length (red)
+- NativeMaxLength (Int32) = The maximum length of input. If this number is exceeded, the field will invalidate the form and advise of the maximum length (red).
+
+> For the 'name' field, the maximum value of NativeMaxLength is 245. If you have suffixes defined in the Template table, see below. The NativeMaxLength for the 'name' field must be less than the maximum length (245) minus the length of the longest suffix. For example a suffix with the maximum length of 10 would require a 'name' NativeMaxLength of less than 235 (245 - 10).
+
+> For the 'description' field, the maximum value of NativeMaxLength is 1025.
+
 - NativeMinLength (Int32) = The minium length of input. If this number is not met, the field will invalidate the form and advise of the minimum length (red)
+
+> For the 'name' field, the minimum value of NativeMinLength is 1.
+
+> For the 'description' field, the minimum value of NativeMinLength is 0.
+
 - RecommendedMinLength (Int32) = The recommended minimum length of input. If this number is not met, the field will advise of the recommended minimum length (yellow)
 - RecommendedMaxLength (Int32) = The recommended maximum length of input. If this number is exceeded, the field will advise of the recommended maximum length (yellow)
 - Validate (boolean) = This will enabled or disable the above validation rules for the Text Field.
@@ -65,8 +75,6 @@ Add a TextField for each of the following RowKeys:
 > Please note, NativeMinLength <= RecommendedMinLength <= RecommendedMaxLength <= NativeMaxLength
 
 > It's advisable to stick to the default native min and max lengths, or, ensure the new values are more strict than the defaults. These match native teams validation.
-
-> If you have suffixes defined in the Template table, see below. The NativeMaxLength for the 'name' field must be less than the default length (1013) minus the length of the longest suffix. For example a suffix with the maximum length of 10 would require a 'name' NativeMaxLength of less than 1003 (1013 - 10).
 
 ## Approvers Table
 
