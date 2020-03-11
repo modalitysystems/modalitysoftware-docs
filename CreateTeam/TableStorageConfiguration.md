@@ -35,9 +35,17 @@ Add a PeoplePicker for each of the following RowKeys:
   - owners
   - guests
 - NativeMinCount (Int32) = The minium count of people. If this number is not met, the field will invalidate the form and advise of the minimum count (red)
+
+> For the all PeoplePicker fields, the minimum value of NativeMinCount is 0.
+
 - RecommendedMinCount (Int32) = The recommended minimum count of people. If this number is not met, the field will advise of the recommended minimum count (yellow)
 - RecommendedMaxCount (Int32) = The recommended maximum count of people. If this number is exceeded, the field will advise of the recommended maximum count (yellow)
-- NativeMinCount (Int32) = The maximum count of people. If this number is exceeded, the field will invalidate the form and advise of the maximum count (red)
+- NativeMaxCount (Int32) = The maximum count of people. If this number is exceeded, the field will invalidate the form and advise of the maximum count (red)
+
+> For the 'members' and 'guests' fields, the maximum value of each individual NativeMaxCount is 5000. However the combined maximum is also 5000. For example if 'members' has a value of 3000, then the maximum for 'guests' is 2000. (3000 + 2000 = 5000)
+
+> For the 'owners' field, the maximum value of NativeMaxCount is 100.
+
 - Validate (boolean) = This will enabled or disable the above validation rules for the People Picker.
 
 > Please note, NativeMinCount <= RecommendedMinCount <= RecommendedMaxCount <= NativeMaxCount
@@ -56,12 +64,6 @@ Add a TextField for each of the following RowKeys:
 - RowKey = This is a unique string to identifiy the Text Field.
   - description
   - name
-- NativeMaxLength (Int32) = The maximum length of input. If this number is exceeded, the field will invalidate the form and advise of the maximum length (red).
-
-> For the 'name' field, the maximum value of NativeMaxLength is 245. If you have suffixes defined in the Template table, see below. The NativeMaxLength for the 'name' field must be less than the maximum length (245) minus the length of the longest suffix. For example a suffix with the maximum length of 10 would require a 'name' NativeMaxLength of less than 235 (245 - 10).
-
-> For the 'description' field, the maximum value of NativeMaxLength is 1025.
-
 - NativeMinLength (Int32) = The minium length of input. If this number is not met, the field will invalidate the form and advise of the minimum length (red)
 
 > For the 'name' field, the minimum value of NativeMinLength is 1.
@@ -70,6 +72,12 @@ Add a TextField for each of the following RowKeys:
 
 - RecommendedMinLength (Int32) = The recommended minimum length of input. If this number is not met, the field will advise of the recommended minimum length (yellow)
 - RecommendedMaxLength (Int32) = The recommended maximum length of input. If this number is exceeded, the field will advise of the recommended maximum length (yellow)
+- NativeMaxLength (Int32) = The maximum length of input. If this number is exceeded, the field will invalidate the form and advise of the maximum length (red).
+
+> For the 'name' field, the maximum value of NativeMaxLength is 245. If you have suffixes defined in the Template table, see below. The NativeMaxLength for the 'name' field must be less than the maximum length (245) minus the length of the longest suffix. For example a suffix with the maximum length of 10 would require a 'name' NativeMaxLength of less than 235 (245 - 10).
+
+> For the 'description' field, the maximum value of NativeMaxLength is 1025.
+
 - Validate (boolean) = This will enabled or disable the above validation rules for the Text Field.
 
 > Please note, NativeMinLength <= RecommendedMinLength <= RecommendedMaxLength <= NativeMaxLength
@@ -108,7 +116,8 @@ The templates defined in this table will appear as templates in the main menu fo
 
 ```javascript
 {
-   "suffix": "UK Sales", //text to display at end of team name. Maximum of 10 characters long
+   "prefix": "Prefix", //text to be prepended to the start of the team name. Maximum of 10 characters long
+   "suffix": "UK Sales", //text to be appended to the end of team name. Maximum of 10 characters long
    "IsExternal":true, //wether the team can contain guests or not
    "Visibility":1, //visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden
    "Channels":[ //channels the team is created with

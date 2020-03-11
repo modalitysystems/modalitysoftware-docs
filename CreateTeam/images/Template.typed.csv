@@ -1,6 +1,7 @@
 Description,Description@type,Name,Name@type,PartitionKey,RowKey,TemplateJson,TemplateJson@type,Timestamp
 First Description,Edm.String,First Template,Edm.String,xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,"{
-""suffix"": ""UK sales"",
+   ""prefix"":""Prefix"",
+   ""suffix"":""UK sales"",
    ""IsExternal"":true,
    ""Visibility"":1,
    ""Channels"":[
