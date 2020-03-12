@@ -26,7 +26,7 @@ You should then get a pool of agents in Azure like this:
 
 # Run agent in interactive mode
 
-docker run -it modalitysystems/vsts-agent:ltsc2016-6.27 powershell
+docker run -it modalitysystems/vsts-agent:ltsc2019-6.27 powershell
 
 Then run:
 
