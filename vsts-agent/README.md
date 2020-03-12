@@ -8,7 +8,7 @@ Create a Docker [Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/crea
 
 >From an administrative powershell run the following command:
 
-docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2016-6.4
+docker service create --name ? --replicas ? -e AZP_URL=? -e AZP_TOKEN=? -e AZP_POOL=? -d modalitysystems/vsts-agent:ltsc2019-6.27
 
 >To scale the service run the following command:
 
@@ -16,7 +16,7 @@ docker service scale ?=16
 
 >To update the service run the following command:
 
-docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2016-6.4
+docker service update ? --replicas ? --update-parallelism ? --env-add AZP_URL=? --env-add AZP_TOKEN=? --env-add AZP_POOL=? --image modalitysystems/vsts-agent:ltsc2019-6.27
 
 Update Parallelism allows you to define controlled batches to update so --replicas 16 --update-parallelism 8 would update 8, wait until they have all successfully updated and then update the remaining 8. Docker will see the container as being up before Azure sees the agent as being Online.
 
@@ -24,13 +24,28 @@ You should then get a pool of agents in Azure like this:
 
 ![Agentpool](images/agentpool.png)
 
+# Run agent in interactive mode
+
+docker run -it modalitysystems/vsts-agent:ltsc2016-6.27 powershell
+
+Then run:
+
+.\start-envs.ps1
+
+Enter AZP_URL, AZP_TOKEN and AZP_POOL. 
+If you want to try a different agent version enter AZP_PACKAGE_OVERRIDE
+
+Then run:
+
+.\start.ps1
+
 # Host version
 
 It is important to match the host operating system to the base Docker Image so we have created two as follows:
 
-modalitysystems/vsts-agent:ltsc2016-6.4
+modalitysystems/vsts-agent:ltsc2016-6.27
 
-modalitysystems/vsts-agent:ltsc2019-6.4
+modalitysystems/vsts-agent:ltsc2019-6.27
 
 # CleanUp Offline Agents
 
