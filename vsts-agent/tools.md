@@ -2,7 +2,7 @@
 
 DotNET3.5
 
-DotNET4.7
+DotNET4.8
 
 AWSPowerShell
 
@@ -16,18 +16,18 @@ azure-cli
 
 docker-cli
 
-visualstudio2017enterprise
+kubernetes-cli
+
+powershell core
 
 visualstudio2019enterprise
-
-sql-server-express
 
 sqllocaldb
 
 wixtoolset
 
-dacfx-18
-
 openjdk
 
 nodejs
+
+nuget
