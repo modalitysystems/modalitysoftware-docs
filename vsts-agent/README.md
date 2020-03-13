@@ -26,7 +26,7 @@ You should then get a pool of agents in Azure like this:
 
 # Agent Capabilites
 
-When an agent starts up it first downloads the latest version of the agent software, then it performs a capability scan and creates a number of enviroment variables which can be view by going to the capabilities section of each Agent.
+When an agent starts up it first downloads the latest version of the agent software, then it performs a capability scan and creates a number of enviroment variables which can be view by going to the capabilities section of each agent.
 
 ![Agentcapability](images/agentcapability.png)
 
