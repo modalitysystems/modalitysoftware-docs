@@ -24,6 +24,16 @@ You should then get a pool of agents in Azure like this:
 
 ![Agentpool](images/agentpool.png)
 
+# Agent Capabilites
+
+When an agent starts up it first downloads the latest version of the agent software, then it performs a capability scan and creates a number of enviroment variables which can be view by going to the capabilities section of each Agent.
+
+![Agentcapability](images/agentcapability.png)
+
+Capabilites can also appear on this list by adding a line to the Docker file such as "ENV JAVA True" or by passing it in at the Docker command line during run time such as -e AZP_POOL=? or --env-add AZP_POOL=?
+
+For tasks that require the use of CodeCoverage.exe or SqlPackage.exe, their respective PATHS are detailed here.
+
 # Run agent in interactive mode
 
 docker run -it modalitysystems/vsts-agent:ltsc2019-6.27 powershell
