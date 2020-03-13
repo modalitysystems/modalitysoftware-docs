@@ -33,7 +33,7 @@ Then run:
 .\start-envs.ps1
 
 Enter AZP_URL, AZP_TOKEN and AZP_POOL. 
-If you want to try a different agent version enter "YES" to AZP_PACKAGE_OVERRIDE followed my URL to package. If using this feature, be sure to set "Allow agents in this pool to automatically update" to false in Azure DevOps.
+If you want to try a different agent version enter "YES" to AZP_PACKAGE_OVERRIDE followed by a URL. If using this feature, be sure to set "Allow agents in this pool to automatically update" to "OFF" within Azure DevOps.
 
 Then run:
 
