@@ -59,7 +59,12 @@ Teams Network Assessment Tests
 - Up to 25 concurrent streams to/from any node (i5, 8GB RAM)
 - Nodes can provide insight into site to site, site to data centre (for direct routing) and site to Azure traffic performance
 
-We use Skype for Business Test Calls for Audio tests as, at this time, Microsoft Teams cannot be automated to perform the same tests. The tests use RTAudio which is a less performant codec than Microsoft Teams, but provides the same statistics in terms of packet loss, round trip time and jitter.
+We use Skype for Business (UCMA automation) to make the peer to peer audio test calls. At this time, Microsoft Teams cannot be automated to perform the same tests. 
+
+The P2P audio tests use RTAudio, which is a less performant codec than typically used Microsoft Teams. Therefore our tests used a codec that would audibly perform less well than Microsoft Teams. 
+
+The codec used isn’t really that relevant, since what we are looking at is the packet loss, round trip time and jitter which are used to measure network performance. 
+
 
 They can be placed on internal sites, DC’s or in Microsoft Azure to test different combinations of routes.
 - Node P2P calls are controlled by a Modality Azure Management Server
