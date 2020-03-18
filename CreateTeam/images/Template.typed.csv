@@ -4,6 +4,7 @@ First Description,Edm.String,First Template,Edm.String,xxx-your-tenant-id-xxx,33
    ""suffix"":""UK sales"",
    ""IsExternal"":true,
    ""Visibility"":1,
+   ""AlwaysAuthorise"":false,
    ""Channels"":[
       {
          ""Description"":""Description51edacfe-536e-45df-ab37-cbadcfb7636e"",

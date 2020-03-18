@@ -120,6 +120,7 @@ The templates defined in this table will appear as templates in the main menu fo
    "suffix": "UK Sales", //text to be appended to the end of team name. Maximum of 10 characters long
    "IsExternal":true, //wether the team can contain guests or not
    "Visibility":1, //visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden
+   "AlwaysAuthorise":false, //when true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
    "Channels":[ //channels the team is created with
       {
          "Description":"Description51edacfe-536e-45df-ab37-cbadcfb7636e", //description of the channel
