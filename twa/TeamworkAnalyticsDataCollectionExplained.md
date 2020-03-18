@@ -10,6 +10,14 @@ This section explains some of the different API's we use and data we collect, an
 
 In all cases, we collect metadata of activity (time of posting, channel, team poster, number of posts/reactions) not the actual content of messages.
 
+## Microsoft Teams Data Collection Update Interval
+
+Our process contantly collects data from Microsoft Graph on a loop (to the speed Microsoft allow us before throttling). Once the process has worked through all data and Teams, it immedatgely starts again working through for any changes.
+
+In smaller organisations (a few thousand users) this can take hours, so the data is updated in SQL multiple times a day), in larger customers ~250,000+ this complete update can take up to 24 hours in the worst cases (heveay usage, lots of Microsoft throttling).
+
+From a reporting point of view, the worst case is to assume a 24 to 48 hour latency from time of activity, but typically it is less than this. This accounts for Graph, SQL and Power BI refresh times.
+
 ### Collecting Microsoft Teams Detailed Activity Metadata for Teams and Channels (List channel messages)
 
 For Teams/Channels and SharePoint/File Activity, the API's allow us to poll for the actual messages posted in every single channel since each Team and channels creation (provided the data has not been deleted by a retention policy). For this reason, we can report on Team/Channel activity right from when the first team was created in your organisation, straight after install. This data does not need to "build up" like Private Chat, Calls and Meetings data.
