@@ -148,7 +148,7 @@ Here is an explanation as to what each template setting controls:
 - IsExternal - Whether the team can contain guests or not. When true appends the suffix " - IsExternal" to the team name.
 - Visibility - Visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden.
 - AlwaysAuthorise - When true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
-- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](ImportDefaultValuesTableStorage.md) in the Azure Portal.
+- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](ManagingAzureSecurityGroups.md) in the Azure Portal.
 - Channels - The channels the team is created with
   - Description - Description of the channel
   - DisplayName - Name of the channel
