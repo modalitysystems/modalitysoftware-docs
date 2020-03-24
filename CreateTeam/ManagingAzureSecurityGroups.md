@@ -17,11 +17,13 @@
 - Group description - Enter an optional description for the Group.
 - Membership type - If you have the option to alter this field, make sure **Assigned** is selected.
 
-> Owners and Members can be added at this stage whilst creating the Group, or they [can be added later.](#assign-users-to-azure-security-groups).
+> Owners and Members can be added at this stage whilst creating the Group, or they [can be added later](#add-members-to-azure-security-groups).
 
 5. Select **Create** and your Group is created.
 
 # Add Members to Azure Security Groups
+
+> Global administrator permissions are required create assign Members to Azure Security Groups
 
 1. Login to the [Azure Portal](https://portal.azure.com/).
 2. Select **Azure Active Directory**, and then select **Groups**.
