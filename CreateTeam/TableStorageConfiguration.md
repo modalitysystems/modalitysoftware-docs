@@ -116,15 +116,16 @@ The templates defined in this table will appear as templates in the main menu fo
 
 ```javascript
 {
-   "prefix": "Prefix", //text to be prepended to the start of the team name. Maximum of 10 characters long
-   "suffix": "UK Sales", //text to be appended to the end of team name. Maximum of 10 characters long
-   "IsExternal":true, //wether the team can contain guests or not
-   "Visibility":1, //visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden
-   "AlwaysAuthorise":false, //when true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
-   "Channels":[ //channels the team is created with
+   "Prefix": "Prefix",
+   "Suffix": "UK Sales",
+   "IsExternal":true,
+   "Visibility":1,
+   "AlwaysAuthorise":false,
+   "AzureSecurityGroup":"GroupName",
+   "Channels":[
       {
-         "Description":"Description51edacfe-536e-45df-ab37-cbadcfb7636e", //description of the channel
-         "DisplayName":"DisplayName059ad58a-c3d7-4658-93a7-4373e3fa1e68" //name of the channel
+         "Description":"Description51edacfe-536e-45df-ab37-cbadcfb7636e",
+         "DisplayName":"DisplayName059ad58a-c3d7-4658-93a7-4373e3fa1e68"
       },
       {
          "Description":"Descriptionc89a8bc8-c52d-4de7-86c5-28f74783a7fd",
@@ -137,3 +138,17 @@ The templates defined in this table will appear as templates in the main menu fo
    ]
 }
 ```
+
+### Template Settings
+
+Here is an explanation as to what each template setting controls:
+
+- Prefix - The text to be prepended to the start of the team name. The maximum prefix length is 10 characters.
+- Suffix - The text to be appended to the end of team name. The maximum suffix length is of 10 characters long. If the team can contain guests (controlled by the IsExternal setting, see below), then the suffix " - IsExternal" is appended after the suffix specified here.
+- IsExternal - Whether the team can contain guests or not. When true appends the suffix " - IsExternal" to the team name.
+- Visibility - Visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden.
+- AlwaysAuthorise - When true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
+- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](ImportDefaultValuesTableStorage.md) in the Azure Portal.
+- Channels - The channels the team is created with
+  - Description - Description of the channel
+  - DisplayName - Name of the channel
