@@ -1,9 +1,9 @@
-## Registering Teamwork Analytics as an Azure Application
+## Registering Teams Chat Assist Bot as an Azure Application
 This document describes the process of registering Teams Chat Assist Bot as an Azure Application as the first step to deployment.  As part of the registration you will gather the following information for use further along the deployment process.
    * Application ID
    * Application Secret
 
-### Register Teamwork Analytics with Azure Active Directory
+### Register Teams Chat Assist Bot with Azure Active Directory
 1. Sign in to the [Azure Portal](https://portal.azure.com)
 1. Select the **Azure Active Directory** service from the navigation menu on the top
 1. Select **App Registrations** from navigation pane on the left and then click **+ New Registration** (Take care not to select **App Registrations (Legacy)** as these instructions do not apply to them)
