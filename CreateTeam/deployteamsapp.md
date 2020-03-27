@@ -30,7 +30,7 @@ For the App to be able to create teams in the target Teams Tenant, it is a requi
 
 ## Installation
 
-**[Click here to download the CreateTeam manifest file](CreateTeam.zip)**
+**[Click here to download the CreateTeam manifest file](https://github.com/modalitysystems/CreateTeamGABuilds/releases/latest)**
 
 1. 1.	From Microsoft Teams go to the Apps section
    
