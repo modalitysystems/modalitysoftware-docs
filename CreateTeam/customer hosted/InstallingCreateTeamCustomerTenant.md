@@ -1,27 +1,8 @@
-# Installing CreateTeam in your own tenant: Prerequisites
+# Installing CreateTeam in your own tenant
 
-Installing CreateTeam in your own tenant involves 2 separate processes: deploying the ARM template to add resources to your Azure tenant to run CreateTeam, and creating and configuring an Azure AD application.
+Installing CreateTeam in your own tenant involves 3 separate processes: configuring two Azure AD applications, deploying the ARM template to add resources to your Azure tenant to run CreateTeam, and then installing a manifest into your Microsoft Teams enviroment that joins the two together.
 
-
->[Deploying CreateTeam to Azure using ARM template](armManifest.md)
-
->[Creating manifest file](manifestCreate.md)
-
->[Installing CreateTeam to tenant](manifestInstall.md)
-
-## Adding resources to your Azure tenant
-
-Modality System will provide an **ARM template** to install everything needed for CreateTeam to run in your tenant. This includes:
-
- - a Web App Service and Service Plan
- - a Bot Framework Instance
- - a Storage Account with a number of Storage Tables
- 
- In addition you will need to provide details of an SMTP gateway to enable CreateTeam to send emails.
- 
-## Creating and Configuring an Azure AD application
-
-You will need to follow our documentation to create two new Azure AD Applications for CreateTeam to use. In order for CreateTeam to work, the following apps and permissions are required:
+>[Configure two Azure AD Applications](RegisterApplicationAPI)
 
 ### AAD App 1 (for the API) : Application Permisions
 
@@ -32,3 +13,9 @@ You will need to follow our documentation to create two new Azure AD Application
 ### AAD App 2 (for the client) : Delegated Permisions
 
 **openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
+
+>[Deploying CreateTeam to Azure using ARM template](armDeploy.md)
+
+>[Creating manifest file](manifestCreate.md)
+
+>[Installing CreateTeam to tenant](manifestInstall.md)
