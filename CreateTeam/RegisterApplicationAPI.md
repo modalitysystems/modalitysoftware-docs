@@ -62,3 +62,13 @@ Click the Grant Admin Consent button
 Which should then look like this
 
    ![RegisterApplication11](images/registerapplication11.png)
+
+1. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
+
+   ![appRoles](http://docs.modalitysoftware.com/CreateTeam/images/appRoles.json)
+
+That should end up looking like this
+
+   ![RegisterApplication12](images/registerapplication12.png)
+
+Click Save
