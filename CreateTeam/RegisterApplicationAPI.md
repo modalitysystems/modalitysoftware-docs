@@ -21,13 +21,13 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication02](images/registerapplication02.png)
 
-From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title. Repeat these steps for Directory ID.
+   * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title. Repeat these steps for Directory ID.
 
 1. Under Manage on the left hand side, click Certificates & Secrets then New Client secret
 
    ![RegisterApplication03](images/registerapplication03.png)
 
-Select an appropriate expiry for the secret from 1 year to Never and click Add
+   * Select an appropriate expiry for the secret from 1 year to Never and click Add
 
 1. The next screen will be the only time that the secret will be show so use the "Copy to Clipboard" button and paste into the Windows Notepad window that should still be open with appropriate title.
 
@@ -41,7 +41,7 @@ Select an appropriate expiry for the secret from 1 year to Never and click Add
 
    ![RegisterApplication06](images/registerapplication06.png)
 
-Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
+   * Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
 
 1. Once the permissions have been Added, they will need to be granted Admin Consent by a Global Admin
 
@@ -59,7 +59,7 @@ Click the Grant Admin Consent button
 
    ![RegisterApplication10](images/registerapplication10.png)
 
-Which should then look like this
+   * Which should then look like this
 
    ![RegisterApplication11](images/registerapplication11.png)
 
@@ -67,8 +67,8 @@ Which should then look like this
 
    [appRoles](http://docs.modalitysoftware.com/CreateTeam/images/appRoles.json)
 
-That should end up looking like this
+   * That should end up looking like this
 
    ![RegisterApplication12](images/registerapplication12.png)
 
-Click Save
+   * Click Save
