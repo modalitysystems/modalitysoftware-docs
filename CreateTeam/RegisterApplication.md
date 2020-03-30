@@ -50,3 +50,15 @@ Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
 Click the Grant Admin Consent button 
 
    ![RegisterApplication08](images/registerapplication08.png)
+
+1. Under Manage on the left hand side, click Expose an API and the click Set next to Application ID URI and then Save
+
+   ![RegisterApplication09](images/registerapplication09.png)
+
+1. Then Click + Add a scope and enter the following and then Add scope
+
+   ![RegisterApplication10](images/registerapplication10.png)
+
+Which should then look like this
+
+   ![RegisterApplication11](images/registerapplication11.png)
