@@ -2,8 +2,6 @@
 
 Installing CreateTeam in your own tenant involves 3 separate processes: configuring two Azure AD applications, deploying the ARM template to add resources to your Azure tenant to run CreateTeam, and then installing a manifest into your Microsoft Teams enviroment that joins the two together.
 
->[Configure two Azure AD Applications](RegisterApplicationAPI)
-
 ### AAD App 1 (for the API) : Application Permisions
 
 **Directory.ReadWrite.All** Read and write directory data - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
@@ -14,8 +12,8 @@ Installing CreateTeam in your own tenant involves 3 separate processes: configur
 
 **openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
 
+>[Configure two Azure AD Applications](RegisterApplicationAPI.md)
+
 >[Deploying CreateTeam to Azure using ARM template](armDeploy.md)
 
->[Creating manifest file](manifestCreate.md)
-
->[Installing CreateTeam to tenant](manifestInstall.md)
+>[Installing a manifest file into Microsoft Teams](manifestCreate.md)
