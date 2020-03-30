@@ -65,7 +65,7 @@ Which should then look like this
 
 1. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
 
-   ![appRoles](http://docs.modalitysoftware.com/CreateTeam/images/appRoles.json)
+   [appRoles](http://docs.modalitysoftware.com/CreateTeam/images/appRoles.json)
 
 That should end up looking like this
 
