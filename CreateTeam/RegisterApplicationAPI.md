@@ -67,8 +67,8 @@ Click the Grant Admin Consent button
 
    [appRoles](http://docs.modalitysoftware.com/CreateTeam/images/appRoles.json)
 
-   * That should end up looking like this
+   * Which should end up looking like this
 
    ![RegisterApplication12](images/registerapplication12.png)
 
-   * Click Save
+   * Click Save and continue on to [RegisterApplicationClient](RegisterApplicationClient.md)
