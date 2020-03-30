@@ -32,3 +32,21 @@ Select an appropriate expiry for the secret from 1 year to Never and click Add
 1. The next screen will be the only time that the secret will be show so use the "Copy to Clipboard" button and paste into the Windows Notepad window that should still be open with appropriate title.
 
    ![RegisterApplication04](images/registerapplication04.png)
+
+1. Under Manage on the left hand side, click API permissions then click the 3 dots next to the User.Read permission and click Remove permission
+
+   ![RegisterApplication05](images/registerapplication05.png)
+
+1. The click + Add a permission, then Mircosoft Graph and select Application permissions
+
+   ![RegisterApplication06](images/registerapplication06.png)
+
+Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
+
+1. Once the permissions have been Added, they will need to be granted Admin Consent by a Global Admin
+
+   ![RegisterApplication07](images/registerapplication07.png)
+
+Click the Grant Admin Consent button 
+
+   ![RegisterApplication08](images/registerapplication08.png)
