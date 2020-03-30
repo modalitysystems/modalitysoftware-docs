@@ -43,7 +43,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. After a period of deployment should get a Resource group in your tenant with the following components
 
-   ![Resource Group](images/armDeployRG.png)
+   ![Resource Group](../images/customerHosted/armDeployRG.png)
 
 
 ## Bot Manifest
