@@ -12,7 +12,7 @@ Installing CreateTeam in your own tenant involves 3 separate processes: configur
 
 **openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
 
->[Configure two Azure AD Applications](RegisterApplicationAPI.md)
+>[Configure Azure AD Applications](RegisterApplicationAPI.md)
 
 >[Deploying CreateTeam to Azure using ARM template](armDeploy.md)
 
