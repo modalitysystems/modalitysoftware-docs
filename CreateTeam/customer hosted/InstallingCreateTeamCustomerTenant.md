@@ -2,6 +2,13 @@
 
 Installing CreateTeam in your own tenant involves 2 separate processes: deploying the ARM template to add resources to your Azure tenant to run CreateTeam, and creating and configuring an Azure AD application.
 
+
+>[Deploying CreateTeam to Azure using ARM template](armManifest.md)
+
+>[Creating manifest file](manifestCreate.md)
+
+>[Installing CreateTeam to tenant](manifestInstall.md)
+
 ## Adding resources to your Azure tenant
 
 Modality System will provide an **ARM template** to install everything needed for CreateTeam to run in your tenant. This includes:
