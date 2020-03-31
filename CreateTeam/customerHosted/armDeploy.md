@@ -71,6 +71,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Now goto Azure Acive Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
 
+   ![AddPlatform](../images/customerHosted/registerapplication13b.png)
+
 1. Under Redirect URI enter the value that you obtained from Outputs section of the ARM deployment for appAuthEnd
 
    ![AuthEnd](../images/customerHosted/registerapplicationC07.png)
