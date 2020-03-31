@@ -47,7 +47,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Resource Group](../images/customerHosted/armDeployRG.png)
 
-1. On the left hand menu, click Deployments and the the name of the Deployment that just completed
+1. On the left hand menu, click Deployments and then the name of the Deployment that just completed
 
    ![Deployments](../images/customerHosted/armDeployDeployments.png)
 
@@ -57,7 +57,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
 
-   ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
+   ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs.png)
 
 ## Bot Manifest
 
