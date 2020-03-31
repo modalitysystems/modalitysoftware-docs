@@ -1,6 +1,6 @@
 ## Creating your manifest file
 
-You must install the "App Studio" application on your local teams client, load in the template [CreateTeam.zip]("http://docs.modalitysoftware.com/CreateTeam/images/CreateTeam.zip") provided, update specific values and then download the new manifest, as seen below:
+You must install the "App Studio" application on your local teams client, load in the template [CreateTeamTemplate.zip](https://docs.modalitysoftware.com/CreateTeam/images/customerHosted/CreateTeamTemplate.zip) provided, update specific values and then download the new manifest, as seen below:
 
 1. From Microsoft Teams go to the Apps section
 
