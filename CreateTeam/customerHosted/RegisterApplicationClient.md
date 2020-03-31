@@ -22,4 +22,12 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
 1. Under Manage on the left hand side, click API permissions then click the 3 dots next to the User.Read permission and click Remove permission
 
-   ![RegisterApplication05](../images/customerHosted/registerapplicationC03.png)
+   ![RegisterApplicationC03](../images/customerHosted/registerapplicationC03.png)
+
+1. The click + Add a permission, then My APIs and click the API that you created in previous step.
+
+   ![RegisterApplicationC04](../images/customerHosted/registerapplicationC04.png)
+
+1. Tick the access_as_user permission and click Add permission
+
+   ![RegisterApplicationC05](../images/customerHosted/registerapplicationC05.png)
