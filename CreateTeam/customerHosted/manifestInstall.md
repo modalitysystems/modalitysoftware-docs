@@ -99,3 +99,7 @@ https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-res
 The following fields look at tenant default values
 
 1. External Checkbox looks at AllowToAddGuests value
+
+## Deployment complete
+
+Provided that all steps from [How to deploy CreateTeam to your Microsoft Teams for Customer Hosted](customerHosted) have been followed, the CreateTeam deployment should now be complete and ready to use.
