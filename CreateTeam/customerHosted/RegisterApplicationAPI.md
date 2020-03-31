@@ -46,7 +46,7 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication07](../images/customerHosted/registerapplication07.png)
 
-Click the Grant Admin Consent button 
+   * Click the Grant Admin Consent button 
 
    ![RegisterApplication08](../images/customerHosted/registerapplication08.png)
 

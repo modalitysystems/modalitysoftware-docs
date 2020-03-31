@@ -31,3 +31,9 @@ Create Team requires two Azure Applications to be configured, one for the API an
 1. Tick the access_as_user permission and click Add permission
 
    ![RegisterApplicationC05](../images/customerHosted/registerapplicationC05.png)
+
+1. Once the permissions have been Added, they will look like this
+
+   ![RegisterApplicationC06](../images/customerHosted/registerapplicationC06.png)
+
+   * There is no need to Grant admin consent for the Client as the user will give consent the first time the use CreateTeam.
