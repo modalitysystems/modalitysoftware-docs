@@ -95,8 +95,6 @@ Create Team requires two Azure Applications to be configured, one for the API an
 ],
 ```
 
-   [appRoles](https://docs.modalitysoftware.com/CreateTeam/images/customerHosted/appRoles.json)
-
    * Which should end up looking like this
 
    ![RegisterApplication12](../images/customerHosted/registerapplication12.png)
