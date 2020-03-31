@@ -66,6 +66,35 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
 1. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
 
+```javascript
+"appRoles": [
+    {
+        "allowedMemberTypes": [
+            "User"
+        ],
+        "description": "Full Admin rights to Create Team",
+        "displayName": "Admin",
+        "id": "ede44b06-38ac-44dc-827e-598305139252",
+        "isEnabled": true,
+        "lang": null,
+        "origin": "Application",
+        "value": "Admin"
+    },
+    {
+        "allowedMemberTypes": [
+            "User"
+        ],
+        "description": "Guest Admin can create Teams that contain guests.",
+        "displayName": "Guest Admin",
+        "id": "103142b6-3dec-4a0b-a844-aebffb6b741f",
+        "isEnabled": true,
+        "lang": null,
+        "origin": "Application",
+        "value": "GuestAdmin"
+    }
+],
+```
+
    [appRoles](https://docs.modalitysoftware.com/CreateTeam/images/customerHosted/appRoles.json)
 
    * Which should end up looking like this
