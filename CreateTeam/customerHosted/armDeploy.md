@@ -59,6 +59,14 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs.png)
 
+1. Now go back to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
+
+   ![AddPlatform](../images/customerHosted/registerapplication13.png)
+
+1. Under Redirect URI enter the value that you obtained from Outputs sectuin of the ARM deployment for appAdminConsent
+
+   ![AdminConsent](../images/customerHosted/registerapplication14.png)
+
 ## Bot Manifest
 
 1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
