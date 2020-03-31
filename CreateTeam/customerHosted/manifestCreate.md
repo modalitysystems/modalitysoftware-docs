@@ -40,4 +40,7 @@ You must install the "App Studio" application on your local teams client, load i
 
 ![Screenshot](../images/customerHosted/downloaded.png)
 
-Now you have a correctly configured manifest file for your tenant, it is ready to be installed onto your Teams tenant. Follow the steps in the [installation section](manifestInstall.md).
+## Install CreateTeam Manifest for ARM Deployment
+
+1. Now you have correctly configured a manifest file for your tenant, it is ready to be installed into Microsoft Teams.
+   - Please continue to [Install CreateTeam Manifest for ARM Deployment](manifestInstall.md) for next steps.
