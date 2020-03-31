@@ -1,4 +1,5 @@
 ## Registering Create Team as an Azure Application (API)
+
 This document describes the process of registering Create Team as an Azure Application as the first step to deployment. As part of the registration you will gather the following information for use further along the deployment process.
    * Application ID
    * Application Secret
@@ -7,6 +8,7 @@ This document describes the process of registering Create Team as an Azure Appli
 Create Team requires two Azure Applications to be configured, one for the API and one for the Client. Here we will be looking at the API
 
 ### Register Create Team with Azure Active Directory
+
 1. Sign in to the [Azure Portal](https://portal.azure.com)
 1. Select the **Azure Active Directory** service from the navigation menu on the top
 1. Select **App Registrations** from navigation pane on the left and then click **+ New Registration** (Take care not to select **App Registrations (Legacy)** as these instructions do not apply to them)
