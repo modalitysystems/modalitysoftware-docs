@@ -102,4 +102,4 @@ The following fields look at tenant default values
 
 ## Deployment complete
 
-Provided that all steps from [How to deploy CreateTeam to your Microsoft Teams for Customer Hosted](customerHosted) have been followed, the CreateTeam deployment should now be complete and ready to use.
+Provided that all steps from [How to deploy CreateTeam to your Microsoft Teams for Customer Hosted](README.md) have been followed, the CreateTeam deployment should now be complete and ready to use.
