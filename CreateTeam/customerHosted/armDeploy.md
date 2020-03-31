@@ -88,4 +88,4 @@ This ARM Template will install resources in your Azure tenant. The template will
 ## Bot Manifest
 
 1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
-   - Please see [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for details.
+   - Please continue [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for next steps.

@@ -1,4 +1,4 @@
-## Creating your manifest file
+## Creating Manifest for ARM Deployment
 
 You must install the "App Studio" application on your local teams client, load in the template [CreateTeamTemplate.zip](https://docs.modalitysoftware.com/CreateTeam/images/customerHosted/CreateTeamTemplate.zip) provided, update specific values and then download the new manifest, as seen below:
 
