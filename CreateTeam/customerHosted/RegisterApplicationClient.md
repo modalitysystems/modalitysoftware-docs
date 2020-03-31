@@ -12,6 +12,14 @@ Create Team requires two Azure Applications to be configured, one for the API an
    * **Name** - Recommend setting this to **Create Team Client**
    * **Supported Account Types** - This needs to be set to **Accounts in any Organizational Directory**
 
-   ![RegisterApplication01](../images/customerHosted/registerapplicationC01.png)
+   ![RegisterApplicationC01](../images/customerHosted/registerapplicationC01.png)
 
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
+
+   ![RegisterApplicationC02](../images/customerHosted/registerapplicationC02.png)
+
+   * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title.
+
+1. Under Manage on the left hand side, click API permissions then click the 3 dots next to the User.Read permission and click Remove permission
+
+   ![RegisterApplication05](../images/customerHosted/registerapplicationC03.png)
