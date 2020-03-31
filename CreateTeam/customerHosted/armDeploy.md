@@ -39,12 +39,25 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. The notification bell will show the deployment in progress, the when complete click Go to resource group
 
-   ![Resource Group](../images/customerHosted/armDeployProgress.png)
+   ![Progress](../images/customerHosted/armDeployProgress.png)
+
+   * By clicking on Deployment in progress you will be able to see what it is actually doing.
 
 1. After a period of deployment should get a Resource group in your tenant with the following components
 
    ![Resource Group](../images/customerHosted/armDeployRG.png)
 
+1. On the left hand menu, click Deployments and the the name of the Deployment that just completed
+
+   ![Deployments](../images/customerHosted/armDeployDeployments.png)
+
+1. Under Deployment details you should see a green tick next to each deployed item to indicate that it was successfuly deployed
+
+   ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
+
+1. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
+
+   ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
 
 ## Bot Manifest
 
