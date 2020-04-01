@@ -32,7 +32,7 @@ Using the manifest file in created in the previous [section](manifestCreate.md),
 
 Now that the App has been added to your Microsoft Teams Tenant, your Global policy may need to be adjusted to allow it to be installed by users.
 
-1. From the Microsoft Teams Admin Center, under _Teams apps_ click _Permission policies_
+1. From the Microsoft Teams Admin Center https://admin.teams.microsoft.com/ , under _Teams apps_ click _Permission policies_
 
    ![Screenshot](../images/admin-perm-pols.png)
 
