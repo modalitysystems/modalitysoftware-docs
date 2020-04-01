@@ -19,7 +19,7 @@ Add a Feature for each of the following RowKeys:
   - control-guest-access
   - hybrid-validation
   - multi-step-approval
-- Enabled (boolean) = wether to enable the feature or not
+- Enabled (boolean) = whether to enable the feature or not
 
 ## PeoplePicker Table
 
