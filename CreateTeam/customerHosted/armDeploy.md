@@ -59,7 +59,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs.png)
 
-1. Now go back to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
+1. Using same tenant that was used to create API and Client App registrations , 
+   go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13.png)
 
