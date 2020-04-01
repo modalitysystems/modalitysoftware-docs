@@ -20,16 +20,18 @@ Create Team requires two Azure Applications to be configured, one for the API an
    ![RegisterApplication01](../images/customerHosted/registerapplication01.png)
 
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
+* From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title. Repeat these steps for Directory ID.
 
    ![RegisterApplication02](../images/customerHosted/registerapplication02.png)
 
-   * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title. Repeat these steps for Directory ID.
+   
 
 1. Under Manage on the left hand side, click Certificates & Secrets then New Client secret
+   * Select an appropriate expiry for the secret from 1 year to Never and click Add
 
    ![RegisterApplication03](../images/customerHosted/registerapplication03.png)
 
-   * Select an appropriate expiry for the secret from 1 year to Never and click Add
+
 
 1. The next screen will be the only time that the secret will be show so use the "Copy to Clipboard" button and paste into the Windows Notepad window that should still be open with appropriate title.
 
