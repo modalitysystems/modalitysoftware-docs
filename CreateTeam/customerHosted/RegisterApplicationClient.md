@@ -17,10 +17,11 @@ Create Team requires two Azure Applications to be configured, one for the API an
    ![RegisterApplicationC01](../images/customerHosted/registerapplicationC01.png)
 
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
+     * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title.
 
    ![RegisterApplicationC02](../images/customerHosted/registerapplicationC02.png)
 
-   * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title.
+  
 
 1. Under Manage on the left hand side, click API permissions then click the 3 dots next to the User.Read permission and click Remove permission
 
