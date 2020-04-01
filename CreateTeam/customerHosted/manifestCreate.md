@@ -2,7 +2,7 @@
 
 You must install the "App Studio" application on your local teams client, load in the template [CreateTeamTemplate.zip](https://docs.modalitysoftware.com/CreateTeam/images/customerHosted/CreateTeamTemplate.zip) provided, update specific values and then download the new manifest, as seen below:
 
-1. From Microsoft Teams go to the Apps section
+1. Login to Microsoft Teams and go to the Apps section
 
 ![Screenshot](../images/teams-apps.png)
 
