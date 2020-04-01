@@ -83,10 +83,11 @@ This ARM Template will install resources in your Azure tenant. The template will
    
 
 1. Under Web -> Redirect URIs, click "Add URI" and enter the value that you obtained from Outputs section of the ARM deployment for appSilentAuthEnd
+  * Click Save
 
    ![SilentAuthEnd](../images/customerHosted/registerapplicationC08.png)
 
-   * Click Save
+ 
 
 ## Provision CreateTeam Settings
 
