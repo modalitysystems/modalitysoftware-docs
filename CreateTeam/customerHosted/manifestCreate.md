@@ -26,7 +26,7 @@ You must install the "App Studio" application on your local teams client, load i
 
    1. Name = Main
    2. Entity ID = ctID
-   3. Content URL = **output from the ARM template**
+   3. Content URL = <**output from the ARM template** goes here>
 
 8. Select "Domains and permissions" within the "Finish" section, enter in your valid domain which was also **output from the ARM template** and then select "Add"
 
