@@ -16,9 +16,10 @@ Add a Feature for each of the following RowKeys:
 
 - PartitionKey = [TenantId]
 - RowKey = This is a unique string to identify the feature.
-  - control-guest-access
-  - hybrid-validation
+  - clone-teams
+  - custom-teams
   - multi-step-approval
+  - control-guest-access
 - Enabled (boolean) = whether to enable the feature or not
 
 ## PeoplePicker Table
