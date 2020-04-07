@@ -25,3 +25,5 @@ Installing CreateTeam in your own tenant involves 3 separate processes: configur
 >[Deploying CreateTeam to Azure using ARM template](armDeploy.md)
 
 >[Installing a manifest file into Microsoft Teams](manifestCreate.md)
+___
+>[Generating and uploading certificates in Azure for authentication](certificateGeneration.md)

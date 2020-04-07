@@ -24,7 +24,11 @@ To generate a self-signed certificate within Azure you need to go to your KeyVau
 
 ![Screenshot](/images/certificateGeneration.png)
 
-3. Once created, the certificate will provision for a few seconds and then display. Once displayed, click on the certificate.
+> Note: If you would like to add email addresses for expirty notifications, then you can do so by "Certificate Contacts" and adding in email addresses.
+
+![Screenshot](/images/customerHosted/certificateEmails.png)
+
+1. Once created, the certificate will provision for a few seconds and then display. Once displayed, click on the certificate.
 
 ![Screenshot](/images/certificateGenerationOpen.png)
 
