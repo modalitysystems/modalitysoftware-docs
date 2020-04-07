@@ -149,6 +149,7 @@ Here is an explanation as to what each template setting controls:
 - IsExternal - Whether the team can contain guests or not. When true appends the suffix " - IsExternal" to the team name.
 - Visibility - Visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden.
 - AlwaysAuthorise - When true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
+- RetentionLabel - When populated, the value is used to assign the retention label for the whole SharePoint site library, if this process fails the **team** will be archived, leaving the IT admin to resolve. Therefore the value must exactly match one of the available retention labels provision on your tenants SharePoint. This is a prerequisite for this feature, for more information [read the following](https://docs.microsoft.com/en-us/microsoft-365/compliance/labels?view=o365-worldwide).
 - AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](ManagingAzureSecurityGroups.md) in the Azure Portal.
 - Channels - The channels the team is created with
   - Description - Description of the channel
