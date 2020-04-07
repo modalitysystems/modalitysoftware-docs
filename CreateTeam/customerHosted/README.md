@@ -4,9 +4,17 @@ Installing CreateTeam in your own tenant involves 3 separate processes: configur
 
 ### AAD App 1 (for the API) : Application Permisions
 
+#### Microsoft Graph Permissions
+
 **Directory.ReadWrite.All** Read and write directory data - Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion.
 
 **Groups.ReadWrite.All** Read and write all groups - Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write group calendar and conversations. All of these operations can be performed by the app without a signed-in user.
+
+**Sites.Read.All** Read items in all site collections - Allows the app to read information related to sites within SharePoint in your organization.
+
+#### SharePoint Permissions
+
+**Sites.FullControl.All** Have full control of site collections - Allows the app to have full control over all of the within SharePoint in your organization.
 
 ### AAD App 2 (for the client) : Delegated Permisions
 
