@@ -8,7 +8,7 @@ To generate a self-signed certificate within Azure you need to go to your KeyVau
 
 1. Select  "Certificates" under the "Settings" section
 
-![Screenshot](/images/certificateKeyVault.png)
+![Screenshot](../images/customerHosted/certificateKeyVault.png)
 
 2. Fill in the form with the following values, then select "Create":
    1. Method of Certificate Creation - "**Generate**" - *select from dropdown*
@@ -22,23 +22,23 @@ To generate a self-signed certificate within Azure you need to go to your KeyVau
    9. Numbers of Days before Expiry - **30** - *as mentioned above, irrelevant*
    10. Advanced Policy Configuration - **Not configured**
 
-![Screenshot](/images/certificateGeneration.png)
+![Screenshot](../images/customerHosted/certificateGeneration.png)
 
 > Note: If you would like to add email addresses for expirty notifications, then you can do so by "Certificate Contacts" and adding in email addresses.
 
-![Screenshot](/images/customerHosted/certificateEmails.png)
+![Screenshot](../images/customerHosted/certificateEmails.png)
 
 1. Once created, the certificate will provision for a few seconds and then display. Once displayed, click on the certificate.
 
-![Screenshot](/images/certificateGenerationOpen.png)
+![Screenshot](../images/customerHosted/certificateGenerationOpen.png)
 
 4. Click on the certificate again on the next page.
 
-![Screenshot](/images/certificateGenerationOpen2.png)
+![Screenshot](../images/customerHosted/certificateGenerationOpen2.png)
 
 5. Then on the certificate details screen, there will be an option to "Download in CER format", select this and keep track of the directory it downloads to, which should be your default browser download directory.
 
-![Screenshot](/images/certificateDownload.png)
+![Screenshot](../images/customerHosted/certificateDownload.png)
 
 ## Upload certificate to app registration
 
@@ -46,10 +46,10 @@ Following the section above, you should now have a valid certificate which will 
 
 1. When the app registration has loaded, go to the "certificates & secrets" section and select the "Upload certificate" button underneath the "Certificates" header
 
-![Screenshot](/images/certificateUploadToAppReg.png)
+![Screenshot](../images/customerHosted/certificateUploadToAppReg.png)
 
 2. Browse to the directory containing the .cer certificate file recently created, and select "Ok". The import should work and you upload should show against the app registration
 
-![Screenshot](/images/certificateUploadedToAppReg.png)
+![Screenshot](../images/customerHosted/certificateUploadedToAppReg.png)
 
 It is unlikely that you have uploaded the wrong certificate, but you can verify by checking that the "Thumbprint" values matches on both the uploaded certificate and the one created in KeyVault.
