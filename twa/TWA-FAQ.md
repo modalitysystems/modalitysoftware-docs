@@ -10,9 +10,9 @@ Customers cannot control this behaviour, it is automatically handled in the Team
 
 ## How does Modality Systems Teamwork Analytics define an Active user?
 
-Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active" for collaboration, however we have been asked to also consider Private Chat, Meetings and Calling activity.
+Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration", however we have been asked to also consider Private Chat, Meetings and Calling activity.
 
-In a future update TWA will also consider private chat, meeting and calling usage to flag a user as active. This is commited on the roadmap for 2020 Q1. It will offer Monthly Active Usage and Weekly Active Usage reports of each Modality/functionality.
+In a future update TWA will also consider private chat, meeting and calling usage to flag a user as active. This is commited on the roadmap for 2020 Q2. It will offer Monthly Active Usage and Weekly Active Usage reports of each Modality/functionality.
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
