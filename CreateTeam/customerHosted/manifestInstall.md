@@ -12,15 +12,15 @@ Using the manifest file in created in the previous [section](manifestCreate.md),
 
    ![Screenshot](../images/teams-apps.png)
 
-2. Then select Upload for [YOUR ORGANISATION NAME]
+1. Then select Upload for [YOUR ORGANISATION NAME]
 
    ![Screenshot](../images/apps-upload.png)
 
-3. Then select the zip file downloaded as detailed in the previous section.
+1. Then select the zip file downloaded as detailed in the previous section.
 
    ![Screenshot](../images/upload-open.png)
 
-4. The App should then appear within your companies Apps section
+1. The App should then appear within your companies Apps section
 
    ![Screenshot](../images/app-deployed.png)
 
@@ -36,11 +36,11 @@ Now that the App has been added to your Microsoft Teams Tenant, your Global poli
 
    ![Screenshot](../images/admin-perm-pols.png)
 
-2. Click on _Global (Org-wide default)_ (or whatever policy is applied to your organisation)
+1. Click on _Global (Org-wide default)_ (or whatever policy is applied to your organisation)
 
    ![Screenshot](../images/app-perm-pols.png)
 
-3. Make sure the _Tenant apps_ policy is set to Allow all apps
+1. Make sure the _Tenant apps_ policy is set to Allow all apps
 
    ![Screenshot](../images/tenant-apps.png)
 
@@ -56,25 +56,25 @@ To improve the end user experience it is recommended to pin the App to the main 
 
    ![Screenshot](../images/admin-setup-pols.png)
 
-2. Either edit _Global (Org-wide default)_ or create a new policy and give it a name
+1. Either edit _Global (Org-wide default)_ or create a new policy and give it a name
 
    ![Screenshot](../images/pinned-apps-notg.png)
 
-3. Click _Add apps_, select _Permissions policy_ from previous step, search for TG and click Add
+1. Click _Add apps_, select _Permissions policy_ from previous step, search for TG and click Add
 
    ![Screenshot](../images/add-pinned-apps.png)
 
-4. Click Save
+1. Click Save
 
    ![Screenshot](../images/pinned-apps-complete.png)
 
 If you created a new Setup policy in step 2 then you will need to assign users to the policy
 
-5. From the Microsoft Teams Admin Center, under _Teams apps_ click _Setup policies_, click on the tick next to the required policy name
+1. From the Microsoft Teams Admin Center, under _Teams apps_ click _Setup policies_, click on the tick next to the required policy name
 
    ![Screenshot](../images/admin-setup-pols-users.png)
 
-6. Click _Manage users_ and add the required users
+1. Click _Manage users_ and add the required users
 
    ![Screenshot](../images/manage-users.png)
 

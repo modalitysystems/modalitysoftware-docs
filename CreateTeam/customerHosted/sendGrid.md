@@ -18,37 +18,37 @@ Azure customers can unlock 25,000 free emails each month. These 25,000 free mont
 
 1.  Sign in to the [Azure portal](https://portal.azure.com).
 
-2. In the Azure portal menu or the home page, select **Create a resource**.
+1. In the Azure portal menu or the home page, select **Create a resource**.
    
    ![01](../images/sendGrid/01.png)
 
-3. Search for and select **SendGrid**.
+1. Search for and select **SendGrid**.
 
    ![02](../images/sendGrid/02.png)
 
-4. Complete the signup form and select **Create**.
+1. Complete the signup form and select **Create**.
 
    ![03](../images/sendGrid/03.png)
 
-5. Enter a **Name** to identify your SendGrid service in your Azure settings. Names must be between 1 and 100 characters in length and contain only alphanumeric characters, dashes, dots, and underscores. The name must be unique in your list of subscribed Azure Store Items.
+1. Enter a **Name** to identify your SendGrid service in your Azure settings. Names must be between 1 and 100 characters in length and contain only alphanumeric characters, dashes, dots, and underscores. The name must be unique in your list of subscribed Azure Store Items.
 
-6. Enter and confirm your **Password**.
+1. Enter and confirm your **Password**.
 
-7. Choose your **Subscription**.
+1. Choose your **Subscription**.
 
-8. Create a new **Resource group** or use an existing one.
+1. Create a new **Resource group** or use an existing one.
 
-9. In the **Pricing tier** section select the SendGrid plan you want to sign up for.
+1. In the **Pricing tier** section select the SendGrid plan you want to sign up for.
 
    ![04](../images/sendGrid/04.png)
 
-10. Enter a **Promotion Code** if you have one.
+1. Enter a **Promotion Code** if you have one.
 
-11. Enter your **Contact Information**.
+1. Enter your **Contact Information**.
 
-12. Review and accept the **Legal terms**.
+1. Review and accept the **Legal terms**.
 
-13. After confirming your purchase you will see a **Deployment Succeeded** pop-up and you will see your account listed.
+1. After confirming your purchase you will see a **Deployment Succeeded** pop-up and you will see your account listed.
 
    ![05](../images/sendGrid/05.png)
 
@@ -70,19 +70,19 @@ To send an email using SendGrid, you must supply your API Key.
 
    ![08](../images/sendGrid/08.png)
 
-2. In your SendGrid dashboard, select **Settings** and then **API Keys** in the menu on the left.
+1. In your SendGrid dashboard, select **Settings** and then **API Keys** in the menu on the left.
 
    ![09](../images/sendGrid/09.png)
 
-3. Click the **Create API Key**.
+1. Click the **Create API Key**.
 
    ![10](../images/sendGrid/10.png)
 
-4. At a minimum, provide the **Name of this key** and provide full access to **Mail Send** and select **Save**.
+1. At a minimum, provide the **Name of this key** and provide full access to **Mail Send** and select **Save**.
 
    ![11](../images/sendGrid/11.png)
 
-5. Your API will be displayed at this point one time. Please be sure to store it safely.
+1. Your API will be displayed at this point one time. Please be sure to store it safely.
 
 # To find your SendGrid credentials
 
@@ -90,7 +90,7 @@ To send an email using SendGrid, you must supply your API Key.
 
   ![12](../images/sendGrid/12.png)
 
-2. The password is the one you chose at setup. You can select Change password or Reset password to make any changes.
+1. The password is the one you chose at setup. You can select Change password or Reset password to make any changes.
 
 To manage your email deliverability settings, click the Manage button. This will redirect to your SendGrid dashboard.
 
@@ -104,15 +104,15 @@ To manage your email deliverability settings, click the Manage button. This will
 
    ![14](../images/sendGrid/14.png)
 
-2. Click **Add Version**, then **Blank Templante** and then select **Design Editor**
+1. Click **Add Version**, then **Blank Templante** and then select **Design Editor**
    
    ![15](../images/sendGrid/15.png)
 
-3. Give it a version name such as **V1**, then click **Build**, **Advanced** and then **Import Drag & Drop HTML**
+1. Give it a version name such as **V1**, then click **Build**, **Advanced** and then **Import Drag & Drop HTML**
 
    ![16](../images/sendGrid/16.png)
 
-4. Copy and paste the code below into the Import Drag & Drop HTML screen and click **Update**
+1. Copy and paste the code below into the Import Drag & Drop HTML screen and click **Update**
 
 ```javascript
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -395,13 +395,13 @@ To manage your email deliverability settings, click the Manage button. This will
     </body>
   </html>
 ```
-5. Click Save and then the Back Arrow
+1. Click Save and then the Back Arrow
 
    ![17](../images/sendGrid/17.png)
 
-6. Take Note of the **Template ID** for entry into the ARM Deployment Screen
+1. Take Note of the **Template ID** for entry into the ARM Deployment Screen
 
-7. Create another templete called **CreateTeamResponse**, then Copy and Paste the below in the same way as above
+1. Create another templete called **CreateTeamResponse**, then Copy and Paste the below in the same way as above
 
 ```javascript
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
