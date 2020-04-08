@@ -88,13 +88,13 @@ To send an email using SendGrid, you must supply your API Key.
 
 1. Click the key icon to find your **Username**.
 
-  ![12](../images/sendGrid/12.png)
+   ![12](../images/sendGrid/12.png)
 
 1. The password is the one you chose at setup. You can select Change password or Reset password to make any changes.
 
 To manage your email deliverability settings, click the Manage button. This will redirect to your SendGrid dashboard.
 
-  ![13](../images/sendGrid/13.png)
+   ![13](../images/sendGrid/13.png)
 
   For more information on sending email through SendGrid from a custom domain, visit the [How to set up domain authentication](https://sendgrid.com/docs/ui/account-and-settings/how-to-set-up-domain-authentication) guide.
 
