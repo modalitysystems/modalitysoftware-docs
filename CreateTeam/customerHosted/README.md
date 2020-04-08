@@ -20,6 +20,8 @@ Installing CreateTeam in your own tenant involves 4 separate processes: configur
 
 **openid** Sign in and read user profile - Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.
 
+# Steps to install
+
 >[Configure Azure AD Applications](RegisterApplicationAPI.md)
 
 >[Configure SendGrid Email Delivery Service](sendGrid.md)
