@@ -2,7 +2,7 @@
 
 The CreateTeam Documentation site provides access to all of the platform documentation you will need to successfully setup and configure CreateTeam.
 
-![Architecture Diagram](images/architectureDiagram.png)
+![Architecture Diagram](images/architectureDiagram2.png)
 
 >[How to deploy CreateTeam to your Microsoft Teams for SASS](deployteamsapp.md)
 
