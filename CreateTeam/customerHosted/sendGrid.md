@@ -619,3 +619,8 @@ To manage your email deliverability settings, click the Manage button. This will
     </body>
   </html>
   ```
+
+## CreateTeam ARM Deployment
+
+1. The SendGrid Email Delivery Service is now configured however.
+   - Please continue to [CreateTeam ARM Deployment](armDeploy.md) for next steps.
