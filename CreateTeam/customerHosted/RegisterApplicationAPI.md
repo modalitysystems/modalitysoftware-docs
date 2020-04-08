@@ -50,7 +50,7 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
 10. The click + Add a permission, then SharePoint and select Application permissions
    
-![RegisterApplication06b](../images/customerHosted/registerapplication06b.png)
+   ![RegisterApplication06b](../images/customerHosted/registerapplication06b.png)
 
    * Search for and Add Sites.FullControl.All permissions
 
