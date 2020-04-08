@@ -32,7 +32,7 @@ This ARM Template will install resources in your Azure tenant. The template will
    - Settings
      - **Azure Application details** - Use the details you generated when [registering an application](RegisterApplicationAPI.md).
      (Use API Client ID as *API Id*, API Secret as *App Secret* and Client Application Id as *Client Id*)
-     - **Send Grid Config Details** - These are settings required for SendGrid to send emails
+     - **Send Grid API Key** - These are settings required for SendGrid which is used by CreateTeam to send emails. Follow this guide for setting up [SendGrid](sendGrid.md) within your tenant. Be sure to take note of the Send Grid API that you will create and enter it here
      - **Valid Tenant IDs** - This should be in the format https://sts.windows.net/{TENANTID}/
      - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
 
