@@ -46,9 +46,15 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication06](../images/customerHosted/registerapplication06.png)
 
-   * Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
+   * Search for and Add Directory.ReadWrite.all, Group.ReadWrite.All and Site.Read.All permissions
 
-1. Once the permissions have been Added, they will need to be granted Admin Consent by a Global Admin
+1. The click + Add a permission, then SharePoint and select Application permissions
+   
+![RegisterApplication06b](../images/customerHosted/registerapplication06b.png)
+
+   * Search for and Add Sites.FullControl.All permissions
+
+2. Once the permissions have been Added, they will need to be granted Admin Consent by a Global Admin
 
    ![RegisterApplication07](../images/customerHosted/registerapplication07.png)
 
@@ -56,11 +62,11 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication08](../images/customerHosted/registerapplication08.png)
 
-1. Under Manage on the left hand side, click Expose an API and the click Set next to Application ID URI and then Save
+3. Under Manage on the left hand side, click Expose an API and the click Set next to Application ID URI and then Save
 
    ![RegisterApplication09](../images/customerHosted/registerapplication09.png)
 
-1. Then Click + Add a scope and enter the following and then Add scope
+4. Then Click + Add a scope and enter the following and then Add scope
 
    ![RegisterApplication10](../images/customerHosted/registerapplication10.png)
 
@@ -68,7 +74,7 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication11](../images/customerHosted/registerapplication11.png)
 
-1. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
+5. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
 
 ```javascript
 "appRoles": [
