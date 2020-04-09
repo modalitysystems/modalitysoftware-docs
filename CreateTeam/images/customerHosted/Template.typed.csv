@@ -1,5 +1,5 @@
-Description,Description@type,Name,Name@type,PartitionKey,RowKey,TemplateJson,TemplateJson@type,Timestamp
-First Description,Edm.String,First Template,Edm.String,xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,"{
+PartitionKey,RowKey,Name,Description,TemplateJson,Description@type,Name@type,TemplateJson@type
+xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,First Template,First Description,"{
    ""prefix"":""Prefix"",
    ""suffix"":""UK sales"",
    ""IsExternal"":true,
@@ -20,4 +20,4 @@ First Description,Edm.String,First Template,Edm.String,xxx-your-tenant-id-xxx,33
          ""DisplayName"":""DisplayName92532b74-b248-4f00-853c-c914f4137931""
       }
    ]
-}",Edm.String,2020-03-10T14:23:27.195Z
+}",Edm.String,Edm.String,Edm.String

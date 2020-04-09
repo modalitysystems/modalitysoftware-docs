@@ -1,3 +1,3 @@
-NativeMaxLength,NativeMaxLength@type,NativeMinLength,NativeMinLength@type,PartitionKey,RecommendedMaxLength,RecommendedMaxLength@type,RecommendedMinLength,RecommendedMinLength@type,RowKey,Timestamp,Validate,Validate@type
-1025,Edm.Int32,0,Edm.Int32,xxx-your-tenant-id-xxx,500,Edm.Int32,10,Edm.Int32,description,2020-03-10T16:16:40.931Z,TRUE,Edm.Boolean
-245,Edm.Int32,1,Edm.Int32,xxx-your-tenant-id-xxx,10,Edm.Int32,4,Edm.Int32,name,2020-03-10T16:20:58.334Z,TRUE,Edm.Boolean
+PartitionKey,RowKey,NativeMaxLength,NativeMinLength,RecommendedMaxLength,RecommendedMinLength,Validate,NativeMaxLength@type,NativeMinLength@type,RecommendedMaxLength@type,RecommendedMinLength@type,Validate@type
+xxx-your-tenant-id-xxx,description,1025,3,500,10,TRUE,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Boolean
+xxx-your-tenant-id-xxx,name,245,3,10,4,TRUE,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Boolean
