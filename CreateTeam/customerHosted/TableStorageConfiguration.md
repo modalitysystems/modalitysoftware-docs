@@ -8,9 +8,9 @@
 
 ## Feature Table
 
-> Default Values can be downloaded from here: [Feature.typed.csv](../images/Feature.typed.csv)
+> Default Values can be downloaded from here: [Feature.typed.csv](../images/customerHosted/Feature.typed.csv)
 
-![Feature Table](../images/FeatureTableConfiguration.png "Feature Table")
+![Feature Table](../images/customerHosted/FeatureTableConfiguration.png "Feature Table")
 
 Add a Feature for each of the following RowKeys:
 
@@ -24,9 +24,9 @@ Add a Feature for each of the following RowKeys:
 
 ## PeoplePicker Table
 
-> Default Values can be downloaded from here: [PeoplePicker.typed.csv](../images/PeoplePicker.typed.csv)
+> Default Values can be downloaded from here: [PeoplePicker.typed.csv](../images/customerHosted/PeoplePicker.typed.csv)
 
-![PeoplePicker Table](../images/PeoplePickerTableConfiguration.png "PeoplePicker Table")
+![PeoplePicker Table](../images/customerHosted/PeoplePickerTableConfiguration.png "PeoplePicker Table")
 
 Add a PeoplePicker for each of the following RowKeys:
 
@@ -55,9 +55,9 @@ Add a PeoplePicker for each of the following RowKeys:
 
 ## TextField Table
 
-> Default Values can be downloaded from here: [TextField.typed.csv](../images/TextField.typed.csv)
+> Default Values can be downloaded from here: [TextField.typed.csv](../images/customerHosted/TextField.typed.csv)
 
-![TextField Table](../images/TextFieldTableConfiguration.png "TextField Table")
+![TextField Table](../images/customerHosted/TextFieldTableConfiguration.png "TextField Table")
 
 Add a TextField for each of the following RowKeys:
 
@@ -87,9 +87,9 @@ Add a TextField for each of the following RowKeys:
 
 ## Approvers Table
 
-> Default Values can be downloaded from here: [Approvers.typed.csv](../images/Approvers.typed.csv)
+> Default Values can be downloaded from here: [Approvers.typed.csv](../images/customerHosted/Approvers.typed.csv)
 
-![Approvers Table](../images/ApproversTableConfiguration.png "Approvers Table")
+![Approvers Table](../images/customerHosted/ApproversTableConfiguration.png "Approvers Table")
 
 If the multi-step-approval feature is enabled, the email address within this table for the tenant will be sent an email when approval is required. (This is when a user creates a team that does not meet recommended validation as per the TextField and PeoplePicker tables)
 
@@ -103,9 +103,9 @@ Ignore, this is a reserved system table and not for configuration
 
 ## Template Table
 
-> Default Values can be downloaded from here: [Template.typed.csv](../images/Template.typed.csv)
+> Default Values can be downloaded from here: [Template.typed.csv](../images/customerHosted/Template.typed.csv)
 
-![Template Table](../images/TemplateTableConfiguration.png "Template Table")
+![Template Table](../images/customerHosted/TemplateTableConfiguration.png "Template Table")
 
 The templates defined in this table will appear as templates in the main menu for the tenant.
 
