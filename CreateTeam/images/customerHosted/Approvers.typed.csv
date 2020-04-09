@@ -1,0 +1,3 @@
+DisplayName,DisplayName@type,PartitionKey,RowKey,Timestamp
+Joe Bloggs,Edm.String,xxx-your-tenant-id-xxx,email@email.co.uk,2020-03-10T16:07:44.421Z
+Jamie Smith,Edm.String,xxx-your-tenant-id-xxx,test@email.co.uk,2020-03-10T16:08:04.250Z

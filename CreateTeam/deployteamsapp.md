@@ -84,25 +84,25 @@ To improve the end user experience it is recommended to pin the App to the main 
 
    ![Screenshot](images/admin-setup-pols.png)
     
-2. Either edit *Global (Org-wide default)* or create a new policy and give it a name
+1. Either edit *Global (Org-wide default)* or create a new policy and give it a name
 
    ![Screenshot](images/pinned-apps-notg.png)
 
-3. Click *Add apps*, select *Permissions policy* from previous step, search for TG and click Add
+1. Click *Add apps*, select *Permissions policy* from previous step, search for TG and click Add
 
    ![Screenshot](images/add-pinned-apps.png)
 
-4. Click Save
+1. Click Save
 
    ![Screenshot](images/pinned-apps-complete.png)
 
 If you created a new Setup policy in step 2 then you will need to assign users to the policy
 
-5. From the Microsoft Teams Admin Center, under *Teams apps* click *Setup policies*, click on the tick next to the required policy name
+1. From the Microsoft Teams Admin Center, under *Teams apps* click *Setup policies*, click on the tick next to the required policy name
 
    ![Screenshot](images/admin-setup-pols-users.png)
 
-6. Click *Manage users* and add the required users
+1. Click *Manage users* and add the required users
     
    ![Screenshot](images/manage-users.png)
    
@@ -122,8 +122,7 @@ When a user first launches the App from within Microsoft Team, they are required
 ## Changing default settings
 
 This application looks at your default tenant settings to determine the default value of certain fields.
-To change your default tenant settings read the following guide.
-https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-rest-1.0
+To change your default tenant settings read the following [guide](https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-rest-1.0).
 
 The following fields look at tenant default values
 1. External Checkbox looks at AllowToAddGuests value
