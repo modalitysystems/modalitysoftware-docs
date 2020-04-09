@@ -4,7 +4,7 @@
 
 1. Open the storage account associated with Create Team
 
-1. Add/Edit rows individualy, or [import the default values into table storage](../ImportDefaultValuesTableStorage.md)
+1. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 ## Feature Table
 
@@ -15,6 +15,7 @@
 Add a Feature for each of the following RowKeys:
 
 - PartitionKey = [TenantId]
+  > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
 - RowKey = This is a unique string to identify the feature.
   - clone-teams
   - custom-teams
