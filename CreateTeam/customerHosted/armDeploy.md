@@ -14,8 +14,10 @@ This ARM Template will install resources in your Azure tenant. The template will
 | -------------------- | ------------------------------------------------------------------------------------------------------ |
 | Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalant                                          |
 | Key Vault            | Securely stores Web App Secret                                                                         |
-| Application Insights | Logs for Web App Bot and Web App Service                                                               |
 | Storage Accounts     | Block Blob Storage, General Purpose V2, RA-GRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+| [Application Insights] | [Logs for Web App Bot and Web App Service] Not installed by default*                                 |
+
+> Important: Remote Application Logging. By default the application will configure itself to send logging and telemetry data to Modality Systems using an Application Insights instance securely hosted in Microsoft Azure. This enables Modality Systems to investigate and remediate any reported issues remotely. By exception it may be possible instead to keep logging data within the customer's tenant but this may have licensing and support implications which you should discuss with Modality Systems to fully understand.
 
 ## Installation
 
