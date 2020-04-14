@@ -21,6 +21,7 @@ Add a Feature for each of the following RowKeys:
   - custom-teams
   - multi-step-approval
   - control-guest-access
+  - hide-pii (Personally Identifiable Information)
 - Enabled (boolean) = whether to enable the feature or not
 
 ## PeoplePicker Table
