@@ -8,6 +8,10 @@ Microsoft do not publish what their limits are for Graph for Microsoft Teams. He
 
 Customers cannot control this behaviour, it is automatically handled in the Teamwork Analytics application.
 
+## How does Modality Systems Teamwork Analytics count Users
+
+Modality Systems calculates the total user count by iterating all Azure AD user accounts, including those that have no Teams activity.
+
 ## How does Modality Systems Teamwork Analytics define an Active user?
 
 Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration", however we have been asked to also consider Private Chat, Meetings and Calling activity.
@@ -15,6 +19,18 @@ Both Microsoft and Modality Systems use the term 'Active Users' in reporting. Th
 In a future update TWA will also consider private chat, meeting and calling usage to flag a user as active. This is commited on the roadmap for 2020 Q2. It will offer Monthly Active Usage and Weekly Active Usage reports of each Modality/functionality.
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
+
+## How does Modality Systems Teamwork Analytics define a Guest User?
+
+Modality Systems defines a Guest User as any user that is not homed on your tenant. This includes federated users as well as guests that join meetings, contribute to teams etc.
+
+Microsoft Teams Admin Center, Office 365 and PowerShell do not consider federated users guest users.
+
+This difference in definition can cause differences in the reported number of guest users when comparing figures from Teamwork Analytics and Microsoft. The difference is because Teamwork Analytics is more inclusive in its guest definition - as a reporting and compliance management tool having a list of all users that are not from your organisation enables you to see the true scale of external communication.
+
+## How does Modality Systems Teamwork Analytics define an Active Channel?
+
+An Active Channel is defined as having channel activity in the last 30 days.
 
 ## How do Modality Systems Teamwork Analytics Licence Keys work?
 
