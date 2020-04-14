@@ -16,7 +16,7 @@ The report will contain 4 columns
 2. Display Name, the name of the team. (if an error occurs, in rare circumstances where this cannot be retrieved this will be displayed as "N/A")
 3. Created Date Time, the date the team was original created in dd-MM-yyyy HH:mm format (time is 24 hours, UTC)
 4. Created By, that will be a different value depending on if the "hide-pii" feature is enabled or not:
-   1. If enabled - the user object ID of the signed in user who created the team
+   1. If enabled (default) - the user object ID of the signed in user who created the team
    2. If disabled - the UPN of the user that created the team via CreateTeam. the report will not show the user if the team was created natively (you can however find this in the O365 Security and Governance audit logs.)
    3. If an error occurs when logging the audit, the user object ID will be logged. These errors can be found in App Insights.
 
