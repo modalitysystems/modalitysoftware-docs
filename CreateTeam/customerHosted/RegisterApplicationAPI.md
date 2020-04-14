@@ -23,16 +23,12 @@ Create Team requires two Azure Applications to be configured, one for the API an
     * From this screen use the "Copy to Clipboard" button next to the Application ID, then open Windows Notepad and paste the value with appropriate title. Repeat these steps for Directory ID.
 
 
-   ![RegisterApplication02](../images/customerHosted/registerapplication02.png)
-
-   
+   ![RegisterApplication02](../images/customerHosted/registerapplication02.png)  
 
 1. Under Manage on the left hand side, click Certificates & Secrets then New Client secret
    * Select an appropriate expiry for the secret from 1 year to Never and click Add
 
    ![RegisterApplication03](../images/customerHosted/registerapplication03.png)
-
-
 
 1. The next screen will be the only time that the secret will be show so use the "Copy to Clipboard" button and paste into the Windows Notepad window that should still be open with appropriate title.
 
@@ -46,15 +42,21 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplication06](../images/customerHosted/registerapplication06.png)
 
-   * Search for and Add Directory.ReadWrite.all and Group.ReadWrite.All permissions
+   * Search for and Add Directory.ReadWrite.all, Group.ReadWrite.All and Site.Read.All permissions
+
+1. The click + Add a permission, then SharePoint and select Application permissions
+   
+   ![RegisterApplication06b](../images/customerHosted/registerapplication06b.png)
+
+   * Search for and Add Sites.FullControl.All permissions
 
 1. Once the permissions have been Added, they will need to be granted Admin Consent by a Global Admin
 
-   ![RegisterApplication07](../images/customerHosted/registerapplication07.png)
+   ![RegisterApplication07](../images/customerHosted/registerapplication07b.png)
 
    * Click the Grant Admin Consent button 
 
-   ![RegisterApplication08](../images/customerHosted/registerapplication08.png)
+   ![RegisterApplication08](../images/customerHosted/registerapplication08b.png)
 
 1. Under Manage on the left hand side, click Expose an API and the click Set next to Application ID URI and then Save
 

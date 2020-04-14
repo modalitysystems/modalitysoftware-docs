@@ -2,19 +2,20 @@
 
 1. Open Azure Storage explorer on your PC (Download from https://azure.microsoft.com/en-us/features/storage-explorer/) add your PROD account and subscription if required
 
-2. Open the storage account associated with Create Team
+1. Open the storage account associated with Create Team
 
-3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
+1. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 ## Feature Table
 
-> Default Values can be downloaded from here: [Feature.typed.csv](images/Feature.typed.csv)
+> Default Values can be downloaded from here: [Feature.typed.csv](../images/customerHosted/Feature.typed.csv)
 
-![Feature Table](images/FeatureTableConfiguration.png "Feature Table")
+![Feature Table](../images/customerHosted/FeatureTableConfiguration.png "Feature Table")
 
 Add a Feature for each of the following RowKeys:
 
 - PartitionKey = [TenantId]
+  > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
 - RowKey = This is a unique string to identify the feature.
   - clone-teams
   - custom-teams
@@ -24,9 +25,9 @@ Add a Feature for each of the following RowKeys:
 
 ## PeoplePicker Table
 
-> Default Values can be downloaded from here: [PeoplePicker.typed.csv](images/PeoplePicker.typed.csv)
+> Default Values can be downloaded from here: [PeoplePicker.typed.csv](../images/customerHosted/PeoplePicker.typed.csv)
 
-![PeoplePicker Table](images/PeoplePickerTableConfiguration.png "PeoplePicker Table")
+![PeoplePicker Table](../images/customerHosted/PeoplePickerTableConfiguration.png "PeoplePicker Table")
 
 Add a PeoplePicker for each of the following RowKeys:
 
@@ -55,9 +56,9 @@ Add a PeoplePicker for each of the following RowKeys:
 
 ## TextField Table
 
-> Default Values can be downloaded from here: [TextField.typed.csv](images/TextField.typed.csv)
+> Default Values can be downloaded from here: [TextField.typed.csv](../images/customerHosted/TextField.typed.csv)
 
-![TextField Table](images/TextFieldTableConfiguration.png "TextField Table")
+![TextField Table](../images/customerHosted/TextFieldTableConfiguration.png "TextField Table")
 
 Add a TextField for each of the following RowKeys:
 
@@ -87,9 +88,9 @@ Add a TextField for each of the following RowKeys:
 
 ## Approvers Table
 
-> Default Values can be downloaded from here: [Approvers.typed.csv](images/Approvers.typed.csv)
+> Default Values can be downloaded from here: [Approvers.typed.csv](../images/customerHosted/Approvers.typed.csv)
 
-![Approvers Table](images/ApproversTableConfiguration.png "Approvers Table")
+![Approvers Table](../images/customerHosted/ApproversTableConfiguration.png "Approvers Table")
 
 If the multi-step-approval feature is enabled, the email address within this table for the tenant will be sent an email when approval is required. (This is when a user creates a team that does not meet recommended validation as per the TextField and PeoplePicker tables)
 
@@ -103,9 +104,9 @@ Ignore, this is a reserved system table and not for configuration
 
 ## Template Table
 
-> Default Values can be downloaded from here: [Template.typed.csv](images/Template.typed.csv)
+> Default Values can be downloaded from here: [Template.typed.csv](../images/customerHosted/Template.typed.csv)
 
-![Template Table](images/TemplateTableConfiguration.png "Template Table")
+![Template Table](../images/customerHosted/TemplateTableConfiguration.png "Template Table")
 
 The templates defined in this table will appear as templates in the main menu for the tenant.
 
@@ -139,7 +140,6 @@ The templates defined in this table will appear as templates in the main menu fo
    ]
 }
 ```
-
 ### Template Settings
 
 Here is an explanation as to what each template setting controls:
@@ -150,7 +150,12 @@ Here is an explanation as to what each template setting controls:
 - Visibility - Visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden.
 - AlwaysAuthorise - When true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
 - RetentionLabel - When populated, the value is used to assign the retention label for the whole SharePoint site library, if this process fails the **team** will be archived, leaving the IT admin to resolve. Therefore the value must exactly match one of the available retention labels provision on your tenants SharePoint. This is a prerequisite for this feature, for more information [read the following](https://docs.microsoft.com/en-us/microsoft-365/compliance/labels?view=o365-worldwide).
-- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](ManagingAzureSecurityGroups.md) in the Azure Portal.
+- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](../ManagingAzureSecurityGroups.md) in the Azure Portal.
 - Channels - The channels the team is created with
   - Description - Description of the channel
   - DisplayName - Name of the channel
+
+## CreateTeam Manifest for ARM Deployment
+
+1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
+   - Please continue to [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for next steps.

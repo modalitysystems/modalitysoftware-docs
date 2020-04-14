@@ -21,8 +21,6 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplicationC02](../images/customerHosted/registerapplicationC02.png)
 
-  
-
 1. Under Manage on the left hand side, click API permissions then click the 3 dots next to the User.Read permission and click Remove permission
 
    ![RegisterApplicationC03](../images/customerHosted/registerapplicationC03.png)
@@ -41,7 +39,7 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    * There is no need to Grant admin consent for the Client as the user will give consent the first time they use CreateTeam.
 
-## CreateTeam ARM Deployment
+## Configure SendGrid Email Delivery Service
 
 1. The Azure AD Applications are now configured however, we will need to revisit them once the ARM Deployment has finished to update some values. 
-   - Please continue to [CreateTeam ARM Deployment](armDeploy.md) for next steps.
+   - Please continue to [Configure SendGrid Email Delivery Service](sendGrid.md) for next steps.

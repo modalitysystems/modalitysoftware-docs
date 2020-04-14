@@ -14,8 +14,10 @@ This ARM Template will install resources in your Azure tenant. The template will
 | -------------------- | ------------------------------------------------------------------------------------------------------ |
 | Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalant                                          |
 | Key Vault            | Securely stores Web App Secret                                                                         |
-| Application Insights | Logs for Web App Bot and Web App Service                                                               |
 | Storage Accounts     | Block Blob Storage, General Purpose V2, RA-GRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+| [Application Insights] | [Logs for Web App Bot and Web App Service] Not installed by default*                                 |
+
+> Important: **Remote Application Logging. By default the application will configure itself to send logging and telemetry data to Modality Systems using an Application Insights instance securely hosted in Microsoft Azure. This enables Modality Systems to investigate and remediate any reported issues remotely. By exception it may be possible instead to keep logging data within the customer's tenant but this may have licensing and support implications which you should discuss with Modality Systems to fully understand.**
 
 ## Installation
 
@@ -32,7 +34,8 @@ This ARM Template will install resources in your Azure tenant. The template will
    - Settings
      - **Azure Application details** - Use the details you generated when [registering an application](RegisterApplicationAPI.md).
      (Use API Client ID as *API Id*, API Secret as *App Secret* and Client Application Id as *Client Id*)
-     - **Send Grid Config Details** - These are settings required for SendGrid to send emails
+     - **Send Grid API Key and Template IDs** - Use the details you generared when [configuring SendGrid Email Delivery Service](sendGrid.md) within your tenant
+     - **Send Grid From Email address and Name** - The name and email address that CreateTeam emails will come from
      - **Valid Tenant IDs** - This should be in the format https://sts.windows.net/{TENANTID}/
      - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
 
@@ -70,8 +73,6 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![AdminConsent](../images/customerHosted/registerapplication14.png)
 
-   
-
 1. Now goto Azure Acive Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13b.png)
@@ -81,21 +82,12 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![AuthEnd](../images/customerHosted/registerapplicationC07.png)
 
-   
-
 1. Under Web -> Redirect URIs, click "Add URI" and enter the value that you obtained from Outputs section of the ARM deployment for appSilentAuthEnd
   * Click Save
 
    ![SilentAuthEnd](../images/customerHosted/registerapplicationC08.png)
 
- 
-
 ## Provision CreateTeam Settings
 
 1. The storage account that was deployed as part of the ARM Deployment requires settings to be added
-   - Please follow steps [Azure Table Storage Configuration](../TableStorageConfiguration.md) and then continue to CreateTeam Manifest for ARM Deployment.
-
-## CreateTeam Manifest for ARM Deployment
-
-1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
-   - Please continue to [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for next steps.
+   - Please follow steps [Azure Table Storage Configuration](TableStorageConfiguration.md) and then continue to CreateTeam Manifest for ARM Deployment.
