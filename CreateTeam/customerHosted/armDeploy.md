@@ -67,7 +67,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs2.png)
 
-   >NOTE Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privalages. Forward this URL on to someone who does so that they can grant consent.
+   >NOTE The Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privalages. Forward this URL on to someone who does so that they can grant consent for the tenant.
 
 1. Using same tenant that was used to create API and Client App registrations , 
    go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
