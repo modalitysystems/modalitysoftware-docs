@@ -59,9 +59,14 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
 
+   >NOTE On occassion the final step to deploy the CreateTeam Application Code may fail. If this happens use the **Redeploy** button and choose the same Resource Group and Parameters as chosen above
+   ![Overview](../images/customerHosted/armDeployDeploymentsOverviewFail.png)
+
 1. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
 
-   ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs.png)
+   ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs2.png)
+
+   >NOTE Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privalages. Forward this URL on to someone who does so that they can grant consent.
 
 1. Using same tenant that was used to create API and Client App registrations , 
    go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
