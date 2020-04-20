@@ -21,3 +21,15 @@ Teams specific - the ones TWA gets
 Guests = Guest User and External Members that are members of Teams - correct at time of data pull, e.g. "Current state"
 
 Tenant Users - on the tennat (no EXT in name) and members or owners of at least 1 team
+
+We do not get per guest usage summary activity (e.g. calls, pchat, team chat, meetings)
+
+## Team Check
+
+All Teams on the whole tennat either Live or Archived
+
+showing public, private and non-discoverable (private)
+
+users = internal members, owners and guests
+guests = guest members only
+owners = owners only
