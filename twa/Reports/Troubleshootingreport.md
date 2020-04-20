@@ -33,3 +33,16 @@ showing public, private and non-discoverable (private)
 users = internal members, owners and guests
 guests = guest members only
 owners = owners only
+
+## Admin Center Check
+
+Total Active Users = users have 1 or more of anything including "other" - Microsoft do not define "other
+
+How we get to these totals. We pull per user totals, per day for the period. We then sum these. 
+
+The API allows us to ask for a 30 data total for all usage on the tenant, broken down by user (e.g. Bob's activity summed for 30 days) - we have found this total is different to taking bob's activity day by day for the same 30 day period. In particular the sum of meetings attended is always seems to be higher. Hence when you compare our Total user activity for 30 days to portal/admin report for 30 days, the number of meetings in our report will be lower than Microsoft's.
+
+#######
+
+
+
