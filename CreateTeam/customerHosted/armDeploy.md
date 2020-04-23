@@ -2,7 +2,7 @@
 
 CreateTeam can be provided as an Azure Resource Manager (ARM) template that automatically provisions and starts the required resources in your Azure subscription.
 
-- Contact info@modalitysystems.com for a URL to the ARM Deployment.
+- Contact software.support@modalitysystems.com for a URL to the ARM Deployment.
 
 > Note: You must have [registered an application](RegisterApplicationAPI.md) beforehand.
 
