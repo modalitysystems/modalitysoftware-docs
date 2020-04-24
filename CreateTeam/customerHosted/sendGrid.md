@@ -114,7 +114,7 @@ To manage your email deliverability settings, click the Manage button. This will
 
 1. Copy and paste the code below into the Import Drag & Drop HTML screen and click **Update**
 
-```javascript
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -403,7 +403,7 @@ To manage your email deliverability settings, click the Manage button. This will
 
 1. Create another templete called **CreateTeamResponse**, then Copy and Paste the below in the same way as above
 
-```javascript
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
     <head>
