@@ -25,7 +25,7 @@ Add a Feature for each of the following RowKeys:
   - multi-step-approval
 - Enabled (boolean) = whether to enable the feature or not
 
-> The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](../ManagingAzureSecurityGroups.md).
+> The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](./uploadLogoToWebApp.md).
 
 ## PeoplePicker Table
 
