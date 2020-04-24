@@ -2,5 +2,6 @@ PartitionKey,RowKey,Enabled,Enabled@type
 xxx-your-tenant-id-xxx,clone-teams,TRUE,Edm.Boolean
 xxx-your-tenant-id-xxx,custom-teams,TRUE,Edm.Boolean
 xxx-your-tenant-id-xxx,control-guest-access,FALSE,Edm.Boolean
-xxx-your-tenant-id-xxx,multi-step-approval,FALSE,Edm.Boolean
+xxx-your-tenant-id-xxx,enable-logo,FALSE,Edm.Boolean
 xxx-your-tenant-id-xxx,hide-pii,TRUE,Edm.Boolean
+xxx-your-tenant-id-xxx,multi-step-approval,FALSE,Edm.Boolean

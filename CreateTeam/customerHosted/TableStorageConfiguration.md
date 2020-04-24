@@ -18,11 +18,14 @@ Add a Feature for each of the following RowKeys:
   > Note: See [whatsmytenantid.com](https://www.whatismytenantid.com/) to help find this
 - RowKey = This is a unique string to identify the feature.
   - clone-teams
-  - custom-teams
-  - multi-step-approval
   - control-guest-access
+  - custom-teams
+  - enable-logo
   - hide-pii (Personally Identifiable Information)
+  - multi-step-approval
 - Enabled (boolean) = whether to enable the feature or not
+
+> The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](../ManagingAzureSecurityGroups.md).
 
 ## PeoplePicker Table
 
@@ -141,6 +144,7 @@ The templates defined in this table will appear as templates in the main menu fo
    ]
 }
 ```
+
 ### Template Settings
 
 Here is an explanation as to what each template setting controls:
