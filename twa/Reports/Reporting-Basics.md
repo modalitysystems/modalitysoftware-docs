@@ -11,7 +11,9 @@ Reprorts are either day report or month reports, you can't mix and match in a si
 
 "users" will always include any guests in totals
 
-where used, members, owners and guests are explicit
+where used, members, owners and guests are explicit.
+
+for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
 
 # In development/aspirational
 
