@@ -19,3 +19,7 @@ A month will include partial data for that momth if the data is partically compl
 # Countries, cities and departments, show if they have had at least 1 type of activitiy during the period. Not including "other"
 
 # Top X is top X by number of activities. Visualising the number of activities, e.g. chats, not the number of users
+
+# notes
+
+Re-visit how to visualise without pie/donughts 
