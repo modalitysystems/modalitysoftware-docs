@@ -9,6 +9,9 @@ Yearly for infinate years subject to storage (subject to storage)
 
 Reprorts are either day report or month reports, you can't mix and match in a signle report
 
+"users" will always include any guests in totals
+
+where used, members, owners and guests are explicit
 
 # In development/aspirational
 
