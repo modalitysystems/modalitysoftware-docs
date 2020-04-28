@@ -8,7 +8,7 @@ Microsoft publish what their limits are for Graph for Microsoft Teams. Here is t
 
 Customers cannot control this behaviour, it is automatically handled in the Teamwork Analytics application.
 
-## How does Modality Systems Teamwork Analytics define an Active user?
+## What's an Active user?
 
 Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration", however we have been asked to also consider Private Chat, Meetings and Calling activity.
 
@@ -16,11 +16,13 @@ In a future update TWA will also consider private chat, meeting and calling usag
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
-## How does Modality Systems Teamwork Analytics define a Licenced Teams user?
+## What's a Licenced Teams user?
 
 Both Microsoft and Modality Systems use the term 'Licenced Teams User' in reporting. Both definitions are the same and refer explicitly to the teams checkbox, or lack thereof, in the user licencing tab of the Microsoft 365 admin portal.
 
 see [Microsoft Teams licencing](https://docs.microsoft.com/en-us/microsoftteams/user-access).
+
+**Not** to be confused with Teamwork Analytics Licence Keys below.
 
 ## How do Modality Systems Teamwork Analytics Licence Keys work?
 
