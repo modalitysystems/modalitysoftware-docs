@@ -25,7 +25,7 @@ Add a Feature for each of the following RowKeys:
   - multi-step-approval
 - Enabled (boolean) = whether to enable the feature or not
 
-> The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](./uploadLogoToWebApp.md).
+> The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](uploadLogoToWebApp.md).
 
 ## PeoplePicker Table
 
@@ -118,47 +118,7 @@ The templates defined in this table will appear as templates in the main menu fo
 - RowKey = This should be a unique Guid. To generate a Guid visit https://www.guidgenerator.com/, press the “Generate some GUIDs!” button and copy the result into this field. A new Guid needs generating for each row.
 - Description = This text will appear in the summary box on the create team form when the template is selected
 - Name = The name will appear in the template drop down on the main menu
-- TemplateJson = The settings for the template in json format. It should follow the schema
-
-```javascript
-{
-   "Prefix": "Prefix",
-   "Suffix": "UK Sales",
-   "IsExternal":true,
-   "Visibility":1,
-   "AlwaysAuthorise":false,
-   "AzureSecurityGroup":"GroupName",
-   "Channels":[
-      {
-         "Description":"Description51edacfe-536e-45df-ab37-cbadcfb7636e",
-         "DisplayName":"DisplayName059ad58a-c3d7-4658-93a7-4373e3fa1e68"
-      },
-      {
-         "Description":"Descriptionc89a8bc8-c52d-4de7-86c5-28f74783a7fd",
-         "DisplayName":"DisplayNameda9e015d-2500-4353-948d-f772660fc866"
-      },
-      {
-         "Description":"Description1eef67b4-5299-492d-a548-0e791ebc577a",
-         "DisplayName":"DisplayName92532b74-b248-4f00-853c-c914f4137931"
-      }
-   ]
-}
-```
-
-### Template Settings
-
-Here is an explanation as to what each template setting controls:
-
-- Prefix - The text to be prepended to the start of the team name. The maximum prefix length is 10 characters.
-- Suffix - The text to be appended to the end of team name. The maximum suffix length is of 10 characters long. If the team can contain guests (controlled by the IsExternal setting, see below), then the suffix " - IsExternal" is appended after the suffix specified here.
-- IsExternal - Whether the team can contain guests or not. When true appends the suffix " - IsExternal" to the team name.
-- Visibility - Visibility of the team, 0 = public, 1 = private - discoverable, 2 = private - hidden.
-- AlwaysAuthorise - When true, all new Teams will be submitted for Authorisation. The ability to create Teams directly is removed, even if they meet the recommended rules.
-- RetentionLabel - When populated, the value is used to assign the retention label for the whole SharePoint site library, if this process fails the **team** will be archived, leaving the IT admin to resolve. Therefore the value must exactly match one of the available retention labels provision on your tenants SharePoint. This is a prerequisite for this feature, for more information [read the following](https://docs.microsoft.com/en-us/microsoft-365/compliance/labels?view=o365-worldwide).
-- AzureSecurityGroup - When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the field is empty, any logged in user can use the template. [Users can be assigned to security groups, and groups can be set up](../ManagingAzureSecurityGroups.md) in the Azure Portal.
-- Channels - The channels the team is created with
-  - Description - Description of the channel
-  - DisplayName - Name of the channel
+- TemplateJson = The definition of the template to be created. [Learn how to configure the template JSON.](templateJSonConfiguration.md)
 
 ## CreateTeam Manifest for ARM Deployment
 

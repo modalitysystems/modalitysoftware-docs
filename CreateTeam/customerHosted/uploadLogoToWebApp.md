@@ -29,4 +29,4 @@ It is recommended that logo have a size of 425 x 100 pixels. This will appear as
 
 ![Drag Logos.zip into Kudu](../images/customerHosted/dragLogosFolderIntoRootUsingKudu.png "Drag Logos.zip into Kudu")
 
-1. The Logos folder will be added containing your Logo. The Logo will now be displayed in CreateTeam.
+6. The Logos folder will be added containing your Logo. The Logo will now be displayed in CreateTeam.
