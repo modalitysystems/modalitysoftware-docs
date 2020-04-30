@@ -64,11 +64,11 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
 1. Then Click + Add a scope and enter the following and then Add scope
 
-   ![RegisterApplication10](../images/customerHosted/registerapplication10.png)
+   ![RegisterApplication10](../images/customerHosted/registerapplication10b.png)
 
    * Which should then look like this
 
-   ![RegisterApplication11](../images/customerHosted/registerapplication11.png)
+   ![RegisterApplication11](../images/customerHosted/registerapplication11b.png)
 
 1. Under Manage on the left hand side, click Manifest and replace the line "appRoles" with the following
 
