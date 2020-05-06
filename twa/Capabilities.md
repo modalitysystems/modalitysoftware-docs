@@ -78,7 +78,7 @@ For each user, Microsoft Graph API gives us the number of chat messages, channel
 
 The API allow us to gather up to 28 days of daily user usage histor. At the point of install we gather the maximum history we can (28 days), from then on we gather the daily user usage data everyday.
 	
-TWA store the following:
+TWA stores the following:
 - Daily per user activity for 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
 - Weekly sums of per user activity is held for a year. Weeks begin Monday
 - Monthly sums of per user activity for infinite months (subject to storage) 
