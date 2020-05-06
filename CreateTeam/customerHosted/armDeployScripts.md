@@ -61,7 +61,7 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
    
 > NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
-![Folder](../images/customerHosted/armDeployScriptsFolder.png)
+   ![Folder](../images/customerHosted/armDeployScriptsFolder.png)
 
 ## PostARMDeployScript.ps1
 
@@ -72,7 +72,9 @@ This script requires a successful ARM Deployment to have completed as it takes m
 1. Press Enter to log into the tenant that has the subscription that has CreateTeam deployed too
 1. Press Enter to log into the tenant where the Azure Active Directory Application Registrations are
 1. When everything has finished setting up, you will see the Admin Consent url. This needs to be ran by someone with Global Admin Privileges against the tenant that you are wanting to use CreateTeam in
+1. There should also be a zip package now in the script root called **CreateTeamManifest.zip** which will need to be install into Microsoft Teams
 
-## Upload Certificate to App Registration
+## Perform manual installation steps
 
-1. Navigate to the resource group that CreateTeam has been deployed too
+1. There are now a few manual steps that are require which can be done by scripts
+   - Please follow steps [Manual Installation Steps](armDeployScripts2.md) to continue.

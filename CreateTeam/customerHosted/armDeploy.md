@@ -29,7 +29,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
-     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of CreatTeam. _When applying an upgrade choose the Resource Group that already contains CreateTeam._
+     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of CreateTeam. _When applying an upgrade choose the Resource Group that already contains CreateTeam._
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see _Location_ below).
    - Settings
      - **Azure Application details** - Use the details you generated when [registering an application](RegisterApplicationAPI.md).
@@ -56,7 +56,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Deployments](../images/customerHosted/armDeployDeployments.png)
 
-1. Under Deployment details you should see a green tick next to each deployed item to indicate that it was successfuly deployed
+1. Under Deployment details you should see a green tick next to each deployed item to indicate that it was successfully deployed
 
    ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
 
@@ -67,7 +67,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs2.png)
 
-   >NOTE The Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privalages. Forward this URL on to someone who does so that they can grant consent for the tenant.
+   >NOTE The Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privileges. Forward this URL on to someone who does so that they can grant consent for the tenant.
 
 1. Using same tenant that was used to create API and Client App registrations , 
    go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
@@ -79,7 +79,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![AdminConsent](../images/customerHosted/registerapplication14.png)
 
-1. Now goto Azure Acive Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
+1. Now goto Azure Active Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13b.png)
 
