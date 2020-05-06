@@ -130,11 +130,11 @@ The following fields look at tenant default values
 
 # Azure Table Storage Configuration
 
-1. Open Azure Storage explorer on your PC (Download from https://azure.microsoft.com/en-us/features/storage-explorer/) add your PROD account and subscription if required
+1. Open Azure Storage explorer on your PC. [Download from](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
-1. Open the storage account associated with Create Team
+2. Open the storage account associated with Create Team
 
-1. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
+3. Add/Edit rows individually, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
 ## Feature Table
 
@@ -166,11 +166,11 @@ Add a Feature for each of the following RowKeys:
 Add a PeoplePicker for each of the following RowKeys:
 
 - ParitionKey = [TenantId]
-- RowKey = This is a unique string to identifiy the People Picker.
+- RowKey = This is a unique string to identify the People Picker.
   - members
   - owners
   - guests
-- NativeMinCount (Int32) = The minium count of people. If this number is not met, the field will invalidate the form and advise of the minimum count (red)
+- NativeMinCount (Int32) = The minimum count of people. If this number is not met, the field will invalidate the form and advise of the minimum count (red)
 
 > For the 'owners' field, the minimum value of NativeMinCount is 1. For the other PeoplePicker fields, 'members' and 'guests', the minimum value of NativeMinCount is 0.
 
@@ -197,10 +197,10 @@ Add a PeoplePicker for each of the following RowKeys:
 Add a TextField for each of the following RowKeys:
 
 - ParitionKey = [TenantId]
-- RowKey = This is a unique string to identifiy the Text Field.
+- RowKey = This is a unique string to identify the Text Field.
   - description
   - name
-- NativeMinLength (Int32) = The minium length of input. If this number is not met, the field will invalidate the form and advise of the minimum length (red)
+- NativeMinLength (Int32) = The minimum length of input. If this number is not met, the field will invalidate the form and advise of the minimum length (red)
 
 > For the 'name' field, the minimum value of NativeMinLength is 1.
 
