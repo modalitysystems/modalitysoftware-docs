@@ -63,6 +63,7 @@ Example Capabilities
 
 These are currently in preview or being added to the product
 - File metadata
+- Apps in Teams
 
 
 # Historical Change Data
@@ -76,9 +77,9 @@ For each user, Microsoft Graph API gives us the number of chat messages, channel
 - Meetings attended - not organised/scheduled, but attended per user, so a meeting of 5 people will log as each of them attending once
 - Other actions -  Any activity on the Microsoft Teams application panel will mark the user as having "other actions", like reading a message, clicking anywhere on the panel/application and even events like maximising the app or clicking on settings
 
-The API allow us to gather up to 28 days of daily user usage histor. At the point of install we gather the maximum history we can (28 days), from then on we gather the daily user usage data everyday.
+The Graph API allow us to gather up to 28 days of daily user usage history. At the point of install we gather the maximum history we can (28 days), from then on we gather the daily user usage data everyday.
 	
-TWA stores the following:
+Teamwork Analytics stores daily usage data indefinately, however in reporting we provide access to the following (for performance reasons):
 - Daily per user activity for 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
 - Weekly sums of per user activity is held for a year. Weeks begin Monday
 - Monthly sums of per user activity for infinite months (subject to storage) 
