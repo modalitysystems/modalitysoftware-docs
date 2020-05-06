@@ -12,6 +12,8 @@ Each script is signed and will require [Azure PowersShell](https://docs.microsof
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
+> Note: Please follow the steps to configure [SendGrid](https://docs.modalitysoftware.com/CreateTeam/customerHosted/sendGrid.html) before using these scripts.
+
 This ARM Template will install resources in your Azure tenant. The template will deploy the following resources:
 
 | Service Type         | Description                                                                                            |
@@ -57,6 +59,20 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
 1. If the resource group doesn't exist enter desired geographic location and press Enter
 1. Check the settings that will be used in the deployment and press Enter to continue with deployment
    
-> NOTE: If a custom logo is require for the deployment then ensure that it is present in the script root on the format "{tenantid}.png"
+> NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
 ![Folder](../images/customerHosted/armDeployScriptsFolder.png)
+
+## PostARMDeployScript.ps1
+
+This script requires a successful ARM Deployment to have completed as it takes most of its parameters from here. It completes the setup of both App Registrations and can be used to apply updated settings as the product develops. It also generates the certificate within Key Vault that is used to secure graph calls, creates blank tables in the configuration storage account and creates a Microsoft Teams App manifest package.
+
+1. Run the PowerShell script called **PostARMDeployScript.ps1**
+1. Enter the name of the Microsoft Teams app that your users will see or hit Enter to call it CreateTeam
+1. Press Enter to log into the tenant that has the subscription that has CreateTeam deployed too
+1. Press Enter to log into the tenant where the Azure Active Directory Application Registrations are
+1. When everything has finished setting up, you will see the Admin Consent url. This needs to be ran by someone with Global Admin Privileges against the tenant that you are wanting to use CreateTeam in
+
+## Upload Certificate to App Registration
+
+1. Navigate to the resource group that CreateTeam has been deployed too
