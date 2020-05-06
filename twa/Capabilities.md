@@ -43,3 +43,14 @@ Example Capabilities
 - Report on teams with only one member
 
 
+### Meta data for all current team channel messages, replies and reactions
+
+Key to TWA reporting, TWA collects metadatas for all messeages, replies and reactions in all team channels.
+
+Example Capabiliites
+- Report on active/inactive teams/channels
+- Report on who is active in a team vs who are members
+- report on which teams any AD group are active in
+- report on which teams guest are active in
+- report on which AD groups re engaging with which other AD groups in teams
+
