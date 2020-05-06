@@ -30,7 +30,7 @@ Example Capabilities
 - How many meetings are UK users attending
 - What percentage of France users are high calling users
 
-### FUTURE (LION) - User current Microsoft Teams Licence/Enabled Status
+### FUTURE (coming in LION) - User current Microsoft Teams Licence/Enabled Status
 
 TWA records if an AD user is enabled for Microsoft Teams (licenced).
 
@@ -65,6 +65,7 @@ These are currently in preview or being added to the product
 - File metadata
 - Apps in Teams
 
+---
 
 # Historical Change Data
 
