@@ -4,12 +4,15 @@
    
    ![Resource Group](../images/customerHosted/armDeployRG.png)
 
-2. Click on the KeyVault and then Certificates
-3. Click on the Certificate called CreateTeam
+1. Click on the KeyVault and then Certificates
+   
+   ![Screenshot](../images/customerHosted/certificateKeyVault.png)
+
+1. Click on the Certificate called CreateTeam
    
    ![Screenshot](../images/customerHosted/certificateGenerationOpen.png)
 
-4. Click on the Current version
+1. Click on the Current version
 
    ![Screenshot](../images/customerHosted/certificateGenerationOpen2.png)
 

@@ -72,9 +72,9 @@ This script requires a successful ARM Deployment to have completed as it takes m
 1. Press Enter to log into the tenant that has the subscription that has CreateTeam deployed too
 1. Press Enter to log into the tenant where the Azure Active Directory Application Registrations are
 1. When everything has finished setting up, you will see the Admin Consent url. This needs to be ran by someone with Global Admin Privileges against the tenant that you are wanting to use CreateTeam in
-1. There should also be a zip package now in the script root called **CreateTeamManifest.zip** which will need to be install into Microsoft Teams
+1. There should also be a zip package now in the script root folder called **CreateTeamManifest.zip** which will need to be installed into Microsoft Teams
 
 ## Perform manual installation steps
 
-1. There are now a few manual steps that are require which can be done by scripts
+1. There are now a few manual steps that are required which can't be done by scripts
    - Please follow steps [Manual Installation Steps](armDeployScripts2.md) to continue.
