@@ -11,7 +11,7 @@ It is useful to understand that the data collected and stored can be broken down
 Understanding the data TWA collected and stored, helps inform the reporting and automation capabilities.
 
 
-## Current State Data
+# Current State Data
 
 This data is collected on a continuous loop, and TWA stores the correct, current information, but not a record of historical changes, e.g. TWA can tell you the current owners of a team, but not the changes in ownership over time
 
@@ -65,7 +65,7 @@ These are currently in preview or being added to the product
 - File metadata
 
 
-## Historical Change Data
+# Historical Change Data
 
 This data is collected and stored as records against a point in time. It enables the reporting of change over time. This mainly related to users usage of Microsoft Teams.
 
@@ -75,3 +75,17 @@ For each user, Microsoft Graph API gives us the number of chat messages, channel
 - Channel messages - the number of channel messages/replies
 - Meetings attended - not organised/scheduled, but attended per user, so a meeting of 5 people will log as each of them attending once
 - Other actions -  Any activity on the Microsoft Teams application panel will mark the user as having "other actions", like reading a message, clicking anywhere on the panel/application and even events like maximising the app or clicking on settings
+
+The API allow us to gather up to 28 days of daily user usage histor. At the point of install we gather the maximum history we can (28 days), from then on we gather the daily user usage data everyday.
+	
+TWA store the following:
+- Daily per user activity for 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
+- Weekly sums of per user activity is held for a year. Weeks begin Monday
+- Monthly sums of per user activity for infinite months (subject to storage) 
+
+Example Capabilities
+- Report on daily usage for and AD groups for chat, channel, meeting or or calling usage for up to 14 days
+- Reprt on weekly usage for any AD group for any perod of weeks for up to a year
+= Report compare month on month usage changes for any months in the database
+
+
