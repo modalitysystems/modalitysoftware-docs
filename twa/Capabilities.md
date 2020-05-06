@@ -1,6 +1,6 @@
 # Teamwork Analytics - Data Collected and Capabiliites
 
-Modality Teamwork Analytics collects the following data (accross multiple modules) which allows various combinaitons of useful reports and automation triggers
+Modality Teamwork Analytics collects the following data (accross multiple modules) which allows various combinaitons of useful reports and automation triggers. For the sake of simpliciity of this document, if something can be reported on, it could also be a trigger for an automated message to users. Automated messages are used to drive governance, best practice advice and adoption.
 
 It is useful to understand that the data collected and stored can be broken down into two types
 
@@ -16,7 +16,7 @@ Understanding the data TWA collected and holds helps inform the reporting and au
 
 This data is collected on a continous loop and TWA stores the correct current information, but not a record of historical changes e.g. TWA can tell you the current owners of a team, but not the changes in ownership over time
 
-## Active Directory Attributes for users
+### Active Directory Attributes for users
 
 Throughout the reporting Active Directroy Attribibutes are used to group users for reporting purposes. 
 
@@ -38,4 +38,8 @@ This allows reporting on the current numbers and names of owners, members and gu
 
 Example Capabilities
 - Report on teams with guests, who the guests are and how active they are
-- report on number of owners in particular AD groups
+- Report on number of owners in particular AD groups
+- Report on tams with no owners
+- Report on teams with only one member
+
+
