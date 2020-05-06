@@ -70,6 +70,8 @@ These are currently in preview or being added to the product
 
 This data is collected and stored as records against a point in time. It enables the reporting of change over time. This mainly related to users usage of Microsoft Teams.
 
+## Per User Usage Data
+
 For each user, Microsoft Graph API gives us the number of chat messages, channel messages, calls, meetings attended and "other actions" each day.
 
 - Chat messages - the number of messages not message sessions
@@ -89,4 +91,9 @@ Example Capabilities
 - Reprt on weekly usage for any AD group for any perod of weeks for up to a year
 = Report compare month on month usage changes for any months in the database
 
+## Per User Teams Device Data
 
+TWA collects the types of devices users are using to sign into Microsoft Teams e.g. Web, Mobile, Windows, Mac
+
+Example Capabilities
+- Report on amound of mobile us over time
