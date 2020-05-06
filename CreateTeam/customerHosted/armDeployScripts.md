@@ -8,6 +8,8 @@ To facilitate a faster and more consistent CreateTeam deployment process we have
 | ARMDeploy.ps1           | Performs an ARM deployment or upgrade of CreateTeam, adds logo if present                              |
 | PostARMDeployScript.ps1 | Applies graph permissions, creates roles, sets redirect URI's, generates key vault certificate, creates tables and teams manifest |
 
+Download [CustomerDeployScripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases/latest) from here 
+
 Each script is signed and will require [Azure PowersShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps) to be installed first. It will also need to be able to access the internet so if you are running the scripts from behind a web proxy then this will need to be configured.
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
