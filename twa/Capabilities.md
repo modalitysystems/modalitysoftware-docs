@@ -11,7 +11,6 @@ It is useful to understand that the data collected and stored can be broken down
 Understanding the data TWA collected and holds helps inform the reporting and automation capabilities.
 
 
-
 ## Current State Data
 
 This data is collected on a continous loop and TWA stores the correct current information, but not a record of historical changes e.g. TWA can tell you the current owners of a team, but not the changes in ownership over time
@@ -31,6 +30,12 @@ Example Capabilities
 - How many meetings are UK users attending
 - What percentage of France users are high calling users
 
+### FURURE (LION) - User current Microsoft Teams Licence/Enabled Status
+
+TWA records if an AD user is enabled for Microsoft Teams (licenced).
+
+Example Capabilities
+- Report on the number of licenced users vs users using Teams e.g. There are 1,000 UK users and 66% have attended a meeting in X period
 
 ### Team owners, members and guests
 
@@ -50,7 +55,23 @@ Key to TWA reporting, TWA collects metadatas for all messeages, replies and reac
 Example Capabiliites
 - Report on active/inactive teams/channels
 - Report on who is active in a team vs who are members
-- report on which teams any AD group are active in
-- report on which teams guest are active in
-- report on which AD groups re engaging with which other AD groups in teams
+- Report on which teams any AD group are active in
+- Report on which teams guest are active in
+- Report on which AD groups re engaging with which other AD groups in teams
 
+## FUTURE Current State
+
+These are currently in preview or being added to the product
+- File metadata
+
+
+## Historical Change Data
+
+This data is collected and stored as records against a point in time. Enabling reporting of change over time. This mainly related to users usage of Microsoft Teams
+
+For each user, Microsoft Graph API gives us the number of chat messages, channel messages, calls, meetings attended and "other actions" each day.
+
+- Chat messages - the number of messages not message sessions
+- Channel messages - the number of channel messages/replies
+- Meetings attended - not organised/scheduled, but attended per user, so a meeting of 5 people will log as each of them attending once
+- Other actions -  Any activity done on Teams application panel will make a user active, like reading a message, clicking anywhere on the panel/Application and even events like maximizing the app or clicking on settings
