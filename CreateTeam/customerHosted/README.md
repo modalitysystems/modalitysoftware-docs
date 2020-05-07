@@ -34,7 +34,7 @@ or
 
 ---
 
->[Configure CreateTeam - Azure Table Storage](TableStorageConfiguration.md)
+>[Configure CreateTeam Settings - Azure Table Storage](TableStorageConfiguration.md)
 
 ---
 
