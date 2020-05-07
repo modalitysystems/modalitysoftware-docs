@@ -62,7 +62,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
 
-   >NOTE On occassion the final step to deploy the CreateTeam Application Code may fail. If this happens use the **Redeploy** button and choose the same Resource Group and Parameters as chosen above
+   >NOTE On occasion the final step to deploy the CreateTeam Application Code may fail. If this happens use the **Redeploy** button and choose the same Resource Group and Parameters as chosen above
    ![Overview](../images/customerHosted/armDeployDeploymentsOverviewFail.png)
 
 1. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
@@ -99,3 +99,10 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. A certificate is used for CreateTeam to make secure graph calls
    - Please follow steps [Generating and uploading certificates in Azure for authentication](certificateGeneration.md) for next steps.
+
+---
+
+## Upload your company logo to CreateTeam
+
+1. Optionally you may want your company logo to appear within CreateTeam
+   - Please follow steps [Upload your company logo to CreateTeam](uploadLogoToWebApp.md) for instructions.

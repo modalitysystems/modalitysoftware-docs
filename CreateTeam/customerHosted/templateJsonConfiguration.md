@@ -123,14 +123,14 @@ This section details what each setting controls and how to configure it. Not all
   - Website
   - Word document
   - Excel document
-  - Powerpoint document
+  - PowerPoint document
 - Different settings are required depending on the selected tab type, see below:
 
 ##### Website Tabs
 
 - Type = Must be set to _website_
 - DisplayName = The name of the tab displayed in Teams
-- Contenturl = The full address of the website to be displayed in the tab
+- ContentUrl = The full address of the website to be displayed in the tab
 
 > The Microsoft Team Web App will not render most websites inside a tab. This happens when the website has specified that it cannot be displayed inside another website. Teams handles this behaviour by displaying a _Go to site_ button which can be used to view the website in the browser directly.
 >
@@ -138,18 +138,18 @@ This section details what each setting controls and how to configure it. Not all
 
 ##### Word, Excel or Powerpoint documents Tabs
 
-> Document Tabs in Microsoft Teams displays documents that exist within Teams and Sharepoint. This means that in order for CreateTeam to add a document tab the file must already exist in Teams and Sharepoint.
+> Document Tabs in Microsoft Teams displays documents that exist within Teams and SharePoint. This means that in order for CreateTeam to add a document tab the file must already exist in Teams and SharePoint.
 
 - Type = Must be either _word_, _excel_ or _powerpoint_ depending on the tab type
 - DisplayName = The name of the tab displayed in Teams
 - FileName = The name of the file to be displayed in the tab, including the extension.
-- DocumentUrl = The web address of the document when viewed in Sharepoint.
-- FolderUrl = The web address of the folder containing document when viewed in Sharepoint.
+- DocumentUrl = The web address of the document when viewed in SharePoint.
+- FolderUrl = The web address of the folder containing document when viewed in SharePoint.
 
 > You can acquire the _DocumentUrl_ and the _FolderUrl_ by carrying out the following steps:
 >
 > 1. Navigate to the _Files_ tab where the required document is listed.
-> 1. In the toolbar below the tabs select the button labelled _Open in SharePoint_. This will open a browser window displaying the same list of files, but in the Sharepoint site instead of Teams.
+> 1. In the toolbar below the tabs select the button labelled _Open in SharePoint_. This will open a browser window displaying the same list of files, but in the SharePoint site instead of Teams.
 > 1. The address of this page is what is required for the _FolderUrl_ setting. You can copy the address out of the address bar and paste it in the _FolderUrl_ for that tab.
-> 1. Back in the Sharepoint site, find the required file from the list. Open it, by clicking its name.
+> 1. Back in the SharePoint site, find the required file from the list. Open it, by clicking its name.
 > 1. The address of this page is what is required for the _DocumentUrl_ setting. You can copy the address out of the address bar and paste it in the _DocumentUrl_ for that tab.

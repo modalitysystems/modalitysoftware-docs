@@ -37,7 +37,7 @@ Create Team requires two Azure Applications to be configured, one for the API an
 
    ![RegisterApplicationC06](../images/customerHosted/registerapplicationC06.png)
 
-   * There is no need to Grant admin consent for the Client as the user will give consent the first time they use CreateTeam.
+   * There is no need to grant admin consent for the Client as the user will give consent the first time they use CreateTeam.
 
 ## CreateTeam ARM Deployment
 

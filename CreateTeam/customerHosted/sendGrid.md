@@ -401,7 +401,7 @@ To manage your email deliverability settings, click the Manage button. This will
 
 1. Take Note of the **Template ID** for entry into the ARM Deployment Screen
 
-1. Create another templete called **CreateTeamResponse**, then Copy and Paste the below in the same way as above
+1. Create another template called **CreateTeamResponse**, then Copy and Paste the below in the same way as above
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

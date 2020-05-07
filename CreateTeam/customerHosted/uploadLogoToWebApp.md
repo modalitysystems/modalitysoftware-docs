@@ -17,7 +17,7 @@ It is recommended that logo have a size of 425 x 100 pixels. This will appear as
 
 ## Upload logo to Web App Service
 
-1. In file explorer on your machine, create a folder named _Logos_, and add your logo to the folder. Be carful to ensure your logo has the [correct format](##logo-format).
+1. In file explorer on your machine, create a folder named _Logos_, and add your logo to the folder. Be careful to ensure your logo has the [correct format](##logo-format).
 
 1. Zip up you Logos folder containing your logo, so you have a folder named _Logos.zip_.
 
@@ -30,3 +30,5 @@ It is recommended that logo have a size of 425 x 100 pixels. This will appear as
 ![Drag Logos.zip into Kudu](../images/customerHosted/dragLogosFolderIntoRootUsingKudu.png "Drag Logos.zip into Kudu")
 
 6. The Logos folder will be added containing your Logo. The Logo will now be displayed in CreateTeam.
+
+* Return to [CreateTeam ARM Deployment](armDeploy.md) to continue with the installation
