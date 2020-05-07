@@ -2,7 +2,9 @@
 
 CreateTeam can be provided as an Azure Resource Manager (ARM) template that automatically provisions and starts the required resources in your Azure subscription.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftgdeploy.blob.core.windows.net%2Ftg-ga%2FmainTemplate.json)
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftgdeploy.blob.core.windows.net%2Ftg-ga%2FmainTemplate.json" target="_blank">
+  <img src="https://aka.ms/deploytoazurebutton"/>
+</a>
 
 > Note: You must have [registered an application](RegisterApplicationAPI.md) beforehand.
 
