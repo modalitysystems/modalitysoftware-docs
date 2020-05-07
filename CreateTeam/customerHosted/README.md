@@ -25,7 +25,9 @@ Installing CreateTeam in your own tenant involves 4 separate processes: configur
 >[Configure SendGrid Email Delivery Service](sendGrid.md)
 
 >[Automated Script Deployment of CreateTeam](armDeployScripts.md)
+
 >or
+
 >[Manual Deployment of CreateTeam](RegisterApplicationAPI.md)
 
 >[Configure CreateTeam - Azure Table Storage](TableStorageConfiguration.md)
