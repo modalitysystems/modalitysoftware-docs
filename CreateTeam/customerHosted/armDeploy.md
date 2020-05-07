@@ -95,14 +95,12 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![SilentAuthEnd](../images/customerHosted/registerapplicationC08.png)
 
-## Certificates in Azure for authentication
-
-1. A certificate is used for CreateTeam to make secure graph calls
-   - Please follow steps [Generating and uploading certificates in Azure for authentication](certificateGeneration.md) for next steps.
-
----
-
 ## Upload your company logo to CreateTeam
 
 1. Optionally you may want your company logo to appear within CreateTeam
    - Please follow steps [Upload your company logo to CreateTeam](uploadLogoToWebApp.md) for instructions.
+
+## Certificates in Azure for authentication
+
+1. A certificate is used for CreateTeam to make secure graph calls
+   - Please follow steps [Generating and uploading certificates in Azure for authentication](certificateGeneration.md) for next steps.
