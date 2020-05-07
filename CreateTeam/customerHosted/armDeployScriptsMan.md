@@ -125,3 +125,5 @@ This application looks at your default tenant settings to determine the default 
 The following fields look at tenant default values
 
 1. External Checkbox looks at AllowToAddGuests value
+
+* Return to [Installing CreateTeam in your own tenant](README.md) to continue with the installation
