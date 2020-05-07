@@ -1,1 +1,14 @@
 # Owners of Teams with Guests
+
+User Story: This is who is respobsible for the guests. I can find Teams with Guests and the owners department, country. 
+
+If you want to see the guests in a team, go to Guest details TG3226
+
+This page tells you
+
+- Number of Teams with guests
+- Number of Unique owners
+- Distribution of owners throughout the organisaiton
+- If those teams are active or archived
+- number of owners for teams with guests
+
