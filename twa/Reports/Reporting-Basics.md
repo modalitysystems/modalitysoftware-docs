@@ -15,6 +15,9 @@ where used, members, owners and guests are explicit.
 
 for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
 
+
+"Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
+
 # In development/aspirational
 
 We will only show a month in a month date picker, if we have complete information for that month 
