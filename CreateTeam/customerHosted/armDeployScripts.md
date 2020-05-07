@@ -79,4 +79,4 @@ This script requires a successful ARM Deployment to have completed as it takes m
 ## Perform manual installation steps
 
 1. There are now a few manual steps that are required which can't be done by scripts
-   - Please follow steps [Manual Installation Steps](armDeployScripts2.md) to continue.
+   - Please follow steps [Manual Installation Steps](armDeployScriptsMan.md) to continue.

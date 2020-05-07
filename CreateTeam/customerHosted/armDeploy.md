@@ -93,7 +93,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![SilentAuthEnd](../images/customerHosted/registerapplicationC08.png)
 
-## Provision CreateTeam Settings
+## Certificates in Azure for authentication
 
-1. The storage account that was deployed as part of the ARM Deployment requires settings to be added
-   - Please follow steps [Azure Table Storage Configuration](TableStorageConfiguration.md) and then continue to CreateTeam Manifest for ARM Deployment.
+1. A certificate is used for CreateTeam to make secure graph calls
+   - Please follow steps [Generating and uploading certificates in Azure for authentication](certificateGeneration.md) for next steps.

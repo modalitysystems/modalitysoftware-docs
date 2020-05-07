@@ -48,8 +48,13 @@ Following the section above, you should now have a valid certificate which will 
 
    ![Screenshot](../images/customerHosted/certificateUploadToAppReg.png)
 
-2. Browse to the directory containing the .cer certificate file recently created, and select "Ok". The import should work and you upload should show against the app registration
+1. Browse to the directory containing the .cer certificate file recently created, and select "Ok". The import should work and you upload should show against the app registration
 
    ![Screenshot](../images/customerHosted/certificateUploadedToAppReg.png)
 
 It is unlikely that you have uploaded the wrong certificate, but you can verify by checking that the "Thumbprint" values matches on both the uploaded certificate and the one created in KeyVault.
+
+## CreateTeam Manifest for ARM Deployment
+
+1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
+   - Please continue to [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for next steps.

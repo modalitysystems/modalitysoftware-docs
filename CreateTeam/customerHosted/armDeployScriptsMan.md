@@ -1,12 +1,40 @@
-# How to deploy CreateTeam App into Teams
+## Upload Certificate to App Registration
 
-Create Team is provided as an Microsoft Teams App which needs to be uploaded to your organisation's Apps section within Microsoft Teams.
+1. Navigate to the resource group that CreateTeam has been deployed too
+   
+   ![Resource Group](../images/customerHosted/armDeployRG.png)
 
-> NOTE: Some of the steps below require making changes to your Microsoft Online Tenant which can sometimes take a few hours to take effect
+1. Click on the KeyVault and then Certificates
+   
+   ![Screenshot](../images/customerHosted/certificateKeyVault.png)
 
-## Installing CreateTeam manifest
+1. Click on the Certificate called CreateTeam
+   
+   ![Screenshot](../images/customerHosted/certificateGenerationOpen.png)
 
-Using the manifest file in created in the previous [section](manifestCreate.md), follow the instructions below:
+1. Click on the Current version
+
+   ![Screenshot](../images/customerHosted/certificateGenerationOpen2.png)
+
+1. Then on the certificate details screen, there will be an option to "Download in CER format", select this and keep track of the directory it downloads to, which should be your default browser download directory.
+
+   ![Screenshot](../images/customerHosted/certificateDownload.png)
+
+Following the section above, you should have a valid certificate which will now be used to upload against the app registration. So the next step is go to the app registration and follow the steps below:
+
+1. When the app registration has loaded, go to the "certificates & secrets" section and select the "Upload certificate" button underneath the "Certificates" header
+
+   ![Screenshot](../images/customerHosted/certificateUploadToAppReg.png)
+
+1. Browse to the directory containing the .cer certificate file recently created, and select "Ok". The import should work and you upload should show against the app registration
+
+   ![Screenshot](../images/customerHosted/certificateUploadedToAppReg.png)
+
+It is unlikely that you have uploaded the wrong certificate, but you can verify by checking that the "Thumbprint" values matches on both the uploaded certificate and the one created in KeyVault.
+
+## Upload CreateTeam manifest to Microsoft Teams
+
+Using the manifest file that was created by **PostARMDeployScript.ps1**, follow the instructions below:
 
 1. From Microsoft Teams go to the Apps section
 

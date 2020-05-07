@@ -119,8 +119,3 @@ The templates defined in this table will appear as templates in the main menu fo
 - Description = This text will appear in the summary box on the create team form when the template is selected
 - Name = The name will appear in the template drop down on the main menu
 - TemplateJson = The definition of the template to be created. [Learn how to configure the template JSON.](templateJsonConfiguration.md)
-
-## CreateTeam Manifest for ARM Deployment
-
-1. The backend deployment is now complete but for people to interact with CreateTeam you will need to create a manifest file and install into Microsoft Teams.
-   - Please continue to [CreateTeam Manifest for ARM Deployment](manifestCreate.md) for next steps.
