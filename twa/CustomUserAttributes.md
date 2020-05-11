@@ -23,9 +23,9 @@ The next time TWA queries user data it will search for these attributes and save
 
 # Troubleshooting missing attributes
 
-Customer attributes can be checked in advance by using [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to run a query for `GET https://graph.microsoft.com/beta/users` (clicking this URL in your browser will not work).
+Custom attributes can be checked in advance by using [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to run a query for `GET https://graph.microsoft.com/beta/users` (pasting this URL into your browser will not work).
 
-However, the most thorough way to check is to configure the attribute as above, run TWA and let it complete a scan, then run the following SQL. This will give you and idea
+However, the most thorough way to check an attribute is to configure it as above and run TWA until it completes a scan. Then, run the following SQL query against the TWA database and examine the results.
 
 ```sql
 WITH ValueCountByProperty AS (
@@ -66,7 +66,7 @@ SELECT
 ORDER BY 1, 4 DESC
 ```
 
-The results will show the spread of values for each attribute accross the whole userbase.
+The results will show the spread of values for each custom attribute accross the whole userbase.
 
 | Property | Value | UserCount | UserPercent |
 | --------- | ---- | ---- | -------- |
@@ -79,7 +79,7 @@ The results will show the spread of values for each attribute accross the whole 
 | preferredColour | Green | 2 | 0.1 |
 | ... | ... | ... | ... |
 
-If an attribute has been misconfigured, or it doesn't exist, the results will show "Graph API did not return a value":
+If an attribute has been misconfigured, or it doesn't exist, the results will show "Graph API did not return a value".
 
 | Property | Value | UserCount | UserPercent |
 | --------- | ---- | ---- | -------- |
