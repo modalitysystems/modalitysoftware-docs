@@ -15,6 +15,12 @@ where used, members, owners and guests are explicit.
 
 for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
 
+"Active User" to us is at least one of the following for a user for the period: Private chat Message, channel message, reaction, meeting join, call (Voip or PSTN). 
+
+We do not count "other" actions as an active user: 
+
+Microsoft define other as...
+
 
 "Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
 
