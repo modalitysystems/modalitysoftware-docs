@@ -27,7 +27,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    ![Custom deployment form](../images/customerHosted/armDeployForm2.png)
 
-1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
+2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
@@ -42,55 +42,60 @@ This ARM Template will install resources in your Azure tenant. The template will
      - **Logs To Modality** - Defaults to Yes will send logging information to Modality for better troubleshooting
      - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
 
-1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for CreateTeam.)
+3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for CreateTeam.)
 
-1. The notification bell will show the deployment in progress, the when complete click Go to resource group
+4. The notification bell will show the deployment in progress, the when complete click Go to resource group
 
    ![Progress](../images/customerHosted/armDeployProgress.png)
 
    * By clicking on Deployment in progress you will be able to see what it is actually doing.
 
-1. After a period of deployment should get a Resource group in your tenant with the following components
+5. After a period of deployment should get a Resource group in your tenant with the following components
 
    ![Resource Group](../images/customerHosted/armDeployRG.png)
 
-1. On the left hand menu, click Deployments and then the name of the Deployment that just completed
+6. On the left hand menu, click Deployments and then the name of the Deployment that just completed
 
    ![Deployments](../images/customerHosted/armDeployDeployments.png)
 
-1. Under Deployment details you should see a green tick next to each deployed item to indicate that it was successfully deployed
+7. Under Deployment details you should see a green tick next to each deployed item to indicate that it was successfully deployed
 
    ![Overview](../images/customerHosted/armDeployDeploymentsOverview.png)
 
    >NOTE On occasion the final step to deploy the CreateTeam Application Code may fail. If this happens use the **Redeploy** button and choose the same Resource Group and Parameters as chosen above
    ![Overview](../images/customerHosted/armDeployDeploymentsOverviewFail.png)
 
-1. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
+8. On the left hand menu click Outputs. Then use the "Copy to Clipboard" button next to each value, open Windows Notepad and paste each value with appropriate title.
 
    ![Outputs](../images/customerHosted/armDeployDeploymentsOutputs2.png)
 
    >NOTE The Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privileges. Forward this URL on to someone who does so that they can grant consent for the tenant.
 
-1. Using same tenant that was used to create API and Client App registrations , 
+9. Using same tenant that was used to create API and Client App registrations , 
    go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13.png)
 
-1. Under Redirect URI enter the value that you obtained from Outputs section of the ARM deployment for appAdminConsent
+10. Under Redirect URI enter the value that you obtained from Outputs section of the ARM deployment for appAdminConsent.
    * Click Configure
 
    ![AdminConsent](../images/customerHosted/registerapplication14.png)
 
-1. Now goto Azure Active Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
+ 11. Under Web -> Redirect URIs, click "Add URI" and enter the value that you obtained from Outputs section of the ARM deployment for for appMultiStepAuth.
+   * Click Configure
+
+   ![AdminConsent](../images/customerHosted/registerapplication15.png)
+
+12. Now goto Azure Active Directory -> App registrations -> CreateTeam Client -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13b.png)
 
-1. Under Redirect URI enter the value that you obtained from Outputs section of the ARM deployment for appAuthEnd
+13. Under Redirect URI enter the value that you obtained from Outputs section of the ARM deployment for appAuthEnd
    * Tick Access tokens and ID tokens and click Configure
 
    ![AuthEnd](../images/customerHosted/registerapplicationC07.png)
 
-1. Under Web -> Redirect URIs, click "Add URI" and enter the value that you obtained from Outputs section of the ARM deployment for appSilentAuthEnd
+14. Under Web -> Redirect URIs, click "Add URI" and enter the value that you obtained from Outputs section of the ARM deployment for appSilentAuthEnd
   * Click Save
 
    ![SilentAuthEnd](../images/customerHosted/registerapplicationC08.png)

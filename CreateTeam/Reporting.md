@@ -18,7 +18,13 @@ The report will contain 4 columns
 4. Created By, that will be a different value depending on if the "hide-pii" feature is enabled or not:
    1. If enabled (default) - the user object ID of the signed in user who created the team
    2. If disabled - the UPN of the user that created the team via CreateTeam. The report will not show the team if created natively (you can however find the user and relative information in the O365 Security and Governance audit logs.)
-   3. If an error occurs when logging the audit, the user object ID will be logged. These errors can be found in App Insights.
+   3. If an error occurs when logging the audit, the user object ID will be logged.
+5. Approved By, represents the user who has authorised and approved the team creation via email, achieved through the multi-step approval process.
+   1. If enabled (default) - the user object ID of the user who has approved the creation of the team
+   2. If disabled - the UPN of the user who has approved the creation of the team.
+   3. If an error occurs when logging the audit, the value will be displayed as "N/A".
+
+>If the value is blank for Approved By, this means that this feature/column had not yet been implemented when those teams were originally created
 
 >Any unexpected or error mis-configured feature errors will be detailed and accessible in Application Insights
 
