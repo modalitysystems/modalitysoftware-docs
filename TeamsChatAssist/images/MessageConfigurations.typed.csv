@@ -1,47 +1,47 @@
 PartitionKey,RowKey,MessageText,MessageText@type
-xxx-your-tenant-id-xxx,AgentNameMasked,Agent,Edm.String
-xxx-your-tenant-id-xxx,Card_AgentFound_Button_End,End Conversation,Edm.String
-xxx-your-tenant-id-xxx,Card_AgentFound_Message_Connected,Agent found--! You have been connected to %%agentName%%.,Edm.String
-xxx-your-tenant-id-xxx,Card_AgentFound_Message_Start,"The conversation will start in a moment. When you have finished, click End Conversation.",Edm.String
-xxx-your-tenant-id-xxx,Card_AgentSearchCancelled_Fact_AskedBy,Asked by:,Edm.String
-xxx-your-tenant-id-xxx,Card_AgentSearchCancelled_Fact_Question,Question:,Edm.String
-xxx-your-tenant-id-xxx,Card_AgentSearchCancelled_Message_Cancelled,This question has been cancelled or expired.,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Fact_AskedBy,Asked by:,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Fact_ConversationLog,Conversation Log:,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Fact_Organisation,Organisation:,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Fact_Question,Question:,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Fact_Status,Status:,Edm.String
-xxx-your-tenant-id-xxx,Card_ConversationFinished_Message_Finished,Conversation Finished: answered by %%agentName%%.,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Action_Answer,Answer Question,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Fact_AskedBy,Asked by:,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Fact_Organisation,Organisation:,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Fact_Question,Question:,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Fact_Status,Status:,Edm.String
-xxx-your-tenant-id-xxx,Card_NewQuestion_Message_Question,"New Question: ""%%question%%""",Edm.String
-xxx-your-tenant-id-xxx,Card_PromptConversationEnd_Button_End,End Conversation,Edm.String
-xxx-your-tenant-id-xxx,Card_PromptConversationEnd_Message_Content,"The agent has signified that this conversation has finished. If you are happy, please end the conversation by clicking the button below. Otherwise, continue to speak to the agent.",Edm.String
-xxx-your-tenant-id-xxx,Card_PromptConversationEnd_Message_Title,End Conversation?You can end now but start again later if you wish.,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Action_Button,Go to Question,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_AskedBy,Asked by:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_ConversationLog,Conversation Log:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Organisation,Organisation:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Question,Question:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Status,Status:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnsweredWithTeamInfo_Message,This question is being answered by %%agentName%%.,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnswered_Fact_AskedBy,Asked by:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnswered_Fact_Organisation,Organisation:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnswered_Fact_Question,Question:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnswered_Fact_Status,Status:,Edm.String
-xxx-your-tenant-id-xxx,Card_QuestionAnswered_Message,This question has been accepted by %%agentName%%.,Edm.String
-xxx-your-tenant-id-xxx,Card_WelcomeMessage_Message_Body,"Your organisation is signed up for Teams Help. This means that if you have any questions about using Microsoft Teams you can ask us anytime and get connected to a dedicated trained Teams Support Expert who can help you out.\n\nTo get started, simply ask your question here and you'll be connected to an available Expert in a short time.",Edm.String
-xxx-your-tenant-id-xxx,Card_WelcomeMessage_Message_Title,Teams Help from Modality Systems,Edm.String
-xxx-your-tenant-id-xxx,Dialog_Cancellation_Message_KeepLooking,"OK, will keep looking",Edm.String
-xxx-your-tenant-id-xxx,Dialog_Cancellation_Message_TimeOut,Agent search has already timed out.,Edm.String
-xxx-your-tenant-id-xxx,Dialog_Cancellation_Prompt,Are you sure you want to cancel searching for someone to answer your question?,Edm.String
-xxx-your-tenant-id-xxx,Dialog_LiveConversation_Message_Cancel,I'm still looking. Type cancel to stop looking,Edm.String
-xxx-your-tenant-id-xxx,Dialog_NewConversation_Message_Cancel,"I'm looking for someone who can answer your question. To cancel this search, just type 'cancel'.",Edm.String
-xxx-your-tenant-id-xxx,Dialog_OutOfHours_Message,The service is closed. Please try again later.,Edm.String
-xxx-your-tenant-id-xxx,System_Message_AlreadyEnd,You have already ended the conversation,Edm.String
-xxx-your-tenant-id-xxx,System_Message_End,You have ended the conversation,Edm.String
-xxx-your-tenant-id-xxx,System_Message_NoAvailability,"Sorry, I couldn't find anyone to answer your question. Please try again later.",Edm.String
-xxx-your-tenant-id-xxx,System_Message_Stop,OK. I've stopped looking.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,AgentNameMasked,Agent,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Button_End,End Conversation,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Message_Connected,Agent found--! You have been connected to %%agentName%%.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Message_Start,"The conversation will start in a moment. When you have finished, click End Conversation.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Message_Cancelled,This question has been cancelled or expired.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_ConversationLog,Conversation Log:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_Organisation,Organisation:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_Status,Status:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Message_Finished,Conversation Finished: answered by %%agentName%%.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Action_Answer,Answer Question,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Fact_Organisation,Organisation:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Fact_Status,Status:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_NewQuestion_Message_Question,"New Question: ""%%question%%""",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_PromptConversationEnd_Button_End,End Conversation,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_PromptConversationEnd_Message_Content,"The agent has signified that this conversation has finished. If you are happy, please end the conversation by clicking the button below. Otherwise, continue to speak to the agent.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_PromptConversationEnd_Message_Title,End Conversation?You can end now but start again later if you wish.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Action_Button,Go to Question,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_ConversationLog,Conversation Log:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Organisation,Organisation:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Status,Status:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Message,This question is being answered by %%agentName%%.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_Organisation,Organisation:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_Status,Status:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Message,This question has been accepted by %%agentName%%.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_WelcomeMessage_Message_Body,"Your organisation is signed up for Teams Help. This means that if you have any questions about using Microsoft Teams you can ask us anytime and get connected to a dedicated trained Teams Support Expert who can help you out.\n\nTo get started, simply ask your question here and you'll be connected to an available Expert in a short time.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_WelcomeMessage_Message_Title,Teams Help from Modality Systems,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_Cancellation_Message_KeepLooking,"OK, will keep looking",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_Cancellation_Message_TimeOut,Agent search has already timed out.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_Cancellation_Prompt,Are you sure you want to cancel searching for someone to answer your question?,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_LiveConversation_Message_Cancel,I'm still looking. Type cancel to stop looking,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_NewConversation_Message_Cancel,"I'm looking for someone who can answer your question. To cancel this search, just type 'cancel'.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_OutOfHours_Message,The service is closed. Please try again later.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,System_Message_AlreadyEnd,You have already ended the conversation,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,System_Message_End,You have ended the conversation,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,System_Message_NoAvailability,"Sorry, I couldn't find anyone to answer your question. Please try again later.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,System_Message_Stop,OK. I've stopped looking.,Edm.String

@@ -1,3 +1,3 @@
 PartitionKey,RowKey,DisplayText,ReplyText,DisplayText@type,ReplyText@type
-xxx-your-tenant-id-xxx,10b35456-de8d-4efd-8781-5a704a7b9203,Hello,"Hello, How can I help you?",Edm.String,Edm.String
-xxx-your-tenant-id-xxx,e7bbf552-bef2-4b2b-aaed-ad9f887f0b10,Bear with me,Bear with me please,Edm.String,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,10b35456-de8d-4efd-8781-5a704a7b9203,Hello,"Hello, How can I help you?",Edm.String,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,e7bbf552-bef2-4b2b-aaed-ad9f887f0b10,Bear with me,Bear with me please,Edm.String,Edm.String
