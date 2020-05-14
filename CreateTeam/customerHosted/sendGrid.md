@@ -114,12 +114,10 @@ To manage your email deliverability settings, click the Manage button. This will
 
 2. Open the following [template file link](../files/CreateTeamAuthorisationRequestEmail.txt). Then copy and paste the code into the Import Drag & Drop HTML screen and click **Update**
 
-2.TESTING HTML FILE LINK [template file link](../files/CreateTeamAuthorisationRequestEmail%20-%20Copy.html). Then copy and paste the code into the Import Drag & Drop HTML screen and click **Update**
-
-1. Click Save and then the Back Arrow
+3. Click Save and then the Back Arrow
 
    ![17](../images/sendGrid/17.png)
 
-2. Take Note of the **Template ID** for entry into the ARM Deployment Screen
+4. Take Note of the **Template ID** for entry into the ARM Deployment Screen
 
-3. Create another template called **CreateTeamResponse**, then open the following [template file link](../files/CreateTeamAuthorisationResponseEmail.txt). Then copy and paste the code into the Import Drag & Drop HTML screen and click **Update**
+5. Create another template called **CreateTeamResponse**, then open the following [template file link](../files/CreateTeamAuthorisationResponseEmail.txt). Then copy and paste the code into the Import Drag & Drop HTML screen and click **Update**
