@@ -2,7 +2,7 @@
 
 Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that automatically provisions and starts the required resources in your Azure subscription.
 
-- ARM Template here: [https://mod.qa/TWAGovSecUseARM](https://mod.qa/TWAGovSecUseARM) - You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do not have one.
+- ARM Template here: [https://mod.qa/TWAGovSecUseARM](https://mod.qa/TWAGovSecUseARM) - You will need a trial or full licence key, contact Software.Support@modalitysystems.com for a key if you do not have one.
 
 > Note: You must have [registered an application](registerapplication.md) beforehand.
 

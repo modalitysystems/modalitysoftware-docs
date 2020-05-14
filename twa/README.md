@@ -49,6 +49,8 @@ To deploy the teamwork analytics Teams Bot, you need to install the Bot App into
 
 If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
+If you would like more information on the default Bot scenarios and their message content see [here](BotsContent.md)
+
 ### Step 5 (optional): Configuring 
 
 Now that everything is installed, you can configure settings previously set or for additional features.
