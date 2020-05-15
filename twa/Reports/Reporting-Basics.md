@@ -16,9 +16,9 @@ For tenant users we get all activity from the API (chat, channels, meetings, cal
 
 Microsoft API's typicaly reports user usage data 48 hours to 72 hours behind. To ensure our data is accurate, we will only report on days, weeks or months with complete data.
 
-Each report page is either a day, week or month report page. Users must only use the appropriate time filters on each page (day for day reports, "Calendar week" for week reports and "calendar Month" for month reports. If users use any other filters they can expect possibly incorrect results.
+Each report page is either a day, week or month report page. Users must only use the appropriate time filters on each page (day for day reports, "Calendar week" for weekly reports and "calendar Month" for monthly reports. If users use any other filters, they can expect possibly incorrect results.
 
-Reports will not render a day, week or month until the data is complete. If you select a current or just past current period (for example a week one day after the week is complete, due to the 72 hour delay in data from Microsoft, the week will not render in the report.
+Reports will not render a day, week or month until the data is complete. If you select a current or just past current period (for example a week one day after the week is complete, due to the 72-hour delay in data from Microsoft, the week will not render in the report.
 
 Weeks start on a Sunday in Power BI  (ISO weeks)
 
