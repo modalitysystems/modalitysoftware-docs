@@ -50,7 +50,4 @@ Microsoft define other as...
 
 "Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
 
-# In development/aspirational
-
-We will only show a month in a month date picker, if we have complete information for that month
 
