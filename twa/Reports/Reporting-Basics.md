@@ -22,11 +22,18 @@ Reports will not render a day, week or month until the data is complete. If you 
 
 Weeks start on a Sunday in Power BI  (ISO weeks)
 
-## Total Teams and Archived Teams
 
-Our counts of total Teams always incudes Archied teams, we can also split out the number of archived teams
 
-Our counts of teams do not include deleted teams
+## Active User
+
+"Active User" to us is at least one of the following for a user for the period: Private chat Message, channel message, reaction, meeting join, call (Voip or PSTN). 
+
+We do not count "other" actions as an active user: 
+
+Microsoft define other as...
+
+
+### Governance and Collab
 
 ## Team Users vs Owners vs Guests
 
@@ -38,16 +45,10 @@ Members - is explictly members (not owners of guests)
 
 Guests is explicitly guests not owners or members
 
-"Users" will always include any guests in totals
+## Total Teams and Archived Teams
 
-## Active User
+Our counts of total Teams always incudes Archied teams, we can also split out the number of archived teams
 
-"Active User" to us is at least one of the following for a user for the period: Private chat Message, channel message, reaction, meeting join, call (Voip or PSTN). 
-
-We do not count "other" actions as an active user: 
-
-Microsoft define other as...
+Our counts of teams do not include deleted teams
 
 "Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
-
-
