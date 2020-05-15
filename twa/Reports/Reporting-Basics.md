@@ -10,22 +10,25 @@ Yearly for infinate years subject to storage (subject to storage)
 
 Reprorts are either day report or month reports, you can't mix and match in a signle report
 
-"users" will always include any guests in totals
+For tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
 
-where used, members, owners and guests are explicit.
+## Total Teams and Archived Teams
 
-for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
+Our counts of total Teams always incudes Archied teams, we can also split out the number of archived teams
+
+Our counts of teams do not include deleted teams
 
 ## Team Users vs Owners vs Guests
 
 Team Users - is the sum of owners, members and guests
 
-owners is explicitly owners not members or guests
+Owners is explicitly owners not members or guests
 
 Members - is explictly members (not owners of guests)
 
-guests is explicitly guests not owners or members
+Guests is explicitly guests not owners or members
 
+"Users" will always include any guests in totals
 
 ## Active User
 
@@ -35,10 +38,9 @@ We do not count "other" actions as an active user:
 
 Microsoft define other as...
 
-
 "Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
 
 # In development/aspirational
 
-We will only show a month in a month date picker, if we have complete information for that month 
+We will only show a month in a month date picker, if we have complete information for that month
 
