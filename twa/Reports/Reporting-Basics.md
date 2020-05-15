@@ -1,4 +1,5 @@
 
+## Data the database holds
 The database holds:
 - Daily per user activity for up to 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
 - Weekly is held for a year - weeks begin Monday
@@ -14,6 +15,19 @@ Reprorts are either day report or month reports, you can't mix and match in a si
 where used, members, owners and guests are explicit.
 
 for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
+
+## Team Users vs Owners vs Guests
+
+Team Users - is the sum of owners, members and guests
+
+owners is explicitly owners not members or guests
+
+Members - is explictly members (not owners of guests)
+
+guests is explicitly guests not owners or members
+
+
+## Active User
 
 "Active User" to us is at least one of the following for a user for the period: Private chat Message, channel message, reaction, meeting join, call (Voip or PSTN). 
 
