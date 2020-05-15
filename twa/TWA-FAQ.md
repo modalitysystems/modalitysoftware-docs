@@ -4,7 +4,7 @@ Teamwork Analytics pulls data from Microsoft Graph via HTTPS. The Teamwork Analy
 
 We follow Microsoft guidance which states "When throttling occurs, Microsoft Graph returns HTTP status code 429 (Too many requests), and the requests fail. A suggested wait time is returned in the response header of the failed request.". We respect this suggested wait time in line with best practice.
 
-Microsoft do not publish what their limits are for Graph for Microsoft Teams. Here is their documentation: https://docs.microsoft.com/en-us/graph/throttling
+Microsoft publish what their limits are for Graph for Microsoft Teams. Here is their documentation: https://docs.microsoft.com/en-us/graph/throttling
 
 Customers cannot control this behaviour, it is automatically handled in the Teamwork Analytics application.
 
@@ -20,6 +20,7 @@ In a future update TWA will also consider private chat, meeting and calling usag
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
+
 ## How does Modality Systems Teamwork Analytics define a Guest User?
 
 Modality Systems defines a Guest User as any user that is not homed on your tenant. This includes federated users as well as guests that join meetings, contribute to teams etc.
@@ -31,6 +32,15 @@ This difference in definition can cause differences in the reported number of gu
 ## How does Modality Systems Teamwork Analytics define an Active Channel?
 
 An Active Channel is defined as having channel activity in the last 30 days.
+
+## What's a Licenced Teams user?
+
+Both Microsoft and Modality Systems use the term 'Licenced Teams User' in reporting. Both definitions are the same and refer explicitly to the teams checkbox, or lack thereof, in the user licencing tab of the Microsoft 365 admin portal.
+
+see [Microsoft Teams licencing](https://docs.microsoft.com/en-us/microsoftteams/user-access).
+
+**Not** to be confused with Teamwork Analytics Licence Keys below.
+
 
 ## How do Modality Systems Teamwork Analytics Licence Keys work?
 

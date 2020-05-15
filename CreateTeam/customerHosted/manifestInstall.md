@@ -82,7 +82,7 @@ Further information about managing app setup policies in Microsoft Teams is avai
 
 [Manage app setup policies in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-app-setup-policies)
 
-> NOTE A user can only be assigned to 1 app settings policy so this will remove them from the policy that they are currenlty assigned too
+> NOTE A user can only be assigned to 1 app settings policy so this will remove them from the policy that they are currently assigned too
 
 ## User Consent for CreateTeam App Client
 
@@ -92,14 +92,10 @@ When a user first launches the App from within Microsoft Team, they are required
 
 ## Changing default settings
 
-This application looks at your default tenant settings to determine the default value of certain fields.
-To change your default tenant settings read the following guide.
-https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-rest-1.0
+This application looks at your default tenant settings to determine the default value of certain fields. To change your default tenant settings read the following [guide](https://docs.microsoft.com/en-us/graph/api/resources/groupsetting?view=graph-rest-1.0).
 
 The following fields look at tenant default values
 
 1. External Checkbox looks at AllowToAddGuests value
 
-## Deployment complete
-
-Provided that all steps from [How to deploy CreateTeam to your Microsoft Teams for Customer Hosted](README.md) have been followed, the CreateTeam deployment should now be complete and ready to use.
+* Return to [Installing CreateTeam in your own tenant](README.md) to continue with the installation

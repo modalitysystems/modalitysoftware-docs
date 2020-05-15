@@ -1,0 +1,30 @@
+
+The database holds:
+- Daily per user activity for up to 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
+- Weekly is held for a year - weeks begin Monday
+- Monthly activities summaries for infinate months (subject to storage) 
+e.g. I can filter on a custom AD field for monthly usage for all time
+
+Yearly for infinate years subject to storage (subject to storage)
+
+Reprorts are either day report or month reports, you can't mix and match in a signle report
+
+"users" will always include any guests in totals
+
+where used, members, owners and guests are explicit.
+
+for tenant users we get all activity from the API (chat, channels, meetings, calls, other) for guests we only see their channel message activity (not private chat, meetings joined, calls made).
+
+"Active User" to us is at least one of the following for a user for the period: Private chat Message, channel message, reaction, meeting join, call (Voip or PSTN). 
+
+We do not count "other" actions as an active user: 
+
+Microsoft define other as...
+
+
+"Message(s) in Last 30 Days" is actually any message-related change in the last 30 days (e.g. liking an old message).
+
+# In development/aspirational
+
+We will only show a month in a month date picker, if we have complete information for that month 
+
