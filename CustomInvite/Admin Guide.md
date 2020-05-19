@@ -227,3 +227,164 @@ be referenced in the CustomInvite HTML template.
 
 Placeholder Name | Function
 ---------------- | --------
+@Model.Teams.JoinMeetingUrl | Join Teams Meeting URL
+@Model.Teams.ConferenceId | Teams Meeting Conference ID
+@Model.Teams.LocalNumbersUrl | Standard Local PSTN number URL
+@Model.Teams.MeetingOptionsUrl | Teams Meeting options URL
+
+**Group tags:**
+CustomInvite uses group tag containers to present and filter the PSTN dial in numbers available to dial in to the
+meeting. These can be included in the template and set to only display in the invitation if the user is enabled for the
+functionality.
+
+**Microsoft Phone System PSTN dial in numbers:**
+**Model.Teams.DialInNumbers** is the name of the model for the PSTN dial in number selection
+CustomInvite can display the following information for all the Microsoft Phone System PSTN numbers available to
+users scheduling Teams meetings.
+
+Placeholder Name | Example Output (for UK London)
+---------------- | ------------------------------
+FormattedNumber: | +44 20 3880 0559
+Number: | +442038800559
+City: | London
+Country: | United Kingdom
+IsoCode: | GB
+DisplayName: | United Kingdom, London
+
+CustomInvite can also identify which numbers are toll-free and those numbers assigned as the default numbers to
+the user scheduling the meeting.
+These values can be also be used by CustomInvite to filter which numbers to display for a user based on their
+settings allowing templates to dynamically display details rather than the basic approach of toll and toll-free being
+the only displayed numbers.
+Below is an example of the template code to display the default numbers assigned to a user. The data being
+returned is the Number and Conference ID making up a single click dial URL and the Formatted Number for each
+number assigned as default to that user.
+
+_@foreach (var number in Model.Teams.DialInNumbers.Where(x => x.IsDefault).OrderBy(x => x.IsTollFree))
+{
+<a>href=tel:@number.Number,,@Model.Teams.ConferenceId#>@number.FormattedNumber</a>&nbsp@it
+em.DisplayName
+ }
+This example shows the code to display the same data but for a specific range of numbers based on the GB and US
+ISOCode:
+@foreach(var number in Model.Teams.DialInNumbers.Where(x => x.IsoCode == "GB" || x.IsoCode ==
+"US").OrderBy(number => number.Country))
+{
+<a>href=tel:@number.Number,,@Model.Teams.ConferenceId#>@number.FormattedNumber</a>&nbsp@it
+em.DisplayName
+ }_
+ 
+**Teams native video interop tags:**
+**Model.Teams.Pexip.IsVTCEnabled** is the name of the model for the Pexip Teams VTC model.
+CustomInvite supports the 3rd party video interop into Teams which can be delivered by one of three certified
+providers; Pexip, Polycom or BlueJeans. At present, CustomInvite can display the below information for Pexip and
+will support Polycom and BlueJeans in future releases.
+
+Placeholder Name | Function
+---------------- | --------
+@Model.Teams.VtcSipAddress | VTC SIP Address
+@Model.Teams.VtcConferenceID | VTC Meeting ID
+@Model.Teams.VtcDialingInstructions | VTC Dialling Instructions URL
+
+if (Model.Teams.Pexip.IsEnabled)
+{
+PEXIP TEAMS VTC JOIN DETAILS HERE:
+}
+
+**Best practice/considerations:**
+When viewing Teams meeting invitations in the Teams client, any formatting applied in the Outlook desktop meeting
+invitation is not displayed. It retains all the customised layout and additional text/urls however the formatting
+applied to the meeting is the default Teams font and colour.
+
+## Microsoft Skype for Business Online Model:
+**Standard placeholder tags:**
+CustomInvite assigns the standard Skype for Business online meeting join information to a series of placeholder tags
+which can be referenced in the CustomInvite HTML template.
+
+Placeholder Name | Function
+---------------- | --------
+@Model.Sfbo.JoinMeetingUrl | Join Skype for Business meeting URL
+@Model.Sfbo.JoinWebMeetingUrl | Join Skype for Business meeting using the webapp URL
+@Model.Sfbo.FocusID | Focus ID of the SfB meeting
+@Model.Sfbo.ConferenceId | Conference ID
+@Model.Sfbo.MorePhoneNumbersUrl | Standard Local PSTN number URL
+@Model.Sfbo.HelpUrl | Standard Help URL for Skype for Business meetings
+
+##Group tags:
+**Microsoft Phone System PSTN dial in numbers:**
+**Model.Sfbo.DialInNumbers** is the name of the model for the PSTN dial in number selection
+CustomInvite can display the following information for all the Microsoft Phone System PSTN numbers available to
+users scheduling Teams meetings.
+
+Placeholder Name | Example Output (for UK London)
+---------------- | ------------------------------
+FormattedNumber: | +44 20 3880 0559
+Number: | +442038800559
+City: | London
+Country: | United Kingdom
+IsoCode: | GB
+DisplayName: | United Kingdom, London
+Culture (Language) | English (United Kingdom)
+
+CustomInvite can also apply the below filters to the Microsoft Phone System numbers allowing us to display only toll
+free numbers or identify those numbers assigned as the default settings for the user.
+
+Filter | Description | Values
+------ | ----------- | ------
+IsTollFree: | Identifies if the number is toll or toll free | True/False
+IsDefault: | Identifies if the number is assigned as the default for users | True/False
+
+## Microsoft Skype for Business server:
+**Standard placeholder tags:**
+CustomInvite assigns the standard Skype for Business server meeting join information to a series of placeholder tags
+which can be referenced in the CustomInvite HTML template.
+
+Placeholder Name | Function
+---------------- | --------
+
+@Model.Sfbs.JoinMeetingUrl | Join Skype for Business meeting URL
+@Model.Sfbs.JoinWebMeetingUrl | Join Skype for Business meeting using the webapp URL
+@Model.Sfbs.FocusID | Focus ID of the SfB meeting
+@Model.Sfbs.FocusUri | Focus URI of the SfB meeting
+@Model.Sfbs.ConferenceId | Conference ID
+@Model.Sfbs.MorePhoneNumbersUrl | Standard Local PSTN number URL
+@Model.Sfbs.HelpUrl | Standard Help URL for Skype for Business meetings
+
+**Group tags:**
+**PSTN dial in numbers:**
+**Model.Sfbs.DialInNumbers** is the name of the model for the PSTN dial in number selection of the Skype for Business
+server invitation. Allows CustomInvite to display the PSTN dial in details based on those numbers assigned to the
+user based on the dial plan assigned to them in the Skype for Business server control panel.
+
+These numbers will also update based on the region selected in the meeting options section of the meeting.
+
+CustomInvite can display the following information for each PSTN number selected in the meeting invitation:
+
+Placeholder Name | Example Output (for UK London)
+---------------- | ------------------------------
+Number: | St Albans: +44 (0)20 3300 1373
+Region: | Modality EMEA
+Culture (Language) | English (United Kingdom)
+
+CustomInvite can also apply the below filters to the on-prem conferencing PSTN numbers:
+
+Filter | Description | Values
+------ | ----------- | ------
+IsTollFree: | Identifies if the number is toll or toll free | True/False
+IsDefault: | Identifies if the number is assigned as the default for users | True/False
+IsSelected: | Identifies if the number is part of the region selected for the meeting | True/False
+
+# Managing Template Distribution
+Files paths and UNC’s may be used to provide a central template repository. C:\Templates as well as
+\\FileShare\Templates are both valid. FTP, HTTP, and other URL based downloads are not supported.
+
+For CustomInvite to update templates from a central repository, the TemplateDirectory registry key must be
+configured to do so. For example, if the registry keys are set as shown below, CustomInvite will set the file called
+**Default** as default once cached from the network location **\\TemplateShare\Global.**
+
+DefaultTemplate = Default
+
+TemplateDirectory = \\TemplateShare\Global
+
+
+
