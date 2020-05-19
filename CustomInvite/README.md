@@ -28,7 +28,7 @@ CustomInvite allows you to:
 
 Here you'll find: 
 
-## [Admin Guide](Admin Guide.md)
+## [Admin Guide](Admin-Guide.md)
 
 A full admin guide for CustomInvite including: 
 
