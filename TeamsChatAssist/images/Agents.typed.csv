@@ -1,0 +1,2 @@
+PartitionKey,RowKey,DisplayName,DisplayName@type
+xxx-your-app-regsitarion-application-id-xxx,xxx-agents-aadObjectId-xxx,xxx-agents-name-xxx,Edm.String

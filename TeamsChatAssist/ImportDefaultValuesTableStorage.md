@@ -1,9 +1,15 @@
-1. Create 3 tables called InstanceConfigurations, MessageConfigurations and QuickReplyButtons
+1. Create 4 tables called:
+
+   - Agents
+   - InstanceConfigurations
+   - MessageConfigurations
+   - QuickReplyButtons
 
    ![New Table](images/newTable.png)
 
-1. Download the following 3 csv files
+1. Download the following 4 csv files
 
+   - [Agents.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/Agents.typed.csv)
    - [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
    - [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
    - [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)

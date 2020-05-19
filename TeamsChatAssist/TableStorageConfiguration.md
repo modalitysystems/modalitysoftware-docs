@@ -6,6 +6,24 @@
 
 3. Add/Edit rows individualy, or [import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
+## Agents Table
+
+> Default Values can be downloaded from here: [Agents.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/Agents.typed.csv)
+
+![Agents Table](images/agentsTableEntry.png "Agents Table")
+
+Add Entity for each agent that will install Teams Chat Assist. When a user asks a question, all signed in agents in this list (the list is filtered according inst) will receive a Teams message; which an agent can respond to in order to answer the users question.
+
+> Note: The agent list is filtered by your instance (App Registration Application ID). Meaning only agents using the specified instance will receive the messages.
+
+- PartitionKey = [App Registration Application ID]
+
+- RowKey = [Agent's AadObjectId]
+
+- DisplayName = [Agents name]
+
+> Note: You can get an agents AadObjectId by visiting [the Azure Portal](https://portal.azure.com). Select _Azure Active Directory_. In the menu on the left, under _Manage_, select _Users_. You will be presented with a list of users, find and select the required agent from the list (use the search box is necessary). Under the _Identity_ header, the value in the _Object ID_ field is the AadObjectId.
+
 ## InstanceConfiguration Table 
 
 > Default Values can be downloaded from here: [InstanceConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/InstanceConfigurations.typed.csv)
@@ -163,26 +181,6 @@ Below are the validations rules that the service abides by for working hours –
 
   - Must be in a default SQL date format "yyyy-MM-dd"
 
-## QuickReplyButtons Table
-
-> Default Values can be downloaded from here: [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
-
-![Quick Reply Buttons Table](images/QuickReplyButtonsTable.png "Quick Reply Buttons Table")
-
-Add Entity for each predefined reply button to be displayed in the Agent View. The predefined reply buttons are highlighted in the screenshot below.
-
-- PartitionKey = [App Registration Application ID]
-
-- RowKey = This should be a unique Guid. To generate a Guid visit https://www.guidgenerator.com/, press the “Generate some GUIDs!” button and copy the result into this field. A new Guid needs generating for each row.
-
-- Timestamp = autopopulated (not visible when creating first entity)
-
-- DisplayText (String) = The text to be displayed in each predefined reply button
-
-- ReplyText (String) = The text that is sent to the user when the button is pressed (the text can also be viewed by hovering over the button in the agent view)
-
-![Quick Reply Buttons UI](images/QuickReplyButtonsUI.png "Quick Reply Buttons UI")
-
 ## MessageConfigurations Table
 
 > Default Values can be downloaded from here: [MessageConfigurations.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/MessageConfigurations.typed.csv)
@@ -218,3 +216,23 @@ _The following variables are available to be used in MessageText_
 > Note: If the value fails to load for whatever reason, TCA would output an error message in the format of “ERR_MessageId”. For example if the value for “Card_AgentFound_Message_Start” failed to read/write, this would display in the respective area:
 
 ![Message Configuration Error](images/MessageConfigurationError.png "Message Configuration Error")
+
+## QuickReplyButtons Table
+
+> Default Values can be downloaded from here: [QuickReplyButtons.typed.csv](http://docs.modalitysoftware.com/TeamsChatAssist/images/QuickReplyButtons.typed.csv)
+
+![Quick Reply Buttons Table](images/QuickReplyButtonsTable.png "Quick Reply Buttons Table")
+
+Add Entity for each predefined reply button to be displayed in the Agent View. The predefined reply buttons are highlighted in the screenshot below.
+
+- PartitionKey = [App Registration Application ID]
+
+- RowKey = This should be a unique Guid. To generate a Guid visit https://www.guidgenerator.com/, press the “Generate some GUIDs!” button and copy the result into this field. A new Guid needs generating for each row.
+
+- Timestamp = autopopulated (not visible when creating first entity)
+
+- DisplayText (String) = The text to be displayed in each predefined reply button
+
+- ReplyText (String) = The text that is sent to the user when the button is pressed (the text can also be viewed by hovering over the button in the agent view)
+
+![Quick Reply Buttons UI](images/QuickReplyButtonsUI.png "Quick Reply Buttons UI")
