@@ -28,7 +28,7 @@ CustomInvite allows you to:
 
 Here you'll find: 
 
-## [Admin Guide](admin guide.md)
+## [Admin Guide](Admin Guide.md)
 
 A full admin guide for CustomInvite including: 
 
@@ -53,7 +53,7 @@ A full admin guide for CustomInvite including:
 * Microsoft Skype for Business Server
 * Managing Template Distribution 
 
-## [Freqeuently Asked Questions](faqs.md)
+## [Freqeuently Asked Questions](FAQs.md)
 * General Features
 * Supported Environments
 * Installation
