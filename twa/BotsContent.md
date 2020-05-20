@@ -1,12 +1,12 @@
 ## Default Bot Scenarios and Content
 Below are the default Bot scenarios deployed with TWA, if you have selected to include the notification service.
 
-For each scenario you will find a description of the scenario and any default configured values. For each scenario we are able to configure the **Message Subject** and **Message Content.**
+For each scenario you will find a description of the scenario and any default configured values. For each scenario we are able to configure the **Message Subject** and **Message Content.** The email will be sent from  tips@teamworktips.email, please whitelist this address if required.
 
 Please email Software.Support@modalitysystems.com if you require any customisation to the default scenarios or wish to discuss additional scenarios.
 
 ### Default Message Behaviour ###
-If a scenario is triggered and the message sent, this will initially be delivered via email, as per the examples below. Within each default message, we provide the end user the ability to recieve future messages via the Teamwork Tips Bot. This is achieved by clicking the link provided within the message.
+If a scenario is triggered and the message sent, this will initially be delivered via email, as per the examples below. Within each default message, we provide the end user the ability to recieve future messages via the Teamwork Tips Bot. This is achieved by clicking the link provided within the message. The content delivered via Teams message will be the same as the email content. This can also be customised if required.
 
 ## Scenario 1 - Guest Reminder
 
