@@ -3,9 +3,11 @@ xxx-your-app-regsitarion-application-id-xxx,AgentNameMasked,Agent,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Button_End,End Conversation,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Message_Connected,Agent found--! You have been connected to %%agentName%%.,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentFound_Message_Start,"The conversation will start in a moment. When you have finished, click End Conversation.",Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentNotSignedIn,"You are not signed in. To receive notifications of new questions, click 'Sign in' or enter 'sign in'.",Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_AskedBy,Asked by:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_Question,Question:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Message_Cancelled,This question has been cancelled or expired.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentSignIn_ActionButton,Sign in,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_AskedBy,Asked by:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_ConversationLog,Conversation Log:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_Organisation,Organisation:,Edm.String
