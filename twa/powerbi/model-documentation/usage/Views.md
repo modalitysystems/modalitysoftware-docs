@@ -1,4 +1,4 @@
-## Usage Report Views
+## Teams Usage Power BI Model
 
 | Name |
 |---|
