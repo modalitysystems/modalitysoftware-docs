@@ -5,6 +5,9 @@ Teamwork Analytics is provided as an Azure Resource Manager (ARM) template that 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftwadeploy.blob.core.windows.net%2Ftwa-prod%2FmainTemplate.json%3Fsv%3D2019-02-02%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drlp%26se%3D2025-01-06T19%3A14%3A58Z%26st%3D2020-01-06T11%3A14%3A58Z%26spr%3Dhttps%26sig%3D0gvK%252BXVXhd24ifVrnMJrvZxxzYX0Cu9MXVdKYJmvkL8%253D" target="_blank">
   <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Ftwadeploy.blob.core.windows.net%2Ftwa-prod%2FmainTemplate.json%3Fsv%3D2019-02-02%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drlp%26se%3D2025-01-06T19%3A14%3A58Z%26st%3D2020-01-06T11%3A14%3A58Z%26spr%3Dhttps%26sig%3D0gvK%252BXVXhd24ifVrnMJrvZxxzYX0Cu9MXVdKYJmvkL8%253D" target="_blank">
+  <img src="https://armviz.io/visualizebutton.png"/>
+</a>
 
 > Note: You will need a trial or full licence key, contact Software.Support@modalitysystems.com for a key if you do not have one.
 
