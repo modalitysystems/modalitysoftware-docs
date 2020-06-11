@@ -1,8 +1,8 @@
 # Welcome to Modality Software Docs
 
-docs.modalitysoftware.com is the home for Modality Software documentation.
-
 To find out more about Modality Software, visit [modalitysoftware.com](https://www.modalitysoftware.com).
+
+If you cant find what you’re looking for, please [get in touch].(https://modalitysystems.com/contact)
 
 ---
 
