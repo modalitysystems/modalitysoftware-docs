@@ -43,6 +43,7 @@ xxx-your-app-regsitarion-application-id-xxx,Dialog_Cancellation_Prompt,Are you s
 xxx-your-app-regsitarion-application-id-xxx,Dialog_LiveConversation_Message_Cancel,I'm still looking. Type cancel to stop looking,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Dialog_NewConversation_Message_Cancel,"I'm looking for someone who can answer your question. To cancel this search, just type 'cancel'.",Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Dialog_OutOfHours_Message,The service is closed. Please try again later.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Dialog_SignOut_Prompt,You are currently answering a question, are you sure you want to sign out?,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,System_Message_AlreadyEnd,You have already ended the conversation,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,System_Message_End,You have ended the conversation,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,System_Message_NoAvailability,"Sorry, I couldn't find anyone to answer your question. Please try again later.",Edm.String
