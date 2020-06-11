@@ -1,5 +1,6 @@
 # reporting UsersBase
 
+
 ## <a name="#columns"></a>Columns
 
 | Name | Data Type | Max Length (Bytes) | Description |

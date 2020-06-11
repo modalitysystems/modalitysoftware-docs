@@ -2,7 +2,12 @@
 
 Teams Chat Assist Bot can be provided as an Azure Resource Manager (ARM) template that automatically provisions and starts the required resources in your Azure subscription.
 
-- Contact info@modalitysystems.com for a URL to the ARM Deployment.
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftcabotdeploy.blob.core.windows.net%2Ftcabot-prod%2FmainTemplate.json" target="_blank">
+  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure" style="max-width:100%;">
+</a>
+<a href="http://armviz.io/#/?load=https://tcabotdeploy.blob.core.windows.net/tcabot-prod/mainTemplate.json" target="_blank">
+  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true" alt="Visualize" style="max-width:100%;">
+</a>
 
 > Note: You must have [registered an application](registerapplication.md) beforehand.
 
