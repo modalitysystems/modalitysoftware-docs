@@ -5,12 +5,23 @@ Modality Systems perform extensive tests to ensure data is gathered correctly, b
 
 Should you want to, here are a range of data validity quality assurance tests you can perform and an understanding of the results you should expect.
 
-## Understanding Data collection and Microsoft API Lag
+## Understanding Data Collection and Microsoft API Lag
 
-Microsoft reporting API, the one that gives us per user usage, is typicaly ~48 hours behind. Then there is additional time for Modality to Query the API, write to SQL, then there is the variable of Power BI refresh.
+Microsoft's Graph reporting API's, the one that gives us per user Teamns usage information (per user number of chats, team chats, meetings attended, calls made), is typicaly ~48 hours behind the current time. E.g. the users usage report for today will be avaialble in approximately 2 days.
 
-The "team" information API (team names, memebers, guests, owners) is t
+On top of the API being 48 hours behind, there is a time over head to collect the data and put it into SQL (this is variable depending on the number of users in your teant from as little as an hour to ~24 hours for 300,000 users).
 
+There is a third time overhead, which is Power BI gathering information from SQL into the Power BI reports. This is typcially done at scheduled times throught the day (customer confgure this).
+
+The Graph API that gives us "team" information  (team names, memebers, guests, owners) also has a delay. typically less than 48 hours, but the same API to SQL and SQL to Power BI delay exists.
+
+When testing for data accuracy it is important to take these delays into account.
+
+Below we have outlined some useful checks you can perform to validate data is accurate.
+
+There are two types of test. Controlled Tests allow you to completely control the data and make an exact comparison. Comparison tests compare Microsoft reports to Teamwork Analyitcs SQL data and Power BI reports, due to variables on how Microsoft present the data this can be harder to compare.
+
+We have defined the best apporaches to comparison but welcome any feedback.
 
 ## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
 
