@@ -36,7 +36,15 @@ Pull your CSV on 20th, the excel column 1 gives you a data, thats your period.
 
 The SQL only gives complete data - it checks for one record for the data after the data range, so we know the data range is complete. e.g. if you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th 
 
-## Comparison Tests - Total Team Information (Total Teams, Private Teams, Public Teams, Archived Teams)
+got SQL - define date range
+
+## Comparison Tests - Active User Count, Licenced and Inactive User Count
+
+Got SQL  1 of 4 but not other 
+
+filter the excel
+
+## Comparison Tests - Total Team Information (Total Teams, Private Teams, Public Teams, "hidden", Archived Teams)
 
 PS vs SQL,
 
@@ -44,10 +52,15 @@ PS has a pull date
 
 ## Comparison Tests - Pick specific Team and compare data (owners, memebers, guests, channel count)
 
+SQL got
+
 ## Comparison Tests - Pick specific user and compare team data (ownerships, memberships)
+
+SQL got and list the actual teams and your role
 
 ## Comparison Tests - Licenced User Count
 
-## Comparison Tests - Licenced and Active User Count, Licenced and Inactive User Count
+SQL got
+
 
 
