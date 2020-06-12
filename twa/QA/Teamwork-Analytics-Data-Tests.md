@@ -23,6 +23,8 @@ There are two types of test. Controlled Tests allow you to completely control th
 
 We have defined the best apporaches to comparison but welcome any feedback.
 
+# Testing the variance between Microsoft and Teamwork Analytics SQL, with SQL queries
+
 ## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
 
 Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in SQL and Power BI. This will  mean setting them up and checking them 72 hours later
@@ -93,5 +95,9 @@ PowerShell - still to do
 
 SQL got
 
+######
 
+# Testing the variance between Teamwork Analytics SQL and Power BI
+
+Write one SQL query that gathers all key stats to compare to Power BI - consider refresh delay.
 
