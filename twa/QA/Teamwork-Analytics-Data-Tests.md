@@ -29,13 +29,13 @@ The SQL only gives complete data - it checks for one record for the data after t
 
 PS vs SQL,
 
-PS has a pull date, 
+PS has a pull date
 
-## Comparison Tests - per team test
+## Comparison Tests - Pick specific Team and compare data (owners, memebers, guests, channel count)
 
-## Comparison Tests - per user test
+## Comparison Tests - Pick specific user and compare team data (ownerships, memberships)
 
-## Comparison Tests - Licenced Users
+## Comparison Tests - Licenced User Count
 
 ## Comparison Tests - Licenced and Active User Count, Licenced and Inactive User Count
 
