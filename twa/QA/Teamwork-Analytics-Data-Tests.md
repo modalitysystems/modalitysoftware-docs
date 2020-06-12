@@ -12,21 +12,20 @@ Microsoft reporting API, the one that gives us per user usage, is typicaly ~48 h
 The "team" information API (team names, memebers, guests, owners) is t
 
 
+## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
 
-## Controlled Tests for team information - don't change them wait 72 hours and check
+set these manually, don't change them wait 72 hours and check
 
-These tests 
-
-
+comparison tests are harder, there is a variable
 
 
-## Comparison Tests - User usage data 
+## Comparison Tests - Total User usage data (total chat messages, team messages, calls, meetings attended)
 
 Pull your CSV on 20th, the excel column 1 gives you a data, thats your period. 
 
 The SQL only gives complete data - it checks for one record for the data after the data range, so we know the data range is complete. e.g. if you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th 
 
-## Comparison Tests - Team total data
+## Comparison Tests - Total Team Information (Total Teams, Private Teams, Public Teams, Archived Teams)
 
 PS vs SQL,
 
@@ -35,5 +34,9 @@ PS has a pull date,
 ## Comparison Tests - per team test
 
 ## Comparison Tests - per user test
+
+## Comparison Tests - Licenced Users
+
+## Comparison Tests - Licenced and Active User Count, Licenced and Inactive User Count
 
 
