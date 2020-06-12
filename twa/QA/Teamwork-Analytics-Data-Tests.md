@@ -23,7 +23,7 @@ There are two types of test. Controlled Tests allow you to completely control th
 
 We have defined the best apporaches to comparison but welcome any feedback.
 
-# Testing the variance between Microsoft and Teamwork Analytics SQL, with SQL queries
+# Testing the variance between Microsoft Native Reporting and Teamwork Analytics SQL Database
 
 ## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
 
