@@ -101,3 +101,7 @@ SQL got
 
 Write one SQL query that gathers all key stats to compare to Power BI - consider refresh delay.
 
+SQL output vs Check the numbers on reports with report codes
+- 1 SQL query to compare to all reports
+
+
