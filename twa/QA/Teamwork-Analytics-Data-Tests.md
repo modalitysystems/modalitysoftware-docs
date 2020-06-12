@@ -25,40 +25,69 @@ We have defined the best apporaches to comparison but welcome any feedback.
 
 ## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
 
-set these manually, don't change them wait 72 hours and check
+Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in SQL and Power BI. This will  mean setting them up and checking them 72 hours later
 
-comparison tests are harder, there is a variable
+Example Starting Point:
 
+Create a Prvate Teams with 5 channels, 2 Owners and 2 members
+
+Create a Public Team with 3 Channels, 1 owner and 1 member
+
+From here variables you could change
+  - add or remove channels
+  - add or remeove members or owners
+  - delete team
+  - change team from public to private
+  
+Please write down changes and date of change.
 
 ## Comparison Tests - Total User usage data (total chat messages, team messages, calls, meetings attended)
 
-Pull your CSV on 20th, the excel column 1 gives you a data, thats your period. 
+Pull your Excel Per user 30 usage report from  https://portal.office.com/adminportal/home#/reportsUsage/TeamsUserActivity on 20th
+
+Sum the columns for Team Chat Message Count,	Private Chat Message Count,	Call Count,	Meeting Count,
+
+The file name gives you the time you pulled the reprot. The column 1 gives you the date Microsoft say the data is up to.
+
+Wait until 48 hours later for the data to come through the graph API and into SQL, and perform the SQL query that will perform the same date range.
+
+Input the date from column 1. The SQ query 
 
 The SQL only gives complete data - it checks for one record for the data after the data range, so we know the data range is complete. e.g. if you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th 
 
-got SQL - define date range
+GOT SQL
 
 ## Comparison Tests - Active User Count, Licenced and Inactive User Count
 
-Got SQL  1 of 4 but not other 
+Using the same Portal 30 day user report, filter for any users with more than 0 activity in Team Chat Message Count,	Private Chat Message Count,	Call Count,	Meeting Count. Do not include other. Modality Systems Teamwork Analytics does not define "other" as active.
 
-filter the excel
+Sum the excel user list.
+
+Input the SQL with the same column 1 date. Check the sum of users 
+
+Got SQL
 
 ## Comparison Tests - Total Team Information (Total Teams, Private Teams, Public Teams, "hidden", Archived Teams)
 
-PS vs SQL,
+Run the PowerShell Query. It will output with a date stamp. 48 hours later perform the SQL query. Compare numbers
 
-PS has a pull date
+Got SQL
 
 ## Comparison Tests - Pick specific Team and compare data (owners, memebers, guests, channel count)
 
-SQL got
+Pick a team and compare in Teams client (most fresh data source). Take a screenshot of the membersip status and channel count.
+
+48 hours later, run SQL comparison with team name
 
 ## Comparison Tests - Pick specific user and compare team data (ownerships, memberships)
 
-SQL got and list the actual teams and your role
+Pick a user or users and run the PowerShell
+
+48 hours later, run SQL comparison with team name
 
 ## Comparison Tests - Licenced User Count
+
+PowerShell - still to do
 
 SQL got
 
