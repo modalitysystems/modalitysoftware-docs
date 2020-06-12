@@ -41,7 +41,7 @@ From here variables you could change
   
 Please write down changes and date of change.
 
-## Comparison Tests - Total User usage data (total chat messages, team messages, calls, meetings attended)
+## Comparison Test 01 - Total User usage data (total chat messages, team messages, calls, meetings attended)
 
 Pull your Excel Per user 30 usage report from  https://portal.office.com/adminportal/home#/reportsUsage/TeamsUserActivity on 20th
 
@@ -57,9 +57,11 @@ The SQL only gives complete data - it checks for one record for the data after t
 
 GOT SQL
 
-## Comparison Tests - Active User Count, Licenced and Inactive User Count
+## Comparison Test 02 - Active User Count, Inactive User Count
 
 Using the same Portal 30 day user report, filter for any users with more than 0 activity in Team Chat Message Count,	Private Chat Message Count,	Call Count,	Meeting Count. Do not include other. Modality Systems Teamwork Analytics does not define "other" as active.
+
+Note active are always going to be licenced and inactive will also be licened but inactive. Un licenced users are not counted.
 
 Sum the excel user list.
 
@@ -67,25 +69,25 @@ Input the SQL with the same column 1 date. Check the sum of users
 
 Got SQL
 
-## Comparison Tests - Total Team Information (Total Teams, Private Teams, Public Teams, "hidden", Archived Teams)
+## Comparison Test 03- Total Team Information (Total Teams, Private Teams, Public Teams, "hidden", Archived Teams)
 
 Run the PowerShell Query. It will output with a date stamp. 48 hours later perform the SQL query. Compare numbers
 
 Got SQL
 
-## Comparison Tests - Pick specific Team and compare data (owners, memebers, guests, channel count)
+## Comparison Test 04 - Pick specific Team and compare data (owners, memebers, guests, channel count)
 
 Pick a team and compare in Teams client (most fresh data source). Take a screenshot of the membersip status and channel count.
 
 48 hours later, run SQL comparison with team name
 
-## Comparison Tests - Pick specific user and compare team data (ownerships, memberships)
+## Comparison Test 05 - Pick specific user and compare team data (ownerships, memberships)
 
 Pick a user or users and run the PowerShell
 
 48 hours later, run SQL comparison with team name
 
-## Comparison Tests - Licenced User Count
+## Comparison Test 06 - Licenced User Count
 
 PowerShell - still to do
 
