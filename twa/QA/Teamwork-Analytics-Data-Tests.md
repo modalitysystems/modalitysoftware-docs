@@ -83,7 +83,35 @@ The SQL query will only complete once SQL has some data for the day after this d
 
 E.g. If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
 
-SQL is complete - LINK
+### Validation SQL Query
+
+```sql
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+-- Configure the Date Value here;
+declare @30DaysUpToDate date = '2020-06-08'
+
+
+IF(@30DaysUpToDate > dateadd(day, -1, (SELECT MAX(ReportDate) as LatestDate from [dbo].[DailyActivityUserDetails])))
+	RAISERROR('You have selected a date more recent than the data collected by Teamwork Analytics', 18, 1)
+
+
+SELECT		@30DaysUpToDate As ReportDate
+			,SUM(D.[TeamChatMessageCount]) As [TeamChatMessageCount]
+			,SUM(D.[PrivateChatMessageCount]) As [PrivateChatMessageCount]
+			,SUM(D.[CallCount]) As [CallCount]
+			,SUM(D.[MeetingCount]) As [MeetingCount]
+			,MIN(D.ReportDate) as FromDate
+			,MAX(D.ReportDate) as ToDate
+			,GETUTCDATE() as [ExecutionDate]
+			,@VersionNo as VersionNo
+FROM		[dbo].Users u
+LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrincipalName 
+				AND u.Deleted = 0 
+				AND D.ReportDate > dateadd(day, -30,@30DaysUpToDate) 
+				AND D.ReportDate <= @30DaysUpToDate 
+```
 
 ## Comparison Test 02 - Active User Count
 
@@ -101,7 +129,34 @@ To get a count of active users count from excel
 - Delete all these rows with 0 usage for all those features
 - Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
 
-Got SQL
+### Validation SQL Query
+
+```sql
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+-- Configure the Date Value here;
+declare @30DaysUpToDate date = '2020-06-08'
+
+
+IF(@30DaysUpToDate > dateadd(day, -1, (SELECT MAX(ReportDate) as LatestDate from [dbo].[DailyActivityUserDetails])))
+	RAISERROR('You have selected a date more recent than the data collected by Teamwork Analytics', 18, 1)
+
+
+SELECT		@30DaysUpToDate As ReportDate
+			,count(distinct D.UserPrincipalName) as ActiveUsers
+			,count(distinct (CASE WHEN D.UserPrincipalName is Null then U.UserPrincipalName Else Null End)) as InActiveUsers
+			,GETUTCDATE() as [ExecutionDate]
+			,@VersionNo as VersionNo
+FROM		[dbo].Users u
+JOIN		[dbo].[TeamsUserLicences] l on l.UserId = u.Id 
+				AND l.CapabilityStatus = 'Enabled' 
+				AND l.Deleted = 0
+LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrincipalName 
+				AND u.Deleted = 0 
+				AND D.ReportDate > dateadd(day, -30,@30DaysUpToDate) 
+				AND D.ReportDate <= @30DaysUpToDate 
+```
 
 ## Comparison Test 03 - Sum Team Information - PowerShell
 
@@ -111,7 +166,22 @@ Run the PowerShell Query. It will output with a date stamp. 48 hours later perfo
 
 Compare to SQL 48 hours later.
 
-Got SQL
+### Validation SQL Query
+
+```sql
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+SELECT	COUNT(*) as TotalTeams
+		,SUM(CASE WHEN Visibility = 'Public' then 1 else 0 end) as PublicTeamCount
+		,SUM(CASE WHEN Visibility = 'HiddenMembership' then 1 else 0 end) as HiddenMembershipTeamCount
+		,SUM(CASE WHEN Visibility = 'Private' then 1 else 0 end) as PrivateTeamCount
+		,SUM(CASE WHEN IsArchived = 1 then 1 else 0 end) as ArchivedTeamCount
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.Teams
+WHERE	Deleted = 0
+```
 
 ## Comparison Test 04 - Team spot check - Teams Client
 
@@ -119,13 +189,95 @@ Pick a team and compare in Teams client (most fresh data source). Take a screens
 
 Compare to SQL report 48 hours later
 
+### Validation SQL Query
+
+```sql
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+--Change the Team Name here (note it has to be exact to match the database)
+declare @TeamName nvarchar(400) = 'Team Display Name'
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,Visibility
+		,IsArchived
+		,(SELECT COUNT(*) FROM dbo.Channels c where c.TeamId = t.Id) as Channels
+		,SUM(CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Owners
+		,SUM(CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Members
+		,SUM(CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end) as Guests
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+Group By
+	t.Id
+	,DisplayName
+	,Visibility
+	,IsArchived
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,u.UserPrincipalName
+		,CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsOwner
+		,CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsMember
+		,CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end as IsGuest
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+```
+
+>NOTE: This query returns two result sets, one a summary, and the other a list of members
+
 ## Comparison Test 05 - User number of ownerships and memberships spot check
 
 Pick a user or users and run the PowerShell
 
 48 hours later, run SQL comparison with team name
 
+### Validation SQL Query
 
+```sql
+-- Version No do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+--Change the User Principal Name here (note it has to be exact to match the database)
+declare @UserPrincipalName nvarchar(400) = 'user@domain.com'
+
+Select	COUNT(DISTINCT TeamId) AS TeamsJoined
+		,SUM(CASE WHEN tu.UserType = 'Owner' then 1 else 0 end) as AsOwner
+		,SUM(CASE WHEN tu.UserType = 'Member' then 1 else 0 end) as AsMember
+		,@UserPrincipalName as [User]
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+WHERE	tu.Deleted = 0
+AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
+
+Select	Distinct
+		DisplayName as TeamName
+		,tu.UserType as Role
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
+```
+>NOTE: This query returns two result sets, one a summary, and the other a list of team membererships
 
 # Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
 
