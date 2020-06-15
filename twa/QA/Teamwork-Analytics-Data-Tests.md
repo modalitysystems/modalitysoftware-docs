@@ -410,7 +410,9 @@ AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
 ```
 >NOTE: This query returns two result sets, one a summary, and the other a list of team memberships
 
-# Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
+
+
+# FUTURE - Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
 
 Write one SQL query that gathers all key stats to compare to Power BI - consider refresh delay.
 
