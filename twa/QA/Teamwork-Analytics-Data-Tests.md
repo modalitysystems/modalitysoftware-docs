@@ -67,6 +67,8 @@ Please write down changes and date of change.
 
 After 48 hours you can check the data is the same in the database with this SQL query
 
+#### Validation SQL Query - Control Test Team Information
+
 ```
 -- Version Number do not change
 declare @VersionNo nvarchar(20) = '2020-06-11'
@@ -134,7 +136,7 @@ The SQL query will only complete once SQL has some data for the day after this d
 
 E.g. If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
 
-#### Validation SQL Query
+#### Validation SQL Query - Comparison Test 01
 
 ```sql
 -- Version Number do not change
@@ -182,7 +184,7 @@ To get a count of active users count from excel
 - Delete all these rows with 0 usage for all those features
 - Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
 
-#### Validation SQL Query
+#### Validation SQL Query - Comparison Test 02
 
 ```sql
 -- Version Number do not change
@@ -251,7 +253,7 @@ write-host ""
 
 Compare to SQL 48 hours later.
 
-#### Validation SQL Query
+#### Validation SQL Query - Comparison Test 03
 
 ```sql
 -- Version Number do not change
@@ -276,7 +278,7 @@ Pick a team and compare in Teams client (most fresh data source). Take a screens
 
 Compare to SQL report 48 hours later
 
-#### Validation SQL Query
+#### Validation SQL Query - Comparison Test 04
 
 ```sql
 -- Version Number do not change
@@ -390,7 +392,7 @@ Write-Host "$user is member of $($NumberofTeamsWhereMemberArchived.Count) Archiv
 
 48 hours later, run SQL comparison with team name
 
-#### Validation SQL Query
+#### Validation SQL Query - Comparison Test 05
 
 ```sql
 -- Version No do not change
