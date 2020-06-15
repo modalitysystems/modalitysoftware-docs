@@ -65,6 +65,8 @@ From here variables you could change
 
 Please write down changes and date of change.
 
+
+
 ## Comparison Test 01 - Tenant Total user usage for 30 days
 
 This test compares Microsoft's portal.office.com report of 30 days
@@ -113,6 +115,8 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 				AND D.ReportDate <= @30DaysUpToDate 
 ```
 
+
+
 ## Comparison Test 02 - Active User Count
 
 This test compares Microsoft's portal.office.com report of active users for the last 30 days to TWA SQL.
@@ -158,16 +162,17 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 				AND D.ReportDate <= @30DaysUpToDate 
 ```
 
+
+
 ## Comparison Test 03 - Sum Team Information - PowerShell
 
-Total Teams, Private Teams, Public Teams, "hidden", Archived Teams
+Total Teams, , Archived Teams, Non-Achieved Teams, Private Teams, Public Teams, Private Hidden
 
-Run the PowerShell Query. It will output with a date stamp. 48 hours later perform the SQL query. Compare numbers
+Run the PowerShell Query. Screenshot the output and note the date
 
 ```powershell
-
-
 # Use script at your own risk
+# Connect to Microsoft Teams PowerShell before running script
 
 # Define a new object to gather output
 $OutputCollection=  @()
@@ -193,49 +198,6 @@ write-host ""
 Write-Host "Private HiddenMembership Teams count is $($NonArchived.Count)"
 write-host ""                    
 
-$teams | ForEach-Object {
-
-    Write-host "Getting details for Team $($_.DisplayName)"
-
-    # Calculate Description word count
-                    
-    $DescriptionWordCount = $null
-    $DescriptionWordCount = ($_.Description | Out-String | Measure-Object -Word).words
-
-    #Get channel details
-
-    $Channels = $null
-    $Channels = Get-TeamChannel -GroupId $_.GroupID
-    $ChannelCount = $Channels.count
-
-    # Get Owners, members and guests
-
-    $TeamUsers = Get-TeamUser -GroupId $_.GroupID
-                    
-    $TeamOwnerCount = ($TeamUsers | Where-Object {$_.Role -like "owner"}).count
-    $TeamMemberCount = ($TeamUsers | Where-Object {$_.Role -like "member"}).count
-    $TeamGuestCount = ($TeamUsers | Where-Object {$_.Role -like "guest"}).count
-
-    # Put all details into an object
-
-    $output = New-Object -TypeName PSobject 
-
-    $output | add-member NoteProperty "DisplayName" -value $_.DisplayName
-    $output | add-member NoteProperty "Description" -value $_.Description
-    $output | add-member NoteProperty "DescriptionWordCount" -value $DescriptionWordCount
-    $output | add-member NoteProperty "Visibility" -value $_.Visibility
-    $output | add-member NoteProperty "Archived" -value $_.Archived
-    $output | Add-Member NoteProperty "ChannelCount" -Value $ChannelCount
-    $output | Add-Member NoteProperty "OwnerCount" -Value $TeamOwnerCount
-    $output | Add-Member NoteProperty "MemberCount" -Value $TeamMemberCount
-    $output | Add-Member NoteProperty "GuestCount" -Value $TeamGuestCount
-    $output | add-member NoteProperty "GroupId" -value $_.GroupId
-
-    $OutputCollection += $output
-    }
-
-    # Output collection
-    $OutputCollection
 ```
 
 Compare to SQL 48 hours later.
@@ -256,6 +218,8 @@ SELECT	COUNT(*) as TotalTeams
 FROM	dbo.Teams
 WHERE	Deleted = 0
 ```
+
+
 
 ## Comparison Test 04 - Team spot check - Teams Client
 
@@ -314,7 +278,7 @@ AND		LOWER(t.DisplayName) = LOWER(@TeamName)
 
 >NOTE: This query returns two result sets, one a summary, and the other a list of members
 
-## Comparison Test 05 - User number of ownerships and memberships spot check
+## Comparison Test 05 - User number of ownerships and memberships spot check PowerShell
 
 Pick a user or users and run the PowerShell
 
