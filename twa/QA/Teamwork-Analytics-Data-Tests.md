@@ -65,6 +65,55 @@ From here variables you could change
 
 Please write down changes and date of change.
 
+After 48 hours you can check the data is the same in the database with this SQL query
+
+```
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+--Change the Team Name here (note it has to be exact to match the database)
+declare @TeamName nvarchar(400) = 'Team Display Name'
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,Visibility
+		,IsArchived
+		,(SELECT COUNT(*) FROM dbo.Channels c where c.TeamId = t.Id) as Channels
+		,SUM(CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Owners
+		,SUM(CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Members
+		,SUM(CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end) as Guests
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+Group By
+	t.Id
+	,DisplayName
+	,Visibility
+	,IsArchived
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,u.UserPrincipalName
+		,CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsOwner
+		,CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsMember
+		,CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end as IsGuest
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+```
+
 
 
 ## Comparison Test 01 - Tenant Total user usage for 30 days
