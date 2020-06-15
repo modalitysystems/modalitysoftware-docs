@@ -41,7 +41,7 @@ There are two types of test.
 
 We have defined the best approaches to comparison but welcome any feedback.
 
-
+It is recommended to Perform all SQL queries from an account with Read Only access and all PowerShell with Global Reader (read only accesss) to avoid any risk of data or config changes.
 
 # Comparing Microsoft Native Reporting and Teamwork Analytics SQL Database
 
