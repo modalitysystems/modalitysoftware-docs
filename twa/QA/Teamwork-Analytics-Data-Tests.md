@@ -378,9 +378,4 @@ AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
 
 # FUTURE - Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
 
-Write one SQL query that gathers all key stats to compare to Power BI - consider refresh delay.
-
-SQL output vs Check the numbers on reports with report codes
-- 1 SQL query to compare to all reports
-
-
+Future Tests to compare SQL numbers to report numbers
