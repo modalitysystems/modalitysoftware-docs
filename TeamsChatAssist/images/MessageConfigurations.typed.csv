@@ -33,6 +33,11 @@ xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fa
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Question,Question:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Fact_Status,Status:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredWithTeamInfo_Message,This question is being answered by %%agentName%%.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredByAnotherAgent_Message,Another agent has answered this question.,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredByAnotherAgent_Fact_Question,Question:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredByAnotherAgent_Fact_AskedBy,Asked by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredByAnotherAgent_Fact_AnsweredBy,Answered by:,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnsweredByAnotherAgent_Fact_Status,Status:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_AskedBy,Asked by:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_Organisation,Organisation:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_QuestionAnswered_Fact_Question,Question:,Edm.String
