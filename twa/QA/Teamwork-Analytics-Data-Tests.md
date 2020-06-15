@@ -10,7 +10,7 @@ Should you want to, here are a set of quality assurance tests you can perform to
 
 
 
-## Understanding Graph API Data Collection and Microsoft Data Lag
+# Understanding Graph API Data Collection and Microsoft Data Lag
 
 ## Per UPN Microsoft Teams user usage reports
 
@@ -32,7 +32,7 @@ The Graph API that gives us "team" information  (team names, members, guests, ow
 
 When testing for data accuracy it is important to take these delays into account.
 
-Below we have outlined some useful checks you can perform to validate data is accurate.
+Below we have outlined some checks you can perform to validate data is accurate.
 
 There are two types of test. 
 
@@ -41,81 +41,93 @@ There are two types of test.
 
 We have defined the best approaches to comparison but welcome any feedback.
 
-# Testing the variance between Microsoft Native Reporting and Teamwork Analytics SQL Database
 
-## Control Tests - Per Team Information (Owners, members, guests, channel count)
+
+# Comparing Microsoft Native Reporting and Teamwork Analytics SQL Database
+
+These tests focus on comparing Microsoft native reporting/data to Teamwork Analytics SQL and ignore any variables of Power BI reports or Power BI refresh time.
+
+## Control Test - Team Information (Owners, members, guests, channel count)
 
 Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in SQL and Power BI. This will  mean setting them up and checking them 72 hours later
 
 Example Starting Point:
 
-Create a Prvate Teams with 5 channels, 2 Owners and 2 members
+Create a Private Teams with 5 channels, 2 Owners and 2 members
 
 Create a Public Team with 3 Channels, 1 owner and 1 member
 
 From here variables you could change
   - add or remove channels
-  - add or remeove members or owners
+  - add or remove members or owners
   - delete team
   - change team from public to private
 
 Please write down changes and date of change.
 
-## Comparison Test 01 - Total User usage data (total chat messages, team messages, calls, meetings attended)
+## Comparison Test 01 - Tenant Total user usage for 30 days
 
-Pull your Excel Per user 30 usage report from  https://portal.office.com/adminportal/home#/reportsUsage/TeamsUserActivity on 20th
+This test compares Microsoft's portal.office.com report of 30 days
 
-Sum the columns for Team Chat Message Count,	Private Chat Message Count,	Call Count,	Meeting Count,
+Download the per user 30 usage excel report from https://portal.office.com/adminportal/home#/reportsUsage/TeamsUserActivity
 
-The file name gives you the time you pulled the reprot. The column 1 gives you the date Microsoft say the data is up to.
+Sum the columns for Team Chat Message Count, Private Chat Message Count, Call Count, Meeting Count. 
 
-Wait until 48 hours later for the data to come through the graph API and into SQL, and perform the SQL query that will perform the same date range.
+Note meeting count is meetings attended per user.
 
-Input the date from column 1. The SQ query 
+The file name of the excel report gives you the time you pulled the report. Column 1 gives you the date up until which Microsoft have given you the usage data. These dates are different. Microsoft native reporting is also typically around 48 hours behind current date.
 
-The SQL only gives complete data - it checks for one record for the data after the data range, so we know the data range is complete. e.g. if you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th 
+Allow around a day for the same usage information to be collected and stored in TWA SQL. Then input the data from Column 1 into the SQL query and it will sum the same previous 30 days of usage information.
 
-GOT SQL
+The SQL query will only complete once SQL has some data for the day after this date. That way we know the data for the data in question and previous 30 days including that date has been reported by Microsoft Graph API. This avoids the test completing with partial data for that day.
 
-## Comparison Test 02 - Active User Count, Inactive User Count
+E.g. If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
 
-Using the same Portal 30 day user report, filter for any users with more than 0 activity in Team Chat Message Count,	Private Chat Message Count,	Call Count,	Meeting Count. Do not include other. Modality Systems Teamwork Analytics does not define "other" as active.
+SQL is complete - LINK
 
-Note active are always going to be licenced and inactive will also be licened but inactive. Un licenced users are not counted.
+## Comparison Test 02 - Active User Count
 
-Sum the excel user list.
+This test compares Microsoft's portal.office.com report of active users for the last 30 days to TWA SQL.
 
-Input the SQL with the same column 1 date. Check the sum of users 
+Download the per user 30 usage excel report from https://portal.office.com/adminportal/home#/reportsUsage/TeamsUserActivity
+
+Microsoft define "active" as having performed at least one of the of the following for the period: Team Chat Message, Private Chat Message, Call, Meeting Attended, "Has Other Action". 
+
+Has other action includes loading and minimising the Teams client. Modality Systems do not consider this real activity so do not count this as "active".
+
+To get a count of active users count from excel
+
+- Filter for contains 0 for Team Chat Message, Private Chat Message, Call, Meeting Attended
+- Delete all these rows with 0 usage for all those features
+- Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
 
 Got SQL
 
-## Comparison Test 03- Total Team Information (Total Teams, Private Teams, Public Teams, "hidden", Archived Teams)
+## Comparison Test 03 - Sum Team Information - PowerShell
+
+Total Teams, Private Teams, Public Teams, "hidden", Archived Teams
 
 Run the PowerShell Query. It will output with a date stamp. 48 hours later perform the SQL query. Compare numbers
 
+Compare to SQL 48 hours later.
+
 Got SQL
 
-## Comparison Test 04 - Pick specific Team and compare data (owners, memebers, guests, channel count)
+## Comparison Test 04 - Team spot check - Teams Client
 
-Pick a team and compare in Teams client (most fresh data source). Take a screenshot of the membersip status and channel count.
+Pick a team and compare in Teams client (most fresh data source). Take a screenshot of the membership status and channel count.
 
-48 hours later, run SQL comparison with team name
+Compare to SQL report 48 hours later
 
-## Comparison Test 05 - Pick specific user and compare team data (ownerships, memberships)
+## Comparison Test 05 - User number of ownerships and memberships spot check
 
 Pick a user or users and run the PowerShell
 
 48 hours later, run SQL comparison with team name
 
-## Comparison Test 06 - Licenced User Count
 
-PowerShell - still to do
 
-SQL got
-
-######
-
-# Testing the variance between Teamwork Analytics SQL and Power BI
+# Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
 
 Write one SQL query that gathers all key stats to compare to Power BI - consider refresh delay.
 
