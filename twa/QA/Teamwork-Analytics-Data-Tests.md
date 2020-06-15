@@ -2,33 +2,48 @@
 
 # Introduction
 
-Gathering data from Microsoft Graph API is complicated> "Graph" is not a single API there are different API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
+Gathering data from Microsoft Graph API is complicated. "Microsoft Graph" is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
 
-Modality Systems perform extensive tests to ensure data is gathered correctly, but there are also sometimes per tenant or envrionmental factors that can influence data quality (am under performing SQL server for example).
+Modality Systems perform extensive tests to ensure data is gathered correctly, but there can  sometimes per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
 
-Should you want to, here are a range of data validity quality assurance tests you can perform and an understanding of the results you should expect.
+Should you want to, here are a set of quality assurance tests you can perform to validate the data collected against Microsoft native reporting.
 
-## Understanding Data Collection and Microsoft API Lag
 
-Microsoft's Graph reporting API's, the one that gives us per user Teamns usage information (per user number of chats, team chats, meetings attended, calls made), is typicaly ~48 hours behind the current time. E.g. the users usage report for today will be avaialble in approximately 2 days.
 
-On top of the API being 48 hours behind, there is a time over head to collect the data and put it into SQL (this is variable depending on the number of users in your teant from as little as an hour to ~24 hours for 300,000 users).
+## Understanding Graph API Data Collection and Microsoft Data Lag
 
-There is a third time overhead, which is Power BI gathering information from SQL into the Power BI reports. This is typcially done at scheduled times throught the day (customer confgure this).
+## Per UPN Microsoft Teams user usage reports
 
-The Graph API that gives us "team" information  (team names, memebers, guests, owners) also has a delay. typically less than 48 hours, but the same API to SQL and SQL to Power BI delay exists.
+Microsoft's Graph reporting API endpoints, the API endpoints that gives per user Microsoft Teams usage information (E.g. for each UPN the number of private chats, team chats, meetings attended and calls made for a period) are typically ~48 hours behind the current time.
+
+Therefore data collected from the API on 15th of the month will reflect user usage up to 13th of the month.
+
+There are two other time overheads to consider when comparing reporting data:
+
+- The time is takes to collect the data a and put it into SQL. This is variable depending on the number of users/amount of data to collect. It can be as little as an hour to ~24 hours for 300,000 users.
+
+- The delay between data inbeing in SQL and being reported on in PowerBI.com reports. Typically we recommend regular scheduled updates of Power BI data throughout the day. PowerBI.com reports on cached data, it is not a live report from the SQL database.
+
+## Collaboration Team information - Team name, owners, members, guests
+
+The Graph API that gives us "team" information  (team names, members, guests, owners) also has a delay. typically less than 48 hours, but the same API to SQL and SQL to Power BI delay exists.
+
+## How API data delay impacts data testing
 
 When testing for data accuracy it is important to take these delays into account.
 
 Below we have outlined some useful checks you can perform to validate data is accurate.
 
-There are two types of test. Controlled Tests allow you to completely control the data and make an exact comparison. Comparison tests compare Microsoft reports to Teamwork Analyitcs SQL data and Power BI reports, due to variables on how Microsoft present the data this can be harder to compare.
+There are two types of test. 
 
-We have defined the best apporaches to comparison but welcome any feedback.
+- **Control Tests** allow you to completely control the variables and make an exact comparison.
+- **Data Comparison Tests** compare Microsoft native reports to Teamwork Analytics SQL data and Power BI reports, due to variables on how Microsoft present the data this can be harder to compare.
+
+We have defined the best approaches to comparison but welcome any feedback.
 
 # Testing the variance between Microsoft Native Reporting and Teamwork Analytics SQL Database
 
-## Controlled Tests - Per Team Information (Owners, members, guests, channel count)
+## Control Tests - Per Team Information (Owners, members, guests, channel count)
 
 Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in SQL and Power BI. This will  mean setting them up and checking them 72 hours later
 
