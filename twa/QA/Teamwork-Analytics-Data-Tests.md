@@ -1,4 +1,7 @@
 
+
+# Introduction
+
 Gathering data from Microsoft Graph API is complicated> "Graph" is not a single API there are different API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
 
 Modality Systems perform extensive tests to ensure data is gathered correctly, but there are also sometimes per tenant or envrionmental factors that can influence data quality (am under performing SQL server for example).
@@ -40,7 +43,7 @@ From here variables you could change
   - add or remeove members or owners
   - delete team
   - change team from public to private
-  
+
 Please write down changes and date of change.
 
 ## Comparison Test 01 - Total User usage data (total chat messages, team messages, calls, meetings attended)
