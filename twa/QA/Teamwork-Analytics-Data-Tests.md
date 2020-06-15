@@ -164,6 +164,80 @@ Total Teams, Private Teams, Public Teams, "hidden", Archived Teams
 
 Run the PowerShell Query. It will output with a date stamp. 48 hours later perform the SQL query. Compare numbers
 
+```powershell
+
+
+# Use script at your own risk
+
+# Define a new object to gather output
+$OutputCollection=  @()
+
+Write-Verbose "Getting Team Names and Details"
+$teams = Get-Team 
+
+$Archived = $teams | Where Archived -Match True
+
+$NonArchived = $teams | Where Archived -Match False
+
+write-host ""
+Write-Host "Total Teams count is $($teams.Count)"
+Write-Host ""
+Write-host "Archieved Teams count is $($Archived.Count)"
+write-host ""
+Write-Host "Non Archived Teams count is $($NonArchived.Count)"
+write-host ""
+Write-Host "Private Teams count is $($NonArchived.Count)"
+write-host ""      
+Write-Host "Public Teams count is $($NonArchived.Count)"
+write-host ""   
+Write-Host "Private HiddenMembership Teams count is $($NonArchived.Count)"
+write-host ""                    
+
+$teams | ForEach-Object {
+
+    Write-host "Getting details for Team $($_.DisplayName)"
+
+    # Calculate Description word count
+                    
+    $DescriptionWordCount = $null
+    $DescriptionWordCount = ($_.Description | Out-String | Measure-Object -Word).words
+
+    #Get channel details
+
+    $Channels = $null
+    $Channels = Get-TeamChannel -GroupId $_.GroupID
+    $ChannelCount = $Channels.count
+
+    # Get Owners, members and guests
+
+    $TeamUsers = Get-TeamUser -GroupId $_.GroupID
+                    
+    $TeamOwnerCount = ($TeamUsers | Where-Object {$_.Role -like "owner"}).count
+    $TeamMemberCount = ($TeamUsers | Where-Object {$_.Role -like "member"}).count
+    $TeamGuestCount = ($TeamUsers | Where-Object {$_.Role -like "guest"}).count
+
+    # Put all details into an object
+
+    $output = New-Object -TypeName PSobject 
+
+    $output | add-member NoteProperty "DisplayName" -value $_.DisplayName
+    $output | add-member NoteProperty "Description" -value $_.Description
+    $output | add-member NoteProperty "DescriptionWordCount" -value $DescriptionWordCount
+    $output | add-member NoteProperty "Visibility" -value $_.Visibility
+    $output | add-member NoteProperty "Archived" -value $_.Archived
+    $output | Add-Member NoteProperty "ChannelCount" -Value $ChannelCount
+    $output | Add-Member NoteProperty "OwnerCount" -Value $TeamOwnerCount
+    $output | Add-Member NoteProperty "MemberCount" -Value $TeamMemberCount
+    $output | Add-Member NoteProperty "GuestCount" -Value $TeamGuestCount
+    $output | add-member NoteProperty "GroupId" -value $_.GroupId
+
+    $OutputCollection += $output
+    }
+
+    # Output collection
+    $OutputCollection
+```
+
 Compare to SQL 48 hours later.
 
 ### Validation SQL Query
@@ -244,6 +318,63 @@ AND		LOWER(t.DisplayName) = LOWER(@TeamName)
 
 Pick a user or users and run the PowerShell
 
+```powershell
+
+# Use Script at your own risk
+
+# Simple per user Ownership and Membership report
+
+# Connect to Microsoft Teams with PowerShell before running this script
+
+#input correct user UPN
+$user = "peter.test@modalitysystems.com"
+
+# Define a new object to gather output
+$OutputCollection=  @()
+
+$TeamsUserIsIn = Get-Team -User $user
+
+Foreach ($team in $TeamsUserIsIn)
+    {
+    
+    $ownersandmembers = Get-TeamUser -GroupId $($team.GroupID)
+
+    $userownerormember = $ownersandmembers | Where-Object {$_.User -eq $user}
+
+    write-host ""
+    $team.DisplayName
+    $userownerormember
+    write-host ""
+
+                    $output = New-Object -TypeName PSobject 
+
+                    $output | Add-Member NoteProperty "User" -Value $($userownerormember.User)
+                    $output | Add-Member NoteProperty "Role" -Value $($userownerormember.Role)
+                    $output | Add-Member NoteProperty "TeamDisplayName" -Value $($team.DisplayName)
+                    $output | Add-Member NoteProperty "TeamGroupID" -Value $($team.GroupId)
+                    $output | Add-Member NoteProperty "TeamArchived" -Value $($team.Archived)
+
+                    $OutputCollection += $output
+
+    }
+
+$NumberofTeamsWhereMember = $OutputCollection | Where-Object {$_.Role -eq "member"}
+$NumberofTeamsWhereOwner = $OutputCollection | Where-Object {$_.Role -eq "owner"}
+
+$NumberofTeamsWhereMemberArchived = $OutputCollection | Where-Object {$_.Role -eq "member" -and $_.TeamArchived -eq "False"}
+$NumberofTeamsWhereOwnerArchived = $OutputCollection | Where-Object {$_.Role -eq "owner" -and $_.TeamArchived -eq "False"}
+
+
+Write-host ""
+Write-Host "$user is owner of $($NumberofTeamsWhereOwner.Count) Teams including Archived Teams"
+Write-Host "$user is member of $($NumberofTeamsWhereMember.Count) Teams including Archived Teams"
+
+Write-host ""
+Write-Host "$user is owner of $($NumberofTeamsWhereOwnerArchived.Count)  Archived Teams"
+Write-Host "$user is member of $($NumberofTeamsWhereMemberArchived.Count) Archived Teams"
+
+```
+
 48 hours later, run SQL comparison with team name
 
 ### Validation SQL Query
@@ -277,7 +408,7 @@ JOIN	dbo.Teams t on tu.TeamId = t.Id
 WHERE	tu.Deleted = 0
 AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
 ```
->NOTE: This query returns two result sets, one a summary, and the other a list of team membererships
+>NOTE: This query returns two result sets, one a summary, and the other a list of team memberships
 
 # Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
 
