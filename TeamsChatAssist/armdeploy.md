@@ -51,6 +51,16 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    > The name of the Web App Bot is the Azure Application ID you entered in step 2. The other resources have a suffix of the ResourceGroup ID (not visible in Microsoft Azure Portal).
 
+1. Click on the newly created App Service, copy the value in the URl field located near the top right of the screen. Make sure you keep hold of this value as you will need it later.
+
+1. Go to your Application Registration, Azure Active Directory -> App registrations -> Teams Chat Assist Bot -> Authentication and click Add a Platform, then click Web
+
+   ![Add web platform](images/AddPlatform.png)
+
+1. Under Redirect URI enter the following **AppServiceUrl**/agent/authoriseResponse, where **AppServiceUrl** is the url that you took a note of earlier from the App Service. Check the ID tokens box then click Configure. Click Save.
+
+   ![Add web platform](images/AddAuthoriseResponseRedirectUrl.png)
+
 1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
    > If your company uses AD FS then you might have trouble signing into Azure Storage Explorer so try:
