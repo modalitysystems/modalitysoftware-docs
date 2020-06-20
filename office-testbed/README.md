@@ -1,6 +1,6 @@
 # Office Test Bed ARM Deployment
 
-Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based on a selectable set of Windows/Office versions and starts the required resources in your Azure subscription.
+Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based on a selectable set of Windows/Office versions within your Azure subscription.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fofficedeploy.blob.core.windows.net%2Fdeploy%2FmainTemplate.json" target="_blank">
   <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure" style="max-width:100%;">
@@ -10,8 +10,6 @@ Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based o
 </a>
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
-
-This ARM Template will install resources in your Azure tenant. The template will deploy the following resources:
 
 # Windows Size
 
@@ -24,9 +22,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 # Windows Version
 
-Professional or Enterprise
-
-  ![Windows](images/windows.png)
+  ![Windows](images/windows-versions.png)
 
 # Windows Edition
 
@@ -50,7 +46,7 @@ Choose to install Teams 64bit or Skype for Business
 - SFBO
 - SFBS
 
-> SFBO and SFBS installs the same but the name of the VM is different
+> SFBO and SFBS installs are the same but the name of the VM is different
 
 # Office Bitage
 
