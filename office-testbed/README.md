@@ -11,6 +11,8 @@ Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based o
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
 
+> Deployment time varies but should take about 20 minutes. If you include Visual Studio then it should take about 40 minutes.
+
 # Windows Size
 
 | Size             | Specification                   | Monthly Cost [Unless De-allocated] |
