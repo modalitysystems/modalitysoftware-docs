@@ -32,10 +32,10 @@ Professional or Enterprise
 
 Delivered by C2R installer 32/64 bit
 
-Office 365 
-Office 2019
-Office 2016
-Office 2013
+- Office 365 
+- Office 2019
+- Office 2016
+- Office 2013
 
 Choose to install Teams 64bit or Skype for Business
 
@@ -51,8 +51,8 @@ This is the update ring that Office 365 installations are put on. Microsoft have
 
 Installed by chocolatey
 
-2017 Enterprise
-2019 Enterprise
+- 2017 Enterprise
+- 2019 Enterprise
 
 # Azure DevOps Deployment Group
 
