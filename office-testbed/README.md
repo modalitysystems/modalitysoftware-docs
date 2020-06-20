@@ -13,14 +13,14 @@ Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based o
 
 This ARM Template will install resources in your Azure tenant. The template will deploy the following resources:
 
-| Service Type         | Description                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------------ |
-| Virtual machine      | [DEFAULT] D2s_v3, 2 vCPUS, 8GiB RAM, 3200 IOPS                                                         |
-| Network interface    | Allows VM to connect to network/internet                                                               |
-| Disk                 | For OS, Premium SSD, 127GiB                                                                            |
-| Public IP Address    | Allows for remote access to Virtual network                                                            |
-| Virtual network      | The virtual network that the virtual machine sits within                                               |
-| Network Security group | Firewall that protects access to the virtual network                                                 |
+# Windows Size
+
+| Size             | Specification                   | Monthly Cost [Unless De-allocated] |
+| ---------------- | ------------------------------- | -----------------------------------|
+| Standard_D2s_v3  | 2 vCPUS, 8GiB RAM, 3200 IOPS    | £63.11                             |
+| Standard_D4s_v3  | 4 vCPUS, 16GiB RAM, 6400 IOPS   | £126.33                            |
+| Standard_D8s_v3  | 8 vCPUS, 32GiB RAM, 12800 IOPS  | £252.45                            |
+| Standard_D16s_v3 | 16 vCPUS, 64GiB RAM, 25600 IOPS | £504.90                            |
 
 # Windows Version
 
@@ -72,4 +72,4 @@ Installed by chocolatey
 
 # Azure DevOps Deployment Group
 
-Configure the VM to be part of an Azure DevOps Deployment group
+Configure the VM to be part of an Azure DevOps Deployment group. Leave defaults if not required.
