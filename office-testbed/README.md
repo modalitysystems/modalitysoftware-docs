@@ -22,24 +22,40 @@ This ARM Template will install resources in your Azure tenant. The template will
 | Virtual network      | The virtual network that the virtual machine sits within                                               |
 | Network Security group | Firewall that protects access to the virtual network                                                 |
 
-# Windows Selection
+# Windows Version
 
 Professional or Enterprise
 
   ![Windows](images/windows.png)
 
-# Office Selection
+# Windows Edition
 
-Delivered by C2R installer 32/64 bit
+- Enterprise
+- Professional
+
+# Office Version
+
+Delivered by C2R installer
 
 - Office 365 
 - Office 2019
 - Office 2016
 - Office 2013
 
+# Office Focus
+
 Choose to install Teams 64bit or Skype for Business
 
-> SFBO and SFBS install the same skype but the name of the VM is different
+- Teams
+- SFBO
+- SFBS
+
+> SFBO and SFBS installs the same but the name of the VM is different
+
+# Office Bitage
+
+- 64 bit
+- 32 bit
 
 # Office Channel
 
