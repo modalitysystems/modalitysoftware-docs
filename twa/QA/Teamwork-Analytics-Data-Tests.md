@@ -2,9 +2,9 @@
 
 # Introduction
 
-Gathering data from Microsoft Graph API is complicated. "Microsoft Graph" is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
+Gathering data from Microsoft Graph API is complicated. "Microsoft Graph" is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information etc.). The different endpoints return data differently and have different throttling limits.
 
-Modality Systems perform extensive tests to ensure data is gathered correctly, but there can  sometimes per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
+Modality Systems perform extensive tests to ensure data is gathered correctly, but there can sometimes per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
 
 Should you want to, here are a set of quality assurance tests you can perform to validate the data collected against Microsoft native reporting.
 
