@@ -180,9 +180,8 @@ Has other action includes loading and minimising the Teams client. Modality Syst
 
 To get a count of active users count from excel
 
-- Filter for contains 0 for Team Chat Message, Private Chat Message, Call, Meeting Attended
-- Delete all these rows with 0 usage for all those features
-- Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
+- We need to remove all users with 0 count for Team Chat Message and 0 count for Private Chat Message, and 0 count for Calls, and 0 count for meetings Meeting Attended - these users have 0 for all 4 activity types so are not active
+- The easiest way to do this is to add a colum to sum all 4 and if the sum is greater than 0, that is your count of active users
 
 #### Validation SQL Query - Comparison Test 02
 
