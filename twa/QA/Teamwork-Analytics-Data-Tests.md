@@ -2,52 +2,68 @@
 
 # Introduction
 
-Gathering data from Microsoft Graph API is complicated. "Microsoft Graph" is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
+Gathering data from Microsoft Graph API is complicated. **Microsoft Graph** is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
 
-Modality Systems perform extensive tests to ensure data is gathered correctly, but there can  sometimes per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
+Modality Systems perform extensive tests to ensure data is gathered correctly, but there can sometimes be per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
 
 Should you want to, here are a set of quality assurance tests you can perform to validate the data collected against Microsoft native reporting.
 
 
 
-# Understanding Graph API Data Collection and Microsoft Data Lag
+# Understanding Graph API Data Collection and Data Lag
 
-## Per UPN Microsoft Teams user usage reports
+Each data type is collected differently to optimise collection speed and reliability. Here is how each data type is collected.
 
-Microsoft's Graph reporting API endpoints, the API endpoints that gives per user Microsoft Teams usage information (E.g. for each UPN the number of private chats, team chats, meetings attended and calls made for a period) are typically ~48 hours behind the current time.
+## Microsoft Teams individual per user usage reports
 
-Therefore data collected from the API on 15th of the month will reflect user usage up to 13th of the month.
+Microsoft's Graph reporting API endpoint, is the API endpoint that gives per user Microsoft Teams usage information. This is the **number of private chats, team chats, meetings attended and calls made** for a each day. This API typically reports usage ~48 hours behind the current time.
 
-There are two other time overheads to consider when comparing reporting data:
-
-- The time is takes to collect the data a and put it into SQL. This is variable depending on the number of users/amount of data to collect. It can be as little as an hour to ~24 hours for 300,000 users.
-
-- The delay between data inbeing in SQL and being reported on in PowerBI.com reports. Typically we recommend regular scheduled updates of Power BI data throughout the day. PowerBI.com reports on cached data, it is not a live report from the SQL database.
+Therefore data collected from the API on 15th of the month will typically reflect user usage up to 13th of the month. Occasionally the API will be further behind.
 
 ## Collaboration Team information - Team name, owners, members, guests
 
-The Graph API that gives us "team" information  (team names, members, guests, owners) also has a delay. typically less than 48 hours, but the same API to SQL and SQL to Power BI delay exists.
+The Microsoft Teams Graph API endpoint that gives us "team" information  (team names, members, guests, owners) also has a delay. typically less than 48 hours.
 
-## How API data delay impacts data testing
+## Channel Messages
 
-When testing for data accuracy it is important to take these delays into account.
+Teamwork Analytics reports on all channel messages including threads, replies, @ mentions, reactions. The Teamwork Analytics database does not hold actual message content, but just metadata for each channel message. This allows Teamwork Analytics to give deep reporting on channel activity.
+
+This data is slowest to collect. On first install Teamwork Analytics has to read and report on every channel message in every channel in every team. This initial pull time is relative to the amount of data. From hours to days. 
+
+After this initial pull, we move to the Microsoft delta API which gives the change since the last data collection and is much faster.
+
+## Refresh time from SQL to Power BI
+
+There are two other time overheads to consider when comparing reporting data:
+
+- The time is takes to collect the data a and put it into SQL. This is usually not slower than the throttle speed of the Microsoft Graph API, but there is an overhead to be accounted for.
+
+- The time between data being in SQL and PowerBI.com reports being refreshed with the latest data. Typically we recommend regular scheduled updates of Power BI data throughout the day. PowerBI.com reports on cached data, it is not a live report from the SQL database.
+
+## How data delay impact data testing
+
+When testing data quality, the delays between Graph, SQL and Power BI refreshes make it impossible to test directly from Microsoft to Power BI. Therefore the recommended approach is to break testing into two sets of tests
+
+Comparing Microsoft to Teamwork Analytics SQL, and, separately, comparing Teamwork Analytics SQL to Power BI. 
 
 Below we have outlined some checks you can perform to validate data is accurate.
 
 There are two types of test. 
 
 - **Control Tests** allow you to completely control the variables and make an exact comparison.
-- **Data Comparison Tests** compare Microsoft native reports to Teamwork Analytics SQL data and Power BI reports, due to variables on how Microsoft present the data this can be harder to compare.
+- **Data Comparison Tests** compare Microsoft native reports to Teamwork Analytics SQL data and Teamwork Analytics SQL to Teamwork Analytics Power BI reports.
 
 We have defined the best approaches to comparison but welcome any feedback.
 
 It is recommended to Perform all SQL queries from an account with Read Only access and all PowerShell with Global Reader (read only access) to avoid any risk of data or config changes.
 
+
+
 # Comparing Microsoft Native Reporting and Teamwork Analytics SQL Database
 
 These tests focus on comparing Microsoft native reporting/data to Teamwork Analytics SQL and ignore any variables of Power BI reports or Power BI refresh time.
 
-## Control Test - Team Information (Owners, members, guests, channel count)
+## MSFT-SQL Control Tests - Team Information (Owners, members, guests, channel count)
 
 Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in SQL and Power BI. This will  mean setting them up and checking them 72 hours later
 
@@ -67,7 +83,7 @@ Please write down changes and date of change.
 
 After 48 hours you can check the data is the same in the database with this SQL query
 
-#### Validation SQL Query - Control Test Team Information
+#### Validation SQL Query - MSFT-SQL Control Test Team Information
 
 ```
 -- Version Number do not change
@@ -118,7 +134,7 @@ AND		LOWER(t.DisplayName) = LOWER(@TeamName)
 
 
 
-## Comparison Test 01 - Tenant Total user usage for 30 days
+## MSFT-SQL Comparison Test 01 - Tenant Total user usage for 30 days
 
 This test compares Microsoft's portal.office.com report of 30 days
 
@@ -136,7 +152,7 @@ The SQL query will only complete once SQL has some data for the day after this d
 
 E.g. If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
 
-#### Validation SQL Query - Comparison Test 01
+#### Validation SQL Query - MSFT-SQL Comparison Test 01
 
 ```sql
 -- Version Number do not change
@@ -168,7 +184,7 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 
 
 
-## Comparison Test 02 - Active User Count
+## MSFT-SQL Comparison Test 02 - Active User Count
 
 This test compares Microsoft's portal.office.com report of active users for the last 30 days to TWA SQL.
 
@@ -184,7 +200,7 @@ To get a count of active users count from excel
 - Delete all these rows with 0 usage for all those features
 - Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
 
-#### Validation SQL Query - Comparison Test 02
+#### Validation SQL Query - MSFT-SQL Comparison Test 02
 
 ```sql
 -- Version Number do not change
@@ -215,7 +231,7 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 
 
 
-## Comparison Test 03 - Sum Team Information - PowerShell
+## MSFT-SQL Comparison Test 03 - Sum Team Information - PowerShell
 
 Total Teams, , Archived Teams, Non-Achieved Teams, Private Teams, Public Teams, Private Hidden
 
@@ -253,7 +269,7 @@ write-host ""
 
 Compare to SQL 48 hours later.
 
-#### Validation SQL Query - Comparison Test 03
+#### Validation SQL Query - MSFT-SQL Comparison Test 03
 
 ```sql
 -- Version Number do not change
@@ -272,13 +288,13 @@ WHERE	Deleted = 0
 
 
 
-## Comparison Test 04 - Team spot check - Teams Client
+## MSFT-SQL Comparison Test 04 - Team spot check - Teams Client
 
 Pick a team and compare in Teams client (most fresh data source). Take a screenshot of the membership status and channel count.
 
 Compare to SQL report 48 hours later
 
-#### Validation SQL Query - Comparison Test 04
+#### Validation SQL Query - MSFT-SQL Comparison Test 04
 
 ```sql
 -- Version Number do not change
@@ -329,7 +345,7 @@ AND		LOWER(t.DisplayName) = LOWER(@TeamName)
 
 >NOTE: This query returns two result sets, one a summary, and the other a list of members
 
-## Comparison Test 05 - User number of ownerships and memberships spot check PowerShell
+## MSFT-SQL Comparison Test 05 - User number of ownerships and memberships spot check PowerShell
 
 Pick a user or users and run the PowerShell
 
@@ -392,7 +408,7 @@ Write-Host "$user is member of $($NumberofTeamsWhereMemberArchived.Count) Archiv
 
 48 hours later, run SQL comparison with team name
 
-#### Validation SQL Query - Comparison Test 05
+#### Validation SQL Query - MSFT-SQL Comparison Test 05
 
 ```sql
 -- Version No do not change
@@ -427,6 +443,112 @@ AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
 
 
 
-# FUTURE - Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI - FUTURE
+# Comparing Teamwork Analytics SQL and Teamwork Analytics Power BI
 
-Future Tests to compare SQL numbers to report numbers
+## SQL-PowerBI Control Tests - Team Information (Owners, members, guests, channel count)
+
+Create at least 2 control teams and once setup, do not change any variables until you have confirmed they are correct in Power BI. This will  mean setting them up and checking them 72 hours later
+
+Example Starting Point:
+
+Create a Private Teams with 5 channels, 2 Owners and 2 members
+
+Create a Public Team with 3 Channels, 1 owner and 1 member
+
+From here variables you could change
+
+  - add or remove channels
+  - add or remove members or owners
+  - delete team
+  - change team from public to private
+
+Please write down changes and date of change.
+
+After 48 hours you can check the data is the same in the database with this SQL query
+
+#### Validation SQL Query - SQL-PowerBI Control Test Team Information
+
+```
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+--Change the Team Name here (note it has to be exact to match the database)
+declare @TeamName nvarchar(400) = 'Team Display Name'
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,Visibility
+		,IsArchived
+		,(SELECT COUNT(*) FROM dbo.Channels c where c.TeamId = t.Id) as Channels
+		,SUM(CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Owners
+		,SUM(CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end) as Members
+		,SUM(CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end) as Guests
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+Group By
+	t.Id
+	,DisplayName
+	,Visibility
+	,IsArchived
+
+Select	t.Id as TeamId
+		,DisplayName as TeamName
+		,u.UserPrincipalName
+		,CASE WHEN tu.UserType = 'Owner' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsOwner
+		,CASE WHEN tu.UserType = 'Member' AND CHARINDEX('#EXT#', u.UserPrincipalName) = 0 then 1 else 0 end as IsMember
+		,CASE WHEN  CHARINDEX('#EXT#', u.UserPrincipalName) > 0 then 1 else 0 end as IsGuest
+		,GETUTCDATE() as [ExecutionDate]
+		,@VersionNo as VersionNo
+FROM	dbo.TeamUsers tu
+JOIN	dbo.Users u on tu.UserId = u.Id
+JOIN	dbo.Teams t on tu.TeamId = t.Id
+WHERE	tu.Deleted = 0
+AND		u.Deleted = 0
+AND		u.[Enabled] = 1
+AND		LOWER(t.DisplayName) = LOWER(@TeamName)
+```
+
+
+
+## SQL-PowerBI Comparison Test 01 - Active User Count
+
+Power BI report TU9627 Total Active Users reports on total active users, daily, weekly and Monthly. 
+
+You can compare the number of users in the report to the TWASQL with this SQL query
+
+#### Validation SQL Query - Comparison SQL-PowerBI Test 01 PREVIEW
+
+```sql
+-- Version Number do not change
+declare @VersionNo nvarchar(20) = '2020-06-11'
+
+-- Configure the Date Value here;
+declare @30DaysUpToDate date = '2020-06-08'
+
+
+IF(@30DaysUpToDate > dateadd(day, -1, (SELECT MAX(ReportDate) as LatestDate from [dbo].[DailyActivityUserDetails])))
+	RAISERROR('You have selected a date more recent than the data collected by Teamwork Analytics', 18, 1)
+
+
+SELECT		@30DaysUpToDate As ReportDate
+			,count(distinct D.UserPrincipalName) as ActiveUsers
+			,count(distinct (CASE WHEN D.UserPrincipalName is Null then U.UserPrincipalName Else Null End)) as InActiveUsers
+			,GETUTCDATE() as [ExecutionDate]
+			,@VersionNo as VersionNo
+FROM		[dbo].Users u
+JOIN		[dbo].[TeamsUserLicences] l on l.UserId = u.Id 
+				AND l.CapabilityStatus = 'Enabled' 
+				AND l.Deleted = 0
+LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrincipalName 
+				AND u.Deleted = 0 
+				AND D.ReportDate > dateadd(day, -30,@30DaysUpToDate) 
+				AND D.ReportDate <= @30DaysUpToDate 
+```
+
