@@ -37,13 +37,15 @@ Microsoft define other as...
 
 ## Team Users vs Owners vs Guests
 
-Users - is the sum of owners, members and guests
+*Users* - are on tenant users, they may be members of owners of a team (this count does not include guests)
 
-Owners is explicitly owners not members or guests
+*Owners* is explicitly owners not members or team guests
 
-Members - is explicitly members (not owners of guests)
+*Members* - is explicitly members (not owners of guests)
 
-Guests is explicitly guests not owners or members
+*Guests* is explicitly guests not tenant users. These are teams guests not AD guests.
+
+We also collect all AD guests
 
 ## Total Teams and Archived Teams
 

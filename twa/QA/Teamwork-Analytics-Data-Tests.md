@@ -2,6 +2,7 @@
 
 # Introduction
 
+
 Gathering data from Microsoft Graph API is complicated. **Microsoft Graph** is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information). The different endpoints return data differently and have different throttling limits.
 
 Modality Systems perform extensive tests to ensure data is gathered correctly, but there can sometimes be per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
@@ -12,6 +13,13 @@ Should you want to, here are a set of quality assurance tests you can perform to
 
 # Understanding Graph API Data Collection and Data Lag
 
+Gathering data from Microsoft Graph API is complicated. "Microsoft Graph" is not a single API; there are different Graph API endpoints for different data types (per user usage information, team information, file information etc.). The different endpoints return data differently and have different throttling limits.
+
+Modality Systems perform extensive tests to ensure data is gathered correctly, but there can sometimes per tenant or environmental factors that can influence quality and completeness of data returned. Examples might be a specific tenant issue or your organisations SQL, collector VM or proxy or firewall having issues.
+
+Should you want to, here are a set of quality assurance tests you can perform to validate the data collected against Microsoft native reporting.
+
+# Understanding Graph API Data Collection and Microsoft Data Lag
 Each data type is collected differently to optimise collection speed and reliability. Here is how each data type is collected.
 
 ## Microsoft Teams individual per user usage reports
@@ -150,7 +158,7 @@ Allow around a day for the same usage information to be collected and stored in 
 
 The SQL query will only complete once SQL has some data for the day after this date. That way we know the data for the data in question and previous 30 days including that date has been reported by Microsoft Graph API. This avoids the test completing with partial data for that day.
 
-E.g. If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
+If you ask for ask for 30 days backwards from 17th, query will only work if we have at least some records for the 18th.
 
 #### Validation SQL Query - MSFT-SQL Comparison Test 01
 
@@ -196,9 +204,8 @@ Has other action includes loading and minimising the Teams client. Modality Syst
 
 To get a count of active users count from excel
 
-- Filter for contains 0 for Team Chat Message, Private Chat Message, Call, Meeting Attended
-- Delete all these rows with 0 usage for all those features
-- Sum the remaining user count - Sum the UPNs column. The number of rows is your number of active users
+- We need to remove all users with 0 count for Team Chat Message and 0 count for Private Chat Message, and 0 count for Calls, and 0 count for meetings Meeting Attended - these users have 0 for all 4 activity types so are not active
+- The easiest way to do this is to add a colum to sum all 4 and if the sum is greater than 0, that is your count of active users
 
 #### Validation SQL Query - MSFT-SQL Comparison Test 02
 
@@ -227,6 +234,7 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 				AND u.Deleted = 0 
 				AND D.ReportDate > dateadd(day, -30,@30DaysUpToDate) 
 				AND D.ReportDate <= @30DaysUpToDate 
+				AND D.TeamChatMessageCount + D.PrivateChatMessageCount + D.CallCount + D.MeetingCount > 0
 ```
 
 

@@ -27,6 +27,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 > Note: Windows updates, by default, are automatically managed by Azure, see [here](https://docs.microsoft.com/en-us/azure/automation/automation-update-management#windows) for details. We do not change any Windows Update settings, so if you require something different you will need to configure this manually post deployment.
 
+Pricing to run these Azure components in your tenant vary and are subject to change. [View the current price estimate](https://azure.com/e/3c58dcaaa4ee498d92ed80cbec706ea9).
+
 ## Installation
 
 1. Click on the 'Deploy to Azure' button above. You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.

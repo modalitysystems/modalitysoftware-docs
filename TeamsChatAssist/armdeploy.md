@@ -18,7 +18,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 | Service Type         | Description                                                                                            |
 | -------------------- | ------------------------------------------------------------------------------------------------------ |
 | Web App Bot          | S1 Standard                                                                                            |
-| Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalant                                          |
+| Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalent                                          |
 | Key Vault            | Securely stores Web App Bot Secret                                                                     |
 | SignalR Service      | 1 Unit, 1K Connections, 1M Messages per day                                                            |
 | Application Insights | Logs for Web App Bot and Web App Service                                                               |
@@ -28,7 +28,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Click on the ARM template link that was provided by us. You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
 
-   ![Custom deployment form](images/armDeployForm.png)
+   ![Custom deployment form](images/armDeployForm2.png)
 
 1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
 
@@ -38,10 +38,11 @@ This ARM Template will install resources in your Azure tenant. The template will
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see _Location_ below).
    - Settings
      - **Azure Application details** - Use the details you generated when [registering an application](applicationRegistration.md).
-     - **Name** - This is the name used for all components that get deployed and must be globally unique. **The name of your company would be a good choice** and will be apended with 'tcabot-'
-     - **Display Name** - This is the name of the Bot that your users will see
-     - **Location** - The geographical location of the Azure resources that will host Teams Chat Assist. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
-       > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
+     - **Bot Display Name** - This is the name of the Bot that your users will see
+     - **Environment Name** - This is the name of your environment and is used by Modality to help identify within logs when "Logs To Modality" is set to yes. **The name of your company would be a good choice**. Must be between 2 and 6 characters long and contain letters only.
+     - **Logs To Modality** - Defaults to Yes will send logging information to Modality for better troubleshooting
+     - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
+     - **Deploy Code** - For changes that require no updates to the Teams Chat Assist codebase, such as adding additional Bot instances, choose No. Otherwise stick with the default which is Yes
 
 1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teams Chat Assist.)
 
@@ -50,6 +51,16 @@ This ARM Template will install resources in your Azure tenant. The template will
    ![Resource Group](images/resourceGroup.png)
 
    > The name of the Web App Bot is the Azure Application ID you entered in step 2. The other resources have a suffix of the ResourceGroup ID (not visible in Microsoft Azure Portal).
+
+1. Click on the newly created App Service, copy the value in the URl field located near the top right of the screen. Make sure you keep hold of this value as you will need it later.
+
+1. Go to your Application Registration, Azure Active Directory -> App registrations -> Teams Chat Assist Bot -> Authentication and click Add a Platform, then click Web
+
+   ![Add web platform](images/AddPlatform.png)
+
+1. Under Redirect URI enter the following **AppServiceUrl**/agent/authoriseResponse, where **AppServiceUrl** is the url that you took a note of earlier from the App Service. Check the ID tokens box then click Configure. Click Save.
+
+   ![Add web platform](images/AddAuthoriseResponseRedirectUrl.png)
 
 1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
@@ -76,6 +87,22 @@ This ARM Template will install resources in your Azure tenant. The template will
    - Copy Thread ID from address bar as indicated above and paste into the ChannelConversationId property in the instance configuration table
 
 1. [Edit the InstanceConfigurations table as desired](TableStorageConfiguration.md)
+   
+## Applying Upgrades to Teams Chat Assist
+
+To apply an upgrade to Teams Chat Assist you would simply click on the "Deploy to Azure" button above and ensure that all options are the same as from the initial installation. By redeploying to the same resource group and subscription, you are in affect updating things that are different.
+
+## Adding additional Bot Instances
+
+Teams Chat Assist supports multiple Bot Instances for different workloads. Each Bot requires its own unique bot registration in a 1 to 1 relationship. Multiple Bot instances will all link to the same underlying infrastructure so updating the codebase for 1 Bot Instance will upgrade all. To add additional Bot Instances simply click on the "Deploy to Azure" button above and specify the new:
+
+  - App ID
+  - App Secret
+  - Bot Display Name
+  
+> Set Deploy Code to No and ensure that all other values match the initial deployment
+
+> When applying updates to environments with multiple Bot Instances, you can use the App ID, App Secret, Bot Display Name of any of your Bot Instances
 
 ## Bot Manifest
 

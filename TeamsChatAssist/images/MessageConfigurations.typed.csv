@@ -10,7 +10,7 @@ xxx-your-app-regsitarion-application-id-xxx,Card_AgentNotSignedIn,"You are not c
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_AskedBy,Asked by:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Fact_Question,Question:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_AgentSearchCancelled_Message_Cancelled,This question has been cancelled or expired.,Edm.String
-xxx-your-app-regsitarion-application-id-xxx,Card_AgentSignIn_ActionButton,Sign in,Edm.String
+xxx-your-app-regsitarion-application-id-xxx,Card_AgentSignIn_Action_Button,Sign in,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_AskedBy,Asked by:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_ConversationLog,Conversation Log:,Edm.String
 xxx-your-app-regsitarion-application-id-xxx,Card_ConversationFinished_Fact_Organisation,Organisation:,Edm.String
