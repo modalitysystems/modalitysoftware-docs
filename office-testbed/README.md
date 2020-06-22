@@ -83,7 +83,7 @@ Installed by chocolatey
 Installed by chocolatey
 
 - Chromium Edge
-- Google Chrome 83.0.4103.106
+- Google Chrome
 - Mozilla Firefox
 
 # Azure DevOps Deployment Group
