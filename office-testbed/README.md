@@ -67,7 +67,7 @@ All Office versions will install without a license, when you first load an offic
 
   ![Updates](images/office-license.png)
 
-If you only require short term use of Office that you can cancel the activation screen and you will be able to use all features of Office for 5 days.
+If you only require short term use of Office then you can cancel the activation screen and you will be able to use all features of Office for 5 days but a banner will appear on all products.
 
   ![Activate](images/office-activate.png)
 
