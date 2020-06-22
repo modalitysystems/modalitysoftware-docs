@@ -43,7 +43,9 @@ Microsoft define other as...
 
 *Members* - is explicitly members (not owners of guests)
 
-*Guests* is explicitly guests not tenant users
+*Guests* is explicitly guests not tenant users. These are teams guests not AD guests.
+
+We also collect all AD guests
 
 ## Total Teams and Archived Teams
 
