@@ -8,8 +8,6 @@ Modality Systems perform extensive tests to ensure data is gathered correctly, b
 
 Should you want to, here are a set of quality assurance tests you can perform to validate the data collected against Microsoft native reporting.
 
-
-
 # Understanding Graph API Data Collection and Microsoft Data Lag
 
 ## Per UPN Microsoft Teams user usage reports
@@ -210,6 +208,7 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 				AND u.Deleted = 0 
 				AND D.ReportDate > dateadd(day, -30,@30DaysUpToDate) 
 				AND D.ReportDate <= @30DaysUpToDate 
+				AND D.TeamChatMessageCount + D.PrivateChatMessageCount + D.CallCount + D.MeetingCount > 0
 ```
 
 
