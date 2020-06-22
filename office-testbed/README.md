@@ -61,13 +61,39 @@ This is the update ring that Office 365 installations are put on. Microsoft have
 
   ![Updates](images/update-channels.png)
 
+# Office License
+
+All Office versions will install without a license, when you first load an office product such as Word you should see an activation screen similar to this. If you sign in with an account that has an Office 365 license assigned then the version of office will change to Office 365. It will also consume one of the allowed client installs for that user up to a maximum of 5 devices. To avoid this scenario click **I don't want to sign in or create an account** and enter a product key from your visual studio subscription.
+
+  ![Updates](images/office-license.png)
+
+If you only require short term use of Office that you can cancel the activation screen and you will be able to use all features of Office for 5 days.
+
+  ![Activate](images/office-activate.png)
+
 # Visual Studio
 
 Installed by chocolatey
 
 - 2017 Enterprise
 - 2019 Enterprise
+  
+# Web Browsers
+
+Installed by chocolatey
+
+- Chromium Edge
+- Google Chrome 83.0.4103.106
+- Mozilla Firefox
 
 # Azure DevOps Deployment Group
 
-Configure the VM to be part of an Azure DevOps Deployment group. Leave defaults if not required.
+Configure the VM to be part of an Azure DevOps Deployment group. This will allow Azure DevOps pipelines to be able to interact with the VM. Leave defaults if not required.
+
+Azure DevOps Agent will install as a service by default. For scenarios such as running automated tests from a pipeline that require interactive access to the desktop:
+
+- Navigate to folder **C:\AzurePiplinesAgent_Extension**
+- Run script **autologin** to remove agent configuration
+- Run script **autologin** again and enter windows password to configure agent to run in interactive mode
+
+The VM should automatically restart then automatically login and start the agent
