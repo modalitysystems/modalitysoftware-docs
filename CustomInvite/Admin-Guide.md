@@ -129,6 +129,8 @@ Modality has made available an Enterprise ADMX file that can be added to your or
 directory. This allows enterprise configuration of the CustomInvite tool registry settings via a centrally managed
 group policy configuration.
 
+(/images/ADMX-template.png)
+
 # Enterprise Management
 
 ## Recommended approach: 
