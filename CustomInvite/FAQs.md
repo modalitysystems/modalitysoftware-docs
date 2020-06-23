@@ -153,7 +153,11 @@ here together with the workaround for the issue.
 
 **CustomInvite does not run if “Meeting” ribbon is not pinned**
 
-In Outlook, you may have your meeting ribbon unpinned. With the meeting ribbon unpinned, the CustomInvite tool will not run.
+In Outlook, you may have your meeting ribbon unpinned. 
+
+![ribbon unpinned](images/ribbon-unpinned.png "ribbon unpinned")
+
+With the meeting ribbon unpinned, the CustomInvite tool will not run.
 
 **Workaround:** Please pin the meeting ribbon in Outlook to ensure CustomInvite runs
 
