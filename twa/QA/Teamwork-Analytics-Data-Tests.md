@@ -574,3 +574,43 @@ LEFT JOIN	[dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrin
 				AND D.ReportDate <= @30DaysUpToDate 
 ```
 
+## SQL-PowerBI Comparison Test 02 - Sum Team Information, Active Teams, Inactive Teams
+
+Total Teams, , Archived Teams, Non-Achieved Teams, Private Teams, Public Teams, Private Hidden, Active, Inactive
+
+Active and Inactive are Modality definitions based on having a channel message or reaction within 30 days.
+
+Compare this to TG3115 Team Summary in Governance
+
+SQL TO BE EDITED TO ADD ACTIVE/INACTIVE
+
+```powershell
+# Use script at your own risk
+# Connect to Microsoft Teams PowerShell before running script
+
+# Define a new object to gather output
+$OutputCollection=  @()
+
+Write-Verbose "Getting Team Names and Details"
+$teams = Get-Team 
+
+$Archived = $teams | Where Archived -Match True
+
+$NonArchived = $teams | Where Archived -Match False
+
+write-host ""
+Write-Host "Total Teams count is $($teams.Count)"
+Write-Host ""
+Write-host "Archieved Teams count is $($Archived.Count)"
+write-host ""
+Write-Host "Non Archived Teams count is $($NonArchived.Count)"
+write-host ""
+Write-Host "Private Teams count is $($NonArchived.Count)"
+write-host ""      
+Write-Host "Public Teams count is $($NonArchived.Count)"
+write-host ""   
+Write-Host "Private HiddenMembership Teams count is $($NonArchived.Count)"
+write-host ""                    
+
+```
+
