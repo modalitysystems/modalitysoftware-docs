@@ -80,9 +80,11 @@ Add a TextField for each of the following RowKeys:
 - RecommendedMaxLength (Int32) = The recommended maximum length of input. If this number is exceeded, the field will advise of the recommended maximum length (yellow)
 - NativeMaxLength (Int32) = The maximum length of input. If this number is exceeded, the field will invalidate the form and advise of the maximum length (red).
 
-> For the 'name' field, the maximum value of NativeMaxLength is 245. If you have suffixes defined in the Template table, see below. The NativeMaxLength for the 'name' field must be less than the maximum length (245) minus the length of the longest suffix. For example a suffix with the maximum length of 10 would require a 'name' NativeMaxLength of less than 235 (245 - 10).
+> For the 'name' field, the largest NativeMaxLength supported is 237. As the maximum value supported by Microsoft is 245, minus the **External** suffix, which is 8 characters long.
 
-> For the 'description' field, the maximum value of NativeMaxLength is 1025.
+> If you have prefixes and/or suffixes defined in the [Template table](#template-table). The NativeMaxLength for the 'name' field must be less than or equal to the maximum length (245) minus the length of the longest prefix and the longest prefix, plus another 11 characters for the **External** suffix. For example a prefix with a length of 10 and a suffix with a length of 10 would require a 'name' NativeMaxLength of less than 214 (245 - 10 - 10 - 11).
+
+> For the 'description' field, the maximum value supported by Microsoft is 1025.
 
 - Validate (boolean) = This will enabled or disable the above validation rules for the Text Field.
 

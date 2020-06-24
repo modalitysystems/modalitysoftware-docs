@@ -59,13 +59,13 @@ This section details what each setting controls and how to configure it. Not all
 ### Prefix
 
 - The text that will be prepended to the start of the every team name created using the template.
-- The maximum prefix length is 10 characters.
+- Prefix characters are included in the overall **name** field length, which cannot exceed 245 characters. You should check that the prefix length and the suffix length, plus the [NativeMaxLength](TableStorageConfiguration.md#textfield-table) **name** field do not exceed 245 characters.
 
 ### Suffix
 
 - The text that will be appended to the end of every team name created using the template.
-- The maximum suffix length is of 10 characters long.
 - If the team can contain guests (controlled by the [IsExternal setting](##isexternal)), then the suffix _' - IsExternal'_ is appended after the suffix specified here.
+- Suffix characters are included in the overall **name** field length, which cannot exceed 245 characters. You should check that the suffix length and the prefix length, plus the [NativeMaxLength](TableStorageConfiguration.md#textfield-table) **name** field do not exceed 245 characters.
 
 ### IsExternal
 
