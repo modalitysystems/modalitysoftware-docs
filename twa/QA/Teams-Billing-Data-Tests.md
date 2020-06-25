@@ -92,12 +92,81 @@ A single row should be returned. Compare the data in this row with the data retu
 
 ## Comparing AD Licenses PowerShell to SQL
 
+This test is used to spot check that user license information is correctly imported. 
+
+Run the following PowerShell to list all assigned licenses for a specified user:
+
+```
+$userUPN="peter.test@modalitysystems.com"
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+
+```
+
+Run the following SQL, passing in the same user alias:
+
+```
+DECLARE $user varchar(100) = 'peter.test@modalitysystems.com'
+
+SELECT
+	us.Id AS UserId
+	,ms.ServicePlanId AS SkuId
+	,ms.ServicePlanName AS PartNumber
+	,us.[Date]
+	,us.AssignedFrom
+FROM
+	billing.[User] u
+	JOIN billing.UserSkusLog us on u.Id = us.UserId
+	JOIN billing.MicrosoftServicePlans ms ON us.SkuId = ms.ServicePlanId
+WHERE u.UserPrincipalName = 'tom.morgan@modalitysystems.com'
+AND  us.Date = convert(date,getutcdate())
+GO
+
+```
+
+Note that TWA Billing Module does not import *all* licenses, only ones relavent to billing. When comparing license counts, discard any licenses which do not apply to billing.
 
 # Comparing SQL to Power BI
 
 ## Total Licences of each type
 
+Run the following SQL to output a total number of assigned users for each license, scoped to yesterday (to allow for PowerBI refresh)
+
+```
+SELECT	
+	ms.ServicePlanName AS PartNumber
+	,Count(*)
+FROM
+	
+	 billing.UserSkusLog us 
+	JOIN billing.MicrosoftServicePlans ms ON us.SkuId = ms.ServicePlanId
+WHERE 
+  us.Date = convert(date,getutcdate())
+GROUP BY ms.ServicePlanName
+GO
+```
+
+
+
 ## Total cost for a month
+to be completed
 
-## Number of users of X Attribute
 
+## Number of users of Custom Attribute 1
+
+Run the following SQL to output a total number of users assgigned to each discrete value of Custom Attribute 1, scoped to yesterday (to allow for PowerBI refresh)
+
+```
+SELECT	
+	upd.CustomAttribute1
+	,Count(*)
+FROM
+	
+	billing.[User] u
+	INNER JOIN billing.UserPropertiesDaily upd on u.Id = upd.UserId
+WHERE 
+  upd.Date = convert(date,getutcdate())
+GROUP BY upd.CustomAttribute1
+GO
+```
