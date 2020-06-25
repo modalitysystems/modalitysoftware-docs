@@ -44,6 +44,52 @@ The number of rows returned returned should be consistant with the number of row
 
 ## Comparing AD Attributes PowerShell to SQL
 
+This test is used to spot check that user attributes, including extended user attributes, are correctly collected from Microsoft Graph.
+
+Provide the alias of a sample user and run the following PowerShell
+
+```
+# Use Script at your own risk
+
+# Connect to Microsoft Teams with PowerShell before running this script
+
+#input correct user UPN
+$user = "peter.test@modalitysystems.com"
+
+Get-AzureADUser -SearchString $user | Select-Object DisplayName,Department,Country
+Get-AzureADUser -SearchString $user | Select -ExpandProperty ExtensionProperty
+```
+
+The script will output 2 tables of information. The first will contain the Display Name, Department and Country of the specified user; the second will contain a list of all extended attributes.
+
+Run the following SQL, using the same user alias:
+
+```
+DECLARE $user varchar(100) = 'peter.test@modalitysystems.com'
+
+SELECT [Id]
+      ,[GivenName]
+      ,[Surname]
+      ,[Department]
+      ,[Country]
+	,[CustomAttribute1]
+      ,[CustomAttribute2]
+      ,[CustomAttribute3]
+      ,[CustomAttribute4]
+      ,[CustomAttribute5]
+      ,[CustomAttribute6]
+      ,[CustomAttribute7]
+      ,[CustomAttribute8]
+      ,[CustomAttribute9]
+      ,[CustomAttribute10]
+  FROM [billing].[User] u
+  INNER JOIN [billing].UserPropertiesDaily upd on u.Id = upd.UserId
+  WHERE u.[UserPrincipalName] = $user
+  AND  upd.Date = convert(date,getutcdate())
+  ```
+
+A single row should be returned. Compare the data in this row with the data returned from PowerShell.
+
 ## Comparing AD Licenses PowerShell to SQL
 
 
