@@ -46,23 +46,27 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teams Chat Assist.)
 
-1. After a period of deployment should get a Resource group in your tenant with the following components
+1. After a period of deployment you should see the following confirmation screen
+
+   ![Deployment Complete](images/Deployment-Complete.png)
+   
+2. By clicking on Go to Resource Group you should get a Resource group in your tenant with the following components
 
    ![Resource Group](images/resourceGroup.png)
 
    > The name of the Web App Bot is the Azure Application ID you entered in step 2. The other resources have a suffix of the ResourceGroup ID (not visible in Microsoft Azure Portal).
 
-1. Click on the newly created App Service, copy the value in the URl field located near the top right of the screen. Make sure you keep hold of this value as you will need it later.
+3. Click on the newly created App Service, copy the value in the URl field located near the top right of the screen. Make sure you keep hold of this value as you will need it later.
 
-1. Go to your Application Registration, Azure Active Directory -> App registrations -> Teams Chat Assist Bot -> Authentication and click Add a Platform, then click Web
+4. Go to your Application Registration, Azure Active Directory -> App registrations -> Teams Chat Assist Bot -> Authentication and click Add a Platform, then click Web
 
    ![Add web platform](images/AddPlatform.png)
 
-1. Under Redirect URI enter the following **AppServiceUrl**/agent/authoriseResponse, where **AppServiceUrl** is the url that you took a note of earlier from the App Service. Check the ID tokens box then click Configure. Click Save.
+5. Under Redirect URI enter the following **AppServiceUrl**/agent/authoriseResponse, where **AppServiceUrl** is the url that you took a note of earlier from the App Service. Check the ID tokens box then click Configure. Click Save.
 
    ![Add web platform](images/AddAuthoriseResponseRedirectUrl.png)
 
-1. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+6. The next step is to provision settings for your tenant in the storage account. The easiest way to do this is using the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
    > If your company uses AD FS then you might have trouble signing into Azure Storage Explorer so try:
 
@@ -72,11 +76,11 @@ This ARM Template will install resources in your Azure tenant. The template will
    - Select Sign In.
    - Follow the instructions on the next panel.
 
-1. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
+7. Using Azure Storage Explorer that you have just installed, connect to your Azure Tenant and locate that storage account that was created as part of the ARM Deployment
 
-1. [Import the default values into table storage](ImportDefaultValuesTableStorage.md)
+8. [Import the default values into table storage](ImportDefaultValuesTableStorage.md)
 
-1. Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
+9.  Use the [Teams Web App](https://teams.microsoft.com/) to create a new Team for the bot to post agent messages too
 
    - On the Get Windows App screen click **Use web app instead**
      ![TeamsWebAppInstead](images/teamsWebApp.png)
@@ -86,7 +90,7 @@ This ARM Template will install resources in your Azure tenant. The template will
      ![ConversationID](images/ConversationID2.png)
    - Copy Thread ID from address bar as indicated above and paste into the ChannelConversationId property in the instance configuration table
 
-1. [Edit the InstanceConfigurations table as desired](TableStorageConfiguration.md)
+11. [Edit the InstanceConfigurations table as desired](TableStorageConfiguration.md)
    
 ## Applying Upgrades to Teams Chat Assist
 
