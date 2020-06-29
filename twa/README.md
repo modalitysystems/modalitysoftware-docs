@@ -57,7 +57,7 @@ Now that everything is installed, you can configure settings previously set or f
 
 #### Scan Configuration
 
-Teamwork Analytics allows you to configure the types of scan you wish to run, and the scheduling for each. for more information on how to configure thie see [here](scan-configuration.md).
+Teamwork Analytics allows you to configure the types of scan you wish to run, and the scheduling for each. for more information on how to configure this see [here](scan-configuration.md).
 
 #### User Adoption Groups
 
