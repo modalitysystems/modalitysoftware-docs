@@ -55,6 +55,10 @@ If you would like more information on the default Bot scenarios and their messag
 
 Now that everything is installed, you can configure settings previously set or for additional features.
 
+#### Scan Configuration
+
+Teamwork Analytics allows you to configure the types of scan you wish to run, and the scheduling for each. for more information on how to configure thie see [here](scan-configuration.md).
+
 #### User Adoption Groups
 
 Teamwork Analytics allows you to create custom groups of users for reporting, for more information on these groups see [here](UserAdoptionGroups.md).
