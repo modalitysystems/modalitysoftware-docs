@@ -26,3 +26,5 @@ When TWA is run, all scans scheduled will start immediately, then once complete,
 This is configured in the database table configuration.ScanDefinitions
 
 The definition column is not used and you are free to rename as you see appropriate.
+
+Changes to this configuration require a restart to take effect.
