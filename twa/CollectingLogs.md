@@ -22,7 +22,7 @@ Steps
 On the Azure Collector Virtual Machine
 
 Steps
-  1. Please ZIP the folder C:\Program Files\Modality\GraphETL\Logs
+  1. Please ZIP the folder C:\Program Files\Modality\GraphETL\Logs (or the folder you installed Teamwork Analytics to if you chose a custom folder)
   2. Save the Zip as "TWA Logs <CustomerName> <Date>.zip
   
  Please email over or link to all 3 files for Modality Systems to review
