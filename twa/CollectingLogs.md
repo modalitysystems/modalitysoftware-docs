@@ -27,4 +27,8 @@ Steps
   1. Please ZIP the folder C:\Program Files\Modality\GraphETL\Logs (or the folder you installed Teamwork Analytics to if you chose a custom folder)
   2. Save the Zip as "TWA Logs <CustomerName> <Date>.zip
   
- Please email over or link to all 3 files for Modality Systems to review
+  ## 3 Screenshot of Windows Tasks Manager Processes and Performance tabs (for current RAM/CPU state)
+  
+ This is just for the current state of processes, CPU and Memory usage.
+  
+ Please email over or link to all files for Modality Systems to review
