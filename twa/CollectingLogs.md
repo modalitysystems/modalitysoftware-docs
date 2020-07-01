@@ -3,7 +3,7 @@
 
 If you have issues with Teamwork Analytics, Modality Systems may ask you to collect logs for us to analyse the issue.
 
-There are two sets of logs we requre, both from the collector Azure virtual machine
+There are two sets of logs we requre, both from the collector Azure virtual machine.
 
 ## 1. Windows Event Logs
 
@@ -26,6 +26,8 @@ On the Azure Collector Virtual Machine
 Steps
   1. Please ZIP the folder C:\Program Files\Modality\GraphETL\Logs (or the folder you installed Teamwork Analytics to if you chose a custom folder)
   2. Save the Zip as "TWA Logs <CustomerName> <Date>.zip
+  
+  End
   
   ## 3. Screenshot of Windows Tasks Manager Processes and Performance tabs (for current RAM/CPU state)
   
