@@ -7,6 +7,8 @@ There are two sets of logs we requre, both from the collector Azure virtual mach
 
 ## 1 Windows Event Logs
 
+We recommend keeping 30 days of windows event logs on the collector virtual machine.
+
 Please collect all Applicaiton and System event logs for the collector Azure virtual machine
 
 Steps
