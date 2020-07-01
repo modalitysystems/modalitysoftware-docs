@@ -615,4 +615,36 @@ Write-Host "Private HiddenMembership Teams count is $($NonArchived.Count)"
 write-host ""                    
 
 ```
+## SQL-PowerBI Comparison Test 03 - Inactive Users
+
+Licenced users for teams minus uesers with at least one activity of private messages, team messages, calls or meetings
+
+NOTE: to be added to the PowerBI reports
+
+## SQL-PowerBI Comparison Test 03 - Inactive Users
+
+--Add Channels
+declare @VersionNo nvarchar(20) = '2020-06-11'--User Usage Tests -- No of Licenced Users SELECT COUNT(distinct UserId) as [NoOfLicensedUsers]
+,GETUTCDATE() as [ExecutionDate]
+,@VersionNo as VersionNo
+FROM dbo.[TeamsUserLicences]
+WHERE CapabilityStatus = 'Enabled' and Deleted = 0
+-- User Activity declare @30DaysUpToDate date = '2020-06-08'
+IF(@30DaysUpToDate > dateadd(day, -1, (SELECT MAX(ReportDate) as LatestDate from [dbo].[DailyActivityUserDetails])))
+RAISERROR('You have selected a date more recent than the data collected by Teamwork Analytics', 18, 1)
+SELECT @30DaysUpToDate As ReportDate
+,count(distinct D.UserPrincipalName) as ActiveUsers
+,count(distinct (CASE WHEN D.UserPrincipalName is Null then U.UserPrincipalName Else Null End)) as InActiveUsers
+,SUM(D.[TeamChatMessageCount]) As [TeamChatMessageCount]
+,SUM(D.[PrivateChatMessageCount]) As [PrivateChatMessageCount]
+,SUM(D.[CallCount]) As [CallCount]
+,SUM(D.[MeetingCount]) As [MeetingCount]
+,MIN(D.ReportDate) as FromDate
+,MAX(D.ReportDate) as ToDate
+,GETUTCDATE() as [ExecutionDate]
+,@VersionNo as VersionNo
+FROM [dbo].Users u
+JOIN [dbo].[TeamsUserLicences] l on l.UserId = u.Id and l.CapabilityStatus = 'Enabled' and l.Deleted = 0
+LEFT JOIN [dbo].[DailyActivityUserDetails] D on D.UserPrincipalName = u.UserPrincipalName and u.Deleted = 0 and D.ReportDate > dateadd(day, -30,@30DaysUpToDate) AND D.ReportDate <= @30DaysUpToDate
+
 
