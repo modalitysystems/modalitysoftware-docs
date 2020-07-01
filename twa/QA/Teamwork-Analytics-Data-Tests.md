@@ -450,7 +450,6 @@ AND		LOWER(u.UserPrincipalName) = LOWER(@UserPrincipalName)
 >NOTE: This query returns two result sets, one a summary, and the other a list of team memberships
 
 
-
 ## MSFT-SQL Comparison Test 06 - Microsoft Teams Licenced User Count
 
 Use the linked PowerShell to get a list of users with the base Teams licence which is service plan 57ff2da0-773e-42df-b2af-ffb7a2317929
@@ -459,7 +458,10 @@ Only users with this service plan enabled have a licence for Microsoft Teams
 
 https://github.com/tomarbuthnot/PowerShell/blob/master/Get-Microsoft365-AssignedServicePlan-Count.ps1
 
-SQL To be added
+#### Validation SQL Query - MSFT-SQL Comparison Test 06
+
+Select Count(Distinct UserID) from dbo.TeamsUserLicenses where CapabilityStatus = 'Enabled'
+
 
 
 
