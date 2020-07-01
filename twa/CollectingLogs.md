@@ -29,8 +29,18 @@ Steps
   
   End
   
-  ## 3. Screenshot of Windows Tasks Manager Processes and Performance tabs (for current RAM/CPU state)
+ ## 3. Screenshot of Windows Tasks Manager Processes and Performance tabs (for current RAM/CPU state)
   
  This is just for the current state of processes, CPU and Memory usage.
   
  Please email over or link to all files for Modality Systems to review
+ 
+ ## 4. Scan History
+ 
+ Please provide the results for the following query from the TWA SQL Database.
+ 
+ ```SQL
+ SELECT * FROM [reporting].[Scans]
+ ```
+ 
+ 
