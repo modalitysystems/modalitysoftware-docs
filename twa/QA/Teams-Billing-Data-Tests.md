@@ -150,7 +150,15 @@ GO
 
 
 ## Total cost for a month
-to be completed
+Use the linked PowerShell to get a list of users with a specific licence. The script will collect users with the license type specified in the variable at the top of the file.
+
+- Teams Licence (TEAMS1)                                    57ff2da0-773e-42df-b2af-ffb7a2317929
+- Comms Credits (MCOPSTNC)                                  505e180f-f7e0-4b65-91d4-00d670bbd18c
+- Microsoft 365 Phone System (MCOEV)                        4828c8ec-dc2e-4779-b502-87ac9ce28ab7
+- Microsoft 365 Audio Conferencing (MCOMEETADV)             3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40
+- Audio Conf PPM (MCOMEETACPEA)	                            bb038288-76ab-49d6-afc1-eaa6c222c65a
+
+https://github.com/tomarbuthnot/PowerShell/blob/master/Get-Microsoft365-AssignedServicePlan-Count.ps1
 
 
 ## Number of users of Custom Attribute 1
