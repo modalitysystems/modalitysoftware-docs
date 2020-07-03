@@ -50,7 +50,7 @@ Add a PeoplePicker for each of the following RowKeys:
 
 > For the 'members' and 'guests' fields, the maximum value of each individual NativeMaxCount is 5000. However the combined maximum is also 5000. For example if 'members' has a value of 3000, then the maximum for 'guests' is 2000. (3000 + 2000 = 5000)
 
-> For the 'owners' field, the maximum value of NativeMaxCount is 100.
+> For the 'owners' field, the maximum value of NativeMaxCount is 20. If set higher, CreateTeam will not process any more than 20 owners.
 
 - Validate (boolean) = This will enabled or disable the above validation rules for the People Picker.
 
