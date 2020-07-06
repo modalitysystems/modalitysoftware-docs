@@ -111,6 +111,7 @@ Compare the number of enabled and assigned licenses for each license type.  Some
 - MCOPSTNC - Communications Credits
 - ENTERPRISEPREMIUM_NOPSTNCONF - Office 365 E5 without Audio Conferencing
 - MCOMEETADV - Microsoft 365 Audio Conferencing
+- MOCMEETACPEA - Microsoft 365 Audio Conferencing Pay-Per-Minute
 
 ## Comparing AD Licenses PowerShell to SQL
 
