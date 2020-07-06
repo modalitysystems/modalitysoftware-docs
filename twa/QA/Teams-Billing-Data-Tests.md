@@ -90,6 +90,28 @@ SELECT [Id]
 
 A single row should be returned. Compare the data in this row with the data returned from PowerShell.
 
+## Comparing Organisation-level license counts and assignment levels
+
+This test is used to ensure that the organisational-level totals of license and total numbers assigned are corectly imported.
+
+This information can be viewed via the Microsoft 365 Admin Center (https://admin.microsoft.com/AdminPortal/Home#/licenses). This provides a list of all licenses, the total available and the total assigned.
+
+Teamwork Analytics takes this data from Microsoft Graph. The specific call made is: https://graph.microsoft.com/v1.0/subscribedSkus. Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to verify the numbers of available and assigned licenses. The values shown here should match those shown in the Microsoft 365 Admin Center.
+
+Run the following SQL to list all imported license information:
+
+```
+select * from [billing].[SubscribedSkus] where ValidTo is null
+```
+
+Compare the number of enabled and assigned licenses for each license type.  Some licenses and their SkuPartNumbers are:
+
+- MCOPSTN1 - Microsoft 365 Domestic Calling Plan
+- MEETING_ROOM - Meeting Room
+- MCOPSTNC - Communications Credits
+- ENTERPRISEPREMIUM_NOPSTNCONF - Office 365 E5 without Audio Conferencing
+- MCOMEETADV - Microsoft 365 Audio Conferencing
+
 ## Comparing AD Licenses PowerShell to SQL
 
 This test is used to spot check that user license information is correctly imported. 
