@@ -14,9 +14,15 @@ Modality Systems calculates the total user count by iterating all Azure AD user 
 
 ## How does Modality Systems Teamwork Analytics define an Active user?
 
-Both Microsoft and Modality Systems use the term 'Active Users' in reporting. The Modality Systems definition of an active user is one that has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration", however we have been asked to also consider Private Chat, Meetings and Calling activity.
+Active Users are defined differently depending on the report you are using.
 
-In a future update TWA will also consider private chat, meeting and calling usage to flag a user as active. This is commited on the roadmap for 2020 Q2. It will offer Monthly Active Usage and Weekly Active Usage reports of each Modality/functionality.
+For overall Teams Usage, an active user is a user which meets any of the following criteria for the date range selected in the report;
+ - Made at least 1 Teams Call
+ - Joined at least 1 Teams Meeting
+ - Sent at least 1 Teams Channel Message
+ - Sent at least 1 Teams Chat Message
+
+For Teams Collaboration and Governance, an active user is one which has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration" for these reports. 
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
