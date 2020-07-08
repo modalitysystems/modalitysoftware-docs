@@ -130,7 +130,7 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 Run the following SQL, passing in the same user alias:
 
 ```
-DECLARE $user varchar(100) = 'peter.test@modalitysystems.com'
+DECLARE @user varchar(100) = 'peter.test@modalitysystems.com'
 
 SELECT
 	us.Id AS UserId
@@ -142,7 +142,7 @@ FROM
 	billing.[User] u
 	JOIN billing.UserSkusLog us on u.Id = us.UserId
 	JOIN billing.MicrosoftServicePlans ms ON us.SkuId = ms.ServicePlanId
-WHERE u.UserPrincipalName = 'tom.morgan@modalitysystems.com'
+WHERE u.UserPrincipalName = @user
 AND  us.Date = convert(date,getutcdate())
 GO
 
