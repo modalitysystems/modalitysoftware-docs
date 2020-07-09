@@ -29,8 +29,8 @@ A fresh Delta query will get all created, modified and deleted messages for that
 Fresh Delta queries will happen in the following scenarios
 1. When TWA is run for the very first time
 2. When TWA has not been run in the previous [MessageDeltaWindowInDays] days
-3. When there are no messages for that channel created in the last [MessageDeltaWindowInDays] days
-4. When there is no Delta token for that channel in the last [MessageDeltaWindowInDays] days
+3. When there are no messages for the whole tenant created in the last [MessageDeltaWindowInDays] days
+4. When there are no Delta tokens for that channel in the last [MessageDeltaWindowInDays] days
 5. When [UseMessageDeltas] is set to false
 
 #### Performance Optimisation
