@@ -17,9 +17,10 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 | Service Type         | Description                                                                                            |
 | -------------------- | ------------------------------------------------------------------------------------------------------ |
-| Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalant                                          |
+| Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalent                                          |
 | Key Vault            | Securely stores Web App Secret                                                                         |
 | Storage Accounts     | Block Blob Storage, General Purpose V2, RA-GRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+| Azure SQL Database   | Single Database, DTU purchase model, Standard tier, S0: 10 DTUs, 250 GB included storage per DB        |
 | [Application Insights] | [Logs for Web App Bot and Web App Service] Not installed by default*                                 |
 
 > Important: **Remote Application Logging. By default the application will configure itself to send logging and telemetry data to Modality Systems using an Application Insights instance securely hosted in Microsoft Azure. This enables Modality Systems to investigate and remediate any reported issues remotely. By exception it may be possible instead to keep logging data within the customer's tenant but this may have licensing and support implications which you should discuss with Modality Systems to fully understand.**
@@ -28,7 +29,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Click on the ARM template link that was provided by us. You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
 
-   ![Custom deployment form](../images/customerHosted/armDeployForm2.png)
+   ![Custom deployment form](../images/customerHosted/armDeployForm3.png)
 
 2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
 
@@ -39,11 +40,16 @@ This ARM Template will install resources in your Azure tenant. The template will
    - Settings
      - **Azure Application details** - Use the details you generated when [registering an application](RegisterApplicationAPI.md).
      (Use API Client ID as *API Id*, API Secret as *App Secret* and Client Application Id as *Client Id*)
+     - **Slot Name** - Name of the slot or environment to deploy. Should make it easy to identify company and must be between 2 and 7 letters only
+     - **SQL Password** - The desired password credential for administrative access to the SQL Database
      - **Send Grid API Key and Template IDs** - Use the details you generated when [configuring SendGrid Email Delivery Service](sendGrid.md) within your tenant
      - **Send Grid From Email address and Name** - The name and email address that CreateTeam emails will come from
      - **Valid Tenant IDs** - This should be in the format https://sts.windows.net/{TENANTID}/
      - **Logs To Modality** - Defaults to Yes will send logging information to Modality for better troubleshooting
      - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
+     - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
+     - **Deploy Logos** - Leave this as No
+     - **Upgrade** - Deploy CreateTeam to an upgrade slot that can then be swapped later to minimize application downtime
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for CreateTeam.)
 
@@ -55,7 +61,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 5. After a period of deployment should get a Resource group in your tenant with the following components
 
-   ![Resource Group](../images/customerHosted/armDeployRG.png)
+   ![Resource Group](../images/customerHosted/armDeployRG2.png)
 
 6. On the left hand menu, click Deployments and then the name of the Deployment that just completed
 
@@ -75,7 +81,7 @@ This ARM Template will install resources in your Azure tenant. The template will
    >NOTE The Admin Consent URL is useful for instances when the person following this guide **DOES NOT** have Global Admin Privileges. Forward this URL on to someone who does so that they can grant consent for the tenant.
 
 9. Using same tenant that was used to create API and Client App registrations , 
-   go to Azure Acive Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
+   go to Azure Active Directory -> App registrations -> CreateTeam API -> Authentication and click Add a Platform, then click Web
 
    ![AddPlatform](../images/customerHosted/registerapplication13.png)
 
