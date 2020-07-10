@@ -29,7 +29,7 @@ Steps
   
   End
   
- > Note: This directory main contain up to 10GB of text logs, so it may be necessary to use a file sharing service, such as SharePoint, to share the zip file with Modality.
+ > Note: This directory can contain up to 10GB of text logs so it may be necessary to use a file sharing service, such as SharePoint, to share the zip file with Modality.
   
  ## 3. Screenshot of Windows Tasks Manager Processes and Performance tabs (for current RAM/CPU state)
   
