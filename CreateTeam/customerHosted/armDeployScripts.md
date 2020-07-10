@@ -64,7 +64,7 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
 1. If the resource group doesn't exist enter desired geographic location and press Enter
 1. Check the settings that will be used in the deployment and press Enter to continue with deployment
 
-> NOTE: The script will detect if you the WebApp Slot already exists and apply the upgrade flag accordingly, then at the end of a successful deployment it will perform a slot swap
+> NOTE: The script will detect if the WebApp Slot already exists and apply the upgrade flag accordingly, then at the end of a successful deployment it will perform a slot swap
 
 > NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
