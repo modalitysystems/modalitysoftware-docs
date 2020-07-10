@@ -81,3 +81,5 @@ Learn how TWA works and some of the terminology surrounding it.
 >[Messages](messages.md)
 
 >[Files](files.md)
+
+>[Anonymisation of Personally Identifiable Information (PII)](Anonymisation.md)
