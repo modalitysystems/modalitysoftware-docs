@@ -19,7 +19,7 @@ In order to assist our customers adhering to data protection and privacy regulat
 |Surname|*gGdp12U*|
 |Email address|*Aa0lWbT5ibo9mS@example.com*|
 |User principal name|*Aa0lWbz5ibo9ma@example.onmicrosoft.com*|
-|[As shown in reports]|*gbo9mS gGdp12U (Aa0lWbT5ibo9mS@example.com)*|
+|[As shown in reports]|*Anon (Aa0lWbT5ibo9mS@example.com)*|
 
 The data is anonymised as it is received from Microsoft's API before any further processing and storage. The obfuscation is reversible upon request.
 
