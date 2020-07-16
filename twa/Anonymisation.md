@@ -36,6 +36,8 @@ Users are anonymised according to configurable rules stored in the TWA database.
 
 The property names and values are case-insensitive, but they must match the values returned by Microsoft Graph API (practically speaking, they must match real values stored in your Active Directory). E.g. you must specify "CompanyName", not "Company Name".
 
+> You can make use of [Custom User Attributes](CustomUserAttributes.md), provided they are configured correctly.
+
 Example response from Graph API:
 
 `{
