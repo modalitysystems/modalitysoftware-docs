@@ -2,7 +2,7 @@
 
 To find out more about Modality Software, visit [modalitysystems.com](https://www.modalitysystems.com/)
 
-If you cant find what you’re looking for, please [get in touch](https://modalitysystems.com/contact)
+If you cant find what you’re looking for, please [get in touch](mailto:mailto:enquiries@modalitysystems.com)
 
 ---
 
