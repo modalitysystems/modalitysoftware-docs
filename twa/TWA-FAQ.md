@@ -70,4 +70,6 @@ If customers have the requirement, we can investigate what usage reporting Offic
 
 The TWA database, Graph data collection engine, PowerBI Apps and Bot notification service each have unique version numbers for every released build. Version numbers are in the format YYYY.MM.DD.MinorBuildNumber - so 2020.1.8.2 is 8th January 2020 minor build 2. This allows easy tracking of issues and improvements.
 
+## Improving Reporting Performance
 
+Depending on the size of your Teams eco system, you may find issues with reporting and collecting data at the same time. This is manifested in issues refreshing PowerBI reports. To rectify these issues, Modality recommends either increasing the SQL tier in azure, or setting up [Active Geo Replication](https://docs.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview) and using the readable replica for reporting.
