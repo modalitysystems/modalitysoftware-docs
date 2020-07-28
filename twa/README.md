@@ -71,6 +71,11 @@ Teamwork Analytics allows you to report on custom user attributes from your acti
 
 You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md)
 
+#### SQL Performance
+You can fine tune TWA's load on SQL. Find out more about this [here](sql-performance.md)
+
+
+
 ### Step 6: Individual Power BI Apps to install and connect to backend database
 >[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
 
