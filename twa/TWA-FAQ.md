@@ -72,4 +72,4 @@ The TWA database, Graph data collection engine, PowerBI Apps and Bot notificatio
 
 ## Improving Reporting Performance
 
-Depending on the size of your Teams eco system, you may find issues with reporting and collecting data at the same time. This is manifested in issues refreshing PowerBI reports. To rectify these issues, Modality recommends either increasing the SQL tier in azure, or setting up [Active Geo Replication](https://docs.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview) and using the readable replica for reporting.
+Depending on the size of your Teams ecosystem, you may find issues with reporting and collecting data at the same time. This is manifested in issues refreshing PowerBI reports. To rectify these issues, Modality recommends either increasing the SQL tier in Microsoft Azure, or setting up [Active Geo Replication](https://docs.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview) and using the readable replica for reporting.
