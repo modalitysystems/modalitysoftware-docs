@@ -67,6 +67,10 @@ Teamwork Analytics allows you to create custom groups of users for reporting, fo
 
 Teamwork Analytics allows you to report on custom user attributes from your active directory. For information on how to configure this feature, see [here](CustomUserAttributes.md).
 
+#### User Reporting Filters
+
+The filters for reports containing user data can be configured. For information on how to configure this feature, see [here](user-reporting-filters.md).
+
 #### Toggling Feature Flags
 
 You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md)
