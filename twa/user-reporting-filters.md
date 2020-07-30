@@ -39,6 +39,7 @@ The custom user attributes match up to those configured in [configuration].[Cust
 - [UserReportingFilter2DisplayName]
 - [UserReportingFilter3DisplayName]
 - [UserReportingFilter4DisplayName]
+4. Refresh the report and see the new user filters in the filter bar on page.
 
 ## Defaults
 The default values are
