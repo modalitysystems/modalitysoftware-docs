@@ -47,7 +47,7 @@ An **Application Registration** is simply a definition of what settings are **GO
    - SendGridAuthorisationResponseEmailTemplateId
    - SendGridFromEmailAddress
    - SendGridFromName
-   - ValidTenantIds
+   - ValidTenantIds - This should be in the format https://sts.windows.net/{TENANTID}/
 1. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
 
 ## ARMDeploy.ps1
