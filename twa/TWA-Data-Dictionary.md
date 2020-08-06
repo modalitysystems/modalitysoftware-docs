@@ -4,6 +4,8 @@ Modality Systems Teamwork Analytics collects lots of information from various Mi
 
 This document also lists data we have been asked for by customers that we don't collect today and if Microsoft provides it via any API today.
 
+There is full documentation of the datahase [here](https://github.com/modalitysystems/modalitysoftware-docs/tree/master/twa/database%20documentation/Tables), and the Power BI model [here](https://github.com/modalitysystems/modalitysoftware-docs/tree/master/twa/powerbi/model-documentation)
+
 ## User Information from Active Directory
 Teamwork Analytics collects the following about each user from Azure Active Directory.
 
