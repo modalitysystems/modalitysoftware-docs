@@ -119,5 +119,10 @@ Details of Files in Each Team (in the SharePoint site associated with the Team).
 
 # Data not available from Microsoft Graph
 The following data has been asked for but is not currently available from Microsoft Graph.
-- Messages read
+- Messages read (count or date time)
 - Clicks on Tabs/clicks into Apps from Tabs
+- Usage time of specific apps
+- Buttons client in the client
+- Links clicked/followed in messages
+- Number of federatated messages
+- Split of number of PSTN calls and number of VoIP calls - it's a single call count
