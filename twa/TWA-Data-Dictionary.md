@@ -15,7 +15,7 @@ Teamwork Analytics collects the following about each user from Azure Active Dire
 
 These are held in the [Users](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/database%20documentation/Tables/Users.md) Table in the database and used to filter any per-user activity.
 
- - User Id
+ - UserId
  - Given Name 
  - Surname 
  - Job Title 
@@ -68,7 +68,7 @@ For this we have the current state/count of channels, but not change over time.
 
 ### Channel Messages over time
 All Channel Messages for the configured period. TWA does not hold the message content, only metadata about the message. Held in [Messages](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/database%20documentation/Tables/Messages.md) table
-- Parent Message Id
+- Parent MessageId
 - Message Created Date Time
 - Last Modified Date Time - date message was created or modified
 - Deleted Date Time
