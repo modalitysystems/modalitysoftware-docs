@@ -8,6 +8,10 @@ If data is not listed on this page, it is not currently collected. This document
 
 There is full documentation of the datahase [here](https://github.com/modalitysystems/modalitysoftware-docs/tree/master/twa/database%20documentation/Tables), and the Power BI model [here](https://github.com/modalitysystems/modalitysoftware-docs/tree/master/twa/powerbi/model-documentation)
 
+## Reporting Capabilities
+
+Power BI allows us to report on any combination of the below informaiton. We can filter information by user, user attributes or teams
+
 # Information collected and avilable in Teamwork Analytics Usage and Governance Reports
 
 ## User Information from Azure Active Directory
