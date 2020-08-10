@@ -29,7 +29,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Click on the **Deploy to Azure** button above . You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
 
-   ![Custom deployment form](../images/customerHosted/armDeployForm4.png)
+   ![Custom deployment form](../images/customerHosted/armDeployForm5.png)
 
 1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
 
