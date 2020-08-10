@@ -29,7 +29,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 1. Click on the **Deploy to Azure** button above . You will be taken to Microsoft Azure Portal and a deployment form will open as shown below.
 
-   ![Custom deployment form](../images/customerHosted/armDeployForm3.png)
+   ![Custom deployment form](../images/customerHosted/armDeployForm4.png)
 
 1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance.
 
@@ -49,7 +49,7 @@ This ARM Template will install resources in your Azure tenant. The template will
      - **Storage Name** - It is strongly advised to leave this as default which will create a storage account starting tg followed by a unique string.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
      - **Deploy Logos** - Leave this as No
-     - **Upgrade** - Deploy CreateTeam to an upgrade slot that can then be swapped later to minimize application downtime. For initial deployment this should be No
+     - **Deploy Code** - Deploy CreateTeam code
 
 1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for CreateTeam.)
 
@@ -111,21 +111,9 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 ## Upgrades
 
-ARM templates handle upgrades really well. By deploying to a resource group that already has CreateTeam deployed, you will in affect be applying parts of CreateTeam that have changed and retaining the parts that have not changed. Data contained within the database will also be left alone. While it is possible to deploy the updated CreateTeam code directly to a live instance, doing so may result in a period of down time for anyone using CreateTeam.
-
-As an alternative we can use staging slots to limit the impact to users. By changing the value of Upgrade above to Yes, what will happen is the new CreateTeam code will be deployed to an Azure WebApp Slot called **upgrade** however, your users will still be accessing CreateTeam from the original slot.
-
-1. Click on the upgrade slot
+ARM templates handle upgrades really well. By deploying to a resource group that already has CreateTeam deployed, you will in affect be applying parts of CreateTeam that have changed and retaining the parts that have not changed. Data contained within the database will also be left alone. When selecting **Yes** to Deploy Code a staging slot is used call upgrade that is then automatically swapped over to your production environment. This is to minimize any impact on users.
 
    ![Slots](../images/customerHosted/armDeploySlots.png)
-
-1. Select Swap
-
-   ![Slots](../images/customerHosted/armDeploySlotSwap.png)
-
-   >NOTE Ensure that Source is set to upgrade and target is the slot that your users are using
-
-1. Click Swap and wait for the process to complete
 
 ## Upload your company logo to CreateTeam
 
