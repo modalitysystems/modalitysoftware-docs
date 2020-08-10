@@ -51,8 +51,7 @@ An **Application Registration** is simply a definition of what settings are **GO
    - SendGridFromName
    - ValidTenantIds - This should be in the format https://sts.windows.net/{TENANTID}/ 
    - **Optionally** you can update the ResourceTags field if your company requires specific Azure Tags to be applied
-   - DeployCode - Yes to deploy/upgrade CreateTeam code, No to update/reset settings
-1. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
+2. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
 
 ## ARMDeploy.ps1
 

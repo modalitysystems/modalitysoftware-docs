@@ -111,7 +111,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 ## Upgrades
 
-ARM templates handle upgrades really well. By deploying to a resource group that already has CreateTeam deployed, you will in affect be applying parts of CreateTeam that have changed and retaining the parts that have not changed. Data contained within the database will also be left alone. When selecting **Yes** to Deploy Code a staging slot is used call upgrade that is then automatically swapped over to your production environment. This is to minimize any impact on users.
+ARM templates handle upgrades really well. By deploying to a resource group that already has CreateTeam deployed, you will in affect be applying parts of CreateTeam that have changed and retaining the parts that have not changed. Data contained within the database will also be left alone. When selecting **Yes** to Deploy Code, a staging slot is used called upgrade that is then automatically swapped over to your production environment. This is to minimize any impact on users.
 
    ![Slots](../images/customerHosted/armDeploySlots.png)
 
