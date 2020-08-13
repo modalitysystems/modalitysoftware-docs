@@ -12,8 +12,6 @@ The JSON object should have the following format:
    "Suffix": "UK Sales",
    "IsExternal":true,
    "Visibility":1,
-   "AlwaysAuthorise":false,
-   "AzureSecurityGroup":"GroupName",
    "Channels":[
       {
          "DisplayName": "General",
@@ -42,7 +40,10 @@ The JSON object should have the following format:
          "DisplayName":"Channel name",
          "Description":"Channel description"
       }
-   ]
+   ],
+   "AlwaysAuthorise":false,
+   "ApprovalEmailList":"approver1@email.com; approver2@email.com",
+   "AzureSecurityGroup":"GroupName"
 }
 ```
 
@@ -80,23 +81,6 @@ This section details what each setting controls and how to configure it. Not all
   - 0 - Public
   - 1 - Private - Discoverable
   - 2 - Private - Hidden
-
-### AlwaysAuthorise
-
-- When _true_, all new teams created using the template will be submitted for Authorisation.
-- The ability to create Teams directly is removed, even if they meet the recommended rules.
-
-### RetentionLabel
-
-- When populated, the value is used to assign the retention label for the whole SharePoint site library, if this process fails the **team** will be archived, leaving the IT admin to resolve.
-- Therefore the value must exactly match one of the available retention labels provision on your tenants SharePoint. This is a prerequisite for this feature, for more information [read the following](https://docs.microsoft.com/en-us/microsoft-365/compliance/labels?view=o365-worldwide).
-
-### AzureSecurityGroup
-
-- When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the user is not in a group with a matching name, the template will not be displayed in the list.
-- If the field is empty, any logged in user can use the template.
-
-> [Users can be assigned to security groups, and groups can be set up](../ManagingAzureSecurityGroups.md) in the Azure Portal.
 
 ### Channels
 
@@ -153,3 +137,26 @@ This section details what each setting controls and how to configure it. Not all
 > 1. The address of this page is what is required for the _FolderUrl_ setting. You can copy the address out of the address bar and paste it in the _FolderUrl_ for that tab.
 > 1. Back in the SharePoint site, find the required file from the list. Open it, by clicking its name.
 > 1. The address of this page is what is required for the _DocumentUrl_ setting. You can copy the address out of the address bar and paste it in the _DocumentUrl_ for that tab.
+
+### RetentionLabel
+
+- When populated, the value is used to assign the retention label for the whole SharePoint site library, if this process fails the **team** will be archived, leaving the IT admin to resolve.
+- Therefore the value must exactly match one of the available retention labels provision on your tenants SharePoint. This is a prerequisite for this feature, for more information [read the following](https://docs.microsoft.com/en-us/microsoft-365/compliance/labels?view=o365-worldwide).
+
+### AlwaysAuthorise
+
+- When _true_, all new teams created using the template will be submitted for Authorisation.
+- The ability to create Teams directly is removed, even if they meet the recommended rules.
+
+### ApprovalEmailList
+
+- When a user submits a team for authorisation using this template, each email address in the list will receive an email asking to approve or decline the creation of the team.
+- Each email address in the list must be semi-colon separated '_;_'
+- If this field is not populated for a given template, then the approval emails will be sent to the users as defined in the [Approvers Table](TableStorageConfiguration.md#approvers-table)
+
+### AzureSecurityGroup
+
+- When populated, only users that belong to an Azure security group with a matching name (case sensitive) can use the template. If the user is not in a group with a matching name, the template will not be displayed in the list.
+- If the field is empty, any logged in user can use the template.
+
+> [Users can be assigned to security groups, and groups can be set up](../ManagingAzureSecurityGroups.md) in the Azure Portal.
