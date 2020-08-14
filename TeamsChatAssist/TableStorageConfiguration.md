@@ -64,6 +64,9 @@ Add Entity for each agent that will install Teams Chat Assist. When a user asks 
 
 - WorkingHoursConfig = [configuration for the service work hours/run time] is an optional value, if left blank then the service runs 24/7 however, if you wish to configure service hours then update the json config for your service – below is an example.
 
+- DefaultRegion - The region which you would like the conversation date and time (**Not timezone - this remains UTC**) to be stored and displayed in. If in invalid and/or unsupported region is input, then en-GB is used by default. The regions supported are:
+  > ar-SA,bn-BD,bn-IN,cs-CZ,da-DK,de-AT,de-CH,de-DE,el-GR,en-AU,en-CA,en-GB,en-IE,en-IN,en-NZ,en-US,en-ZA,es-AR,es-CL,es-CO,es-ES,es-MX,es-US,fi-FI,fr-BE,fr-CA,fr-CH,fr-FR,he-IL,hi-IN,hu-HU,id-ID,it-CH,jp-JP,ko-KR,nl-BE,nl-NL,no-NO,pl-PL,pt-BR,pt-PT,ro-RO,ru-RU,sk-SK,sv-,E,ta-IN,ta-LK,th-TH,tr-TR,zh-CN,zh-HK,zh-TW
+
 **NewQuestionEmailTemplate sample:**
 
 > @Model.InitialQuestion = Initial question asked
