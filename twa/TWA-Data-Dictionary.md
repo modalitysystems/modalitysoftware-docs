@@ -115,7 +115,7 @@ This is any content attached to a channel message. Held in [Attachments](https:/
 ### Apps installed in each Team - Current state
 This is held in the [Apps](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/database%20documentation/Tables/Apps.md) table.
  - Name 
- - Version
+ - Version Number
  
 ### Files in each Team - Current state
 Details of Files in Each Team (in the SharePoint site associated with the Team). Held in the [DriveItems](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/database%20documentation/Tables/DriveItems.md) table
