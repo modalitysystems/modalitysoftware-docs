@@ -8,5 +8,7 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 
 Steps for how to configure Power BI are [here](/twa/PowerBIAppsAdminInstallGuide.md)
 
+Each customer install has a unique database run in a dedicated Modality CSP Azure tenant.
+
 Automation will be off by default, but can be configured by Modality Systems to meet your specific requirements.
 
