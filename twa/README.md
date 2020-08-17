@@ -38,7 +38,7 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ### [Teamwork Analytics Upgrade Steps CAT](/twa/UpgradingTeamworkAnalytics.md)
 
-### [Teamwork Analytics Power BI Reports Deployment](/twa//PowerBIAppsAdminInstallGuide.md)
+### [Teamwork Analytics Power BI Reports Deployment](/twa/PowerBIAppsAdminInstallGuide.md)
 
 
 
@@ -46,11 +46,11 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ## **Teamwork Analytics Architecture and FAQ**
 
-###  [Teamwork Analytics Architecture](/TWA-Architecture-Overview.md)
+###  [Teamwork Analytics Architecture](/twa/TWA-Architecture-Overview.md)
 
-### [Teamwork Analytics Data Collection Explained](/TeamworkAnalyticsDataCollectionExplained.md)
+### [Teamwork Analytics Data Collection Explained](/twa/TeamworkAnalyticsDataCollectionExplained.md)
 
-### [Teamwork Analytics Frequently Asked Questions](/TWA-FAQ.md)
+### [Teamwork Analytics Frequently Asked Questions](/twa/TWA-FAQ.md)
 
 
 
