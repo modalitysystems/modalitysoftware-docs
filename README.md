@@ -6,7 +6,7 @@ If you cant find what you’re looking for, please [get in touch](mailto:mailto:
 
 ------
 
-## [Teamwork Analytics](/twa/Readme.md)
+## [Teamwork Analytics](/twa/README.md)
 
 ## [OneConsultation](https://docs.oneconsultation.net/)
 
