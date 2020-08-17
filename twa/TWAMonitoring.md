@@ -4,11 +4,11 @@ This page explains what customers should monitor when deploying Teamwork Analyti
 
 To get a full understanding of the Architecture see documentation [here](/twa/TWA-Architecture-Overview.md).
 
-## Monitoring on the Windows Virtual Machine that runs the Graph Colllector
+## Monitoring on the Windows Virtual Machine that runs the Graph Collector
 
-Please collect and report on the following metrics/events over time.
+Please collect and report on the following metrics/events over time. If Windows performance appears to be constrained (persistently high CPU, IO or other metrics) please contact Modality Systems for sizing advice.
 
-**Windows Generic**
+**Windows OS Generic Monitoring**
 
 Reboots / online / offline
 
@@ -24,13 +24,13 @@ Network IO
 
 Event logs for generic issues
 
-**TWA Specific**
+**Teamwork Analytics Windows Service**
 
 TWA Collector Service running
 
 TWA collector event log events
 
-If VM performance appears to be constrained (persistently high CPU, IO or other metrics) please contact Modality Systems for sizing advice.
+
 
 ## Monitoring of SQL
 
