@@ -2,7 +2,7 @@
 
 This page explains what customers should monitor when deploying Teamwork Analytics in the CAT (Customer Azure Tenant) model
 
-To get a full understanding of the Architecture see documentation here
+To get a full understanding of the Architecture see documentation [here](/twa/TWA-Architecture-Overview.md).
 
 ## Monitoring on the Windows Virtual Machine that runs the Graph Colllector
 
