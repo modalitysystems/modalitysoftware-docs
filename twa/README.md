@@ -20,7 +20,7 @@ Customers will need to grant access from their Office 365 tenant and each person
 
 This is the quickest and easiest way to run Teamwork Analytics
 
-### [Setting up Teamwork Analytics SaaS](/twa/SaaS/README.md)
+### [Setting up Teamwork Analytics SaaS](twa/SaaS/README.md)
 
 
 
