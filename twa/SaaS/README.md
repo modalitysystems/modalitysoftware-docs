@@ -6,7 +6,7 @@ Once approved Teamwork Analytics will collect reporting information. To view you
 
 PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-Steps for how to configure Power BI are [here](/master/twa/PowerBIAppsAdminInstallGuide.md)
+Steps for how to configure Power BI are [here](/twa/PowerBIAppsAdminInstallGuide.md)
 
 Automation will be off by default, but can be configured by Modality Systems to meet your specific requirements.
 
