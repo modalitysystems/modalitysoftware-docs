@@ -4,58 +4,22 @@ To find out more about Modality Software, visit [modalitysystems.com](https://ww
 
 If you cant find what you’re looking for, please [get in touch](mailto:mailto:enquiries@modalitysystems.com)
 
----
 
-## Create Team  - Deployment
-
-> [CreateTeam Deployment](CreateTeam/README.md)
 
 ---
 
-## Teamwork Analytics  - Deployment and Upgrade
-
-> [Teamwork Analytics Data Backend Deployment](twa/README.md)
-
-> [Teamwork Analytics Power BI Apps Deployment](twa/PowerBIAppsAdminInstallGuide.md)
-
-> [Teamwork Analytics Upgrade](twa/UpgradingTeamworkAnalytics.md)
-
-PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
-
-## Teamwork Analytics PowerBI Report Guides
-
-> [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
-
-> [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
-
-## Teamwork Analytics - Architecture and FAQ
-
-> [Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
-
-> [Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
-
-> [Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
+## [Teamwork Analytics](/twa/Readme.md)
 
 ---
 
-## OneMeeting
+## [OneConsultation](https://docs.oneconsultation.net/)
 
-> [OneMeeting Deployment](CreateTeam)
-
----
-
-## Teams Chat Assist
-
-> [Teams Chat Assist Deployment](TeamsChatAssist)
-
-> [Teams Chat Assist User Guide](TeamsChatAssist/userguide.md)
-
-> [Teams Chat Assist Power BI Report Import Guide](TeamsChatAssist/powerBiReport.md)
+## [OneMeeting](/CreateTeam/README.md)
 
 ---
 
-## Network Readiness Assessment for Microsoft Teams
+## [Teams Chat Assist](/TeamsChatAssist/readme.md)
 
-> [Network Readiness Assessment for Microsoft Teams](/TeamsNetworkReadiness/Network%20Readiness%20Assessment%20for%20Microsoft%20Teams.html)
+---
 
-
+## [Network Readiness Assessment for Microsoft Teams](/TeamsNetworkReadiness/Network%20Readiness%20Assessment%20for%20Microsoft%20Teams.html)
