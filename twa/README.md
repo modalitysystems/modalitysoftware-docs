@@ -56,7 +56,7 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 # Teamwork Analytics Power BI Report Guides
 
-PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
+PowerBI apps are available from [Microsoft AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?search=Teamwork%20Analytics&page=1)
 
 ###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
