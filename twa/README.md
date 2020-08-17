@@ -4,7 +4,7 @@ Modality Systems’ Teamwork Analytics supports organisations with hundreds of t
 
 Teamwork Analytics combines a native Microsoft Teams app for team creation and lifecycle management through automation and Power BI reporting.
 
-In preview is reporting for Microsoft PSTN Billing reporting.
+In preview is reporting for Microsoft PSTN Billing reporting. This module is deployed in select enterprise customers and provides full PSTN billing reports for Microsoft Teams calling plans and PSTN Audio Conferencing. This is currently bespoke reporting on a per customer basis.
 
 Teamwork Analytics can be run by Modality Systems in Azure as software as a service (SaaS) or on a customer azure tenant (CAT).
 
@@ -63,7 +63,3 @@ PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.c
 ###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 
-
-## Teamwork Analytics Teams Billing Preview
-
-This module is deployed in select enterprise customers and provides full PSTN billing reports for Microsoft Teams calling plans and PSTN Audio Conferencing. This is currently bespoke reporting on a per customer basis.
