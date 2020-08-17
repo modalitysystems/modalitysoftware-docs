@@ -58,9 +58,9 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-###  [Teams Usage Report Guide](/Reports/TeamsUsage/TeamsUsageGuidance.md)
+###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
-###  [Teams Governance Report Guide](/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
+###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 
 
