@@ -10,19 +10,21 @@ Please collect and report on the following metrics/events over time. If Windows 
 
 **Windows virtual machine/Operating System Monitoring**
 
-Reboots / online / offline - alert on any unexpected/un planned reboot
+**Online / offline / reboot** - alert on any unexpected/un planned reboot or VM offline
 
-CPU Usage - alert when CPU usage persists over 80% for more than 1 hour
+**CPU Usage** - alert when CPU usage persists over 80% for more than 1 hour
 
-RAM Usage - alert when CPU usage persists over 80% for more than 1 hour
+**RAM Usage** - alert when CPU usage persists over 80% for more than 1 hour
 
-Disk IO 
+**Disk IO** 
 
-Disk size / % free  - alert when less than 10% free disk space
+**Disk size / % free**  - alert when less than 10% free disk space
 
-Network IO
+**Network IO**
 
-Event logs for generic issues - ensure all events are keep for up to 30 days for historical troubleshooting
+**Event logs** - for generic issues - ensure all events are keep for up to 30 days for historical troubleshooting
+
+
 
 **Teamwork Analytics Windows Service**
 
