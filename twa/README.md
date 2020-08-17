@@ -20,7 +20,7 @@ Customers will need to grant access from their Office 365 tenant and each person
 
 This is the quickest and easiest way to run Teamwork Analytics
 
-> #### [Setting up Teamwork Analytics SaaS](/twa/SaaS/README.md)
+#### [Setting up Teamwork Analytics SaaS](/twa/SaaS/README.md)
 
 
 
@@ -32,23 +32,25 @@ This allows Teamwork Analytics to be deployed without Modality Systems having an
 
 Below are the steps to deploy CreateTeam and the Automation and Reporting
 
-> ####  [CreateTeam Deployment](CreateTeam/README.md)
+####  [CreateTeam Deployment CAT](CreateTeam/README.md)
 
-> #### [Teamwork Analytics Data Backend Deployment](twa/TeamworkAnalyticsDataCollectorDeployment.md)
+#### [Teamwork Analytics Data Backend Deployment CAT](twa/TeamworkAnalyticsDataCollectorDeployment.md)
 
-> #### [Teamwork Analytics Power BI Apps Deployment](twa/PowerBIAppsAdminInstallGuide.md)
+#### [Teamwork Analytics Upgrade Steps CAT](twa/UpgradingTeamworkAnalytics.md)
 
-> #### [Teamwork Analytics Upgrade Steps](twa/UpgradingTeamworkAnalytics.md)
+#### [Teamwork Analytics Power BI Reports Deployment](twa/PowerBIAppsAdminInstallGuide.md)
+
+
 
 
 
 ## Teamwork Analytics Architecture and FAQ
 
-> ####  [Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
+####  [Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
 
-> #### [Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
+#### [Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
 
-> #### [Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
+#### [Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
 
 
 
@@ -56,9 +58,9 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
 
-> ####  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
+####  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
-> ####  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
+####  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 
 
