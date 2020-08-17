@@ -32,13 +32,13 @@ This allows Teamwork Analytics to be deployed without Modality Systems having an
 
 Below are the steps to deploy CreateTeam and the Automation and Reporting
 
-####  [CreateTeam Deployment CAT](CreateTeam/README.md)
+###  [CreateTeam Deployment CAT](CreateTeam/README.md)
 
-#### [Teamwork Analytics Data Backend Deployment CAT](twa/TeamworkAnalyticsDataCollectorDeployment.md)
+### [Teamwork Analytics Data Backend Deployment CAT](twa/TeamworkAnalyticsDataCollectorDeployment.md)
 
-#### [Teamwork Analytics Upgrade Steps CAT](twa/UpgradingTeamworkAnalytics.md)
+### [Teamwork Analytics Upgrade Steps CAT](twa/UpgradingTeamworkAnalytics.md)
 
-#### [Teamwork Analytics Power BI Reports Deployment](twa/PowerBIAppsAdminInstallGuide.md)
+### [Teamwork Analytics Power BI Reports Deployment](twa/PowerBIAppsAdminInstallGuide.md)
 
 
 
