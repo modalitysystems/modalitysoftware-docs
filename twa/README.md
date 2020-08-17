@@ -4,7 +4,7 @@ Modality Systems’ Teamwork Analytics supports organisations with hundreds of t
 
 Teamwork Analytics combines a native Microsoft Teams app for team creation and lifecycle management through automation and Power BI reporting.
 
-In preview is reporting for Microsoft PSTN Billing reporting.
+In preview is reporting for Microsoft PSTN Billing reporting. This module is deployed in select enterprise customers and provides full PSTN billing reports for Microsoft Teams calling plans and PSTN Audio Conferencing. This is currently bespoke reporting on a per customer basis.
 
 Teamwork Analytics can be run by Modality Systems in Azure as software as a service (SaaS) or on a customer azure tenant (CAT).
 
@@ -32,13 +32,13 @@ This allows Teamwork Analytics to be deployed without Modality Systems having an
 
 Below are the steps to deploy CreateTeam and the Automation and Reporting
 
-###  [CreateTeam Deployment CAT](CreateTeam/README.md)
+###  [CreateTeam Deployment CAT](/CreateTeam/README.md)
 
-### [Teamwork Analytics Data Backend Deployment CAT](twa/TeamworkAnalyticsDataCollectorDeployment.md)
+### [Teamwork Analytics Data Backend Deployment CAT](/twa/TeamworkAnalyticsDataCollectorDeployment.md)
 
-### [Teamwork Analytics Upgrade Steps CAT](twa/UpgradingTeamworkAnalytics.md)
+### [Teamwork Analytics Upgrade Steps CAT](/twa/UpgradingTeamworkAnalytics.md)
 
-### [Teamwork Analytics Power BI Reports Deployment](twa/PowerBIAppsAdminInstallGuide.md)
+### [Teamwork Analytics Power BI Reports Deployment](/twa/PowerBIAppsAdminInstallGuide.md)
 
 
 
@@ -46,24 +46,20 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ## **Teamwork Analytics Architecture and FAQ**
 
-###  [Teamwork Analytics Architecture](twa/TWA-Architecture-Overview.md)
+###  [Teamwork Analytics Architecture](/twa/TWA-Architecture-Overview.md)
 
-### [Teamwork Analytics Data Collection Explained](twa/TeamworkAnalyticsDataCollectionExplained.md)
+### [Teamwork Analytics Data Collection Explained](/twa/TeamworkAnalyticsDataCollectionExplained.md)
 
-### [Teamwork Analytics Frequently Asked Questions](twa/TWA-FAQ.md)
+### [Teamwork Analytics Frequently Asked Questions](/twa/TWA-FAQ.md)
 
 
 
 # Teamwork Analytics Power BI Report Guides
 
-PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
+PowerBI apps are available from [Microsoft AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?search=Modality%20Systems&page=1)
 
 ###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
 
 ###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
 
 
-
-## Teamwork Analytics Teams Billing Preview
-
-This module is deployed in select enterprise customers and provides full PSTN billing reports for Microsoft Teams calling plans and PSTN Audio Conferencing. This is currently bespoke reporting on a per customer basis.
