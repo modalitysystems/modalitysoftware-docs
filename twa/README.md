@@ -32,7 +32,7 @@ This allows Teamwork Analytics to be deployed without Modality Systems having an
 
 Below are the steps to deploy CreateTeam and the Automation and Reporting
 
-###  [CreateTeam Deployment CAT](/CreateTeam/README.html)
+###  [CreateTeam Deployment CAT](https://docs.modalitysystems.com/CreateTeam/)
 
 ### [Teamwork Analytics Data Backend Deployment CAT](https://docs.modalitysystems.com/twa/TeamworkAnalyticsDataCollectorDeployment.html)
 
