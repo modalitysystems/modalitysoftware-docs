@@ -34,11 +34,11 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ###  [CreateTeam Deployment CAT](/CreateTeam/README.html)
 
-### [Teamwork Analytics Data Backend Deployment CAT](/twa/TeamworkAnalyticsDataCollectorDeployment.html)
+### [Teamwork Analytics Data Backend Deployment CAT](https://docs.modalitysystems.com/twa/TeamworkAnalyticsDataCollectorDeployment.html)
 
-### [Teamwork Analytics Upgrade Steps CAT](/twa/UpgradingTeamworkAnalytics.html)
+### [Teamwork Analytics Upgrade Steps CAT](https://docs.modalitysystems.com/twa/UpgradingTeamworkAnalytics.html)
 
-### [Teamwork Analytics Power BI Reports Deployment](/twa/PowerBIAppsAdminInstallGuide.html)
+### [Teamwork Analytics Power BI Reports Deployment](https://docs.modalitysystems.com/twa/PowerBIAppsAdminInstallGuide.html)
 
 
 
@@ -46,11 +46,11 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ## **Teamwork Analytics Architecture and FAQ**
 
-###  [Teamwork Analytics Architecture](/twa/TWA-Architecture-Overview.html)
+###  [Teamwork Analytics Architecture](https://docs.modalitysystems.com/twa/TWA-Architecture-Overview.html)
 
-### [Teamwork Analytics Data Collection Explained](/twa/TeamworkAnalyticsDataCollectionExplained.html)
+### [Teamwork Analytics Data Collection Explained](https://docs.modalitysystems.com/twa/TeamworkAnalyticsDataCollectionExplained.html)
 
-### [Teamwork Analytics Frequently Asked Questions](/twa/TWA-FAQ.html)
+### [Teamwork Analytics Frequently Asked Questions](https://docs.modalitysystems.com/twa/TWA-FAQ.html)
 
 
 
@@ -58,8 +58,8 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 PowerBI apps are available from [Microsoft AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?search=Modality%20Systems&page=1)
 
-###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.html)
+###  [Teams Usage Report Guide](https://docs.modalitysystems.com/twa/Reports/TeamsUsage/TeamsUsageGuidance.html)
 
-###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.html)
+###  [Teams Governance Report Guide](https://docs.modalitysystems.com/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.html)
 
 
