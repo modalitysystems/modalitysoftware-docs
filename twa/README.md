@@ -32,13 +32,13 @@ This allows Teamwork Analytics to be deployed without Modality Systems having an
 
 Below are the steps to deploy CreateTeam and the Automation and Reporting
 
-###  [CreateTeam Deployment CAT](/CreateTeam/README.md)
+###  [CreateTeam Deployment CAT](/CreateTeam/README.html)
 
-### [Teamwork Analytics Data Backend Deployment CAT](/twa/TeamworkAnalyticsDataCollectorDeployment.md)
+### [Teamwork Analytics Data Backend Deployment CAT](/twa/TeamworkAnalyticsDataCollectorDeployment.html)
 
-### [Teamwork Analytics Upgrade Steps CAT](/twa/UpgradingTeamworkAnalytics.md)
+### [Teamwork Analytics Upgrade Steps CAT](/twa/UpgradingTeamworkAnalytics.html)
 
-### [Teamwork Analytics Power BI Reports Deployment](/twa/PowerBIAppsAdminInstallGuide.md)
+### [Teamwork Analytics Power BI Reports Deployment](/twa/PowerBIAppsAdminInstallGuide.html)
 
 
 
@@ -46,11 +46,11 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ## **Teamwork Analytics Architecture and FAQ**
 
-###  [Teamwork Analytics Architecture](/twa/TWA-Architecture-Overview.md)
+###  [Teamwork Analytics Architecture](/twa/TWA-Architecture-Overview.html)
 
-### [Teamwork Analytics Data Collection Explained](/twa/TeamworkAnalyticsDataCollectionExplained.md)
+### [Teamwork Analytics Data Collection Explained](/twa/TeamworkAnalyticsDataCollectionExplained.html)
 
-### [Teamwork Analytics Frequently Asked Questions](/twa/TWA-FAQ.md)
+### [Teamwork Analytics Frequently Asked Questions](/twa/TWA-FAQ.html)
 
 
 
@@ -58,8 +58,8 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 PowerBI apps are available from [Microsoft AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?search=Modality%20Systems&page=1)
 
-###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.md)
+###  [Teams Usage Report Guide](/twa/Reports/TeamsUsage/TeamsUsageGuidance.html)
 
-###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.md)
+###  [Teams Governance Report Guide](/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.html)
 
 
