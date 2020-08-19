@@ -1,4 +1,3 @@
 PartitionKey,RowKey,NativeMaxCount,NativeMinCount,RecommendedMaxCount,RecommendedMinCount,Validate,NativeMaxCount@type,NativeMinCount@type,RecommendedMaxCount@type,RecommendedMinCount@type,Validate@type
-xxx-your-tenant-id-xxx,guests,2500,0,3,2,FALSE,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Boolean
 xxx-your-tenant-id-xxx,members,2500,0,3,2,FALSE,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Boolean
 xxx-your-tenant-id-xxx,owners,20,1,3,2,TRUE,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Int32,Edm.Boolean
