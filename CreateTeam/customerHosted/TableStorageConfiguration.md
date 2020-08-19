@@ -118,6 +118,6 @@ The templates defined in this table will appear as templates in the main menu fo
 
 - PartitionKey = [TenantId]
 - RowKey = This should be a unique Guid. To generate a Guid visit https://www.guidgenerator.com/, press the “Generate some GUIDs!” button and copy the result into this field. A new Guid needs generating for each row.
-- Description = This text will appear in the summary box on the create team form when the template is selected
+- Description = This text will appear in the summary box on the create team form when the template is selected. **Supports HTML.**
 - Name = The name will appear in the template drop down on the main menu
 - TemplateJson = The definition of the template to be created. [Learn how to configure the template JSON.](templateJsonConfiguration.md)
