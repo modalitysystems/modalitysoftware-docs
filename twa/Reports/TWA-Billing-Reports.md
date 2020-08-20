@@ -10,3 +10,11 @@
 
 [PSTN Conference Bill](https://docs.modalitysystems.com/twa/Reports/TB4490.html)
 
+[Monthly License Assignment](https://docs.modalitysystems.com/twa/Reports/TB8716.html)
+
+[License Assignment](https://docs.modalitysystems.com/twa/Reports/TB8717.html)
+
+[Full License Utilisation](https://docs.modalitysystems.com/twa/Reports/TB3424.html)
+
+[PPM License Transfer](https://docs.modalitysystems.com/twa/Reports/TB6678.html)
+
