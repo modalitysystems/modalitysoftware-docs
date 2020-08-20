@@ -39,16 +39,16 @@ Add a PeoplePicker for each of the following RowKeys:
 - RowKey = This is a unique string to identify the People Picker.
   - members
   - owners
-  - guests
 - NativeMinCount (Int32) = The minimum count of people. If this number is not met, the field will invalidate the form and advise of the minimum count (red)
 
-> For the 'owners' field, the minimum value of NativeMinCount is 1. For the other PeoplePicker fields, 'members' and 'guests', the minimum value of NativeMinCount is 0.
+> For the 'owners' field, the minimum value of NativeMinCount is 1. For the 'members' PeoplePicker field, the minimum value of NativeMinCount is 0.
 
 - RecommendedMinCount (Int32) = The recommended minimum count of people. If this number is not met, the field will advise of the recommended minimum count (yellow)
 - RecommendedMaxCount (Int32) = The recommended maximum count of people. If this number is exceeded, the field will advise of the recommended maximum count (yellow)
 - NativeMaxCount (Int32) = The maximum count of people. If this number is exceeded, the field will invalidate the form and advise of the maximum count (red)
 
-> For the 'members' and 'guests' fields, the maximum value of each individual NativeMaxCount is 5000. However the combined maximum is also 5000. For example if 'members' has a value of 3000, then the maximum for 'guests' is 2000. (3000 + 2000 = 5000)
+> For the 'members' fields, the maximum value of each individual NativeMaxCount is 5000. However the combined maximum is also 5000. For example if 'members' has a value of 3000, then the maximum for 'owners' is 2000. (3000 + 2000 = 5000)
+> The 'members' people picker control supports Office 365 groups (mail enabled and security disabled). However, only unique and invalid validation works for this client-side. The counts used in this field are only taken into account server-side.
 
 > For the 'owners' field, the maximum value of NativeMaxCount is 20. If set higher, CreateTeam will not process any more than 20 owners.
 
@@ -118,6 +118,6 @@ The templates defined in this table will appear as templates in the main menu fo
 
 - PartitionKey = [TenantId]
 - RowKey = This should be a unique Guid. To generate a Guid visit https://www.guidgenerator.com/, press the “Generate some GUIDs!” button and copy the result into this field. A new Guid needs generating for each row.
-- Description = This text will appear in the summary box on the create team form when the template is selected
+- Description = This text will appear in the summary box on the create team form when the template is selected. **Supports HTML.**
 - Name = The name will appear in the template drop down on the main menu
 - TemplateJson = The definition of the template to be created. [Learn how to configure the template JSON.](templateJsonConfiguration.md)
