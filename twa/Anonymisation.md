@@ -25,7 +25,11 @@ The data is anonymised as it is received from Microsoft's API before any further
 
 Configuration
 -------------
-Users are anonymised according to configurable rules stored in the TWA database. To configure this feature, simply insert rows to the table named `configuration.UserObfuscationCriteria` using Microsoft SQL Server Management Studio (or an alternative). This table instructs TWA to anonymise users based on their attributes, e.g. anonymise all users who have `Country` set to `Germany` (both case-insensitive).
+Users are anonymised according to configurable rules stored in the TWA database. 
+
+To configure this feature, simply insert rows to the table named `configuration.UserObfuscationCriteria` using Microsoft SQL Server Management Studio (or an alternative). 
+
+This table instructs TWA to anonymise users based on their attributes, e.g. anonymise all users who have `Country` set to `Germany` (both case-insensitive).
 
 |PropertyName|Value|
 |---|---|
