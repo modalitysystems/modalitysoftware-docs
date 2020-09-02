@@ -4,7 +4,7 @@
 
 Teamwork Analytics Automation (TWA Automation) enables you to send automated messages direct to users via email or Microsoft Teams, enforcing compliance and data security.
 
-![TWA Architecture](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/images/twa-architecture.png)
+![TWA Architecture](images/twa-architecture.png)
 
 TWA Automation is deployed in two parts: a locally run Bot Notification Service, and a Modality-managed cloud solution that brokers and delivers messages to users.
 
