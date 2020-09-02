@@ -21,6 +21,14 @@ Today, TWA Automation supports 4 automation scenarios: Team Ownership, Guest Rep
 
 The frequency of notification is configurable. When a user is eligable for a message it is sent by either email or Microsoft Teams 1-to-1 chat message, depending on the user preference. By default, messages are sent by email unless the user opts-in to receiving them by Teams chat.
 
+## Data sent to Modality-managed cloud solution
+
+The following information is sent from the locally run Bot Notification Service to the Modality-managed cloud solution. All information is sent over HTTPS:
+
+* User UPN
+* Type of message being delivered
+* Information relavent to the scenario and shown in the message. This might include team names, last activity date, number of guests etc.
+
 # Upcoming Changes
 
 Some changes are planned to TWA Automation, in order to enable pro-active messages to be sent to users as Teams 1-to-1 chat messages by default. This will require an additional permission to be consented by a tenant administrator:
