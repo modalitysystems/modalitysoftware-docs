@@ -1,7 +1,5 @@
-Anonymisation of Select Users
+Anonymisation of Select Users PII Data
 =============
-
-
 
 Teamwork Analytics collects and stores user data from Microsoft Graph API and surfaces the data in reports. 
 
@@ -84,11 +82,11 @@ Example from Graph API:
 
 Users are anonymised according to configurable rules stored in the Teamwork Analytics Database. For SaaS customers please contact software.support@modalitysystems.com for Modality to configure this feature for you.
 
-1) Open SQL Management Studio and Connect to the Teamwork Analytics Database
+1. **Open SQL Management Studio and Connect to the Teamwork Analytics Database**
 
 
 
-2) Run the following - Replace the AD Property and AD value
+2. **Run the following - Replace the AD Property and AD value**
 
 
 
@@ -112,15 +110,12 @@ INSERT INTO [configuration].[UserObfuscationCriteria]
 
 
 
-3) There is no need to restart any service, it will start from the next main scan of user data (see Power BI logging report for scan times)
+3. **There is no need to restart any service, it will start from the next main scan of user data (see Power BI logging report for scan times)**
 
 
 
-## Moving a user out of anonymisation
+## Moving a user out back out of anonymisation
 
-Once TWA has anonymised a user based on the rules above, it keeps a record of the user's User Principal Name (stored as a hash). This is to ensure that the user continues to be anonymised even if the data is updated (for example if their `Country` is changed to another location).
+Once TWA has anonymised a user based on the rules above, it keeps a record of the user's User Principal Name (stored as a hash), even if they later change AD attribute to something different. This is to ensure that the user continues to be anonymised even if the data is updated (for example if their `Country` is changed to another location).
 
 If you wish to exclude a user from further anonymisation, you must locate them in the table named `dbo.Users`, copy their EID, then find and remove the same value from the `dbo.ObfuscatedUsers` table.
-
-
-----------------------------
