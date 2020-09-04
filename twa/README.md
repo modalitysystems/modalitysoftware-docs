@@ -22,6 +22,8 @@ This is the quickest and easiest way to run Teamwork Analytics
 
 ### [Setting up Teamwork Analytics SaaS](https://docs.modalitysystems.com/twa/SaaS/)
 
+###  [CreateTeam Deployment SaaS](https://docs.modalitysystems.com/CreateTeam/deployteamsapp.html)
+
 
 
 # Teamwork Analytics -  Customer Azure Tenant (CAT)
