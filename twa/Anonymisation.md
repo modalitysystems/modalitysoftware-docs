@@ -78,7 +78,7 @@ Example from Graph API:
     ...
 }`
 
-## How to configure for Teamwork Analytics on Customer Azure Tenant
+## How to configure Anonymisation (CAT)
 
 Users are anonymised according to configurable rules stored in the Teamwork Analytics Database. For SaaS customers please contact software.support@modalitysystems.com for Modality to configure this feature for you.
 
