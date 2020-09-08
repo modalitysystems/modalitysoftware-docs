@@ -12,8 +12,8 @@ Download [CustomerDeployScripts.zip](https://github.com/modalitysystems/CreateTe
 
 Each script is signed and will require the following to be installed before attempting to run the scripts
 
-- [Azure PowersShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
-- [Azure Active Directory PowersShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+- [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
+- [Azure Active Directory PowerShell Module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2)
   
 They will also need to be able to access the internet so if you are running the scripts from behind a web proxy then this will need to be configured. The preferred way to run these scripts is to right click on each of the three scripts and select "Run with PowerShell". PowerShell 7 is currently not supported.
 
