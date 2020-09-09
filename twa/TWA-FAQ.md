@@ -22,7 +22,13 @@ For overall Teams Usage, an active user is a user which meets any of the followi
  - Sent at least 1 Teams Channel Message
  - Sent at least 1 Teams Chat Message
 
-For Teams Collaboration and Governance, an active user is one which has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration" for these reports. 
+For Teams Collaboration and Governance, an active user is one which has **sent a message** to a channel (e.g. in a Team) in the **last 30 days (by default)**. It was a deliberate decision to focus on "active for collaboration" for these reports.
+
+To change the default value of 30 days, edit the `TeamActivityRangeInDays` column in the `configuration.ReportingConstants` table using Microsoft SQL Server Management Studio. This table only has one row.
+
+| Id | TeamActivityRangeInDays |
+| -- | ----------------------- |
+| 1  | 30                      |
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
