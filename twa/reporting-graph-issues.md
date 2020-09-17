@@ -38,8 +38,6 @@ This returns a csv with a report refresh data of 14th September. Summing togethe
 | Team Chat Message Count | Private Chat Message Count | Call Count | Meeting Count |
 |---:|---:|---:|---:|
 | 1137 | 35769 | 2372 | 2205 |  
-` `  
-` `  
  
 #### 2. Perform Graph API Requests for each of the 7 days in this period. The requests are as follows;
 
@@ -64,10 +62,7 @@ The Results from these requests (via summing the 4 count columns) were;
 | 2020-09-12 | 4 | 166 | 29 | 13 |
 | 2020-09-13 | 23 | 295 | 40 | 18 |
 | 2020-09-14 | 225 | 6714 | 527 | 442 |
-| Total | 1158 | 35759 | 2368 | 2221 |
-
-` `  
-` `  
+| **Total** | **1158** | **35759** | **2368** | **2221** |
 
 #### 3. Compare summed results from the daily API to the Period API
 
