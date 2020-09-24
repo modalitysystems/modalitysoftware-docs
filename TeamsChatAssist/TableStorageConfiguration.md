@@ -239,3 +239,8 @@ Add Entity for each predefined reply button to be displayed in the Agent View. T
 - ReplyText (String) = The text that is sent to the user when the button is pressed (the text can also be viewed by hovering over the button in the agent view)
 
 ![Quick Reply Buttons UI](images/QuickReplyButtonsUI.png "Quick Reply Buttons UI")
+
+## Backup and Restore
+
+1. Optionally you may want maintain a backup of your table storage settings
+   - Please follow steps [Table Storage Backup Restore](TableStorageBackupRestore.md) for instructions.

@@ -121,3 +121,8 @@ The templates defined in this table will appear as templates in the main menu fo
 - Description = This text will appear in the summary box on the create team form when the template is selected. **Supports HTML.**
 - Name = The name will appear in the template drop down on the main menu
 - TemplateJson = The definition of the template to be created. [Learn how to configure the template JSON.](templateJsonConfiguration.md)
+
+## Backup and Restore
+
+1. Optionally you may want maintain a backup of your table storage settings
+   - Please follow steps [Table Storage Backup Restore](TableStorageBackupRestore.md) for instructions.
