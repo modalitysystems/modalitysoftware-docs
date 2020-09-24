@@ -8,9 +8,9 @@ Create Team is provided as an Microsoft Teams App which needs to be uploaded to 
 
 For the App to be able to create teams in the target Teams Tenant, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
 
-1. This is achieved by clicking on the following link and logging in with a Global Administrator account, this will consent to the AAD APP 1 permisions below (for the API). Note AAD App 2 below (for the client) does not require admin consent.
+1. This is achieved by clicking on the following link and logging in with a Global Administrator account, this will consent to the AAD APP 1 permissions below (for the API). Note AAD App 2 below (for the client) does not require admin consent.
 
-   [Provide Admin Consent](https://login.microsoftonline.com/common/adminconsent?client_id=d992e819-1a67-4840-89d3-1cee8cd4e735&redirect_uri=https://tg-mrls26kpezu6g-ga.azurewebsites.net/AdminConsent)
+   [Provide Admin Consent](https://mod.qa/CreateTeamConsent)
 
 2. These are the permissions that will be required
 
