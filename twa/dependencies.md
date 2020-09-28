@@ -1,4 +1,4 @@
-
+TWA contains the following dependencies, below the first table are the dependencies of our custom Modality packages for completeness.
 Name | Version 
 --- | --- 
 Autofac | 4.8.1
@@ -41,7 +41,9 @@ Topshelf | 4.2.0
 Topshelf.Autofac | 4.0.1
 Topshelf.NLog | 4.2.0
 
-Modality.Extensions.Monitoring
+## Custom Modality Packages
+
+### Modality.Extensions.Monitoring
 
 Name | Version 
 --- | --- 
@@ -49,31 +51,31 @@ Modality.Extensions.Counters | 1.1.4
 Modality.Extensions.ErrorReporting | 1.1.4
 Modality.Extensions.Monitoring.Abstractions | 1.1.4
 
-Modality.Extensions.Counters
+### Modality.Extensions.Counters
 
 Name | Version 
 --- | --- 
 Autofac | 4.8.1
 
-Modality.Extensions.ErrorReporting
+### Modality.Extensions.ErrorReporting
 
 Name | Version 
 --- | --- 
 Autofac | 4.8.1
 
-Modality.Extensions.Monitoring.Abstractions
+### Modality.Extensions.Monitoring.Abstractions
 
 Name | Version 
 --- | --- 
 None | 
 
-Modality.Logging
+### Modality.Logging
 
 Name | Version 
 --- | --- 
 None | 
 
-Modality.Logging.NLog
+### Modality.Logging.NLog
 
 Name | Version 
 --- | --- 
@@ -82,13 +84,13 @@ NLog | 4.6.0
 System.Collections.NonGeneric | 4.3.0
 System.Diagnostics.TraceSource | 4.3.0
 
-Modality.Security
+### Modality.Security
 
 Name | Version 
 --- | ---
 None | 
 
-Modality.TestFramework
+### Modality.TestFramework
 
 Name | Version 
 --- | --- 
