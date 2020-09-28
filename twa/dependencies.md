@@ -1,107 +1,107 @@
 TWA contains the following dependencies. 
 Below the first table are the dependencies of our custom Modality packages for completeness.
-Name | Version 
---- | --- 
-Autofac | 4.8.1
-AutoFixture | 4.7.0
-Bogus | 29.0.2
-Common.Logging | 3.4.1
-Common.Logging.NLog4412 | 3.4.1
-EntityFramework | 6.2.0
-FastMember | 1.5.0
-FluentAssertions | 5.6.0
-FluentAssertions.Autofac | 0.7.3
-Flurl | 2.8.1
-Flurl.Http | 2.4.1
-Gridsum.DataflowEx | 2.0.0
-LogicNP.CryptoLicensing | 11.0.0
-Microsoft.Identity.Client | 2.7.1
-Microsoft.PowerShell.5.ReferenceAssemblies | 1.1.0
-Microsoft.SqlServer.DacFx | 150.4826.1
-Microsoft.VisualStudio.Validation | 15.3.58
-Modality.Extensions.Monitoring | 1.1.4
-Modality.Logging | 2019.3.23.1
-Modality.Logging.NLog | 2019.3.23.1
-Modality.Security | 2018.9.20.1
-Modality.TestFramework | 2019.1.30.1
-morelinq | 3.1.1
-Newtonsoft.Json | 12.0.1
-NodaTime | 2.4.6
-NSubstitue | 3.1.0
-NUnit | 3.11.0
-NUnit3TestAdapter | 3.13.0
-Polly | 7.1.0
-Polly.Extensions.Http | 3.0.0
-Strilanc.Value.May | 1.0.2
-System.Configuration.ConfigurationManager | 4.5.0
-System.Data.SqlClient | 4.8.1
-System.Security.Cryptography.Algorithms | 4.3.1
-System.Security.Cryptography.ProtectedData | 4.5.0
-System.Threading.Tasks.Dataflow | 4.9.0
-Topshelf | 4.2.0
-Topshelf.Autofac | 4.0.1
-Topshelf.NLog | 4.2.0
+Name | Version | Open Source 
+--- | --- | --- 
+Autofac | 4.8.1 | Yes
+AutoFixture | 4.7.0 | Yes
+Bogus | 29.0.2 | Yes
+Common.Logging | 3.4.1 | Yes
+Common.Logging.NLog4412 | 3.4.1 | Yes
+EntityFramework | 6.2.0 | Yes
+FastMember | 1.5.0 | Yes
+FluentAssertions | 5.6.0 | Yes
+FluentAssertions.Autofac | 0.7.3 | Yes
+Flurl | 2.8.1 | Yes
+Flurl.Http | 2.4.1 | Yes
+Gridsum.DataflowEx | 2.0.0 | Yes
+LogicNP.CryptoLicensing | 11.0.0 | No
+Microsoft.Identity.Client | 2.7.1 | Yes
+Microsoft.PowerShell.5.ReferenceAssemblies | 1.1.0 | Yes
+Microsoft.SqlServer.DacFx | 150.4826.1 | Yes
+Microsoft.VisualStudio.Validation | 15.3.58 | Yes
+Modality.Extensions.Monitoring | 1.1.4 | No
+Modality.Logging | 2019.3.23.1 | No
+Modality.Logging.NLog | 2019.3.23.1 | No
+Modality.Security | 2018.9.20.1 | No
+Modality.TestFramework | 2019.1.30.1 | No
+morelinq | 3.1.1 | Yes
+Newtonsoft.Json | 12.0.1 | Yes
+NodaTime | 2.4.6 | Yes
+NSubstitue | 3.1.0 | Yes
+NUnit | 3.11.0 | Yes
+NUnit3TestAdapter | 3.13.0 | Yes
+Polly | 7.1.0 | Yes
+Polly.Extensions.Http | 3.0.0 | Yes
+Strilanc.Value.May | 1.0.2 | Yes
+System.Configuration.ConfigurationManager | 4.5.0 | Yes
+System.Data.SqlClient | 4.8.1 | No
+System.Security.Cryptography.Algorithms | 4.3.1 | Yes
+System.Security.Cryptography.ProtectedData | 4.5.0 | Yes
+System.Threading.Tasks.Dataflow | 4.9.0 | Yes
+Topshelf | 4.2.0 | Yes
+Topshelf.Autofac | 4.0.1 | Yes
+Topshelf.NLog | 4.2.0 | Yes
 
 ## Custom Modality Packages
 
 ### Modality.Extensions.Monitoring
 
-Name | Version 
---- | --- 
-Modality.Extensions.Counters | 1.1.4
-Modality.Extensions.ErrorReporting | 1.1.4
-Modality.Extensions.Monitoring.Abstractions | 1.1.4
+Name | Version | Open Source 
+--- | --- | --- 
+Modality.Extensions.Counters | 1.1.4 | No
+Modality.Extensions.ErrorReporting | 1.1.4 | No
+Modality.Extensions.Monitoring.Abstractions | 1.1.4 | No
 
 ### Modality.Extensions.Counters
 
-Name | Version 
---- | --- 
-Autofac | 4.8.1
+Name | Version | Open Source 
+--- | --- | --- 
+Autofac | 4.8.1 | Yes
 
 ### Modality.Extensions.ErrorReporting
 
-Name | Version 
---- | --- 
-Autofac | 4.8.1
+Name | Version | Open Source 
+--- | --- | --- 
+Autofac | 4.8.1 | Yes
 
 ### Modality.Extensions.Monitoring.Abstractions
 
-Name | Version 
---- | --- 
-None | 
+Name | Version | Open Source 
+--- | --- | --- 
+None |  | 
 
 ### Modality.Logging
 
-Name | Version 
---- | --- 
-None | 
+Name | Version | Open Source 
+--- | --- | --- 
+None |  | 
 
 ### Modality.Logging.NLog
 
-Name | Version 
---- | --- 
-Modality.Logging | 2019.3.23.1
-NLog | 4.6.0
-System.Collections.NonGeneric | 4.3.0
-System.Diagnostics.TraceSource | 4.3.0
+Name | Version | Open Source 
+--- | --- | --- 
+Modality.Logging | 2019.3.23.1 | No
+NLog | 4.6.0 | Yes
+System.Collections.NonGeneric | 4.3.0 | Yes
+System.Diagnostics.TraceSource | 4.3.0 | Yes
 
 ### Modality.Security
 
-Name | Version 
---- | ---
-None | 
+Name | Version | Open Source 
+--- | --- | --- 
+None |  | 
 
 ### Modality.TestFramework
 
-Name | Version 
---- | --- 
-Albedo | 2.0.0
-AutoFixture | 4.7.0
-AutoFixture.AutoNSubstitue | 4.7.0
-AutoFixture.Idioms | 4.7.0
-Castle.Core | 4.3.1
-FluentAssertions | 5.6.0
-Flurl | 2.8.0
-NSubstitute | 3.1.0
-NSubstitute.Analyzers.CSharp | 1.0.4
-System.Net.Http | 4.3.4
+Name | Version | Open Source 
+--- | --- | --- 
+Albedo | 2.0.0 | Yes
+AutoFixture | 4.7.0 | Yes
+AutoFixture.AutoNSubstitue | 4.7.0 | Yes
+AutoFixture.Idioms | 4.7.0 | Yes
+Castle.Core | 4.3.1 | Yes
+FluentAssertions | 5.6.0 | Yes
+Flurl | 2.8.0 | Yes
+NSubstitute | 3.1.0 | Yes
+NSubstitute.Analyzers.CSharp | 1.0.4 | Yes
+System.Net.Http | 4.3.4 | Yes
