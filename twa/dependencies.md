@@ -1,5 +1,5 @@
 TWA contains the following dependencies. 
-Below the first table are the dependencies of our custom Modality packages for completeness.
+Below the first table are the dependencies of our private custom Modality packages for completeness.
 Name | Version | Open Source 
 --- | --- | --- 
 Autofac | 4.8.1 | Yes
