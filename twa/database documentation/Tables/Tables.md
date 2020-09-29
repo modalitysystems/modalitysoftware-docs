@@ -32,7 +32,11 @@
 
 ---
 
-![ER Diagran](erdiag.png)
+# Entity Relationship Diagram
+
+---
+
+![ER Diagram](erdiag.png)
 
 ---
 
