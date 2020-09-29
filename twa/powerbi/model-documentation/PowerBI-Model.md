@@ -6,7 +6,7 @@
 
 [ActiveUsersMonthly](/twa/powerbi/model-documentation/usage/ActiveUsersMonthly.md)
 
-[ActiveUsersWeekly}/twa/powerbi/model-documentation/usage/ActiveUsersWeekly.md)
+[ActiveUsersWeekly](/twa/powerbi/model-documentation/usage/ActiveUsersWeekly.md)
 
 [DeviceUsageUserDetails](/twa/powerbi/model-documentation/usage/DeviceUsageUserDetails.md)
 
