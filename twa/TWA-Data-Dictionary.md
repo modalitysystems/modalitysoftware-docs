@@ -6,7 +6,7 @@ If data is not listed on this page, it is not currently collected. This document
 
 ## Full Database and Power BI documentation
 
-There is full documentation of the datahase [here](database%20documentation/Tables/Tables), and the Power BI model [here](powerbi/model-documentation/PowerBI-Model)
+There is full documentation of the database [here](database%20documentation/Tables/Tables), and the Power BI model [here](powerbi/model-documentation/PowerBI-Model)
 
 ## Reporting Capabilities
 
