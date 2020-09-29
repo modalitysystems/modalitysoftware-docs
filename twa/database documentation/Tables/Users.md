@@ -6,7 +6,7 @@
 
 ---
 
-## <a name="#description"></a>MS_Description
+## <a name="#description"></a>Description
 
 Users within the organisations Asure Active Directory.
 

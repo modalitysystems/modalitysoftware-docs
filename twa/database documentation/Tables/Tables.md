@@ -2,6 +2,7 @@
 
 ---
 
+
 ## <a name="#objects"></a>Objects
 
 | Name | Description |
@@ -28,6 +29,10 @@
 | [dbo.UserProperties](UserProperties.md) | _Custom User attributes. Will be empty if custom attributes are not configured._ |
 | [dbo.Users](Users.md) | _Users within the organisations Asure Active Directory._ |
 
+
+---
+
+![ER Diagran](erdiag.png)
 
 ---
 
