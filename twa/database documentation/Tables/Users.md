@@ -24,13 +24,11 @@ Users within the organisations Asure Active Directory.
 |  | City | nvarchar(max) | max | NULL allowed |  | _The city in which the user is located._ |
 |  | Country | nvarchar(max) | max | NULL allowed |  | _The country/region in which the user is located; for example, "US" or "UK"._ |
 |  | Department | nvarchar(max) | max | NULL allowed |  | _The name for the department in which the user works._ |
-| [![Indexes IX_IsDeleted_UserPrincipalName
-dbo_Users_UserPrincipalName
-IX_UserPrincipalName](../../../Images/Index.png)](#indexes)(3) | UserPrincipalName | nvarchar(450) | 900 | NULL allowed |  | _The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard R_ |
+| [![Indexes IX_IsDeleted_UserPrincipalName dbo_Users_UserPrincipalName IX_UserPrincipalName](../images/Index.png)](#indexes)(3) | UserPrincipalName | nvarchar(450) | 900 | NULL allowed |  | _The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard R_ |
 |  | Mail | nvarchar(450) | 900 | NULL allowed |  | _The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com"._ |
 |  | Enabled | bit | 1 | NOT NULL | ((0)) | _Whether the user is enabled._ |
 |  | LastUpdatedDateTime | datetime2 | 8 | NULL allowed |  | _The date the row was last updated._ |
-| [![Indexes IX_IsDeleted_UserPrincipalName](../../../Images/Index.png)](#indexes) | Deleted | bit | 1 | NOT NULL | ((0)) | _Whether this record is deleted._ |
+| [![Indexes IX_IsDeleted_UserPrincipalName](../images/Index.png)](#indexes) | Deleted | bit | 1 | NOT NULL | ((0)) | _Whether this record is deleted._ |
 
 
 ---

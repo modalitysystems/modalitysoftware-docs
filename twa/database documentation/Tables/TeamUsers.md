@@ -14,8 +14,8 @@ Link table between dbo.Users and dbo.Teams. Can be used to identify which users 
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_dbo.TeamUsers: TeamId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_TeamId](../../../Images/Index.png)](#indexes) | TeamId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Teams._ |
-| [![Cluster Primary Key PK_dbo.TeamUsers: TeamId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_UserId](../../../Images/Index.png)](#indexes) | UserId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Users._ |
+| [![Cluster Primary Key PK_dbo.TeamUsers: TeamId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_TeamId](../images/Index.png)](#indexes) | TeamId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Teams._ |
+| [![Cluster Primary Key PK_dbo.TeamUsers: TeamId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_UserId](../images/Index.png)](#indexes) | UserId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Users._ |
 |  | UserType | nvarchar(max) | max | NULL allowed |  | _The type of membership to the team. For example owner or member._ |
 |  | LastUpdatedDateTime | datetime2 | 8 | NULL allowed |  | _The date the row was last updated._ |
 |  | Deleted | bit | 1 | NOT NULL | ((0)) | _Whether this record is deleted._ |

@@ -19,7 +19,7 @@ Attached files/content to Messages.
 |  | ContentUrl | nvarchar(max) | max | NULL allowed |  | _URL for the content of the attachment._ |
 |  | Name | nvarchar(max) | max | NULL allowed |  | _Name of the attachment._ |
 |  | ThumbnailUrl | nvarchar(max) | max | NULL allowed |  | _URL to a thumbnail image._ |
-| [![Cluster Primary Key PK_dbo.Attachments: Index\MessageId](../images/pkcluster.png)](#indexes)[![Indexes IX_MessageId](../../../Images/Index.png)](#indexes) | MessageId | bigint | 8 | NOT NULL |  | _Foreign Key to Id in dbo.Messages._ |
+| [![Cluster Primary Key PK_dbo.Attachments: Index\MessageId](../images/pkcluster.png)](#indexes)[![Indexes IX_MessageId](../images/Index.png)](#indexes) | MessageId | bigint | 8 | NOT NULL |  | _Foreign Key to Id in dbo.Messages._ |
 |  | LastUpdatedDateTime | datetime2 | 8 | NULL allowed |  | _The date the row was last updated._ |
 |  | Deleted | bit | 1 | NOT NULL | ((0)) | _Whether this record is deleted._ |
 
