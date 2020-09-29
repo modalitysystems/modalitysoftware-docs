@@ -6,7 +6,7 @@ If data is not listed on this page, it is not currently collected. This document
 
 ## Full Database and Power BI documentation
 
-There is full documentation of the datahase [here](database%20documentation/Tables/Tables.md), and the Power BI model [here](powerbi/PowerBI-Model.md)
+There is full documentation of the datahase [here](database%20documentation/Tables/Tables), and the Power BI model [here](powerbi/model-documentation/PowerBI-Model)
 
 ## Reporting Capabilities
 
@@ -17,7 +17,7 @@ Power BI allows us to report on any combination of the below informaiton. We can
 ## User Information from Azure Active Directory
 Teamwork Analytics collects the following about each user from Azure Active Directory.
 
-These are held in the [Users](database%20documentation/Tables/Users.md) Table in the database and used to filter any per-user activity.
+These are held in the [Users](database%20documentation/Tables/Users) Table in the database and used to filter any per-user activity.
 
  - UserId
  - Given Name 
@@ -33,7 +33,7 @@ These are held in the [Users](database%20documentation/Tables/Users.md) Table in
  - Mail - SMTP Address
  - Is Enabled user account
  
- These are held in the [TeamsUserLicences](database%20documentation/Tables/TeamsUserLicences.md) table
+ These are held in the [TeamsUserLicences](database%20documentation/Tables/TeamsUserLicences) table
 
  - Teams Licennce Capability Status - If a user is Licensed for Teams, Enabled or Disabled
 
@@ -42,7 +42,7 @@ In addition, TWA pulls up to 10 custom Azure AD Attributes each customer can def
 ## Per User, Teams Usage Information (counts of activity)
 
 For each user with any activity, the number of the following actions. This is solely the quantity per user of each activity for that date.
-These are held in the [ActivityUserDetails](database%20documentation/Tables/ActivityUserDetails.md) table and used in the Teams Usage reports
+These are held in the [ActivityUserDetails](database%20documentation/Tables/ActivityUserDetails) table and used in the Teams Usage reports
 
 - Team Chat Message Count
 - Private Chat Message Count
@@ -64,14 +64,14 @@ List of all the current Teams
 - Team Created Date Time - when the Team was created
 
 ### Channels in each team
-The name and description of each channel in the [Channels](database%20documentation/Tables/Channels.md) table
+The name and description of each channel in the [Channels](database%20documentation/Tables/Channels) table
 - Display Name
 - Description
 
 For this we have the current state/count of channels, but not change over time.
 
 ### Channel Messages over time
-All Channel Messages for the configured period. TWA does not hold the message content, only metadata about the message. Held in [Messages](database%20documentation/Tables/Messages.md) table
+All Channel Messages for the configured period. TWA does not hold the message content, only metadata about the message. Held in [Messages](database%20documentation/Tables/Messages) table
 - Parent MessageId
 - Message Created Date Time
 - Last Modified Date Time - date message was created or modified
@@ -95,7 +95,7 @@ Reactions to channel message, such as thumbs up and smiley face
 - Created Date Time
 
 ###  Channel Message @ Mentions
-Mentions within channel Messages. In the [Mentions](database%20documentation/Tables/Mentions.md) table
+Mentions within channel Messages. In the [Mentions](database%20documentation/Tables/Mentions) table
 - MessageId
 - Mentioned UserId
 - Mentioned AppId
@@ -105,7 +105,7 @@ Mentions within channel Messages. In the [Mentions](database%20documentation/Tab
 - ChannelId
 
 ### Channel Message Attached files/content
-This is any content attached to a channel message. Held in [Attachments](database%20documentation/Tables/Attachments.md) table.
+This is any content attached to a channel message. Held in [Attachments](database%20documentation/Tables/Attachments) table.
 - Content Type
 - Content Url
 - Name
@@ -113,12 +113,12 @@ This is any content attached to a channel message. Held in [Attachments](databas
 - MessageId
 
 ### Apps installed in each Team - Current state
-This is held in the [Apps](database%20documentation/Tables/Apps.md) table.
+This is held in the [Apps](database%20documentation/Tables/Apps table.
  - Name 
  - Version Number
  
 ### Files in each Team - Current state
-Details of Files in Each Team (in the SharePoint site associated with the Team). Held in the [DriveItems](database%20documentation/Tables/DriveItems.md) table
+Details of Files in Each Team (in the SharePoint site associated with the Team). Held in the [DriveItems](database%20documentation/Tables/DriveItems) table
 - FileID
 - Creator Email
 - File Mime Type
