@@ -15,6 +15,7 @@ Users within the organisations Asure Active Directory.
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_dbo.Users: Id](../images/pkcluster.png)](#indexes) | Id | uniqueidentifier | 16 | NOT NULL |  | _The unique identifier for the user._ |
+|  | Eid | nvarchar(64) | 16 | NOT NULL |  | _The unique identifier for the user for usage tables._ |
 |  | GivenName | nvarchar(max) | max | NULL allowed |  | _The given name (first name) of the user._ |
 |  | Surname | nvarchar(max) | max | NULL allowed |  | _The user's surname (family name or last name)._ |
 |  | JobTitle | nvarchar(max) | max | NULL allowed |  | _The user’s job title._ |

@@ -14,7 +14,7 @@ Get details about Microsoft Teams device usage by user.
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_dbo.DeviceUsageUserDetails: UserPrincipalName\ReportRefreshDate](../images/pkcluster.png)](#indexes)[![Indexes IX_UserPrincipalName](../images/Index.png)](#indexes) | UserPrincipalName | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to UserPrincipalName in dbo.Users_ |
+| [![Cluster Primary Key PK_dbo.DeviceUsageUserDetails: UserPrincipalName\ReportRefreshDate](../images/pkcluster.png)](#indexes)[![Indexes IX_UserPrincipalName](../images/Index.png)](#indexes) | Eid | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to Eid in dbo.Users_ |
 | [![Cluster Primary Key PK_dbo.DeviceUsageUserDetails: UserPrincipalName\ReportRefreshDate](../images/pkcluster.png)](#indexes)[![Indexes IX_ReportRefreshDate IX_ReportRefreshDate_IsDeleted](../images/Index.png)](#indexes)(2) | ReportRefreshDate | datetime2 | 8 | NOT NULL |  | _The date the usage data was retrieved from graph._ |
 |  | LastActivityDate | datetime2 | 8 | NULL allowed |  | _The last activity date for the user within the period._ |
 | [![Indexes IX_ReportRefreshDate_IsDeleted](../images/Index.png)](#indexes) | IsDeleted | bit | 1 | NOT NULL | ((0)) |  |
