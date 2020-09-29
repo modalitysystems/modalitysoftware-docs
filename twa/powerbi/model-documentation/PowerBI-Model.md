@@ -2,41 +2,41 @@
 
 ## Teamwork Analytics Usage
 
-[ActiveUsersDaily](/twa/powerbi/model-documentation/usage/ActiveUsersDaily.md)
+[ActiveUsersDaily](/twa/powerbi/model-documentation/usage/ActiveUsersDaily.html)
 
-[ActiveUsersMonthly](/twa/powerbi/model-documentation/usage/ActiveUsersMonthly.md)
+[ActiveUsersMonthly](/twa/powerbi/model-documentation/usage/ActiveUsersMonthly.html)
 
-[ActiveUsersWeekly](/twa/powerbi/model-documentation/usage/ActiveUsersWeekly.md)
+[ActiveUsersWeekly](/twa/powerbi/model-documentation/usage/ActiveUsersWeekly.html)
 
-[DeviceUsageUserDetails](/twa/powerbi/model-documentation/usage/DeviceUsageUserDetails.md)
+[DeviceUsageUserDetails](/twa/powerbi/model-documentation/usage/DeviceUsageUserDetails.html)
 
-[LicensedTeamsUsers](/twa/powerbi/model-documentation/usage/LicensedTeamsUsers.md)
+[LicensedTeamsUsers](/twa/powerbi/model-documentation/usage/LicensedTeamsUsers.html)
 
-[UserGroups](/twa/powerbi/model-documentation/usage/UserGroups.md)
+[UserGroups](/twa/powerbi/model-documentation/usage/UserGroups.html)
 
-[UserProperties](/twa/powerbi/model-documentation/usage/UserProperties.md)
+[UserProperties](/twa/powerbi/model-documentation/usage/UserProperties.html)
 
-[UsersBase](/twa/powerbi/model-documentation/usage/UsersBase.md)
+[UsersBase](/twa/powerbi/model-documentation/usage/UsersBase.html)
 
-[Views](/twa/powerbi/model-documentation/usage/Views.md)
+[Views](/twa/powerbi/model-documentation/usage/Views.html)
 
 ## Governance
 
-[Reporter](/twa/powerbi/model-documentation/governance/Reporter.md)
+[Reporter](/twa/powerbi/model-documentation/governance/Reporter.html)
 
-[TeamUsersBase](/twa/powerbi/model-documentation/governance/TeamUsersBase.md)
+[TeamUsersBase](/twa/powerbi/model-documentation/governance/TeamUsersBase.html)
 
-[UserProperties](/twa/powerbi/model-documentation/governance/UserProperties.md)
+[UserProperties](/twa/powerbi/model-documentation/governance/UserProperties.html)
 
-[UsersBase](/twa/powerbi/model-documentation/governance/UsersBase.md)
+[UsersBase](/twa/powerbi/model-documentation/governance/UsersBase.html)
 
-[Views](/twa/powerbi/model-documentation/governance/Views.md)
+[Views](/twa/powerbi/model-documentation/governance/Views.html)
 
-[WeeklyMentions](/twa/powerbi/model-documentation/governance/WeeklyMentions.md)
+[WeeklyMentions](/twa/powerbi/model-documentation/governance/WeeklyMentions.html)
 
-[WeeklyMessages](/twa/powerbi/model-documentation/governance/WeeklyMessages.md)
+[WeeklyMessages](/twa/powerbi/model-documentation/governance/WeeklyMessages.html)
 
-[WeeklyReactions](/twa/powerbi/model-documentation/governance/WeeklyReactions.md)
+[WeeklyReactions](/twa/powerbi/model-documentation/governance/WeeklyReactions.html)
 
 
 
