@@ -6,40 +6,40 @@ The following steps must be completed with an account with **Azure Active Direct
 
 On following the [Reporting authorisation link](https://mod.qa/ReportConsent), you will be prompted to sign in to Office 365 with your admin account.
 
-![Initial sign in](twa\images\TWASaaS-CT-auth1.png)
+![Initial sign in](../images/TWASaaS-CT-auth1.png)
 
 Once authenticated, a summary of the app and permissions requested is shown.
 
-![Permissions summary](twa\images\TWASaaS-Report-auth2.png)
+![Permissions summary](../images/TWASaaS-Report-auth2.png)
 
 The arrows can be expanded to review further detail for each section.
 
-![Permissions detail](twa\images\TWASaaS-Report-auth3.png)
+![Permissions detail](../images/TWASaaS-Report-auth3.png)
 
 Clicking **Accept** will complete the process and show a final page.
 
-![Final splash page](twa\images\TWASaaS-Report-auth4.png)
+![Final splash page](../images/TWASaaS-Report-auth4.png)
 
 
 ## CreateTeam permissions
 
 On following the [CreateTeam authorisation link](https://mod.qa/CreateTeamConsent), you will be prompted to sign in to Office 365 with your admin account.
 
-![Initial sign in](twa\images\TWASaaS-CT-auth1.png)
+![Initial sign in](../images/TWASaaS-CT-auth1.png)
 
 Once authenticated, a summary of the app and permissions requested is shown.
 
-![Permissions summary](twa\images\TWASaaS-CT-auth2.png)
+![Permissions summary](../images/TWASaaS-CT-auth2.png)
 
 The arrows can be expanded to review further detail for each section.
 
-![Permissions detail](twa\images\TWASaaS-CT-auth3.png)
+![Permissions detail](../images/TWASaaS-CT-auth3.png)
 
 Clicking **Accept** will complete the process and show a final page.
 
-![Final splash page](twa\images\TWASaaS-CT-auth4.png)
+![Final splash page](../images/TWASaaS-CT-auth4.png)
 
-## Rolling back application permissions
+## Rolling back / revoking application permissions
 
 Need to remove the permissions that were granted with the authorisation links?
 
@@ -47,12 +47,12 @@ Open the [Azure Portal](https://portal.azure.com) and sign in with your admin ac
 
 Navigate to **Azure Active Directory** and click **Enterprise applications**.
 
-![Enterprise applications](twa\images\TWASaaS-revoke-1.png) 
+![Enterprise applications](../images/TWASaaS-revoke-1.png) 
 
 Click **Teamwork Analytics** and manage **Properties**. Click on the **Delete** button.
 
-![TWA delete](twa\images\TWASaaS-revoke-3.png)
+![TWA delete](../images/TWASaaS-revoke-3.png)
 
 Click **CreateTeam API** and manage **Properties**. Click on the **Delete** button.
 
-![CT delete](twa\images\TWASaaS-revoke-2.png)
+![CT delete](../images/TWASaaS-revoke-2.png)
