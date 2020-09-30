@@ -9,7 +9,7 @@ Need more information on what these links do? [Authorisation for Teamwork Analyt
 
 Once approved Teamwork Analytics will collect reporting information. To view your reports you will need to download the Power BI reports from Microsoft App Source and connect them to the SQL reporting database URL that Modality Systems provides.
 
-PowerBI apps are available from [Microsoft AppSource](https://modalitysoftware.com/twa)
+PowerBI apps are available from [Microsoft AppSource](https://appsource.microsoft.com/en-gb/marketplace/apps?product=power-bi&search=modality%20systems)
 
 Steps for how to configure Power BI are [here](/twa/PowerBIAppsAdminInstallGuide.md)
 
