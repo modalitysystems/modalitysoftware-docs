@@ -5,7 +5,7 @@ Modality Systems Teamwork Analytics SaaS is very simple to set up. Modality Syst
  - To authorize Automation and Reporting SaaS for use in your environment [click here](https://mod.qa/ReportConsent).
  - To authorize CreateTeam SaaS for use in your environment [click here](https://mod.qa/CreateTeamConsent).
 
-Need more information on what these links do? [Authorisation for Teamwork Analytics SaaS](twa\SaaS\Authorisation.md) has full details for completing change control requests.
+Need more information on what these links do? [Authorisation for Teamwork Analytics SaaS](Authorisation.md) has full details for completing change control requests.
 
 Once approved Teamwork Analytics will collect reporting information. To view your reports you will need to download the Power BI reports from Microsoft App Source and connect them to the SQL reporting database URL that Modality Systems provides.
 
