@@ -1,5 +1,7 @@
-TWA contains the following dependencies. 
-Below the first table are the dependencies of our private custom Modality packages for completeness.
+Teamwork Analytics contains the following dependencies. This list is subject to change and updated regularly, but should not be considered definitive.
+
+Below the table are the dependencies of our private custom Modality packages for completeness.
+
 Name | Version | Open Source 
 --- | --- | --- 
 Autofac | 4.8.1 | Yes
