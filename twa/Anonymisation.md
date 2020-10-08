@@ -89,7 +89,7 @@ Users are anonymised according to configurable rules stored in the Teamwork Anal
 2. **Run the following - Replace the AD Property and AD value**
 
 
-
+```sql
 INSERT INTO [configuration].[UserObfuscationCriteria]
        ([PropertyName]
        ,[Value])
@@ -97,9 +97,10 @@ INSERT INTO [configuration].[UserObfuscationCriteria]
        ('[AD PROPERTY HERE]'
        ,'[AD PROPERTY OBFUSCATION VALUE HERE]')
  GO
-
+```
 e.g. for triggering on country is Germany, run the following
 
+```sql
 INSERT INTO [configuration].[UserObfuscationCriteria]
        ([PropertyName]
        ,[Value])
@@ -107,8 +108,7 @@ INSERT INTO [configuration].[UserObfuscationCriteria]
        ('Country'
        ,'Germany')
  GO
-
-
+```
 
 3. **There is no need to restart any service, it will start from the next main scan of user data (see Power BI logging report for scan times)**
 
@@ -119,3 +119,7 @@ INSERT INTO [configuration].[UserObfuscationCriteria]
 Once TWA has anonymised a user based on the rules above, it keeps a record of the user's User Principal Name (stored as a hash), even if they later change AD attribute to something different. This is to ensure that the user continues to be anonymised even if the data is updated (for example if their `Country` is changed to another location).
 
 If you wish to exclude a user from further anonymisation, you must locate them in the table named `dbo.Users`, copy their EID, then find and remove the same value from the `dbo.ObfuscatedUsers` table.
+
+## TWA Automation (Allow/Deny List)
+
+The TWA automation bots has the ability to filter users through the configuration of allow and deny lists, depending on the configuration, users will receive/not receive emails or messages. This feature does support encryption however, does not support anonymisation. Therefore, if anonymous users are set, the bots will ignore these users when ran and therefore will not email/message them via the bot.
