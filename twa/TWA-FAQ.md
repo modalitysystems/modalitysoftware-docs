@@ -53,6 +53,9 @@ see [Microsoft Teams licencing](https://docs.microsoft.com/en-us/microsoftteams/
 
 **Not** to be confused with Teamwork Analytics Licence Keys below.
 
+## % Active Users Calculation
+
+The active users percentage is calculated by dividing the number of active users (a user who has made a call, joined a meeting or sent a chat/teams message) for a time period by the number of licensed teams users (see above).
 
 ## How do Modality Systems Teamwork Analytics Licence Keys work?
 
