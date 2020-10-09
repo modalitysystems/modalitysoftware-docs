@@ -15,9 +15,9 @@ Power BI allows us to report on any combination of the below information. We can
 # Information collected and available in Teamwork Analytics Usage and Governance Reports
 
 ## User Information from Azure Active Directory
-Teamwork Analytics collects the following about each [User](https://docs.microsoft.com/en-us/graph/api/user-list?view=graph-rest-beta&tabs=http) from Azure Active Directory.
+Teamwork Analytics collects the following about each User from Azure Active Directory, leveraging the [microsoft.graph List Users](https://docs.microsoft.com/en-us/graph/api/user-list?view=graph-rest-beta&tabs=http) API
 
-These are held in the [Users](database%20documentation/Tables/Users) Table in the database and used to filter any per-user activity.
+These are held in the [Users](/database%20documentation/Tables/Users.html) Table in the database and used to filter any per-user activity.
 
  - UserId
  - Given Name 
@@ -32,7 +32,7 @@ These are held in the [Users](database%20documentation/Tables/Users) Table in th
  - User Principal Name
  - Mail - SMTP Address
  - Is Enabled user account
- 
+
  These are held in the [TeamsUserLicences](database%20documentation/Tables/TeamsUserLicences) table
 
  - Teams Licence Capability Status - If a user is Licensed for Teams, Enabled or Disabled
@@ -114,7 +114,7 @@ This is any [content](https://docs.microsoft.com/en-us/graph/api/resources/chatm
 Any [Apps](https://docs.microsoft.com/en-us/graph/api/teamsappinstallation-list?view=graph-rest-beta&tabs=http) are held in the [Apps](database%20documentation/Tables/Apps) table.
  - Name 
  - Version Number
- 
+
 ### Files in each Team - Current state
 Details of [Files](https://docs.microsoft.com/en-us/graph/api/driveitem-delta?view=graph-rest-beta&tabs=http) in Each Team (in the SharePoint site associated with the Team). Held in the [DriveItems](database%20documentation/Tables/DriveItems) table
 - FileID
