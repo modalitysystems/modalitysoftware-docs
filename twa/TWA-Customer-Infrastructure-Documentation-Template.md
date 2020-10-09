@@ -28,7 +28,15 @@ Power BI SQL Server Credentials ((for TWA collector to connect to SQL replica):
 
 TWA License Key:
 
+### Additional Billing Module Information
 
+In addition to the above,
+
+Credentials for CSV download user:
+
+Location of CSV downloads user Downloads folder:
+
+Location of CSV Drop Folder:
 
 ### Power BI workspaces
 
