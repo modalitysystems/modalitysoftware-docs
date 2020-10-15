@@ -30,7 +30,7 @@ This document explains how to install and run the Teams Chat Assist Power BI Rep
 >
 > After selecting 'Close' in the above dialog. You may also see the following warnings, these can both be ignored. [Updating the Locale setting](#Update-the-reports-Locale-for-import-setting) will also remove the warnings.
 >
-> ![DateTimeParseError](images\powerBiRefreshWarnings.PNG)
+> ![RefreshWarnings](images/powerBiRefreshWarnings.png)
 
 ## Update the reports 'Locale for import' setting
 
