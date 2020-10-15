@@ -24,7 +24,7 @@ For ease, here is a complete list of the account requirements
 - Access to Windows patching Server (WSUS)
 - Access to a customer Power BI workspace
 - Power BI Pro licences
-- Access to Power BI Server if deployed on customer tenant-
+- Access to PA Server Monitor Server, if deployed on customer tenant-
 - Optional, direct remote access to MTR Systems
 
 Details of each requirement are explained below.
