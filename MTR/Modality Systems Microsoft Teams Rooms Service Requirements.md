@@ -40,7 +40,7 @@ For MTR for Android (previously called Collaboration bars) there is no option to
 
 Customers can choose to simply install just the "satellite" agent on their MTR for Windows and have it report back to our Azure instance of PA Server monitor over TLS 443 out, or for larger customers we can install a dedicated instance of PA Server monitor on their Azure to keep monitoring, reporting and alerting 100% in their environment.
 
-Steps to install the satellite agent on the MTR for Windows are [here](/Install and configure the satellite monitor on Microsoft Teams Room.html).
+Steps to install the satellite agent on the MTR for Windows are [here](/MTR/Install and configure the satellite monitor on Microsoft Teams Room.html).
 
 
 
