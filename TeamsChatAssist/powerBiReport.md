@@ -27,6 +27,10 @@ This document explains how to install and run the Teams Chat Assist Power BI Rep
 > ![DateTimeParseError](images/powerBiDateTimeParseError.PNG)
 >
 > The reports 'Locale for import' setting has defaulted to an incorrect value. This can be resolved by [updating your reports Locale for import](#Update-the-reports-Locale-for-import-setting).
+>
+> After selecting 'Close' in the above dialog. You may also see the following warnings, these can both be ignored. [Updating the Locale setting](#Update-the-reports-Locale-for-import-setting) will also remove the warnings.
+>
+> ![RefreshWarnings](images/powerBiRefreshWarnings.png)
 
 ## Update the reports 'Locale for import' setting
 
