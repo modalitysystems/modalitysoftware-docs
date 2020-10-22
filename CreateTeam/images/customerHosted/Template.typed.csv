@@ -4,8 +4,6 @@ xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,First Template,First
    ""Suffix"": ""UK Sales"",
    ""IsExternal"":true,
    ""Visibility"":1,
-   ""AlwaysAuthorise"":false,
-   ""AzureSecurityGroup"":"""",
    ""Channels"":[
       {
          ""DisplayName"": ""General"",
@@ -21,5 +19,9 @@ xxx-your-tenant-id-xxx,33ad45dd-9841-4856-ac5b-7e31e716ffed,First Template,First
          ""DisplayName"":""Channel name"",
          ""Description"":""Channel description""
       }
-   ]
+   ],
+   ""AlwaysAuthorise"":false,
+   ""ApprovalEmailList"":"""",
+   ""AzureSecurityGroup"":"""",
+   
 }",Edm.String,Edm.String,Edm.String

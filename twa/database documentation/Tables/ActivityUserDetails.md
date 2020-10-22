@@ -14,7 +14,7 @@ Get details about Microsoft Teams user activity by user.
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_dbo.ActivityUserDetails: UserPrincipalName\ReportRefreshDate](../images/pkcluster.png)](#indexes)[![Indexes IX_UserPrincipalName](../../../Images/Index.png)](#indexes) | UserPrincipalName | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to UserPrinicipalName in dbo.Users._ |
+| [![Cluster Primary Key PK_dbo.ActivityUserDetails: Eid\ReportRefreshDate](../images/pkcluster.png)](#indexes)[![Indexes IX_UserPrincipalName](../Images/index.png)](#indexes) | Eid | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to Eid in dbo.Users._ |
 | [![Cluster Primary Key PK_dbo.ActivityUserDetails: UserPrincipalName\ReportRefreshDate](../images/pkcluster.png)](#indexes) | ReportRefreshDate | datetime2 | 8 | NOT NULL |  | _The date the usage data was retrieved from graph._ |
 |  | LastActivityDate | datetime2 | 8 | NULL allowed |  | _The last activity date for the user within the period._ |
 |  | IsDeleted | bit | 1 | NOT NULL | ((0)) |  |

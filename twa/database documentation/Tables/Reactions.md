@@ -14,8 +14,8 @@ Reactions provided by users to Messages.
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_dbo.Reactions: MessageId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_MessageId](../../../Images/Index.png)](#indexes) | MessageId | bigint | 8 | NOT NULL |  | _Foreign Key to Id in dbo.Messages. The Id of the message reacted to._ |
-| [![Cluster Primary Key PK_dbo.Reactions: MessageId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_UserId](../../../Images/Index.png)](#indexes) | UserId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Users. The User who made the reaction_ |
+| [![Cluster Primary Key PK_dbo.Reactions: MessageId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_MessageId](../images/Index.png)](#indexes) | MessageId | bigint | 8 | NOT NULL |  | _Foreign Key to Id in dbo.Messages. The Id of the message reacted to._ |
+| [![Cluster Primary Key PK_dbo.Reactions: MessageId\UserId](../images/pkcluster.png)](#indexes)[![Indexes IX_UserId](../images/Index.png)](#indexes) | UserId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Users. The User who made the reaction_ |
 |  | Type | nvarchar(max) | max | NULL allowed |  | _The type of reaction.  Supported values are like, angry, sad, laugh, heart, surprised._ |
 |  | CreatedDateTime | datetime2 | 8 | NOT NULL |  | _Timestamp of the reaction._ |
 |  | LastUpdatedDateTime | datetime2 | 8 | NULL allowed |  | _The date the row was last updated._ |

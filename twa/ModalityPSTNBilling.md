@@ -34,7 +34,7 @@ You can also click on visuals to set filters. Try clicking the line with the pla
 
 ## How to connect the app to your data
 
-> This step requires you to have the Modality Teamwork Analytics data engine.  For more information please [contact us](https://modalitysoftware.com/contact) or find out more here > [Read more about the Teamwork Analytics suite](https://modalitysoftware.com/teamwork-analytics).
+> This step requires you to have the Modality Teamwork Analytics data engine.  For more information please [contact us](https://modalitysoftware.com/contact) or find out more here > [Read more about the Teamwork Analytics suite](https://modalitysystems.com/software/teamwork-analytics/).
 
 Once you have configured the Teamwork Analytics data collection engine for your environment you can connect the PowerBi app to your live data.  To do this go click the app again in your [Power BI Apps](https://app.powerbi.com/groups/me/apps) list.  When the prompt appears, this time click **Connect your data** button.
 

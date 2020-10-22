@@ -22,7 +22,13 @@ For overall Teams Usage, an active user is a user which meets any of the followi
  - Sent at least 1 Teams Channel Message
  - Sent at least 1 Teams Chat Message
 
-For Teams Collaboration and Governance, an active user is one which has **sent a message** to a channel (e.g. in a Team) in the **last 30 days**. It was a deliberate decision to focus on "active for collaboration" for these reports. 
+For Teams Collaboration and Governance, an active user is one which has **sent a message** to a channel (e.g. in a Team) in the **last 30 days (by default)**. It was a deliberate decision to focus on "active for collaboration" for these reports.
+
+To change the default value of 30 days, edit the `TeamActivityRangeInDays` column in the `configuration.ReportingConstants` table using Microsoft SQL Server Management Studio. This table only has one row.
+
+| Id | TeamActivityRangeInDays |
+| -- | ----------------------- |
+| 1  | 30                      |
 
 The Microsoft definition of Active User changes depending on the report being viewed. For more information, see [Microsoft Teams analytics and reporting](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/teams-reporting-reference).
 
@@ -47,6 +53,9 @@ see [Microsoft Teams licencing](https://docs.microsoft.com/en-us/microsoftteams/
 
 **Not** to be confused with Teamwork Analytics Licence Keys below.
 
+## % Active Users Calculation
+
+The active users percentage is calculated by dividing the number of active users (a user who has made a call, joined a meeting or sent a chat/teams message) for a time period by the number of licensed teams users (see above).
 
 ## How do Modality Systems Teamwork Analytics Licence Keys work?
 
@@ -70,4 +79,6 @@ If customers have the requirement, we can investigate what usage reporting Offic
 
 The TWA database, Graph data collection engine, PowerBI Apps and Bot notification service each have unique version numbers for every released build. Version numbers are in the format YYYY.MM.DD.MinorBuildNumber - so 2020.1.8.2 is 8th January 2020 minor build 2. This allows easy tracking of issues and improvements.
 
+## Improving Reporting Performance
 
+Depending on the size of your Teams ecosystem, you may find issues with reporting and collecting data at the same time. This is manifested in issues refreshing PowerBI reports. To rectify these issues, Modality recommends either increasing the SQL tier in Microsoft Azure, or setting up [Active Geo Replication](https://docs.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview) and using the readable replica for reporting.

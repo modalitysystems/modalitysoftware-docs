@@ -2,7 +2,7 @@
 
 Installing CreateTeam in your own tenant involves 4 separate processes: configuring two Azure AD applications, configure SendGrid Email Delivery Service, deploying the ARM template to add resources to your Azure tenant to run CreateTeam, and then installing a manifest into your Microsoft Teams environment that joins the two together.
 
-### AAD App 1 (for the API) : Application Permisions
+### AAD App 1 (for the API) : Application Permissions
 
 #### Microsoft Graph Permissions
 
@@ -22,19 +22,19 @@ Installing CreateTeam in your own tenant involves 4 separate processes: configur
 
 # Steps to install
 
->[Configure SendGrid Email Delivery Service](sendGrid.md)
+>[1. Configure SendGrid Email Delivery Service](sendGrid.md)
 
 ---
 
->[Automated Script Deployment of CreateTeam](armDeployScripts.md)
+>[2a. Automated Script Deployment of CreateTeam](armDeployScripts.md)
 
 or
 
->[Manual Deployment of CreateTeam](RegisterApplicationAPI.md)
+>[2b. Manual Deployment of CreateTeam](RegisterApplicationAPI.md)
 
 ---
 
->[Configure CreateTeam Settings - Azure Table Storage](TableStorageConfiguration.md)
+>[3. Configure CreateTeam Settings - Azure Table Storage](TableStorageConfiguration.md)
 
 ---
 

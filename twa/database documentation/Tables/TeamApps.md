@@ -14,8 +14,8 @@ Link table between dbo.Teams and dbo.Apps. Can be used to identify teams install
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_dbo.TeamApps: AppId\TeamId](../images/pkcluster.png)](#indexes)[![Indexes IX_AppId](../../../Images/Index.png)](#indexes) | AppId | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to Id in dbo.Apps_ |
-| [![Cluster Primary Key PK_dbo.TeamApps: AppId\TeamId](../images/pkcluster.png)](#indexes)[![Indexes IX_TeamId](../../../Images/Index.png)](#indexes) | TeamId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Teams_ |
+| [![Cluster Primary Key PK_dbo.TeamApps: AppId\TeamId](../images/pkcluster.png)](#indexes)[![Indexes IX_AppId](../images/Index.png)](#indexes) | AppId | nvarchar(450) | 900 | NOT NULL |  | _Foreign Key to Id in dbo.Apps_ |
+| [![Cluster Primary Key PK_dbo.TeamApps: AppId\TeamId](../images/pkcluster.png)](#indexes)[![Indexes IX_TeamId](../images/Index.png)](#indexes) | TeamId | uniqueidentifier | 16 | NOT NULL |  | _Foreign Key to Id in dbo.Teams_ |
 |  | LastUpdatedDateTime | datetime2 | 8 | NULL allowed |  | _The date the row was last updated._ |
 |  | Deleted | bit | 1 | NOT NULL | ((0)) | _Whether this record is deleted._ |
 
