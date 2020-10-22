@@ -8,7 +8,7 @@ To facilitate a faster and more consistent CreateTeam deployment process we have
 | ARMDeploy.ps1           | Performs an ARM deployment or upgrade of CreateTeam, adds logo if present                              |
 | PostARMDeployScript.ps1 | Applies graph permissions, creates roles, sets redirect URI's, generates key vault certificate, creates tables and teams manifest |
 
-Download [CustomerDeployScripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases/latest) from here 
+Download [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases/latest) from here 
 
 Each script is signed and will require the following PowerShell modules to be installed before attempting to run the scripts
 
@@ -28,6 +28,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 | Web App Service      | S1, 100 Total ACU, 1.75GB memory, A-Series Compute Equivalent                                          |
 | Key Vault            | Securely stores Web App Secret                                                                         |
 | Storage Accounts     | Block Blob Storage, General Purpose V2, RA-GRS Redundancy, 1,000 GB Capacity, 100 Storage transactions |
+| Azure SQL Database   | Single Database, DTU purchase model, Standard tier, S0: 10 DTUs, 250 GB included storage per DB        |
 | [Application Insights] | [Logs for Web App Bot and Web App Service] Not installed by default*                                 |
 
 > Important: **Remote Application Logging. By default the application will configure itself to send logging and telemetry data to Modality Systems using an Application Insights instance securely hosted in Microsoft Azure. This enables Modality Systems to investigate and remediate any reported issues remotely. By exception it may be possible instead to keep logging data within the customer's tenant but this may have licensing and support implications which you should discuss with Modality Systems to fully understand.**
@@ -43,7 +44,8 @@ This script is used to create two new Azure Active Directory Application Registr
 An **Application Registration** is simply a definition of what settings are **GOING** to be applied and once an admin consents, this then becomes an Enterprise Application within that tenant defining what settings **HAVE** been applied and can be revoked at any time. CreateTeam requires these permissions in order to function within a given tenant.
 
 1. Run the PowerShell script called **PreARMDeployScript**, enter a name that you would like the App Registration to be called or press enter to call it CreateTeam
-1. Enter a name for the slot or environment. This should be a string to identify your company and **MUST** be between 2 and 6 characters in length and contain **ONLY** letters
+1. Enter a name for the slot or environment. This should be a string to identify your company and **MUST** be between 2 and 7 characters in length and contain **ONLY** letters
+1. Enter an admin password for the SQL Database
 1. Press Enter to log into the tenant where you would like to create the Azure Active Directory Application Registrations
 1. This will then create two App Registrations and create a parametersFile.json with the settings as shown on screen. This file is then read be the ARM Deployment and needs to be complete
 1. Open **parametersFile.json** that has been created and fill in the following values
@@ -52,8 +54,9 @@ An **Application Registration** is simply a definition of what settings are **GO
    - SendGridAuthorisationResponseEmailTemplateId
    - SendGridFromEmailAddress
    - SendGridFromName
-   - ValidTenantIds - This should be in the format https://sts.windows.net/{TENANTID}/
-1. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
+   - ValidTenantIds - This should be in the format https://sts.windows.net/{TENANTID}/ 
+   - **Optionally** you can update the ResourceTags field if your company requires specific Azure Tags to be applied
+2. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
 
 ## ARMDeploy.ps1
 
@@ -65,7 +68,9 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
 1. Enter the name of the resource group that you would like to deploy or upgrade CreateTeam too
 1. If the resource group doesn't exist enter desired geographic location and press Enter
 1. Check the settings that will be used in the deployment and press Enter to continue with deployment
-   
+
+> NOTE: The script will detect if the WebApp Slot already exists and apply the upgrade flag accordingly, then at the end of a successful deployment it will perform a slot swap
+
 > NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
    ![Folder](../images/customerHosted/armDeployScriptsFolder.png)
