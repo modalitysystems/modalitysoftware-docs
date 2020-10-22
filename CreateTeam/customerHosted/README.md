@@ -26,11 +26,7 @@ Installing CreateTeam in your own tenant involves 4 separate processes: configur
 
 ---
 
->[2a. Automated Script Deployment of CreateTeam](armDeployScripts.md)
-
-or
-
->[2b. Manual Deployment of CreateTeam](RegisterApplicationAPI.md)
+>[2. Automated Script Deployment of CreateTeam](armDeployScripts.md)
 
 ---
 
