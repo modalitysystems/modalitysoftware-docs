@@ -1,7 +1,9 @@
 
 This script will pull the latest data from the user usage reporting API. This can be used to vaidate how up to data the usage data is that Microsoft is providing from their API's, and therefore to Teamwork Analytics.
 
-Please copy
+You can also check the reports on https://portal.office.com/adminportal/home#/reportsUsage to see their current freshness.
+
+##############################
 
 $tenantId = $(Read-Host "Please enter your tenant ID (GUID)"`n)
 $clientId = $(Read-Host "Please enter your TWA Application ID (GUID)"`n)
