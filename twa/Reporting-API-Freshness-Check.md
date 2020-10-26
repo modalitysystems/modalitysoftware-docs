@@ -1,5 +1,7 @@
 
-This script will pull the latest data from the user usage reporting API. This can be used to vaidate how up to data the usage data is that Microsoft is providing from their API's, and therefore to Teamwork Analytics
+This script will pull the latest data from the user usage reporting API. This can be used to vaidate how up to data the usage data is that Microsoft is providing from their API's, and therefore to Teamwork Analytics.
+
+Please copy
 
 $tenantId = $(Read-Host "Please enter your tenant ID (GUID)"`n)
 $clientId = $(Read-Host "Please enter your TWA Application ID (GUID)"`n)
@@ -14,8 +16,8 @@ Write-Host 'v1.0 Api'
 Write-Host '-------------------------------------------------------------------------------------------------------'
 for ($i=0; $i -lt 28; $i++) {
 
-    $queryDate = $(Get-Date).AddDays(-1 * $i).ToString("yyyy-MM-dd")
-    $uri = 'https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(date=' + $queryDate + ')'
+$queryDate = $(Get-Date).AddDays(-1 * $i).ToString("yyyy-MM-dd")
+$uri = 'https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(date=' + $queryDate + ')'
 
     $attempts = 0
     $success = $false
