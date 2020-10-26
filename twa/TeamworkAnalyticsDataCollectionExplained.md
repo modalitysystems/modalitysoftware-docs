@@ -43,7 +43,7 @@ So any report page that reports on Channtl Chat count, Private Chat, Calls or Me
 
 Microsoft API's are usually 48 hours behind the current date, but this delay is known to fluctuate especially in large environments. Teamwork Analytics can only report up to the date of the data Microsoft provides. This affects usage trend reporting but not team (the data within about/within a team) reporting.
 
-If you wish to check the current data the API's are providing, you can check/confirm it with this (PowerShell script)[https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/Reporting-API-Freshness-Check.md] or check the standard Office 365 usage reports for their data freshness here https://portal.office.com/adminportal/home#/reportsUsage
+If you wish to check the current data the API's are providing, you can check/confirm it with this [PowerShell script](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/Reporting-API-Freshness-Check.md) or check the standard Office 365 usage reports for their data freshness here https://portal.office.com/adminportal/home#/reportsUsage
 
 Microsoft does provide some usage detail in summary reports. The supported values for collecting a summary period are last 7 days, 30 days, 90 days, and 180 days, relative to the time you pull from the API. These to not breakdown the usage by user on these summary reports so Teamwork Analytics does not use them. Hence only being able to report 30 days into the the past at point of initial install.
 
