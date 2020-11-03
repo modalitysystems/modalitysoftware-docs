@@ -3,9 +3,9 @@
 
 Some customers prefer to keep MTR monitoring and reporting within their environment/tenant. For larger enterprise customers Modality Systems can deploy, configure and manage a dedicated PA Server monitor.
 
-As a Tier 1 certified Microsoft Cloud Solutions provider Modality Systems can deploy this on your Azure tenant in a dedicated, isolated and secure Modality Azure Zone. This is a specific CSP subcription from Modality Systems which provides an isolated area to deploy the relevant compute resources. This is only available to customers with European billing addresses as Modality Systems are a Europe Microsoft CSP Partner.
+As a Tier 1 certified Microsoft Cloud Solutions provider Modality Systems can deploy this on your Azure tenant in a dedicated, isolated and secure Modality Azure Zone. This is a specific CSP subscription from Modality Systems which provides an isolated area to deploy the relevant compute resources. This is only available to customers with European billing addresses as Modality Systems are a Europe Microsoft CSP Partner.
 
-Alternatively customers can deploy the relevant compute in their Azure subscription and grant accounts for Modality Systems to access. This option is open to customers globally.
+Alternatively, customers can deploy the relevant compute in their Azure subscription and grant accounts for Modality Systems to access. This option is open to customers globally.
 
 If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine to the following requirements:
 
@@ -15,15 +15,15 @@ If customers wish to have a dedicated PA Server instance, we require an Azure vi
 - 4 core CPU
 - 8GB RAM
 
-If customer wants a hot standby PA monitoring agents can auto failover to another server. A second server in a different Azure region of the same specificaiton and configuration is required.
+If customer wants a hot standby PA monitoring agents can auto failover to another server. A second server in a different Azure region of the same specification and configuration is required.
 
 Modality Systems will install PA Server Monitor which uses SQL Express. This spec has been tested to scale up to over 500 monitored endpoints/MTR's.
 
 This VM will have Power BI Gateway installed. This is required to connect the logging information to the customers PowerBI.com 
 
-Power BI Gateway has the following software requirements Modality Systems will install: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install
+Power BI Gateway has the following software requirements Modality Systems will install: [https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install)
 
-Power BI Gateway has the following network requirements: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication#enable-outbound-azure-connections - Thse are *required* for Power BI reporting to work.
+Power BI Gateway has the following network requirements: [https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication#enable-outbound-azure-connections](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication#enable-outbound-azure-connections) - These are *required* for Power BI reporting to work.
 
 VM must be open to 443 inbound from the Microsoft Teams Rooms (either on network or over the internet as preferred by customer). Typically this means putting it on a publicly accessible IP or an internal IP that can route to all MTR's.
 
