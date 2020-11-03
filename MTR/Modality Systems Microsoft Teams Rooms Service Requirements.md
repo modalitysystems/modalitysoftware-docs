@@ -45,16 +45,7 @@ Steps to install the satellite agent on the MTR for Windows are [here](/MTR/Inst
 
 ### Dedicated PA Server for Monitoring within customers Tenant/Environment/Network
 
-If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine to the following requirements:
-
-- Windows Server 2016 or 2019
-- SQL installed on the Virtual Machine or a SQL instance
-- 100GB HDD
-- 4 core CPU
-- 8GB RAM
-- Open to 443 inbound from the Microsoft Teams Rooms (either on network or over the internet as preferred by customer)
-- Customer AD accounts to log onto the VM and administer monitoring and alerting. Modality are happy to use VPN and or multi-factor authentication as required
-- Secure Access to Exchange Online for Email Alerting
+If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine. Detailed requirements [here](MTR/Dedicated-PA-Server-Monitor.html)
 
 
 ## Teams Admin Center Access, CQD and Power BI
