@@ -1,19 +1,19 @@
 
-Customer Dedicated PA Server Monitor Instance in Customer Azure Tenant
+# Customer Dedicated PA Server Monitor Instance in Customer Azure Tenant
 
 Some customers prefer to keep MTR monitoring and reporting within their environment/tenant. For larger enterprise customers Modality Systems can deploy, configure and manage a dedicated PA Server monitor.
 
-As a Tier 1 certified Microsoft Cloud Solutions provider Modality Systems can deploy this on your Azure tenant in a dedicated, isolated and secure Modality Azure Zone. This is a specific CSP subcription from Modality Systems which provides an isolated area to deploy the relevant compute resources.
+As a Tier 1 certified Microsoft Cloud Solutions provider Modality Systems can deploy this on your Azure tenant in a dedicated, isolated and secure Modality Azure Zone. This is a specific CSP subcription from Modality Systems which provides an isolated area to deploy the relevant compute resources. This is only available to customers with European billing addresses as Modality Systems are a Europe Microsoft CSP Partner.
 
-Alternatively customers can deploy the relevant compute in their Azure subscription and grant accounts for Modality Systems to access.
+Alternatively customers can deploy the relevant compute in their Azure subscription and grant accounts for Modality Systems to access. This option is open to customers globally.
 
 If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine to the following requirements:
 
-Windows Server 2016 or 2019
-100GB HDD OS
-128GB HDD for application
-4 core CPU
-8GB RAM
+- Windows Server 2016 or 2019
+- 100GB HDD OS
+- 128GB HDD for application
+- 4 core CPU
+- 8GB RAM
 
 If customer wants a hot standby PA monitoring agents can auto failover to another server. A second server in a different Azure region of the same specificaiton and configuration is required.
 
