@@ -45,7 +45,7 @@ Steps to install the satellite agent on the MTR for Windows are [here](/MTR/Inst
 
 ### Dedicated PA Server for Monitoring within customers Tenant/Environment/Network
 
-If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine. Detailed requirements [here](MTR/Dedicated-PA-Server-Monitor.html)
+If customers wish to have a dedicated PA Server instance, we require an Azure virtual machine. Detailed requirements [here](https://docs.modalitysystems.com/MTR/Dedicated-PA-Server-Monitor.html)
 
 
 ## Teams Admin Center Access, CQD and Power BI
