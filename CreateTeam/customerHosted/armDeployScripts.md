@@ -8,9 +8,9 @@ To facilitate a faster and more consistent CreateTeam deployment process we have
 | ARMDeploy.ps1           | Performs an ARM deployment or upgrade of CreateTeam, adds logo if present                              |
 | PostARMDeployScript.ps1 | Applies graph permissions, creates roles, sets redirect URI's, generates key vault certificate, creates tables and teams manifest |
 
-Download [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases) from here, the zip file is version stamped and will install the version of CreateTeam that matches the version of the scripts 
+Download [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases) from here, the zip file is version stamped and will install the version of CreateTeam that matches downloaded.
 
-Each script is signed and will require the following PowerShell modules to be installed before attempting to run the scripts
+Each script is signed and will require the following PowerShell modules to be installed before attempting to run the scripts:
 
 - [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
 - [Azure Active Directory PowerShell](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2)
