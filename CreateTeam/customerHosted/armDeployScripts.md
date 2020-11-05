@@ -4,9 +4,9 @@ To facilitate a faster and more consistent CreateTeam deployment process we have
 
 | Script Name             | Description                                                                                            |
 | ------------------------| ------------------------------------------------------------------------------------------------------ |
-| PreARMDeployScript.ps1  | Creates 2 Azure AD Application Registrations and links them together by Exposing the API to the Client |
+| PreARMDeploy.ps1        | Creates 2 Azure AD Application Registrations and links them together by Exposing the API to the Client |
 | ARMDeploy.ps1           | Performs an ARM deployment or upgrade of CreateTeam, adds logo if present                              |
-| PostARMDeployScript.ps1 | Applies graph permissions, creates roles, sets redirect URI's, generates key vault certificate, creates tables and teams manifest |
+| PostARMDeploy.ps1       | Applies graph permissions, creates roles, sets redirect URI's, generates key vault certificate, creates tables and teams manifest |
 
 Download [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases), the zip file is version stamped and will install the version of CreateTeam that matches the download.
 
@@ -35,27 +35,27 @@ This ARM Template will install resources in your Azure tenant. The template will
 
 ## Installation
 
-The scripts are designed to run in sequence starting with **PreARMDeployScript.ps1** followed by **ARMDeploy.ps1** and finally **PostARMDeployScript.ps1**. Each script will either create or update the following settings files **tenant.json**, **parametersFile.json** and **manifest\manifest.json**
+The scripts are designed to run in sequence starting with **PreARMDeploy.ps1** followed by **ARMDeploy.ps1** and finally **PostARMDeploy.ps1**. Each script will either create or update the following settings files **tenant.json**, **parametersFile.json** and **manifest\manifest.json**
 
-## PreARMDeployScript.ps1
+## PreARMDeploy.ps1
 
 This script is used to create two new Azure Active Directory Application Registrations that are required for CreateTeam and links them together to facilitate client authentication to the backend API. The app registrations can be either in the same tenant as CreateTeam or different however, the admin consent **MUST** be done in the same tenant as CreateTeam has been deployed too. 
 
 An **Application Registration** is simply a definition of what settings are **GOING** to be applied and once an admin consents, this then becomes an Enterprise Application within that tenant defining what settings **HAVE** been applied and can be revoked at any time. CreateTeam requires these permissions in order to function within a given tenant.
 
-1. Run the PowerShell script called **PreARMDeployScript**, enter a name that you would like the App Registration to be called or press enter to call it CreateTeam
-1. Enter a name for the slot or environment. This should be a string to identify your company and **MUST** be between 2 and 7 characters in length and contain **ONLY** letters
-1. Enter an admin password for the SQL Database
+1. Run the PowerShell script called **PreARMDeploy**, and enter the following information
+   - Name for CreateTeam App Registrations, leave blank to make this CreateTeam
+   - Slot Name. This should be a string to identify your company and **MUST** be between 2 and 7 characters in length and contain **ONLY** letters
+   - SQL Server Admin Password
+   - SendGrid API Key
+   - SendGrid Authorisation Request Email Template ID
+   - SendGrid Authorisation Response Email Template ID
+   - SendGrid From Email Address
+   - SendGrid From Name
+   - Valid Tenant IDs - This should be in the format https://sts.windows.net/{TENANTID}/ 
 1. Press Enter to log into the tenant where you would like to create the Azure Active Directory Application Registrations
-1. This will then create two App Registrations and create a parametersFile.json with the settings as shown on screen. This file is then read be the ARM Deployment and needs to be complete
-1. Open **parametersFile.json** that has been created and fill in the following values
-   - SendGridApiKey
-   - SendGridAuthorisationRequestEmailTemplateId
-   - SendGridAuthorisationResponseEmailTemplateId
-   - SendGridFromEmailAddress
-   - SendGridFromName
-   - ValidTenantIds - This should be in the format https://sts.windows.net/{TENANTID}/ 
-   - **Optionally** you can update the ResourceTags field if your company requires specific Azure Tags to be applied
+
+1. This will then create two App Registrations and create a **parametersFile.json** with the settings as shown on screen. This file is then read be the ARM Deployment
 2. The other file that gets created is **tenant.json** and stores settings that pass to the other scripts
 
 ## ARMDeploy.ps1
@@ -69,22 +69,30 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
 1. If the resource group doesn't exist enter desired geographic location and press Enter
 1. Check the settings that will be used in the deployment and press Enter to continue with deployment
 
-> NOTE: The script will detect if the WebApp Slot already exists and apply the upgrade flag accordingly, then at the end of a successful deployment it will perform a slot swap
+> NOTE: The script uses a staging slot to deploy the CreateTeam code too which then automatically swaps over to the production environment to minimize down time
 
 > NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
    ![Folder](../images/customerHosted/armDeployScriptsFolder.png)
 
-## PostARMDeployScript.ps1
+## PostARMDeploy.ps1
 
 This script requires a successful ARM Deployment to have completed as it takes most of its parameters from here. It completes the setup of both App Registrations and can be used to apply updated settings as the product develops. It also generates the certificate within Key Vault that is used to secure graph calls, creates blank tables in the configuration storage account and creates a Microsoft Teams App manifest package.
 
-1. Run the PowerShell script called **PostARMDeployScript.ps1**
+1. Run the PowerShell script called **PostARMDeploy.ps1**
 1. Enter the name of the Microsoft Teams app that your users will see or hit Enter to call it CreateTeam
 1. Press Enter to log into the tenant that has the subscription that has CreateTeam deployed too
 1. Press Enter to log into the tenant where the Azure Active Directory Application Registrations are
 1. When everything has finished setting up, you will see the Admin Consent url. This needs to be ran by someone with Global Admin Privileges against the tenant that you are wanting to use CreateTeam in
 1. There should also be a zip package now in the script root folder called **CreateTeamManifest.zip** which will need to be installed into Microsoft Teams
+
+## Upgrades
+
+To upgrade CreateTeam download the latest or desired version of [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases) and then
+  - Extract package
+  - Place a copy of your current **parametersFile.json** and **tenant.json** into the extracted folder
+  - Run **ARMDeploy.ps1**
+  - Run **PostARMDeploy.ps1**
 
 ## Perform manual installation steps
 
