@@ -94,6 +94,8 @@ To upgrade CreateTeam download the latest or desired version of [ct-scripts.zip]
   - Run **ARMDeploy.ps1**
   - Run **PostARMDeploy.ps1**
 
+> NOTE: The script uses a staging slot to deploy the CreateTeam code too which then automatically swaps over to the production environment to minimize down time
+
 ## Perform manual installation steps
 
 1. There are now a few manual steps that are required which can't be done by scripts
