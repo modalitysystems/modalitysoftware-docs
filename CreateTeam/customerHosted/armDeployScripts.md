@@ -69,7 +69,7 @@ This script performs an ARM Deployment or Upgrade of CreateTeam using settings d
 1. If the resource group doesn't exist enter desired geographic location and press Enter
 1. Check the settings that will be used in the deployment and press Enter to continue with deployment
 
-> NOTE: The script uses a staging slot to deploy the CreateTeam code too which then automatically swaps over to the production environment to minimize down time
+> NOTE: The script uses a staging slot to deploy the CreateTeam code to which then automatically swaps over to the production environment to minimize down time
 
 > NOTE: If a custom logo is required for the deployment then ensure that it is present in the script root in the format "{tenantid}.png"
 
@@ -94,7 +94,7 @@ To upgrade CreateTeam download the latest or desired version of [ct-scripts.zip]
   - Run **ARMDeploy.ps1**
   - Run **PostARMDeploy.ps1**
 
-> NOTE: The script uses a staging slot to deploy the CreateTeam code too which then automatically swaps over to the production environment to minimize down time
+> NOTE: The script uses a staging slot to deploy the CreateTeam code to which then automatically swaps over to the production environment to minimize down time
 
 ## Perform manual installation steps
 
