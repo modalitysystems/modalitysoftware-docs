@@ -44,15 +44,15 @@ This script is used to create two new Azure Active Directory Application Registr
 An **Application Registration** is simply a definition of what settings are **GOING** to be applied and once an admin consents, this then becomes an Enterprise Application within that tenant defining what settings **HAVE** been applied and can be revoked at any time. CreateTeam requires these permissions in order to function within a given tenant.
 
 1. Run the PowerShell script called **PreARMDeploy**, and enter the following information
-   - Name for CreateTeam App Registrations, leave blank to make this CreateTeam
-   - Slot Name. This should be a string to identify your company and **MUST** be between 2 and 7 characters in length and contain **ONLY** letters
-   - SQL Server Admin Password
-   - SendGrid API Key
-   - SendGrid Authorisation Request Email Template ID
-   - SendGrid Authorisation Response Email Template ID
-   - SendGrid From Email Address
-   - SendGrid From Name
-   - Valid Tenant IDs - This should be in the format https://sts.windows.net/{TENANTID}/ 
+  - Name for CreateTeam App Registrations, leave blank to make this CreateTeam
+  - Slot Name. This should be a string to identify your company and **MUST** be between 2 and 7 characters in length and contain **ONLY** letters
+  - SQL Server Admin Password
+  - SendGrid API Key
+  - SendGrid Authorisation Request Email Template ID
+  - SendGrid Authorisation Response Email Template ID
+  - SendGrid From Email Address
+  - SendGrid From Name
+  - Valid Tenant IDs - This should be in the format https://sts.windows.net/{TENANTID}/ 
 1. Press Enter to log into the tenant where you would like to create the Azure Active Directory Application Registrations
 
 1. This will then create two App Registrations and create a **parametersFile.json** with the settings as shown on screen. This file is then read be the ARM Deployment
@@ -89,7 +89,7 @@ This script requires a successful ARM Deployment to have completed as it takes m
 ## Upgrades
 
 To upgrade CreateTeam download the latest or desired version of [ct-scripts.zip](https://github.com/modalitysystems/CreateTeamGABuilds/releases) and then
-  - Extract package
+  - Extract package to your system
   - Place a copy of your current **parametersFile.json** and **tenant.json** into the extracted folder
   - Run **ARMDeploy.ps1**
   - Run **PostARMDeploy.ps1**
