@@ -28,10 +28,12 @@ These percentile classifications are based on Modality System previous experienc
 
 | Classification | From Percentile | To Percentile | Description |
 |---|---|---|---|
-| Low | 0th | 10th | Users which need the most training and assistance |
-| Medium | 10th | 60th | Users should be encouraged via indirect adoption methods such as posters, emails, self-service training etc.​ |
-| High | 60th | 90th | Contains "Teams Champions" and those that can help others achieve |
-| Very High | 90th | 100th | Extreme users which may be candidates for good news stories, case studies etc.​ |
+| Low | 0th | <= 10th | Users which need the most training and assistance |
+| Medium | > 10th | <= 60th | Users should be encouraged via indirect adoption methods such as posters, emails, self-service training etc.​ |
+| High | > 60th | <= 90th | Contains "Teams Champions" and those that can help others achieve |
+| Very High | > 90th | <= 100th | Extreme users which may be candidates for good news stories, case studies etc.​ |
+
+Ranges are inclusive of the upper bound, but exclude the lower bound. For example, the Medium range can be read as "greater than the 10th Percentile and less than or equal to the 60th percentile"
 
 ### Worked Example of Calculation
 
