@@ -17,10 +17,10 @@ In the email, if the user clicks the link on the email to “use the bot” they
 
 Example Email:
 
-![alt text](images/bots/botemail.png "Bot email")
+![alt text](./../images/bots/botemail.png "Bot email")
 
 Example Private Chat Message from the Bot in Teams:
 
-![alt text](images/bots/botmessage.png "Bot email")
+![alt text](./../images/bots/botmessage.png "Bot email")
 
 
