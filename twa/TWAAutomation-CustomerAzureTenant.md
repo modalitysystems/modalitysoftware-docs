@@ -16,6 +16,8 @@ The following Azure resources are required to install TWA Automation:
 
 > **Update Q4 2020**: we are planning to make some architectural changes in the next version of TWA Automation. This will result in some additional resources being required in Azure once the next version is available. This is to enable greater throughput of messages when deployed at scale. This release is expected by the end of CY2020, and the new required resources will be updated here. The ARM template will also be updated.
 
+Coming shortly, we will provide an [Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) describing these resources and their configuration. ARM Template is our preferred installation and configuration method.
+
 ## Required Configuration Settings
 
 As part of the setup process, the following configurations will be applied. These are required for the TWA Automation service to operate. The ARM Template deployment will configure these settings automatically; this list is provided for reference:
@@ -26,6 +28,6 @@ As part of the setup process, the following configurations will be applied. Thes
 
 - A service account will be needed in order to send emails from the Bot Registration service. This account should be enabled for sending emails, and should not be enabled for multi-factor authentication to enable the Bot Registration service to authenticate and send email.
 
-Coming shortly, we will provide an [Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) describing these resources and their configuration. ARM Template is our preferred installation and configuration method.
+
 
 ![TWA Automation CAT Architecture](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/TWA-Automation-CAT-Architecture-1.png)
