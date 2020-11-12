@@ -293,3 +293,5 @@ Email and card templates have two different specific formats they must be writte
 Follow all the steps above should now mean that any user that meets the criteria for your scenario will receive a Teams IM or email when ran at the configured time.
 
 If you wish to test your scenario immediately, simple connect to the machine where the scheduled tasks are configured and run the task. However, bear in mind that if all configured correctly - the users will receive a Teams IM or email.
+
+> There is a cap in the notification service that only returns a max of 100 teams, per user. This is due to restrictions of bot framework message sizes.
