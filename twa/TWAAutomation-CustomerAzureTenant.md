@@ -18,4 +18,4 @@ The following Azure resources are required to install TWA Automation:
 
 Coming shortly, we will provide an [Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) describing these resources and their configuration. ARM Template is our preferred installation and configuration method.
 
-![TWA Automation CAT Architecture](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/images/TWA-Automation-CAT-Architecture-1.png)
+![TWA Automation CAT Architecture](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/TWA-Automation-CAT-Architecture-1.png)
