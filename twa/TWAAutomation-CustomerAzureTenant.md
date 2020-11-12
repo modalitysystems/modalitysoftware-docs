@@ -14,7 +14,7 @@ The following Azure resources are required to install TWA Automation:
 - 1 x Application Insights
 - 1 x Storage Account General Purpose v2 Hot
 
-> **Update Q4 2020**: we are planning to make some architectural changes in the next version of TWA Automation. This will result in some additional resources being required once the next version is available. This is to enable greater throughput of messages when deployed at scale. This release is expected by the end of CY2020.
+> **Update Q4 2020**: we are planning to make some architectural changes in the next version of TWA Automation. This will result in some additional resources being required in Azure once the next version is available. This is to enable greater throughput of messages when deployed at scale. This release is expected by the end of CY2020, and the new required resources will be updated here. The ARM template will also be updated.
 
 ## Required Configuration Settings
 
