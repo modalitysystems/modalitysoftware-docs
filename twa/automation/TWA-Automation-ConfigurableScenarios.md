@@ -58,21 +58,26 @@ END
 GO
 ```
 
->*These columns **must** must return values and are case sensitive. If there are any rows that do not have a value for one of these properties, that row will be ignored and logged. Only valid rows will be sent to the cloud solution. Any additional columns that are returned will be processed.
+> \*These columns **must** must return values and are case sensitive. If there are any rows that do not have a value for one of these properties, that row will be ignored and logged. Only valid rows will be sent to the cloud solution. Any additional columns that are returned will be processed.
 
 #### Tables
+
 Everything previously used by the old version of TWA Automation has been completely migrated over to the automation schema. The only new table which is required to be updated for configuration scenarios is **"automation.Scenarios"**.
 
 This table contains the following columns:
-* Name - This should match the parameter passed in by the notification service.
-* StoredProcedureName - The name of the stored procedure which shall be searched for when the notification service runs.
-* IsSentOnce - Represents whether an email/im will only be sent one time, unless content returned from the scenario changes.
+
+- Name - This should match the parameter passed in by the notification service.
+- StoredProcedureName - The name of the stored procedure which shall be searched for when the notification service runs.
+- IsSentOnce
+  - If set to _1_ (true), a message (email/im) with specific content will only be sent to a user once, if the scenario is run again the message will not be resent. If set to _0_ (false), a message will be sent every time the notification service is run regardless of if it's been sent before.
+  - Additionally when _true_, each message will contain data from a single row returned by the stored procedure ,meaning a single user can receive many messages. Whereas when turned off, rows are grouped by the user they are being sent to, meaning a single user will only receive one message detailing all returned rows per scenario.
 
 By default, the following values should be populated in the table:
 ![Screenshot](./../images/bots/populatedscenarios.png)
 
 ### Bot Notification Service
-Now everything is setup in SQL, the next step is to add a new scheduled task on the machine where the bot notification service is located. 
+
+Now everything is setup in SQL, the next step is to add a new scheduled task on the machine where the bot notification service is located.
 
 The bot notification service, only processes 1 scenario, which is detected by a parameter passed into the service. This is why, once the ARM template has been deployed to a machine, there will be 4 scheduled tasks, all configured and set up to point to the scenarios configured in SQL. As seen below:
 ![Screenshot](./../images/bots/scheduledtasks.png)
@@ -290,6 +295,7 @@ Email and card templates have two different specific formats they must be writte
 ```
 
 ## Running Configured Scenario
+
 Follow all the steps above should now mean that any user that meets the criteria for your scenario will receive a Teams IM or email when ran at the configured time.
 
 If you wish to test your scenario immediately, simple connect to the machine where the scheduled tasks are configured and run the task. However, bear in mind that if all configured correctly - the users will receive a Teams IM or email.
