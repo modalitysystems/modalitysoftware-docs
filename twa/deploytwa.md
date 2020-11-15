@@ -37,7 +37,7 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
 
    ![Custom deployment form](images/deployForm.png)
 
-2. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
+1. Carefully fill in the fields. In some cases the tooltips may provide extra guidance. 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
      - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. *When applying an upgrade choose the Resource Group that already contains Teamwork Analytics.*
@@ -58,9 +58,9 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect. This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
 
-3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
+1. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
-4. Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. If you left the default of `[newGuid()]`, you need to retrieve the value from Deployment history;
+1. Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. If you left the default of `[newGuid()]`, you need to retrieve the value from Deployment history;
   
       a. In the Resource Group which you chose to deploy to, click Deployments on the left hand menu under settings, and then click the latest deployment (at the top) as below
       ![Deployment History](images/deployments-list.png)
