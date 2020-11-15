@@ -43,6 +43,7 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
      - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics. *When applying an upgrade choose the Resource Group that already contains Teamwork Analytics.*
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see *Location* below).
    - Settings
+     - **TWA License Key** - You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
      - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM running Teamwork Analytics.
       > Note: RDP is disabled by default for enhanced security.
      - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
@@ -55,11 +56,8 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
      - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
-
       > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
-      
-     - **License Key** -  You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
