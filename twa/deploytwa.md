@@ -55,9 +55,7 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
      - **Bot Name** - The name of the Automation Bot that the Notification Service will use. By default this field uses `Modality`, which will make use of Modality's Automation Bot. If your tenant has an Automation Bot deployed then change the name.
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
      - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
-      > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
-      
-      > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
+      > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect. This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
