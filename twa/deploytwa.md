@@ -56,6 +56,7 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
      - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
+      
       > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
 
