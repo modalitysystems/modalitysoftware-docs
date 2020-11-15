@@ -44,26 +44,22 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
      - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see *Location* below).
    - Settings
      - **Vm Admin Credentials** - your choice of username and password that an administrator can use to sign in to the VM running Teamwork Analytics.
-       > Note: RDP is disabled by default for enhanced security.
+      > Note: RDP is disabled by default for enhanced security.
      - **Sql Server Credentials** - your choice of username and password that an administrator can use to sign in to the SQL database hosting Teamwork Analytics data. 
      - **Azure Application details** - Use the details you generated when [registering an application](registerapplication.md).
-     - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. By default this field uses `[subscription().tenantId]`, which gets automatically replaced with Tenant ID of the chosen subscription.
-       > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you must delete the contents of this field and enter the correct Tenant ID.
-     - **Location** - The geographical location of the Azure resources that will host Teamwork Analytics. By default this field uses `[resourceGroup().location]`, which gets automatically replaced with location of the chosen Resource Group. Optionally you can delete this and enter the name of a different location.
-       > Note: Do not include the region prefix in brackets, e.g. use "Central US" rather than "(US) Central US".
+     - **Azure Tenant ID** - A globally unique identifier (GUID) that identifies the organization for which Teamwork Analytics will gather Teams usage data. By default this field uses `CurrentTenant`, which gets automatically replaced with Tenant ID of the chosen subscription.
+      > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you must delete the contents of this field and enter the correct Tenant ID.
      - **Include Notification Service** - Yes / No field. The Notification Service is an additional feature required to send pro-active messages to users via Bot/Email to improve adoption. Set to Yes if you plan to use the Teamwork Analytics bot. 
-        > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
-      - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
-        > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
+      > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
+     - **Bot Name** - The name of the Automation Bot that the Notification Service will use. By default this field uses `Modality`, which will make use of Modality's Automation Bot. If your tenant has an Automation Bot deployed then change the name.
+      > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
+     - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
+      > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
 
-        > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
-      - **Include Yammer Data** - Yes / No field. Yammer Data Collection is an additional feature that can be enabled. Set to Yes if you plan to include Yammer Data in your reports. This feature also requires a Yammer API Token to have been configured in advance and also a valid TWA Licence Key. 
-      - **Yammer Data Token** - A Yammer Applicication Bearer Token is required for the Teamwork Analytics Service to gather Yammer Data.
-        > Note: This is a mandatory field, if you don't want to include the Yammer Data, leave the default and it will have no effect.
-
-        > Note: To create a Yammer Application Bearer Token, see [here](yammerAPIToken.md) for more information.
-        
-      - **License Key** -  You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
+      > Note: This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
+     - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
+      
+     - **License Key** -  You will need a trial or full licence key, contact info@modalitysystems.com for a key if you do noy have one.
 
 3. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics.)
 
