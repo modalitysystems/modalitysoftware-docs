@@ -52,9 +52,9 @@ Pricing to run these Azure components in your tenant vary and are subject to cha
       > Note: If you used a different Tenant ID when [registering an application](registerapplication.md), you must delete the contents of this field and enter the correct Tenant ID.
      - **Include Notification Service** - Yes / No field. The Notification Service is an additional feature required to send pro-active messages to users via Bot/Email to improve adoption. Set to Yes if you plan to use the Teamwork Analytics bot. 
       > Note: For more information about the Teamwork Analytics bot, see [How to deploy the Teamwork Analytics Bot App into Teams](deployteamsapp.md).
-     - **Bot Name** - The name of the Automation Bot that the Notification Service will use. By default this field uses `Modality`, which will make use of Modality's Automation Bot. If your tenant has an Automation Bot deployed then change the name.
+     - **Bot Name** - The name of the Teamwork Analytics bot that the Notification Service will use. By default this field uses `Modality`, which will make use of Modality's bot. If your tenant has a bot deployed then change the name accordingly.
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect.
-     - **Bot Preshared Key** - A password used to secure the bot service. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
+     - **Bot Preshared Key** - A password used to secure the Teamwork Analytics bot. By default this field uses `[newGuid()]`, which gets replaced with a randomly generated globally unique password.
       > Note: This is a mandatory field, if you don't want to include the Bot, leave the default and it will have no effect. This must be in the Global Unique Identifier (GUID) format. See [here](http://guid.one/guid) for more information.
      - **Resource Tags** - Tags that will be applied to all deployed components. If changing ensure format is maintained
 
