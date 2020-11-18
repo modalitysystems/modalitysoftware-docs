@@ -1,4 +1,4 @@
-## Teamwork Analytic Architecture Overview
+## Teamwork Analytics Architecture Overview
 
 This page gives an overview of the complete Teamwork Analytics Architecture.
 
@@ -42,4 +42,4 @@ The Notificaiton Service notifies the Azure Bot Framework via the Modality Syste
 
 #### Azure Bot Service
 
-Azure Bot Service is a shared Azure Service that securely allows the sending of emails and Bot messages direct to Microsoft Teams end users. Te Bot Notification Windows Service send a trigger message on 443/TLS to the Modality Systems Azure Bot Service Broker which leverages the Azure Bot Service.
+Azure Bot Service is a shared Azure Service that securely allows the sending of emails and Bot messages direct to Microsoft Teams end users. The Bot Notification Windows Service send a trigger message on 443/TLS to the Modality Systems Azure Bot Service Broker which leverages the Azure Bot Service.
