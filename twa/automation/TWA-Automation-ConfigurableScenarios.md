@@ -1,18 +1,21 @@
 # Teamwork Analytics Automation - Configuring Scenarios
 
 ## Overview
-Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA. Therefore it is possible to use this data and configure scenarios with. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Several areas will need configuring for this, read on to find out how.
+Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Configuration of new or existing scenarios is a multi-step process and is described in this document.
 
-## Configuration
-TWA Automation is deployed in two parts: a locally run Bot Notification Service, and a Modality-managed cloud solution that brokers and delivers messages to users. SQL Server is what the notification service will point to, Azure table storage is what the cloud solution will point to. 
+### Create or Edit a Scenario
+Everything related to TWA Automation is located within the TWA database which will be located within the "automation" schema, for example a table would be labelled as "automation.tablename". Unless specifically instructed here do not change the database schema or data content of this database. Only the areas specified in these docs should be configured as documented.
 
-### SQL Server
-Everything related to TWA Automation is located within the TWA database which will be located within the "automation" schema, for example a table would be labelled as "automation.tablename". Anything outside of these schemas should not be tampered with. Only the areas specified in these docs should be configured by you and/or an admin.
+Creating a new scenario involves:
 
-#### Stored Procedures
-There are already 4 existing stored procedures that will be visible within the TWA database, which work for the previously supported scenarios. Therefore, all of the data that was previously returned, is still returned but using this new architecture.
+1. Creating a new stored procedure to retrieve the list of users which match the scenario, and any associated data
+2. Adding the scenario to the list of scenarios in configuration
+3. Defining a new template for the messages sent to users (either via Microsoft Teams message or email)
+4. Defining a schedule for the new scenario to operate on
 
-When creating a custom scenario, follow the steps below in order to create one that will be compatible with the solution:
+Existing scenarios can be modified in any of the 4 ways described.
+
+#### 1. Create a Stored Procedure
 
 1. Connect to the TWA Database
 2. Create a stored procedure, ensure that it has a schema (prefix) of **"automation"**, for example **"automation.spNewScenario"**
@@ -60,9 +63,9 @@ GO
 
 > \*These columns **must** must return values and are case sensitive. If there are any rows that do not have a value for one of these properties, that row will be ignored and logged. Only valid rows will be sent to the cloud solution. Any additional columns that are returned will be processed.
 
-#### Tables
+#### 2. Add the scenario to the list of scenarios in configuration
 
-Everything previously used by the old version of TWA Automation has been completely migrated over to the automation schema. The only new table which is required to be updated for configuration scenarios is **"automation.Scenarios"**.
+Edit the table **"automation.Scenarios"**, adding a new row to define the new scenario.
 
 This table contains the following columns:
 
@@ -75,41 +78,19 @@ This table contains the following columns:
 By default, the following values should be populated in the table:
 ![Screenshot](./../images/bots/populatedscenarios.png)
 
-### Bot Notification Service
+### 3. Defining a new template for the messages sent to users (either via Microsoft Teams message or email)
 
-Now everything is setup in SQL, the next step is to add a new scheduled task on the machine where the bot notification service is located.
+Template definition is defined in the Azure Table Storage store, in the **"ScenarioTemplates"** table. This table has the following columns:
 
-The bot notification service, only processes 1 scenario, which is detected by a parameter passed into the service. This is why, once the ARM template has been deployed to a machine, there will be 4 scheduled tasks, all configured and set up to point to the scenarios configured in SQL. As seen below:
-![Screenshot](./../images/bots/scheduledtasks.png)
-
-All that is required is for a new scheduled task to be created, pointing to the same executable as the other scheduled tasks. The only difference is that you will need to enter in the name value that you gave within the SQL DB. To do this, follow these steps:
-
-1. Set up a new scheduled task/or re-use existing task by:
-   1. Export existing task
-   2. Import the exported task with the name of the your new scenario
-2. Open your new task
-   1. Click "Actions"
-   2. Highlight the "Start a program" action
-   3. Click "Edit"
-   4. Update "Add Arguments (Optional)" parameter to be the same as the scenario name you entered in SQL.
-
-> Make sure the task has "run when there is no one logged in" set.
-
-> Ensure that the name matches exactly the same as the "name" column that you added into the Scenarios SQL table.
-
->Pay close attention to the scheduled times which you set-up for your task, take into account what your custom stored procedure is doing (for example, is the data over a specified amount of time) and set a reasonable time to run, also consider the remaining tasks scheduled times.
-
-### Azure Table Storage
-The final place to update is the **"ScenarioTemplates"** table located within table storage. This table has the following columns:
 * PartitionKey - represents the tenant id
 * RowKey - must match name of the scenario
 * EmailSubject - the email subject which will display when the scenario sends an email
 * EmailTemplate - the content which will display when the scenario sends an email
 * TeamsCardTemplate - the content which will display when the scenario sends a Teams IM
 
->To note, if this table does not exist or is completely empty. The four default scenarios which mentioned above will still work regardless, therefore hardcoded values for the subject, teams card and email templates are all imbedded in the solution and will work with or without having values in this table. The same applies to missing rows.
+>If this table does not exist or is completely empty the four default scenarios which mentioned above will still work using hardcoded values.
 
->If you would like to customise the values for the default scenarios, simply update any of the existing rows and the changes will take effect when they're next triggered.
+>Templates for existing scenarios can be changed by editing this table, and will take effect the next time the scenario is scheduled.
 
 Email and card templates have two different specific formats they must be written in, here is an example of both for the BotGuestNotifications Scenario:
 
@@ -294,10 +275,34 @@ Email and card templates have two different specific formats they must be writte
 }
 ```
 
+### 4. Defining a schedule for the new scenario to operate on
+
+Each scenario requires its own scheduled task on the machine where the bot notification service is located.
+
+The bot notification service, only processes 1 scenario, which is detected by a parameter passed into the service. This is why, once the ARM template has been deployed to a machine, there will be 4 scheduled tasks, all configured and set up to point to the scenarios configured in SQL. As seen below:
+![Screenshot](./../images/bots/scheduledtasks.png)
+
+Create a new scheduled task, copying the executable path from the other scheduled tasks. The only difference is that you will need to enter in the scenario name value that you gave within the SQL DB. To do this, follow these steps:
+
+1. Set up a new scheduled task/or re-use existing task by:
+   1. Export existing task
+   2. Import the exported task with the name of the your new scenario
+2. Open your new task
+   1. Click "Actions"
+   2. Highlight the "Start a program" action
+   3. Click "Edit"
+   4. Update "Add Arguments (Optional)" parameter to be the same as the scenario name you entered in SQL.
+
+> Make sure the task has "run when there is no one logged in" set.
+
+> Ensure that the name matches exactly the same as the "name" column that you added into the Scenarios SQL table.
+
+>Pay close attention to the scheduled times which you set-up for your task, take into account what your custom stored procedure is doing (for example, is the data over a specified amount of time) and set a reasonable time to run, also consider the remaining tasks scheduled times.
+
 ## Running Configured Scenario
 
 Follow all the steps above should now mean that any user that meets the criteria for your scenario will receive a Teams IM or email when ran at the configured time.
 
 If you wish to test your scenario immediately, simple connect to the machine where the scheduled tasks are configured and run the task. However, bear in mind that if all configured correctly - the users will receive a Teams IM or email.
 
-> There is a cap in the notification service that only returns a max of 100 teams, per user. This is due to restrictions of bot framework message sizes.
+> There is a cap in the notification service that only returns a max of 100 teams, per user. This is due to restrictions of Bot Framework message sizes.
