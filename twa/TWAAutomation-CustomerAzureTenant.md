@@ -30,7 +30,7 @@ As part of the setup process, the following configurations will be applied. Thes
 
 > **Update Q4 2020**: we are planning to make some architectural changes in the next version of TWA Automation. This will result in some additional resources being required in Azure once the next version is available. This is to enable greater throughput of messages when deployed at scale. This release is expected by the end of CY2020, and the new required resources will be updated here. The ARM template will also be updated.
 
-[Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) is our preferred installation and configuration method. Coming shortly, we will provide an  describing these resources and their configuration. 
+[Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) is our preferred installation and configuration method. The instructions below are for an ARM Template deployment.
 
 ## Step 1 - Create Azure AD Application
 
