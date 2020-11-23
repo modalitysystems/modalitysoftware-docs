@@ -34,7 +34,7 @@ As part of the setup process, the following configurations will be applied. Thes
 
 ## Step 1 - Create Azure AD Application
 
-TWA Automation requires a new Azure AD Application registration. Once created, you will provide the App ID and Secret to the ARM Template, which will perform the remainder of the configuration
+TWA Automation requires a new Azure AD Application registration. Once created, you will provide the App ID and Secret to the ARM Template, which will perform the remainder of the configuration.
 
 ### Register Teamwork Analytics with Azure Active Directory
 1. Sign in to the [Azure Portal](https://azure.microsoft.com/en-gb/features/azure-portal/)
@@ -43,10 +43,9 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
 1. Enter the following application registration details
    * **Name** - must be **Modality TWA Automation** (this name is important for the application to work correctly)
    * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only** [Why?](https://techcommunity.microsoft.com/t5/iis-support-blog/how-to-create-an-app-registration-in-azure-ad-for-a-bot-solution/ba-p/810761)
-   * **Redirect URI** - The authorization endpoint used by Teamwork Analytics - Recommend setting this to **https://login.live.com/oauth20_desktop.srf** 
-   * (The **Redirect URI Type** dropdown can be left as the default value of **Web**)
+   * **Redirect URI** - not required   
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
-![application registration](images/applicationRegistration.png)
+
 1. Take note of the **ApplicationID** as this will be required futher in the deployment process
 ![overview of application](images/applicationOverview.png)
 
@@ -76,6 +75,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 - 1 x Storage Account General Purpose v2 Hot
 
 
-> Note: You must have registered an application beforehand. Provide the App ID and App Secret from Step 1
+> Note: You must have registered an application beforehand. Provide the App ID and App Secret from Step 1.
+
+Following deployment, TWA Automation will require some configuration before being ready to use. The Modality Systems CI Team will work with you to understand your requirements and configure the appropriate scenarios and other settings prior to first use. 
 
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
