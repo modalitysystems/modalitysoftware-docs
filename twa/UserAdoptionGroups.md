@@ -20,6 +20,6 @@ An example of this data could be as follows;
 
 The adoption groups will become visible in the UA Group filters in Teamwork Analytics Power BI reports similar to the screen shot below;
 
-![User Adoption Groups in Power BI](images/uagroups.png)
+![User Adoption Groups in Power BI](images/uagroups.PNG)
 
 To import the data, you can use your favourite tool for importing to a SQL Server database (be sure not to change any other tables), or contact Modality and our consulting team can help you.
