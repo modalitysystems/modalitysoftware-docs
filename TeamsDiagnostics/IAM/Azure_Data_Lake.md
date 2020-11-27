@@ -18,16 +18,16 @@ In the portal locate the resource Group and the Data-lake named (XXXXXXXXXXXXXXX
 4. Select Access control (IAM) to display access control settings for the container. Select the Role assignments tab to see the list of role assignments.
 ### THIS IS AN EXMPLE SCREENSHOT ONLY 
 
-!(images/accesscontrol.png)
+![access control](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TeamsDiagnostics/IAM/Images/accesscontrol.png)
 
 5. Click the Add role assignment button to add a new role.
 
 6. In the Add role assignment window, select the Azure Storage role (Storage-Blob-Data-Reader) that you want to assign. Then search to locate the security principal to which you want to assign that role. -  _**Security group created previously.**_
 
-!(images/roleassignment.png)
+![role assignment](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TeamsDiagnostics/IAM/Images/roleassignment.png)
 
 7. Click Save. The identity to whom you assigned the role appears listed under that role. For example, the following image shows that the user added now has read permissions to data in the container named sample-container.
 
 ### THIS IS AN EXMPLE SCREENSHOT ONLY
 
-!(images/rolepreview.png)
+![role preview](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TeamsDiagnostics/IAM/Images/rolepreview.png)
