@@ -31,7 +31,7 @@ As part of the setup process, the following configurations will be applied. Thes
 | 1 | The Bot Notification service is an additional component that gets installed on an existing TWA deployment.  It runs as scheduled tasks that looks at the TWA Database for defined scenarios to pass to the TWA Automation service. |
 | 2 | Jobs are placed on the ServiceBus Queue by the Bot Notification Service. These jobs are then retrieved by the Automation Service. This process adds a layer of resilience to the TWA Automation Service. | 
 | 3 | A storage account is used for holding configuration values which are consumed by the TWA Automation Service. |
-| 4 | Connection Strings and Secrets that are used by the solution are stored here. Thorough the use of Azure Managed Identity, only code running on the App Service have access and only when required. |
+| 4 | Connection Strings and Secrets that are used by the solution are stored here. Through the use of Azure Managed Identity, only code running on the App Service have access and only when required. |
 | 5 | An App Service is essentially an IIS Web Server but presented as a PaaS solution. This is used to run Modality's TWA Automation Service |
 | 6 | Application Insights is where the App Service stores logs and metrics for the health of the solution. To assist with Modality's ability to resolve faults, it is recommended the leave the default option **Logs to Modality** to **Yes** which will mean that this component won't get deployed |
 | 7 | The App Service Plan defines the capabilities and cost of the App Service and can be scaled up or down as required. |
