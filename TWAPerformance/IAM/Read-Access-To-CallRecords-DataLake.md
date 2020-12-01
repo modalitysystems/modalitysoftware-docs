@@ -28,14 +28,14 @@ The built-in Data Reader roles provide read permissions for the data in a contai
 
 Example screenshot:
 
-![access control](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/accesscontrol.png)
+![access control](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/accesscontrol.png)
 
 5. Click the **Add role assignment** button to add a new role.
 6. In the Add role assignment window, select the Azure Storage role **Storage-Blob-Data-Reader**. Then add **CallRecordsDatalakeReader** security group
 
 Example screenshot:
 
-![role assignment](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/roleassignment.png)
+![role assignment](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/roleassignment.png)
 
 7. Click Save. 
 
@@ -45,4 +45,4 @@ The identity to whom you assigned the role appears listed under that role. For e
 
 Example screenshot:
 
-![role preview](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/rolepreview.png)
+![role preview](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/rolepreview.png)
