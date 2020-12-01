@@ -26,7 +26,7 @@ The built-in Data Reader roles provide read permissions for the data in a contai
 3. Locate the container for which you want to assign a role, and display the container's settings.
 4. Select Access control (IAM) to display access control settings for the container. Select the Role assignments tab to see the list of role assignments.
 
-![access control](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TeamsDiagnostics/IAM/Images/accesscontrol.png)
+![access control](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/accesscontrol.png)
 
 5. Click the **Add role assignment** button to add a new role.
 
