@@ -26,11 +26,14 @@ The built-in Data Reader roles provide read permissions for the data in a contai
 3. Locate the container for which you want to assign a role, and display the container's settings.
 4. Select Access control (IAM) to display access control settings for the container. Select the Role assignments tab to see the list of role assignments.
 
+Example screenshot:
+
 ![access control](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/accesscontrol.png)
 
 5. Click the **Add role assignment** button to add a new role.
-
 6. In the Add role assignment window, select the Azure Storage role **Storage-Blob-Data-Reader**. Then add **CallRecordsDatalakeReader** security group
+
+Example screenshot:
 
 ![role assignment](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/roleassignment.png)
 
@@ -39,5 +42,7 @@ The built-in Data Reader roles provide read permissions for the data in a contai
    
 
 The identity to whom you assigned the role appears listed under that role. For example, the following image shows that the user added now has read permissions to data in the container named sample-container
+
+Example screenshot:
 
 ![role preview](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/TWAPerformance/IAM/Images/rolepreview.png)
