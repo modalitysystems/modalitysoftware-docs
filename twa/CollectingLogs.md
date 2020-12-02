@@ -37,12 +37,5 @@ Steps
   
  Please email over or link to all files for Modality Systems to review
  
- ## 4. Scan History
- 
- Please provide the results for the following query from the TWA SQL Database.
- 
- ```SQL
- SELECT * FROM [reporting].[Scans]
- ```
  
  
