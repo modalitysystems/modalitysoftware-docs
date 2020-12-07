@@ -71,8 +71,9 @@ This section details what each setting controls and how to configure it. Not all
 ### IsExternal
 
 - Whether the team can contain guests or not.
-- Controls the _Allow Guests_ tickbox on the Create Page in CreateTeam.
+- Controls the _Allow Guests_ tickbox on the Create Page in CreateTeam, and prevents user choice (option is greyed out).
 - When _true_ appends the suffix _' - IsExternal'_ to the team name.
+- If not present, the _Allow Guests_ tickbox is user selectable.
 
 ### Visibility
 
