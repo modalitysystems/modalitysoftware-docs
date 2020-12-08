@@ -13,6 +13,7 @@ The following Azure resources are required to install TWA Automation:
 - 1 x App Service
 - 1 x Application Insights
 - 1 x Storage Account General Purpose v2 Hot
+- 1 x Service Bus Queue
 
 ## Required Configuration Settings
 
@@ -39,8 +40,6 @@ As part of the setup process, the following configurations will be applied. Thes
 | 9 | Microsoft host a central Bot Framework Service that allows Modality's TWA Automation Service to function |
 
 # Installation Instructions
-
-> **Update Q4 2020**: we are planning to make some architectural changes in the next version of TWA Automation. This will result in some additional resources being required in Azure once the next version is available. This is to enable greater throughput of messages when deployed at scale. This release is expected by the end of CY2020, and the new required resources will be updated here. The ARM template will also be updated.
 
 [Azure ARM Template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) is our preferred installation and configuration method. The instructions below are for an ARM Template deployment.
 
@@ -85,6 +84,7 @@ This ARM Template will install resources in your Azure tenant. The template will
 - 1 x App Service
 - 1 x Application Insights
 - 1 x Storage Account General Purpose v2 Hot
+- 1 x Service Bus Queue
 
 
 > Note: You must have registered an application beforehand. Provide the App ID and App Secret from Step 1.
