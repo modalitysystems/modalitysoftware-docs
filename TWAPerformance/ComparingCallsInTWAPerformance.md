@@ -17,8 +17,9 @@ Make a note of this User ID.
 At this point you should have the following information from Microsoft Teams Admin Center:
 
 Date Range: Nov 27, 2020 - Dec 3, 2020
+
 | User          | User ID       | Total Calls  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| ------------:|
 | Example User  | b3e9cd6d-1db8-4173-a1eb-2cdd0bf21347 | 37 |
 
 ### TWA Performance Module
