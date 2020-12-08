@@ -54,7 +54,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
 1. Select **App Registrations** and click **New Registration** (Take care not to select **App Registrations (Legacy)** as these instructions do not apply to them)
 1. Enter the following application registration details
    * **Name** - must be **Modality TWA Automation** (this name is important for the application to work correctly)
-   * **Supported Account Types** - Recommend setting this to **Accounts in this Organisational Directory Only** [Why?](https://techcommunity.microsoft.com/t5/iis-support-blog/how-to-create-an-app-registration-in-azure-ad-for-a-bot-solution/ba-p/810761)
+   * **Supported Account Types** - This should be set to  **Accounts in any organizational directory (Any Azure AD directory - Multitenant)** [Why?](https://techcommunity.microsoft.com/t5/iis-support-blog/how-to-create-an-app-registration-in-azure-ad-for-a-bot-solution/ba-p/810761)
    * **Redirect URI** - not required   
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 
