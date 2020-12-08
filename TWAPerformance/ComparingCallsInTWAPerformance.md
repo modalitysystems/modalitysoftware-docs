@@ -61,4 +61,4 @@ If there is a discrepancy, then looking at the detail of calls in each source ca
 
 On the Teams Admin Center User Profile page, the Call History tab lists calls made by that user. 
 
-Comparison of these two detailed sources can be used to identify calls showing in one location and not the other.
+Comparison of these two detailed sources can be used to identify calls showing in one location and not the other. To identify calls between the two platforms the Call ID is a common identifier which can be used to identify individual calls. The Call ID is shown in the SQL Statement results. In the Teams Admin Center, in the list of a specific user's Call History, clicking the date-time will open the call detail. In the URL of this page, the Call ID is surfaced.
