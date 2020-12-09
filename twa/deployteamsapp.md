@@ -1,10 +1,10 @@
-# How to deploy the Teamwork Analytics Bot App into Teams
+# How to deploy the Teamwork Automation App into Teams
 
 The Teamwork Analytics Bot is provided as an Microsoft Teams App which needs to be uploaded to your organisation's Apps section within Microsoft Teams.
 
 ### Before you start
 
-[Download the latest Teamwork Analytics Bot manifest file](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest).
+[Download the latest Automation manifest file](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases/latest).
 
 > NOTE: Some of the steps below require making changes to your Microsoft Online Tenant which can sometimes take a few hours to take effect.
 
