@@ -73,7 +73,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
 
 ## Step 2 - Deploy TWA Automation
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftwadeploy.blob.core.windows.net%2Ftwa-dev%2FmainTemplateBot.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftwadeploy.blob.core.windows.net%2Ftwa-prod%2FmainTemplateBot.json" target="_blank">
   <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure" style="max-width:100%;"/>
 </a>
 
