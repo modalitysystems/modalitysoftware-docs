@@ -17,7 +17,7 @@ This data is collected on a continuous loop, and TWA stores the correct, current
 
 ### Active Directory Attributes for users
 
-Throughout the reporting Active Directroy Attributes are used to group users for reporting purposes. 
+Throughout the reporting Active Directory Attributes are used to group users for reporting purposes. 
 
 TWA collects the following attributes for all users by default
 
@@ -82,14 +82,14 @@ For each user, Microsoft Graph API gives us the number of chat messages, channel
 
 The Graph API allow us to gather up to 28 days of daily user usage history. At the point of install we gather the maximum history we can (28 days), from then on we gather the daily user usage data everyday.
 	
-Teamwork Analytics stores daily usage data indefinately, however in reporting we provide access to the following (for performance reasons):
+Teamwork Analytics stores daily usage data indefinitely, however in reporting we provide access to the following (for performance reasons):
 - Daily per user activity for 14 days of the data we have (e.g. on the 27th, we may only have data until 25th, so you can visualise to the 11th
 - Weekly sums of per user activity is held for a year. Weeks begin Monday
 - Monthly sums of per user activity for infinite months (subject to storage) 
 
 Example Capabilities
 - Report on daily usage for and AD groups for chat, channel, meeting or or calling usage for up to 14 days
-- Reprt on weekly usage for any AD group for any perod of weeks for up to a year
+- Report on weekly usage for any AD group for any period of weeks for up to a year
 = Report compare month on month usage changes for any months in the database
 
 ## Per User Teams Device Data
@@ -97,4 +97,4 @@ Example Capabilities
 TWA collects the types of devices users are using to sign into Microsoft Teams e.g. Web, Mobile, Windows, Mac
 
 Example Capabilities
-- Report on amound of mobile us over time
+- Report on amount of mobile us over time

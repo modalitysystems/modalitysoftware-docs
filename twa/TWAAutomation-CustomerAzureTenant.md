@@ -57,7 +57,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
    * **Redirect URI** - not required   
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 
-1. Take note of the **ApplicationID** as this will be required futher in the deployment process
+1. Take note of the **ApplicationID** as this will be required further in the deployment process
 ![overview of application](images/applicationOverview.png)
 
 ### Add a Client Secret

@@ -29,7 +29,7 @@ You can filter information using the top bar. For instance, on the *PSTN Plan Us
 
 ### Visual Filtering
 
-You can also click on visuals to set filters. Try clicking the line with the plan *Domesitc Calling Plan Standard US* to only show the usage for that specific plan.
+You can also click on visuals to set filters. Try clicking the line with the plan *Domestic Calling Plan Standard US* to only show the usage for that specific plan.
 
 
 ## How to connect the app to your data
