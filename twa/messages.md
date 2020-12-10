@@ -42,9 +42,9 @@ Set [UseMessageDeltas] = true, to enable regular Delta queries.
 A regular Delta query will get all created, modified and deleted messages for that channel in the last [MessageDeltaWindowInDays] days. This is more performant than a large Delta query as it does not return already saved messages older than [MessageDeltaWindowInDays] days. 
 
 There are 2 exceptions to this rule.
-1. When TWA has been running wihtout interuption for less than [MessageDeltaWindowInDays] days
+1. When TWA has been running without interruption for less than [MessageDeltaWindowInDays] days
    - If it is yet to scan that channel within [MessageDeltaWindowInDays] days, then it will fallback to a large Delta query for that channel.
-   - If it has scanned that channel at least once in [MessageDeltaWindowInDays] days, TWA will only be getting the created, modified and deleted messages for that channel since the earliest occurance of that channel scan in [MessageDeltaWindowInDays] days.
+   - If it has scanned that channel at least once in [MessageDeltaWindowInDays] days, TWA will only be getting the created, modified and deleted messages for that channel since the earliest occurrence of that channel scan in [MessageDeltaWindowInDays] days.
 2. When a new channel is created inside [MessageDeltaWindowInDays] days
    - TWA will only be getting the created, modified and deleted messages for that channel since it was created.
  

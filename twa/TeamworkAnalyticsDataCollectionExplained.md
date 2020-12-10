@@ -12,9 +12,9 @@ In all cases, we collect metadata of activity (time of posting, channel, team po
 
 ## Microsoft Teams Data Collection Update Interval
 
-Our process contantly collects data from Microsoft Graph on a loop (to the speed Microsoft allow us before throttling). Once the process has worked through all data and Teams, it immedatgely starts again working through for any changes.
+Our process constantly collects data from Microsoft Graph on a loop (to the speed Microsoft allow us before throttling). Once the process has worked through all data and Teams, it immediately starts again working through for any changes.
 
-In smaller organisations (a few thousand users) this can take hours, so the data is updated in SQL multiple times a day), in larger customers ~250,000+ this complete update can take up to 24 hours in the worst cases (heveay usage, lots of Microsoft throttling).
+In smaller organisations (a few thousand users) this can take hours, so the data is updated in SQL multiple times a day), in larger customers ~250,000+ this complete update can take up to 24 hours in the worst cases (heavy usage, lots of Microsoft throttling).
 
 From a reporting point of view, the worst case is to assume a 24 to 48 hour latency from time of activity, but typically it is less than this. This accounts for Graph, SQL and Power BI refresh times.
 

@@ -13,7 +13,7 @@ The values returned by the API do not match correctly when you compare a period 
 * Call Count
 * Meeting Count
 
-We have seen these values vary by up to 20%, and they are consistantly different - in my experience, I have not seen these values match.
+We have seen these values vary by up to 20%, and they are consistently different - in my experience, I have not seen these values match.
 
 We would expect that if you added together counts for each day in a period, they would sum to be equal to the aggregated period values. 
 
@@ -66,6 +66,6 @@ The Results from these requests (via summing the 4 count columns) were;
 
 #### 3. Compare summed results from the daily API to the Period API
 
-In this example, you can see that all of the counts are different. We would expect them to be the same. In previous requests, it has been mentioned that message id's are de-duped, however it is unclear what that means, as how could a message with the same ID be sent on two seperate days?
+In this example, you can see that all of the counts are different. We would expect them to be the same. In previous requests, it has been mentioned that message id's are de-duped, however it is unclear what that means, as how could a message with the same ID be sent on two separate days?
 
 I would also like to note, that whilst performing this test, the values from the 7 day summary endpoint changed, even though it still claimed they were from the same day. The message counts actually decreased also, which was unexpected.

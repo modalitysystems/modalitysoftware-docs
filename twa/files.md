@@ -40,9 +40,9 @@ Set [UseFileDeltas] = true, to enable regular Delta queries.
 A regular Delta query will get all created, modified and deleted messages for that team in the last [FileDeltaWindowInDays] days. This is more performant than a Large Delta query as it does not return already saved files older than [FileDeltaWindowInDays] days. 
 
 There are 2 exceptions to this rule.
-1. When TWA has been running without interuption for less than [FileDeltaWindowInDays] days
+1. When TWA has been running without interruptions for less than [FileDeltaWindowInDays] days
    - If it's yet to scan that team within [FileDeltaWindowInDays] days, then it will fallback to a Large Delta query for that team.
-   - If it has scanned that team at least once in [FileDeltaWindowInDays] days, TWA will only be getting the created, modified and deleted files for that team since the earliest occurance of that team file scan in [FileDeltaWindowInDays] days.
+   - If it has scanned that team at least once in [FileDeltaWindowInDays] days, TWA will only be getting the created, modified and deleted files for that team since the earliest occurrence of that team file scan in [FileDeltaWindowInDays] days.
 2. When a new team is created inside [FileDeltaWindowInDays] days
    - TWA will only be getting the created, modified and deleted files for that team since it was created.
  

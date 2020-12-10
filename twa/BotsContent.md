@@ -6,14 +6,14 @@ For each scenario you will find a description of the scenario and any default co
 Please email Software.Support@modalitysystems.com if you require any customisation to the default scenarios or wish to discuss additional scenarios.
 
 ### Default Message Behaviour ###
-If a scenario is triggered and the message sent, this will initially be delivered via email, as per the examples below. Within each default message, we provide the end user the ability to recieve future messages via the Teamwork Tips Bot. This is achieved by clicking the link provided within the message. The content delivered via Teams message will be the same as the email content. This can also be customised if required.
+If a scenario is triggered and the message sent, this will initially be delivered via email, as per the examples below. Within each default message, we provide the end user the ability to receive future messages via the Teamwork Tips Bot. This is achieved by clicking the link provided within the message. The content delivered via Teams message will be the same as the email content. This can also be customised if required.
 
 ## Scenario 1 - Guest Reminder
 
 ![BOT_ExternalGuests](images/BOT_ExternalGuests.png)
 
 ### 1.	Scenario
-The owner will recieve this message if they are the owner of a team which includes external guests. Team owners can then review Team content and guest membership to ensure it's still valid for use as initially intended.
+The owner will receive this message if they are the owner of a team which includes external guests. Team owners can then review Team content and guest membership to ensure it's still valid for use as initially intended.
 
 ### 2.	Default Message Subject
 Teams with Guests Reminder
@@ -26,7 +26,7 @@ This is a reminder that you are the owner of 1 or more teams in Microsoft Teams 
 ![BOT_TeamOwners](images/BOT_TeamOwners.png)
 
 ### 1.	Scenario
-The owner will recieve this message if they are the owner of a team which has less than **2 owners**. It is advised that the existing owner should the take action to nomiate/request an additional team owner.
+The owner will receive this message if they are the owner of a team which has less than **2 owners**. It is advised that the existing owner should the take action to nominate/request an additional team owner.
 
 ### 2.	Default Message Subject
 Teams with Owner Counts Reminder
@@ -39,7 +39,7 @@ This is a reminder that you are the owner of 1 or more teams in Microsoft Teams 
 ![BOT_InactiveTeam](images/BOT_InactiveTeam.png)
 
 ### 1.	Scenario
-The owner(s) will recieve this message if they are the owner of a team which has had no activity within the last **30** days.
+The owner(s) will receive this message if they are the owner of a team which has had no activity within the last **30** days.
 
 ### 2.	Default Message Subject
 Teams Last Activity Reminder
@@ -52,7 +52,7 @@ This is a reminder that you are the owner of 1 or more inactive teams in Microso
 ![BOT_DeletedTeam](images/BOT_DeletedTeam.png)
 
 ### 1.	Scenario
-The owner(s) will recieve this message if they are the owner of a team which has been recently deleted. The team name will also be shown.
+The owner(s) will receive this message if they are the owner of a team which has been recently deleted. The team name will also be shown.
 
 ### 2.	Default Message Subject
 Deleted Team Reminder

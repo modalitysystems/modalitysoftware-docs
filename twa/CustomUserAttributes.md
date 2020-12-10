@@ -19,7 +19,7 @@ The table has one column called `Name` which supports alphanumeric characters an
 
 The next time TWA queries user data it will search for these attributes and save any values it finds to the SQL database within the `dbo.UserProperties` table.
 
-> <sup>†</sup> Properties that were migrated from on-premesis Active Directory will often have a legacy ID in their names. This must be included.
+> <sup>†</sup> Properties that were migrated from on-premises Active Directory will often have a legacy ID in their names. This must be included.
 
 # Troubleshooting missing attributes
 
@@ -66,14 +66,14 @@ SELECT
 ORDER BY 1, 4 DESC
 ```
 
-The results will show the spread of values for each custom attribute accross the whole userbase.
+The results will show the spread of values for each custom attribute across the whole userbase.
 
 | Property | Value | UserCount | UserPercent |
 | --------- | ---- | ---- | -------- |
 | ... | ... | ... | ... |
 | preferredColour | Blue | 1980 | 97.11 |
 | preferredColour | [Graph API returned a blank] | 36 | 1.77 |
-| preferredColour | [Graph API returned a unqiue value for a User] | 16 | 0.78 |
+| preferredColour | [Graph API returned a unique value for a User] | 16 | 0.78 |
 | preferredColour | Red | 3 | 0.15 |
 | preferredColour | Yellow | 2 | 0.1 |
 | preferredColour | Green | 2 | 0.1 |
