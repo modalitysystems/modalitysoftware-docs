@@ -1,0 +1,8 @@
+# Device Usage Details 
+
+User Story: I can view each User by device(s) used 
+
+- User name, department, city and country
+- Devices used per User (Android, ios, Mac, Web, Win Desktop, Win Phone)
+
+All views in this report can be filtered by AD attribute and device. 
