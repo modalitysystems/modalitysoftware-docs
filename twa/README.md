@@ -10,7 +10,7 @@ Teamwork Analytics can be run by Modality Systems in Azure as software as a serv
 
 This documentation gives full details of the deployment and configuration of Teamwork Analytics
 
-
+> Some reports in Teamwork Analytics can be effected by an admin centre setting, see [here](TWA-FAQ.md#is-teamwork-analytics-effected-by-the-hide-user-details-in-reports-setting) for details.
 
 # Teamwork Analytics - SaaS
 
