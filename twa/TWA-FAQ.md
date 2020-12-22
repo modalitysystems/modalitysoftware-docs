@@ -79,6 +79,10 @@ If customers have the requirement, we can investigate what usage reporting Offic
 
 The TWA database, Graph data collection engine, PowerBI Apps and Bot notification service each have unique version numbers for every released build. Version numbers are in the format YYYY.MM.DD.MinorBuildNumber - so 2020.1.8.2 is 8th January 2020 minor build 2. This allows easy tracking of issues and improvements.
 
+## Is Teamwork Analytics effected by the "[Hide user details in reports](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide#hide-user-details-in-the-reports)" setting?
+
+Yes, this setting will cause the some report pages to no longer function and render blank. This is because the setting also effects the Graph API responses making it impossible to join to user data from Azure AD.
+
 ## Improving Reporting Performance
 
 Depending on the size of your Teams ecosystem, you may find issues with reporting and collecting data at the same time. This is manifested in issues refreshing PowerBI reports. To rectify these issues, Modality recommends either increasing the SQL tier in Microsoft Azure, or setting up [Active Geo Replication](https://docs.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview) and using the readable replica for reporting.
