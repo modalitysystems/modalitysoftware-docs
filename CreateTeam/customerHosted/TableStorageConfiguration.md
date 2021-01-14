@@ -82,7 +82,7 @@ Add a TextField for each of the following RowKeys:
 
 > For the 'name' field, the largest NativeMaxLength supported is 245.
 
-> If you have prefixes and/or suffixes defined in the [Template table](#template-table). The NativeMaxLength for the 'name' field must be less than or equal to the maximum length (245) minus the length of the longest prefix and the longest prefix. For example a prefix with a length of 10 and a suffix with a length of 10 would require a 'name' NativeMaxLength of less than 225 (245 - 10 - 10).
+> If you have prefixes and/or suffixes defined in the [Template table](#template-table), the length of the prefix and suffix in the chosen template is included in length validation. This means that the NativeMaxLength for the 'name' field must be less than or equal to the maximum length (245) minus the length of the longest prefix and the longest prefix. For example a prefix with a length of 10 and a suffix with a length of 10 would allow a maximum 'name' NativeMaxLength of less than 225 (245 - 10 - 10).
 
 > For the 'description' field, the maximum value supported by Microsoft is 1025.
 
