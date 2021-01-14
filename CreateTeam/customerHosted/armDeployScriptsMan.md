@@ -2,7 +2,7 @@
 
 1. Navigate to the resource group that CreateTeam has been deployed too
    
-   ![Resource Group](../images/customerHosted/armDeployRG.png)
+   ![Resource Group](../images/customerHosted/armDeployRG2.png)
 
 1. Click on the KeyVault and then Certificates
    

@@ -1,6 +1,6 @@
 ## Upgrading Teamwork Analytics
 
-Teamwork Analyitcs is comprised of a backend (SQL Database, Windows Server and Windows Services) and PowerBI Apps. To upgrade 
+Teamwork Analytics is comprised of a backend (SQL Database, Windows Server and Windows Services) and PowerBI Apps. To upgrade 
 
 > **Important**: The PowerBI Apps and Data Collector should both be updated to the latest version together, to confirm if you need to update both components, you can check your version numbers as outlined [here](/twa/HowToCheckYouHaveTheLatestVersion.html)
 

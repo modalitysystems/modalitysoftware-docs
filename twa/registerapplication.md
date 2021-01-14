@@ -15,7 +15,7 @@ This document describes the process of registering Teamwork Analytics Client as 
    * (The **Redirect URI Type** dropdown can be left as the default value of **Web**)
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 ![application registration](images/applicationRegistration.png)
-1. Take note of the **ApplicationID** as this will be required futher in the deployment process
+1. Take note of the **ApplicationID** as this will be required further in the deployment process
 ![overview of application](images/applicationOverview.png)
 
 ### Add a Client Secret

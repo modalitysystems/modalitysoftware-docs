@@ -9,7 +9,7 @@ The filters for reports containing user data can be configured.
 - Surname
 - JobTitle
 - OfficeLocation
-- PrefferedLanguage
+- PreferredLanguage
 - UsageLocation
 - City
 - Country
@@ -37,7 +37,7 @@ The custom user attributes match up to those configured in [configuration].[Cust
 - [UserReportingFilter2]
 - [UserReportingFilter3]
 - [UserReportingFilter4]
-3. Set the following columns to be a user friendly diplay name describing the respective filter.
+3. Set the following columns to be a user friendly display name describing the respective filter.
 - [UserReportingFilter1DisplayName]
 - [UserReportingFilter2DisplayName]
 - [UserReportingFilter3DisplayName]

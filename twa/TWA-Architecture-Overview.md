@@ -32,13 +32,13 @@ The ARM template deployed an Azure Windows Virtual Machine in the customers tena
 
 #### Teamwork Analytic Graph Data Collector Windows Service
 
-This windows service uses read only permissions granted by an [Azure AppID](/twa/registerapplication.md) creatred by the customers Office 365 administrator. It reads relevant data from graph, collects metadata and writes it to the customers Azure SQL
+This windows service uses read only permissions granted by an [Azure AppID](/twa/registerapplication.md) created by the customers Office 365 administrator. It reads relevant data from graph, collects metadata and writes it to the customers Azure SQL
 
-#### Bot Notificaiton Service
+#### Bot Notification Service
 
 If the customer selects this option in the ARM template deployment. This windows service performs specific queries on the Azure SQL to create triggers for automated emails or Bot messages to end users. Customers can control which triggers run and which times through Windows Task Scheduler events. Modality Systems can assist in configuring this for customers.
 
-The Notificaiton Service notifies the Azure Bot Framework via the Modality Systems Azure Bot Service.
+The Notification Service notifies the Azure Bot Framework via the Modality Systems Azure Bot Service.
 
 #### Azure Bot Service
 

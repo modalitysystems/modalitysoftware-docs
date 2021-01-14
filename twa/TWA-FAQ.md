@@ -63,7 +63,7 @@ For Teamwork Analytics backend to run you will need an active and current licenc
 
 The key is unique to each customer and defines which Teamwork Analytics modules are enabled. It is time-bound to the agreed licence term. There is no licence key on the PowerBI Apps. If a key expires, data will stop being collected, but existing data will not be deleted. PowerBI Apps will continue to work on the existing data. For up to 28 days, If a valid licence is added, the data missed during the period of no licence will be collected and added as part of the collection process. 28 days is the limit Microsoft give for pulling some of the daily statistics we use, after 28 days we will still collect most data, but some statistics on usage may have gaps.
 
-The key is input at the time of deploying the ARM Template or the manual Powershell install.
+The key is input at the time of deploying the ARM Template or the manual PowerShell install.
 
 If you need to update or input a new key, you can re-run the ARM Template or PowerShell installer, or edit the field manually in the configuration file: C:\Program Files\Modality\GraphETL\Modality.Graph.Etl.SingleTenant.Service.exe.config
 
@@ -78,6 +78,10 @@ If customers have the requirement, we can investigate what usage reporting Offic
 ## How do Teamwork Analytics Version numbers work?
 
 The TWA database, Graph data collection engine, PowerBI Apps and Bot notification service each have unique version numbers for every released build. Version numbers are in the format YYYY.MM.DD.MinorBuildNumber - so 2020.1.8.2 is 8th January 2020 minor build 2. This allows easy tracking of issues and improvements.
+
+## Is Teamwork Analytics effected by the "[Hide user details in reports](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide#hide-user-details-in-the-reports)" setting?
+
+Yes, this setting will cause the some report pages to no longer function and render blank. This is because the setting also effects the Graph API responses making it impossible to join to user data from Azure AD.
 
 ## Improving Reporting Performance
 
