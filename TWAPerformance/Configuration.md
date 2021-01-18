@@ -19,3 +19,10 @@ Data retention is handled by a rule in the Storage accounts Lifecycle Management
 
 ### Table Storage Retention
 Data retention is handled by an azure timer function running every 5 minutes. There is a configuration setting called `RetentionPeriodInDays` to set the retention period. The default value is 14 days.
+
+#
+
+## SQL Database
+
+### Data Retention
+Data retention is handled by an azure timer function running every minute. It currently affects the Calls and Streams tables. There is a configuration setting called `SqlDataRetentionPeriodInDays` to set the retention period. The default value is 14 days.
