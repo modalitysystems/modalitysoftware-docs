@@ -24,7 +24,7 @@ There are two main row types of interest.
 using the completed count for these two rows for a particular entity you can calculate
 
 - How many records have been returned from graph
-- How many records have been saved to the database (You can also calculate this in SQL; select from the table where LastModifiedTime > ScanStartTime)
+- How many records have been saved to the database (You can also calculate this in SQL; select from the table for the entity where LastModifiedTime > ScanStartTime)
 
 We also need to find out how many entities we're expecting to receive. for this we can do any of the following
 
