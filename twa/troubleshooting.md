@@ -1,21 +1,27 @@
-#Determining current state of the system
+# Determining current state of the system
 
-##Troubleshooting report
+## Troubleshooting report
 
 In the troublehsooting report, identify the scan you are interested in from the Scan History Page
 
 This will list all the scans, both in progress and completed.
 
+![Scan History](images/scan-history.png)
+
 Once a scan id has been identified for further investigation, head over to the Health Page and select the scan from the drop down, ensuring no other filters are selected.
 
-This will display a list of task and how many have completed. using this nuymber you can calculate how 'complete' the scan is.
+![Health Dropdown](images/health-dropdown.png)
+
+This will display a list of tasks and how many have completed. 
+
+![Troubleshooting](images/troubleshooting.png)
 
 There are two main row types of interest.
 
 - Graph API GET [Entity Type] @ Task L2
 - SQL AddOrUpdate [Entity Type] @ Task L3
 
-using these two rows for a particular entity you can calculate
+using the completed count for these two rows for a particular entity you can calculate
 
 - How many records have been returned from graph
 - How many records have been saved to the database
