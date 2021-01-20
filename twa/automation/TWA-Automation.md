@@ -14,6 +14,23 @@ TWA Automation is deployed in two parts: a locally run Bot Notification Service,
 * The local Bot Notification Service can be run on the same instance as the TWA Collector Service. It is configured with its own schedule, set up in Task Scheduler.
 * The machine running the Bot Notification Service will need HTTPS 443 outbound access in order to message the Modality-managed broker service.
 * Modality Systems will provide the manifest file for a Microsoft Teams application, to be side-loaded by an tenant administrator. Read more about [Publishing a custom app by uploading an app package](https://docs.microsoft.com/en-us/MicrosoftTeams/upload-custom-apps).
+* IF wanting to use "Proactive Bot" functionality
+  * Admin consent for graph permissions will be required.
+  * Application **must** be published to tenant store.
+
+
+## Admin Consent for Bot
+
+For the bot to be able to self-install for a user, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
+
+1. This can be done by [generating a URL](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#construct-the-url-for-granting-tenant-wide-admin-consent). You will require the customers tenant ID and the application registration ID of the bot. Contact someone in dev to retrieve if needed.
+
+2. These are the permissions **Microsoft Graph Permissions (Application)** that will be required:
+   - **TeamsAppInstallation.ReadWriteSelfForUser.All** Read and write installation data - Allows the app to read, install, upgrade, and uninstall itself to any user, without a signed-in user. Does not give the ability to read application-specific settings.
+     - If this permission is not granted, the default behavoir will be to send an email, with the user opting in to receiving a Microsoft Teams chat.
+
+3. The Admin Consent that you just consented to, will be visible within the Enterprise Applications section of Azure AD
+   ![Screenshot](../images/twa-automation-enterprise-applications.png)
 
 ## Experience
 
