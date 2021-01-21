@@ -13,6 +13,8 @@ Anonymisation is configured using TWA Performance's Azure Storage Account, using
 
 Changes can be made with the Microsot Azure Storage Explorer app or via https://portal.azure.com/
 
+> Changes will not take effect until the M365 Process
+
 > The table will not be present if the TWA Performance has never been allowed to run, in which case it is fine to create the table manually. All that will be required is the table name (`UserAnonymisationCriteria`).
 
 The table uses the standardised column names, PARTITIONKEY and ROWKEY. These have the following meanings within the context of the table:
