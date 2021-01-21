@@ -50,10 +50,6 @@ The following information is sent from the locally run Bot Notification Service 
 * Type of message being delivered
 * Information relavent to the scenario and shown in the message. This will be whatever you decide to output in the configured scenario. The default scenarios, would include team names, last activity date, number of guests and number of owners.
 
-# Upcoming Changes
 
-Some changes are planned to TWA Automation, in order to enable pro-active messages to be sent to users as Teams 1-to-1 chat messages by default. This will require an additional permission to be consented by a tenant administrator:
 
-*TeamsAppInstallation.ReadWriteForUser.All* - Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read application-specific settings.
 
-If this permission is not granted, the default behavoir will be to send an email, with the user opting in to receiving a Microsoft Teams chat.
