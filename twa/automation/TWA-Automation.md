@@ -23,7 +23,7 @@ TWA Automation is deployed in two parts: a locally run Bot Notification Service,
 
 For the bot to be able to self-install for a user, it is a requirement that a Office 365 Global Admin of that tenant grants admin consent. 
 
-1. This can be done by [generating a URL](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#construct-the-url-for-granting-tenant-wide-admin-consent). You will require the customers tenant ID and the application registration ID of the bot. Contact someone in dev to retrieve if needed.
+1. This can be done by [generating a URL](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#construct-the-url-for-granting-tenant-wide-admin-consent). You will require the customers tenant ID and the application registration ID of the bot. Contact someone in Modality Support Team to retrieve if needed.
 
 2. These are the permissions **Microsoft Graph Permissions (Application)** that will be required:
    - **TeamsAppInstallation.ReadWriteSelfForUser.All** Read and write installation data - Allows the app to read, install, upgrade, and uninstall itself to any user, without a signed-in user. Does not give the ability to read application-specific settings.
