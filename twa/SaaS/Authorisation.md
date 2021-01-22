@@ -1,6 +1,24 @@
 # Authorisation for Teamwork Analytics SaaS
 
-The following steps must be completed with an account with **Azure Active Directory Global Administrator** rights. 
+The following steps must be completed with an account with **Azure Active Directory Global Administrator** rights.
+
+## Automation permissions
+
+On following the [Automation authorisation link](https://mod.qa/AutomationConsent), you will be prompted to sign in to Office 365 with your admin account.
+
+![Initial sign in](../images/TWASaaS-CT-auth1.png)
+
+Once authenticated, a summary of the app and permissions requested is shown.
+
+![Permissions summary](../images/TWASaaS-Automation-auth2.png)
+
+The arrows can be expanded to review further detail for each section.
+
+![Permissions detail](../images/TWASaaS-Automation-auth3.png)
+
+Clicking **Accept** will complete the process and show a final page.
+
+![Final splash page](../images/TWASaaS-Report-auth4.png)
 
 ## Reporting permissions
 
@@ -19,7 +37,6 @@ The arrows can be expanded to review further detail for each section.
 Clicking **Accept** will complete the process and show a final page.
 
 ![Final splash page](../images/TWASaaS-Report-auth4.png)
-
 
 ## CreateTeam permissions
 
@@ -47,7 +64,11 @@ Open the [Azure Portal](https://portal.azure.com) and sign in with your admin ac
 
 Navigate to **Azure Active Directory** and click **Enterprise applications**.
 
-![Enterprise applications](../images/TWASaaS-revoke-1.png) 
+![Enterprise applications](../images/TWASaaS-revoke-1.png)
+
+Click **Teamwork Analytics Automation** and manage **Properties**. Click on the **Delete** button.
+
+![TWA delete](../images/TWASaaS-revoke-4.png)
 
 Click **Teamwork Analytics** and manage **Properties**. Click on the **Delete** button.
 
