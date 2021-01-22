@@ -27,7 +27,9 @@ Once anonymised it will look like this in the database and reports.
 
 In some situations user data is related from one Microsoft source to another using User Principal Name as the "key". For example TWA relates users' daily Teams usage statistics to their department, city and country data using User Principal Name.
 
-Because User Principal Names contain PII, TWA replaces them with an irreversible hash (SHA256 algorithm). This removes PII whilst still allowing for the data to be related. This is rule is applied to all users in any situation where User Principal Name is used as a key, regardless of configuration.
+Because User Principal Names contain PII, TWA replaces them with an irreversible hash (SHA256 algorithm). This removes PII whilst still allowing for the data to be related. This is rule is applied to all users in any situation where User Principal Name is used as a key, regardless of configuration. 
+
+The Email Address also contains PII, so TWA stores an additional irreversible hash (SHA256 algorithm) of this column which is used to relate to other data. Such as the Hashed Creator Email of DriveItems.
 
 | Original                           | Replacement                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
