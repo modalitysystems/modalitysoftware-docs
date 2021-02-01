@@ -17,10 +17,10 @@ Office Test Bed ARM Deployment allows you to quickly spin up an Azure VM based o
 
 | Size             | Specification                   | Monthly Cost [Unless De-allocated] |
 | ---------------- | ------------------------------- | -----------------------------------|
-| Standard_D2s_v3  | 2 vCPUS, 8GiB RAM, 3200 IOPS    | £63.11                             |
-| Standard_D4s_v3  | 4 vCPUS, 16GiB RAM, 6400 IOPS   | £126.33                            |
-| Standard_D8s_v3  | 8 vCPUS, 32GiB RAM, 12800 IOPS  | £252.45                            |
-| Standard_D16s_v3 | 16 vCPUS, 64GiB RAM, 25600 IOPS | £504.90                            |
+| Standard_D2s_v4  | 2 vCPUS, 8GiB RAM, 3200 IOPS    | £63.11                             |
+| Standard_D4s_v4  | 4 vCPUS, 16GiB RAM, 6400 IOPS   | £126.33                            |
+| Standard_D8s_v4  | 8 vCPUS, 32GiB RAM, 12800 IOPS  | £252.45                            |
+| Standard_D16s_v4 | 16 vCPUS, 64GiB RAM, 25600 IOPS | £504.90                            |
 
 # Windows Version
 
