@@ -35,8 +35,8 @@ This ARM Template will install resources in your Azure tenant. The template will
 
    - Basics
      - **Subscription** - Choose the Azure subscription to which deployed resources will be billed.
-     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of CreateTeam. _When applying an upgrade choose the Resource Group that already contains CreateTeam._
-     - **Location** - The location of the newly created resource group (this only determines the geographical location of resource group and its metadata, to change the location of the resources themselves, see _Location_ below).
+     - **Resource group** - It is strongly recommended that you create a new resource group for logical grouping and management of Teamwork Analytics Performance. _When applying an upgrade choose the Resource Group that already contains Teamwork Analytics Performance._
+     - **Location** - The location of the newly created resource group. All deployed resources will match this value.
    - Settings
      - **Tenant ID** - ID of the Tenant that you would like to gather performance data from.
      - **Azure Application details** - Use the details you generated when [registering an application](RegisterApp.md).
@@ -50,7 +50,7 @@ This ARM Template will install resources in your Azure tenant. The template will
      - **Deploy Initial Database** - Set to Yes on initial deployment, otherwise set to No.
      - **Deploy Code** - Deploy Teamwork Analytics Performance code.
 
-2. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for CreateTeam.)
+2. Read the Terms and Conditions, then click "I agree to the terms and conditions stated above" and click "Purchase" (this refers to the resources hosted on Azure, and is not a usage agreement for Teamwork Analytics Performance.)
 
 3. The notification bell will show the deployment in progress, the when complete click Go to resource group
 
