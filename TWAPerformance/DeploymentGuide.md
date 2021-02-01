@@ -22,7 +22,7 @@ As you progress through these steps, make a note of the following three pieces o
 
 >[1. Create an Azure Active Directory Application Registration](RegisterApp.md)
 
->[2. ARM Template Deployment](armDeployScripts.md)
+>[2. ARM Template Deployment](armDeploy.md)
 
 >[3. Run PowerShell Script to Refresh Functions](RefreshFunctions.md)
 
