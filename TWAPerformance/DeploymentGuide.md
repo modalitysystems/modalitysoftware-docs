@@ -2,7 +2,7 @@
 
 ## Before you start
 
-There are a number of required steps to complete before deploying TWA Performance. These are required even if you have other TWA modules already installed.
+There are a number of required steps to complete before deploying Teamwork Analytics Performance.
 
 As you progress through these steps, make a note of the following three pieces of information which will be required to complete your deployment.
 
@@ -30,4 +30,4 @@ As you progress through these steps, make a note of the following three pieces o
 
 ## Deployment complete
 
-Provided that all steps above have been followed, the CreateTeam deployment should now be complete and ready to use.
+Provided that all steps above have been followed, the Teamwork Analytics Performance deployment should now be complete and ready to use.
