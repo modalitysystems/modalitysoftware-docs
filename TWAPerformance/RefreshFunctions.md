@@ -1,8 +1,6 @@
 # Teamwork Analytics Performance ARM Deployment
 
-1. Download the following powershell script
-   
-   - [RefreshFunctions.ps1](https://github.com/modalitysystems/TWAPerformanceGABuilds/releases/download/RefreshFunctions/RefreshFunctions.ps1)
+1. Download the [RefreshFunctions.ps1](https://github.com/modalitysystems/TWAPerformanceGABuilds/releases/download/RefreshFunctions/RefreshFunctions.ps1) powershell script
 
 2. Ensure that you have [Az Powershell module](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az) installed on your machine and run the script
 
