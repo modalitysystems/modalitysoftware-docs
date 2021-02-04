@@ -17,3 +17,6 @@
 ## Deployment Complete
 
 1. The deployment of Teamwork Analytics Performance is now complete. You should now start to see data appear in the SQL Database.
+   
+   - Users for your company should start to appear in the **Users** table within a minute or so
+   - Calls made by users of your company should start to appear in the **Calls** table within 15 minutes of a call ending
