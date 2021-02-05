@@ -6,7 +6,7 @@
 
 ## Solution Overview
 
-Modality Teamwork Analytics is software that collects Microsoft Teams related data from Microsoft Graph to provide reporting and automation.
+Modality Teamwork Analytics is software that collects Microsoft Teams related data from Microsoft Graph to provide reporting and automation to optimise your Microsoft Teams environment.
 
 This is used to drive adoption ensure good governance and. currently in preview report on audio and video performance for calls and meetings.
 
@@ -137,13 +137,16 @@ For customers that have requirements to keep data and control within their own M
 
 ## What is not included?
 
-**SaaS and CSP**
+CAT
 
-- In SaaS and CSP models Modality deploy and run the infrastructure and are responsible for infrastructure costs
+- Azure costs
 
-In all models customers must provide a Power BI pro licence for each of their users who wants to consume reports
+All deployment models:
+
+- In all models customers must provide a Power BI pro licence for each of their users who wants to consume reports
 
 
 
+## Customer Obligations
 
-
+- Authorise access to the Microsoft Graph API for their tenant
