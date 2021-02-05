@@ -2,6 +2,8 @@
 
 Teamwork Analytics is comprised of a backend (SQL Database, Windows Server and Windows Services) and PowerBI Apps. To upgrade 
 
+> **Important**: If you are upgrading from a collector version ```twa-2021.1.28.5``` or below to anything above, then you will need to follow these deployment steps [here](/twa/DriveItemMigration.html) to avoid any potential data loss in the DriveItems table.
+
 > **Important**: The PowerBI Apps and Data Collector should both be updated to the latest version together, to confirm if you need to update both components, you can check your version numbers as outlined [here](/twa/HowToCheckYouHaveTheLatestVersion.html)
 
 ## Backend Upgrade - ARM Template
