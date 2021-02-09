@@ -1,3 +1,5 @@
+To be used for QA testing 
+
 ```
 /****** Script for SelectTopNRows command from SSMS  ******/
 
@@ -44,3 +46,4 @@ SELECT  [CallId]
   where ([OrganiserUserId] = @userId Or UserId = @userid)
   And [SegmentEnd] > getutcdate() - 1
 ```
+
