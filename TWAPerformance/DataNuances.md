@@ -11,4 +11,4 @@ If your users join an externally hosted meeting, and one of their bots enters th
 
 ## Calls with default end times (negative duration)
 
-A very small number of Call Records are returned from Microsoft with default end times (e.g. `0001-01-01 00:00:00` rather than `2021-01-20 20:30:14`). These may be superseeded by newer versions of the Call Record returned by Microsoft. Call Records with default end times are considered imcomplete data, and so TWA Performance discards them to avoid skewing its datasets.
+A very small number of Call Records are returned from Microsoft with default end times (e.g. `0001-01-01 00:00:00` rather than `2021-01-20 20:30:14`). These may be later superseeded by newer versions of the Call Record returned by Microsoft. Call Records with default end times are considered imcomplete data, and so TWA Performance discards them to avoid skewing its datasets.
