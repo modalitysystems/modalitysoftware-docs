@@ -1,3 +1,5 @@
+## User Id in multiple tenants
+
 In the aggregate tables, it is possible to see a userid appear as both usertype = 1 and usertype = 2 (internal and external)
 In the stream table it is also possible to see a userid appear as both usertype = 1 and usertype = 2 (internal and external)
 
