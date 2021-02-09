@@ -9,30 +9,38 @@ If there is a requirement to avoid storing PII, e.g. to comply with the General 
 
 ### Criteria
 
-Anonymisation is configured using TWA Performance's Azure Storage Account, using a table named `UserAnonymisationCriteria`. This table instructs Teamwork Analytics to anonymise a users based on the values of their Active Directory attributes.
+Anonymisation is configured using TWA Performance's Azure Storage Account, using a table named `AnonymisationCriteria`. This table can be configured to anonymise Users, Calls and Streams by defining and a Routine. The Currently supported Routines are:
+
+- CheckUserAnonymiseUser - Anonymise incoming Users based on the values of their Active Directory attributes.
+- CheckCallAnonymiseCallOrganiser - Anonymise the OrganiserId of a Call in the Call Table based on other columns.
+- CheckStreamAnonymiseStreamUser - Anonymise the UserId of a Stream in the Stream Table based on other columns.
+- CheckStreamAnonymiseStreamOrganiser - Anonymise the OrganiserId of a Stream in the Stream Table based on other columns.
 
 Changes can be made with the Microsot Azure Storage Explorer app or via https://portal.azure.com/
 
-> Changes will not take effect until the M365 Process
+> The table will not be present if the TWA Performance has never been allowed to run, in which case it is fine to create the table manually. All that will be required is the table name (`AnonymisationCriteria`).
 
-> The table will not be present if the TWA Performance has never been allowed to run, in which case it is fine to create the table manually. All that will be required is the table name (`UserAnonymisationCriteria`).
-
-The table uses the standardised column names, PARTITIONKEY and ROWKEY. These have the following meanings within the context of the table:
+The table uses 3 additional named columns, Routine, PropertyName, ValueToMatch as well as the standard columns PARTITIONKEY and ROWKEY. These have the following meanings within the context of the table:
 
 | Column name | Meaning |
 | ------------ | ----------- |
-| PARTITIONKEY | The name of an Active Directory property to test against each user |
-| ROWKEY | A value that, when matching, will trigger anonymisation for a user |
+| PARTITIONKEY | Not used in Anonymisation but must be a unique in combination with ROWKEY. |
+| ROWKEY | Not used in Anonymisation but must be a unique in combination with PARTITIONKEY. |
+| Routine | Select one of the Routines mentioned above this will define the Table to anonymise as well as what part will be anonymised. |
+| PropertyName | The name of an Active Directory property to test against in the case of Users. Or the Table Columns to test against in the case of Calls and Streams.  |
+| ValueToMatch |  A value that, when matching, will trigger anonymisation for that Routine. |
 
 Both columns are case-insensitive, but they must match spacing and punctuation of the data returned by Microsoft Graph API (practically speaking, they must match the values stored in your Active Directory). E.g. you must specify "CompanyName", not "Company Name".
 
 Here is an example configuration. Using this example, TWA Performance would anonymise all users with their Country set to Germany or France, and all users in the Legal department.
 
-| PARTITIONKEY | ROWKEY |
-| ------------ | ----------- |
-| Country | Germany |
-| country | FRANCE |
-| Department | Legal |
+| PARTITIONKEY | ROWKEY | Routine | PropertyName | ValueToMatch |
+| ------------ | ----------- | ----------- | ----------- | ----------- |
+| 1 | | CheckUserAnonymiseUser | Country | Germany |
+| 2 | | CheckUserAnonymiseUser | Department | Legal |
+| 3 | | CheckCallAnonymiseCallOrganiser | OrganiserUserType | 2 |
+| 4 | | CheckStreamAnonymiseStreamUser | UserType | 0 |
+| 5 | | CheckStreamAnonymiseStreamOrganiser | OrganiserUserType | 3 |
 
 > Note: Custom user properties cannot currently be used as criteria.
 
@@ -56,12 +64,6 @@ Here is an example of data in the `UserAnonymisationRegister` table:
 | HashUserId | 524FD0DBF6B35E5C3477FA7A5E9CAAF8793ED7CE44F0D198D944F08D0AE77ED7 |
 | HashUserId | 4A5D7A23C8B543CB2CC0F4CC13847AD72D3EB37AE8AA163E786613312EE5672A |
 | HashUserId | 3F4A6FF1C7ADAD7426B107E8FE44BCACD291540CCB7F60F281FD600425665745 |
-
-### Call data
-
-TWA Performance currently stores Organiser and Participant IDs. These can be anonymised using a Configuration setting named `UserAnonymisationEnabledForCallData` in the Call Parsing Function App.
-
-When set to `true`, all Organiser and Participant IDs will be obfuscated.
 
 ## How Anonymisation Works
 
