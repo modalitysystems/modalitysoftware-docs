@@ -12,19 +12,21 @@ Out of scope
 
 #### Meetings Organized
 
-It is unkown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc)
+It is unkown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc) from the per user report, or TWA Performance.
+
+![no](images/no.png) TWA Support
 
 #### Meetings Participated
 
-It is unkown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) or the unique number of meetings joined below.
+It is unkown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) from the per user report, or TWA Performance. It also does not equal the unique number of meetings joined below ("Total Meetings").
 
 #### Total Meetings
 
-The unique number of meetings joined. It does not equal any number in the per user report
+The unique number of meetings joined. It does not equal any number in the per user report. It does match TWA Performance.
 
 #### 1:1 Calls
 
-The unique number of 1:1 calls. Also known as Peer 2 Peer (P2P) calls, not meetings. It does not equal any number in the per user report
+The unique number of 1:1 calls. Also known as Peer 2 Peer (P2P) calls, not meetings. It does not equal any number in the per user report. It does match TWA Performance.
 
 #### Audio Time
 
@@ -37,13 +39,15 @@ The number of audio minutes the users in your tenant are involved in (send, rece
 
 To calculate total audio time, each users total audio time for each call is summed. The result is Audio Time, or total audio time.
 
+It does not equal any number in the per user report. It does match TWA Performance.
+
 #### Video Time
 
-The same logic as Audio time, but for the video modality
+The same logic as Audio time, but for the video modality. It does not equal any number in the per user report. It does match TWA Performance.
 
 #### Screen Share Time
 
-The same logic as Audio time, but for the screen/app share modality.
+The same logic as Audio time, but for the screen/app share modality. It does not equal any number in the per user report. It does match TWA Performance.
 
 ### The Graph
 
@@ -67,11 +71,11 @@ Out of scope
 
 #### Total Meetings
 
-If you sum this column, you end up with a number that doesnt correspond with any number in the headlines.
+If you sum this column, you end up with a number that doesnt correspond with any number in the headlines. It does not match TWA Performance.
 
 #### Meetings Organised
 
-If you sum this column, you get the Meetings Organised number from the headlines above (or very close to). You don't get what we believe is the correct number (scheduled + adhoc). Therefore, it is not known what this number actually represents. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
+If you sum this column, you get the Meetings Organised number from the headlines above (or very close to). You don't get what we believe is the correct number (scheduled + adhoc). Therefore, it is not known what this number actually represents. It does not match TWA Performance. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
 
 #### Meetings Organised Scheduled
 
@@ -83,12 +87,12 @@ If you sum this column, we can only assume this is the number of adhoc meetings 
 
 #### Meetings Organised Scheduled + Meetings Organised Adhoc
 
-If you sum the sum of meetings organised scheduled and meetings organised adhoc, you get a number that matches (or very close to) TWA Performance metric for total meetings organised. This does not equal the meetings organised column (we believe a MSFT bug).
+If you sum the sum of meetings organised scheduled and meetings organised adhoc, you get a number that matches (or very close to) the TWA Performance metric for total meetings organised. This does not equal the meetings organised column (we believe a MSFT bug).
 
 #### Meetings Participated
 
 If you sum this column, you get a number different to the meetings participated number from the headlines above. We believe this is mainly because the headline figure is a unique count of meetings participated, whereas the per user report is a count of per user meeting join.
-However, this number still does not add up what we believe is the total number of meetings participated (scheduled + adhoc). Therefore, it is not known what this number actually represents. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
+However, this number still does not add up what we believe is the total number of meetings participated (scheduled + adhoc). Therefore, it is not known what this number actually represents. It does not match TWA Performance. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
 
 #### Meetings Participated Scheduled
 
@@ -100,20 +104,20 @@ If you sum this column, we can only assume this is the number of per user adhoc 
 
 #### Meetings Participated Scheduled + Meetings Participated Adhoc
 
-If you sum the sum of meetings participated scheduled and meetings participated adhoc, you get a number that we believe is the correct number. This does not equal the meetings participated column (we believe a MSFT bug).
+If you sum the sum of meetings participated scheduled and meetings participated adhoc, you get a number that matches (or very close to) the TWA Performance metric. This does not equal the meetings participated column (we believe a MSFT bug).
 
 #### 1:1 calls
 
-If you sum this column, you get a number different to the 1:1 number from the headlines above. We believe this is mainly because the headline figure is a unique count of 1:1 calls, whereas the per user report is a count of per user 1:1 call participation. It is not exactly double, because some 1:1 calls are with external users, the CSV download "mostly" does not contain external users or phone numbers
+If you sum this column, you get a number different to the 1:1 number from the headlines above. We believe this is mainly because the headline figure is a unique count of 1:1 calls, whereas the per user report is a count of per user 1:1 call participation. It is not exactly double, because some 1:1 calls are with external users, the CSV download "mostly" does not contain external users or phone numbers. It matches a TWA Performance metric.
 
 #### Audio Time
 
-if you sum this column, you get a number different to the Audio time number from the headline above. We do not know why this is.
+if you sum this column, you get a number different to the Audio time number from the headline above. We do not know why this is. It matches a TWA Performance metric.
 
 #### Video Time
 
-if you sum this column, you get a number different to the Video time number from the headline above. We do not know why this is.
+if you sum this column, you get a number different to the Video time number from the headline above. We do not know why this is. It matches a TWA Performance metric.
 
 #### Screen Share Time
 
-if you sum this column, you get a number different to the Video time number from the headline above. We do not know why this is.
+if you sum this column, you get a number different to the Video time number from the headline above. We do not know why this is. It matches a TWA Performance metric.
