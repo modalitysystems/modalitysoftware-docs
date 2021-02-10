@@ -12,6 +12,8 @@ Microsoft have official documentation [here](https://docs.microsoft.com/en-us/mi
 
 Out of scope
 
+<img src="images/no.png" width="25" height="25"> TWA Support
+
 #### Meetings Organized
 
 It is unkown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc) from the per user report, or TWA Performance.
@@ -85,6 +87,8 @@ This will give you a csv like this
 #### ChannelMessages, ReplyMessages, PostMessages, ChatMessages, UrgentMessages
 
 Out of scope
+
+<img src="images/no.png" width="25" height="25"> TWA Support
 
 #### Total Meetings
 
