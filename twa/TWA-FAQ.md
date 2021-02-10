@@ -81,7 +81,7 @@ The TWA database, Graph data collection engine, PowerBI Apps and Bot notificatio
 
 ## Is Teamwork Analytics effected by the "[Hide user details in reports](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide#hide-user-details-in-the-reports)" setting?
 
-Yes, this setting will cause the some report pages to no longer function and render blank. This is because the setting also effects the Graph API responses making it impossible to join to user data from Azure AD.
+Yes, this setting will cause the some report pages to no longer function and render blank. This is because the setting also affects the Graph API responses making it impossible to join to user data from Azure AD.
 
 ## Improving Reporting Performance
 
