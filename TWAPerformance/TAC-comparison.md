@@ -70,7 +70,7 @@ The same logic as Audio time, but for the screen/app share modality. It does not
 
 ![TAC graph day](images/tac-graph-day.png)
 
-If you hover over a day, the number presented is incorrect. It is a significantly larger number than the weeks total (un-comprehendable), nor does it add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
+If you hover over a day, the number presented is incorrect. It is a significantly larger number than the weeks total (un-comprehendable), it does not add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
