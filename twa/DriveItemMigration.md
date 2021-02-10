@@ -4,7 +4,7 @@ When upgrading a collector from version ```twa-2021.1.28.5``` or below to anythi
 
 The process goes as follows.
 -   Stop the service and ensure it does not automatically start back up.
--   Run the migration script.
+-   Run the migration script (allow approx 3 minutes per million rows in DriveItem table)
 -   Upgrade TWA using prefered [method](/twa/UpgradingTeamworkAnalytics.html)
 -   Start the service and configure to start automatically if required.
 
