@@ -57,9 +57,7 @@ For the App to be able to create teams in the target Teams Tenant, it is a requi
    
    ![Screenshot](images/app-deployed.png)
    
-> NOTE: To update an App that has already been installed, navigate to the App within your companies Apps section then hover your mouse pointer over the app, click on the ... in the top right corner and click Update
-   
-   ![Screenshot](images/app-update.png)
+Already have CreateTeam installed? [Follow this process to update the existing app with the new manifest.](update-createteam-manifest.md)
    
 ## Allow App to be installed within Microsoft Teams
 

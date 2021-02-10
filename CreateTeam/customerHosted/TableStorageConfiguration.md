@@ -35,7 +35,7 @@ Add a Feature for each of the following RowKeys:
 
 Add a PeoplePicker for each of the following RowKeys:
 
-- ParitionKey = [TenantId]
+- PartitionKey = [TenantId]
 - RowKey = This is a unique string to identify the People Picker.
   - members
   - owners
