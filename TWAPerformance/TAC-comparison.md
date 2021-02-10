@@ -4,6 +4,8 @@
 
 Microsoft have official documentation [here](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report). Our findings indicate the documentation to be incorrect for the most part, find below our reasons. The headline numbers contradict the per user csv report download for the most part. The graph contradicts both the headline numbers and the csv report. Exercise caution and refer to this guide where possible.
 
+Where metrics are comparable between TAC and TWA Performance, SQL is provided for your own comparison.
+
 ### Headline numbers
 
 ![TAC overview](images/tac-overview.png)
