@@ -48,7 +48,7 @@ To calculate total audio time, each users total audio time for each call is summ
 
 The number in the per user report for audio does not add up to equal this headline number, we believe the bug is with the headline number.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - Matches the per user count below, not this number.
+<img src="images/warning.png" width="25" height="25"> TWA Support - Matches the per user count below, not this number - [SQL Validation](tac-sql/p2p-calls-joined.sql)
 
 #### Video Time
 
