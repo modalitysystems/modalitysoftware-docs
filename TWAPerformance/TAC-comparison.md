@@ -4,7 +4,7 @@
 
 ### Headline numbers
 
-![TAC overview](TWAPerformance/images/tac-overview.png)
+![TAC overview](images/tac-overview.png)
 
 #### Channel messages, Reply messages, Post messages, Chat messages
 
@@ -47,7 +47,7 @@ The same logic as Audio time, but for the screen/app share modality.
 
 ### The Graph
 
-![TAC graph day](TWAPerformance/images/tac-graph-day.png)
+![TAC graph day](images/tac-graph-day.png)
 
 If you hover over a day, the number presented is incorrect. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or Teams Diags reports.
 
@@ -55,11 +55,11 @@ If you hover over a day, the number presented is incorrect. It therefore stands 
 
 Download the file
 
-![TAC User CSV](TWAPerformance/images/tac-user-csv.png)
+![TAC User CSV](images/tac-user-csv.png)
 
 This will give you a csv like this
 
-![TAC User CSV Download](TWAPerformance/images/tac-user-csv-download.png)
+![TAC User CSV Download](images/tac-user-csv-download.png)
 
 #### ChannelMessages, ReplyMessages, PostMessages, ChatMessages, UrgentMessages
 
