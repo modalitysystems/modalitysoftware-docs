@@ -16,19 +16,19 @@ It is unkown what this number actually represents, it does not equal the total m
 
 #### Meetings Participated
 
-It is unkown what this number actually represents, it does not equal the total meetings participated (scheduled + adhoc) or the unique number of meetings joined below.
+It is unkown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) or the unique number of meetings joined below.
 
 #### Total Meetings
 
-This number is the unique number of meetings joined, it does not equal any number in the per user report
+The unique number of meetings joined. It does not equal any number in the per user report
 
 #### 1:1 Calls
 
-aka Peer 2 Peer (P2P) calls, not meetings.
+The unique number of 1:1 calls. Also known as Peer 2 Peer (P2P) calls, not meetings. It does not equal any number in the per user report
 
 #### Audio Time
 
-number of audio minutes the users in your tenant are involved in (send, receive or both) 
+The number of audio minutes the users in your tenant are involved in (send, receive or both) 
 
 - If you were in a call or conference and were on mute for the duration, your send audio minutes would be 0. 
 - If you were in a call or conference and were receiving audio, your recieve audio minutes would be the duration of your participation in that call or meeting
