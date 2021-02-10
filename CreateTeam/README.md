@@ -10,4 +10,6 @@ The CreateTeam Documentation site provides access to all of the platform documen
 
 >[Managing User Roles](ManagingUserRoles.md)
 
+>[Configuring CreateTeam settings and templates](createteam-config.md)
+
 >[Reporting](Reporting.md)
