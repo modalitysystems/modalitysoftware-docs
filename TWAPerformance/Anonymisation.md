@@ -17,7 +17,7 @@ PII is obfuscated using a deterministic obfuscation algorithm. The PII is obfusc
 |User principal name|*john.smith@example.onmicrosoft.com*|*Aa0lWbz5ibo9ma@example.onmicrosoft.com*|
 |[As shown in reports]|*John Smith (John.Smith@example.com)*|*Anon (Aa0lWbT5ibo9mS@example.com)*|
 
-Note, due to the way Graph API works we cannot obfuscated users phone numbers selectively. TWA does not pull phone numbers from Active Directory attributes (they are rarely 100% right or accurate) so we do not store users phone numbers as user attributes. Graph API presents the phone numbers in call records. Since we can't tie phone numbers to specific users, we can't seletively obfuscated just some phone numbers from the database. It would be possible to obfuscated all phone numbers, but this would be a future feature request if required.
+Note, due to the way Graph API works we cannot obfuscate users phone numbers selectively. TWA does not pull phone numbers from Active Directory attributes (they are rarely 100% right or accurate) so does not store users phone numbers as user attributes. Graph API presents the phone numbers in call records. Since we can't tie phone numbers to specific users, we can't seletively obfuscated just some phone numbers from the database. It would be possible to obfuscated all phone numbers, but this would be a future feature request if required.
 
 ## How Anonymisation is Configured
 
