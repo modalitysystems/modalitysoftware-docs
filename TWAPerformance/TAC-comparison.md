@@ -16,13 +16,13 @@ Where metrics are comparable between TAC and TWA Performance, SQL is provided fo
 
 #### Meetings Organized
 
-It is unkown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc) from the per user report, or TWA Performance.
+It is unknown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc) from the per user report, or TWA Performance.
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
 #### Meetings Participated
 
-It is unkown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) from the per user report, or TWA Performance. It also does not equal the unique number of meetings joined below ("Total Meetings").
+It is unknown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) from the per user report, or TWA Performance. It also does not equal the unique number of meetings joined below ("Total Meetings").
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
@@ -44,8 +44,8 @@ The unique number of 1:1 calls. Also known as Peer 2 Peer (P2P) calls, not meeti
 The number of audio minutes the users in your tenant are involved in (send, receive or both) 
 
 - If you were in a call or conference and were on mute for the duration, your send audio minutes would be 0. 
-- If you were in a call or conference and were receiving audio, your recieve audio minutes would be the duration of your participation in that call or meeting
-- If you were in a call or conference and were on mute and receiving audio, your total audio minutes for that call or conference would be the duration of your paricipation in that call or meeting
+- If you were in a call or conference and were receiving audio, your receive audio minutes would be the duration of your participation in that call or meeting
+- If you were in a call or conference and were on mute and receiving audio, your total audio minutes for that call or conference would be the duration of your participation in that call or meeting
 - If you were in a call or conference and were on mute for the duration and not receiving audio, your total audio minutes for that call or conference would be 0.
 
 To calculate total audio time, each users total audio time for each call is summed. The result is Audio Time, or total audio time.
@@ -70,7 +70,7 @@ The same logic as Audio time, but for the screen/app share modality. It does not
 
 ![TAC graph day](images/tac-graph-day.png)
 
-If you hover over a day, the number presented is incorrect. It is a significantly larger number than the weeks total (un-comprehendable), it does not add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
+If you hover over a day, the number presented is incorrect. It is a significantly larger number than the weeks total (un-comprehendible), it does not add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
@@ -90,7 +90,7 @@ This will give you a csv like this
 
 #### Total Meetings
 
-If you sum this column, you end up with a number that doesnt correspond with any number in the headlines, nor any combination of columns in the per user report. It is unkown what this number actually represents.
+If you sum this column, you end up with a number that doesn't correspond with any number in the headlines, nor any combination of columns in the per user report. It is unknown what this number actually represents.
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
