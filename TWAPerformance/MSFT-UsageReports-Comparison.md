@@ -21,12 +21,12 @@ Additionally TWA Performance includes calls to and from External users where we 
 
 We also believe that MSFT Usage reports are returning wrong information. This is because in many cases the report count is lower than ours, and we can trace our numbers back to individual calls of valid lengths which shouldn't be filtered out as voicemail or other.
 
-In some cases the Usage reports have higher call counts than us. We are currently not sure what is causing this.
-
 #
 
 ### Meeting Count
 
 This is the total number of Group calls / Meetings. This number closely matches the TotalGroup count in the sql script, however again with some small differences. These counts can affected by external meeting organisers, which account for some of the additional counts in TWA Performance that are missing from the Usage Reports.
 
-In some cases the Usage reports have higher meeting counts than us. Same as calls, we are currently not sure what is causing this.
+#
+
+In some cases the Usage reports have higher call / meeting counts than us. Some of these a due to bad calls / meetings with 0 / null packet utilization or 0 length. There are however still some other unknown missing records that we haven't yet accounted for. Currently while we don't save the streams of these calls we still save them all to the call table.
