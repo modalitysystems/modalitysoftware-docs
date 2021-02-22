@@ -1,22 +1,36 @@
-# Anonymisation of PII in Teams Analytics (TWA) Performance
+# Anonymisation of Personally identifiable information (PII) in Teams Analytics (TWA) Performance
 
 TWA Performance collects and stores data from Microsoft Graph API and surfaces the data in reports.
-This includes several pieces of PII relating to members, guests, and call participants.
+This includes several pieces of PII relating touser and call/meeting participants.
 
-If there is a requirement to avoid storing PII, e.g. to comply with the General Data Protection Regulation, then TWA Performance can be configured anonymise the data it collects.
+If there is a requirement to avoid storing PII for some or all users , e.g. to comply with the General Data Protection Regulation, then TWA Performance can be configured anonymise some of the data it collects.
+
+## How Anonymisation Works
+
+PII is obfuscated using a deterministic obfuscation algorithm. The PII is obfuscated during the collection process and is never be stored as plain text.
+
+|PII|Examples|Examples (Anonymised)|
+|---|---|---|
+|Given name|*John*|*gbo9mS*|
+|Surname|Smith*|*gGdp12U*|
+|Email address|*John.Smith@example.com*|*Aa0lWbT5ibo9mS@example.com*|
+|User principal name|*john.smith@example.onmicrosoft.com*|*Aa0lWbz5ibo9ma@example.onmicrosoft.com*|
+|[As shown in reports]|*John Smith (John.Smith@example.com)*|*Anon (Aa0lWbT5ibo9mS@example.com)*|
+
+Note, due to the way Graph API works we cannot obfuscate users phone numbers selectively. TWA does not pull phone numbers from Active Directory attributes (they are rarely 100% right or accurate) so does not store users phone numbers as user attributes. Graph API presents the phone numbers in call records. Since we can't tie phone numbers to specific users, we can't seletively obfuscated just some phone numbers from the database. It would be possible to obfuscated all phone numbers, but this would be a future feature request if required.
 
 ## How Anonymisation is Configured
 
-### Criteria
+### Configuration
 
 Anonymisation is configured using TWA Performance's Azure Storage Account, using a table named `AnonymisationCriteria`. This table can be configured to anonymise Users, Calls and Streams by defining and a Routine. The Currently supported Routines are:
 
 - CheckUserAnonymiseUser - Anonymise incoming Users based on the values of their Active Directory attributes.
 - CheckCallAnonymiseCallOrganiser - Anonymise the OrganiserId of a Call in the Call Table based on other columns.
-- CheckStreamAnonymiseStreamUser - Anonymise the UserId of a Stream in the Stream Table based on other columns.
-- CheckStreamAnonymiseStreamOrganiser - Anonymise the OrganiserId of a Stream in the Stream Table based on other columns.
+- CheckSegmentAnonymiseSegmentCaller - Anonymise the CallerId of a Segment in the Segment Table based on other columns.
+- CheckSegmentAnonymiseSegmentCallee - Anonymise the CalleeId of a Segment in the Segment Table based on other columns.
 
-Changes can be made with the Microsot Azure Storage Explorer app or via https://portal.azure.com/
+Changes can be made with the Microsoft Azure Storage Explorer app or via https://portal.azure.com/
 
 > The table will not be present if the TWA Performance has never been allowed to run, in which case it is fine to create the table manually. All that will be required is the table name (`AnonymisationCriteria`).
 
@@ -39,12 +53,12 @@ Here is an example configuration. Using this example, TWA Performance would anon
 | 1 | | CheckUserAnonymiseUser | Country | Germany |
 | 2 | | CheckUserAnonymiseUser | Department | Legal |
 | 3 | | CheckCallAnonymiseCallOrganiser | OrganiserUserType | 2 |
-| 4 | | CheckStreamAnonymiseStreamUser | UserType | 0 |
-| 5 | | CheckStreamAnonymiseStreamOrganiser | OrganiserUserType | 3 |
+| 4 | | CheckSegmentAnonymiseSegmentCaller | CallerUserType | 0 |
+| 5 | | CheckSegmentAnonymiseSegmentCallee | CalleeUserType | 3 |
 
 > Note: Custom user properties cannot currently be used as criteria.
 
-### Register
+### PII Register
 
 If a user is anonymised due to matching Criteria then their ID is added to a register. The register is used to ensure that the user's PII continues to be anonymised even if their attributes change such that they no longer match the Criteria. (The ID itself is stored as an anonymous hash, not plain text).
 
@@ -64,18 +78,6 @@ Here is an example of data in the `UserAnonymisationRegister` table:
 | HashUserId | 524FD0DBF6B35E5C3477FA7A5E9CAAF8793ED7CE44F0D198D944F08D0AE77ED7 |
 | HashUserId | 4A5D7A23C8B543CB2CC0F4CC13847AD72D3EB37AE8AA163E786613312EE5672A |
 | HashUserId | 3F4A6FF1C7ADAD7426B107E8FE44BCACD291540CCB7F60F281FD600425665745 |
-
-## How Anonymisation Works
-
-PII is obfuscated using a deterministic obfuscation algorithm. The PII is obfuscated during the collection process and is never be stored as plain text. The obfuscation is reversible upon request but requires Modality support, if required please contact software.support@modalitysystems.com
-
-|PII|Examples|Examples (Anonymised)|
-|---|---|---|
-|Given name|*John*|*gbo9mS*|
-|Surname|Smith*|*gGdp12U*|
-|Email address|*John.Smith@example.com*|*Aa0lWbT5ibo9mS@example.com*|
-|User principal name|*john.smith@example.onmicrosoft.com*|*Aa0lWbz5ibo9ma@example.onmicrosoft.com*|
-|[As shown in reports]|*John Smith (John.Smith@example.com)*|*Anon (Aa0lWbT5ibo9mS@example.com)*|
 
 ### Key fields
 

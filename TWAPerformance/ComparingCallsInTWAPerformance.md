@@ -18,9 +18,9 @@ At this point you should have the following information from Microsoft Teams Adm
 
 Date Range: Nov 27, 2020 - Dec 3, 2020
 
-| User          | User ID       | Total Calls  |
-| ------------- |:-------------:| ------------:|
-| Example User  | b3e9cd6d-1db8-4173-a1eb-2cdd0bf21347 | 37 |
+| User          | User ID       | Calls  | Meetings  |
+| ------------- |:-------------:| ------------:| ------------:|
+| Example User  | b3e9cd6d-1db8-4173-a1eb-2cdd0bf21347 | 37 | 67 |
 
 ### TWA Performance Module
 
@@ -29,24 +29,25 @@ Using an appropriate account, connect to your TWA Performance SQL Database insta
 Modify the following SQL Statement:
 
 ```SQL
-DECLARE @userid varchar(max) = 'b3e9cd6d-1db8-4173-a1eb-2cdd0bf21347' 
-DECLARE @startDate date = '2020-11-27'
-DECLARE @endDate date = '2020-12-03'
+DECLARE @userid varchar(max) = 'f319a393-056a-4c43-8f03-d4215e95fafb' 
+DECLARE @startDate date = '2021-02-05'
+DECLARE @endDate date = '2021-02-12'
 
-SELECT TOP (1000)
+SELECT 
       [CallId]
-	  ,[StartDateTime]
-      ,[EndDateTime]
-      ,[UserId]
-      ,[DisplayName]
-      ,[TenantId]      
-
-  FROM [dbo].[Calls] where UserId = @userid
-  and convert(date,StartDateTime) between @startDate and @endDate
+	  ,case CallType when 1 then 'P2P' else 'Conference' end as CallType
+	  ,[SegmentStart]
+      ,  [SegmentEnd]
+	  
+  FROM [dbo].[Streams] s
+  JOIN	[dbo].[Users] u on u.Id = s.UserId And u.Id = @userid
+  and convert(date,[SegmentStart]) between @startDate and @endDate
   group by
-  [CallId],[StartDateTime],[EndDateTime],[UserId],[DisplayName],[TenantId]
-  order by StartDateTime
-
+      [CallId]
+	  ,CallType
+	  ,[SegmentStart]
+      ,  [SegmentEnd]
+  order by [SegmentStart]
 ```
 
 - set the value of the @userID variable in line 1 to the User ID collected previously.
