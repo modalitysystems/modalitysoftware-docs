@@ -27,10 +27,10 @@ Anonymisation is configured using TWA Performance's Azure Storage Account, using
 
 - CheckUserAnonymiseUser - Anonymise incoming Users based on the values of their Active Directory attributes.
 - CheckCallAnonymiseCallOrganiser - Anonymise the OrganiserId of a Call in the Call Table based on other columns.
-- CheckStreamAnonymiseStreamUser - Anonymise the UserId of a Stream in the Stream Table based on other columns.
-- CheckStreamAnonymiseStreamOrganiser - Anonymise the OrganiserId of a Stream in the Stream Table based on other columns.
+- CheckSegmentAnonymiseSegmentCaller - Anonymise the CallerId of a Segment in the Segment Table based on other columns.
+- CheckSegmentAnonymiseSegmentCallee - Anonymise the CalleeId of a Segment in the Segment Table based on other columns.
 
-Changes can be made with the Microsot Azure Storage Explorer app or via https://portal.azure.com/
+Changes can be made with the Microsoft Azure Storage Explorer app or via https://portal.azure.com/
 
 > The table will not be present if the TWA Performance has never been allowed to run, in which case it is fine to create the table manually. All that will be required is the table name (`AnonymisationCriteria`).
 
@@ -53,8 +53,8 @@ Here is an example configuration. Using this example, TWA Performance would anon
 | 1 | | CheckUserAnonymiseUser | Country | Germany |
 | 2 | | CheckUserAnonymiseUser | Department | Legal |
 | 3 | | CheckCallAnonymiseCallOrganiser | OrganiserUserType | 2 |
-| 4 | | CheckStreamAnonymiseStreamUser | UserType | 0 |
-| 5 | | CheckStreamAnonymiseStreamOrganiser | OrganiserUserType | 3 |
+| 4 | | CheckSegmentAnonymiseSegmentCaller | CallerUserType | 0 |
+| 5 | | CheckSegmentAnonymiseSegmentCallee | CalleeUserType | 3 |
 
 > Note: Custom user properties cannot currently be used as criteria.
 
