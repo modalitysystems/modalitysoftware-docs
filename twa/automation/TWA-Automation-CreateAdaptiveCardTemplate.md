@@ -54,7 +54,7 @@ The left panel contains a toolbox of card elements, these can be dragged and dro
 
 To make it easier to create new templates, development have created an example template which consists of many examples of components that can be copied into your new template. When sent to Teams the template looks like [this](./../images/bots/example-template.png). The example template contains the following components:
 
-- **Card header** with company logo and scenario name.
+- **Card header** with logo and scenario name.
 - **Section headers** which can contain static text or be bound to data.
 - **Table** which contains bound data. The example shows 3 columns you should avoid using more than that, as width can be an issue on smaller devices.
 - **Paragraphs of text** with markdown formatting for emphasis

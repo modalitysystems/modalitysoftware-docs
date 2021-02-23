@@ -18,8 +18,7 @@
                                 {
                                     "type": "Image",
                                     "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Logos/modality_black_on_lightblue.png",
-                                    "altText": "brand icon",
-                                    "size": "Stretch"
+                                    "size": "Small"
                                 }
                             ],
                             "width": 30
