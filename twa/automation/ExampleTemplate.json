@@ -1,0 +1,618 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "backgroundImage": {
+                "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Backgrounds/header_lightblue.png"
+            },
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Logos/modality_black_on_lightblue.png",
+                                    "altText": "brand icon",
+                                    "size": "Stretch"
+                                }
+                            ],
+                            "width": 30
+                        },
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Teams Status",
+                                    "horizontalAlignment": "Right",
+                                    "wrap": true,
+                                    "color": "Dark"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "SCENARIO TITLE",
+                                    "horizontalAlignment": "Right",
+                                    "spacing": "None",
+                                    "size": "Large",
+                                    "color": "Attention",
+                                    "wrap": true,
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "width": 70
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${RowsWithAdditionalProperties[0].Value.RecipientFirstName}, header describing the simple table below:",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "Medium",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Name",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "$data": "${RowsWithAdditionalProperties}",
+                            "text": "${Value.Name}",
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Unit Count",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "$data": "${RowsWithAdditionalProperties}",
+                            "text": "${if(Value.UnitCount == 1, Value.UnitCount + ' unit', Value.UnitCount + ' units')}",
+                            "horizontalAlignment": "Right",
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Date of action",
+                            "horizontalAlignment": "Right",
+                            "weight": "Bolder",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "$data": "${RowsWithAdditionalProperties}",
+                            "text": "{{DATE(${Value.ActionDate}, SHORT)}}",
+                            "horizontalAlignment": "Right",
+                            "spacing": "Small",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Paragraph that contains emphasis and inline links",
+            "wrap": true,
+            "size": "Large",
+            "spacing": "ExtraLarge",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Lorem ipsum dolor sit amet, consectetur **adipiscing** elit. Maecenas tincidunt nibh nec mi [this link will open new window](https://modalitysystems.com/) tempor, cursus eleifend dolor gravida. \r\n\r\n Nam a velit ac magna placerat faucibus. [Ut egestas](https://modalitysystems.com/) eget metus non lobortis. Praesent bibendum nibh at nibh _posuere_, vitae laoreet felis condimentum. ",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Count comparison with change",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change + '%'))}",
+                            "horizontalAlignment": "Center",
+                            "wrap": true,
+                            "size": "ExtraLarge",
+                            "color": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change == 0, 'default', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change > 0, 'good', 'attention'))}"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Vivamus iaculis",
+                            "horizontalAlignment": "Center",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "spacing": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "\r\n",
+                            "horizontalAlignment": "Center",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${RowsWithAdditionalProperties[0].Value.ComparisonCountData1}% : ${RowsWithAdditionalProperties[0].Value.ComparisonCountData2}%",
+                            "horizontalAlignment": "Center",
+                            "wrap": true,
+                            "spacing": "None",
+                            "size": "Large"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change + '%'))}",
+                            "horizontalAlignment": "Center",
+                            "wrap": true,
+                            "size": "ExtraLarge",
+                            "color": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change == 0, 'default', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change > 0, 'good', 'attention'))}"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Bibendum eros",
+                            "horizontalAlignment": "Center",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "spacing": "Small"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Dynamic lists",
+            "wrap": true,
+            "size": "Large",
+            "spacing": "ExtraLarge",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Morbi molestie feugiat est, vel commodo velit volutpat a. Ut non faucibus augue. Aliquam erat volutpat. Duis pellentesque faucibus neque, et tempus nisi porta ut.",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "&nbsp;",
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "$data": "${RowsWithAdditionalProperties}",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "\r - ${Value.Name}",
+                    "spacing": "ExtraLarge"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Dictum molestie sapien a, scelerisque sollicitudin lorem. Donec eget posuere ipsum.",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "&nbsp;",
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "$data": "${RowsWithAdditionalProperties}",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "\r ${$index + 1}. ${Value.Name}",
+                    "spacing": "ExtraLarge"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Static markdown lists",
+            "wrap": true,
+            "size": "Large",
+            "spacing": "ExtraLarge",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Morbi molestie feugiat est, vel commodo velit volutpat a. Ut non faucibus augue. Aliquam erat volutpat. Duis pellentesque faucibus neque, et tempus nisi porta ut. \r -fusce pulvinar\r - eget urna\r - venenatis\r - pretium\r - Ut odio augue\r\n\r\n Dictum molestie sapien a, scelerisque sollicitudin lorem. Donec eget posuere ipsum. \r\n\r\n 1. vestibulum congue\r 2. erat non purus hendrerit\r 3. id volutpat\r 4. libero sagittis",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Count comparison",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "Container",
+            "backgroundImage": {
+                "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Backgrounds/header_lightblue.png"
+            },
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "size": "Small",
+                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Outbound/SVG/ic_fluent_call_outbound_48_regular.svg",
+                                    "horizontalAlignment": "Center",
+                                    "altText": "outbound icon"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Laoreet ",
+                                    "horizontalAlignment": "Center",
+                                    "weight": "Bolder",
+                                    "wrap": true,
+                                    "spacing": "Small",
+                                    "color": "Dark"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "\r\n",
+                                    "horizontalAlignment": "Center",
+                                    "weight": "Bolder",
+                                    "wrap": true,
+                                    "spacing": "Small"
+                                },
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": " ${RowsWithAdditionalProperties[0].Value.ComparisonCountData3}",
+                                                    "horizontalAlignment": "Right",
+                                                    "size": "Large",
+                                                    "color": "Dark",
+                                                    "weight": "Bolder"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "auto",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "\\-    ",
+                                                    "horizontalAlignment": "Center",
+                                                    "spacing": "Small",
+                                                    "size": "Large",
+                                                    "color": "Dark"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${RowsWithAdditionalProperties[0].Value.ComparisonCountData4} ",
+                                                    "size": "Large",
+                                                    "color": "Dark",
+                                                    "weight": "Bolder"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "spacing": "None"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "size": "Small",
+                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Inbound/SVG/ic_fluent_call_inbound_48_regular.svg",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "ExtraLarge",
+                                    "altText": "inbound icon"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Eu odio",
+                                    "horizontalAlignment": "Center",
+                                    "weight": "Bolder",
+                                    "wrap": true,
+                                    "spacing": "Small",
+                                    "color": "Dark"
+                                }
+                            ]
+                        }
+                    ],
+                    "spacing": "ExtraLarge"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Multiple factSets",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "Container",
+            "$data": "${RowsWithAdditionalProperties}",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Laoreet on {{DATE(${Value.FactSetDate}, LONG)}} at {{TIME(${Value.FactSetDate})}}"
+                },
+                {
+                    "type": "FactSet",
+                    "facts": [
+                        {
+                            "title": "Rhoncus",
+                            "value": "${if(Value.FactSetData1 >= 0, 'Fallback text when not populated', Value.FactSetData1)}  "
+                        },
+                        {
+                            "title": "Ullamcorper lorem",
+                            "value": "${if(Value.FactSetData2 >= 0, 'Fallback text when not populated', Value.FactSetData2)}  "
+                        },
+                        {
+                            "title": "Bibendum",
+                            "value": "${if(Value.FactSetData3 >= 0, 'Fallback text when not populated', Value.FactSetData3)}  "
+                        },
+                        {
+                            "title": "Vitae egestas",
+                            "value": "${Value.FactSetData4} "
+                        }
+                    ]
+                }
+            ],
+            "separator": true,
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Table containing links, total and change",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "ColumnSet",
+            "separator": true,
+            "spacing": "ExtraLarge",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[Pellentesque consequat](https://teams.microsoft.com/_#/conversations/General?threadId=19:${RowsWithAdditionalProperties[0].Value.CountOneTeamId}@thread.skype&ctx=channel)",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "[Urna aliquam ullamcorper](https://teams.microsoft.com/_#/conversations/General?threadId=19:${RowsWithAdditionalProperties[0].Value.CountOneTeamId}@thread.skype&ctx=channel)",
+                            "spacing": "Small",
+                            "color": "Good"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Total &nbsp; &nbsp; &nbsp;",
+                            "horizontalAlignment": "Right",
+                            "weight": "Bolder",
+                            "separator": true,
+                            "spacing": "Large"
+                        }
+                    ],
+                    "width": "stretch",
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": " ${RowsWithAdditionalProperties[0].Value.CountOne}"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": " ${RowsWithAdditionalProperties[0].Value.CountTwo}",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": " ${RowsWithAdditionalProperties[0].Value.TotalCount} &nbsp; &nbsp;",
+                            "separator": true,
+                            "spacing": "Large"
+                        }
+                    ],
+                    "width": "auto",
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountOneChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.CountOneChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.CountOneChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.CountOneChange + '%'))}",
+                            "color": "${if(RowsWithAdditionalProperties[0].Value.CountOneChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.CountOneChange > 0, 'good', 'attention'))}",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountTwoChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.CountTwoChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.CountTwoChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.CountTwoChange + '%'))}",
+                            "color": "${if(RowsWithAdditionalProperties[0].Value.CountTwoChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.CountTwoChange > 0, 'good', 'attention'))}",
+                            "spacing": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.TotalChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.TotalChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.TotalChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.TotalChange + '%'))}",
+                            "color": "${if(RowsWithAdditionalProperties[0].Value.TotalChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.TotalChange > 0, 'good', 'attention'))}",
+                            "separator": true,
+                            "height": "stretch",
+                            "spacing": "Large"
+                        }
+                    ],
+                    "width": "auto",
+                    "backgroundImage": {},
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Image and text",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "Image",
+            "url": "https://messagecardplayground.azurewebsites.net/assets/TxP_Flight.png",
+            "altText": "image",
+            "horizontalAlignment": "Center",
+            "separator": true,
+            "spacing": "Medium"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Phasellus accumsan",
+            "weight": "Lighter",
+            "color": "Accent",
+            "spacing": "Small",
+            "size": "Medium",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper id nulla a porttitor. Pellentesque non mattis ipsum. Duis ullamcorper tellus eu molestie tincidunt. Suspendisse pellentesque justo ut tortor rutrum maximus. Proin sed aliquam tortor, at sodales orci.",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Inline change",
+            "wrap": true,
+            "size": "Large",
+            "color": "Accent",
+            "spacing": "ExtraLarge"
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "separator": true
+        },
+        {
+            "type": "Container",
+            "$data": "${RowsWithAdditionalProperties}",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "${Value.Name}: ${Value.CountOne} ${if(Value.CountOneChange == 0, '&nbsp;', if(Value.CountOneChange >= 0, '▲ ' + Value.CountOneChange + '%', '▼ ' + Value.CountOneChange + '%'))}",
+                    "color": "${if(Value.CountOneChange == 0, 'default', if(Value.CountOneChange > 0, 'good', 'attention'))}"
+                }
+            ],
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Vivamus iaculis",
+            "url": "https://modalitysystems.com"
+        },
+        {
+            "type": "Action.OpenUrl",
+            "title": "Class aptent taciti",
+            "url": "https://modalitysystems.com"
+        }
+    ]
+}

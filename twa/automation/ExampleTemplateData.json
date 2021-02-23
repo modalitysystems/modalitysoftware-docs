@@ -1,0 +1,62 @@
+{
+   "RowsWithAdditionalProperties":[
+        {
+            "Value":{
+                "Name":"Lorem ipsum dolor sit",
+                "ActionDate":"2020-08-11T08:19:53Z",
+                "RecipientFirstName":"RecipientFirstName",
+                "UnitCount":2,
+                "ComparisonCountData1": 64,
+                "ComparisonCountData1Change": 31,
+                "ComparisonCountData2": 36,
+                "ComparisonCountData2Change": -24,
+                "ComparisonCountData3": 19,
+                "ComparisonCountData4": 52,
+                "CountOneTeamId":"ea5d7598c2864a8da883c5613f871007",
+                "CountOne":47,
+                "CountOneChange":36,
+                "CountTwoTeamId":"d7e0e34cdc9f4d2d8dc895ac7db85bea",
+                "CountTwo": 23,
+                "CountTwoChange": -8,
+                "TotalCount": 70,
+                "TotalChange": 14,
+                "FactSetDate":"2020-08-11T08:19:53Z",
+                "FactSetData1": "Lorem ipsum, Dolor sit, Amet consectetur, Adipiscing elit, Praesent",
+                "FactSetData2": "Dolor sit, Amet consectetur, Adipiscing elit, Praesent",
+				"FactSetData3": "Amet consectetur, Adipiscing elit",
+				"FactSetData4": "62%"
+            }
+
+        },
+        {
+            "Value":{
+                "Name":"Maecenas tincidunt",
+                "ActionDate":"2021-12-06T19:07:46Z",
+                "RecipientFirstName":"Tom",
+                "UnitCount":9,
+                "CountOne":21,
+                "CountOneChange":-39,
+                "FactSetDate":"2021-12-06T19:07:46Z",
+                "FactSetData1": "Amet consectetur",
+				"FactSetData2": "Lorem ipsum, Dolor sit, Amet consectetur, Adipiscing elit, Praesent",
+				"FactSetData3": "",
+				"FactSetData4": "0%"
+            }
+        },
+        {
+            "Value":{
+                "Name":"Praesent bibendum nibh",
+                "ActionDate":"2020-02-23T11:12:22Z",
+                "RecipientFirstName":"Tom",
+                "UnitCount":1,
+                "CountOne":58,
+                "CountOneChange": 0,
+                "FactSetDate":"2020-02-23T11:12:22Z",
+                "FactSetData1": "",
+				"FactSetData2": "",
+				"FactSetData3": "Arielle Stein",
+				"FactSetData4": "100%"
+            }
+        }
+    ]
+}
