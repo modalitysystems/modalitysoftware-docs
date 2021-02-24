@@ -306,7 +306,7 @@
                                 {
                                     "type": "Image",
                                     "size": "Small",
-                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Outbound/SVG/ic_fluent_call_outbound_48_regular.svg",
+                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Outbound/PNG/ic_fluent_call_outbound_48_regular.png",
                                     "horizontalAlignment": "Center",
                                     "altText": "outbound icon"
                                 },
@@ -389,7 +389,7 @@
                                 {
                                     "type": "Image",
                                     "size": "Small",
-                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Inbound/SVG/ic_fluent_call_inbound_48_regular.svg",
+                                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Call%20Inbound/PNG/ic_fluent_call_inbound_48_regular.png",
                                     "horizontalAlignment": "Center",
                                     "spacing": "ExtraLarge",
                                     "altText": "inbound icon"
