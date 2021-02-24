@@ -16,21 +16,28 @@ The DataDeletionRules has three columns that can be configured
 
 The model allows us to delete specific sets of data in the database. Some or all can be used.
 
-This allows you to remove either meta data about content (messages, reactions, user activity) or "structure" (channels, teams, members, owners) from the database. In most cases you will want to remove "data" but not "structure".
+This allows you to remove either meta data about content (messages, reactions, user activity) or "structure" (channels, teams, members, owners) from the database. In most cases you will want to remove "data" but not "structure". Some examples of what should be added to the `configuration.DataDeletionRules` table are as follows;
 
-To remove channel message content:
-
-This is baded 
+### To remove channel message content older than 1 year (365 days):
 
 | TableName | ColumnName | MaximumAgeInDays|
 | --------- | ---- | ---- |
-| [dbo].[Channels] | [LastUpdatedDateTime] | 365 |
+| [dbo].[Messages] | [CreatedDateTime] | 365 |
+| [dbo].[Reactions] | [CreatedDateTime] | 365 |
+| [dbo].[Mentions] | [LastUpdatedDateTime] | 365 |
 | [dbo].[Attachments] | [LastUpdatedDateTime] | 365 |
-| [dbo].[DriveItemDeltaTokens] | [CreatedDateTime] | 60 |
-| [dbo].[ActivityUserDetails] | [ReportRefreshDate] | 90 |
 | ... | ... | ... |
 
-To remove user activity reports:
+### To remove user activity reports older than 1 year (365 days):
 
-
+| TableName | ColumnName | MaximumAgeInDays|
+| --------- | ---- | ---- |
+| [dbo].[ActivityCounts] | [ReportDate] | 365 |
+| [dbo].[ActivityUserCounts] | [ReportDate] | 365 |
+| [dbo].[ActivityUserDetails] | [ReportRefreshDate] | 365 |
+| [dbo].[DailyActivityUserDetails] | [ReportDate] | 365 |
+| [dbo].[DeviceUsageDistributionUserCounts] | [ReportRefreshDate] | 365 |
+| [dbo].[DeviceUsageUserCounts] | [ReportDate] | 365 |
+| [dbo].[DeviceUsageUserDetails] | [ReportRefreshDate] | 365 |
+| ... | ... | ... |
 
