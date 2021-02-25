@@ -12,14 +12,25 @@ Most automations work on schedules, we call these scheduled scenarios:
  - Ever month remind owners about inactive teams
  - Every week remind users about teams that only have 1 owner
 
-We can also trigger automations to only send the message once. This is based on the exact text of the message. These are "one time scenarios"
+You can also use multiple scenarios to "escelate" messaging
+- This team has been inactive for 30 days
+- This team has been inactive for 45 days
+- This team has been inactive for 90 days or more
+
+In these cases, the triggers are non-overlapping. e.g. find teams inactive for more than 30 days but less than 44 days, so teams will only appear in one scenario.
+
+We can also trigger automations to only send the message once. This is based on the exact text of the message. These are **"send once scenarios"**
 
 In these scenarios the specific notificaiton for the specific user(s) will only send once 
 
 e.g. the trigger will scan for all deleted teams in a time window, e.g last 7 days, but then the automation checks if the exact message has been sent before. f it has, it will not be sent, if it hasn't it will be sent. - the scenario runs daily, but only sends new messages. This means we can alert daily on "newly deleted teams".
 
-- This is a recently created team, here are some tips
-- Your team now has 1 or more guests
+These work well when a query can be time bound, for example we have team creation date and team deletion date
+
+- This is a recently created team, for which you are the owner, here are our policies, here are some tips
+- This is a recently created public team, we prefer teams to be private
+- This is a recently deleted team, are you sure you want it to be deleted?
+
 
 
 
