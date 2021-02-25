@@ -7,10 +7,17 @@ Teamwork Analytics Automation (TWA Automation) has access to all of the data sto
 
 It is important to understand that the Teamwork Analytics database contains the "current state" of the teams enviromnet, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
 
-Most automations work on schedules e.g.
+Most automations work on schedules, we call these scheduled scenarios:
  - Every 3 months remind users about guests
  - Ever month remind owners about inactive teams
  - Every week remind users about teams that only have 1 owner
+
+We can also trigger "one time" scenarios e.g.
+
+In these scenarios the notificaiton will only send once e.g. the trigger will scan for all deleted teams in a time window, e.g last 7 days, but then the automation checks if the message has been sent before and doesn't send it again - the scenario runs daily, but only sends the automation message once
+
+- Your team now has 1 or more guests
+- This is a recently created team, here are some tips
 
 
 
