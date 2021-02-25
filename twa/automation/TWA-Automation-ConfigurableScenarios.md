@@ -3,6 +3,19 @@
 ## Overview
 Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Configuration of new or existing scenarios is a multi-step process and is described in this document.
 
+### What can I trigger an Automation scenario from?
+
+It is important to understand that the Teamwork Analytics database contains the "current state" of the teams enviromnet, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
+
+Most automations work on schedules e.g.
+ - Every 3 months remind users about guests
+ - Ever month remind owners about inactive teams
+ - Every week remind users about teams that only have 1 owner
+
+
+
+
+
 ### Create or Edit a Scenario
 Everything related to TWA Automation is located within the TWA database which will be located within the "automation" schema, for example a table would be labelled as "automation.tablename". Unless specifically instructed here do not change the database schema or data content of this database. Only the areas specified in these docs should be configured as documented.
 
