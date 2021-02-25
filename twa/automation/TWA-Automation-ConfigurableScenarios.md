@@ -7,6 +7,8 @@ Teamwork Analytics Automation (TWA Automation) has access to all of the data sto
 
 It is important to understand that the Teamwork Analytics database contains the "current state" of the teams enviromnet, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
 
+#### Repeating Scheduled Scenararios - messages repeat each X period if the state doesn't change
+
 Most automations work on schedules, we call these scheduled scenarios:
  - Every 3 months remind users about guests
  - Ever month remind owners about inactive teams
@@ -18,6 +20,8 @@ You can also use multiple scenarios to "escelate" messaging
 - This team has been inactive for 90 days or more
 
 In these cases, the triggers are non-overlapping. e.g. find teams inactive for more than 30 days but less than 44 days, so teams will only appear in one scenario.
+
+#### Send Once Scenarios - the message is sent once and future messages for the same senario are supressed
 
 We can also trigger automations to only send the message once. This is based on the exact text of the message. These are **"send once scenarios"**
 
