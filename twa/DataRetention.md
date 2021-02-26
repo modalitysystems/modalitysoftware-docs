@@ -41,3 +41,5 @@ This allows you to remove either meta data about content (messages, reactions, u
 | [dbo].[DeviceUsageUserDetails] | [ReportRefreshDate] | 365 |
 | ... | ... | ... |
 
+
+Once configured, the windows collector service needs to be restarted - rules for retention are loaded into the system at service start
