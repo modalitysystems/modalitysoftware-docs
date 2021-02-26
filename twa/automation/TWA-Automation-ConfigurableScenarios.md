@@ -3,6 +3,41 @@
 ## Overview
 Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Configuration of new or existing scenarios is a multi-step process and is described in this document.
 
+### What can I trigger an Automation scenario from?
+
+It is important to understand that the Teamwork Analytics database contains the "current state" of the teams enviromnet, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
+
+#### Repeating Scheduled Scenararios - messages repeat each X period if the state doesn't change
+
+Most automations work on schedules, we call these scheduled scenarios:
+ - Every 3 months remind users about guests
+ - Ever month remind owners about inactive teams
+ - Every week remind users about teams that only have 1 owner
+
+You can also use multiple scenarios to "escelate" messaging
+- This team has been inactive for 30 days
+- This team has been inactive for 45 days
+- This team has been inactive for 90 days or more
+
+In these cases, the triggers are non-overlapping. e.g. find teams inactive for more than 30 days but less than 44 days, so teams will only appear in one scenario.
+
+#### Send Once Scenarios - the message is sent once and future messages for the same senario are supressed
+
+We can also trigger automations to only send the message once. This is based on the exact text of the message. These are **"send once scenarios"**
+
+In these scenarios the specific notificaiton for the specific user(s) will only send once 
+
+e.g. the trigger will scan for all deleted teams in a time window, e.g last 7 days, but then the automation checks if the exact message has been sent before. f it has, it will not be sent, if it hasn't it will be sent. - the scenario runs daily, but only sends new messages. This means we can alert daily on "newly deleted teams".
+
+These work well when a query can be time bound, for example we have team creation date and team deletion date
+
+- This is a recently created team, for which you are the owner, here are our policies, here are some tips
+- This is a recently created public team, we prefer teams to be private
+- This is a recently deleted team, are you sure you want it to be deleted?
+
+
+
+
 ### Create or Edit a Scenario
 Everything related to TWA Automation is located within the TWA database which will be located within the "automation" schema, for example a table would be labelled as "automation.tablename". Unless specifically instructed here do not change the database schema or data content of this database. Only the areas specified in these docs should be configured as documented.
 
