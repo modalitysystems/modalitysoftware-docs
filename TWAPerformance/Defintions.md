@@ -24,3 +24,9 @@ PSTN Dial out - the meeting dialled out to the PSTN user (either a user chose to
 IP Join - Joined via "Internet Protocol" e.g. an IP network connection, could be mobile client, desktop or browser
 
 External Meeting Join - A user who joined via IP who is not part of the tenant who hosted the meeting. This does not include PSTN users. The data does not allow defining if a PSTN joiner is a member of the tenant or not.
+
+
+Notes:
+
+- The call records API does not give the UPN of external meeting joiners or externally called IP users
+- The call records API does not define what type of meeting it was (meet now, escalated, scheduled, channel etc.) - just "call" or "groupcall"
