@@ -2,6 +2,7 @@
 
 # When prompted enter the appropriate details
 
+
 $tenantId = $(Read-Host "Please enter your tenant ID (GUID)"`n)
 $clientId = $(Read-Host "Please enter your TWA Application ID (GUID)"`n)
 $clientSecret = $(Read-Host "Please enter your TWA Application Secret"`n)
@@ -33,6 +34,8 @@ Write-Host '--------------------------------------------------------------------
             -Method Get `
             -Uri $uri `
             -Headers @{Authorization=$accessToken}
+            
+           
 
     $response.Content | ConvertFrom-Json | ConvertTo-Json
     Write-Host ''
