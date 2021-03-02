@@ -1,12 +1,13 @@
 # This PowerShell allows you to collect raw call records from graph with the call ID
 
-# When prompted enter the appropriate details
+## When prompted enter the appropriate details - a file will be generated with the name of the call id in the folder where the script is executed
 
-
+```
 $tenantId = $(Read-Host "Please enter your tenant ID (GUID)"`n)
 $clientId = $(Read-Host "Please enter your TWA Application ID (GUID)"`n)
 $clientSecret = $(Read-Host "Please enter your TWA Application Secret"`n)
 $callId = $(Read-Host "Please enter your Call Id"`n)
+
 
 Write-Host 'Authenticating...'
 $accessToken =
@@ -19,24 +20,23 @@ $accessToken =
 Write-Host 'Authenticated!'
 Write-Host ''
 
-Write-Host 'File 1'
+
 Write-Host '-------------------------------------------------------------------------------------------------------'
 
 
 
     $response = $null
 
-    Write-Host 'v1.0 - ' $queryDate ' - ' $uri
 
-    $uri = "https://graph.microsoft.com/v1.0/communications/callRecords/$($callId)?$expand=sessions($expand=segments)"
+
+    $uri = "https://graph.microsoft.com/v1.0/communications/callRecords/$($callId)?`$expand=sessions(`$expand=segments)"
+    Write-Host 'v1.0 - ' $queryDate ' - ' $uri
     $response =
         Invoke-WebRequest `
             -Method Get `
             -Uri $uri `
             -Headers @{Authorization=$accessToken}
-            
-           
 
-    $response.Content | ConvertFrom-Json | ConvertTo-Json
+    $response.Content | ConvertFrom-Json | ConvertTo-Json | Out-File "$($callId).json"
     Write-Host ''
-
+```
