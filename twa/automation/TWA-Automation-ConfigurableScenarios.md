@@ -120,193 +120,151 @@ Template definition is defined in the Azure Table Storage store, in the **"Scena
 * PartitionKey - represents the tenant id
 * RowKey - must match name of the scenario
 * EmailSubject - the email subject which will display when the scenario sends an email
-* EmailTemplate - the content which will display when the scenario sends an email
-* TeamsCardTemplate - the content which will display when the scenario sends a Teams IM
+* Template - the content which will display when the scenario sends an email or Teams IM ([Configuring Adaptive Cards](/twa/automation/TWA-Automation-CreateAdaptiveCardTemplate.md))
 
 >If this table does not exist or is completely empty the four default scenarios which mentioned above will still work using hardcoded values.
 
 >Templates for existing scenarios can be changed by editing this table, and will take effect the next time the scenario is scheduled.
 
-Email and card templates have two different specific formats they must be written in, here is an example of both for the BotGuestNotifications Scenario:
-
-**Email Template:**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        th {
-            text-align: left;
-        }
-
-        th, td {
-            padding: 5px;
-        }
-    </style>
-</head>
-<body>
-    <p>⚠ This is a notification that you are the owner of 1 or more teams in Microsoft Teams that have external users (guests). As an owner, please ensure that access is appropriate for the content being shared in that team.</p>
-    <table style="width:100%">
-        <tr>
-            <th>Team</th>
-            <th>Guests</th>
-            <th>Last Activity</th>
-        </tr>
-        @foreach (var item in @Model.Notification.RowsWithAdditionalProperties)
-        {
-            <tr>
-                @if (@item.Value.ContainsKey("TeamDisplayName"))
-                {
-                    <td>@item.Value["TeamDisplayName"]</td>
-                }
-                @if (@item.Value.ContainsKey("GuestCount"))
-                {
-                    <td>@item.Value["GuestCount"]</td>
-                }
-                @if (@item.Value.ContainsKey("LastActivity"))
-                {
-                    <td>@item.Value["LastActivity"]</td>
-                }
-            </tr>
-        }
-    </table>
-    @if (@Model.BotInstallationLink != null)
-    {
-        <p>Would you prefer to be contacted via chat message in Microsoft Teams? Click <a href="@Model.BotInstallationLink">here</a> to install the Teamwork Tips Bot.</p>
-    }
-</body>
-</html>
-```
-
-**Card Template:**
-
+**Template:**
 ```json
 {
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "type": "AdaptiveCard",
   "version": "1.0",
-  "body": 
-  [
-    {
-      "type": "TextBlock",
-      "size": "default",
-      "text": "Teams with Guests",
-	  "weight": "Bolder",
-      "wrap": true
-    },
-    {
-      "type": "TextBlock",
-      "size": "default",
-      "text": "⚠ This is a notification that you are the owner of 1 or more teams in Microsoft Teams that have external users (guests). As an owner, please ensure that access is appropriate for the content being shared in that team.",
-      "wrap": true
-    },
+  "type": "AdaptiveCard",
+  "originator": "OriginatorIdPlaceholder",
+  "body": [
     {
       "type": "Container",
-      "style": "emphasis",
-      "items": 
-      [
+      "backgroundImage": {
+        "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Backgrounds/header_lightblue.png"
+      },
+      "items": [
         {
           "type": "ColumnSet",
-          "columns": 
-          [
+          "columns": [
             {
               "type": "Column",
-              "width": 55,
-              "items": 
-              [
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Guest/PNG/ic_fluent_guest_24_filled.png",
+                  "size": "Small"
+                }
+              ],
+              "width": 30
+            },
+            {
+              "type": "Column",
+              "items": [
                 {
                   "type": "TextBlock",
-                  "text": "Team",
-                  "weight": "Bolder"
+                  "text": "Teams Status",
+                  "horizontalAlignment": "Right",
+                  "wrap": true,
+                  "color": "Dark",
+                  "size": "Small"
                 },
-                                    @{
-                                    int i = 0;
-                                    foreach(var item in @Model.Notification.RowsWithAdditionalProperties) {
-                                        if (++i > 1) {
-                                            @:,
-										}
-										if (@item.Value.ContainsKey("TeamDisplayName"))
-										{
-										<text>
-										{
-										  "type": "TextBlock",
-										  "text": "@item.Value["TeamDisplayName"]"
-										}
-										</text>
-										}
-									}
-								}
-							]
-						},
-						{
-							"type": "Column",
-							"width": 15,
-							"items": 
-							[
-								{
-									"type": "TextBlock",
-									"text": "Guests",
-									"weight": "Bolder"
-								},
-								@{
-									int j = 0;
-									foreach(var item in @Model.Notification.RowsWithAdditionalProperties) {
-										if (++j > 1) {
-											@:,
-										}
-										if (@item.Value.ContainsKey("GuestCount"))
-										{
-										<text>
-										{
-										  "type": "TextBlock",
-										  "text": "@item.Value["GuestCount"]"
-										}
-										</text>
-										}
-									}
-								}
-							]
-						},
-						{
-							"type": "Column",
-							"width": 30,
-							"items": 
-							[
-								{
-									"type": "TextBlock",
-									"text": "Last Activity",
-									"weight": "Bolder"
-								},
-								@{
-									int k = 0;
-									foreach(var item in @Model.Notification.RowsWithAdditionalProperties) {
-										if (++k > 1) {
-											@:,
-										}
-										if (@item.Value.ContainsKey("LastActivity"))
-										{
-										<text>
-										{
-										  "type": "TextBlock",
-										  "text": "@item.Value["LastActivity"]"
-										}
-										</text>
-										}
-									}
-								}
-							] 
-						} 
-					] 
-				}
-			]
-		},
-		{
-			"type": "TextBlock",
-			"size": "default",
-			"text": "Thank you for your help.",
-			"wrap": true
-		}
-	]
+                {
+                  "type": "TextBlock",
+                  "text": "TEAMS WITH GUESTS",
+                  "horizontalAlignment": "Right",
+                  "size": "Large",
+                  "color": "Attention",
+                  "wrap": true,
+                  "weight": "Bolder",
+                  "spacing": "None"
+                }
+              ],
+              "width": 70,
+              "horizontalAlignment": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${RowsWithAdditionalProperties[0].Value.OwnerDisplayName}, you are an owner of teams with guests",
+      "wrap": true,
+      "size": "Large",
+      "color": "Accent"
+    },
+    {
+      "type": "TextBlock",
+      "text": "This is a notification that you are the owner of 1 or more teams in Microsoft Teams that have external users (guests). As an owner, please ensure that access is appropriate for the content being shared in that team.",
+      "wrap": true
+    },
+    {
+      "type": "ColumnSet",
+      "separator": true,
+      "spacing": "Medium",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Team",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "$data": "${RowsWithAdditionalProperties}",
+              "text": "${Value.TeamDisplayName}",
+              "spacing": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Guests",
+              "weight": "Bolder"
+            },
+            {
+              "type": "TextBlock",
+              "$data": "${RowsWithAdditionalProperties}",
+              "text": "${Value.GuestCount}",
+              "horizontalAlignment": "Right",
+              "spacing": "Small"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Last Activity",
+              "horizontalAlignment": "Right",
+              "weight": "Bolder",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "$data": "${RowsWithAdditionalProperties}",
+              "text": "{{DATE(${Value.LastActivity}, SHORT)}} {{TIME(${Value.LastActivity})}}",
+              "horizontalAlignment": "Right",
+              "spacing": "Small",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Thank you for your help.",
+      "wrap": true,
+      "separator": true
+    }
+  ]
 }
 ```
 
@@ -340,4 +298,4 @@ Follow all the steps above should now mean that any user that meets the criteria
 
 If you wish to test your scenario immediately, simple connect to the machine where the scheduled tasks are configured and run the task. However, bear in mind that if all configured correctly - the users will receive a Teams IM or email.
 
-> There is a cap in the notification service that only returns a max of 100 teams, per user. This is due to restrictions of Bot Framework message sizes.
+> There is a cap in the notification service that only returns a max of 35 teams, per user. This is due to restrictions of Bot Framework message sizes.
