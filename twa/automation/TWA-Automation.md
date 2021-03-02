@@ -14,10 +14,34 @@ TWA Automation is deployed in two parts: a locally run Bot Notification Service,
 * The local Bot Notification Service can be run on the same instance as the TWA Collector Service. It is configured with its own schedule, set up in Task Scheduler.
 * The machine running the Bot Notification Service will need HTTPS 443 outbound access in order to message the Modality-managed broker service.
 * Modality Systems will provide the manifest file for a Microsoft Teams application, to be side-loaded by an tenant administrator. Read more about [Publishing a custom app by uploading an app package](https://docs.microsoft.com/en-us/MicrosoftTeams/upload-custom-apps).
-* IF wanting to use "Proactive Bot" functionality
+* If wanting to use "Proactive Bot" functionality
   * Admin consent for graph permissions will be required.
   * Application **must** be published to tenant store.
+* If wanting to use "Unified Template" functionality **and** want to use email (requirement does not apply to IM)
+  * Email originator requires configuring via the [Microsoft's developer dashboard](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard)
+    * Update the bot web app "BotSettings:OriginatorId" setting, with the value found on the developer dashboard.
 
+## Unified Templating - Email Configuration
+
+If the unified template feature is enabled, then this means that the bot will use the adaptive card templating for Teams IMs and emails. In order to email adaptive cards using the bot framework, configuration is required. Follow [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard) to configure email services for the bot.
+> The "sender email address" that is required in the form, must match the value specified in the bot web app under BotSettings:EmailAddress.
+
+> Most customers will only require "Organisation" self-service registration, which a tenant admin can approve. However, those that require "Global" will need to wait up to 2 weeks for Microsoft to provision their request. Check documenation for more information.
+
+Once a provider has been created using [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard), grab the originator value from the form:
+![Screenshot](../images/automation-developerdashboard-originator.png)
+
+* Go to the Azure Portal home page and follow the following steps:
+  * Click "resource groups"
+  * Find and open the resource group for TWA Automation
+  * Open the app service
+  * Go to configuration
+  * Click the edit button for the BotSettings:OriginatorId value
+  * Insert the originator id value that was copied from the account via the developer dashboard
+  * Click save after updating the value
+![Screenshot](../images/Automation-Originator.png)
+
+> This configuration only applies to if email is required when using unified templating. If all the customer wants to enable is Teams IM, then the above configuration is not required.
 
 ## Admin Consent for Bot
 
