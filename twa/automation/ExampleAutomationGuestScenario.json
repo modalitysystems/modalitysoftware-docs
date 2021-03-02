@@ -1,0 +1,138 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "type": "AdaptiveCard",
+    "originator": "OriginatorIdPlaceholder",
+    "body": [
+      {
+        "type": "Container",
+        "backgroundImage": {
+          "url": "https://cdn.modalitysystems.com/TeamworkAnalytics/Automation/Backgrounds/header_lightblue.png"
+        },
+        "items": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "https://cdn.modalitysystems.com/Microsoft-FluentUI-Icons/Guest/PNG/ic_fluent_guest_24_filled.png",
+                    "size": "Small"
+                  }
+                ],
+                "width": 30
+              },
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "Teams Status",
+                    "horizontalAlignment": "Right",
+                    "wrap": true,
+                    "color": "Dark",
+                    "size": "Small"
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "TEAMS WITH GUESTS",
+                    "horizontalAlignment": "Right",
+                    "size": "Large",
+                    "color": "Attention",
+                    "wrap": true,
+                    "weight": "Bolder",
+                    "spacing": "None"
+                  }
+                ],
+                "width": 70,
+                "horizontalAlignment": "Right"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TextBlock",
+        "text": "${RowsWithAdditionalProperties[0].Value.OwnerDisplayName}, you are an owner of teams with guests",
+        "wrap": true,
+        "size": "Large",
+        "color": "Accent"
+      },
+      {
+        "type": "TextBlock",
+        "text": "This is a notification that you are the owner of 1 or more teams in Microsoft Teams that have external users (guests). As an owner, please ensure that access is appropriate for the content being shared in that team.",
+        "wrap": true
+      },
+      {
+        "type": "ColumnSet",
+        "separator": true,
+        "spacing": "Medium",
+        "columns": [
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "Team",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "$data": "${RowsWithAdditionalProperties}",
+                "text": "${Value.TeamDisplayName}",
+                "spacing": "Small"
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "auto",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "Guests",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "$data": "${RowsWithAdditionalProperties}",
+                "text": "${Value.GuestCount}",
+                "horizontalAlignment": "Right",
+                "spacing": "Small"
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "auto",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "Last Activity",
+                "horizontalAlignment": "Right",
+                "weight": "Bolder",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "$data": "${RowsWithAdditionalProperties}",
+                "text": "{{DATE(${Value.LastActivity}, SHORT)}} {{TIME(${Value.LastActivity})}}",
+                "horizontalAlignment": "Right",
+                "spacing": "Small",
+                "wrap": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TextBlock",
+        "text": "Thank you for your help.",
+        "wrap": true,
+        "separator": true
+      }
+    ]
+  }
