@@ -26,7 +26,7 @@ TWA Automation is deployed in two parts: a locally run Bot Notification Service,
 If the unified template feature is enabled, then this means that the bot will use the adaptive card templating for Teams IMs and emails. In order to email adaptive cards using the bot framework, configuration is required. Follow [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard) to configure email services for the bot.
 > The "sender email address" that is required in the form, must match the value specified in the bot web app under BotSettings:EmailAddress.
 
-> Most customers will only require "Organisation" self-service registration, which a tenant admin can approve. However, those that require "Global" will need to wait up to 2 weeks for Microsoft to provision their request. Check documenation for more information.
+> Most customers will only require "Organisation" self-service registration, which a tenant admin can approve. **However, those that require "Global" will need to wait up to 2 weeks for Microsoft to provision their request. Check documenation for more information**.
 
 Once a provider has been created using [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard), grab the originator value from the form:
 ![Screenshot](../images/automation-developerdashboard-originator.png)
@@ -41,7 +41,7 @@ Once a provider has been created using [Microsoft's documenatation](https://docs
   * Click save after updating the value
 ![Screenshot](../images/Automation-Originator.png)
 
-> This configuration only applies to if email is required when using unified templating. If all the customer wants to enable is Teams IM, then the above configuration is not required.
+> This configuration only applies to if email is required when using unified templating. If ExampleAutomationGuestScenario the customer wants to enable is Teams IM, then the above configuration is not required.
 
 ## Admin Consent for Bot
 
