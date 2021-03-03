@@ -1,12 +1,12 @@
 # Teamwork Analytics Automation - Scenarios
 
+> Previously TWA Automation required different templates for Teams messages and emails, therefore the sent messages were also different, the old documentation for this configuration can be found [here](./../BotsContent.md).
+
 All of the following scenarios are deployed with TWA, if you have selected to include the notification service.
 
 For each scenario you will find a description of the scenario and any default configured values (highlighted in **bold**). For each scenario we are able to configure the _email message subject_ and _message content_.
 
-TWA Automation can Teams chat messages or emails. If the target user has installed the TWA Automation bot, they will receive a Teams message, if they don't have the bot installed they will receive an email. There is the option for TWA automation to self-install onto a users Teams client, this requires additional configuration. All emails are be sent from tips@teamworktips.email, please whitelist this address if required.
-
-> Previously TWA Automation required different templates for Teams messages and emails, the messages that were sent also looked different, the old documentation for this can be found [here](./../BotsContent.md).
+TWA Automation can send Teams chat messages or emails. If the target user has installed the TWA Automation bot, they will receive a Teams message, if they don't have the bot installed they will receive an email. There is the option for TWA automation to self-install onto a users Teams client, this requires additional configuration. All emails are be sent from tips@teamworktips.email, please whitelist this address if required.
 
 Please email Software.Support@modalitysystems.com if you require any customisation to the default scenarios or wish to discuss additional scenarios.
 
@@ -57,7 +57,7 @@ Email subject - Deleted Team Notification
 
 ### Weekly User Statistics
 
-Each user receives this message which summarises the number of calls, meetings and messages sent in the last 28 days. It also compares the values with those of the previous period.
+Each user receives this message which summarises the number of calls, meetings and messages sent in the last 7 days. It also compares the values with those of the previous period.
 
 Email subject - Teams Weekly User Statistics
 
@@ -65,6 +65,8 @@ Email subject - Teams Weekly User Statistics
 
 ### Monthly User Statistics
 
-Content - TODO **\*\***\*\***\*\***
-Screenshot - TODO **\*\***\*\***\*\***
-Email subject - TODO **\*\***\*\***\*\***
+Each user receives this message which summarises the number of calls, meetings and messages sent in the last 28 days. It also compares the values with those of the previous period.
+
+Email subject - Teams Monthly User Statistics
+
+![Team Ownership Card](./../images/bots/user-stats-monthly-card.png)
