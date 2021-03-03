@@ -58,7 +58,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
 1. Click **Register** and Azure AD will create an Application ID and present the Overview page
 
 1. Take note of the **ApplicationID** as this will be required further in the deployment process
-![overview of application](images/applicationOverview.png)
+![overview of application](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/applicationOverview.png)
 
 ### Add a Client Secret
 1. Navigate to the **Azure Active Directory** from the navigation pane on the left
@@ -69,7 +69,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
    * **Expiry** - Recommend setting this to **Never**
 1. Click **Add**
 1. Immediately take note of the **Secret** as this can not be retrieved later and will be required further in the deployment process
-![team work secret](images/teamworkSecrets.png)
+![team work secret](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/teamworkSecrets.png)
 
 ## Step 2 - Deploy TWA Automation
 
@@ -85,7 +85,6 @@ This ARM Template will install resources in your Azure tenant. The template will
 - 1 x Application Insights
 - 1 x Storage Account General Purpose v2 Hot
 - 1 x Service Bus Queue
-
 
 > Note: You must have registered an application beforehand. Provide the App ID and App Secret from Step 1.
 
