@@ -1,25 +1,72 @@
+# Teamwork Analytics Automation - Scenarios
 
-# Teamwork Analytics Automation - Default Scenarios
+> Previously TWA Automation required different templates for Teams messages and emails, therefore the sent messages were also different, the old documentation for this configuration can be found [here](./../BotsContent.md).
 
-There are 4 default "bot" / automation scenarios
+All of the following scenarios are deployed with TWA, if you have selected to include the notification service.
 
-1. Team Ownership – Confirm there are X owners per team
-2. Guest Report – remind owners they have guests in X teams and are responsible for the information they have access to
-3. Inactive Team – If a Team hasn’t been used in X time notify owners to achieve or delete it
-4. Deleted Team – Notify all owners and/or all members if a team is deleted
+For each scenario you will find a description of the scenario and any default configured values (highlighted in **bold**). For each scenario we are able to configure the _email message subject_ and _message content_.
 
-> Scenarios 1,2 and 3 return a max of 100 teams, per user. This is due to restrictions of bot framework message sizes.
+TWA Automation can send Teams chat messages or emails. If the target user has installed the TWA Automation bot, they will receive a Teams message, if they don't have the bot installed they will receive an email. There is the option for TWA automation to self-install onto a users Teams client, this requires additional configuration. All emails are be sent from tips@teamworktips.email, please whitelist this address if required.
 
-Automation alerts will always default to emailing the target person first. Currently Microsoft's Bot famework does not allow directly private messaging a Teams user via "bot" without that user first clicking to agree to recieve messages from the bot.
+Please email Software.Support@modalitysystems.com if you require any customisation to the default scenarios or wish to discuss additional scenarios.
 
-In the email, if the user clicks the link on the email to “use the bot” they get private bot messages
+> Each notification can contain a maximum of 35 teams, if there are more than 35 teams, only the first 35 will be included in the notification. This is due to a restriction of bot framework message sizes.
 
-Example Email:
+> A single adaptive card template is used to generate the message sent to Teams and via email. This means they look very similar when viewed in both. The screenshots below where all taken in Outlook.
 
-![alt text](./../images/bots/botemail.png "Bot email")
+For easy navigation, the scenarios have been grouped:
 
-Example Private Chat Message from the Bot in Teams:
+- [**Default**](#default-scenarios)
+- [**User Activity Statistics**](#user-activity-statistics-scenarios)
 
-![alt text](./../images/bots/botmessage.png "Bot email")
+## Default Scenarios
 
+### Team Ownership
 
+The owner will receive this message if they are the owner of a team which has less than **2 owners**. It is advised that the existing owner should the take action to nominate/request an additional team owner.
+
+Email subject - Teams with Owner Counts Notification
+
+![Team Ownership Card](./../images/bots/team-ownership-card.png)
+
+### Guest Members
+
+The owner will receive this message if they are the owner of a team which includes external guests. Team owners can then review Team content and guest membership to ensure it's still valid for use as initially intended.
+
+Email subject - Teams with Guests Notification
+
+![Team Ownership Card](./../images/bots/guest-members-card.png)
+
+### Inactive Team
+
+The owner(s) will receive this message if they are the owner of a team which has had no activity within the last **30 days**.
+
+Email subject - Teams Last Activity Notification
+
+![Team Ownership Card](./../images/bots/inactive-team-card.png)
+
+### Deleted Team
+
+The owner(s) will receive this message if they are the owner of a team which has been recently deleted. They will only receive one notification about each deleted team.
+
+Email subject - Deleted Team Notification
+
+![Team Ownership Card](./../images/bots/deleted-team-card.png)
+
+## User Activity Statistics Scenarios
+
+### Weekly User Statistics
+
+Each user receives this message which summarises the number of calls, meetings and messages sent in the last 7 days. It also compares the values with those of the previous period.
+
+Email subject - Teams Weekly User Statistics
+
+![Team Ownership Card](./../images/bots/user-stats-weekly-card.png)
+
+### Monthly User Statistics
+
+Each user receives this message which summarises the number of calls, meetings and messages sent in the last 28 days. It also compares the values with those of the previous period.
+
+Email subject - Teams Monthly User Statistics
+
+![Team Ownership Card](./../images/bots/user-stats-monthly-card.png)
