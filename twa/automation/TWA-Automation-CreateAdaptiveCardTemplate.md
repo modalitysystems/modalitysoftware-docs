@@ -1,4 +1,4 @@
-# Create an Adaptive Card Template
+# Teamwork Analytics Automation - Create an Adaptive Card Template
 
 This page describes how to create a custom Adaptive Card Template for your _TWA Automation_ custom scenario. Once configured in Azure Storage, _TWA Automation_ will use the template to create an Adaptive Card which can be sent to either Outlook or a Teams chat depending on your set up.
 
