@@ -11,3 +11,5 @@ Example Uri: https://graph.microsoft.com/v1.0/communications/callRecords/a3109a4
 
 Example ContentUri: https://tdgadlhp7koew3hlxtu.blob.core.windows.net/graph-response-content/95479e35-d62c-4457-9ad5-1baeb3787c7d
 
+The blob content is a Base64-encoded, Gzip-compressed copy of the response received from Microsoft Graph. No alterations, additons or deletions have been made to the file at this point - is it structurally identical to if the file had been downloaded from Microsoft Graph independantly of TWA Performance.
+
