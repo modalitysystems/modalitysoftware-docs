@@ -18,15 +18,19 @@ Microsoft have created a [template language](https://docs.microsoft.com/en-us/ad
 
 ## Limitations
 
-The Adaptive Card template schema is constantly being improved and new card elements are being added. However, not all of the latest features can be used in cards sent by _TWA Automation_. For a given scenario, _TWA Automation_ uses the same Adaptive Card template to send a Teams message or an email. At the time of writing, Outlook only supports Adaptive Cards version 1.0, whilst Microsoft Teams supports version 1.2. Therefore the unified template used by _TWA Automation_ supports Adaptive Cards version 1.0 only.
+The Adaptive Card template schema is constantly being improved and new card elements are being added. However, not all of the latest features can be used in cards sent by _TWA Automation_. For a given scenario, _TWA Automation_ uses the same Adaptive Card template when sending a Teams message or an email. At the time of writing, Outlook only supports Adaptive Cards version 1.0, whilst Microsoft Teams supports version 1.2. Therefore the unified template used by _TWA Automation_ supports Adaptive Cards version 1.0 only.
 
 > When creating a new Adaptive Card template you should check that the properties you are using are included in the version 1.0 [Adaptive Cards schema](https://adaptivecards.io/explorer/AdaptiveCard.html).
 
-In addition to supporting version 1.0 only, Outlook does **not** support _Action.Submit_, which is used for submitting input fields in forms, or calling an api directly. _Action.OpenUrl_ and embedded links **are** supported, so these should be used for gathering data or redirecting the user.
+In addition to supporting version 1.0 only, Outlook does **not** support _Action.Submit_, which is used for submitting input fields in forms, or calling an api directly. However _Action.OpenUrl_ and embedded links **are** supported, so these should be used for gathering data or redirecting the user. Unicode characters inside condition statements are also not supported when sending emails.
 
 Taking the above into account **the unified template, used by _TWA Automation_, supports Adaptive Cards version 1.0 only, with the exception of _Action.Submit, which is not supported at all_**.
 
-> If you are creating an Adaptive Card template for _TWA automation_ to send to Teams **only**, i.e., the customer has **not** set up _TWA Automation_ to send emails, then you can use all properties up to version 1.2
+> If you are creating an Adaptive Card template for _TWA Automation_ to send to Teams **only**, i.e., the customer has **not** set up _TWA Automation_ to send emails, then you can:
+>
+> - Use features from the [Adaptive Cards schema](https://adaptivecards.io/explorer/AdaptiveCard.html) up to version 1.2.
+> - Use _Action.Submit_ to trigger events
+> - Use unicode characters
 
 > The [_TWA Automation_ Example Template](#example-template) only uses features included in Adaptive Cards schema 1.0, as it is intended to be sent to Teams and Outlook, and is therefore fully supported by _TWA Automation_.
 
@@ -87,7 +91,7 @@ Follow these steps to create a new custom template:
 
 - **Componenets** - You should go through the template and delete sections or components that are not required for your template. This is easiest done in design mode, by clicking on the section, and pressing the displayed delete icon. You can copy and repeat sections by copying the pasting the relevant template JSON. New elements can also be added by dragging and dropping them from the _toolbox_ on the left.
 - **Data** - Update the contents of the _SAMPLE DATA EDITOR_ to match the data returned by the stored procedure for your scenario. See [below](#twa-automation-generates-data-in-the-following-format) for more detail.
-- **Data binding** - Update the data binding within components to point to your sample data, rather than the supplied example. You can either update the JSON directly, or by selecting the element in the designer and changing the relevant property. You should only need to change the _field_ names within the bindings. For more information refer to the [Micorsoft documentation](https://docs.microsoft.com/en-us/adaptive-cards/templating/language)
+- **Data binding** - Update the data binding within components to point to your sample data, rather than the supplied example. You can either update the JSON directly, or by selecting the element in the designer and changing the relevant property. You should only need to change the _field_ names within the bindings. For more information refer to the [Microsoft documentation](https://docs.microsoft.com/en-us/adaptive-cards/templating/language)
 - **Static text** - Update static text, by either updating the JSON directly, or by selecting the element in the designer and changing the _Text_ property.
 - **Icons/Images** - Update the _url_ property of _Image_ elements with the relevant url. Modality has a publicly accessible library of icons available, contact Development for more information.
 

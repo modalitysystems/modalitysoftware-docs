@@ -1,6 +1,7 @@
 # Teamwork Analytics Automation - Configuring Scenarios
 
 ## Overview
+
 Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Configuration of new or existing scenarios is a multi-step process and is described in this document.
 
 ### What can I trigger an Automation scenario from?
@@ -10,11 +11,13 @@ It is important to understand that the Teamwork Analytics database contains the 
 #### Repeating Scheduled Scenararios - messages repeat each X period if the state doesn't change
 
 Most automations work on schedules, we call these scheduled scenarios:
- - Every 3 months remind users about guests
- - Ever month remind owners about inactive teams
- - Every week remind users about teams that only have 1 owner
+
+- Every 3 months remind users about guests
+- Ever month remind owners about inactive teams
+- Every week remind users about teams that only have 1 owner
 
 You can also use multiple scenarios to "escelate" messaging
+
 - This team has been inactive for 30 days
 - This team has been inactive for 45 days
 - This team has been inactive for 90 days or more
@@ -25,7 +28,7 @@ In these cases, the triggers are non-overlapping. e.g. find teams inactive for m
 
 We can also trigger automations to only send the message once. This is based on the exact text of the message. These are **"send once scenarios"**
 
-In these scenarios the specific notificaiton for the specific user(s) will only send once 
+In these scenarios the specific notificaiton for the specific user(s) will only send once
 
 e.g. the trigger will scan for all deleted teams in a time window, e.g last 7 days, but then the automation checks if the exact message has been sent before. f it has, it will not be sent, if it hasn't it will be sent. - the scenario runs daily, but only sends new messages. This means we can alert daily on "newly deleted teams".
 
@@ -35,10 +38,8 @@ These work well when a query can be time bound, for example we have team creatio
 - This is a recently created public team, we prefer teams to be private
 - This is a recently deleted team, are you sure you want it to be deleted?
 
-
-
-
 ### Create or Edit a Scenario
+
 Everything related to TWA Automation is located within the TWA database which will be located within the "automation" schema, for example a table would be labelled as "automation.tablename". Unless specifically instructed here do not change the database schema or data content of this database. Only the areas specified in these docs should be configured as documented.
 
 Creating a new scenario involves:
@@ -54,10 +55,17 @@ Existing scenarios can be modified in any of the 4 ways described.
 
 1. Connect to the TWA Database
 2. Create a stored procedure, ensure that it has a schema (prefix) of **"automation"**, for example **"automation.spNewScenario"**
-3. It is important to the whole process, that the stored procedure **has to return** the following columns*
+3. It is important to the whole process, that the stored procedure **has to return** the following columns
+
    1. UserId
    2. UserMailAddress
+
+   > These columns **must** return values and are case sensitive. If there are any rows that do not have a value for one of these properties, that row will be ignored and logged. Only valid rows will be sent to the cloud solution. Any additional columns that are returned will be processed.
+
 4. Any additional columns which are returned will be supported, but are not a requirement in order to function
+
+   > All additional columns **should** return values. If any of the additional columns do not have a value (null), the message for that row will still be sent, but the the value will display as _(null)_.
+
 5. Parameters are **not** supported, so do not add these e.g. automation.spNewScenario @Name nvarchar(30)
 6. Run the SQL inside of the procedure and test that the data you expect is returned and that no errors occur
 7. Use the code below (BotGuestNotifications Scenario) as a guide to writing your own custom scenario:
@@ -66,7 +74,7 @@ Existing scenarios can be modified in any of the 4 ways described.
 CREATE PROCEDURE [automation].[SpGetTeamsWithGuests]
 AS
 BEGIN
-	SELECT 
+	SELECT
 		teams.[TeamID]
 		,teams.[DisplayName] AS TeamDisplayName
 		,teams.[LastActivity]
@@ -74,14 +82,14 @@ BEGIN
 		,towners.[UserName] AS OwnerDisplayName
 		,towners.[Mail] AS UserMailAddress
 		,towners.[External] AS OwnerIsExternal
-		,COUNT(tguests.[UserID]) AS GuestCount 
-	FROM automation.Teams teams 
+		,COUNT(tguests.[UserID]) AS GuestCount
+	FROM automation.Teams teams
 		JOIN automation.TeamUsers towners ON towners.[TeamID] = teams.[TeamID]
 		JOIN automation.TeamUsers tguests ON tguests.[TeamID] = teams.[TeamID]
-	WHERE 
-		teams.IsArchived=0 
+	WHERE
+		teams.IsArchived=0
 		AND towners.[External] = 0
-		AND towners.[UserType] = 'Owner' 
+		AND towners.[UserType] = 'Owner'
 		AND tguests.[DataType] = 'Guest'
 		AND towners.[Anonymised] = 0
 	GROUP BY
@@ -95,8 +103,6 @@ BEGIN
 END
 GO
 ```
-
-> \*These columns **must** must return values and are case sensitive. If there are any rows that do not have a value for one of these properties, that row will be ignored and logged. Only valid rows will be sent to the cloud solution. Any additional columns that are returned will be processed.
 
 #### 2. Add the scenario to the list of scenarios in configuration
 
@@ -117,14 +123,14 @@ By default, the following values should be populated in the table:
 
 Template definition is defined in the Azure Table Storage store, in the **"ScenarioTemplates"** table. This table has the following columns:
 
-* PartitionKey - represents the tenant id
-* RowKey - must match name of the scenario
-* EmailSubject - the email subject which will display when the scenario sends an email
-* Template - the content which will display when the scenario sends an email or Teams IM ([Configuring Adaptive Cards](/twa/automation/TWA-Automation-CreateAdaptiveCardTemplate.md))
+- PartitionKey - represents the tenant id
+- RowKey - must match name of the scenario
+- EmailSubject - the email subject which will display when the scenario sends an email
+- Template - the content which will display when the scenario sends an email or Teams IM ([Configuring Adaptive Cards](/twa/automation/TWA-Automation-CreateAdaptiveCardTemplate.md))
 
->If this table does not exist or is completely empty the four default scenarios which mentioned above will still work using hardcoded values.
+> If this table does not exist or is completely empty the four default scenarios which mentioned above will still work using hardcoded values.
 
->Templates for existing scenarios can be changed by editing this table, and will take effect the next time the scenario is scheduled.
+> Templates for existing scenarios can be changed by editing this table, and will take effect the next time the scenario is scheduled.
 
 Here is an [example template](./ExampleAutomationGuestScenario.json), which is the default guest scenario.
 
@@ -150,7 +156,7 @@ Create a new scheduled task, copying the executable path from the other schedule
 
 > Ensure that the name matches exactly the same as the "name" column that you added into the Scenarios SQL table.
 
->Pay close attention to the scheduled times which you set-up for your task, take into account what your custom stored procedure is doing (for example, is the data over a specified amount of time) and set a reasonable time to run, also consider the remaining tasks scheduled times.
+> Pay close attention to the scheduled times which you set-up for your task, take into account what your custom stored procedure is doing (for example, is the data over a specified amount of time) and set a reasonable time to run, also consider the remaining tasks scheduled times.
 
 ## Running Configured Scenario
 

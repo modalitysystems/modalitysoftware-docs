@@ -153,7 +153,7 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change + '%'))}",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change >= 1000, '1000+%', RowsWithAdditionalProperties[0].Value.ComparisonCountData1Change + '%'))}",
                             "horizontalAlignment": "Center",
                             "wrap": true,
                             "size": "ExtraLarge",
@@ -197,7 +197,7 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change + '%'))}",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change >= 1000, '1000+%', RowsWithAdditionalProperties[0].Value.ComparisonCountData2Change + '%'))}",
                             "horizontalAlignment": "Center",
                             "wrap": true,
                             "size": "ExtraLarge",
@@ -518,19 +518,19 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountOneChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.CountOneChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.CountOneChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.CountOneChange + '%'))}",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountOneChange == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.CountOneChange >= 1000, '1000+%', RowsWithAdditionalProperties[0].Value.CountOneChange + '%'))}",
                             "color": "${if(RowsWithAdditionalProperties[0].Value.CountOneChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.CountOneChange > 0, 'good', 'attention'))}",
                             "spacing": "Small"
                         },
                         {
                             "type": "TextBlock",
-                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountTwoChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.CountTwoChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.CountTwoChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.CountTwoChange + '%'))}",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.CountTwoChange == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.CountTwoChange >= 1000, '1000+%', RowsWithAdditionalProperties[0].Value.CountTwoChange + '%'))}",
                             "color": "${if(RowsWithAdditionalProperties[0].Value.CountTwoChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.CountTwoChange > 0, 'good', 'attention'))}",
                             "spacing": "Small"
                         },
                         {
                             "type": "TextBlock",
-                            "text": "${if(RowsWithAdditionalProperties[0].Value.TotalChange == 0, '&nbsp;', if(RowsWithAdditionalProperties[0].Value.TotalChange >= 0, '▲ ' + RowsWithAdditionalProperties[0].Value.TotalChange + '%', '▼ ' + RowsWithAdditionalProperties[0].Value.TotalChange + '%'))}",
+                            "text": "${if(RowsWithAdditionalProperties[0].Value.TotalChange == 0, '\\-', if(RowsWithAdditionalProperties[0].Value.TotalChange >= 1000, '1000+%', RowsWithAdditionalProperties[0].Value.TotalChange + '%'))}",
                             "color": "${if(RowsWithAdditionalProperties[0].Value.TotalChange == 0, 'default', if(RowsWithAdditionalProperties[0].Value.TotalChange > 0, 'good', 'attention'))}",
                             "separator": true,
                             "height": "stretch",
@@ -592,7 +592,7 @@
             "items": [
                 {
                     "type": "TextBlock",
-                    "text": "${Value.Name}: ${Value.CountOne} ${if(Value.CountOneChange == 0, '&nbsp;', if(Value.CountOneChange >= 0, '▲ ' + Value.CountOneChange + '%', '▼ ' + Value.CountOneChange + '%'))}",
+                    "text": "${Value.Name}: ${Value.CountOne} ${if(Value.CountOneChange == 0, '\\-', '(' + Value.CountOneChange + '%)')}",
                     "color": "${if(Value.CountOneChange == 0, 'default', if(Value.CountOneChange > 0, 'good', 'attention'))}"
                 }
             ],
