@@ -29,4 +29,4 @@ This is the total number of Group calls / Meetings. This number closely matches 
 
 #
 
-In some cases the Usage reports have higher call / meeting counts than us. Some of these a due to bad calls / meetings with 0 / null packet utilization or 0 length. There are however still some other unknown missing records that we haven't yet accounted for. Currently while we don't save the streams of these calls we still save them all to the call table.
+In some cases the Usage reports have higher call / meeting counts than us. It is unknown why some calls records are missing, an ongoing investigation into this is still underway. Currently while we don't save the streams of these calls we still save them all to the call table.
