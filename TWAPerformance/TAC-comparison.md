@@ -153,16 +153,16 @@ If you sum this column, you get a number different to the 1:1 number from the he
 
 if you sum this column, you get a number different to the Audio time number from the headline above. We do not know why this is. 
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/audio-minutes.sql).
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/audio-minutes.sql).
 
 #### Video Time
 
 if you sum this column, you get a number close to the Video time number from the headline above.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/video-minutes.sql).
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/video-minutes.sql).
 
 #### Screen Share Time
 
 if you sum this column, you get a number close to the Screen Share time number from the headline above.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers  - [SQL Validation](tac-sql/app-share-minutes.sql).
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/app-share-minutes.sql).
