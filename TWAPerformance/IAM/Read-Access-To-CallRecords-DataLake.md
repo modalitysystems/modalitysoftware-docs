@@ -31,7 +31,8 @@ Example screenshot:
 ![access control](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/accesscontrol.png)
 
 5. Click the **Add role assignment** button to add a new role.
-6. In the Add role assignment window, select the Azure Storage role **Storage-Blob-Data-Reader**. Then add **CallRecordsDatalakeReader** security group
+6. In the Add role assignment window, select the Azure Storage role **Storage-Blob-Data-Reader**. Then add **CallRecordsDatalakeReader** security group.
+7. Repeat step 5 & 6 but add **Storage Queue Data Reader**. Then add **CallRecordsDatalakeReader** security group.
 
 Example screenshot:
 
