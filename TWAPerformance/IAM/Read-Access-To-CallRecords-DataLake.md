@@ -32,7 +32,7 @@ Example screenshot:
 
 5. Click the **Add role assignment** button to add a new role.
 6. In the Add role assignment window, select the Azure Storage role **Storage-Blob-Data-Reader**. Then add **CallRecordsDatalakeReader** security group.
-7. Repeat step 5 & 6 but add **Storage Table Data Reader**. Then add **CallRecordsDatalakeReader** security group.
+7. Repeat step 5 & 6 but add **Storage Queue Data Reader**. Then add **CallRecordsDatalakeReader** security group.
 
 Example screenshot:
 
@@ -47,3 +47,28 @@ The identity to whom you assigned the role appears listed under that role. For e
 Example screenshot:
 
 ![role preview](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/rolepreview.png)
+
+## Create a Shared Access Signature (SaS) for third party access ##
+
+A shared access signature (SAS) is a URI that grants restricted access rights to Azure Storage resources. You can provide a shared access signature to clients who should not be trusted with your storage account key but whom you wish to delegate access to certain storage account resources. By distributing a shared access signature URI to these clients, you grant them access to a resource for a specified period of time.
+An account-level SAS can delegate access to multiple storage services (i.e. blob, file, queue, table). **Note that stored access policies are currently not supported for an account-level SAS**.
+
+Example Screenshot:
+
+![role assignment](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/sas-ey.PNG)
+
+Select **object** and proceed to Generate the Key and URI.
+
+Example Screenshot:
+
+![role assignment](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/generate-ey-sas-key.PNG)
+
+Copy the key information and store it somewhere safe.
+
+Example Screenshot:
+
+![role assignment](https://docs.modalitysystems.com/TWAPerformance/IAM/Images/sas-key-uri.PNG)
+
+
+
+
