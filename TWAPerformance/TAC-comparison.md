@@ -16,15 +16,15 @@ Where metrics are comparable between TAC and TWA Performance, SQL is provided fo
 
 #### Meetings Organized
 
-It is unknown what this number actually represents, it does not equal the total meetings organised (scheduled + adhoc) from the per user report, or TWA Performance.
+The number of meetings organised.
 
-<img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-organised.sql).
 
 #### Meetings Participated
 
-It is unknown what this number actually represents. It does not equal the total meetings participated (scheduled + adhoc) from the per user report, or TWA Performance. It also does not equal the unique number of meetings joined below ("Total Meetings").
+The number of meetings joined (not unique meeting count). if 2 users joined a meeting, this represents 2 meeting joins, not one.
 
-<img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-participated.sql).
 
 #### 1:1 Calls
 
