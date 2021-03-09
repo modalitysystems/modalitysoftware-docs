@@ -14,15 +14,15 @@ Where metrics are comparable between TAC and TWA Performance, SQL is provided fo
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Out of scope.
 
-#### Meetings Organized
+#### Total Meetings Organized
 
 The number of meetings organised.
 
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-organised.sql).
 
-#### Meetings Participated
+#### Total Meetings Participated
 
-The number of meetings joined (not unique meeting count). if 2 users joined a meeting, this represents 2 meeting joins, not one.
+The unqiue number of meetings joined if 2 users joined the same meeting, this represents 1 meeting joins, not two.
 
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-participated.sql).
 
@@ -119,7 +119,6 @@ If you sum this column, we can only assume this is the number of per user adhoc 
 #### Total Meetings Participated
 
 The number of meetings joined (not unique meeting count). if 2 users joined a meeting, this represents 2 meeting joins, not one.
-If you sum this column, you get the Meetings Participated number from the headlines above (or very close to).
 
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-participated.sql).
 
