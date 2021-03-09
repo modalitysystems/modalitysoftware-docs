@@ -85,12 +85,6 @@ If you sum this column, you end up with a number that doesn't correspond with an
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
-#### Meetings Organised
-
-If you sum this column, you get the Meetings Organised number from the headlines above (or very close to). You don't get what we believe is the correct number (scheduled + adhoc). Therefore, it is not known what this number actually represents. It does not match TWA Performance. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
-
-<img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
-
 #### Meetings Organised Scheduled
 
 If you sum this column, we can only assume this is the number of scheduled meetings organised. 
@@ -103,18 +97,12 @@ If you sum this column, we can only assume this is the number of adhoc meetings 
 
 <img src="images/no.png" width="25" height="25"> TWA Support - TWA does not currently differentiate between scheduled and adhoc.
 
-#### Meetings Organised Scheduled + Meetings Organised Adhoc
+#### Total Meetings Organised
 
-If you sum the sum of meetings organised scheduled and meetings organised adhoc, you get a number that matches (or very close to) the TWA Performance metric for total meetings organised. This does not equal the meetings organised column (we believe a MSFT bug).
+The number of meetings organised.
+If you sum this column, you get the Meetings Organised number from the headlines above (or very close to).
 
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-organised.sql).
-
-#### Meetings Participated
-
-If you sum this column, you get a number different to the meetings participated number from the headlines above. We believe this is mainly because the headline figure is a unique count of meetings participated, whereas the per user report is a count of per user meeting join.
-However, this number still does not add up what we believe is the total number of meetings participated (scheduled + adhoc). Therefore, it is not known what this number actually represents. It does not match TWA Performance. Please see below for "Meetings Organised Scheduled + Meetings Organised Adhoc" for what we believe is the true meetings organised count.
-
-<img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
 #### Meetings Participated Scheduled
 
@@ -128,9 +116,10 @@ If you sum this column, we can only assume this is the number of per user adhoc 
 
 <img src="images/no.png" width="25" height="25"> TWA Support - TWA does not currently differentiate between scheduled and adhoc.
 
-#### Meetings Participated Scheduled + Meetings Participated Adhoc
+#### Total Meetings Participated
 
-If you sum the sum of meetings participated scheduled and meetings participated adhoc, you get a number that matches (or very close to) the TWA Performance metric. This does not equal the meetings participated column (we believe a MSFT bug).
+The number of meetings joined (not unique meeting count). if 2 users joined a meeting, this represents 2 meeting joins, not one.
+If you sum this column, you get the Meetings Participated number from the headlines above (or very close to).
 
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings-participated.sql).
 
