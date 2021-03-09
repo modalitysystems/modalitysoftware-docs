@@ -1,7 +1,9 @@
-SELECT  DATEDIFF(MINUTE, SegmentStart, SegmentEnd)
-  FROM [dbo].[Streams]
-    WHERE SegmentStart > '2021-01-31 00:00' --reporting window
-  AND SegmentEnd < '2021-02-07 00:00' --reporting window
-  AND UserId IN (SELECT Id FROM Users)
-  AND MediaType = 3
-  GROUP BY SegmentId, SegmentStart, SegmentEnd
+SELECT  DATEDIFF(MINUTE, s.StartDateTime, s.EndDateTime)
+  FROM [dbo].[Segments] s
+  JOIN [dbo].[MediaStreams] ms on ms.CallId = s.CallId and ms.SegmentId = s.SegmentId
+    WHERE s.StartDateTime > '2021-03-02 00:00' --reporting window
+  AND s.EndDateTime < '2021-03-09 00:00' --reporting window
+  AND s.CalleeId IN (SELECT Id FROM Users) OR s.CallerId IN (SELECT Id FROM Users)
+  AND ms.MediaLabel = 11
+  AND ms.PacketUtilization > 0
+  GROUP BY s.SegmentId, s.StartDateTime, s.EndDateTime
