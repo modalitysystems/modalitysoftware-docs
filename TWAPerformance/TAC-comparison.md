@@ -26,13 +26,6 @@ It is unknown what this number actually represents. It does not equal the total 
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
-#### Total Meetings
-
-The unique number of meetings joined. It does not equal any number in the per user report.
-
-<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/total-meetings.sql).
-
-
 #### 1:1 Calls
 
 The unique number of 1:1 calls. Also known as Peer 2 Peer (P2P) calls, not meetings. It does not equal any number in the per user report. 
