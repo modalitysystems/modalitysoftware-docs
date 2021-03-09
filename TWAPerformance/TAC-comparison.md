@@ -61,7 +61,7 @@ The same logic as Audio time, but for the screen/app share modality.
 
 ![TAC graph day](images/tac-graph-day.png)
 
-If you hover over a day, the number presented is incorrect. It is a significantly larger number than the weeks total (un-comprehendible), it does not add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
+If you hover over a day, the number presented is incorrect. It is a significantly different than the weeks total (even after diving by 7), it does not add up to any number in the TAC per user report or TWA Performance. It therefore stands to reason the graph itself is completely incorrect.  Please ignore these numbers and refer to the TAC per user CSV download or TWA Performance reports.
 
 <img src="images/no.png" width="25" height="25"> TWA Support - Invalid Metric.
 
@@ -129,13 +129,18 @@ If you sum this column, you get a number different to the 1:1 number from the he
 <img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/p2p-calls-joined.sql).
 
 #### Audio Time
+If you sum this column you get the audio time number from the headlines above.
 
 <img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/audio-minutes.sql).
 
 #### Video Time
 
+If you sum this column you get the video time number from the headlines above.
+
 <img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/video-minutes.sql).
 
 #### Screen Share Time
+
+If you sum this column you get the screen share time number from the headlines above.
 
 <img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers  - [SQL Validation](tac-sql/app-share-minutes.sql).
