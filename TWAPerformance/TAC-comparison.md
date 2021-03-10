@@ -43,19 +43,25 @@ The number of audio minutes the users in your tenant are involved in (send, rece
 
 To calculate total audio time, each users total audio time for each call is summed. The result is Audio Time, or total audio time.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/audio-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/audio-minutes.sql).
 
 #### Video Time
 
 The same logic as Audio time, but for the video modality. 
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/video-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/video-minutes.sql).
 
 #### Screen Share Time
 
 The same logic as Audio time, but for the screen/app share modality. 
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers  - [SQL Validation](tac-sql/app-share-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+> 
+<img src="images/warning.png" width="25" height="25"> TWA Support - TWA reports twice as much screen share time as TAC, this is because we count both video screen share and app screen share.  - [SQL Validation](tac-sql/app-share-minutes.sql).
 
 ### The Graph
 
@@ -131,16 +137,22 @@ If you sum this column, you get a number different to the 1:1 number from the he
 #### Audio Time
 If you sum this column you get the audio time number from the headlines above.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/audio-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/audio-minutes.sql).
 
 #### Video Time
 
 If you sum this column you get the video time number from the headlines above.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers - [SQL Validation](tac-sql/video-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+
+<img src="images/yes.png" width="25" height="25"> TWA Support - [SQL Validation](tac-sql/video-minutes.sql).
 
 #### Screen Share Time
 
 If you sum this column you get the screen share time number from the headlines above.
 
-<img src="images/warning.png" width="25" height="25"> TWA Support - TWA does not include "receive only" minutes, this is currently skewing the numbers  - [SQL Validation](tac-sql/app-share-minutes.sql).
+> Both TWA and TAC are unable to see a per modality duration in a call. eg, if a user is in an audio call for 10 minutes, but only sends/receives video for the last 5 minutes, both TWA and TAC would say the user for that call had 10 minutes audio and 10 minutes video. 
+
+<img src="images/warning.png" width="25" height="25"> TWA Support - TWA reports twice as much screen share time as TAC, this is because we count both video screen share and app screen share.  - [SQL Validation](tac-sql/app-share-minutes.sql).
