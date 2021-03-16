@@ -2,7 +2,17 @@
 
 ## Overview
 
-Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams. Configuration of new or existing scenarios is a multi-step process and is described in this document.
+Teamwork Analytics Automation (TWA Automation) has access to all of the data stored by TWA, meaning it is possible to use this data to create any number of configure automation scenarios. If the criteria is met in the scenario and returns data, then this will enable automated messages to be sent direct to users via email or Microsoft Teams private message. 
+
+There are a number of automation scenarios that ship with Teamwork Analytics. These can be enabled or disabled but should not be edited as each time the product is upgraded (CAT or SaaS) these scenarios will return to their defaults (Both the Stored Procedure/Trigger and Adaptive Card layout).
+
+If you wish to add non-default scenarios, custom triggers or custom adaptive cards, you or Modality, as part of a service wrap, can develop your own. These will be preserved during any product upgrade.
+
+Modality is happy to share the stored procedures/triggers and Adaptive Cards for each of the default scenarios, but do not list them on our docs by default as they are source controlled with the product code. If you would like a copy of these to assist with your automation scenario development, please contact software.support@modalitysystems.com
+Examples of trigger and adaptive cards are provided below.
+
+
+Configuration of new or existing scenarios is a multi-step process and is described in this document.
 
 ### What can I trigger an Automation scenario from?
 
