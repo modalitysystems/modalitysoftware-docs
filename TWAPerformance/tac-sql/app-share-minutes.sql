@@ -1,9 +1,11 @@
-SELECT  DATEDIFF(MINUTE, s.StartDateTime, s.EndDateTime)
-  FROM [dbo].[Segments] s
-  JOIN [dbo].[MediaStreams] ms on ms.CallId = s.CallId and ms.SegmentId = s.SegmentId
-    WHERE s.StartDateTime > '2021-03-02 00:00' --reporting window
-  AND s.EndDateTime < '2021-03-09 00:00' --reporting window
-  AND (s.CalleeId IN (SELECT Id FROM Users) OR s.CallerId IN (SELECT Id FROM Users))
-  AND ms.MediaLabel = 11
-  AND ms.PacketUtilization > 0
-  GROUP BY s.StartDateTime, s.EndDateTime, s.CalleeId, s.CallerId
+SELECT SUM(DesktopShareMinutes) as ConferenceDesktopShareMinutes
+  FROM [aggregates].[ConferenceMinsByUsers]
+  WHERE [Date] > '2021-03-02 00:00' --reporting window
+  AND [Date] < '2021-03-09 00:00' --reporting window
+  AND [_HashUserId] IN (SELECT [_HashUserId] FROM Users)
+
+  SELECT SUM(DesktopShareMinutes) as CallDesktopShareMinutes
+  FROM [aggregates].[P2PMinsByUsers]
+  WHERE [Date] > '2021-03-02 00:00' --reporting window
+  AND [Date] < '2021-03-09 00:00' --reporting window
+  AND [_HashUserId] IN (SELECT [_HashUserId] FROM Users)
