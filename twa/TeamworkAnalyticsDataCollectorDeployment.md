@@ -23,17 +23,13 @@ Once the application has been registered, submit the Application ID of your newl
 
 ### Step 2: Deploy Teamwork Analytics
 
+Essentially Teamwork Analytics consists of a Collector service that writes to a database and optionally a Notification Service that gets triggered by scheduled tasks to post messages to the Automation Bot. 
+
+These components can either be deployed to your own Windows VM that writes to your own SQL Server 2016 or greater database or we can deploy all required components to a self contained resource group in Azure using an ARM Template.
+
+Both methods of deployment are achieved but running the InstallTWA deployment script as [detailed here](deploytwa.md).
+
 Follow one of the two guides to deploy Teamwork Analytics depending on your requirements.
-
-#### ARM Template Deployment (Recommended)
-
-Teamwork Analytics uses an Azure Resource Management (ARM) template to ease deployment. The ARM template ensures that all data is held on your Azure tenant, and is a simple way to deploy and secure several resources on your Azure tenant. Using the information provided to you from the previous step, follow the [deployment steps here](deploytwa.md).
-
-When the deployment has completed, review the resources which have been created within the resource group. One of the resources is a SQL Server with a name similar to *twa-aaa1bb2c3dd4e*. Make a note of this name.
-
-#### Custom Deployment (Pre-built infrastructure)
-
-Teamwork Analytics can also be deployed and configured to use an existing environment. By using your own SQL Server and provided information, you can request our PowerShell Script that will download and install the deployment on your existing machine. Once you have access to our PowerShell Script you can follow [these deployment steps](customDeploytwa).
 
 ### Step 3: Get PowerBI Apps from the App Store and Connect to your SQL Database
 
