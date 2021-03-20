@@ -27,15 +27,13 @@ Essentially Teamwork Analytics consists of a Collector service that writes to a 
 
 These components can either be deployed to your own Windows VM that writes to your own SQL Server 2016 or greater database or we can deploy all required components to a self contained resource group in Azure using an ARM Template.
 
-Both methods of deployment are achieved but running the InstallTWA deployment script as [detailed here](deploytwa.md).
+Both methods of deployment are achieved but running the InstallTWA deployment script.
 
-Follow one of the two guides to deploy Teamwork Analytics depending on your requirements.
+You can find a Teamwork Analytics installation guide at this [link](deploytwa.md).
 
 ### Step 3: Get PowerBI Apps from the App Store and Connect to your SQL Database
 
-You can find the PowerBi Apps at this [link](https://modalitysoftware.com/twa) 
-
->[PowerBi Apps installation guide](PowerBIAppsAdminInstallGuide.md)
+You can find a PowerBi Apps installation guide at this [link](PowerBIAppsAdminInstallGuide.md).
 
 ### Step 4 (optional): Teamwork Analytics Bot Deployment
 
@@ -45,7 +43,7 @@ To deploy the teamwork analytics Teams Bot, you need to install the Bot App into
 
 If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
-If you would like more information on the default Bot scenarios and their message content see [here](BotsContent.md)
+If you would like more information on the default Bot scenarios and their message content see [here](BotsContent.md).
 
 ### Step 5 (optional): Configuring 
 
@@ -69,12 +67,10 @@ The filters for reports containing user data can be configured. For information 
 
 #### Toggling Feature Flags
 
-You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md)
+You can enable and disable previously set feature flags from the Teamwork Analytics Data Collector config file. Steps on how to do this can be found [here](ChangingFeatureFlags.md).
 
 #### SQL Performance
-You can fine tune TWA's load on SQL. Find out more about this [here](sql-performance.md)
-
-
+You can fine tune TWA's load on SQL. Find out more about this [here](sql-performance.md).
 
 ### Step 6: Individual Power BI Apps to install and connect to backend database
 >[Teamwork Analytics: Teams Usage](ModalityTeamsUsage.md)
