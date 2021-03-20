@@ -1,6 +1,6 @@
 # How to deploy Teamwork Analytics
 
-Teamwork Analytics is provided as an **Azure Resource Manager (ARM) template** that automatically provisions and starts the required resources in your Azure subscription but can also be installed on a **Customer Provided Windows VM** that writes to a customer provided SQL Server 2016 or higher database. Both modes of deployment are achieved by using the same deployment script
+Teamwork Analytics is provided as an **Azure Resource Manager (ARM) template** that automatically provisions and starts the required resources in your Azure subscription but can also be installed on a **Customer Provided Windows VM** that writes to a customer provided SQL Server 2016 or higher database. Both modes of deployment are achieved by using the same deployment script.
 
 > Note: You will need a trial or full licence key, contact Software.Support@modalitysystems.com for a key if you do not have one.
 
@@ -14,15 +14,15 @@ Each script is signed and will require an **Administrative PowerShell** window a
 
 - [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps-msi)
   
-They will also need to be able to access the internet so if you are running the scripts from behind a web proxy then this will need to be configured. First off run the PowerShell script by typing the name of the script from the script directory
+They will also need to be able to access the internet so if you are running the scripts from behind a web proxy then this will need to be configured. First off run the PowerShell script by typing the name of the script from the script directory.
 
   ![Script Choice](images/scriptchoice.png)
 
-Enter **O** to download and install Teamwork Analytics on the Windows machine that the script is being run from, or **A** to install all required components into Azure using an ARM Template
+Enter **O** to download and install Teamwork Analytics on the Windows machine that the script is being run from, or **A** to install all required components into Azure using an ARM Template.
 
-The script can also be used to move Teamwork Analytics from the machine that the script is being run from into Azure
+The script can also be used to move Teamwork Analytics from the machine that the script is being run from into Azure.
 
-Once you have made your selection enter the information as prompted, all selections are saved to a parametersFile.json file that will be read the next time the script is run to make upgrades easier
+Once you have made your selection enter the information as prompted, all selections are saved to a parametersFile.json file that will be read the next time the script is run so as to make upgrades easier.
 
 For ARM Template deployments the following will be installed in your Azure tenant:
 
@@ -40,11 +40,11 @@ For ARM Template deployments the following will be installed in your Azure tenan
 
 Pricing to run these Azure components in your tenant vary and are subject to change. [View the current price estimate](https://azure.com/e/3c58dcaaa4ee498d92ed80cbec706ea9).
 
-Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. This can be found in the parametersFile.json
+Once the deployment is complete, if you have opted to include the Notification Service, you will need to provide the Bot Preshared Key to Modality to allow us to authenticate with your deployment. This can be found in the parametersFile.json.
 
 ## Upgrading
 
-Each time the script is run and regardless of deployment mode that has been chosen, the Teamwork Analytics services are removed and then a new service is installed. If you are using a different version script than was used before then that version will be installed. When the service starts the database will attempt to be upgraded. If a parametersFile exists in the script folder then this will be read and used for the deployment. However, if there is no parametersFile then you will need to complete all information as prompted
+Each time the script is run and regardless of deployment mode that has been chosen, the Teamwork Analytics services are removed and then a new service is installed. If you are using a different version script than was used before then that version will be installed. When the service starts the database will attempt to be upgraded. If a parametersFile exists in the script folder then this will be read and used for the deployment. However, if there is no parametersFile then you will need to complete all information as prompted.
 
 ## Updating Power BI apps
 
@@ -62,9 +62,9 @@ Detailed steps here: [PowerBI Install Guide](/twa/PowerBIAppsAdminInstallGuide.h
 
 ## Pausing or uninstalling
 
-1. If you selected **O** to download and install Teamwork Analytics on the Windows machine that the script is being run from then you can start and stop the **ModalityTeamworkAnalytics** windows service and where the Notification service has been deployed then you can disable the Scheduled Tasks that start with **Bot** to prevent messages being sent to the Automation Bot
+1. If you selected **O** to download and install Teamwork Analytics on the Windows machine that the script is being run from then you can start and stop the **ModalityTeamworkAnalytics** windows service and where the Notification service has been deployed then you can disable the Scheduled Tasks that start with **Bot** to prevent messages being sent to the Automation Bot.
 
-* To uninstall the service from the machine that the script is being run, use the -uninstall yes switch
+* To uninstall the service from the machine that the script is being run, use the -uninstall yes switch.
 
   ![Script Uninstall](images/scriptuninstall.png)
 
