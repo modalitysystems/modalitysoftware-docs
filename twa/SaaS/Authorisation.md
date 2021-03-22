@@ -2,24 +2,6 @@
 
 The following steps must be completed with an account with **Azure Active Directory Global Administrator** rights.
 
-## Automation permissions
-
-On following the [Automation authorisation link](https://mod.qa/AutomationConsent), you will be prompted to sign in to Office 365 with your admin account.
-
-![Initial sign in](../images/TWASaaS-CT-auth1.png)
-
-Once authenticated, a summary of the app and permissions requested is shown.
-
-![Permissions summary](../images/TWASaaS-Automation-auth2.png)
-
-The arrows can be expanded to review further detail for each section.
-
-![Permissions detail](../images/TWASaaS-Automation-auth3.png)
-
-Clicking **Accept** will complete the process and show a final page.
-
-![Final splash page](../images/TWASaaS-Report-auth4.png)
-
 ## Reporting permissions
 
 On following the [Reporting authorisation link](https://mod.qa/ReportConsent), you will be prompted to sign in to Office 365 with your admin account.
@@ -38,6 +20,23 @@ Clicking **Accept** will complete the process and show a final page.
 
 ![Final splash page](../images/TWASaaS-Report-auth4.png)
 
+## Teamwork Automation permissions (Required for Notification Service)
+
+On following the [Automation authorisation link](https://mod.qa/AutomationConsent), you will be prompted to sign in to Office 365 with your admin account.
+
+![Initial sign in](../images/TWASaaS-CT-auth1.png)
+
+Once authenticated, a summary of the app and permissions requested is shown.
+
+![Permissions summary](../images/TWASaaS-Automation-auth2.png)
+
+The arrows can be expanded to review further detail for each section.
+
+![Permissions detail](../images/TWASaaS-Automation-auth3.png)
+
+Clicking **Accept** will complete the process and show a final page.
+
+![Final splash page](../images/TWASaaS-Report-auth4.png)
 
 ## Rolling back / revoking application permissions
 
