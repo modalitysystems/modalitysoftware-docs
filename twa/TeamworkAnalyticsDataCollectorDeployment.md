@@ -44,18 +44,17 @@ In order to visualize the data that has been collected by the Teamwork Analytics
 This component lives in Azure but you can either use Teamwork Automation Bot hosted by Modality (SaaS) or you can deploy Teamwork Automation Bot within your tenant (CAT)
 
 - [Overview of Teamwork Automation Bot](automation\TWA-Automation)
+- [Default Bot Scenarios](automation\TWA-Bot-Scenarios)
+- [Create an Adaptive Card Template](automation\TWA-Automation-CreateAdaptiveCardTemplate)
+- [Configuring Scenarios](automation\TWA-Automation-ConfigurableScenarios)
+- [Change Reminder Scheduling](NotificationTaskScheduling.md)
+
+Deployment Guides
+
 - [Deploy Teamwork Automation Bot (SaaS)](deployteamsapp.md)
 - [Deploy Teamwork Automation Bot (CAT)](automation\customerHosted)
 
 For the SaaS Bot to work with a customer Teamwork Analytics deployment, provide your Tenant Id, Bot Pre-Shared Key and Bot Installation Link to the Modality Team to complete provisioning in our hosted infrastructure.
-
-If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
-
-If you would like more information on the default Bot scenarios and their message content see [here](automation\TWA-Bot-Scenarios).
-
-If you would like more information on how to Create an Adaptive Card Template see [here](automation\TWA-Automation-CreateAdaptiveCardTemplate).
-
-If you would like more information on how to Configuring Scenarios see [here](automation\TWA-Automation-ConfigurableScenarios).
 
 ### Step 5 (optional): Configuring 
 
