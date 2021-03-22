@@ -4,6 +4,8 @@ This page describes the architecture required for hosting TWA Automation in CAT 
 
 > **Important**: because this configuration results in all parts of the TWA Automation service being hosted within a customer's Azure tenant, the customer assumes responsibility for monitoring of the service and raising any issues with Modality for investigation. It may be necessary to export log files or temporarily provide access to installed components for troubleshooting.
 
+> NOTE: Teamwork Automation cannot be used against a TWA database that has been enabled for PII anonymisation.
+
 ## Required Components
 
 The following Azure resources are required to install TWA Automation:
@@ -108,7 +110,38 @@ Enter **O** if Teamwork Analytics has been deployed to the Windows machine that 
 
 Once you have made your selection enter the information as prompted, all selections are saved to a parametersFile.json file that will be read the next time the script is run so as to make upgrades easier.
 
-## Step 3 Install Teamwork Automation App into Teams
+## Step 3 Configure Table Storage settings
+
+Finally, you will need to have [Azure Storage Explorer](https://azure.microsoft.com/en-gb/features/storage-explorer/) installed and you must have access to the Teamwork Automation table storage account.
+
+Navigate to the storage account that has been deployed to Azure. This should start "ta".
+
+Create a new table called "tenant"
+
+![Tenant Table](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/Automation-tenants-table.png)
+
+Create a new row for your tenant, to do this, click the "Add" button in the tool bar and then populate the details in the form that appears. You need to populate the following fields;
+
+- PartitionKey = Customer tenant ID
+- RowKey = Customer tenant ID
+- Enable Proactive Bot
+  - Setting to false will mean that the bot will only be able to send messages, after a user has manually installed the application.
+  - Setting to true, will enable the bot to self-install onto a users client and then send a notification when meeting the requirements of a configured scenario. This requires TeamsApplicationCatalogId to correctly be configured and for graph permissions to be consented.
+- EnableUnifiedTemplate
+  - Setting to true enables the use of the "Template" column in the "ScenarioTemplates" table, which uses the same template configuration (AdaptiveCards) for Teams IM and email.
+Setting to false means that the individual template columns in the "ScenarioTemplates" table are used for Teams IM and email.
+- PresharedKey1 = Customer Bot pre shared key
+- PresharedKey2 = Customer Bot pre shared key
+- Teams Application Catalog ID =  Custom bot application ID
+  - This is required to generate a valid install link when referenced in email templates, and the self-install functionality.
+- WelcomeCard = This is the first message a user will receive when the bot is installed.
+The format of the content must be JSON, and it must follow the Adaptive Card schema (for help creating card content use https://adaptivecards.io/designer/ - or go to the dev team is required). If no WelcomeCard is specified the bot will send a predefined default instead.
+- InvalidMessageCard = The bot only sends notifications, it doesn't reply to incoming messages.
+This the message a user will receive when they send a message to the bot. The format of the content must be JSON, and it must follow the Adaptive Card schema. If no InvalidMessageCard is specified the bot will send a predefined default instead.
+
+![Tenant Table Add](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/Automation-tenants-table-add.png)
+
+## Step 4 Install Teamwork Automation App into Teams
 
 The **InstallBOT.ps1** script should have created a manifest file called **AutomationManifest.zip** that points to the newly deployed Teamwork Automation Bot. The manifest should only need to be uploaded to Teams once or if Modality say it needs to be done again.
 
@@ -132,7 +165,7 @@ The **InstallBOT.ps1** script should have created a manifest file called **Autom
    
    ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/app-copy-link.png)
    
-## Allow App to be installed within Microsoft Teams
+### Allow App to be installed within Microsoft Teams
 
 Now that the App has been added to your Microsoft Teams Tenant, your Global policy may need to be adjusted to allow it to be installed by users.
 
