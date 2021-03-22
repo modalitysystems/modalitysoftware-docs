@@ -112,7 +112,7 @@ Once you have made your selection enter the information as prompted, all selecti
 
 ## Step 3 Configure Table Storage settings
 
-Finally, you will need to have [Azure Storage Explorer](https://azure.microsoft.com/en-gb/features/storage-explorer/) installed and you must have access to the Teamwork Automation table storage account.
+You will need to have [Azure Storage Explorer](https://azure.microsoft.com/en-gb/features/storage-explorer/) installed and you must have access to the Teamwork Automation table storage account.
 
 Navigate to the storage account that has been deployed to Azure. This should start "ta".
 
