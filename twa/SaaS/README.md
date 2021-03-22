@@ -1,9 +1,9 @@
 # Setting up Teamwork Analytics SaaS
 
-Modality Systems Teamwork Analytics SaaS is very simple to set up. Modality Systems has the following two authorisation URLs which must be approved by your Azure Active Directory Global Administrator.
+Modality Systems Teamwork Analytics SaaS is very simple to set up. Modality Systems has the following authorisation URLs which must be approved by your Azure Active Directory Global Administrator.
 
 - To authorize Teamwork Reporting SaaS for use in your environment [click here](https://mod.qa/ReportConsent).
-- To authorize Teamwork Automation SaaS (Optional) for use in your environment [click here](https://mod.qa/AutomationConsent).
+- To authorize Teamwork Automation SaaS (Required for Notification Service) for use in your environment [click here](https://mod.qa/AutomationConsent).
 - To authorize CreateTeam SaaS for use in your environment [click here](https://mod.qa/CreateTeamConsent).
 
 Need more information on what these links do? [Authorisation for Teamwork Analytics SaaS](Authorisation.md) has full details for completing change control requests.

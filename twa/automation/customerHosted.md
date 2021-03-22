@@ -24,6 +24,8 @@ As part of the setup process, the following configurations will be applied. Thes
 - The Application Registration created as part of the Bot Registration process should be set to Multi Tenant. Single Tenant registration will not work correctly for Bot Registrations.
 
 - A service account will be needed in order to send emails from the Bot Registration service. This account should be enabled for sending emails, and should not be enabled for multi-factor authentication to enable the Bot Registration service to authenticate and send email.
+  
+  > NOTE: You can chose to not include the Email Channel when deploying Teamwork Automation but this would require **EnableProActiveBot** to be set to **tue** and the **TeamsAppInstallation.ReadWriteSelfForUser.All** application permission to be consented against your tenant.
 
 ![TWA Automation CAT Architecture](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/TWA-Automation-CAT-Architecture-1.png)
 
@@ -71,23 +73,41 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
 1. Immediately take note of the **Secret** as this can not be retrieved later and will be required further in the deployment process
 ![team work secret](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/teamworkSecrets.png)
 
-## Step 2 - Deploy TWA Automation
+### Declare API Permissions for Teamwork Automation
+1. Navigate to the **Azure Active Directory** from the navigation pane on the left
+1. Select **App Registrations** and select the **Modality Teamwork Analytics** app 
+1. Select **Api permissions** from the Manage menu
+1. Find and select **Microsoft Graph** from the **Request API permissions** blade
+![add permissions](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/requestGraphPermissions.png)
+1. Ensure that the permission type is set to "Application permissions" and not "Delegated permissions"
+1. Select the follow permission from Microsoft.Graph
+   * TeamsAppInstallation.ReadWriteSelfForUser.All
+2. Click **Add permissions** to be returned to the "API permissions" blade
+3. Click the **Grant Admin Consent for Your Name** button
+![permissions summary](images/apiPermissions.png)
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Ftwadeploy.blob.core.windows.net%2Ftwa-prod%2FmainTemplateBot.json" target="_blank">
-  <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure" style="max-width:100%;"/>
-</a>
+## Step 2 - Deploy Teamwork Automation
 
-This ARM Template will install resources in your Azure tenant. The template will deploy the following resources:
-
-- 1 x Bot Registration S1 Standard
-- 1 x App Service Plan S1
-- 1 x App Service
-- 1 x Application Insights
-- 1 x Storage Account General Purpose v2 Hot
-- 1 x Service Bus Queue
+Teamwork Automation is provided as an **Azure Resource Manager (ARM) template** that automatically provisions and starts the required resources in your Azure subscription. Teamwork Analytics **MUST** already have been installed by using the [InstallTWA.ps1](../deploytwa.md) deployment script
 
 > Note: You must have registered an application beforehand. Provide the App ID and App Secret from Step 1.
 
-Following deployment, TWA Automation will require some configuration before being ready to use. The Modality Systems CI Team will work with you to understand your requirements and configure the appropriate scenarios and other settings prior to first use. 
-
 > Note: For an introduction to Azure Resource Manager see [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview).
+
+Download [InstallBOT.ps1](https://github.com/modalitysystems/TeamworkAnalyticsGABuilds/releases), the PowerShell script is version stamped and will install the version of Teamwork Analytics that matches the download. It uses output from InstallTWA.ps1 so **MUST** be run from the same location.
+
+Each script is signed and will require an **Administrative PowerShell** window and the following PowerShell module to be installed before attempting to run the scripts:
+
+- [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps-msi)
+  
+They will also need to be able to access the internet so if you are running the scripts from behind a web proxy then this will need to be configured. First off run the PowerShell script by typing the name of the script from the script directory.
+
+  ![Script Choice](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/scriptchoice2.png)
+
+Enter **O** if Teamwork Analytics has been deployed to the Windows machine that the script is being run from, or **A** if Teamwork Analytics has been deployed to Azure.
+
+Once you have made your selection enter the information as prompted, all selections are saved to a parametersFile.json file that will be read the next time the script is run so as to make upgrades easier.
+
+## Upgrading
+
+Each time the script is run it will deploy anything that has changed from what is defined in the ARM Template. To perform an upgrade simply run a newer version of the script to the same resource group. If a parametersFile exists in the script folder then this will be read and used for the deployment. However, if there is no parametersFile then you will need to complete all information as prompted.
