@@ -84,7 +84,7 @@ TWA Automation requires a new Azure AD Application registration. Once created, y
    * TeamsAppInstallation.ReadWriteSelfForUser.All
 2. Click **Add permissions** to be returned to the "API permissions" blade
 3. Click the **Grant Admin Consent for Your Name** button
-![permissions summary](images/apiPermissions.png)
+![permissions summary](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/apiPermissions.png)
 
 ## Step 2 - Deploy Teamwork Automation
 
