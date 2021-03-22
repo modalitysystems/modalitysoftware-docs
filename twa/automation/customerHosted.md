@@ -108,6 +108,48 @@ Enter **O** if Teamwork Analytics has been deployed to the Windows machine that 
 
 Once you have made your selection enter the information as prompted, all selections are saved to a parametersFile.json file that will be read the next time the script is run so as to make upgrades easier.
 
+## Step 3 Install Teamwork Automation App into Teams
+
+The **InstallBOT.ps1** script should have created a manifest file called **AutomationManifest.zip** that points to the newly deployed Teamwork Automation Bot. The manifest should only need to be uploaded to Teams once or if Modality say it needs to be done again.
+
+1. 1.	From Microsoft Teams go to the Apps section
+   
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/teams-apps.png)
+   
+1. Then select Upload for [YOUR ORGANISATION NAME]
+   
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/apps-upload.png)
+   
+1. Then select the downloaded App manifest file zip file
+   
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/upload-open.png)
+
+1. The App should then appear within your companies Apps section
+   
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/app-deployed.png)
+   
+1. Once this has been completed, click the "..." button in the top right corner of the app and click Copy link. Provide this link to Modality alongside your Tenant ID as these required for provisioning on the Modality hosted bot platform.
+   
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/app-copy-link.png)
+   
+## Allow App to be installed within Microsoft Teams
+
+Now that the App has been added to your Microsoft Teams Tenant, your Global policy may need to be adjusted to allow it to be installed by users.
+
+1. From the Microsoft Teams Admin Center, under *Teams apps* click *Permission policies*
+
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/admin-perm-pols.png)
+    
+1. Click on *Global (Org-wide default)* (or whatever policy is applied to your organisation)
+
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/app-perm-pols.png)
+
+1. Make sure the *Tenant apps* policy is set to Allow all apps
+
+   ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/tenant-apps.png)
+
+> NOTE: You could also specify a list of allowed apps here 
+
 ## Upgrading
 
 Each time the script is run it will deploy anything that has changed from what is defined in the ARM Template. To perform an upgrade simply run a newer version of the script to the same resource group. If a parametersFile exists in the script folder then this will be read and used for the deployment. However, if there is no parametersFile then you will need to complete all information as prompted.

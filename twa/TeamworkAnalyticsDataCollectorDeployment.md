@@ -41,11 +41,12 @@ In order to visualize the data that has been collected by the Teamwork Analytics
 
 >N.B You can only complete the bot deployment if the Notification Service was deployed in step 2.
 
-This component lives in Azure but you can either use the one hosted by Modality (SaaS) or you can deploy your own instance within your tenant (CAT)
+This component lives in Azure but you can either use Teamwork Automation Bot hosted by Modality (SaaS) or you can deploy Teamwork Automation Bot within your tenant (CAT)
 
-To make use of Teamwork Automation Bot (SaaS), you need to install the Bot App into your Microsoft Teams tenant by [following these instructions](automation\customerhosted.md). Once completed, provide your Tenant Id, Bot Pre-Shared Key and Bot Installation Link to the Modality Team to complete provisioning in our hosted infrastructure.
+- [Teamwork Automation Bot (SaaS)](deployteamsapp.md)
+- [Teamwork Automation Bot (CAT)](automation\customerHosted.md)
 
-To deploy Teamwork Automation Bot (CAT) within your own tenant then [follow these instructions](deployteamsapp.md)
+For the SaaS Bot to work with a customer Teamwork Analytics deployment, provide your Tenant Id, Bot Pre-Shared Key and Bot Installation Link to the Modality Team to complete provisioning in our hosted infrastructure.
 
 If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
