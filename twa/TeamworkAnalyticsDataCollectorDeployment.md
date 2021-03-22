@@ -45,8 +45,8 @@ This component lives in Azure but you can either use Teamwork Automation Bot hos
 
 - [Overview of Teamwork Automation Bot](automation\TWA-Automation)
 - [Default Bot Scenarios](automation\TWA-Bot-Scenarios)
-- [Create an Adaptive Card Template](automation\TWA-Automation-CreateAdaptiveCardTemplate)
 - [Configuring Scenarios](automation\TWA-Automation-ConfigurableScenarios)
+- [Create an Adaptive Card Template](automation\TWA-Automation-CreateAdaptiveCardTemplate)
 - [Change Reminder Scheduling](NotificationTaskScheduling.md)
 
 Deployment Guides
