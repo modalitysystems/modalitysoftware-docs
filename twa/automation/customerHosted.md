@@ -145,7 +145,7 @@ This the message a user will receive when they send a message to the bot. The fo
 
 The **InstallBOT.ps1** script should have created a manifest file called **AutomationManifest.zip** that points to the newly deployed Teamwork Automation Bot. The manifest should only need to be uploaded to Teams once or if Modality say it needs to be done again.
 
-1. 1.	From Microsoft Teams go to the Apps section
+1.	From Microsoft Teams go to the Apps section
    
    ![Screenshot](https://raw.githubusercontent.com/modalitysystems/modalitysoftware-docs/master/twa/images/bots/teams-apps.png)
    
