@@ -58,5 +58,3 @@ When the new version is installed, the old version can be unpublished by deletin
 > The "Overwrite an existing version (Preview)" option is not recommended until it becomes fully supported. 
 
 ![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
-
-Detailed steps here: [PowerBI Install Guide](/twa/PowerBIAppsAdminInstallGuide.html)
