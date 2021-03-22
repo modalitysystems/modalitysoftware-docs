@@ -44,7 +44,7 @@ In order to visualize the data that has been collected by the Teamwork Analytics
 This component lives in Azure but you can either use Teamwork Automation Bot hosted by Modality (SaaS) or you can deploy Teamwork Automation Bot within your tenant (CAT)
 
 - [Teamwork Automation Bot (SaaS)](deployteamsapp.md)
-- [Teamwork Automation Bot (CAT)](automation\customerHosted.md)
+- [Teamwork Automation Bot (CAT)](automation\customerHosted)
 
 For the SaaS Bot to work with a customer Teamwork Analytics deployment, provide your Tenant Id, Bot Pre-Shared Key and Bot Installation Link to the Modality Team to complete provisioning in our hosted infrastructure.
 
