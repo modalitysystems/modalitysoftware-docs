@@ -51,7 +51,11 @@ For the SaaS Bot to work with a customer Teamwork Analytics deployment, provide 
 
 If you would like to change the default reminder scheduling. Follow [these steps to configure the Task Scheduler](NotificationTaskScheduling.md).
 
-If you would like more information on the default Bot scenarios and their message content see [here](BotsContent.md).
+If you would like more information on the default Bot scenarios and their message content see [here](automation\TWA-Bot-Scenarios).
+
+If you would like more information on how to Create an Adaptive Card Template see [here](automation\TWA-Automation-CreateAdaptiveCardTemplate).
+
+If you would like more information on how to Configuring Scenarios see [here](automation\TWA-Automation-ConfigurableScenarios).
 
 ### Step 5 (optional): Configuring 
 

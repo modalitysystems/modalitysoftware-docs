@@ -1,7 +1,5 @@
 # Teamwork Analytics Automation - Scenarios
 
-> Previously TWA Automation required different templates for Teams messages and emails, therefore the sent messages were also different, the old documentation for this configuration can be found [here](./../BotsContent.md).
-
 All of the following scenarios are deployed with TWA, if you have selected to include the notification service.
 
 For each scenario you will find a description of the scenario and any default configured values (highlighted in **bold**). For each scenario we are able to configure the _email message subject_ and _message content_.

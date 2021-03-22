@@ -16,9 +16,9 @@ Configuration of new or existing scenarios is a multi-step process and is descri
 
 ### What can I trigger an Automation scenario from?
 
-It is important to understand that the Teamwork Analytics database contains the "current state" of the teams enviromnet, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
+It is important to understand that the Teamwork Analytics database contains the "current state" of the teams environment, but generally does not track/log "change". So it can tell you, at the current time, which teams are public and which are private, but not, when a particular team "changed" from private to public.
 
-#### Repeating Scheduled Scenararios - messages repeat each X period if the state doesn't change
+#### Repeating Scheduled Scenarios - messages repeat each X period if the state doesn't change
 
 Most automations work on schedules, we call these scheduled scenarios:
 
@@ -34,11 +34,11 @@ You can also use multiple scenarios to "escelate" messaging
 
 In these cases, the triggers are non-overlapping. e.g. find teams inactive for more than 30 days but less than 44 days, so teams will only appear in one scenario.
 
-#### Send Once Scenarios - the message is sent once and future messages for the same senario are supressed
+#### Send Once Scenarios - the message is sent once and future messages for the same scenario are suppressed
 
 We can also trigger automations to only send the message once. This is based on the exact text of the message. These are **"send once scenarios"**
 
-In these scenarios the specific notificaiton for the specific user(s) will only send once
+In these scenarios the specific notification for the specific user(s) will only send once
 
 e.g. the trigger will scan for all deleted teams in a time window, e.g last 7 days, but then the automation checks if the exact message has been sent before. f it has, it will not be sent, if it hasn't it will be sent. - the scenario runs daily, but only sends new messages. This means we can alert daily on "newly deleted teams".
 
