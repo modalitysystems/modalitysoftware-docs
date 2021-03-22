@@ -39,7 +39,7 @@ In order to visualize the data that has been collected by the Teamwork Analytics
 
 ### Step 4 (optional): Teamwork Automation Bot Deployment
 
->N.B You can only complete the bot deployment if the Notification Service was deployed in step 2.
+> Note: You can only complete the bot deployment if the Notification Service was deployed in step 2.
 
 This component lives in Azure but you can either use Teamwork Automation Bot hosted by Modality (SaaS) or you can deploy Teamwork Automation Bot within your tenant (CAT)
 
