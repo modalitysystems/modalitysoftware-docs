@@ -46,20 +46,6 @@ Once the deployment is complete, if you have opted to include the Notification S
 
 Each time the script is run and regardless of deployment mode that has been chosen, the Teamwork Analytics services are removed and then a new service is installed. If you are using a different version script than was used before then that version will be installed. When the service starts the database will attempt to be upgraded. If a parametersFile exists in the script folder then this will be read and used for the deployment. However, if there is no parametersFile then you will need to complete all information as prompted.
 
-## Updating Power BI apps
-
-The process for updating an app is exactly the same as the initial installation. You install the latest version side by side and configure it then delete the existing version.
-
-When installing the latest version from AppSource select "Install to a new workspace" and click _Install_.
-
-When the new version is installed, the old version can be unpublished by deleting its workspace.
-
-> The "Overwrite an existing version (Preview)" option is not recommended until it becomes fully supported. 
-
-![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
-
-Detailed steps here: [PowerBI Install Guide](/twa/PowerBIAppsAdminInstallGuide.html)
-
 ## Pausing or uninstalling
 
 1. If you selected **O** to download and install Teamwork Analytics on the Windows machine that the script is being run from then you can start and stop the **ModalityTeamworkAnalytics** windows service and where the Notification service has been deployed then you can disable the Scheduled Tasks that start with **Bot** to prevent messages being sent to the Automation Bot.

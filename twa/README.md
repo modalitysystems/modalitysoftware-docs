@@ -36,11 +36,9 @@ Below are the steps to deploy CreateTeam and the Automation and Reporting
 
 ### [Teamwork Analytics Data Backend Deployment CAT](https://docs.modalitysystems.com/twa/TeamworkAnalyticsDataCollectorDeployment.html)
 
-### [Teamwork Analytics Upgrade Steps CAT](https://docs.modalitysystems.com/twa/UpgradingTeamworkAnalytics.html)
-
 ### [Teamwork Analytics Power BI Reports Deployment](https://docs.modalitysystems.com/twa/PowerBIAppsAdminInstallGuide.html)
 
-###  [CreateTeam Deployment CAT](https://docs.modalitysystems.com/CreateTeam/)
+### [CreateTeam Deployment CAT](https://docs.modalitysystems.com/CreateTeam/)
 
 
 

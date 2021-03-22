@@ -46,3 +46,17 @@ Under the "Schedule refresh" section, set the slider to On, and add at least one
 Repeat for each app installed.
 
 For more information see the _[Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh)_ article on docs.microsoft.com. 
+
+## Updating Power BI apps
+
+The process for updating an app is exactly the same as the initial installation. You install the latest version side by side and configure it then delete the existing version.
+
+When installing the latest version from AppSource select "Install to a new workspace" and click _Install_.
+
+When the new version is installed, the old version can be unpublished by deleting its workspace.
+
+> The "Overwrite an existing version (Preview)" option is not recommended until it becomes fully supported. 
+
+![Overwriting an app that is already installed](images/powerbi/alreadyinstalled.png)
+
+Detailed steps here: [PowerBI Install Guide](/twa/PowerBIAppsAdminInstallGuide.html)
