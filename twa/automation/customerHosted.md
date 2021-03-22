@@ -114,7 +114,7 @@ Once you have made your selection enter the information as prompted, all selecti
 
 You will need to have [Azure Storage Explorer](https://azure.microsoft.com/en-gb/features/storage-explorer/) installed and you must have access to the Teamwork Automation table storage account.
 
-Navigate to the storage account that has been deployed to Azure. This should start "ta".
+Navigate to the storage account that has been deployed to Azure from within Azure Storage Explorer. This should start "ta".
 
 Create a new table called "tenant"
 
