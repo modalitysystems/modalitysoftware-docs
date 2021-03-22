@@ -29,11 +29,13 @@ These components can either be deployed to your own Windows VM that writes to yo
 
 Both methods of deployment are achieved but running the InstallTWA deployment script.
 
-You can find a Teamwork Analytics installation guide at this [link](deploytwa.md).
+[Teamwork Analytics installation guide](deploytwa.md).
 
 ### Step 3: Get PowerBI Apps from the App Store and Connect to your SQL Database
 
-You can find a PowerBi Apps installation guide at this [link](PowerBIAppsAdminInstallGuide.md).
+In order to visualize the data that has been collected by the Teamwork Analytics Service you will need to install the PowerBi Apps.
+
+[PowerBi Apps installation guide](PowerBIAppsAdminInstallGuide.md).
 
 ### Step 4 (optional): Teamwork Analytics Bot Deployment
 
