@@ -132,6 +132,16 @@ Follow these steps to create a new custom template:
 >
 > The _Value_ sections are repeated, one for each row returned by the stored procedure, and the _Field_ properties match the columns returned. The number of _fields_, the _field_ names and _field_ types must be the same in each _value_ section.
 
+## Linking to Microsoft Teams content in an Adaptive Card
+
+You can link to teams and channels inside an adaptive card by following Microsoft's guidance around [Teams deep links](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/deep-links) - links will always open in a browser first and redirect back to Teams. You will need configure the automation stored procedure to ensure you have all the fields which are required for your link. An example for linking to a team is (with TeamId and GeneralChannelId as template variables);
+
+```
+Click [Here](https://teams.microsoft.com/l/team/${GeneralChannelId}/conversations?${TeamId} to go to the team
+```
+
+Which will render as "Click <ins>Here</ins> to go to the team" in the card where "Here" is the clickable link to the team.
+
 ## Further customisation
 
 When creating a template you don't have to only use controls from the example template, you can create your own layouts and designs, but it's advisable for continuity, to make them similar in style to the suggestions. For further inspiration browse [Microsoft's Samples and Templates](https://adaptivecards.io/samples/).
