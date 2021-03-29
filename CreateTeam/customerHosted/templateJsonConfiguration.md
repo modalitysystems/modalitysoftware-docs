@@ -78,10 +78,9 @@ This section details what each setting controls and how to configure it. Not all
 ### Visibility
 
 - The visibility and behaviour of the team to users who are not members of the created team.
-- The setting must have the value of either _0_,_1_, or _2_ as defined below:
+- The setting must have the value of either _0_, or _1_ as defined below:
   - 0 - Public
-  - 1 - Private - Discoverable
-  - 2 - Private - Hidden
+  - 1 - Private
 
 ### Channels
 
