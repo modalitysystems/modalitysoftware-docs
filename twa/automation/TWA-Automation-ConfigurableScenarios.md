@@ -136,7 +136,7 @@ Template definition is defined in the Azure Table Storage store, in the **"Scena
 - PartitionKey - represents the tenant id
 - RowKey - must match name of the scenario
 - EmailSubject - the email subject which will display when the scenario sends an email
-- Template - the content which will display when the scenario sends an email or Teams IM ([Configuring Adaptive Cards](/twa/automation/TWA-Automation-CreateAdaptiveCardTemplate.md))
+- Template - the content which will display when the scenario sends an email or Teams IM ([Configuring Adaptive Cards](TWA-Automation-CreateAdaptiveCardTemplate.md))
 
 > If this table does not exist or is completely empty the four default scenarios which mentioned above will still work using hardcoded values.
 
