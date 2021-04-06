@@ -2,7 +2,7 @@
 
 ## Teams Call Logger Power BI Reports (Preview)
 
-Call Logger is a specific set of Power BI reports based on the data from Microsoft Call Records API (https://docs.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0). It is a Power BI report pack that is part of Modality Teamwork Analaytics
+Call Logger is a specific set of Power BI reports based on the data from Microsoft Call Records API (https://docs.microsoft.com/en-us/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0). It is a Power BI report pack that is part of Modality Teamwork Analytics.
 
 Microsoft call records API gives details of every media session (audio, video and sharing), both over IP and PSTN calls. Based on this data Call Logger Reports can provide the following:
 
@@ -15,13 +15,13 @@ Report on users with no calls or meetings (based on AD user filtered against ove
 In Teams/Call Logger a call is any P2P/Users to User scenario, this includes
   - Tenant User to PSTN
   - PSTN to Tenant User
-  - Tenant User to UTenant Userser (VoIP)
-  - Tenant User to Federared/external User
+  - Tenant User to Tenant User (VoIP)
+  - Tenant User to Federated/external User
   - Federated/External user to Tenant User
 
 This includes both direct routing and Microsoft calling plan calls. 
 
-Call Logger does not include Meetings (any session with more than 2 people), but reports on meetings are availanble in Teamwork Analytics Call Records Usage Reports.
+Call Logger does not include Meetings (any session with more than 2 people), but reports on meetings are available in Teamwork Analytics Call Records Usage Reports.
 
 Power BI can filter reports by:
   - Caller (UPN or PSTN number)
@@ -34,7 +34,7 @@ Note, Tenant users must be filtered by UPN, not their assigned Teams PSTN Number
 
 Modality has a set of default reports. Customers can edit or create specific Power BI reports if they require.
 
-## Powerr BI Report Access, Subscriptions and Exporting 
+## Power BI Report Access, Subscriptions and Exporting 
 
 Report Access is controlled by the customer with Power BI Role Based Access Control https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards
 
@@ -48,7 +48,7 @@ Report data for call logging can be held for as long as the customer requires/de
 
 ## Data not available
 
-Note, the following is not currently available from the Call Records API, so cannnot be reported on at this time.
+Note, the following is not currently available from the Call Records API, so cannot be reported on at this time.
 
 - Costs of calls
 - Unanswered calls
