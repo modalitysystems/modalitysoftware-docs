@@ -19,7 +19,9 @@ In Teams/Call Logger a call is any P2P/Users to User scenario, this includes
   - Tenant User to Federared/external User
   - Federated/External user to Tenant User
 
-This includes both direct routing and Microsoft calling plan calls.
+This includes both direct routing and Microsoft calling plan calls. 
+
+Call Logger does not include Meetings (any session with more than 2 people), but reports on meetings are availanble in Teamwork Analytics Call Records Usage Reports.
 
 Power BI can filter reports by:
   - Caller (UPN or PSTN number)
