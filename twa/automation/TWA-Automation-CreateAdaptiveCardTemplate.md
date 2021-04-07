@@ -137,7 +137,7 @@ Follow these steps to create a new custom template:
 You can link to teams and channels inside an adaptive card by following Microsoft's guidance around [Teams deep links](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/deep-links) - links will always open in a browser first and redirect back to Teams. You will need configure the automation stored procedure to ensure you have all the fields which are required for your link. An example for linking to a team is (with TeamId and GeneralChannelId as template variables);
 
 ```
-Click [Here](https://teams.microsoft.com/l/team/${GeneralChannelId}/conversations?${TeamId} to go to the team
+Click [Here](https://teams.microsoft.com/l/team/${GeneralChannelId}/conversations?${TeamId}) to go to the team
 ```
 
 Which will render as "Click <ins>Here</ins> to go to the team" in the card where "Here" is the clickable link to the team.
