@@ -19,9 +19,10 @@ In Teams/Call Logger a call is any P2P/Users to User scenario, this includes
   - Tenant User to Federated/external User
   - Federated/External user to Tenant User
 
-This includes both direct routing and Microsoft calling plan calls. 
 
-Call Logger does not include Meetings (any session with more than 2 people), but reports on meetings are available in Teamwork Analytics Call Records Usage Reports.
+Call Logger reports include calls reports on PSTN calls for both direct routing and Microsoft calling plans.
+
+Call Logger reports on all "peer2peer" calls, this includes VoIP and PSTN. It does not report on "meetings" called groupCall in the API (reference https://docs.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0)
 
 Power BI can filter reports by:
   - Caller (UPN or PSTN number)
@@ -56,6 +57,8 @@ Note, the following is not currently available from the Call Records API, so can
 - Inbound ring time/wait time for calls or Cloud Auto Attendants/Hunt Groups
 - Real Time/Live Call Reports - Call Records API provides data shortly after the end of the call
 
-Call Logger Reports report on only the call details, not call performance (MOS, Packet loss, jitter failed calls, etc.) for call performance reports please see Teamwork Analytics Performance.
+## Call Logger does not include any performance or quality metrics
+
+Call Logger Reports report on only the call details, not call performance (Packet loss, jitter failed calls, etc.) for call performance reports please see Teamwork Analytics Performance.
 
 
