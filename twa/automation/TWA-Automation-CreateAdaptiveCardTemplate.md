@@ -24,7 +24,7 @@ The Adaptive Card template schema is constantly being improved and new card elem
 
 In addition to supporting version 1.0 only, Outlook does **not** support _Action.Submit_, which is used for submitting input fields in forms, or calling an api directly. However _Action.OpenUrl_ and embedded links **are** supported, so these should be used for gathering data or redirecting the user. Unicode characters inside condition statements are also not supported when sending emails.
 
-Taking the above into account **the unified template, used by _TWA Automation_, supports Adaptive Cards version 1.0 only, with the exception of _Action.Submit, which is not supported at all_**.
+Taking the above into account **the unified template, used by _TWA Automation_, supports Adaptive Cards version 1.0 only.**
 
 > If you are creating an Adaptive Card template for _TWA Automation_ to send to Teams **only**, i.e., the customer has **not** set up _TWA Automation_ to send emails, then you can:
 >
@@ -52,7 +52,7 @@ The _Target version_ button on the right of the toolbar, changes what elements a
 
 > Changing the host app, changes the target version, so make sure you check the target version after changing the host app.
 
-The left panel contains a toolbox of card elements, these can be dragged and dropped onto the design in the top left. Whilst _Inputs_ are supported, [as mentioned previously](#limitations) _Action.Submit_ is not. So there is no way of submitting the input values once a user has populated them. So it's best to avoid all _Input_ elements for use with _TWA Automation_.
+The left panel contains a toolbox of card elements, these can be dragged and dropped onto the design in the top left. So there is no way of submitting the input values once a user has populated them. So it's best to avoid all _Input_ elements for use with _TWA Automation_.
 
 ## Example Template
 
@@ -141,6 +141,34 @@ Click [Here](https://teams.microsoft.com/l/team/${GeneralChannelId}/conversation
 ```
 
 Which will render as "Click <ins>Here</ins> to go to the team" in the card where "Here" is the clickable link to the team.
+
+## Adding custom webhook Urls to Card Actions
+
+You can customise a Cards Action.Submit button to trigger a http uri request of your choosing. This Uri needs to first be configured by your Modality Support contact. By providing a pre authenticated Uri and your TenantId, we will provide back a **webhookUriId** which you can inturn use in your card templates. 
+
+To configure a card correctly you will need to add the **webhookUriId** to the data property of that action. You can also pass in custom data params inside that data property which we will include in the body of the uri post request. This can be data from forms in the card which can be automatically added to the data. Or you can pre-configure more fields in the template. You do not need to add in your Tenant Id to the data unless you want that passed to your http request, as the modality bot takes your Tenant Id from the Teams Message. An example shown below is what a correctly configured Action.Submit looks like.
+
+```
+ ...
+ {
+    "actions": [
+    ...
+        {
+            "type": "Action.Submit",
+            "title": "Submit",
+            "data": {
+                "webhookUrlId": "343cc57b-0b44-4b51-8587-cf544b22b1a8",
+                "additionalData":  "Lorem Ipsum.",
+                "additionalCustomData": "${Value.CustomField}"
+            }
+        },
+    ...
+    ]
+ },
+ ...
+````
+
+When a user clicks this action the Modality Bot Service will match this webhookUrlId as well as your Tenant Id with the values previously stored in Table Storage. If the provided values match, the Url for that row will be called and anything inside the data property object will be sent in the body of the request as json. 
 
 ## Further customisation
 
