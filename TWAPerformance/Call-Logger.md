@@ -22,6 +22,8 @@ In Teams/Call Logger a call is any P2P/Users to User scenario, this includes
 
 Call Logger reports include calls reports on PSTN calls for both direct routing and Microsoft calling plans.
 
+Note, there is no Reporting API coverage for Cloud Auto Attendants or Call Queues
+
 Call Logger reports on all "peer2peer" calls, this includes VoIP and PSTN. It does not report on "meetings" called groupCall in the API (reference https://docs.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0)
 
 Power BI can filter reports by:
