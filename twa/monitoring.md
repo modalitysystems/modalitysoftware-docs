@@ -63,7 +63,7 @@ if($status -lt 0)
 
 }
 
-if($status -gt 0) 
+if($status -ge 0) 
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
     
@@ -71,7 +71,7 @@ if($status -gt 0)
     
     Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55200 -Message "Scan $ScanId $statusMessage - Scan completed successfully" 
 
-    write-host "Status Greater than 0 Event Triggered"
+    write-host "Status Greater than or equal to 0 Event Triggered"
 
 }
 
