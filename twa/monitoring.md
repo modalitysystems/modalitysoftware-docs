@@ -2,11 +2,15 @@
 
 ## Monitoring by Modality (via PA Monitor) - Not using this script
 
-This can be configured for you by installing a monitoring agent on the Teamwork Analytics virtual machine. Please reach out to software.support@modalitysystems.com to request this. Modality will proactively monitor the Teamwork Analytics Service and let you know if any issues are encountered.
+Modlaity can perform monitoring for customers by installing a monitoring agent on the Teamwork Analytics virtual machine. 
+
+Modality will proactively monitor the Teamwork Analytics Service and let you know if any issues are encountered. This is our recommended approach to monitoring.
+
+Please reach out to software.support@modalitysystems.com to request this. 
 
 ## Custom Monitoring with a PowerShell Script (below)
 
-If you require your own monitoring solution, you can base it on the following Powershell Script.
+If you do not want Modality to monitor your install, and require an ability to monitor with your own solutionData , you can base it on the following Powershell Script.
 
 We would suggest you run the PowerShell script once daily, per scan (so you will need 4 instances of the script to cover all 4 scans). The scan it runs for can be configured by changing the "$ScanId" variable on the first line of the script. The scan IDs are as follows;
 
@@ -51,11 +55,27 @@ if($status -lt 0)
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
     
-    Write-EventLog -LogName ScriptingGuys -Source scripts -Message “Dude, it works … COOL!” -EventId 0 -EntryType information
+    New-EventLog -LogName Application -Source "TWA Monitoring"
     
-    
-    
+    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55404 -Message "Scan $ScanId $statusMessage -  Scan has not completed, please check your system and if needed contact Modality support software.support@modalitysystems.com" 
+
+    write-host "Status Less than 0 Event Triggered"
+
 }
+
+if($status -gt 0) 
+{
+    # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
+    
+    New-EventLog -LogName Application -Source "TWA Monitoring"
+    
+    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55200 -Message "Scan $ScanId $statusMessage - Scan completed successfully" 
+
+    write-host "Status Greater than 0 Event Triggered"
+
+}
+
+
 
 
 
