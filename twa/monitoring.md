@@ -62,4 +62,4 @@ if($status -lt 0)
 
 ```
 
-This script assumes a standard deploy.
+This script assumes a standard deployment. If you have changged install directories or SQL configuration the script will need to be adapted
