@@ -21,6 +21,10 @@ We would suggest you run the PowerShell script once daily, per scan (so you will
 
 The script will alert if the a scan has not completed in the expected window (based on historical results so it may take a few scans to become accurate).
 
+BEFORE RUNNING THE SCRIPT, and Administrator on the machine should create the event log source with this command in PowerShell
+
+New-EventLog -LogName Application -Source "TWA Monitoring"
+
 ```powershell
 # Set this to the correct scan ID for this instance of the script
 $ScanId = 0
@@ -55,8 +59,6 @@ if($status -lt 0)
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
     
-    New-EventLog -LogName Application -Source "TWA Monitoring"
-    
     Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55404 -Message "Scan $ScanId $statusMessage -  Scan has not completed, please check your system and if needed contact Modality support software.support@modalitysystems.com" 
 
     write-host "Status Less than 0 Event Triggered"
@@ -66,8 +68,6 @@ if($status -lt 0)
 if($status -ge 0) 
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
-    
-    New-EventLog -LogName Application -Source "TWA Monitoring"
     
     Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55200 -Message "Scan $ScanId $statusMessage - Scan completed successfully" 
 
