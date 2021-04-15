@@ -25,6 +25,8 @@ BEFORE RUNNING THE SCRIPT, and Administrator on the machine should create the ev
 
 New-EventLog -LogName Application -Source "TWA Monitoring"
 
+By default this script will output 55200 information event in the Windows Application event log for successful scans and 55404 Warning for an issue that support should look into.
+
 ```powershell
 # Set this to the correct scan ID for this instance of the script
 $ScanId = 0
