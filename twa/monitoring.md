@@ -59,7 +59,7 @@ if($status -lt 0)
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
     
-    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55404 -Message "Scan $ScanId $statusMessage -  Scan has not completed, please check your system and if needed contact Modality support software.support@modalitysystems.com" 
+    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55404 -Message "Scan $ScanId $statusMessage -  Scan has not completed, please check your system and if needed contact Modality support software.support@modalitysystems.com" -EntryType Warning
 
     write-host "Status Less than 0 Event Triggered"
 
@@ -69,7 +69,7 @@ if($status -ge 0)
 {
     # Perform Custom Alerting Warning here via $statusMessage variable - e.g. send an email or write a windows event log event
     
-    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55200 -Message "Scan $ScanId $statusMessage - Scan completed successfully" 
+    Write-EventLog -LogName Application -Source "TWA Monitoring" -EventID 55200 -Message "Scan $ScanId $statusMessage - Scan completed successfully" -EntryType Information
 
     write-host "Status Greater than or equal to 0 Event Triggered"
 
