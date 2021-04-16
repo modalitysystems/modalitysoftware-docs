@@ -52,7 +52,6 @@ An **Application Registration** is simply a definition of what settings are **GO
   - SendGrid Authorisation Response Email Template ID
   - SendGrid From Email Address
   - SendGrid From Name
-  - Valid Tenant IDs - This should be in the format https://sts.windows.net/{TENANTID}/ 
 1. Press Enter to log into the tenant where you would like to create the Azure Active Directory Application Registrations
 
 1. This will then create two App Registrations and create a **parametersFile.json** with the settings as shown on screen. This file is then read be the ARM Deployment
