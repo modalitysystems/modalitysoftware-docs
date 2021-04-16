@@ -27,6 +27,8 @@ Add a Feature for each of the following RowKeys:
 
 > The _enable-logo_ field should only be set to _true_ after [a logo has been uploaded to your Web App Service](uploadLogoToWebApp.md).
 
+> When a new row is added for the tenant (tenant id, into partition key). The web app **must be restarted** in order for CreateTeam to load. This is because the auth model uses this to determine if the tenant is valid and only reads them on start-up, hence restarted is neccessary.
+
 ## PeoplePicker Table
 
 > Default Values can be downloaded from here: [PeoplePicker.typed.csv](../images/customerHosted/PeoplePicker.typed.csv)
