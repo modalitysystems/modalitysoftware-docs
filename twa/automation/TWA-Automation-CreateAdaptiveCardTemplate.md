@@ -168,7 +168,7 @@ To configure a card correctly you will need to add the **webhookUriId** to the d
  ...
 ````
 
-When a user clicks this action the Modality Bot Service will match this webhookUrlId as well as your Tenant Id with the values previously stored in Table Storage. If the provided values match, the Url for that row will be called and anything inside the data property object will be sent in the body of the request as json. 
+When a user clicks this action the Modality Bot Service will match this webhookUrlId as well as your Tenant Id with the values previously stored in Table Storage. If the provided values match, the Url for that row will be called and anything inside the data property object will be sent in the body of the request as json. For more information on creating a webhook via Logic Apps, see [here](MakinkALogicAppWebhook.md).
 
 ## Further customisation
 
