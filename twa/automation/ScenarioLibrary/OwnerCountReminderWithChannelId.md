@@ -6,7 +6,7 @@ This scenario causes a message to be sent to each team owner for a team where th
 
 | Setting | Value |
 | --- | --- |
-| StoredProcedureName | automation.SpGetTeamsWithGuestsWithChannelId |
+| StoredProcedureName | automation.SpGetTeamOwnerCountsWithChannelId |
 | IsSentOnce | False |
 
 ## SQl Query

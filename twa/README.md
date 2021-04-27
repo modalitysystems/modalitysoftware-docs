@@ -58,4 +58,4 @@ PowerBI apps are available from [Microsoft AppSource](https://appsource.microsof
 
 ###  [Teams Governance Report Guide](https://docs.modalitysystems.com/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.html)
 
-
+###  [Teams Performance Report Guide](https://docs.modalitysystems.com/twa/Reports/TeamsGovernanceandSecurity/OperationsGovernanceandCompliance.html)
