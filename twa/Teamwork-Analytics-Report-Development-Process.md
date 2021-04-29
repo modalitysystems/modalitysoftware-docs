@@ -34,16 +34,44 @@ The following hare held in the **Data Schema**
 
 # Understanding how Power BI Reporting works
 
-Data is held in the **Data Schema**
+The SQL has two Schemas, one optimised for data storage and one optimised for reporting.
 
 The **Data Schema** is comprised of SQL Tables and SQL Views and the data, The backend development team design and maintain this
-The Data schema is subject to regular changes and optimisation. Do not report from this.
+ This is where the build of the data is held. The Data schema is subject to regular changes and optimisation. Do not report from this.
 
 The Data Schema Feeds the **Reporting Schema**
 
-Power BI reports collect data from the from the “Reporting Schema”, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views, They are maintained not to change, so that existing reports are not broken.
+Power BI reports collect data from the from the **Reporting Schema**, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views, They are maintained not to change, so that existing reports are not broken.
 
 The Reporting Team have input as to the design of the Reporting Schema, but it is ultimately maintained as part of the product by the Development Team.
+
+
+# New Report Development Process
+
+1.	Customer or PO says "I would like X thing" e.g., a report of all the recorded calls for X period. 
+
+2. PO works with customer to refine requirement and works to a scope - they will work with the Development team and Reporting Team
+
+3. A written requirements scope is developed and agreed.
+
+Report Creation:
+
+## **If data exists already** 
+
+(including for the time range the customer needs), the report team can go ahead and create a report. They may need to develop a new table/or SQL view for the **Reporting Schema** to support the Report. 
+
+Once complete the Reporting Team submit the Table/SQL view to Development team to bring into product and maintain so that it becomes part of the product for future versions and upgrades and is maintained.
+
+## **If data dpes not exist** 
+
+The reporting team (with PO) define what they need in data terms via  
+-	SQL view or table
+-	Or clearly defined written requirement
+
+Once agreed and refined, Development team will accept this work into sprint work out how to get the data (into data schema) and present it in the **Reporting Schema** for the Reporting Team to use. 
+
+Once the data is in the database, Reporting Team can develop their report.
+
 
 
 
