@@ -13,7 +13,6 @@ The API's constantly change and evolve.
 
 This product is developed by two teams at Modality, the Reporting Team and the Backend Development Team.
 
-# How data is stored
 
 ## Understanding how data is stored in Teamwork Analytics Usage and Governance
 
@@ -25,7 +24,7 @@ https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Dat
 
 ### Data Schema
 
-The Data Schema is the store of basic data. It is comprised of SQL Tables and SQL Views and the data, The backend development team design and maintain the data schema.  The Data schema is subject to regular changes and optimisation. Reports do not directly access data from the Data Schema.
+The Data Schema is the store of basic data. It is comprised of SQL Tables and SQL Views and the data. The backend development team design and maintain the data schema. The Data schema is subject to regular changes and optimisation. Reports do not directly access data from the Data Schema.
 
 Data Schema includes:
 
@@ -51,15 +50,15 @@ The reporting schema contains data that is optimised/pre-calculated for reportin
 
 # New Report Development Process
 
-1.	Customer or PO says "I would like X thing" e.g., a report of all the recorded calls for X period. 
+1.	Customer or Product Owner (PO) says "I would like X report" e.g. a report of all the recorded calls for X period. 
 
-2. PO works with customer to refine requirement and works to a scope - they will work with the Development team and Reporting Team
+2. PO works with the customer to refine requirement into a written scope - they will work with the Development team and Reporting Team
 
 3. A written requirements scope is developed and agreed.
 
 Report Creation:
 
-## **If data is already held in the data schema and or reporting schema for the date range required** 
+## **If data is already held in the data schema and/or reporting schema for the date range required** 
 
 The report team can go ahead and create a report. They **may** need to develop a new table/or SQL view for the **Reporting Schema** to support the Report. 
 
