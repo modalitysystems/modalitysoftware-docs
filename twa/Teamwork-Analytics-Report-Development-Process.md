@@ -27,7 +27,7 @@ https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Dat
 
 The Data Schema is the store of basic data
 
-**Call records** - “complete call records are held for X days” – 35 by default, 14 in EY. It is relatively easy to add more reports in this time range subject to Power BI’s performance limits
+**Call records** - All key fields from each call records, held for 35 days by default (configurable). Not all fields from JSON are held.
 
 **User data** - Names, AD attributes – current state is stored
 
@@ -65,11 +65,11 @@ The Reporting Team have input as to the design of the Reporting Schema, but it i
 
 Report Creation:
 
-## **If data exists already for the date range required** 
+## **If data is already held in the data schema and or reporting schema for the date range required** 
 
 The report team can go ahead and create a report. They **may** need to develop a new table/or SQL view for the **Reporting Schema** to support the Report. 
 
-Once complete the Reporting Team submit the Table/SQL view to Development team to bring into product and maintain so that it becomes part of the product for future versions and upgrades and is maintained.
+Once complete, if the Reporting team created a new Reporting Schema Table or SQL View, Reporting Team submit the Table/SQL view to Development team to bring into product and maintain so that it becomes part of the product for future versions and upgrades and is maintained.
 
 ## **If data does not exist for the data range required** 
 
