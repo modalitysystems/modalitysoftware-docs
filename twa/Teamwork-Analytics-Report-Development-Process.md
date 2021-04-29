@@ -19,15 +19,20 @@ This product is developed by two teams at Modality, the Reporting Team and the B
 
 https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Data-Dictionary.md
 
-## Understanding how data is stored in Teamwork Analytics Performance
 
-**JSON RAW** – not used for any reporting, just RAW JSON for reference/T-shoot
+## Understanding how data is stored in Teamwork Analytics Performance
 
 The following hare held in the **Data Schema**
 
 **Call records** - “complete call records are held for X days” – 35 by default, 14 in EY. It is relatively easy to add more reports in this time range subject to Power BI’s performance limits
 
 **User data** - Names, AD attributes – current state is stored
+
+There is also a raw store of JSON, but this is just part of the architecture and feeds the Data Schema
+
+The following data held in the **Reporting Schema**
+
+The reporting schema contains data that is optimised/pre-calculated for reproting purposes
 
 **Aggregates** holds select data, summed, for longer period of time. E.g. number of calls per user every day for a year 
 
