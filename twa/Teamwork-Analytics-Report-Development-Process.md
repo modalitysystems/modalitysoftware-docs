@@ -27,7 +27,7 @@ The following hare held in the **Data Schema**
 
 **Call records** - “complete call records are held for X days” – 35 by default, 14 in EY. It is relatively easy to add more reports in this time range subject to Power BI’s performance limits
 
-**User data **(names, AD attributes) – current state is stored
+**User data** - Names, AD attributes – current state is stored
 
 **Aggregates** holds select data, summed, for longer period of time. E.g. number of calls per user every day for a year 
 
@@ -56,19 +56,19 @@ The Reporting Team have input as to the design of the Reporting Schema, but it i
 
 Report Creation:
 
-## **If data exists already** 
+## **If data exists already for the date range required** 
 
-(including for the time range the customer needs), the report team can go ahead and create a report. They may need to develop a new table/or SQL view for the **Reporting Schema** to support the Report. 
+The report team can go ahead and create a report. They may need to develop a new table/or SQL view for the **Reporting Schema** to support the Report. 
 
 Once complete the Reporting Team submit the Table/SQL view to Development team to bring into product and maintain so that it becomes part of the product for future versions and upgrades and is maintained.
 
-## **If data does not exist** 
+## **If data does not exist for the data range required** 
 
 The reporting team (with PO) define what they need in data terms via  
 -	SQL view or table
 -	Or clearly defined written requirement
 
-Once agreed and refined, Development team will accept this work into sprint work out how to get the data (into data schema) and present it in the **Reporting Schema** for the Reporting Team to use. 
+Once agreed and refined, Development team will accept this work into sprint work out how to get the data (into data schema) and present it in the **Reporting Schema** for the Reporting Team to use. The Development team may use aggrigates in the Data Schema to store data for longer period of time.
 
 Once the data is in the database, Reporting Team can develop their report.
 
