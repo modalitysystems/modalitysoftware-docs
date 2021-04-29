@@ -52,9 +52,11 @@ The reporting schema contains data that is optimised/pre-calculated for reportin
 
 1.	Customer or Product Owner (PO) says "I would like X report" e.g. a report of all the recorded calls for X period. 
 
-2. PO works with the customer to refine requirement into a written scope - they will work with the Development team and Reporting Team
+2. Product Owner accepts or rejects the asks and priortises it relative to other product development
 
-3. A written requirements scope is developed and agreed.
+3. If accepted, PO works with the customer to refine requirement into a written scope - they will work with the Development team and Reporting Team
+
+4. A written requirements scope is developed and agreed.
 
 Report Creation:
 
