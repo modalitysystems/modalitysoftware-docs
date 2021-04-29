@@ -2,7 +2,7 @@
 
 # Teamwork Analytics Report Development Process
 
-This page gives an insight into how data is collected and stored, and how the report devleopment process flows.
+This page gives an insight into how data is collected and stored, and how the report development process flows.
 
 ## Introduction
 
@@ -62,7 +62,7 @@ Report Creation:
 
 Once complete the Reporting Team submit the Table/SQL view to Development team to bring into product and maintain so that it becomes part of the product for future versions and upgrades and is maintained.
 
-## **If data dpes not exist** 
+## **If data does not exist** 
 
 The reporting team (with PO) define what they need in data terms via  
 -	SQL view or table
