@@ -26,6 +26,8 @@ https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Dat
 
 The following hare held in the **Data Schema**
 
+The Data Schema is the store of basic data
+
 **Call records** - “complete call records are held for X days” – 35 by default, 14 in EY. It is relatively easy to add more reports in this time range subject to Power BI’s performance limits
 
 **User data** - Names, AD attributes – current state is stored
@@ -33,8 +35,6 @@ The following hare held in the **Data Schema**
 There is also a raw store of JSON, but this is just part of the architecture and feeds the Data Schema
 
 ### Reporting Schema
-
-The following data held in the **Reporting Schema**
 
 The reporting schema contains data that is optimised/pre-calculated for reproting purposes
 
@@ -50,7 +50,7 @@ The **Data Schema** is comprised of SQL Tables and SQL Views and the data, The b
 
 The Data Schema Feeds the **Reporting Schema**
 
-Power BI reports collect data from the from the **Reporting Schema**, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views, They are maintained not to change, so that existing reports are not broken.
+Power BI reports collect data from the from the **Reporting Schema**, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views optimised for reporting. They are maintained not to change, so that existing reports are not broken.
 
 The Reporting Team have input as to the design of the Reporting Schema, but it is ultimately maintained as part of the product by the Development Team.
 
