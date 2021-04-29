@@ -22,9 +22,8 @@ https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Dat
 
 ## Understanding how data is stored in Teamwork Analytics Performance
 
-### Data Schema
 
-The following hare held in the **Data Schema**
+### Data Schema
 
 The Data Schema is the store of basic data
 
@@ -33,6 +32,7 @@ The Data Schema is the store of basic data
 **User data** - Names, AD attributes – current state is stored
 
 There is also a raw store of JSON, but this is just part of the architecture and feeds the Data Schema
+
 
 ### Reporting Schema
 
