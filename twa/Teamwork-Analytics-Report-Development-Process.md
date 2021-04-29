@@ -17,11 +17,11 @@ This product is developed by two teams at Modality, the Reporting Team and the B
 
 ## Understanding how data is stored in Teamwork Analytics Usage and Governance
 
-TBC
+https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Data-Dictionary.md
 
 ## Understanding how data is stored in Teamwork Analytics Performance
 
-**JSON RAW **– not used for any reporting, just RAW JSON for reference/T-shoot
+**JSON RAW** – not used for any reporting, just RAW JSON for reference/T-shoot
 
 The following hare held in the **Data Schema**
 
