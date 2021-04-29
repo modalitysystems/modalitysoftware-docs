@@ -22,6 +22,8 @@ https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Dat
 
 ## Understanding how data is stored in Teamwork Analytics Performance
 
+### Data Schema
+
 The following hare held in the **Data Schema**
 
 **Call records** - “complete call records are held for X days” – 35 by default, 14 in EY. It is relatively easy to add more reports in this time range subject to Power BI’s performance limits
@@ -29,6 +31,8 @@ The following hare held in the **Data Schema**
 **User data** - Names, AD attributes – current state is stored
 
 There is also a raw store of JSON, but this is just part of the architecture and feeds the Data Schema
+
+### Reporting Schema
 
 The following data held in the **Reporting Schema**
 
