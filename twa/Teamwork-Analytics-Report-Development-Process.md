@@ -20,12 +20,14 @@ This product is developed by two teams at Modality, the Reporting Team and the B
 https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/TWA-Data-Dictionary.md
 
 
-## Understanding how data is stored in Teamwork Analytics Performance
+## Understanding how data is stored and reported on in Teamwork Analytics Performance
 
 
 ### Data Schema
 
-The Data Schema is the store of basic data
+The Data Schema is the store of basic data. It is comprised of SQL Tables and SQL Views and the data, The backend development team design and maintain the data schema.  The Data schema is subject to regular changes and optimisation. Reports do not directly access data from the Data Schema.
+
+Data Schema includes:
 
 **Call records** - All key fields from each call records, held for 35 days by default (configurable). Not all fields from JSON are held.
 
@@ -36,23 +38,15 @@ There is also a raw store of JSON, but this is just part of the architecture and
 
 ### Reporting Schema
 
-The reporting schema contains data that is optimised/pre-calculated for reproting purposes
-
-**Aggregates** holds select data, summed, for longer period of time. E.g. number of calls per user every day for a year 
-
-
-# Understanding how Power BI Reporting works
-
-The SQL has two Schemas, one optimised for data storage and one optimised for reporting.
-
-The **Data Schema** is comprised of SQL Tables and SQL Views and the data, The backend development team design and maintain this
- This is where the build of the data is held. The Data schema is subject to regular changes and optimisation. Do not report from this.
-
 The Data Schema Feeds the **Reporting Schema**
 
-Power BI reports collect data from the from the **Reporting Schema**, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views optimised for reporting. They are maintained not to change, so that existing reports are not broken.
+Power BI reports collect data from the from the **Reporting Schema**, never the Data Schema. The Reporting Schema is a collection of SQL Tables and SQL views optimised for reporting. They are maintained by the development not to change what they output, so that existing reports are not broken.
 
-The Reporting Team have input as to the design of the Reporting Schema, but it is ultimately maintained as part of the product by the Development Team.
+The Reporting Team have heavy input as to the design of the Reporting Schema. it is ultimately maintained as part of the product by the Development Team.
+
+The reporting schema contains data that is optimised/pre-calculated for reporting purposes including:
+
+**Aggregates** holds select data, summed, for longer period of time. E.g. number of calls per user every day for a year 
 
 
 # New Report Development Process
