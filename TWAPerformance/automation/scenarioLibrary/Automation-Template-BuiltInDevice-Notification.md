@@ -2,12 +2,12 @@
 
 This scenario sends a message to a teams user whenever the use of an unsupported/uncertified mic or speakers was used in a call in the last week.
 
-## Required Settings 
+## Required Settings
 
-| Setting | Value |
-| --- | --- |
+| Setting             | Value                                                |
+| ------------------- | ---------------------------------------------------- |
 | StoredProcedureName | automation.SpBuiltInDeviceTeamsReminderNotifications |
-| IsSentOnce | False |
+| IsSentOnce          | False                                                |
 
 ## SQL Query
 
@@ -75,7 +75,7 @@ GROUP BY
 	U.[Id],
 	U.[Mail]
 HAVING
-	SUM(II.[HasUncertifiedCaptureDeviceInCall]) > 0 OR 
+	SUM(II.[HasUncertifiedCaptureDeviceInCall]) > 0 OR
 	SUM(II.[HasUncertifiedRenderDeviceInCall]) > 0
 
 END
@@ -145,7 +145,7 @@ GO
                   },
                   {
                     "type": "TextBlock",
-                    "text": "BUILT IN DEVICE REPORT",
+                    "text": "DEVICE USAGE",
                     "horizontalAlignment": "Right",
                     "size": "Large",
                     "color": "Attention",
@@ -163,7 +163,7 @@ GO
       },
       {
         "type": "TextBlock",
-        "text": "For your awareness, you have used a built-in PC Microphone or Speakers. If you are experiencing any quality issues, you may get a better experience by using a Microsoft Teams Certified device.",
+        "text": "For your awareness, you have used an on-board PC Microphone or Speakers. If you are experiencing any quality issues, you may get a better experience by using a Microsoft Teams Certified device.",
         "wrap": true
       },
       {
@@ -175,12 +175,12 @@ GO
       },
       {
         "type": "TextBlock",
-        "text": "In the last week ${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInMicCount} out of ${RowsWithAdditionalProperties[0].Value.CallCount} (${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInMicPercentage}%) calls have been with a Built-In Mic.",
+        "text": "In the last week ${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInMicCount} out of ${RowsWithAdditionalProperties[0].Value.CallCount} (${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInMicPercentage}%) calls have been with an on-board Mic.",
         "wrap": true
       },
       {
         "type": "TextBlock",
-        "text": "In the last week ${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInSpeakersCount} out of ${RowsWithAdditionalProperties[0].Value.CallCount} (${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInSpeakersPercentage}%) calls have been with Built-In Speakers.",
+        "text": "In the last week ${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInSpeakersCount} out of ${RowsWithAdditionalProperties[0].Value.CallCount} (${RowsWithAdditionalProperties[0].Value.CallsUsingBuiltInSpeakersPercentage}%) calls have been with on-board Speakers.",
         "wrap": true
       }
     ]
