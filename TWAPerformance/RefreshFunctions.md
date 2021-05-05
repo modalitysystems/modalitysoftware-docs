@@ -20,3 +20,7 @@
    
    - Users for your company should start to appear in the **Users** table within a minute or so
    - Calls made by users of your company should start to appear in the **Calls** table within 15 minutes of a call ending
+   
+## Health Endpoint
+
+Each function app has it's own health endpoint that displays information regarding the status of that function app [read more on how to find and view this.](FunctionHealth.md)
