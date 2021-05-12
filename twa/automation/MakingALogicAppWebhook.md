@@ -1,6 +1,6 @@
 # How to make a Logic App Webhook for TWA Automation.
 
-## 1. Create a new Logic App in Azure
+## 1\. Create a new Logic App in Azure
 
 a) Nagivgate to the [Azure Portal](portal.azure.com), and once signed in choose Create a resource, and then Logic App (you may need to search for this);
 
@@ -17,7 +17,7 @@ b) Click the create button and fill in the required fields as in the example bel
 After a short wait, your logic app will have been created. Navigate to the resource group and move on to section 2.
 
 
-## 2. Build the workflow in your Logic App
+## 2\. Build the workflow in your Logic App
 
 a) Click the edit button on the Logic App home screen, and in the designer, choose "When a HTTP request is received" as your default trigger;
 

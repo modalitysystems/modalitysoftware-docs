@@ -2,7 +2,7 @@
 
 PSTN Billing is monitored via a combination of a SQL Stored Procedure and a Powershell Script. To configure please go through the following steps.
 
-1. Load the following stored procedure in the billing database.
+1\. Load the following stored procedure in the billing database.
 
 ```sql
 DROP PROCEDURE [billing].[GetBillingStatus]
@@ -41,7 +41,7 @@ AS
 GO
 ```
 
-2. Configure a windows scheduled task on the Billing Virtual Machine to run the following powershell script using an Local Administrator account (be sure to update the SQL connection string to the billing database).
+2\. Configure a windows scheduled task on the Billing Virtual Machine to run the following powershell script using an Local Administrator account (be sure to update the SQL connection string to the billing database).
 
 ```powershell
 $connectionString = "." # !!!! ENTER CONNECTION STRING HERE !!!!
@@ -69,6 +69,6 @@ while($reader.Read())
 }
 ```
 
-3. If the script detects any issues, it will raise a Warning in the event log with an ID of 55404, as illustrated in the screen shot below.
+3\. If the script detects any issues, it will raise a Warning in the event log with an ID of 55404, as illustrated in the screen shot below.
 
 ![Event Log](images/pstnbilling/monitoringEventLog.png)
