@@ -13,9 +13,7 @@ CREATE PROCEDURE [billing].[ClearExpiredData]
 AS
     declare @RetentionDate date = dateadd(day, @RetentionPeriodInDays * -1, GETUTCDATE())
     delete from [billing].[CommunicationCredits] where [ValidTo] < @RetentionDate
-    delete from [billing].[MicrosoftPlanCosts] where [ValidTo] < @RetentionDate
     delete from [billing].[PstnCalls] where [EndTimeUtc] < @RetentionDate
-    delete from [billing].[RateCards] where [ValidTo] < @RetentionDate
     delete from [billing].[SubscribedSkus] where [ValidTo] < @RetentionDate
     delete from [billing].[UserPropertiesLog] where [Date] < @RetentionDate
     delete from [billing].[UserSkusLog] where [Date] < @RetentionDate
