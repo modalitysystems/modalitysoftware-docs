@@ -5,7 +5,8 @@ PSTN Billing is monitored via a combination of a SQL Stored Procedure and a Powe
 1\. Load the following stored procedure in the billing database.
 
 ```sql
-DROP PROCEDURE [billing].[GetBillingStatus]
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'GetBillingStatus' And schema_id = SCHEMA_ID('billing'))
+	DROP PROCEDURE [billing].[GetBillingStatus]
 GO
 
 CREATE PROCEDURE [billing].[GetBillingStatus]
