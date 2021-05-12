@@ -2,7 +2,7 @@
 
 PSTN Billing has a year of data removed, which is ran once a day via a combination of a SQL Stored Procedure, a Powershell Script and Windows Task Scheduler. To configure please go through the following steps.
 
-1. Load the following stored procedure in the billing database.
+1\. Load the following stored procedure in the billing database.
 
 ```sql
 IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'ClearExpiredData' And schema_id = SCHEMA_ID('billing'))
@@ -22,7 +22,7 @@ AS
 GO
 ```
 
-2. Configure a windows scheduled task on the Billing Virtual Machine to run the following powershell script using an Local Administrator account (be sure to update the SQL connection string to the billing database).
+2\. Configure a windows scheduled task on the Billing Virtual Machine to run the following powershell script using an Local Administrator account (be sure to update the SQL connection string to the billing database).
 
 ```powershell
 $connectionString = "." # !!!! ENTER CONNECTION STRING HERE !!!!
@@ -48,6 +48,6 @@ catch {
 }
 ```
 
-3. If the script detects any issues, it will raise a Warning in the event log with an ID of 55404, as illustrated in the screen shot below.
+3\. If the script detects any issues, it will raise a Warning in the event log with an ID of 55404, as illustrated in the screen shot below.
 
 ![Event Log](images/pstnbilling/monitoringRetentionEventLog.png)
