@@ -32,17 +32,25 @@ If ([System.Diagnostics.EventLog]::SourceExists("TWA Billing Retention") -eq 0){
 $conn = New-Object System.Data.SQLClient.SQLConnection($connectionString)
 $conn.Open()
 
+$transaction = $conn.BeginTransaction();
+
 $command = New-Object System.Data.SQLClient.SQLCommand
 $command.Connection = $conn
 $command.CommandTimeout = 3600
+$command.Transaction = $transaction
+
 
 $command.CommandText = "exec [billing].[ClearExpiredData]"
 
-try { $command.ExecuteNonQuery(); }
+try { 
+    $command.ExecuteNonQuery(); 
+    $transaction.Commit();
+}
 catch {
-    $errorMessage = "Failed to clear billing data"
+    $errorMessage = "Failed to clear billing data : " + $_
     Write-EventLog -LogName Application -Source "TWA Billing Retention" -EventID 55404 -Message $errorMessage -EntryType Warning
-	write-host "Billing Retention Event Warning Triggered -" $errorMessage
+	write-host "Billing Retention Event Warning Triggered - " $errorMessage
+    $transaction.Rollback();
 }
 ```
 
