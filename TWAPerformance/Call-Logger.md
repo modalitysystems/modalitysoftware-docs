@@ -35,7 +35,7 @@ Power BI can filter reports by:
   - Unanswered calls
   - Answered calls
   - Volume of calls
-  - Talk time
+  - Talk time (Duration in call between each caller / callee(s))
 
 Note, Tenant users must be filtered by UPN, not their assigned Teams PSTN Number. The Call Records API presents Tenant users by their UPN, not phone number.
 
