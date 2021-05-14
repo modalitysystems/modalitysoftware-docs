@@ -32,6 +32,10 @@ Power BI can filter reports by:
   - AD attributes to group caller or callee
   - Date/Time
   - Duration
+  - Unanswered calls
+  - Answered calls
+  - Volume of calls
+  - Talk time
 
 Note, Tenant users must be filtered by UPN, not their assigned Teams PSTN Number. The Call Records API presents Tenant users by their UPN, not phone number.
 
@@ -54,7 +58,6 @@ Report data for call logging can be held for as long as the customer requires/de
 Note, the following is not currently available from the Call Records API, so cannot be reported on at this time.
 
 - Costs of calls
-- Unanswered calls
 - Hold time
 - Inbound ring time/wait time for calls or Cloud Auto Attendants/Hunt Groups
 - Real Time/Live Call Reports - Call Records API provides data shortly after the end of the call
