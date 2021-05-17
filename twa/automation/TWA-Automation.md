@@ -58,7 +58,7 @@ Modality provides adaptive cards with no buttons or inputs at this time. Modalit
 
 Teamwork Analytics product support does not include support for creating Flow or Logic apps, but if customers purchase Customer Intelligence time our CI team can *assist* customers with the development of these adaptive cards and scenarios. Here is a documented example of using a Logic App in an Adaptive Card: https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/automation/MakingALogicAppWebhook.md
 
-In 2020 Q3 Modality intend to ship several default adaptive card templates that make use of Microsoft Azure Logic apps and store user input/feedback/button presses/form input in the Teamwork Analytics database for further automation and reporting.
+In 2021 Q3 Modality intend to ship several default adaptive card templates that make use of Microsoft Azure Logic apps and store user input/feedback/button presses/form input in the Teamwork Analytics database for further automation and reporting.
 
 At this time, we do not support dynamically changing a button in adaptive cards form "submit" to "submitted" or "Thankyou" once pressed. Once pressed the button will still say "submit". This is also coming in 2021 Q3.
 
