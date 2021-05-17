@@ -2,7 +2,7 @@
 
 ## Overview
 
-Teamwork Analytics Automation (TWA Automation) enables you to send automated messages direct to users via email or Microsoft Teams, enforcing compliance and data security.
+Teamwork Analytics Automation (TWA Automation) enables you to send automated private messages direct to Microsoft Teams users, encouraging usage, ensuring compliance, data security and best practices.
 
 ![TWA Architecture](./../images/twa-architecture.png)
 
@@ -20,28 +20,6 @@ TWA Automation is deployed in two parts: a locally run Bot Notification Service,
 * If wanting to use "Unified Template" functionality **and** want to use email (requirement does not apply to IM)
   * Email originator requires configuring via the [Microsoft's developer dashboard](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard)
     * Update the bot web app "BotSettings:OriginatorId" setting, with the value found on the developer dashboard.
-
-## Unified Templating - Email Configuration
-
-If the unified template feature is enabled, then this means that the bot will use the adaptive card templating for Teams IMs and emails. In order to email adaptive cards using the bot framework, configuration is required. Follow [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard) to configure email services for the bot.
-> The "sender email address" that is required in the form, must match the value specified in the bot web app under BotSettings:EmailAddress.
-
-> Most customers will only require "Organisation" self-service registration, which a tenant admin can approve. **However, those that require "Global" will need to wait up to 2 weeks for Microsoft to provision their request. Check documenation for more information**.
-
-Once a provider has been created using [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard), grab the originator value from the form:
-![Screenshot](../images/automation-developerdashboard-originator.png)
-
-* Go to the Azure Portal home page and follow the following steps:
-  * Click "resource groups"
-  * Find and open the resource group for TWA Automation
-  * Open the app service
-  * Go to configuration
-  * Click the edit button for the BotSettings:OriginatorId value
-  * Insert the originator id value that was copied from the account via the developer dashboard
-  * Click save after updating the value
-![Screenshot](../images/Automation-Originator.png)
-
-> This configuration only applies to if email is required when using unified templating. If ExampleAutomationGuestScenario the customer wants to enable is Teams IM, then the above configuration is not required.
 
 ## Admin Consent for Bot
 
@@ -74,6 +52,37 @@ The following information is sent from the locally run Bot Notification Service 
 * Type of message being delivered
 * Information relavent to the scenario and shown in the message. This will be whatever you decide to output in the configured scenario. The default scenarios, would include team names, last activity date, number of guests and number of owners.
 
+# Support for Buttons and Forms in Adaptive Cards
+
+Modality provides adaptive cards with no buttons or inputs at this time. Modality do support HTTP post calls when a user presses a button. Customers can use this HTTP post call support to add their own buttons/forms to adaptive cards and link them to Microsoft Flow, Azure Logic apps or anything else that supports HTTP post.
+
+Teamwork Analytics product support does not include support for creating Flow or Logic apps, but if customers purchase Customer Intelligence time our CI team can *assist* customers with the development of these adaptive cards and scenarios. Here is a documented example of using a Logic App in an Adaptive Card: https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/automation/MakingALogicAppWebhook.md
+
+In 2020 Q3 Modality intend to ship several default adaptive card templates that make use of Microsoft Azure Logic apps and store user input/feedback/button presses/form input in the Teamwork Analytics database for further automation and reporting.
+
+At this time, we do not support dynamically changing a button in adaptive cards form "submit" to "submitted" or "Thankyou" once pressed. Once pressed the button will still say "submit". This is also coming in 2021 Q3.
+
+## Unified Templating - Email Configuration - DEPRECATED FEATURE
+
+If the unified template feature is enabled, then this means that the bot will use the adaptive card templating for Teams IMs and emails. In order to email adaptive cards using the bot framework, configuration is required. Follow [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard) to configure email services for the bot.
+> The "sender email address" that is required in the form, must match the value specified in the bot web app under BotSettings:EmailAddress.
+
+> Most customers will only require "Organisation" self-service registration, which a tenant admin can approve. **However, those that require "Global" will need to wait up to 2 weeks for Microsoft to provision their request. Check documenation for more information**.
+
+Once a provider has been created using [Microsoft's documenatation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard), grab the originator value from the form:
+![Screenshot](../images/automation-developerdashboard-originator.png)
+
+* Go to the Azure Portal home page and follow the following steps:
+  * Click "resource groups"
+  * Find and open the resource group for TWA Automation
+  * Open the app service
+  * Go to configuration
+  * Click the edit button for the BotSettings:OriginatorId value
+  * Insert the originator id value that was copied from the account via the developer dashboard
+  * Click save after updating the value
+![Screenshot](../images/Automation-Originator.png)
+
+> This configuration only applies to if email is required when using unified templating. If ExampleAutomationGuestScenario the customer wants to enable is Teams IM, then the above configuration is not required.
 
 
 
