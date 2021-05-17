@@ -52,7 +52,7 @@ The following information is sent from the locally run Bot Notification Service 
 * Type of message being delivered
 * Information relavent to the scenario and shown in the message. This will be whatever you decide to output in the configured scenario. The default scenarios, would include team names, last activity date, number of guests and number of owners.
 
-# Support for Buttons and Forms in Adaptive Cards
+## Support for Buttons and Form input in Adaptive Cards
 
 Modality provides adaptive cards with no buttons or inputs at this time. Modality do support HTTP post calls when a user presses a button. Customers can use this HTTP post call support to add their own buttons/forms to adaptive cards and link them to Microsoft Flow, Azure Logic apps or anything else that supports HTTP post.
 
