@@ -66,7 +66,7 @@ At this time, we do not support dynamically changing a button in adaptive cards 
 
 Microsoft are also adding a native "Success" banner to adaptive cards (this does not disable or change the submit button, which requires no code change. The GA date for this is not clear.
 
-
+![TWA Architecture](https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/automation/2021-05-19_09-32-37.png)
 
 
 ## Unified Templating - Email Configuration - DEPRECATED FEATURE
