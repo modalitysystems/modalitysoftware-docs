@@ -60,7 +60,14 @@ Teamwork Analytics product support does not include support for creating Flow or
 
 In 2021 Q3 Modality intend to ship several default adaptive card templates that make use of Microsoft Azure Logic apps and store user input/feedback/button presses/form input in the Teamwork Analytics database for further automation and reporting.
 
-At this time, we do not support dynamically changing a button in adaptive cards form "submit" to "submitted" or "Thankyou" once pressed. Once pressed the button will still say "submit". This is also coming in 2021 Q3.
+### Adaptive Card button submission
+
+At this time, we do not support dynamically changing a button in adaptive cards from "submit" to "submitted" or "Thankyou" once pressed. Once pressed the button will still say "submit". This is also coming in 2021 Q3. There is a code change needed to support this.
+
+Microsoft are also adding a native "Success" banner to adaptive cards (this does not disable or change the submit button, which requires no code change. The GA date for this is not clear.
+
+
+
 
 ## Unified Templating - Email Configuration - DEPRECATED FEATURE
 
