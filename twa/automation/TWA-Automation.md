@@ -52,11 +52,13 @@ The following information is sent from the locally run Bot Notification Service 
 * Type of message being delivered
 * Information relavent to the scenario and shown in the message. This will be whatever you decide to output in the configured scenario. The default scenarios, would include team names, last activity date, number of guests and number of owners.
 
-## Support for Buttons and Form input in Adaptive Cards
+## Support for Buttons and Form input in Adaptive Cards Today - HTTP post calls and customer Flow or Logic Apps
 
 Modality provides adaptive cards with no buttons or inputs at this time. Modality do support HTTP post calls when a user presses a button. Customers can use this HTTP post call support to add their own buttons/forms to adaptive cards and link them to Microsoft Flow, Azure Logic apps or anything else that supports HTTP post.
 
 Teamwork Analytics product support does not include support for creating Flow or Logic apps, but if customers purchase Customer Intelligence time our CI team can *assist* customers with the development of these adaptive cards and scenarios. Here is a documented example of using a Logic App in an Adaptive Card: https://github.com/modalitysystems/modalitysoftware-docs/blob/master/twa/automation/MakingALogicAppWebhook.md
+
+## Support for Buttons and Form input in Adaptive Cards Roadmap - Native support to log customer input
 
 In 2021 Q3 Modality intend to ship several default adaptive card templates that make use of Microsoft Azure Logic apps and store user input/feedback/button presses/form input in the Teamwork Analytics database for further automation and reporting.
 
