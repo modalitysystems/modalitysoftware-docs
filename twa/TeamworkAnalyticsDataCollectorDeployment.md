@@ -1,4 +1,4 @@
-## Teamwork Analytics Data Collector Deployment
+## Teamwork Analytics Data Collector Deployment *
 
 The Teamwork Analytics Technical Documentation page provides access to all of the platform documentation you will need to successfully setup and configure Teamwork Analytics.
 
