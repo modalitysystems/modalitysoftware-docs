@@ -1,4 +1,4 @@
-# Retention - PSTN Billing
+# Retention - PSTN Billing *
 
 PSTN Billing has a year of data removed, which is ran once a day via a combination of a SQL Stored Procedure, a Powershell Script and Windows Task Scheduler. To configure please go through the following steps.
 
