@@ -1,4 +1,4 @@
-# Teamwork Analytics Monitoring and Alerting
+# Teamwork Analytics Monitoring and Alerting *
 
 This page explains what customers should monitor and alert on when running Teamwork Analytics in the CAT (Customer Azure Tenant) model
 
