@@ -1,4 +1,4 @@
-# Azure Windows Virtual Machine
+# Azure Windows Virtual Machine *
 
 - Ensure VM is running 24x7
 - VM Resources - We recommend no resource reduction to be made on VM from initial deployment. If reduction is made, please review PowerBI Apps/Reports to ensure data is still process as expected.
