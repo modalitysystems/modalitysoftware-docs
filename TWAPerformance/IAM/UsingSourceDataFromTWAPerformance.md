@@ -19,12 +19,14 @@ If you want to retreive data for a specific Call Id from the data lake, you can 
 
 *https://graph.microsoft.com/v1.0/communications/callRecords/[CALLID]?$expand=sessions($expand=segments)*
 
-So as a worked example, if the Call Id is;
+**Worked Example**
 
-*91786d00-05ea-48da-a1c6-e9d68d2ee19f*
-
-then your search uri would be 
-
-*https://graph.microsoft.com/v1.0/communications/callRecords/91786d00-05ea-48da-a1c6-e9d68d2ee19f?$expand=sessions($expand=segments)*
+>If the Call Id is;
+>
+>*91786d00-05ea-48da-a1c6-e9d68d2ee19f*
+>
+>then your search uri would be 
+>
+>*https://graph.microsoft.com/v1.0/communications/callRecords/91786d00-05ea-48da-a1c6-e9d68d2ee19f?$expand=sessions($expand=segments)*
 
 Depending on the amount of call records in the data lake, a search for a record may take a long time.
