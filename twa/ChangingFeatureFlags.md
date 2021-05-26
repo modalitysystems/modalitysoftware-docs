@@ -1,4 +1,4 @@
-# Changing Feature Flags
+# Changing Feature Flags *
 
 Teamwork Analytics allows you to change feature flags that decide what data is collected. These can be changed from the config file found in the default installation path. By setting their respective values to either 'true' or 'false' you can toggle these features on or off.
 
