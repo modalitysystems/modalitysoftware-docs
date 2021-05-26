@@ -1,4 +1,4 @@
-# Data Retention
+# Data Retention *
 
 By default Teamwork analytics will retain all data. Some customers will want to limit the amount of data retained
 
