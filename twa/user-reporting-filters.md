@@ -1,4 +1,4 @@
-# User Reporting Filters
+# User Reporting Filters *
 The filters for reports containing user data can be configured.
 
 ![image](images/user-reporting-filters.png)
