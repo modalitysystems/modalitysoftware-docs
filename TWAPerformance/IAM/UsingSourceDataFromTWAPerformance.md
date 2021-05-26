@@ -13,3 +13,18 @@ Example ContentUri: https://tdgadlhp7koew3hlxtu.blob.core.windows.net/graph-resp
 
 The blob content is a Gzip-compressed, Base64-encoded copy of the response received from Microsoft Graph. No alterations, additons or deletions have been made to the file at this point - is it structurally identical to if the file had been downloaded from Microsoft Graph independantly of TWA Performance. The content of the file can be viewed using an online decompression/decoding tool, such as [this one](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Gunzip()).
 
+## Retrieving data for a specific Call via Id
+
+If you want to retreive data for a specific Call Id from the data lake, you can do that by creating the call Uri and querying the data lake using it. The URL format is as follows
+
+*https://graph.microsoft.com/v1.0/communications/callRecords/[CALLID]?$expand=sessions($expand=segments)*
+
+So as a worked example, if the Call Id is;
+
+*91786d00-05ea-48da-a1c6-e9d68d2ee19f*
+
+then your search uri would be 
+
+*https://graph.microsoft.com/v1.0/communications/callRecords/91786d00-05ea-48da-a1c6-e9d68d2ee19f?$expand=sessions($expand=segments)*
+
+Depending on the amount of call records in the data lake, a search for a record may take a long time.
