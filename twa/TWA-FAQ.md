@@ -1,4 +1,4 @@
-## How does Teamwork Analytics deal with Microsoft Graph Throttling?
+## How does Teamwork Analytics deal with Microsoft Graph Throttling? *
 
 Teamwork Analytics pulls data from Microsoft Graph via HTTPS. The Teamwork Analytics windows service has 4 concurrent https clients that can run with request up twice per second. However, Microsoft Graph throttles requests to an appropriate speed for Microsoft which means Teamwork Analytics does not always reach its theoretical maximum speed of data collection.
 
