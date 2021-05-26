@@ -1,5 +1,5 @@
 
-# Collecting Teamwork Analytics Logs
+# Collecting Teamwork Analytics Logs *
 
 If you have issues with Teamwork Analytics, Modality Systems may ask you to collect logs for us to analyse the issue.
 
