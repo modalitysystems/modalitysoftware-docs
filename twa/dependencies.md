@@ -1,3 +1,4 @@
+*
 Teamwork Analytics contains the following dependencies. This list is subject to change and updated regularly, but should not be considered definitive.
 
 Below the table are the dependencies of our private custom Modality packages for completeness.
