@@ -1,4 +1,4 @@
-# How to raise a support ticket
+# How to raise a support ticket *
 
 ### Please review the following sections before raising a support request
 
