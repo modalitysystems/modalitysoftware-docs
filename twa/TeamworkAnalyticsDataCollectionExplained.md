@@ -1,4 +1,4 @@
-## Teamwork Analytics Data Collection Explained
+## Teamwork Analytics Data Collection Explained *
 
 Teamwork Analytics uses several different APIs for each reporting app to collect data, mostly via Microsoft Graph.
 
