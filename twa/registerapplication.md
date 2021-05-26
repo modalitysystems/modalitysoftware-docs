@@ -1,4 +1,4 @@
-## Registering Teamwork Analytics as an Azure Application
+## Registering Teamwork Analytics as an Azure Application *
 This document describes the process of registering Teamwork Analytics Client as an Azure Application as the first step to deployment.  As part of the registration you will gather the following information for use further along the deployment process.
    * Application ID
    * Application Secret
