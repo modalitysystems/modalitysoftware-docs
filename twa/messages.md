@@ -1,4 +1,4 @@
-# Messages
+# Messages *
 There are two types of message.
 1. Private Chat Message
 2. Channel Message
