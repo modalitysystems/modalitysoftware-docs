@@ -1,4 +1,4 @@
-# How to Configure Task Scheduler Reminders for Teamwork Analytics Notification Service
+# How to Configure Task Scheduler Reminders for Teamwork Analytics Notification Service *
 
 The Notification Service will create several Task Schedules to run each notification reminder. Some will be configured to run once a month and others, such as the deleted team reminder, will run daily by default.
 
