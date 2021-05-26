@@ -1,4 +1,4 @@
-# Teamwork Analytics Data Dictionary and Reporting Capabilities
+# Teamwork Analytics Data Dictionary and Reporting Capabilities *
 
 Modality Systems Teamwork Analytics collects lots of information from various Microsoft Graph API endpoints. This document explains what data is collected and stored. It can be used to inform what reporting is possible with the solution.
 
