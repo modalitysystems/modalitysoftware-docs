@@ -1,4 +1,4 @@
-## Data Issues with Microsoft Teams user activity > Get user detail Endpoint.
+## Data Issues with Microsoft Teams user activity > Get user detail Endpoint. *
 
 Documentation for the Endpoint can be found here;
 
