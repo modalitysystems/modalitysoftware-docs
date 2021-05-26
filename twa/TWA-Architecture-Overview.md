@@ -1,4 +1,4 @@
-## Teamwork Analytics Architecture Overview
+## Teamwork Analytics Architecture Overview *
 
 This page gives an overview of the complete Teamwork Analytics Architecture.
 
