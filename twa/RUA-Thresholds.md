@@ -1,4 +1,4 @@
-## Relative User Activity Thresholds
+## Relative User Activity Thresholds *
 
 Relative User Activity Thresholds are for grouping users into Low, Medium, High and Very High usage categories
 
