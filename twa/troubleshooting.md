@@ -1,4 +1,4 @@
-# Determining current state of the system
+# Determining current state of the system *
 
 ## Troubleshooting report
 
