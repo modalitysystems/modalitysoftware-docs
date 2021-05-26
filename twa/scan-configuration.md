@@ -1,4 +1,4 @@
-Different types of scans can be scheduled.
+Different types of scans can be scheduled. *
 
 There are 4 types, which can be configured using the following Id's
 - Id 0 = Main
