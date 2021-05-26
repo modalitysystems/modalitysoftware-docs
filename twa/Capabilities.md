@@ -1,4 +1,4 @@
-# Teamwork Analytics - Data Collected and Capabilities
+# Teamwork Analytics - Data Collected and Capabilities *
 
 Modality Teamwork Analytics collects the following data (across multiple modules) which allows various combinations of useful reports and automation triggers. For the sake of simplicity of this document, if something can be reported on, it could also be a trigger for an automated message to users. Automated messages are used to drive governance, best practice advice and adoption.
 
