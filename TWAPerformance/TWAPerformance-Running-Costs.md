@@ -1,8 +1,8 @@
 # TWA Performance Running Costs
 
-Because TWA is a Microsoft Azure cloud hosted solution there are additional costs to keep it running. Below are the different Azure Services types and their prices for a given CPS (Calls Per Second), CPD (Calls Per Day) and CPM (Calls Per Month).
+Because TWA is a Microsoft Azure cloud hosted solution there are additional costs to keep it running. Below are the different Azure Services types and their prices for a given CPS (Calls Per Second), CPD (Calls Per Day) and CPM (Calls Per Month). By summing the price of each section where you expect your average call throughput to be, you will get your monthly cost estimate.
 
-The prices listed in the below sections are estimates from extended performance tests in various load ranges. These prices are by no means definite, expect real prices to vary. The prices of some of more expensive services can potentially be lessened with certain packages or disabling certain features.
+The prices listed in the below sections are estimates from extended performance tests in various load ranges. They are also based on an average participant count per call of 3. Having a higher participant count per call will proportionally increase the amount of segments and data streams per call. This in turn will increase the operation counts and data storage across all services so please try to keep this in mind when summing everything together. These prices are by no means definite, expect real prices to vary. The prices of some of more expensive services can potentially be lessened with certain packages or disabling certain features.
 
 ## SQL Database Pricing
 
@@ -41,8 +41,10 @@ The Storage accounts are used by Azure functions to save meta data and Graph res
 |---|---|---|
 |1K|30K|<£1|
 |10K|300K|£6|
+|50K|1.5M|£30|
 |100K|3M|£61|
-|1M|30M|£616|
+|500K|15M|£302|
+|1M|30M|£609|
 |5M|150M|£3,080|
 
 ## Azure Function Pricing
@@ -55,9 +57,11 @@ Microsoft allow a certain amount of executions and MB per second free. The price
 |---|---|---|
 |5K|150K|Free|
 |10K|300K|<£1|
-|100K|3M|£11|
-|1M|30M|£156|
-|5M|150M|£800|
+|50K|1.5M|£2|
+|100K|3M|£16|
+|500K|15M|102|
+|1M|30M|£210|
+|5M|150M|£1,060|
 
 ## Service Bus Pricing
 
@@ -68,10 +72,12 @@ The cost can increase if there's a period of service failures causing messages t
 |CPD|CPM|Price|
 |---|---|---|
 |1K|30K|£7|
-|10K|300K|£9|
-|100K|3M|£78|
-|1M|30M|£580|
-|5M|150M|£1,700|
+|10K|300K|£11|
+|50K|1.5M|£57|
+|100K|3M|£94|
+|500K|15M|£358|
+|1M|30M|£748|
+|5M|150M|£2,034|
 
 ## Application Insights Pricing
 
@@ -81,8 +87,10 @@ The cost of application insights can become quite high at larger volumes and if 
 
 |CPD|CPM|Size Estimate|Price|
 |---|---|---|---|
-|1K|30K|120MB|Free|
-|10K|300K|1GB|Free|
-|100K|3M|11GB|£14|
-|1M|30M|117GB|£240
-|5M|150M|580GB|£1,250|
+|1K|30K|150MB|Free|
+|10K|300K|1.5GB|Free|
+|50K|1.5M|7.3GB|£5|
+|100K|3M|14.6GB|£21|
+|500K|15M|73GB|£147|
+|1M|30M|146GB|£304|
+|5M|150M|732GB|£1,562|
