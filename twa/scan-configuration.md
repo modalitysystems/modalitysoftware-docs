@@ -1,6 +1,6 @@
 Different types of scans can be scheduled. *
 
-There are 4 types, which can be configured using the following Id's
+There are 5 types, which can be configured using the following Id's
 - Id 0 = Main
 - Id 1 = Reports
 - Id 2 = Messages
