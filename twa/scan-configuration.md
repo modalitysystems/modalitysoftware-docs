@@ -1,11 +1,11 @@
 Different types of scans can be scheduled. *
 
 There are 5 types, which can be configured using the following Id's
-- Id 0 = Main
-- Id 1 = Reports
-- Id 2 = Messages
-- Id 3 = Files
-- Id 4 = [Data Retention](DataRetention.md)
+- Id 0 = Main - AD user Information, Team and Channel details
+- Id 1 = Reports - Microsoft Reports API for per user counts of activity 
+- Id 2 = Messages - Channel Messages
+- Id 3 = Files - Files in Teams 
+- Id 4 = [Data Retention](DataRetention.md) - runs retention rules
 
 You can only have one of each Id.
 
