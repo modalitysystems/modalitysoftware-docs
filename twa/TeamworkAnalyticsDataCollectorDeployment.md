@@ -19,7 +19,7 @@ For this step you will need to use an Azure Global Admin account.
 
 [Registering Teamwork Analytics as an Azure Application](registerapplication.md)
 
-Once the application has been registered, submit the Application ID of your newly created application to Modality System for it to be whitelisted. Once this is has happened you will be given access to continue the deployment using the steps below.
+Once the application has been registered, submit the Application ID of your newly created application to Modality Systems for it to be whitelisted. Once this is has happened you will be given access to continue the deployment using the steps below.
 
 ### Step 2: Deploy Teamwork Analytics
 
